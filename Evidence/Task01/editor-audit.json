@@ -9,9 +9,9 @@
     },
     "result": {
       "diagnostics": [],
-      "compileMs": 240,
-      "executeMs": 279,
-      "assemblyName": "PipelineRunScript_Task01Audit_5a39186df2904a5ba73de2e3f9714464",
+      "compileMs": 188,
+      "executeMs": 426,
+      "assemblyName": "PipelineRunScript_Task01Audit_311eb3a86f284199b8ca90a6f8a11f61",
       "success": true,
       "result": {
         "unityVersion": "6000.6.3f1",
@@ -238,6 +238,7 @@
             ]
           }
         ],
+        "playerQuery": "PlayerWithoutTestAssemblies",
         "playerAssemblies": [
           {
             "name": "NeonTunnelRunner.Runtime",
@@ -245,14 +246,6 @@
               "Unity.InputSystem",
               "UnityEngine.UI",
               "Unity.TextMeshPro"
-            ]
-          },
-          {
-            "name": "NeonTunnelRunner.PlayModeTests",
-            "references": [
-              "NeonTunnelRunner.Runtime",
-              "UnityEngine.TestRunner",
-              "UnityEngine.UI"
             ]
           }
         ]

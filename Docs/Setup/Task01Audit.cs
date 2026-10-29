@@ -46,7 +46,8 @@ namespace NeonTunnelRunner
                 camera = new { camera.allowHDR, camera.fieldOfView, camera.nearClipPlane, camera.farClipPlane, postProcessing = camera.GetComponent<UniversalAdditionalCameraData>().renderPostProcessing, volumeMask = camera.GetComponent<UniversalAdditionalCameraData>().volumeLayerMask.value },
                 volume = new { volume.isGlobal, profile = AssetDatabase.GetAssetPath(volume.sharedProfile), overrides = volume.sharedProfile.components.Count, layer = volume.gameObject.layer },
                 editorAssemblies = CompilationPipeline.GetAssemblies(AssembliesType.Editor).Where(a => a.name.StartsWith("NeonTunnelRunner.")).Select(a => new { a.name, references = a.assemblyReferences.Select(r => r.name).ToArray() }).ToArray(),
-                playerAssemblies = CompilationPipeline.GetAssemblies(AssembliesType.Player).Where(a => a.name.StartsWith("NeonTunnelRunner.")).Select(a => new { a.name, references = a.assemblyReferences.Select(r => r.name).ToArray() }).ToArray()
+                playerQuery = "PlayerWithoutTestAssemblies",
+                playerAssemblies = CompilationPipeline.GetAssemblies(AssembliesType.PlayerWithoutTestAssemblies).Where(a => a.name.StartsWith("NeonTunnelRunner.")).Select(a => new { a.name, references = a.assemblyReferences.Select(r => r.name).ToArray() }).ToArray()
             };
         }
     }

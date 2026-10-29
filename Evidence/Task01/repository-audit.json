@@ -9,7 +9,7 @@
       ".gitignore:6:/[Tt]emp/\tTemp/probe",
       ".gitignore:7:/[Oo]bj/\tObj/probe",
       ".gitignore:9:/[Bb]uilds/\tBuilds/probe",
-      ".git/info/exclude:9:/NeonTunnelRunner.slnx\tNeonTunnelRunner.slnx"
+      ".git/info/exclude:9:/*.slnx\tNeonTunnelRunner.slnx"
     ]
   },
   "missingOriginalGuids": [],
@@ -24,5 +24,10 @@
     }
   },
   "originalGuidCount": 23,
-  "currentGuidCount": 74
+  "currentGuidCount": 74,
+  "resolvedAddedPackages": {
+    "com.unity.nuget.newtonsoft-json": "3.2.2",
+    "com.unity.pipeline": "0.9.1-exp.1"
+  },
+  "originalResolvedVersionChanges": {}
 }

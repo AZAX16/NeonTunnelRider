@@ -1,0 +1,2 @@
+Initialize engine version: 6000.6.3f1 (45d8eee7de74)
+[ProjectSetupValidator] PASS: Editor, folders, serialization, input setting, URP/HDR, Linux profile and scene references.
