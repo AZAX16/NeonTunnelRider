@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "code": "UnityEditor.Build.Profile.BuildProfile.SetActiveBuildProfile(UnityEditor.Build.Profile.BuildProfile.GetBuildProfileAtPath(\"Assets/NeonTunnelRunner/Settings/BuildProfiles/LinuxDevelopment.asset\")); UnityEditor.EditorUserBuildSettings.development = true; UnityEditor.AssetDatabase.SaveAssets(); return new { target = UnityEditor.EditorUserBuildSettings.activeBuildTarget.ToString(), profile = UnityEditor.Build.Profile.BuildProfile.GetActiveBuildProfile().name, development = UnityEditor.EditorUserBuildSettings.development };"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "target": "StandaloneLinux64",
+        "profile": "LinuxDevelopment",
+        "development": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

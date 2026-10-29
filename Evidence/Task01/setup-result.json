@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "file": "Docs/Setup/Task01Setup.cs",
+      "entry": "NeonTunnelRunner.Task01Setup.Configure"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 234,
+      "executeMs": 3012,
+      "assemblyName": "PipelineRunScript_Task01Setup_d1bfc5a9cf5648ada8a9b1d209fbfcd6",
+      "success": true,
+      "result": "Task 01 scene and settings saved. Template scene/input and all moved asset GUIDs preserved."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

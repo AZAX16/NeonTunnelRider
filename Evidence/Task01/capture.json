@@ -1,0 +1,31 @@
+{
+  "success": true,
+  "command": "command capture",
+  "data": {
+    "command": "capture",
+    "parameters": {
+      "source": "camera",
+      "camera": "MainCamera",
+      "width": "1280",
+      "height": "720",
+      "save_path": "Evidence/Task01/game-graybox.png"
+    },
+    "result": {
+      "width": 1280,
+      "height": 720,
+      "encoding": "png",
+      "bytes": 79892,
+      "source": "camera:MainCamera",
+      "savedPath": "Assets/Evidence/Task01/game-graybox.png"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": [],
+  "finalEvidencePath": "Evidence/Task01/game-graybox.png",
+  "relocation": "The capture command resolved its relative save_path under Assets. Copied the PNG to repository Evidence through the Editor, then removed the temporary Assets/Evidence subtree through AssetDatabase.DeleteAsset."
+}

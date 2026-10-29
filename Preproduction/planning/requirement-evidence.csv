@@ -1,0 +1,55 @@
+﻿requirement,printed_page,status,implementation_tasks,validation_cases,implementation_files,evidence,result
+R01,1,Mandatory,"01,16",V24,CREDITS.md; report,,NOT RUN
+R02,1,Mandatory,16,V25,Delivery checklist,,NOT RUN
+R03,1,Mandatory,16,V25,Delivery checklist,,NOT RUN
+R04,1,Mandatory; explicit zero-mark risk,16,V25,verify_submission.py; delivery checklist,,NOT RUN
+R05,2,Mandatory,"01,03,05",V01,Project settings; GameManager,,NOT RUN
+R06,2,Mandatory,"03,05,10","V03,V15",PlayerController; ChaseCamera,,NOT RUN
+R07,2,Mandatory,"03,09",V03,GameplayLoop; PlayerController,,NOT RUN
+R08,2,Mandatory,"04,05",V05,RoadManager; RoadSegment,,NOT RUN
+R09,2,Mandatory,"04,05","V05,V06",RoadManager; PoolService,,NOT RUN
+R10,2,Mandatory,03,"V02,V03",InputRouter; Runner.inputactions,,NOT RUN
+R11,2,Mandatory; explicit section zero-mark risk,"01,03,14,15",V02,InputRouter; EventSystem,,NOT RUN
+R12,2,Mandatory,"02,08,14","V09,V14",RunSession; HudPresenter,,NOT RUN
+R13,2,Mandatory,"06,08","V08,V09",InteractionSensor; PlayerSurvival,,NOT RUN
+R14,2,Mandatory; examples are alternatives,"08,10,12","V09,V17",VehicleVisuals; ChaseCamera; VfxController,,NOT RUN
+R15,2,Mandatory,"02,08",V10,GameManager; PlayerSurvival,,NOT RUN
+R16,2,Mandatory,08,"V10,V12",PlayerSurvival; RunSession,,NOT RUN
+R17,2,Mandatory,"07,08","V07,V10",FuelCan; PlayerSurvival,,NOT RUN
+R18,3,Mandatory,08,V10,GameManager; PlayerSurvival,,NOT RUN
+R19,3,Mandatory,14,V14,HudPresenter,,NOT RUN
+R20,2,Mandatory,"07,09","V07,V11",Coin; ProgressionSystem,,NOT RUN
+R21,3,Mandatory,09,V11,ProgressionSystem; SpawnDirector,,NOT RUN
+R22,3,Mandatory,"04,05,06,07",V06,PoolService; PooledObject; RoadSegment; Interactable,,NOT RUN
+R23,3,Mandatory,"04,12,15","V06,V20",PoolService; VfxController,,NOT RUN
+R24,3,Mandatory,06,V08,StationaryCar; MovingCar,,NOT RUN
+R25,3,Mandatory,07,V07,Coin; FuelCan,,NOT RUN
+R26,3,Mandatory,"06,07,15","V08,V21",Interactable; StationaryCar; MovingCar; Coin; FuelCan,,NOT RUN
+R27,3,Mandatory,02,"V04,V12,V13",GameManager; GameState,,NOT RUN
+R28,3,Explicitly graded; no numeric rubric supplied,"10,11,12,13,14,15","V16,V17,V18,V19",Art direction; presentation systems,,NOT RUN
+R29,3,Mandatory within graded art section,11,V16,Lighting setup,,NOT RUN
+R30,3,Mandatory within graded art section,11,V16,Skybox material; RoadManager,,NOT RUN
+R31,3,Mandatory within graded art section,11,V16,URP settings; lighting prefabs,,NOT RUN
+R32,3,Mandatory within graded art section,11,V16,Player prefab; VehicleVisuals,,NOT RUN
+R33,3,Mandatory within graded art section,11,V16,VehicleVisuals,,NOT RUN
+R34,3,Mandatory within graded art section,11,V16,VehicleVisuals; RunSession,,NOT RUN
+R35,3,"Recommended, not stated mandatory",11,V16,RoadSegment prefabs,,NOT RUN
+R36,3,Mandatory within graded art section,12,V17,FireworkDirector; VfxController,,NOT RUN
+R37,4,Mandatory within graded art section,12,V17,VehicleVisuals; player prefab,,NOT RUN
+R38,4,Mandatory within graded art section,12,V17,VfxController; PooledVfx,,NOT RUN
+R39,4,Mandatory within graded art section,"07,12",V17,VfxController; PooledVfx,,NOT RUN
+R40,4,Mandatory; pipeline wording requires interpretation,"01,12",V17,GlobalVolume; URP settings,,NOT RUN
+R41,4,Mandatory,13,V18,AudioController; AudioConfig,,NOT RUN
+R42,4,Mandatory,13,V18,AudioController,,NOT RUN
+R43,4,Mandatory,13,V18,AudioController,,NOT RUN
+R44,4,Mandatory,13,V18,AudioController,,NOT RUN
+R45,4,Mandatory,14,V19,MenuPresenter,,NOT RUN
+R46,4,Mandatory,"02,14","V12,V19",MenuPresenter; InputRouter,,NOT RUN
+R47,4,Mandatory,14,V19,MenuPresenter,,NOT RUN
+R48,4,Mandatory,"09,14",V14,HudPresenter; RunSession,,NOT RUN
+R49,4,Mandatory,09,V11,HighScoreStore; ProgressionSystem,,NOT RUN
+R50,5,Mandatory,"01,16",V22,Repository; delivery checklist,,NOT RUN
+R51,5,Mandatory,16,V23,Delivery checklist,,NOT RUN
+R52,5,Mandatory,"01,16",V22,source/assignment.gitignore; root .gitignore,,NOT RUN
+R53,5,Mandatory,16,V23,BuildDelivery; Build Profile,,NOT RUN
+R54,5,Mandatory,16,V24,Implementation report,,NOT RUN

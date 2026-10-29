@@ -1,0 +1,40 @@
+{
+  "success": true,
+  "command": "command build",
+  "data": {
+    "command": "build",
+    "parameters": {
+      "name": "LinuxDevelopment",
+      "platform": "cb423bfea44b4d658edb8bc5d91a3024",
+      "folder": "Assets/NeonTunnelRunner/Settings/BuildProfiles"
+    },
+    "result": {
+      "success": true,
+      "dryRun": false,
+      "assetPath": "Assets/NeonTunnelRunner/Settings/BuildProfiles/LinuxDevelopment.asset",
+      "platform": {
+        "displayName": "Linux",
+        "id": "cb423bfea44b4d658edb8bc5d91a3024",
+        "buildTarget": "StandaloneLinux64",
+        "subtarget": "Player",
+        "isInstalled": true,
+        "isDerived": false
+      },
+      "profile": {
+        "name": "LinuxDevelopment",
+        "guid": "47aeeb67af0a132778b4fc9e71c9cf83",
+        "platform": "StandaloneLinux64",
+        "isActive": false
+      },
+      "activated": false,
+      "message": "Created the 'Linux' Build Profile at 'Assets/NeonTunnelRunner/Settings/BuildProfiles/LinuxDevelopment.asset'."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

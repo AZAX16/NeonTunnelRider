@@ -1,0 +1,99 @@
+[
+  {
+    "name": "direction-a-retro-vector",
+    "target": "art/concepts/direction-a-retro-vector.png",
+    "prompt": "Create an original videogame concept reference for Neon Tunnel Runner. Landscape EXACT 16:9 composition. Third-person chase camera behind and slightly above a spaceship-inspired hovercar on a road, not flying. Exactly THREE road lanes, with TWO interior lane divider lines and outer road edges, unambiguous. Player in center foreground, visible rear and road ahead, right-lane orange obstacle car, left-lane gold coins and green fuel-can pickup; a clear route. Night sky visible through an opening beyond a tunnel, small distant fireworks, headlights, underglow, thruster particles, controlled Bloom; readable silhouettes. No copyrighted logos, franchise assets, extra lanes or text. Image is a concept, not a Unity capture. Style: Retro Vector Arcade: late-1980s angular low-poly geometry with modern controlled URP-like light. Ink-blue #070B22, cyan #35E6FF lane edges, magenta #FF4AC8 arches, violet #8B5CFF. Original wide wedge hovercar, dark indigo body, split nose, narrow cyan windscreen, two rectangular magenta rear thrusters. Bold octagonal tunnel arches, sparse abstract skyline.",
+    "reference": null,
+    "purpose": "Concept reference, not Unity asset",
+    "tool": "built-in image generation"
+  },
+  {
+    "name": "direction-b-cyberpunk",
+    "target": "art/concepts/direction-b-cyberpunk.png",
+    "prompt": "Create an original videogame concept reference for Neon Tunnel Runner. Landscape EXACT 16:9 composition. Third-person chase camera behind and slightly above a spaceship-inspired hovercar on a road, not flying. Exactly THREE road lanes, with TWO interior lane divider lines and outer road edges, unambiguous. Player in center foreground, visible rear and road ahead, right-lane orange obstacle car, left-lane gold coins and green fuel-can pickup; a clear route. Night sky visible through an opening beyond a tunnel, small distant fireworks, headlights, underglow, thruster particles, controlled Bloom; readable silhouettes. No copyrighted logos, franchise assets, extra lanes or text. Image is a concept, not a Unity capture. Style: Cyberpunk Neon Highway: layered midnight megacity, rain-slick charcoal road with restrained reflections, sophisticated graphite hovercar with blue and pink trails, glass towers and illuminated blank signs. Blue #34BFFF, pink #FF61C7, dark teal #07181F. Atmospheric yet clearly three lanes and legible obstacles. Small fireworks beyond the tunnel.",
+    "reference": null,
+    "purpose": "Concept reference, not Unity asset",
+    "tool": "built-in image generation"
+  },
+  {
+    "name": "direction-c-industrial",
+    "target": "art/concepts/direction-c-industrial.png",
+    "prompt": "Create an original videogame concept reference for Neon Tunnel Runner. Landscape EXACT 16:9 composition. Third-person chase camera behind and slightly above a spaceship-inspired hovercar on a road, not flying. Exactly THREE road lanes, with TWO interior lane divider lines and outer road edges, unambiguous. Player in center foreground, visible rear and road ahead, right-lane orange obstacle car, left-lane gold coins and green fuel-can pickup; a clear route. Night sky visible through an opening beyond a tunnel, small distant fireworks, headlights, underglow, thruster particles, controlled Bloom; readable silhouettes. No copyrighted logos, franchise assets, extra lanes or text. Image is a concept, not a Unity capture. Style: Sci-Fi Industrial Tunnel: enormous gunmetal ribbed tunnel, repeating mechanical arches, orange #FF9D3D and cyan #44DDE8 warning lights, black utilitarian wedge hovercar, luminous cyan energy core. An open ceiling/exit reveals cloudy night and small fireworks. Dry hard-surface metal, sparse hazard stripes, strong road readability.",
+    "reference": null,
+    "purpose": "Concept reference, not Unity asset",
+    "tool": "built-in image generation"
+  },
+  {
+    "name": "selected-gameplay",
+    "target": "art/concepts/selected-gameplay.png",
+    "prompt": "Use the supplied image as a STYLE reference for an original game, Neon Tunnel Runner. Keep its low-poly faceted Retro Vector Arcade identity: ink-blue #070B22, cyan #35E6FF, magenta #FF4AC8, violet #8B5CFF, restrained modern bloom. The player is the same compact dark-indigo wedge hovercar, split nose, cyan narrow windscreen, two rectangular magenta rear thrusters, no wings or weapons. No franchise logos. This is concept art for later modeling/UI implementation, not a real game capture. stylized-concept. Make a polished 16:9 gameplay screenshot concept, chase camera behind and above the vehicle, EXACTLY 3 straight road lanes with two internal dividers. Tunnel entrance around camera, open night city beyond, stars and small distant fireworks, overhead geometric arches. Orange traffic in right lane, gold ring coins left, a green fuel can farther ahead in center, visible headlights and cyan underglow. No UI, no text. Clear player silhouette and decision horizon. Straight road only.",
+    "reference": "art/concepts/direction-a-retro-vector.png",
+    "purpose": "Concept reference, not Unity asset",
+    "tool": "built-in image generation"
+  },
+  {
+    "name": "player-design-sheet",
+    "target": "art/concepts/player-design-sheet.png",
+    "prompt": "Use the supplied image as a STYLE reference for an original game, Neon Tunnel Runner. Keep its low-poly faceted Retro Vector Arcade identity: ink-blue #070B22, cyan #35E6FF, magenta #FF4AC8, violet #8B5CFF, restrained modern bloom. The player is the same compact dark-indigo wedge hovercar, split nose, cyan narrow windscreen, two rectangular magenta rear thrusters, no wings or weapons. No franchise logos. This is concept art for later modeling/UI implementation, not a real game capture. stylized-concept. Wide landscape design sheet of the SAME hovercar in four separate views: orthographic front, side, rear, and three-quarter. Clean neutral dark-blue studio background, soft pools of light, ample separation. Front two white headlights; rear exactly two rectangular magenta exhausts. Cyan underbody. Wheels absent but low road hovercraft proportions. No extra greebles. View labels FRONT / SIDE / REAR / THREE-QUARTER. Consistent geometry across views. No measurements.",
+    "reference": "art/concepts/direction-a-retro-vector.png",
+    "purpose": "Concept reference, not Unity asset",
+    "tool": "built-in image generation"
+  },
+  {
+    "name": "environment-moodboard",
+    "target": "art/concepts/environment-moodboard.png",
+    "prompt": "Use the supplied image as a STYLE reference for an original game, Neon Tunnel Runner. Keep its low-poly faceted Retro Vector Arcade identity: ink-blue #070B22, cyan #35E6FF, magenta #FF4AC8, violet #8B5CFF, restrained modern bloom. The player is the same compact dark-indigo wedge hovercar, split nose, cyan narrow windscreen, two rectangular magenta rear thrusters, no wings or weapons. No franchise logos. This is concept art for later modeling/UI implementation, not a real game capture. stylized-concept. 16:9 environment moodboard with four clearly separated panels: straight three-lane open starry-night highway; geometric octagonal enclosed tunnel; a transition portal; reusable arch and streetlight forms. Dark ink road, cyan dividers, magenta architecture. Use sparse geometric city silhouettes, small high fireworks only in open view. Include at least one actual rear-camera road view, no fantasy free-flight. Production achievable with modular low-poly shapes.",
+    "reference": "art/concepts/direction-a-retro-vector.png",
+    "purpose": "Concept reference, not Unity asset",
+    "tool": "built-in image generation"
+  },
+  {
+    "name": "obstacle-designs",
+    "target": "art/concepts/obstacle-designs.png",
+    "prompt": "Use the supplied image as a STYLE reference for an original game, Neon Tunnel Runner. Keep its low-poly faceted Retro Vector Arcade identity: ink-blue #070B22, cyan #35E6FF, magenta #FF4AC8, violet #8B5CFF, restrained modern bloom. The player is the same compact dark-indigo wedge hovercar, split nose, cyan narrow windscreen, two rectangular magenta rear thrusters, no wings or weapons. No franchise logos. This is concept art for later modeling/UI implementation, not a real game capture. stylized-concept. Landscape vehicle design reference sheet, two rows. Row one: a bulky angular parked orange road car with hazard strips, rear three-quarter and side. Row two: a narrow red-orange moving traffic car with two thin amber tail lights, rear three-quarter and side. Same low-poly geometry family as style reference, but clear distinct silhouette from player. Original cars, no logos, no license text, no guns. Dark neutral backdrop. Small labels STATIONARY / MOVING.",
+    "reference": "art/concepts/direction-a-retro-vector.png",
+    "purpose": "Concept reference, not Unity asset",
+    "tool": "built-in image generation"
+  },
+  {
+    "name": "pickup-designs",
+    "target": "art/concepts/pickup-designs.png",
+    "prompt": "Use the supplied image as a STYLE reference for an original game, Neon Tunnel Runner. Keep its low-poly faceted Retro Vector Arcade identity: ink-blue #070B22, cyan #35E6FF, magenta #FF4AC8, violet #8B5CFF, restrained modern bloom. The player is the same compact dark-indigo wedge hovercar, split nose, cyan narrow windscreen, two rectangular magenta rear thrusters, no wings or weapons. No franchise logos. This is concept art for later modeling/UI implementation, not a real game capture. stylized-concept. Landscape pickup design reference sheet. On left show a thick faceted GOLD RING coin with unmistakable hole, front and three-quarter; on right show a GREEN FUEL CAN with handle, cap, indented X panel, front and three-quarter. Floating slightly over dark neutral floor, warm gold #FFD76A and mint #69F5A9 emission, modest bloom. Chunky simple low-poly objects, no logos. Labels COIN and FUEL. Space between views.",
+    "reference": "art/concepts/direction-a-retro-vector.png",
+    "purpose": "Concept reference, not Unity asset",
+    "tool": "built-in image generation"
+  },
+  {
+    "name": "main-menu",
+    "target": "art/ui-concepts/main-menu.png",
+    "prompt": "Use the supplied image as a STYLE reference for an original game, Neon Tunnel Runner. Keep its low-poly faceted Retro Vector Arcade identity: ink-blue #070B22, cyan #35E6FF, magenta #FF4AC8, violet #8B5CFF, restrained modern bloom. The player is the same compact dark-indigo wedge hovercar, split nose, cyan narrow windscreen, two rectangular magenta rear thrusters, no wings or weapons. No franchise logos. This is concept art for later modeling/UI implementation, not a real game capture. ui-mockup. 16:9 main menu concept. Dark angular tunnel and the style-reference hovercar behind the UI, quieter dark central area, magenta/cyan framing with generous empty space. Exact title NEON TUNNEL RUNNER, two clear readable large buttons START and QUIT. Smaller control hint A / D OR ARROW KEYS. Modern bold geometric sans typography, high-contrast pale text. No other menus or fake statistics. Buildable with Unity uGUI.",
+    "reference": "art/concepts/direction-a-retro-vector.png",
+    "purpose": "Concept reference, not Unity asset",
+    "tool": "built-in image generation"
+  },
+  {
+    "name": "hud-mockup",
+    "target": "art/ui-concepts/hud-mockup.png",
+    "prompt": "Use the supplied image as a STYLE reference for an original game, Neon Tunnel Runner. Keep its low-poly faceted Retro Vector Arcade identity: ink-blue #070B22, cyan #35E6FF, magenta #FF4AC8, violet #8B5CFF, restrained modern bloom. The player is the same compact dark-indigo wedge hovercar, split nose, cyan narrow windscreen, two rectangular magenta rear thrusters, no wings or weapons. No franchise logos. This is concept art for later modeling/UI implementation, not a real game capture. ui-mockup. 16:9 active gameplay HUD mockup. Behind it a straight EXACTLY three-lane night highway with rear-facing player hovercar and clear threat horizon. Put all FIVE required values in readable HUD: top left SCORE 024800 and BEST 031200; top right LIVES with THREE clearly separated heart icons and 3; bottom left SPEED 144 km/h; bottom right FUEL 68% with a horizontal bar filled around two-thirds. Preserve central road visibility. Bold off-white typography, dark translucent backing, gold score accent, cyan speed, green fuel. No extra stats. Text must be exact.",
+    "reference": "art/concepts/direction-a-retro-vector.png",
+    "purpose": "Concept reference, not Unity asset",
+    "tool": "built-in image generation"
+  },
+  {
+    "name": "game-over",
+    "target": "art/ui-concepts/game-over.png",
+    "prompt": "Use the supplied image as a STYLE reference for an original game, Neon Tunnel Runner. Keep its low-poly faceted Retro Vector Arcade identity: ink-blue #070B22, cyan #35E6FF, magenta #FF4AC8, violet #8B5CFF, restrained modern bloom. The player is the same compact dark-indigo wedge hovercar, split nose, cyan narrow windscreen, two rectangular magenta rear thrusters, no wings or weapons. No franchise logos. This is concept art for later modeling/UI implementation, not a real game capture. ui-mockup. 16:9 game over screen concept, frozen low-poly neon highway and rear of player dimmed behind central panel. Exact text GAME OVER, SCORE 024800, BEST 031200, FUEL EMPTY and a large RESTART button. Small supporting instruction ENTER TO RESTART. Crisp bold pale typography, magenta title rule, cyan focus border, dark opaque panel, readable. No extra buttons required. Original and achievable Unity uGUI layout.",
+    "reference": "art/concepts/direction-a-retro-vector.png",
+    "purpose": "Concept reference, not Unity asset",
+    "tool": "built-in image generation"
+  },
+  {
+    "name": "vfx-reference-sheet",
+    "target": "art/concepts/vfx-reference-sheet.png",
+    "prompt": "Use the supplied image as a STYLE reference for an original game, Neon Tunnel Runner. Keep its low-poly faceted Retro Vector Arcade identity: ink-blue #070B22, cyan #35E6FF, magenta #FF4AC8, violet #8B5CFF, restrained modern bloom. The player is the same compact dark-indigo wedge hovercar, split nose, cyan narrow windscreen, two rectangular magenta rear thrusters, no wings or weapons. No franchise logos. This is concept art for later modeling/UI implementation, not a real game capture. stylized-concept. Landscape visual VFX reference sheet in four separated panels, labeled THRUSTERS, COLLISION SPARKS, UNDERGLOW, FIREWORKS. Show two rectangular magenta flame/exhaust jets with a small blue smoke wisp; a compact white-orange impact spark burst near a car bumper; cyan pool of underbody light beneath the low-poly player shown side-on with small bright and dim examples; colorful radial fireworks launched high in a starry sky. Restrained bloom. Isolated effects on ink-blue background, visually consistent, no technical measurements or diagrams.",
+    "reference": "art/concepts/direction-a-retro-vector.png",
+    "purpose": "Concept reference, not Unity asset",
+    "tool": "built-in image generation",
+    "final_revision": "Edit this VFX reference sheet. Change ONLY the top-right COLLISION SPARKS panel: replace the gold ring on the right with the bumper/body corner of an orange low-poly obstacle CAR, so sparks unambiguously depict a collision between the player hovercar and an obstacle car. Do not show a collectible in that panel. Preserve the THRUSTERS, UNDERGLOW, FIREWORKS panels, all text, composition, colors, the cyan/magenta Retro Vector style and aspect ratio exactly. No other edits."
+  }
+]

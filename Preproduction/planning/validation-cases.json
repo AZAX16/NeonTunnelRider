@@ -1,0 +1,177 @@
+[
+  {
+    "id": "V01",
+    "method": "Manual / editor",
+    "procedure": "Create and reopen Unity URP project; verify Console and standalone 3D graybox.",
+    "pass": "No compile errors; recorded Editor/package versions and working scene.",
+    "tasks": "01,15"
+  },
+  {
+    "id": "V02",
+    "method": "EditMode + PlayMode + manual",
+    "procedure": "InputTestFixture presses/releases A,D,LeftArrow,RightArrow; test System/Pause and UI mouse, navigation, Submit, Cancel at paused timeScale; search sources/settings.",
+    "pass": "Every binding changes exactly one lane per press; legacy Input/GetKey/GetAxis/OnGUI input absent; New-only setting and all actions/maps wired.",
+    "tasks": "03,14,15"
+  },
+  {
+    "id": "V03",
+    "method": "EditMode + PlayMode",
+    "procedure": "100 alternating and repeated edge commands, simultaneous left/right, queued opposite input, hold key; run 60 playing seconds.",
+    "pass": "Indices always -1..1, target x -3.2/0/3.2; hold never auto-repeats; continuous forward progress only in Playing.",
+    "tasks": "03,15"
+  },
+  {
+    "id": "V04",
+    "method": "EditMode + PlayMode",
+    "procedure": "Enumerate transition table, duplicate singleton and duplicate commands; exit Play Mode while paused.",
+    "pass": "Exactly one owner; illegal transitions no-op; state event once; Time.timeScale restored on destroy.",
+    "tasks": "02,15"
+  },
+  {
+    "id": "V05",
+    "method": "PlayMode + visual",
+    "procedure": "Travel equivalent 100 km with deterministic stepping; inspect seams at ordinary and origin-shift ticks; 30-minute visible soak.",
+    "pass": "Adjacent endpoints differ <0.001 m; >=300 m road ahead, no visible gaps or holes; local positions bounded; distance monotonic.",
+    "tasks": "05,15"
+  },
+  {
+    "id": "V06",
+    "method": "PlayMode + Profiler",
+    "procedure": "Rent/return each key 1,000 times; exhaust all pools; restart 50 times; inspect identity and counters.",
+    "pass": "Every instance reused, clean flags/colliders/particles; no double-return; no Playing Instantiate/Destroy; bounded active counts; exhaustion policy safe.",
+    "tasks": "04,15"
+  },
+  {
+    "id": "V07",
+    "method": "EditMode + PlayMode",
+    "procedure": "Collect coin and fuel, stay overlapping and duplicate delivery, re-rent same object, collect while full.",
+    "pass": "Exactly +100 score / +30 fuel (clamped) per activation; pooling restores usability; feedback exactly once even when full.",
+    "tasks": "07,15"
+  },
+  {
+    "id": "V08",
+    "method": "EditMode + PlayMode",
+    "procedure": "Inspect inheritance; run stationary and moving cars; test swept box at 22 and 50 m/s, lane crossing, thin pickup, initial overlap and two moving bodies.",
+    "pass": "All four types derive abstract Interactable and override virtual methods; stationary z constant before rebase; moving +8 m/s; every crossing detected once.",
+    "tasks": "06,15"
+  },
+  {
+    "id": "V09",
+    "method": "PlayMode + visual",
+    "procedure": "Hit a car, overlap for >1 s, hit a new car within grace, then another after grace.",
+    "pass": "Lives 3\u21922 on first contact; consumed collision cannot damage twice; grace blocks new damage; next eligible collision removes exactly one; flash/sparks visible.",
+    "tasks": "08,15"
+  },
+  {
+    "id": "V10",
+    "method": "EditMode + PlayMode",
+    "procedure": "Fuel drains 100\u21920 in 50 playing seconds without pickup; refuel at 95; test life zero, fuel zero, both same tick and fuel arrival on depletion tick.",
+    "pass": "Fuel max100; each death path one GameOver event; Lives reason wins ties; contact/refuel before end-of-tick drain allows rescue; no changes after death.",
+    "tasks": "08,15"
+  },
+  {
+    "id": "V11",
+    "method": "EditMode + standalone",
+    "procedure": "Evaluate difficulty at time/distance endpoints; collect coins; set best, quit process and relaunch.",
+    "pass": "Speed and expected blocked slots nondecreasing to cap; score floor(distance)+100*coins; best=max(old,current), survives process exit; no Save every frame.",
+    "tasks": "09,15"
+  },
+  {
+    "id": "V12",
+    "method": "PlayMode + manual",
+    "procedure": "Pause for 10 wall-clock seconds while in lane transition and near pickup; resume with buttons/Escape.",
+    "pass": "Distance, fuel, grace timers, traffic and fireworks unchanged; gameplay input queue cleared; UI responsive; no engine loop during pause.",
+    "tasks": "02,14,15"
+  },
+  {
+    "id": "V13",
+    "method": "PlayMode",
+    "procedure": "50 restarts from pause and GameOver; compare initial snapshot, active counts, callbacks and road layout.",
+    "pass": "Center lane, lives3, fuel100, score0, elapsed/distance0, speed22, no stale contacts/VFX/voices, same seed schedule; best preserved.",
+    "tasks": "02,15"
+  },
+  {
+    "id": "V14",
+    "method": "PlayMode + visual",
+    "procedure": "Compare snapshot to five HUD fields at 720p/1080p and 4:3/21:9.",
+    "pass": "All values agree (speed\u00d73.6 displayed in km/h); fuel fill=value/100; no clipping; updated on panel enable.",
+    "tasks": "14,15"
+  },
+  {
+    "id": "V15",
+    "method": "Manual / visual",
+    "procedure": "Inspect rear camera in all lanes, tunnel entries, moving and paused; trigger rebase and damage.",
+    "pass": "Car and \u2265120 m threat horizon visible; camera behind/above; no shake/rebase jump; roll does not alter collider.",
+    "tasks": "10,15"
+  },
+  {
+    "id": "V16",
+    "method": "Manual + PlayMode",
+    "procedure": "Inspect sky/road/headlights; force measured speed22 then50, pause/resume, render fixed exposure comparison.",
+    "pass": "Night sky visible on open sections; lit road and headlights; underglow light/emission monotone with actual speed; no exposure washout; streetlights visible.",
+    "tasks": "11,15"
+  },
+  {
+    "id": "V17",
+    "method": "Manual + Profiler",
+    "procedure": "Capture exhaust, spark, both pickup bursts, and open-sky launch/burst fireworks; toggle Bloom; pause mid-effect.",
+    "pass": "All ParticleSystems present; fireworks visible within first open section; Bloom visibly affects emissives without hiding lanes; effects freeze/resume and return to pool.",
+    "tasks": "12,15"
+  },
+  {
+    "id": "V18",
+    "method": "Manual / standalone",
+    "procedure": "Listen to music, engine, collision, coin and fuel; pause/restart repeatedly, saturate voice pool.",
+    "pass": "Five cues audible, distinct pickups, engine speed response, no duplicated loops/clipping; correct mute/resume and bounded voices.",
+    "tasks": "13,15"
+  },
+  {
+    "id": "V19",
+    "method": "Manual / standalone",
+    "procedure": "Exercise every required menu button with pointer and keyboard, including Quit in executable.",
+    "pass": "Main: Start/Quit; Pause: Resume/Restart/Main Menu; Over: score/best/Restart; correct focus and no double action on Escape.",
+    "tasks": "14,16"
+  },
+  {
+    "id": "V20",
+    "method": "Profiler / performance",
+    "procedure": "Record hardware; profile 10 minutes at 1080p after warmup at maximum density, then 30-minute soak.",
+    "pass": "Target60 fps (p95\u226416.7 ms) on declared PC; zero steady-state gameplay-script GC.Alloc; no pool growth; memory stable within10% after warmup. Targets are project budgets, not PDF grading thresholds.",
+    "tasks": "15"
+  },
+  {
+    "id": "V21",
+    "method": "Static audit + seed tests",
+    "procedure": "Audit all R rows and test 1,000 seeds, maximum difficulty and 30-minute schedules using the corridor validator.",
+    "pass": "Every required row has evidence; every generated block has a reachable protected route; moving traffic cannot enter it; pickups reachable; same seed gives same schedule.",
+    "tasks": "15"
+  },
+  {
+    "id": "V22",
+    "method": "Repository / fresh clone",
+    "procedure": "Compare assignment.gitignore hash with project root; run git check-ignore and fresh-clone import.",
+    "pass": "Exact supplied .gitignore preserved; Library/Temp/Obj/Builds ignored; Assets/meta, Packages and ProjectSettings present; no missing GUID references.",
+    "tasks": "01,16"
+  },
+  {
+    "id": "V23",
+    "method": "Manual / delivery",
+    "procedure": "Extract submission to a new path on target OS; launch full build; open repository link from a second session.",
+    "pass": "Executable and its data/dependencies work; accessible exact Git URL provided; no Editor needed.",
+    "tasks": "16"
+  },
+  {
+    "id": "V24",
+    "method": "Document review",
+    "procedure": "Inspect final short report, screenshots, sources and credits.",
+    "pass": "Architecture explained; real runtime images for each visual cluster; collaborators and exact source addresses credited; AI use disclosed honestly.",
+    "tasks": "16"
+  },
+  {
+    "id": "V25",
+    "method": "Archive / upload",
+    "procedure": "Validate naming, zipfile.testzip CRC, extract, compare SHA-256 to re-downloaded course ZIP and run extracted build.",
+    "pass": "Three identity fields resolved, all delivery files present, no corruption; post-upload download verified by student.",
+    "tasks": "16"
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "ignore": {
+    "rootSha256": "c735b75517ecf18563ce4bf269eb4fe158a5539f7d554823578a85eaec795f45",
+    "sourceSha256": "c735b75517ecf18563ce4bf269eb4fe158a5539f7d554823578a85eaec795f45",
+    "equal": true,
+    "checkIgnoreExitCode": 0,
+    "output": [
+      ".gitignore:5:/[Ll]ibrary/\tLibrary/probe",
+      ".gitignore:6:/[Tt]emp/\tTemp/probe",
+      ".gitignore:7:/[Oo]bj/\tObj/probe",
+      ".gitignore:9:/[Bb]uilds/\tBuilds/probe",
+      ".git/info/exclude:9:/NeonTunnelRunner.slnx\tNeonTunnelRunner.slnx"
+    ]
+  },
+  "missingOriginalGuids": [],
+  "duplicateGuids": {},
+  "missingMetas": [],
+  "preservedFilesChecked": 86,
+  "changedPreservedFiles": [],
+  "manifestDelta": {
+    "com.unity.pipeline": {
+      "before": null,
+      "after": "0.9.1-exp.1"
+    }
+  },
+  "originalGuidCount": 23,
+  "currentGuidCount": 74
+}

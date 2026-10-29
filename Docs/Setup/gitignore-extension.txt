@@ -1,0 +1,2 @@
+# Optional generated-file exclusions, separate from the exact assignment .gitignore.
+/NeonTunnelRunner.slnx
