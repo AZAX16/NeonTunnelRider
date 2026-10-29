@@ -159,6 +159,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 80797672}
+  - component: {fileID: 80797674}
+  - component: {fileID: 80797673}
   m_Layer: 0
   m_Name: Systems
   m_TagString: Untagged
@@ -181,6 +183,35 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &80797673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80797671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d374310dfbcff34f7868f86ff798f3b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NeonTunnelRunner.Runtime::NeonTunnelRunner.GameManager
+  gameplayConfig: {fileID: 11400000, guid: 50e71278e264ab6f3b9bd533f16b2e30, type: 2}
+  gameplayLoop: {fileID: 80797674}
+  runSeed: 12345
+  initialBestScore: 0
+--- !u!114 &80797674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80797671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a890f516a1bde8a62b5d9b0ebacca173, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NeonTunnelRunner.Runtime::NeonTunnelRunner.GameplayLoop
+  gameManager: {fileID: 80797673}
 --- !u!1 &192598834
 GameObject:
   m_ObjectHideFlags: 0

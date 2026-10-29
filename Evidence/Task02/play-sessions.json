@@ -1,0 +1,76 @@
+{
+  "originalOptions": {
+    "playing": false,
+    "enabled": true,
+    "options": 3
+  },
+  "cycles": [
+    {
+      "reloadsEnabled": false,
+      "entry": {
+        "state": "Paused",
+        "runId": "4c4bcad7-251e-45aa-bd89-e7c6f82a5ebc",
+        "lives": 3,
+        "fuel": 100,
+        "timeScale": 0,
+        "scene": "Assets/NeonTunnelRunner/Scenes/Game.unity"
+      },
+      "exit": {
+        "playing": false,
+        "instanceClear": true,
+        "timeScale": 1
+      }
+    },
+    {
+      "reloadsEnabled": false,
+      "entry": {
+        "state": "Paused",
+        "runId": "b71eadf0-434b-41fd-9257-807aece7334a",
+        "lives": 3,
+        "fuel": 100,
+        "timeScale": 0,
+        "scene": "Assets/NeonTunnelRunner/Scenes/Game.unity"
+      },
+      "exit": {
+        "playing": false,
+        "instanceClear": true,
+        "timeScale": 1
+      }
+    },
+    {
+      "reloadsEnabled": true,
+      "entry": {
+        "state": "Paused",
+        "runId": "034da98b-b4d7-402b-a5ff-33cb9b2fb66c",
+        "lives": 3,
+        "fuel": 100,
+        "timeScale": 0,
+        "scene": "Assets/NeonTunnelRunner/Scenes/Game.unity"
+      },
+      "exit": {
+        "playing": false,
+        "instanceClear": true,
+        "timeScale": 1
+      }
+    },
+    {
+      "reloadsEnabled": true,
+      "entry": {
+        "state": "Paused",
+        "runId": "7da9bff0-93fd-4a7e-83e8-5c5463b62256",
+        "lives": 3,
+        "fuel": 100,
+        "timeScale": 0,
+        "scene": "Assets/NeonTunnelRunner/Scenes/Game.unity"
+      },
+      "exit": {
+        "playing": false,
+        "instanceClear": true,
+        "timeScale": 1
+      }
+    }
+  ],
+  "passed": true,
+  "configBeforeSha256": "6806f58c5028fbd67a4f729578dbf2f4ba79f52dcc2a7a16fbe2d21827d02d0c",
+  "configAfterSha256": "6806f58c5028fbd67a4f729578dbf2f4ba79f52dcc2a7a16fbe2d21827d02d0c"
+}

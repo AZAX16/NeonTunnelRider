@@ -12,7 +12,7 @@ using UnityEngine.SceneManagement;
 
 namespace NeonTunnelRunner
 {
-    /// <summary>Read-only foundation checks. Gameplay wiring is added in later tasks.</summary>
+    /// <summary>Read-only foundation and currently implemented core wiring checks.</summary>
     public static class ProjectSetupValidator
     {
         public const string Root = "Assets/NeonTunnelRunner";
@@ -55,7 +55,7 @@ namespace NeonTunnelRunner
             if (File.Exists(GameScene)) CheckScene(errors);
             else errors.Add("Missing scene: " + GameScene);
             if (errors.Count > 0) throw new BuildFailedException("Project setup failed:\n" + string.Join("\n", errors));
-            Debug.Log("[ProjectSetupValidator] PASS: Editor, folders, serialization, input setting, URP/HDR, Linux profile and scene references.");
+            Debug.Log("[ProjectSetupValidator] PASS: foundation, URP/HDR, Linux profile, scene references and core lifecycle wiring.");
         }
 
         // Direct Editor batchmode entry; never quits an interactive Editor.
@@ -100,6 +100,7 @@ namespace NeonTunnelRunner
                 foreach (string name in new[] { "Systems", "World", "Presentation", "UI" })
                     Require(roots.Count(r => r.name == name) == 1, "Require one scene root: " + name, errors);
                 var objects = roots.SelectMany(r => r.GetComponentsInChildren<Transform>(true)).Select(t => t.gameObject).ToArray();
+                CheckCore(objects, errors);
                 foreach (var go in objects)
                 {
                     Require(GameObjectUtility.GetMonoBehavioursWithMissingScriptCount(go) == 0, "Missing script on " + go.name, errors);
@@ -135,6 +136,29 @@ namespace NeonTunnelRunner
                 if (openedForValidation) EditorSceneManager.CloseScene(scene, true);
                 if (previousActive.IsValid() && previousActive.isLoaded) SceneManager.SetActiveScene(previousActive);
             }
+        }
+
+        private static void CheckCore(GameObject[] objects, List<string> errors)
+        {
+            var managers = objects.SelectMany(g => g.GetComponents<GameManager>()).ToArray();
+            var loops = objects.SelectMany(g => g.GetComponents<GameplayLoop>()).ToArray();
+            Require(managers.Length == 1 && loops.Length == 1, "Require exactly one GameManager and GameplayLoop.", errors);
+            if (managers.Length != 1 || loops.Length != 1) return;
+            var manager = managers[0];
+            var loop = loops[0];
+            Require(manager.gameObject.name == "Systems" && !manager.transform.parent && loop.gameObject == manager.gameObject,
+                "Place the core lifecycle components together on Systems.", errors);
+            Require(manager.enabled && loop.enabled && manager.gameObject.activeInHierarchy,
+                "Enable the Systems root and both core components.", errors);
+            Require(manager.Loop == loop && loop.Owner == manager, "Assign both directions of GameManager/GameplayLoop ownership.", errors);
+            var config = manager.Configuration;
+            Require(config && AssetDatabase.GetAssetPath(config) == Root + "/Configs/Gameplay.asset",
+                "Assign the project Gameplay.asset to GameManager.", errors);
+            if (!config) return;
+            Require(config.StartingLives == 3 && config.FuelCapacity == 100f, "New-run baseline is three lives and fuel 100.", errors);
+            Require(config.StartingSpeed >= 0f && config.MaximumSpeed >= config.StartingSpeed &&
+                config.StartingLane == 0 && config.LaneWidth > 0f && config.LaneTransitionDuration > 0f,
+                "Resolve invalid gameplay configuration defaults.", errors);
         }
 
         private static void Require(bool condition, string message, List<string> errors)

@@ -1,0 +1,47 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "file": "Docs/Setup/Task02Setup.cs",
+      "entry": "NeonTunnelRunner.Task02Setup.WireCore"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 2348,
+      "executeMs": 596,
+      "assemblyName": "PipelineRunScript_Task02Setup_bd0b49a28a91405293e5fe045f8bdff5",
+      "success": true,
+      "result": {
+        "scene": "Assets/NeonTunnelRunner/Scenes/Game.unity",
+        "sceneGuid": "2ff1f62cd218111b6af6f6ff50581601",
+        "systems": "Systems",
+        "config": "Assets/NeonTunnelRunner/Configs/Gameplay.asset",
+        "configGuid": "50e71278e264ab6f3b9bd533f16b2e30",
+        "managerCount": 1,
+        "loopCount": 1,
+        "managerReferencesLoop": true,
+        "loopReferencesManager": true,
+        "seed": 12345,
+        "initialBestScore": 0,
+        "defaults": {
+          "StartingLives": 3,
+          "FuelCapacity": 100,
+          "StartingSpeed": 22,
+          "MaximumSpeed": 50,
+          "StartingLane": 0,
+          "LaneWidth": 3.2,
+          "LaneTransitionDuration": 0.28
+        }
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

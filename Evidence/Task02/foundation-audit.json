@@ -1,0 +1,262 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "file": "Docs/Setup/Task01Audit.cs",
+      "entry": "NeonTunnelRunner.Task01Audit.Inspect"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 463,
+      "executeMs": 221,
+      "assemblyName": "PipelineRunScript_Task01Audit_0fcba60b412e4a53ad56c7445b0fa863",
+      "success": true,
+      "result": {
+        "unityVersion": "6000.6.3f1",
+        "compiling": false,
+        "compilationFailed": false,
+        "target": "StandaloneLinux64",
+        "linuxModuleInstalled": true,
+        "backend": "Mono2x",
+        "graphicsDevice": "Mesa Intel(R) UHD Graphics 620 (KBL GT2)",
+        "graphicsApi": "OpenGL 4.6 (Core Profile) Mesa 23.2.1-1ubuntu3.1~22.04.4",
+        "packages": [
+          {
+            "name": "com.unity.inputsystem",
+            "version": "1.20.0",
+            "source": "Registry"
+          },
+          {
+            "name": "com.unity.render-pipelines.universal",
+            "version": "17.6.0",
+            "source": "BuiltIn"
+          },
+          {
+            "name": "com.unity.test-framework",
+            "version": "1.8.0",
+            "source": "BuiltIn"
+          },
+          {
+            "name": "com.unity.ugui",
+            "version": "2.6.0",
+            "source": "BuiltIn"
+          },
+          {
+            "name": "com.unity.pipeline",
+            "version": "0.9.1-exp.1",
+            "source": "Registry"
+          },
+          {
+            "name": "com.unity.render-pipelines.core",
+            "version": "17.6.0",
+            "source": "BuiltIn"
+          }
+        ],
+        "pipeline": {
+          "asset": "Assets/NeonTunnelRunner/Settings/URP/PC_RPAsset.asset",
+          "renderer": "Assets/NeonTunnelRunner/Settings/URP/PC_Renderer.asset",
+          "renderingMode": "Forward",
+          "supportsHDR": true,
+          "drawer": "Disabled"
+        },
+        "quality": [
+          {
+            "name": "Mobile",
+            "asset": "Assets/NeonTunnelRunner/Settings/URP/Mobile_RPAsset.asset"
+          },
+          {
+            "name": "PC",
+            "asset": "Assets/NeonTunnelRunner/Settings/URP/PC_RPAsset.asset"
+          }
+        ],
+        "buildProfile": {
+          "name": "LinuxDevelopment",
+          "path": "Assets/NeonTunnelRunner/Settings/BuildProfiles/LinuxDevelopment.asset",
+          "scenes": [
+            "Assets/NeonTunnelRunner/Scenes/Game.unity"
+          ],
+          "development": true
+        },
+        "scene": {
+          "path": "Assets/NeonTunnelRunner/Scenes/Game.unity",
+          "isDirty": false,
+          "roots": [
+            "Systems",
+            "World",
+            "Presentation",
+            "UI"
+          ],
+          "objects": [
+            {
+              "name": "Systems",
+              "parent": null,
+              "position": "(0.000, 0.000, 0.000)",
+              "scale": "(1.000, 1.000, 1.000)"
+            },
+            {
+              "name": "World",
+              "parent": null,
+              "position": "(0.000, 0.000, 0.000)",
+              "scale": "(1.000, 1.000, 1.000)"
+            },
+            {
+              "name": "ReferenceRoad",
+              "parent": "World",
+              "position": "(0.000, 0.000, 0.000)",
+              "scale": "(1.000, 1.000, 1.000)"
+            },
+            {
+              "name": "Lane1",
+              "parent": "ReferenceRoad",
+              "position": "(-3.200, -0.100, 30.000)",
+              "scale": "(3.200, 0.200, 60.000)"
+            },
+            {
+              "name": "Lane2",
+              "parent": "ReferenceRoad",
+              "position": "(0.000, -0.100, 30.000)",
+              "scale": "(3.200, 0.200, 60.000)"
+            },
+            {
+              "name": "Lane3",
+              "parent": "ReferenceRoad",
+              "position": "(3.200, -0.100, 30.000)",
+              "scale": "(3.200, 0.200, 60.000)"
+            },
+            {
+              "name": "Marking-4.8",
+              "parent": "ReferenceRoad",
+              "position": "(-4.800, 0.012, 30.000)",
+              "scale": "(0.070, 0.020, 60.000)"
+            },
+            {
+              "name": "Marking-1.6",
+              "parent": "ReferenceRoad",
+              "position": "(-1.600, 0.012, 30.000)",
+              "scale": "(0.070, 0.020, 60.000)"
+            },
+            {
+              "name": "Marking1.6",
+              "parent": "ReferenceRoad",
+              "position": "(1.600, 0.012, 30.000)",
+              "scale": "(0.070, 0.020, 60.000)"
+            },
+            {
+              "name": "Marking4.8",
+              "parent": "ReferenceRoad",
+              "position": "(4.800, 0.012, 30.000)",
+              "scale": "(0.070, 0.020, 60.000)"
+            },
+            {
+              "name": "Presentation",
+              "parent": null,
+              "position": "(0.000, 0.000, 0.000)",
+              "scale": "(1.000, 1.000, 1.000)"
+            },
+            {
+              "name": "MainCamera",
+              "parent": "Presentation",
+              "position": "(0.000, 5.000, -10.000)",
+              "scale": "(1.000, 1.000, 1.000)"
+            },
+            {
+              "name": "ReferenceLight",
+              "parent": "Presentation",
+              "position": "(0.000, 0.000, 0.000)",
+              "scale": "(1.000, 1.000, 1.000)"
+            },
+            {
+              "name": "GlobalVolume",
+              "parent": "Presentation",
+              "position": "(0.000, 0.000, 0.000)",
+              "scale": "(1.000, 1.000, 1.000)"
+            },
+            {
+              "name": "UI",
+              "parent": null,
+              "position": "(0.000, 0.000, 0.000)",
+              "scale": "(1.000, 1.000, 1.000)"
+            }
+          ]
+        },
+        "camera": {
+          "allowHDR": true,
+          "fieldOfView": 60,
+          "nearClipPlane": 0.1,
+          "farClipPlane": 500,
+          "postProcessing": true,
+          "volumeMask": 1
+        },
+        "volume": {
+          "isGlobal": true,
+          "profile": "Assets/NeonTunnelRunner/Settings/Volumes/GlobalVolumeProfile.asset",
+          "overrides": 0,
+          "layer": 0
+        },
+        "editorAssemblies": [
+          {
+            "name": "NeonTunnelRunner.Runtime",
+            "references": [
+              "Unity.InputSystem",
+              "UnityEngine.UI",
+              "Unity.TextMeshPro",
+              "UnityEditor.UI"
+            ]
+          },
+          {
+            "name": "NeonTunnelRunner.EditModeTests",
+            "references": [
+              "NeonTunnelRunner.Runtime",
+              "UnityEngine.TestRunner",
+              "UnityEditor.TestRunner",
+              "UnityEditor.UI",
+              "UnityEngine.UI"
+            ]
+          },
+          {
+            "name": "NeonTunnelRunner.PlayModeTests",
+            "references": [
+              "NeonTunnelRunner.Runtime",
+              "UnityEngine.TestRunner",
+              "UnityEditor.TestRunner",
+              "UnityEditor.UI",
+              "UnityEngine.UI"
+            ]
+          },
+          {
+            "name": "NeonTunnelRunner.Editor",
+            "references": [
+              "NeonTunnelRunner.Runtime",
+              "Unity.RenderPipelines.Core.Runtime",
+              "Unity.RenderPipelines.Universal.Runtime",
+              "UnityEditor.UI",
+              "UnityEngine.UI",
+              "UnityEditor.TestRunner",
+              "UnityEngine.TestRunner"
+            ]
+          }
+        ],
+        "playerQuery": "PlayerWithoutTestAssemblies",
+        "playerAssemblies": [
+          {
+            "name": "NeonTunnelRunner.Runtime",
+            "references": [
+              "Unity.InputSystem",
+              "UnityEngine.UI",
+              "Unity.TextMeshPro"
+            ]
+          }
+        ]
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

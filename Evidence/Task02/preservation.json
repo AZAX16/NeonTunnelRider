@@ -1,0 +1,19 @@
+{
+  "baseCommit": "bcb8c8bea31cbea875b6e0dd579064149df06c2d",
+  "protectedFilesChecked": 115,
+  "changedProtectedFiles": [],
+  "missingMetas": [],
+  "duplicateGuids": {},
+  "assignmentIgnoreSha256": "c735b75517ecf18563ce4bf269eb4fe158a5539f7d554823578a85eaec795f45",
+  "suppliedIgnoreMatches": true,
+  "gameSceneGuid": "2ff1f62cd218111b6af6f6ff50581601",
+  "originalMetasChecked": 74,
+  "changedOriginalMetas": [],
+  "sceneChangedOriginalBlocks": [
+    "--- !u!1 &80797671"
+  ],
+  "sceneNewBlocks": [
+    "--- !u!114 &80797673",
+    "--- !u!114 &80797674"
+  ]
+}

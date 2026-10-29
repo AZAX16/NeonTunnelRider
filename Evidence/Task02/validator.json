@@ -1,0 +1,34 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "code": "NeonTunnelRunner.ProjectSetupValidator.ValidateProject(); var scene = UnityEngine.SceneManagement.SceneManager.GetActiveScene(); var m = UnityEngine.GameObject.Find(\"Systems\").GetComponent<NeonTunnelRunner.GameManager>(); return new { validator = \"PASS\", playing = UnityEditor.EditorApplication.isPlaying, compilationFailed = UnityEditor.EditorUtility.scriptCompilationFailed, timeScale = UnityEngine.Time.timeScale, instanceClear = NeonTunnelRunner.GameManager.Instance == null, sceneDirty = scene.isDirty, oneManager = UnityEngine.Object.FindObjectsByType<NeonTunnelRunner.GameManager>().Length == 1, wired = m.Loop.Owner == m, config = UnityEditor.AssetDatabase.GetAssetPath(m.Configuration), fixedDelta = UnityEngine.Time.fixedDeltaTime };"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "validator": "PASS",
+        "playing": false,
+        "compilationFailed": false,
+        "timeScale": 1,
+        "instanceClear": true,
+        "sceneDirty": false,
+        "oneManager": true,
+        "wired": true,
+        "config": "Assets/NeonTunnelRunner/Configs/Gameplay.asset",
+        "fixedDelta": 0.0199999921
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

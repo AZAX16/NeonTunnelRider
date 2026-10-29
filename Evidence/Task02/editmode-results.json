@@ -1,0 +1,301 @@
+{
+  "success": true,
+  "command": "command test",
+  "data": {
+    "command": "test",
+    "parameters": {},
+    "result": {
+      "status": "completed",
+      "duration": 0.21,
+      "summary": {
+        "total": 39,
+        "passed": 39,
+        "failed": 0,
+        "skipped": 0,
+        "inconclusive": 0
+      },
+      "results": [
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.EditorQuitLogsOnceWithoutChangingTheSession",
+          "Status": "Passed",
+          "Duration": 0.0266503,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.FirstTerminalResultIsRetained(Lives,Fuel)",
+          "Status": "Passed",
+          "Duration": 0.0063975,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.FirstTerminalResultIsRetained(Fuel,Lives)",
+          "Status": "Passed",
+          "Duration": 0.0026954,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.InitialMenuHasNoActiveRunAndDoesNotSimulate",
+          "Status": "Passed",
+          "Duration": 0.0032864,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.PauseAndResumePreserveTheRunAndCruiseTarget",
+          "Status": "Passed",
+          "Duration": 0.0013412,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.PermittedTransitionCommitsDataBeforeOneStateEvent(Menu,\"Start\",Playing)",
+          "Status": "Passed",
+          "Duration": 0.0019621,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.PermittedTransitionCommitsDataBeforeOneStateEvent(Playing,\"Pause\",Paused)",
+          "Status": "Passed",
+          "Duration": 0.0004845,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.PermittedTransitionCommitsDataBeforeOneStateEvent(Paused,\"Resume\",Playing)",
+          "Status": "Passed",
+          "Duration": 0.0004636,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.PermittedTransitionCommitsDataBeforeOneStateEvent(Paused,\"Restart\",Playing)",
+          "Status": "Passed",
+          "Duration": 0.0004357,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.PermittedTransitionCommitsDataBeforeOneStateEvent(Paused,\"Menu\",Menu)",
+          "Status": "Passed",
+          "Duration": 0.0006463,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.PermittedTransitionCommitsDataBeforeOneStateEvent(Playing,\"End\",GameOver)",
+          "Status": "Passed",
+          "Duration": 0.0006418,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.PermittedTransitionCommitsDataBeforeOneStateEvent(GameOver,\"Restart\",Playing)",
+          "Status": "Passed",
+          "Duration": 0.0004791,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.ReentrantCommandsCannotInterruptACommittedTransition",
+          "Status": "Passed",
+          "Duration": 0.0048331,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(Menu,\"Pause\")",
+          "Status": "Passed",
+          "Duration": 0.0028238,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(Menu,\"Resume\")",
+          "Status": "Passed",
+          "Duration": 0.003454,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(Menu,\"Restart\")",
+          "Status": "Passed",
+          "Duration": 0.0035203,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(Menu,\"Menu\")",
+          "Status": "Passed",
+          "Duration": 0.0017665,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(Menu,\"End\")",
+          "Status": "Passed",
+          "Duration": 0.0020143,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(Playing,\"Start\")",
+          "Status": "Passed",
+          "Duration": 0.0018892,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(Playing,\"Resume\")",
+          "Status": "Passed",
+          "Duration": 0.0018118,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(Playing,\"Restart\")",
+          "Status": "Passed",
+          "Duration": 0.0015503,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(Playing,\"Menu\")",
+          "Status": "Passed",
+          "Duration": 0.0014931,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(Playing,\"Quit\")",
+          "Status": "Passed",
+          "Duration": 0.001443,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(Paused,\"Start\")",
+          "Status": "Passed",
+          "Duration": 0.0014054,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(Paused,\"Pause\")",
+          "Status": "Passed",
+          "Duration": 0.0013777,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(Paused,\"End\")",
+          "Status": "Passed",
+          "Duration": 0.0013626,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(Paused,\"Quit\")",
+          "Status": "Passed",
+          "Duration": 0.001328,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(GameOver,\"Start\")",
+          "Status": "Passed",
+          "Duration": 0.0013051,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(GameOver,\"Pause\")",
+          "Status": "Passed",
+          "Duration": 0.0013715,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(GameOver,\"Resume\")",
+          "Status": "Passed",
+          "Duration": 0.0013633,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(GameOver,\"Menu\")",
+          "Status": "Passed",
+          "Duration": 0.0013043,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(GameOver,\"End\")",
+          "Status": "Passed",
+          "Duration": 0.0012748,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(GameOver,\"Quit\")",
+          "Status": "Passed",
+          "Duration": 0.0012294,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.RestartResetsTransientDataAndPreservesOnlyBestAndSeed",
+          "Status": "Passed",
+          "Duration": 0.0040363,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.ReturnToMenuCleansLoopAndNextStartCreatesANewRun",
+          "Status": "Passed",
+          "Duration": 0.0008712,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.SnapshotIsAValueAndModelRejectsInvalidPartialMutations",
+          "Status": "Passed",
+          "Duration": 0.0052317,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.UndefinedTerminalReasonDoesNotEndTheRun(None)",
+          "Status": "Passed",
+          "Duration": 0.0020865,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.UndefinedTerminalReasonDoesNotEndTheRun(99)",
+          "Status": "Passed",
+          "Duration": 0.0020607,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameStateTests.ZeroResourcesDoNotAutomaticallyEvaluateGameOverInTask02",
+          "Status": "Passed",
+          "Duration": 0.0009122,
+          "Message": null,
+          "StackTrace": null
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

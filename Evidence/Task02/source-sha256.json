@@ -1,0 +1,15 @@
+{
+  "Assets/NeonTunnelRunner/Configs/Gameplay.asset": "6806f58c5028fbd67a4f729578dbf2f4ba79f52dcc2a7a16fbe2d21827d02d0c",
+  "Assets/NeonTunnelRunner/Scenes/Game.unity": "2475fd6fe0a4a5bc8f75d6eb082b2801a5f87b61e25759086ce41b32ed9c5d81",
+  "Assets/NeonTunnelRunner/Scripts/AssemblyInfo.cs": "382e3507c7c8fbd8896116cebfe90a76af326726aa5d335361da7ac8219ec6c2",
+  "Assets/NeonTunnelRunner/Scripts/Config/GameplayConfig.cs": "ce7b40aebc24e71c677faa0e5d93e98a1b1e1c3d12372d945d727f7d601bdeed",
+  "Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs": "411241f1535e96da6ace087bf90548a24a13a80428be8ce346d66906e7c80259",
+  "Assets/NeonTunnelRunner/Scripts/Core/GameState.cs": "d1cfac31a625af6bcebd75ee00e295b072d04b82ed6ec87138110dc3e4a9b3b3",
+  "Assets/NeonTunnelRunner/Scripts/Core/GameplayLoop.cs": "39650a8a455ea53b696de22f8d472ef828b68e6764feee67981e8f7c33404549",
+  "Assets/NeonTunnelRunner/Scripts/Core/RunSession.cs": "61f5679eefeaaf8aecd3c2b3f2bc3510900ea1ef5e2589c88bd96361be5951cb",
+  "Assets/NeonTunnelRunner/Scripts/Editor/ProjectSetupValidator.cs": "15b54745cfc944a3ce670ea84f4e4cfc176942f6d660915b57bedde6ce2218d3",
+  "Assets/NeonTunnelRunner/Tests/EditMode/AssemblyInfo.cs": "8ba301bbfa09891cfe1acdb343dcb24b0284900c27380e449954feafcbf082cf",
+  "Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs": "c970097996f550c64a44bddf2563d4eb6a46389d7fb37a95b2935a2b97e85872",
+  "Assets/NeonTunnelRunner/Tests/PlayMode/AssemblyInfo.cs": "45a05ae7719f950679c6221081bd2c4efa858475e23c83003afd736845f04f1c",
+  "Assets/NeonTunnelRunner/Tests/PlayMode/RestartTests.cs": "17dfbfd757a1101726ebfedf759983beb40a2de10fae271d700196bdaf3b1e77"
+}

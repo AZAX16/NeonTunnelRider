@@ -1,0 +1,63 @@
+{
+  "success": true,
+  "command": "command test",
+  "data": {
+    "command": "test",
+    "parameters": {},
+    "result": {
+      "status": "completed",
+      "duration": 0.64,
+      "summary": {
+        "total": 5,
+        "passed": 5,
+        "failed": 0,
+        "skipped": 0,
+        "inconclusive": 0
+      },
+      "results": [
+        {
+          "FullName": "NeonTunnelRunner.RestartTests.FiftyRestartsResetDataAndKeepSingleSubscriptions",
+          "Status": "Passed",
+          "Duration": 0.0846965,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.RestartTests.FixedUpdateRunsOnlyWhilePlayingAndResumePreservesValues",
+          "Status": "Passed",
+          "Duration": 0.1074805,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.RestartTests.OwnerTeardownAtZeroTimeClearsSingletonAndObservers",
+          "Status": "Passed",
+          "Duration": 0.0773349,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.RestartTests.RejectedDuplicateCannotReplaceOwnerOrUnpauseOnDestruction",
+          "Status": "Passed",
+          "Duration": 0.0794491,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.RestartTests.RepeatedSceneLoadsStartInMenuWithOneWiredOwner",
+          "Status": "Passed",
+          "Duration": 0.2685189,
+          "Message": null,
+          "StackTrace": null
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
