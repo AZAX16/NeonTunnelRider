@@ -4,6 +4,7 @@ using UnityEngine;
 namespace NeonTunnelRunner
 {
     [DisallowMultipleComponent]
+    [DefaultExecutionOrder(-1000)]
     public sealed class GameManager : MonoBehaviour
     {
         [SerializeField] private GameplayConfig gameplayConfig;
@@ -67,13 +68,13 @@ namespace NeonTunnelRunner
             StateChanged = null;
             RunEnded = null;
             Session?.DetachObservers();
+            State = GameState.Menu;
+            EndReason = GameOverReason.None;
             Session = new RunSession(gameplayConfig, initialBestScore);
             gameplayLoop.Initialize(this, Session);
             Instance = this;
             ownsInstance = initialized = true;
             transitioning = quitRequested = false;
-            State = GameState.Menu;
-            EndReason = GameOverReason.None;
             Time.timeScale = 1f;
             return true;
         }
@@ -161,6 +162,7 @@ namespace NeonTunnelRunner
             State = next;
             Session.SetSimulationActive(next == GameState.Playing);
             Time.timeScale = next == GameState.Paused || next == GameState.GameOver ? 0f : 1f;
+            gameplayLoop.ApplyState(next);
             RunSnapshot snapshot = Session.PublishSnapshot();
             StateChanged?.Invoke(previous, next);
             return snapshot;
@@ -184,7 +186,7 @@ namespace NeonTunnelRunner
         internal void Shutdown()
         {
             if (!ownsInstance || Instance != this) return;
-            gameplayLoop?.CleanupRun();
+            gameplayLoop?.Shutdown();
             Session?.DetachObservers();
             StateChanged = null;
             RunEnded = null;

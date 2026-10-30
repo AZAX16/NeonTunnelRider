@@ -1,0 +1,19 @@
+{
+  "success": true,
+  "command": "test",
+  "data": {
+    "projectPath": "/tmp/neon-task03-verification",
+    "output": "/home/alireza/NeonTunnelRider/NeonTunnelRunner/Evidence/Task03/playmode-results.xml",
+    "reports": {
+      "nunit": "/home/alireza/NeonTunnelRider/NeonTunnelRunner/Evidence/Task03/playmode-results.xml",
+      "junit": null
+    },
+    "coverage": {
+      "requested": false,
+      "enabled": false,
+      "output": null
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

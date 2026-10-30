@@ -101,6 +101,12 @@ namespace NeonTunnelRunner
             fuel = remainingFuel;
         }
 
+        internal void RecordMovement(float deltaTime, double travelledDistance)
+        {
+            Advance(deltaTime, travelledDistance);
+            actualSpeed = (float)(travelledDistance / deltaTime);
+        }
+
         internal void SetScore(int coinCount, int currentScore)
         {
             if (coinCount < 0) throw new ArgumentOutOfRangeException(nameof(coinCount));

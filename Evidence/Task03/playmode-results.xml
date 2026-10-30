@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="27" result="Passed" total="27" passed="27" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.7685315">
+  <test-suite type="TestSuite" id="1041" name="NeonTunnelRunner" fullname="NeonTunnelRunner" runstate="Runnable" testcasecount="27" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.768532" total="27" passed="27" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1077" name="NeonTunnelRunner.PlayModeTests.dll" fullname="/tmp/neon-task03-verification/Library/ScriptAssemblies/NeonTunnelRunner.PlayModeTests.dll" runstate="Runnable" testcasecount="27" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.746784" total="27" passed="27" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="70542" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1078" name="NeonTunnelRunner" fullname="NeonTunnelRunner" runstate="Runnable" testcasecount="27" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.744113" total="27" passed="27" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestFixture" id="1042" name="InputBindingTests" fullname="NeonTunnelRunner.InputBindingTests" classname="NeonTunnelRunner.InputBindingTests" runstate="Runnable" testcasecount="15" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.445877" total="15" passed="15" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="ParameterizedMethod" id="1058" name="AKeyHeldDuringPauseDoesNotBecomeANewPressAfterResume" fullname="NeonTunnelRunner.InputBindingTests.AKeyHeldDuringPauseDoesNotBecomeANewPressAfterResume" classname="NeonTunnelRunner.InputBindingTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.229614" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1056" name="AKeyHeldDuringPauseDoesNotBecomeANewPressAfterResume(D)" fullname="NeonTunnelRunner.InputBindingTests.AKeyHeldDuringPauseDoesNotBecomeANewPressAfterResume(D)" methodname="AKeyHeldDuringPauseDoesNotBecomeANewPressAfterResume" classname="NeonTunnelRunner.InputBindingTests" runstate="Runnable" seed="128156015" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.179098" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1057" name="AKeyHeldDuringPauseDoesNotBecomeANewPressAfterResume(RightArrow)" fullname="NeonTunnelRunner.InputBindingTests.AKeyHeldDuringPauseDoesNotBecomeANewPressAfterResume(RightArrow)" methodname="AKeyHeldDuringPauseDoesNotBecomeANewPressAfterResume" classname="NeonTunnelRunner.InputBindingTests" runstate="Runnable" seed="286316437" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.030918" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="ParameterizedMethod" id="1047" name="EachRequiredBindingChangesOneLane" fullname="NeonTunnelRunner.InputBindingTests.EachRequiredBindingChangesOneLane" classname="NeonTunnelRunner.InputBindingTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.046919" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1043" name="EachRequiredBindingChangesOneLane(A,-1)" fullname="NeonTunnelRunner.InputBindingTests.EachRequiredBindingChangesOneLane(A,-1)" methodname="EachRequiredBindingChangesOneLane" classname="NeonTunnelRunner.InputBindingTests" runstate="Runnable" seed="232905038" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.011332" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1044" name="EachRequiredBindingChangesOneLane(LeftArrow,-1)" fullname="NeonTunnelRunner.InputBindingTests.EachRequiredBindingChangesOneLane(LeftArrow,-1)" methodname="EachRequiredBindingChangesOneLane" classname="NeonTunnelRunner.InputBindingTests" runstate="Runnable" seed="718503797" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.008609" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1045" name="EachRequiredBindingChangesOneLane(D,1)" fullname="NeonTunnelRunner.InputBindingTests.EachRequiredBindingChangesOneLane(D,1)" methodname="EachRequiredBindingChangesOneLane" classname="NeonTunnelRunner.InputBindingTests" runstate="Runnable" seed="1669684400" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.010381" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1046" name="EachRequiredBindingChangesOneLane(RightArrow,1)" fullname="NeonTunnelRunner.InputBindingTests.EachRequiredBindingChangesOneLane(RightArrow,1)" methodname="EachRequiredBindingChangesOneLane" classname="NeonTunnelRunner.InputBindingTests" runstate="Runnable" seed="1367211639" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.010445" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-case id="1061" name="EnableDisableCyclesDoNotDuplicateOrRetainInputCallbacks" fullname="NeonTunnelRunner.InputBindingTests.EnableDisableCyclesDoNotDuplicateOrRetainInputCallbacks" methodname="EnableDisableCyclesDoNotDuplicateOrRetainInputCallbacks" classname="NeonTunnelRunner.InputBindingTests" runstate="Runnable" seed="416415801" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.025594" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1055" name="EscapeTogglesOncePerPressAndOwnsNoUICancelBinding" fullname="NeonTunnelRunner.InputBindingTests.EscapeTogglesOncePerPressAndOwnsNoUICancelBinding" methodname="EscapeTogglesOncePerPressAndOwnsNoUICancelBinding" classname="NeonTunnelRunner.InputBindingTests" runstate="Runnable" seed="2092554980" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.020436" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1050" name="HoldingAButtonDoesNotRepeatAcrossTheCenter" fullname="NeonTunnelRunner.InputBindingTests.HoldingAButtonDoesNotRepeatAcrossTheCenter" classname="NeonTunnelRunner.InputBindingTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.025481" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1048" name="HoldingAButtonDoesNotRepeatAcrossTheCenter(D)" fullname="NeonTunnelRunner.InputBindingTests.HoldingAButtonDoesNotRepeatAcrossTheCenter(D)" methodname="HoldingAButtonDoesNotRepeatAcrossTheCenter" classname="NeonTunnelRunner.InputBindingTests" runstate="Runnable" seed="1415790754" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.012068" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1049" name="HoldingAButtonDoesNotRepeatAcrossTheCenter(RightArrow)" fullname="NeonTunnelRunner.InputBindingTests.HoldingAButtonDoesNotRepeatAcrossTheCenter(RightArrow)" methodname="HoldingAButtonDoesNotRepeatAcrossTheCenter" classname="NeonTunnelRunner.InputBindingTests" runstate="Runnable" seed="320510799" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.010686" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-case id="1060" name="MapsFollowEveryStateWithoutEnablingTheSourceAsset" fullname="NeonTunnelRunner.InputBindingTests.MapsFollowEveryStateWithoutEnablingTheSourceAsset" methodname="MapsFollowEveryStateWithoutEnablingTheSourceAsset" classname="NeonTunnelRunner.InputBindingTests" runstate="Runnable" seed="477213735" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.014691" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1053" name="OppositePressesInOneInputUpdateCancel" fullname="NeonTunnelRunner.InputBindingTests.OppositePressesInOneInputUpdateCancel" classname="NeonTunnelRunner.InputBindingTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.026840" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1051" name="OppositePressesInOneInputUpdateCancel(A,D)" fullname="NeonTunnelRunner.InputBindingTests.OppositePressesInOneInputUpdateCancel(A,D)" methodname="OppositePressesInOneInputUpdateCancel" classname="NeonTunnelRunner.InputBindingTests" runstate="Runnable" seed="949343061" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.013173" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1052" name="OppositePressesInOneInputUpdateCancel(LeftArrow,RightArrow)" fullname="NeonTunnelRunner.InputBindingTests.OppositePressesInOneInputUpdateCancel(LeftArrow,RightArrow)" methodname="OppositePressesInOneInputUpdateCancel" classname="NeonTunnelRunner.InputBindingTests" runstate="Runnable" seed="985570273" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.011339" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-case id="1059" name="PauseWinsOverLaneInputInTheSameUpdate" fullname="NeonTunnelRunner.InputBindingTests.PauseWinsOverLaneInputInTheSameUpdate" methodname="PauseWinsOverLaneInputInTheSameUpdate" classname="NeonTunnelRunner.InputBindingTests" runstate="Runnable" seed="1441185653" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.014889" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1054" name="PendingInputUsesOneLatestBatchAndIsConsumedOnce" fullname="NeonTunnelRunner.InputBindingTests.PendingInputUsesOneLatestBatchAndIsConsumedOnce" methodname="PendingInputUsesOneLatestBatchAndIsConsumedOnce" classname="NeonTunnelRunner.InputBindingTests" runstate="Runnable" seed="1419153057" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.017870" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="1062" name="PlayerLifecycleTests" fullname="NeonTunnelRunner.PlayerLifecycleTests" classname="NeonTunnelRunner.PlayerLifecycleTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.114473" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="ParameterizedMethod" id="1067" name="LoopAdvancesTimeDistanceAndSpeedExactlyOnce" fullname="NeonTunnelRunner.PlayerLifecycleTests.LoopAdvancesTimeDistanceAndSpeedExactlyOnce" classname="NeonTunnelRunner.PlayerLifecycleTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.046870" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1063" name="LoopAdvancesTimeDistanceAndSpeedExactlyOnce(0.01f)" fullname="NeonTunnelRunner.PlayerLifecycleTests.LoopAdvancesTimeDistanceAndSpeedExactlyOnce(0.01f)" methodname="LoopAdvancesTimeDistanceAndSpeedExactlyOnce" classname="NeonTunnelRunner.PlayerLifecycleTests" runstate="Runnable" seed="87203236" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.016471" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1064" name="LoopAdvancesTimeDistanceAndSpeedExactlyOnce(0.02f)" fullname="NeonTunnelRunner.PlayerLifecycleTests.LoopAdvancesTimeDistanceAndSpeedExactlyOnce(0.02f)" methodname="LoopAdvancesTimeDistanceAndSpeedExactlyOnce" classname="NeonTunnelRunner.PlayerLifecycleTests" runstate="Runnable" seed="1025598222" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.010577" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1065" name="LoopAdvancesTimeDistanceAndSpeedExactlyOnce(0.1f)" fullname="NeonTunnelRunner.PlayerLifecycleTests.LoopAdvancesTimeDistanceAndSpeedExactlyOnce(0.1f)" methodname="LoopAdvancesTimeDistanceAndSpeedExactlyOnce" classname="NeonTunnelRunner.PlayerLifecycleTests" runstate="Runnable" seed="629823431" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.007926" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1066" name="LoopAdvancesTimeDistanceAndSpeedExactlyOnce(0.5f)" fullname="NeonTunnelRunner.PlayerLifecycleTests.LoopAdvancesTimeDistanceAndSpeedExactlyOnce(0.5f)" methodname="LoopAdvancesTimeDistanceAndSpeedExactlyOnce" classname="NeonTunnelRunner.PlayerLifecycleTests" runstate="Runnable" seed="1653799497" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.009418" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-case id="1068" name="PausingPreservesCurrentTransitionButClearsQueuedAndPendingInput" fullname="NeonTunnelRunner.PlayerLifecycleTests.PausingPreservesCurrentTransitionButClearsQueuedAndPendingInput" methodname="PausingPreservesCurrentTransitionButClearsQueuedAndPendingInput" classname="NeonTunnelRunner.PlayerLifecycleTests" runstate="Runnable" seed="1976248244" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.011470" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1069" name="RestartResetsPoseBuffersInputAndCameraAnchorWhileKeepingBest" fullname="NeonTunnelRunner.PlayerLifecycleTests.RestartResetsPoseBuffersInputAndCameraAnchorWhileKeepingBest" methodname="RestartResetsPoseBuffersInputAndCameraAnchorWhileKeepingBest" classname="NeonTunnelRunner.PlayerLifecycleTests" runstate="Runnable" seed="854712407" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.010097" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1070" name="RigidbodyAndStableAnchorFollowTheLogicalPlayer" fullname="NeonTunnelRunner.PlayerLifecycleTests.RigidbodyAndStableAnchorFollowTheLogicalPlayer" methodname="RigidbodyAndStableAnchorFollowTheLogicalPlayer" classname="NeonTunnelRunner.PlayerLifecycleTests" runstate="Runnable" seed="449273126" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.039668" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="1071" name="RestartTests" fullname="NeonTunnelRunner.RestartTests" classname="NeonTunnelRunner.RestartTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.169694" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1073" name="FiftyRestartsResetDataAndKeepSingleSubscriptions" fullname="NeonTunnelRunner.RestartTests.FiftyRestartsResetDataAndKeepSingleSubscriptions" methodname="FiftyRestartsResetDataAndKeepSingleSubscriptions" classname="NeonTunnelRunner.RestartTests" runstate="Runnable" seed="2128750018" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.026551" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1072" name="FixedUpdateRunsOnlyWhilePlayingAndResumePreservesValues" fullname="NeonTunnelRunner.RestartTests.FixedUpdateRunsOnlyWhilePlayingAndResumePreservesValues" methodname="FixedUpdateRunsOnlyWhilePlayingAndResumePreservesValues" classname="NeonTunnelRunner.RestartTests" runstate="Runnable" seed="836913690" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.041044" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1075" name="OwnerTeardownAtZeroTimeClearsSingletonAndObservers" fullname="NeonTunnelRunner.RestartTests.OwnerTeardownAtZeroTimeClearsSingletonAndObservers" methodname="OwnerTeardownAtZeroTimeClearsSingletonAndObservers" classname="NeonTunnelRunner.RestartTests" runstate="Runnable" seed="1538295414" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.011676" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1074" name="RejectedDuplicateCannotReplaceOwnerOrUnpauseOnDestruction" fullname="NeonTunnelRunner.RestartTests.RejectedDuplicateCannotReplaceOwnerOrUnpauseOnDestruction" methodname="RejectedDuplicateCannotReplaceOwnerOrUnpauseOnDestruction" classname="NeonTunnelRunner.RestartTests" runstate="Runnable" seed="1057366885" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.012904" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[[GameManager] Duplicate rejected; the existing owner is unchanged.
+]]></output>
+          </test-case>
+          <test-case id="1076" name="RepeatedSceneLoadsStartInMenuWithOneWiredOwner" fullname="NeonTunnelRunner.RestartTests.RepeatedSceneLoadsStartInMenuWithOneWiredOwner" methodname="RepeatedSceneLoadsStartInMenuWithOneWiredOwner" classname="NeonTunnelRunner.RestartTests" runstate="Runnable" seed="417801381" result="Passed" start-time="2026-10-30 19:00:35Z" end-time="2026-10-30 19:00:35Z" duration="0.072967" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Saving results to: /home/alireza/.config/unity3d/DefaultCompany/NeonTunnelRunner/TestResults.xml
+]]></output>
+          </test-case>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

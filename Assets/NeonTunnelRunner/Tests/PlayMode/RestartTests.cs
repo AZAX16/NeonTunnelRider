@@ -214,6 +214,7 @@ namespace NeonTunnelRunner
             Assign(manager, "gameplayLoop", loop);
             Assign(manager, "initialBestScore", bestScore);
             Assign(loop, "gameManager", manager);
+            PlayModeMovementRig.Wire(go, manager, loop, config);
             go.SetActive(true);
             return go;
         }

@@ -1,0 +1,260 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "file": "Docs/Setup/Task03Setup.cs",
+      "entry": "NeonTunnelRunner.Task03Setup.Inspect"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 159,
+      "executeMs": 16,
+      "assemblyName": "PipelineRunScript_Task03Setup_dd51d29a10884c838ef73e2e79b9f1d2",
+      "success": true,
+      "result": {
+        "path": "Assets/NeonTunnelRunner/Scenes/Game.unity",
+        "isDirty": false,
+        "playing": false,
+        "instanceClear": true,
+        "timeScale": 1,
+        "reloads": {
+          "enabled": true,
+          "options": 3
+        },
+        "manager": {
+          "config": "Assets/NeonTunnelRunner/Configs/Gameplay.asset",
+          "loop": "Systems"
+        },
+        "input": {
+          "name": "Systems",
+          "owner": "Systems",
+          "asset": "Assets/NeonTunnelRunner/Input/Runner.inputactions",
+          "sourceDisabled": true,
+          "projectWideActionsUnassigned": true,
+          "maps": [
+            {
+              "name": "Gameplay",
+              "actions": [
+                {
+                  "name": "Left",
+                  "type": "Button",
+                  "expectedControlType": "Button",
+                  "interactions": "Press(behavior=0)",
+                  "wantsInitialStateCheck": false,
+                  "bindings": [
+                    {
+                      "name": "",
+                      "path": "<Keyboard>/a",
+                      "isComposite": false,
+                      "isPartOfComposite": false
+                    },
+                    {
+                      "name": "",
+                      "path": "<Keyboard>/leftArrow",
+                      "isComposite": false,
+                      "isPartOfComposite": false
+                    }
+                  ]
+                },
+                {
+                  "name": "Right",
+                  "type": "Button",
+                  "expectedControlType": "Button",
+                  "interactions": "Press(behavior=0)",
+                  "wantsInitialStateCheck": false,
+                  "bindings": [
+                    {
+                      "name": "",
+                      "path": "<Keyboard>/d",
+                      "isComposite": false,
+                      "isPartOfComposite": false
+                    },
+                    {
+                      "name": "",
+                      "path": "<Keyboard>/rightArrow",
+                      "isComposite": false,
+                      "isPartOfComposite": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "System",
+              "actions": [
+                {
+                  "name": "Pause",
+                  "type": "Button",
+                  "expectedControlType": "Button",
+                  "interactions": "Press(behavior=0)",
+                  "wantsInitialStateCheck": false,
+                  "bindings": [
+                    {
+                      "name": "",
+                      "path": "<Keyboard>/escape",
+                      "isComposite": false,
+                      "isPartOfComposite": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "UI",
+              "actions": [
+                {
+                  "name": "Navigate",
+                  "type": "PassThrough",
+                  "expectedControlType": "Vector2",
+                  "interactions": "",
+                  "wantsInitialStateCheck": false,
+                  "bindings": [
+                    {
+                      "name": "Arrow keys",
+                      "path": "2DVector",
+                      "isComposite": true,
+                      "isPartOfComposite": false
+                    },
+                    {
+                      "name": "up",
+                      "path": "<Keyboard>/upArrow",
+                      "isComposite": false,
+                      "isPartOfComposite": true
+                    },
+                    {
+                      "name": "down",
+                      "path": "<Keyboard>/downArrow",
+                      "isComposite": false,
+                      "isPartOfComposite": true
+                    },
+                    {
+                      "name": "left",
+                      "path": "<Keyboard>/leftArrow",
+                      "isComposite": false,
+                      "isPartOfComposite": true
+                    },
+                    {
+                      "name": "right",
+                      "path": "<Keyboard>/rightArrow",
+                      "isComposite": false,
+                      "isPartOfComposite": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Submit",
+                  "type": "Button",
+                  "expectedControlType": "Button",
+                  "interactions": "",
+                  "wantsInitialStateCheck": false,
+                  "bindings": [
+                    {
+                      "name": "",
+                      "path": "<Keyboard>/enter",
+                      "isComposite": false,
+                      "isPartOfComposite": false
+                    }
+                  ]
+                },
+                {
+                  "name": "Cancel",
+                  "type": "Button",
+                  "expectedControlType": "Button",
+                  "interactions": "",
+                  "wantsInitialStateCheck": false,
+                  "bindings": [
+                    {
+                      "name": "",
+                      "path": "<Keyboard>/backspace",
+                      "isComposite": false,
+                      "isPartOfComposite": false
+                    }
+                  ]
+                },
+                {
+                  "name": "Point",
+                  "type": "PassThrough",
+                  "expectedControlType": "Vector2",
+                  "interactions": "",
+                  "wantsInitialStateCheck": false,
+                  "bindings": [
+                    {
+                      "name": "",
+                      "path": "<Mouse>/position",
+                      "isComposite": false,
+                      "isPartOfComposite": false
+                    }
+                  ]
+                },
+                {
+                  "name": "Click",
+                  "type": "PassThrough",
+                  "expectedControlType": "Button",
+                  "interactions": "",
+                  "wantsInitialStateCheck": false,
+                  "bindings": [
+                    {
+                      "name": "",
+                      "path": "<Mouse>/leftButton",
+                      "isComposite": false,
+                      "isPartOfComposite": false
+                    }
+                  ]
+                },
+                {
+                  "name": "ScrollWheel",
+                  "type": "PassThrough",
+                  "expectedControlType": "Vector2",
+                  "interactions": "",
+                  "wantsInitialStateCheck": false,
+                  "bindings": [
+                    {
+                      "name": "",
+                      "path": "<Mouse>/scroll",
+                      "isComposite": false,
+                      "isPartOfComposite": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "player": {
+          "name": "Player",
+          "position": "(0.000, 0.600, 0.000)",
+          "scale": "(1.000, 1.000, 1.000)",
+          "rotation": "(0.000, 0.000, 0.000)",
+          "config": "Assets/NeonTunnelRunner/Configs/Gameplay.asset",
+          "prefab": "Assets/NeonTunnelRunner/Prefabs/Player/PlayerHovercar.prefab",
+          "isKinematic": true,
+          "useGravity": false,
+          "constraints": "116",
+          "interpolation": "None",
+          "boxSize": "(1.700, 0.900, 3.600)",
+          "visual": "Visual",
+          "anchorPosition": "(0.000, 4.400, -10.000)",
+          "anchorRotation": "(15.000, 0.000, 0.000)"
+        },
+        "camera": {
+          "name": "MainCamera",
+          "parent": "CameraAnchor",
+          "position": "(0.000, 5.000, -10.000)",
+          "localPosition": "(0.000, 0.000, 0.000)",
+          "allowHDR": true,
+          "postProcessing": true,
+          "listenerEnabled": true
+        }
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

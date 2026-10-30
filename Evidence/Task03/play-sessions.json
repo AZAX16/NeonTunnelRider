@@ -1,0 +1,144 @@
+{
+  "originalOptions": {
+    "playing": false,
+    "enabled": true,
+    "options": 3
+  },
+  "cycles": [
+    {
+      "reloadsEnabled": false,
+      "initial": {
+        "state": "Menu",
+        "player": "(0.00, 0.60, 0.00)"
+      },
+      "entry": {
+        "lane": -1,
+        "position": "(-3.200, 0.600, 18.480)",
+        "previous": "(-3.200, 0.600, 18.040)",
+        "Distance": 18.47999270260334,
+        "ElapsedTime": 0.8399996683001518,
+        "tick": 42,
+        "frame": 290,
+        "performedCallbacks": 1,
+        "inputUpdates": 22,
+        "runId": "2c3dd2cc-824c-4f62-b392-2eabb7f02f98",
+        "cameraPosition": "(-3.200, 5.000, 8.480)",
+        "cameraParent": "CameraAnchor",
+        "state": "Paused",
+        "roadLength": 300
+      },
+      "escape": {
+        "stateChanges": 2,
+        "state": "Paused",
+        "timeScale": 0
+      },
+      "exit": {
+        "playing": false,
+        "instanceClear": true,
+        "timeScale": 1
+      }
+    },
+    {
+      "reloadsEnabled": false,
+      "initial": {
+        "state": "Menu",
+        "player": "(0.00, 0.60, 0.00)"
+      },
+      "entry": {
+        "lane": -1,
+        "position": "(-3.200, 0.600, 16.720)",
+        "previous": "(-3.200, 0.600, 16.280)",
+        "Distance": 16.7199933975935,
+        "ElapsedTime": 0.7599996998906136,
+        "tick": 38,
+        "frame": 305,
+        "performedCallbacks": 1,
+        "inputUpdates": 22,
+        "runId": "2e4666cb-90a3-47e7-9fbb-a21ba832c1c8",
+        "cameraPosition": "(-3.200, 5.000, 6.720)",
+        "cameraParent": "CameraAnchor",
+        "state": "Paused",
+        "roadLength": 300
+      },
+      "escape": {
+        "stateChanges": 2,
+        "state": "Paused",
+        "timeScale": 0
+      },
+      "exit": {
+        "playing": false,
+        "instanceClear": true,
+        "timeScale": 1
+      }
+    },
+    {
+      "reloadsEnabled": true,
+      "initial": {
+        "state": "Menu",
+        "player": "(0.00, 0.60, 0.00)"
+      },
+      "entry": {
+        "lane": -1,
+        "position": "(-3.200, 0.600, 18.480)",
+        "previous": "(-3.200, 0.600, 18.040)",
+        "Distance": 18.47999270260334,
+        "ElapsedTime": 0.8399996683001518,
+        "tick": 42,
+        "frame": 301,
+        "performedCallbacks": 1,
+        "inputUpdates": 25,
+        "runId": "7b51166c-159c-4459-8513-b74a279e0b1e",
+        "cameraPosition": "(-3.200, 5.000, 8.480)",
+        "cameraParent": "CameraAnchor",
+        "state": "Paused",
+        "roadLength": 300
+      },
+      "escape": {
+        "stateChanges": 2,
+        "state": "Paused",
+        "timeScale": 0
+      },
+      "exit": {
+        "playing": false,
+        "instanceClear": true,
+        "timeScale": 1
+      }
+    },
+    {
+      "reloadsEnabled": true,
+      "initial": {
+        "state": "Menu",
+        "player": "(0.00, 0.60, 0.00)"
+      },
+      "entry": {
+        "lane": -1,
+        "position": "(-3.200, 0.600, 17.160)",
+        "previous": "(-3.200, 0.600, 16.720)",
+        "Distance": 17.15999322384596,
+        "ElapsedTime": 0.7799996919929981,
+        "tick": 39,
+        "frame": 299,
+        "performedCallbacks": 1,
+        "inputUpdates": 23,
+        "runId": "4f1ed6f1-78d3-4e04-aa8c-3cb9601c6374",
+        "cameraPosition": "(-3.200, 5.000, 7.160)",
+        "cameraParent": "CameraAnchor",
+        "state": "Paused",
+        "roadLength": 300
+      },
+      "escape": {
+        "stateChanges": 2,
+        "state": "Paused",
+        "timeScale": 0
+      },
+      "exit": {
+        "playing": false,
+        "instanceClear": true,
+        "timeScale": 1
+      }
+    }
+  ],
+  "passed": true,
+  "configBeforeSha256": "a90e5b2a51873e65c9dae592129973e2188169ea97856e950d2c4f114efa9203",
+  "configAfterSha256": "a90e5b2a51873e65c9dae592129973e2188169ea97856e950d2c4f114efa9203"
+}

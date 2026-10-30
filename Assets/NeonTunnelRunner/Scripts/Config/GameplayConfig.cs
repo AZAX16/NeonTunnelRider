@@ -14,6 +14,8 @@ namespace NeonTunnelRunner
         [Header("Lane authoring (movement added in task 03)")]
         [SerializeField, Min(0.01f)] private float laneWidth = 3.2f;
         [SerializeField, Min(0.01f)] private float laneTransitionDuration = 0.28f;
+        [SerializeField, Min(0f)] private float playerRootHeight = 0.6f;
+        [SerializeField] private Vector3 playerHalfExtents = new Vector3(0.85f, 0.45f, 1.8f);
 
         [Header("Survival and score authoring (later tasks)")]
         [SerializeField, Min(0f)] private float damageGraceDuration = 1f;
@@ -30,6 +32,8 @@ namespace NeonTunnelRunner
         public int StartingLane => 0;
         public float LaneWidth => laneWidth;
         public float LaneTransitionDuration => laneTransitionDuration;
+        public Vector3 StartingPosition => new Vector3(StartingLane * laneWidth, playerRootHeight, 0f);
+        public Vector3 PlayerHalfExtents => playerHalfExtents;
         public float DamageGraceDuration => damageGraceDuration;
         public float FuelDrainPerSecond => fuelDrainPerSecond;
         public float FuelRefill => fuelRefill;
@@ -46,6 +50,8 @@ namespace NeonTunnelRunner
             maximumSpeed = Mathf.Max(startingSpeed, maximumSpeed);
             laneWidth = Mathf.Max(0.01f, laneWidth);
             laneTransitionDuration = Mathf.Max(0.01f, laneTransitionDuration);
+            playerRootHeight = Mathf.Max(0f, playerRootHeight);
+            playerHalfExtents = Vector3.Max(Vector3.one * 0.01f, playerHalfExtents);
             damageGraceDuration = Mathf.Max(0f, damageGraceDuration);
             fuelDrainPerSecond = Mathf.Max(0f, fuelDrainPerSecond);
             fuelRefill = Mathf.Clamp(fuelRefill, 0f, fuelCapacity);

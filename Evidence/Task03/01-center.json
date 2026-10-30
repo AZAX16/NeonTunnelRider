@@ -1,0 +1,42 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "file": "Docs/Setup/Task03VisualEvidence.cs",
+      "entry": "NeonTunnelRunner.Task03VisualEvidence.MoveToLane",
+      "args": "[0]"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 156,
+      "executeMs": 322,
+      "assemblyName": "PipelineRunScript_Task03VisualEvidence_5565c1c5aa7e41aaa234fe2a83f28b99",
+      "success": true,
+      "result": {
+        "lane": 0,
+        "position": "(0.000, 0.600, 64.680)",
+        "previous": "(0.000, 0.600, 64.240)",
+        "Distance": 64.67997445911169,
+        "ElapsedTime": 2.9399988390505314,
+        "tick": 147,
+        "frame": 17820,
+        "performedCallbacks": 0,
+        "inputUpdates": 15,
+        "runId": "12b2f770-dd66-4a0f-b5b9-b882e07e3663",
+        "cameraPosition": "(0.000, 5.000, 54.680)",
+        "cameraParent": "CameraAnchor",
+        "state": "Paused",
+        "roadLength": 300
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

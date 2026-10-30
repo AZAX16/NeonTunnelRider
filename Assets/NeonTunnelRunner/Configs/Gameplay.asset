@@ -18,6 +18,8 @@ MonoBehaviour:
   maximumSpeed: 50
   laneWidth: 3.2
   laneTransitionDuration: 0.28
+  playerRootHeight: 0.6
+  playerHalfExtents: {x: 0.85, y: 0.45, z: 1.8}
   damageGraceDuration: 1
   fuelDrainPerSecond: 2
   fuelRefill: 30

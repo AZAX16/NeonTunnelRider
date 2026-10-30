@@ -9,6 +9,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 namespace NeonTunnelRunner
 {
@@ -55,7 +56,7 @@ namespace NeonTunnelRunner
             if (File.Exists(GameScene)) CheckScene(errors);
             else errors.Add("Missing scene: " + GameScene);
             if (errors.Count > 0) throw new BuildFailedException("Project setup failed:\n" + string.Join("\n", errors));
-            Debug.Log("[ProjectSetupValidator] PASS: foundation, URP/HDR, Linux profile, scene references and core lifecycle wiring.");
+            Debug.Log("[ProjectSetupValidator] PASS: foundation, URP/HDR, Linux profile, core lifecycle, player and action wiring.");
         }
 
         // Direct Editor batchmode entry; never quits an interactive Editor.
@@ -101,6 +102,7 @@ namespace NeonTunnelRunner
                     Require(roots.Count(r => r.name == name) == 1, "Require one scene root: " + name, errors);
                 var objects = roots.SelectMany(r => r.GetComponentsInChildren<Transform>(true)).Select(t => t.gameObject).ToArray();
                 CheckCore(objects, errors);
+                CheckPlayerInput(objects, errors);
                 foreach (var go in objects)
                 {
                     Require(GameObjectUtility.GetMonoBehavioursWithMissingScriptCount(go) == 0, "Missing script on " + go.name, errors);
@@ -164,6 +166,70 @@ namespace NeonTunnelRunner
         private static void Require(bool condition, string message, List<string> errors)
         {
             if (!condition) errors.Add(message);
+        }
+
+        private static void CheckPlayerInput(GameObject[] objects, List<string> errors)
+        {
+            var routers = objects.SelectMany(g => g.GetComponents<InputRouter>()).ToArray();
+            var players = objects.SelectMany(g => g.GetComponents<PlayerController>()).ToArray();
+            Require(routers.Length == 1 && players.Length == 1, "Require exactly one InputRouter and PlayerController.", errors);
+            Require(!objects.Any(g => g.GetComponent<PlayerInput>()), "InputRouter owns action lifetime; remove PlayerInput runtime wiring.", errors);
+            Require(InputSystem.actions == null, "Unassign the template project-wide actions to avoid automatic map enabling.", errors);
+            if (routers.Length != 1 || players.Length != 1) return;
+            var input = routers[0]; var player = players[0];
+            var owner = input.Owner;
+            Require(owner && owner.Loop && input.gameObject == owner.gameObject && owner.Loop.Input == input && owner.Loop.Player == player,
+                "Wire Systems' owner, input router and player through GameplayLoop.", errors);
+            if (!owner || !owner.Configuration || !owner.Loop) return;
+            Require(player.Configuration == owner.Configuration && player.Body == player.GetComponent<Rigidbody>(), "Assign player config and Rigidbody.", errors);
+            Require(owner.Configuration.StartingSpeed == 22f && owner.Configuration.LaneWidth == 3.2f &&
+                owner.Configuration.LaneTransitionDuration == 0.28f && owner.Configuration.StartingPosition == new Vector3(0f, 0.6f, 0f) &&
+                owner.Configuration.PlayerHalfExtents == new Vector3(0.85f, 0.45f, 1.8f), "Keep the task 03 movement and box baseline.", errors);
+            Require(player.enabled && input.enabled && player.gameObject.activeInHierarchy, "Enable the input and player.", errors);
+            Require(player.Body && player.Body.isKinematic && !player.Body.useGravity &&
+                (player.Body.constraints & RigidbodyConstraints.FreezeRotation) == RigidbodyConstraints.FreezeRotation,
+                "Use a kinematic, gravity-free Rigidbody with frozen rotation.", errors);
+            var box = player.GetComponent<BoxCollider>();
+            Require(box && box.center == Vector3.zero && box.size == owner.Configuration.PlayerHalfExtents * 2f,
+                "Use the authored player logical box dimensions.", errors);
+            Require(player.transform.localScale == Vector3.one && player.transform.rotation == Quaternion.identity,
+                "Keep the player root at unit scale and identity rotation.", errors);
+            Require(player.transform.Find("Visual") && player.CameraAnchor && player.CameraAnchor.parent == player.transform,
+                "Keep Visual and CameraAnchor as separate player children.", errors);
+            var camera = objects.SelectMany(g => g.GetComponents<Camera>()).FirstOrDefault();
+            Require(camera && camera.transform.parent == player.CameraAnchor && camera.transform.localPosition == Vector3.zero,
+                "Attach the existing camera directly to the stable rear CameraAnchor.", errors);
+            Require(PrefabUtility.GetPrefabAssetPathOfNearestInstanceRoot(player) == Root + "/Prefabs/Player/PlayerHovercar.prefab",
+                "Use the PlayerHovercar prefab instance.", errors);
+            var asset = input.SourceActions;
+            Require(asset && AssetDatabase.GetAssetPath(asset) == Root + "/Input/Runner.inputactions", "Assign Runner.inputactions explicitly.", errors);
+            if (!asset) return;
+            Require(asset.actionMaps.Select(m => m.name).OrderBy(n => n).SequenceEqual(new[] { "Gameplay", "System", "UI" }),
+                "Runner requires Gameplay, System and UI maps.", errors);
+            CheckAction(asset, "Gameplay/Left", InputActionType.Button, new[] { "<Keyboard>/a", "<Keyboard>/leftArrow" }, errors);
+            CheckAction(asset, "Gameplay/Right", InputActionType.Button, new[] { "<Keyboard>/d", "<Keyboard>/rightArrow" }, errors);
+            CheckAction(asset, "System/Pause", InputActionType.Button, new[] { "<Keyboard>/escape" }, errors);
+            CheckAction(asset, "UI/Submit", InputActionType.Button, new[] { "<Keyboard>/enter" }, errors);
+            CheckAction(asset, "UI/Cancel", InputActionType.Button, new[] { "<Keyboard>/backspace" }, errors);
+            CheckAction(asset, "UI/Point", InputActionType.PassThrough, new[] { "<Mouse>/position" }, errors);
+            CheckAction(asset, "UI/Click", InputActionType.PassThrough, new[] { "<Mouse>/leftButton" }, errors);
+            CheckAction(asset, "UI/ScrollWheel", InputActionType.PassThrough, new[] { "<Mouse>/scroll" }, errors);
+            var navigate = asset.FindAction("UI/Navigate");
+            Require(navigate != null && navigate.type == InputActionType.PassThrough && navigate.expectedControlType == "Vector2" &&
+                navigate.bindings.Count == 5 && navigate.bindings[0].isComposite &&
+                navigate.bindings.Skip(1).Select(b => b.path).OrderBy(p => p).SequenceEqual(new[] {
+                    "<Keyboard>/downArrow", "<Keyboard>/leftArrow", "<Keyboard>/rightArrow", "<Keyboard>/upArrow" }),
+                "Use an arrow-key Vector2 composite for UI/Navigate.", errors);
+        }
+
+        private static void CheckAction(InputActionAsset asset, string name, InputActionType type, string[] paths, List<string> errors)
+        {
+            var action = asset.FindAction(name);
+            Require(action != null && action.type == type && action.bindings.Select(b => b.path).OrderBy(p => p).SequenceEqual(paths.OrderBy(p => p)),
+                "Resolve action type/bindings: " + name, errors);
+            if (action != null && !name.StartsWith("UI/"))
+                Require(action.interactions == "Press(behavior=0)" && !action.wantsInitialStateCheck,
+                    "Use press-only buttons without initial-state checks: " + name, errors);
         }
     }
 }

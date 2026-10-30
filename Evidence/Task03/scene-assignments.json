@@ -1,0 +1,38 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "file": "Docs/Setup/Task03Setup.cs",
+      "entry": "NeonTunnelRunner.Task03Setup.WirePlayer"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 3402,
+      "executeMs": 970,
+      "assemblyName": "PipelineRunScript_Task03Setup_35207528cc154e8a982f9d2d8e21f9e7",
+      "success": true,
+      "result": {
+        "sceneGuid": "2ff1f62cd218111b6af6f6ff50581601",
+        "prefab": "Assets/NeonTunnelRunner/Prefabs/Player/PlayerHovercar.prefab",
+        "prefabGuid": "3fe156509481777c8b2a4c1d32d2e622",
+        "actions": "Assets/NeonTunnelRunner/Input/Runner.inputactions",
+        "actionsGuid": "b20f5e96314e6f39896d51fa432a895a",
+        "loopPlayer": "Player",
+        "loopInput": "Systems",
+        "cameraParent": "CameraAnchor",
+        "cameraPosition": "(0.000, 5.000, -10.000)",
+        "roadLength": 300,
+        "projectWideActions": "unassigned"
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

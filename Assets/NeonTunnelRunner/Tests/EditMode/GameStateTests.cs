@@ -31,6 +31,7 @@ namespace NeonTunnelRunner
             Assign(manager, "runSeed", 84);
             Assign(manager, "initialBestScore", 900);
             Assign(loop, "gameManager", manager);
+            EditModeMovementRig.Wire(root, manager, loop, config);
             root.SetActive(true);
             Assert.That(manager.Initialize(), Is.True);
         }
@@ -277,7 +278,7 @@ namespace NeonTunnelRunner
             loop.Step(0.25f);
             Assert.That(manager.State, Is.EqualTo(GameState.Playing));
             Assert.That(manager.Session.Snapshot.Fuel, Is.Zero);
-            Assert.That(manager.Session.Snapshot.Distance, Is.Zero);
+            Assert.That(manager.Session.Snapshot.Distance, Is.EqualTo(22d * 0.25f));
             Assert.That(manager.Session.Snapshot.Score, Is.Zero);
         }
 

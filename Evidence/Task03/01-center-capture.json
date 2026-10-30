@@ -1,0 +1,28 @@
+{
+  "success": true,
+  "command": "command capture",
+  "data": {
+    "command": "capture",
+    "parameters": {
+      "view": "game",
+      "width": "1280",
+      "height": "720",
+      "output": "/home/alireza/NeonTunnelRider/NeonTunnelRunner/Evidence/Task03/01-center.png"
+    },
+    "result": {
+      "success": true,
+      "path": "/home/alireza/NeonTunnelRider/NeonTunnelRunner/Evidence/Task03/01-center.png",
+      "view": "game",
+      "width": 1280,
+      "height": 720,
+      "message": "Captured game view to /home/alireza/NeonTunnelRider/NeonTunnelRunner/Evidence/Task03/01-center.png"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
