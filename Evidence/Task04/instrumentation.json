@@ -1,0 +1,8 @@
+{
+  "finalSuiteMeasurements": [
+    "[Task04] 50 restarts + menu; created=4, destroyed=0, cleanupCallbacks=101.",
+    "[Task04] 1000 measured steady-state rents/returns: 0 managed bytes on current thread.",
+    "[Task04] 12000 rents/returns; created=24, destroyed=0, capacity=24."
+  ],
+  "scope": "Synchronous pool operations in test-only fixtures; bootstrap and teardown counted separately. No whole-game or Profiler claim."
+}

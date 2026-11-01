@@ -1,0 +1,19 @@
+{
+  "success": true,
+  "command": "command editor",
+  "data": {
+    "command": "editor",
+    "parameters": {
+      "enable": "true",
+      "interval_ms": "16"
+    },
+    "result": "Auto-tick already enabled (interval updated to 16ms)",
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

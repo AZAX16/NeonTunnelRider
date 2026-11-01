@@ -1,0 +1,10 @@
+{
+  "exitCode": 0,
+  "rules": [
+    ".gitignore:5:/[Ll]ibrary/\tLibrary/Task04Probe",
+    ".gitignore:6:/[Tt]emp/\tTemp/Task04Probe",
+    ".gitignore:7:/[Oo]bj/\tObj/Task04Probe",
+    ".gitignore:9:/[Bb]uilds/\tBuilds/Task04Probe"
+  ],
+  "passed": true
+}

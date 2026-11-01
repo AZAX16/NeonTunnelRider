@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "file": "Docs/Setup/Task04Setup.cs",
+      "entry": "NeonTunnelRunner.Task04Setup.Inspect"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 190,
+      "executeMs": 56,
+      "assemblyName": "PipelineRunScript_Task04Setup_6febe96678944ce29b08f79e604ff3e6",
+      "success": true,
+      "result": {
+        "path": "Assets/NeonTunnelRunner/Scenes/Game.unity",
+        "isDirty": false,
+        "config": "Assets/NeonTunnelRunner/Configs/Pools.asset",
+        "entries": 0,
+        "owner": "Systems",
+        "storage": "Pools",
+        "storageInactive": true,
+        "instanceClear": true,
+        "timeScale": 1
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

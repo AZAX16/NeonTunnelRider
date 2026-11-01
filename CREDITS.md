@@ -1,11 +1,11 @@
 # Credits and sources
 
-Tasks 01–03, 2026-10-29–30. This ledger records actual work; it is extended as later tasks add assets and collaborators.
+Tasks 01–04, 2026-10-29–2026-11-01. This ledger records actual work; it is extended as later tasks add assets and collaborators.
 
 | Contributor / source | Actual contribution or use | Exact source address | License / status |
 | --- | --- | --- | --- |
 | Project owner | Created the existing Unity template project and supplied the assignment, preproduction package and environment contract | Local project and supplied `Preproduction/` | Student's full name and any human collaborator names remain to be supplied before task 16; none invented here |
-| OpenAI Codex | Task 01 foundation; Task 02 core lifecycle; Task 03 action routing, three-lane movement, primitive hovercar, scene integration, tests and verification documentation | https://chatgpt.com/codex | AI assistance disclosed; student reviews work under course policy |
+| OpenAI Codex | Task 01 foundation; Task 02 core lifecycle; Task 03 action routing, three-lane movement and primitive hovercar; Task 04 bounded pooling, lifecycle integration, tests, Editor recipes and verification documentation | https://chatgpt.com/codex | AI assistance disclosed; student reviews work under course policy |
 | Supplied HW2 assignment and ignore file | Requirements and exact ignore rules | `Preproduction/source/HW2.pdf`; `Preproduction/source/assignment.gitignore` | Course-provided material; original files preserved |
 | Supplied preproduction package | Architecture, task plan, requirements and reference concepts; artwork stays outside Assets | `Preproduction/docs/`; `Preproduction/planning/`; `Preproduction/art/`; `Preproduction/planning/sources.md` | Supplied reference material; its ledger attributes generated concepts to OpenAI image generation; no task 01 production art generated |
 | Unity Universal 3D template | Existing URP assets, input actions, SampleScene and tutorial content retained; URP assets moved with GUIDs preserved | `/home/alireza/Unity/Hub/Editor/6000.6.3f1/Editor/Data/Resources/PackageManager/ProjectTemplates/com.unity.template.urp-blank-17.2.1.tgz` | Installed Unity template, subject to Unity's terms; template archive version is separate from resolved URP 17.6.0 |

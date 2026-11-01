@@ -9,6 +9,7 @@ namespace NeonTunnelRunner
     {
         [SerializeField] private GameplayConfig gameplayConfig;
         [SerializeField] private GameplayLoop gameplayLoop;
+        [SerializeField] private PoolService poolService;
         [SerializeField] private int runSeed = 12345;
         [SerializeField, Min(0)] private int initialBestScore;
         private bool initialized;
@@ -22,6 +23,7 @@ namespace NeonTunnelRunner
         public RunSession Session { get; private set; }
         public GameplayConfig Configuration => gameplayConfig;
         public GameplayLoop Loop => gameplayLoop;
+        public PoolService Pools => poolService;
         public bool IsOwner => initialized && ownsInstance && Instance == this;
         internal bool IsTransitioning => transitioning;
 
@@ -59,9 +61,9 @@ namespace NeonTunnelRunner
                 if (Application.isPlaying) Destroy(this);
                 return false;
             }
-            if (!gameplayConfig || !gameplayLoop || gameplayLoop.Owner != this)
+            if (!gameplayConfig || !gameplayLoop || gameplayLoop.Owner != this || !poolService || poolService.Owner != this)
             {
-                Debug.LogError("[GameManager] Assign GameplayConfig, GameplayLoop and the loop's owner before initialization.", this);
+                Debug.LogError("[GameManager] Assign GameplayConfig, GameplayLoop, PoolService and their owner before initialization.", this);
                 return false;
             }
 
@@ -71,6 +73,7 @@ namespace NeonTunnelRunner
             State = GameState.Menu;
             EndReason = GameOverReason.None;
             Session = new RunSession(gameplayConfig, initialBestScore);
+            poolService.Initialize(); // Failure leaves a usable Menu; StartRun reports the actionable error.
             gameplayLoop.Initialize(this, Session);
             Instance = this;
             ownsInstance = initialized = true;
@@ -91,10 +94,12 @@ namespace NeonTunnelRunner
         public bool ReturnToMenu()
         {
             if (!Accepts(GameState.Paused)) return Reject(nameof(ReturnToMenu));
+            if (poolService.IsBusy) return Reject(nameof(ReturnToMenu));
             transitioning = true;
             try
             {
                 gameplayLoop.CleanupRun();
+                poolService.ReturnAll();
                 CommitState(GameState.Menu);
                 return true;
             }
@@ -131,10 +136,24 @@ namespace NeonTunnelRunner
 
         private bool BeginRun()
         {
+            if (poolService.IsBusy) return Reject(nameof(BeginRun));
+            if (!poolService.isActiveAndEnabled || (!poolService.IsReady &&
+                (State != GameState.Menu || !poolService.Initialize())))
+            {
+                Debug.LogError("[GameManager] Cannot start: " + (poolService.LastError ?? "PoolService is not ready/enabled; prewarm in Menu."), this);
+                return false;
+            }
             transitioning = true;
             try
             {
                 gameplayLoop.CleanupRun();
+                poolService.ReturnAll();
+                if (!poolService.IsReady)
+                {
+                    gameplayLoop.ApplyState(State);
+                    Debug.LogError("[GameManager] Cannot start: PoolService shut down during reset cleanup.", this);
+                    return false;
+                }
                 Session.Reset(runSeed, Session.Snapshot.BestScore);
                 gameplayLoop.ResetRun();
                 EndReason = GameOverReason.None;
@@ -187,6 +206,7 @@ namespace NeonTunnelRunner
         {
             if (!ownsInstance || Instance != this) return;
             gameplayLoop?.Shutdown();
+            if (poolService) poolService.Shutdown();
             Session?.DetachObservers();
             StateChanged = null;
             RunEnded = null;

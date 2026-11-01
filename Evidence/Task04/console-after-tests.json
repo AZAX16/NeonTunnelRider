@@ -1,0 +1,38 @@
+{
+  "success": true,
+  "command": "command console",
+  "data": {
+    "command": "console",
+    "parameters": {},
+    "result": {
+      "entries": [],
+      "cursor": 146,
+      "session": "12fbf3d9928e41ec948ae3edfdf03c72",
+      "returned": 0,
+      "dropped": false,
+      "reset": false,
+      "counts": {
+        "error": 5,
+        "warn": 3,
+        "log": 138
+      },
+      "groundTruth": {
+        "sampledUtc": "2026-11-01T20:04:35.627935Z",
+        "ageMs": 241,
+        "compilationFailed": false,
+        "compiling": false,
+        "consoleErrors": 1,
+        "consoleWarnings": 1,
+        "consoleLogs": 9,
+        "seeded": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

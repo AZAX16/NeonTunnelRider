@@ -1,0 +1,35 @@
+{
+  "success": false,
+  "command": "recompile",
+  "data": {
+    "status": "completed",
+    "compiling": false,
+    "failed": true,
+    "compilationFailed": true,
+    "errors": [
+      {
+        "type": "compile-error",
+        "raw": "Assets/NeonTunnelRunner/Tests/PlayMode/PoolLifecycleTests.cs(110,29): error CS0619: 'Object.GetInstanceID()' is obsolete: 'Use GetEntityId instead.'",
+        "file": "Assets/NeonTunnelRunner/Tests/PlayMode/PoolLifecycleTests.cs",
+        "line": 110,
+        "column": 29,
+        "code": "CS0619",
+        "message": "'Object.GetInstanceID()' is obsolete: 'Use GetEntityId instead.'"
+      },
+      {
+        "type": "compile-error",
+        "raw": "Assets/NeonTunnelRunner/Tests/PlayMode/PoolLifecycleTests.cs(139,49): error CS0619: 'Object.GetInstanceID()' is obsolete: 'Use GetEntityId instead.'",
+        "file": "Assets/NeonTunnelRunner/Tests/PlayMode/PoolLifecycleTests.cs",
+        "line": 139,
+        "column": 49,
+        "code": "CS0619",
+        "message": "'Object.GetInstanceID()' is obsolete: 'Use GetEntityId instead.'"
+      }
+    ],
+    "warnings": [],
+    "summary": {
+      "errors": 2,
+      "warnings": 0
+    }
+  }
+}

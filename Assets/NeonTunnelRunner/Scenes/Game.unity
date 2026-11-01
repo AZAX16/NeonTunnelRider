@@ -162,6 +162,7 @@ GameObject:
   - component: {fileID: 80797674}
   - component: {fileID: 80797673}
   - component: {fileID: 80797675}
+  - component: {fileID: 80797676}
   m_Layer: 0
   m_Name: Systems
   m_TagString: Untagged
@@ -198,6 +199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: NeonTunnelRunner.Runtime::NeonTunnelRunner.GameManager
   gameplayConfig: {fileID: 11400000, guid: 50e71278e264ab6f3b9bd533f16b2e30, type: 2}
   gameplayLoop: {fileID: 80797674}
+  poolService: {fileID: 80797676}
   runSeed: 12345
   initialBestScore: 0
 --- !u!114 &80797674
@@ -229,6 +231,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: NeonTunnelRunner.Runtime::NeonTunnelRunner.InputRouter
   gameManager: {fileID: 80797673}
   actionsAsset: {fileID: -944628639613478452, guid: b20f5e96314e6f39896d51fa432a895a, type: 3}
+--- !u!114 &80797676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80797671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd3c719fc1c5228e8b0210c86e14962c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NeonTunnelRunner.Runtime::NeonTunnelRunner.PoolService
+  gameManager: {fileID: 80797673}
+  configuration: {fileID: 11400000, guid: 241596b69c8a69f3f8abd11ab4e827f1, type: 2}
+  storageRoot: {fileID: 821574525}
 --- !u!1 &192598834
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,6 +701,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 765596864}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &821574524
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 821574525}
+  m_Layer: 0
+  m_Name: Pools
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &821574525
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821574524}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &909762794
 GameObject:
   m_ObjectHideFlags: 0
@@ -1484,3 +1532,4 @@ SceneRoots:
   - {fileID: 1688247555}
   - {fileID: 43383726}
   - {fileID: 1992932449}
+  - {fileID: 821574525}

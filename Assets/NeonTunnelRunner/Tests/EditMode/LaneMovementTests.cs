@@ -160,6 +160,16 @@ namespace NeonTunnelRunner
 
         internal static void Wire(GameObject root, GameManager manager, GameplayLoop loop, GameplayConfig config)
         {
+            var pools = root.AddComponent<PoolService>();
+            var storage = new GameObject("Pools");
+            storage.transform.SetParent(root.transform, false);
+            storage.SetActive(false);
+            Assign(pools, "gameManager", manager);
+            Assign(pools, "storageRoot", storage.transform);
+#if UNITY_EDITOR
+            Assign(pools, "configuration", UnityEditor.AssetDatabase.LoadAssetAtPath<PoolConfig>("Assets/NeonTunnelRunner/Configs/Pools.asset"));
+#endif
+            Assign(manager, "poolService", pools);
             var player = AddPlayer(root.transform, config);
             var input = root.AddComponent<InputRouter>();
             Assign(input, "gameManager", manager);

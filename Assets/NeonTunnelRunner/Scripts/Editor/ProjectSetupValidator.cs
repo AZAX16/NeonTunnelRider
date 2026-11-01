@@ -56,7 +56,7 @@ namespace NeonTunnelRunner
             if (File.Exists(GameScene)) CheckScene(errors);
             else errors.Add("Missing scene: " + GameScene);
             if (errors.Count > 0) throw new BuildFailedException("Project setup failed:\n" + string.Join("\n", errors));
-            Debug.Log("[ProjectSetupValidator] PASS: foundation, URP/HDR, Linux profile, core lifecycle, player and action wiring.");
+            Debug.Log("[ProjectSetupValidator] PASS: foundation, URP/HDR, Linux profile, core lifecycle, player, action wiring and pool catalog.");
         }
 
         // Direct Editor batchmode entry; never quits an interactive Editor.
@@ -102,6 +102,7 @@ namespace NeonTunnelRunner
                     Require(roots.Count(r => r.name == name) == 1, "Require one scene root: " + name, errors);
                 var objects = roots.SelectMany(r => r.GetComponentsInChildren<Transform>(true)).Select(t => t.gameObject).ToArray();
                 CheckCore(objects, errors);
+                CheckPools(objects, errors);
                 CheckPlayerInput(objects, errors);
                 foreach (var go in objects)
                 {
@@ -161,6 +162,24 @@ namespace NeonTunnelRunner
             Require(config.StartingSpeed >= 0f && config.MaximumSpeed >= config.StartingSpeed &&
                 config.StartingLane == 0 && config.LaneWidth > 0f && config.LaneTransitionDuration > 0f,
                 "Resolve invalid gameplay configuration defaults.", errors);
+        }
+
+        private static void CheckPools(GameObject[] objects, List<string> errors)
+        {
+            var services = objects.SelectMany(g => g.GetComponents<PoolService>()).ToArray();
+            Require(services.Length == 1, "Require exactly one PoolService.", errors);
+            if (services.Length != 1) return;
+            var pools = services[0];
+            Require(pools.enabled && pools.gameObject.activeInHierarchy && pools.Owner &&
+                pools.Owner.Pools == pools && pools.gameObject == pools.Owner.gameObject,
+                "Wire the enabled scene-owned PoolService and GameManager together on Systems.", errors);
+            Require(pools.StorageRoot && pools.StorageRoot.name == "Pools" && !pools.StorageRoot.parent &&
+                !pools.StorageRoot.gameObject.activeSelf,
+                "Assign a separate inactive Pools scene root for storage.", errors);
+            var config = pools.Configuration;
+            Require(config && AssetDatabase.GetAssetPath(config) == Root + "/Configs/Pools.asset",
+                "Assign Pools.asset to PoolService.", errors);
+            if (config && !config.TryValidate(out string error)) errors.Add(error);
         }
 
         private static void Require(bool condition, string message, List<string> errors)

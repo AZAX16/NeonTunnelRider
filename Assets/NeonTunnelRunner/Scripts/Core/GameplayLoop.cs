@@ -45,7 +45,7 @@ namespace NeonTunnelRunner
         {
             runPrepared = false;
             TickIndex = 0;
-            if (inputRouter) inputRouter.Clear();
+            if (inputRouter) inputRouter.ApplyState(GameState.Menu);
             if (player) player.ClearQueuedCommand();
         }
 

@@ -1,0 +1,122 @@
+{
+  "originalOptions": {
+    "playing": false,
+    "enabled": true,
+    "options": 3
+  },
+  "cycles": [
+    {
+      "reloadsEnabled": true,
+      "smoke": {
+        "passed": true,
+        "bindings": [
+          {
+            "key": "A",
+            "lane": -1,
+            "tick": 36,
+            "Distance": 15.839993745088577,
+            "callbacks": 1
+          },
+          {
+            "key": "D",
+            "lane": 1,
+            "tick": 20,
+            "Distance": 8.79999652504921,
+            "callbacks": 1
+          },
+          {
+            "key": "LeftArrow",
+            "lane": -1,
+            "tick": 20,
+            "Distance": 8.79999652504921,
+            "callbacks": 1
+          },
+          {
+            "key": "RightArrow",
+            "lane": 1,
+            "tick": 20,
+            "Distance": 8.79999652504921,
+            "callbacks": 1
+          }
+        ],
+        "editorContextStart": true,
+        "nativeEscapePauseResume": true,
+        "pausedRestart": true,
+        "gameOverRestart": true,
+        "returnToMenu": true,
+        "finalState": "Menu",
+        "frame": 207,
+        "ready": true,
+        "capacity": 0,
+        "created": 0,
+        "destroyed": 0
+      },
+      "exit": {
+        "playing": false,
+        "instanceClear": true,
+        "timeScale": 1
+      }
+    },
+    {
+      "reloadsEnabled": false,
+      "smoke": {
+        "passed": true,
+        "bindings": [
+          {
+            "key": "A",
+            "lane": -1,
+            "tick": 33,
+            "Distance": 14.519994266331196,
+            "callbacks": 1
+          },
+          {
+            "key": "D",
+            "lane": 1,
+            "tick": 20,
+            "Distance": 8.79999652504921,
+            "callbacks": 1
+          },
+          {
+            "key": "LeftArrow",
+            "lane": -1,
+            "tick": 19,
+            "Distance": 8.35999669879675,
+            "callbacks": 1
+          },
+          {
+            "key": "RightArrow",
+            "lane": 1,
+            "tick": 19,
+            "Distance": 8.35999669879675,
+            "callbacks": 1
+          }
+        ],
+        "editorContextStart": true,
+        "nativeEscapePauseResume": true,
+        "pausedRestart": true,
+        "gameOverRestart": true,
+        "returnToMenu": true,
+        "finalState": "Menu",
+        "frame": 235,
+        "ready": true,
+        "capacity": 0,
+        "created": 0,
+        "destroyed": 0
+      },
+      "exit": {
+        "playing": false,
+        "instanceClear": true,
+        "timeScale": 1
+      }
+    }
+  ],
+  "passed": true,
+  "configBefore": {
+    "Pools.asset": "fd71735c78b4a5cad94e60f70fc4afe80b224f9a9708221cfa076d0a73e37125",
+    "Gameplay.asset": "a90e5b2a51873e65c9dae592129973e2188169ea97856e950d2c4f114efa9203"
+  },
+  "configAfter": {
+    "Pools.asset": "fd71735c78b4a5cad94e60f70fc4afe80b224f9a9708221cfa076d0a73e37125",
+    "Gameplay.asset": "a90e5b2a51873e65c9dae592129973e2188169ea97856e950d2c4f114efa9203"
+  }
+}
