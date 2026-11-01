@@ -37,7 +37,7 @@ namespace NeonTunnelRunner
             { Assert.That(type.BaseType,Is.EqualTo(typeof(Interactable))); var method=type.GetMethod("OnInteract",BindingFlags.Instance|BindingFlags.NonPublic); Assert.That(method.DeclaringType,Is.EqualTo(type)); Assert.That(method.GetBaseDefinition().DeclaringType,Is.EqualTo(typeof(Interactable))); }
             var stationary=Rent(PoolKey.Stationary,100,1); var moving=Rent(PoolKey.Moving,200,-1);
             Assert.That(stationary is StationaryCar && moving is MovingCar,Is.True);
-            Assert.That(traffic.ActiveCount,Is.EqualTo(2)); Assert.That(loop.Sensor.Capacity,Is.EqualTo(96));
+            Assert.That(traffic.ActiveCount,Is.EqualTo(2)); Assert.That(loop.Sensor.Capacity,Is.EqualTo(280));
         }
         [Test] public void WorldMotionPauseAndRebasePreserveBothAbsoluteHistories()
         {
@@ -157,10 +157,10 @@ namespace NeonTunnelRunner
             var held=new List<TrafficLease>();
             foreach (var key in new[] { PoolKey.Stationary,PoolKey.Moving })
                 while (manager.Pools.TryRent(new SpawnContext(key,Vector3.forward*5000,Quaternion.identity,absoluteDistance:5000),out var item)) held.Add(new TrafficLease((Interactable)item,item.ActivationId));
-            loop.Step(20f); Assert.That(traffic.Omitted,Is.GreaterThan(0)); Assert.That(traffic.ActiveCount,Is.Zero);
+            loop.Step(20f); Assert.That(traffic.Omitted,Is.GreaterThan(0)); Assert.That(CountCars(),Is.Zero);
             Assert.That(traffic.PlanAt(1),Is.EqualTo(plan)); Assert.That(manager.Pools.TotalCreated,Is.EqualTo(created));
             ulong misses=manager.Pools.Misses; foreach (var lease in held) lease.Item.ReturnToPool(lease.ActivationId);
-            loop.Step(0.02f); Assert.That(manager.Pools.Misses,Is.EqualTo(misses)); Assert.That(traffic.ActiveCount,Is.Zero);
+            loop.Step(0.02f); Assert.That(manager.Pools.Misses,Is.EqualTo(misses)); Assert.That(CountCars(),Is.Zero);
             Assert.That(traffic.DiagnosticCount,Is.InRange(1,64));
         }
         [Test] public void PickupCategoryWinsExactTieAndDefersItsReturn()
@@ -171,7 +171,7 @@ namespace NeonTunnelRunner
             var entries=new PoolConfig.Entry[original.EntryCount+1];
             for (int i=0;i<original.EntryCount;i++) entries[i]=original.GetEntry(i);
             var template=new GameObject("InteractionProbeTemplate"); template.SetActive(false); template.AddComponent<InteractionProbe>();
-            entries[entries.Length-1]=new PoolConfig.Entry(PoolKey.Coin,template,1);
+            entries[entries.Length-1]=new PoolConfig.Entry(PoolKey.Spark,template,1);
             typeof(PoolConfig).GetField("entries",BindingFlags.Instance|BindingFlags.NonPublic).SetValue(catalog,entries);
             try
             {
@@ -181,15 +181,17 @@ namespace NeonTunnelRunner
                 PlayModeMovementRig.Wire(root,manager,loop,config); Assign(manager.Pools,"configuration",catalog);
                 root.SetActive(true); Assert.That(manager.StartRun(),Is.True); traffic=loop.Planner; traffic.ReleaseAll();
                 var obstacle=Rent(PoolKey.Stationary,0,sequence:1);
-                var pickup=(InteractionProbe)Rent(PoolKey.Coin,0,sequence:999);
+                var pickup=(InteractionProbe)Rent(PoolKey.Spark,0,sequence:999);
                 var order=new List<string>();
                 pickup.Interacted=context=>{ order.Add("pickup"); Assert.That(pickup.ReturnToPool(context.Encounter.ActivationId),Is.True); Assert.That(pickup.IsRented,Is.True); };
                 manager.Session.Damaged+=_=>order.Add("damage");
                 loop.Step(0.02f); CollectionAssert.AreEqual(new[] { "pickup","damage" },order);
-                Assert.That(pickup.IsRented,Is.False); Assert.That(obstacle.Encountered,Is.True); Assert.That(loop.Sensor.Capacity,Is.EqualTo(97));
+                Assert.That(pickup.IsRented,Is.False); Assert.That(obstacle.Encountered,Is.True); Assert.That(loop.Sensor.Capacity,Is.EqualTo(281));
             }
             finally { manager.Shutdown(); Object.DestroyImmediate(template); Object.DestroyImmediate(catalog); }
         }
+        private int CountCars()
+        { int count=0; for (int i=0;i<traffic.ActiveCount;i++) if (traffic.GetActive(i).Item.Category==InteractionCategory.Obstacle) count++; return count; }
         private static void Assign(object target,string field,object value) => target.GetType().GetField(field,BindingFlags.Instance|BindingFlags.NonPublic).SetValue(target,value);
 
         [Test] public void ContactOnRebaseTickDoesNotCreateAdditionalHits()
@@ -211,7 +213,7 @@ namespace NeonTunnelRunner
                 Assert.That(manager.Restart(),Is.True); Assert.That(item.ReturnToPool(token),Is.False);
                 Assert.That(loop.Origin.Offset,Is.Zero); Assert.That(loop.Sensor.ContactCount,Is.Zero); Assert.That(loop.Survival.GraceRemaining,Is.Zero);
                 Assert.That(manager.Session.Snapshot.Lives,Is.EqualTo(3)); Assert.That(traffic.ActiveCount,Is.GreaterThan(0));
-                Assert.That(manager.Pools.TotalCreated,Is.EqualTo(120)); Assert.That(manager.Pools.TotalDestroyed,Is.Zero);
+                Assert.That(manager.Pools.TotalCreated,Is.EqualTo(304)); Assert.That(manager.Pools.TotalDestroyed,Is.Zero);
             }
             manager.Pause(); manager.ReturnToMenu(); Assert.That(traffic.ActiveCount,Is.Zero); Assert.That(manager.Pools.ActiveCount,Is.Zero);
         }

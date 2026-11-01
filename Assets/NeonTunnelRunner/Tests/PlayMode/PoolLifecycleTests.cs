@@ -27,7 +27,7 @@ namespace NeonTunnelRunner
             template = new GameObject("PoolProbeTemplate");
             template.SetActive(false);
             template.AddComponent<PoolProbe>();
-            SetEntries(new PoolConfig.Entry(PoolKey.Coin, template, 4));
+            SetEntries(new PoolConfig.Entry(PoolKey.Spark, template, 4));
             root = new GameObject("PoolLifecycleFixture");
             root.SetActive(false);
             var loop = root.AddComponent<GameplayLoop>();
@@ -58,7 +58,7 @@ namespace NeonTunnelRunner
             Assert.That(manager.IsOwner, Is.True);
             Assert.That(pools.IsReady, Is.True, pools.LastError);
         }
-        private SpawnContext Context(PoolKey key = PoolKey.Coin, long sequence = 1, Transform parent = null) =>
+        private SpawnContext Context(PoolKey key = PoolKey.Spark, long sequence = 1, Transform parent = null) =>
             new SpawnContext(key, new Vector3(3.2f, 0.6f, 10f), Quaternion.Euler(0f, 20f, 0f), parent,
                 1, 123456789.123456789d, 73, 22f, sequence);
         private PoolProbe Rent(long sequence = 1)
@@ -145,7 +145,7 @@ namespace NeonTunnelRunner
             Assert.That(pools.LastMissKey, Is.EqualTo(PoolKey.Fuel));
             Assert.That(pools.TryRent(Context((PoolKey)(-1)), out _), Is.False);
             Assert.That(pools.Misses, Is.EqualTo(3));
-            Assert.That(pools.TryGetCounters(PoolKey.Coin, out var counters), Is.True);
+            Assert.That(pools.TryGetCounters(PoolKey.Spark, out var counters), Is.True);
             Assert.That(counters.Misses, Is.EqualTo(1));
             Assert.That(counters.PeakActive, Is.EqualTo(4));
             pools.ReturnAll(); pools.ReturnAll();
@@ -270,8 +270,8 @@ namespace NeonTunnelRunner
         [Test] public void FiftyRestartsGateInputBeforeCleanupAndPreservePools()
         {
             var realRoads = UnityEditor.AssetDatabase.LoadAssetAtPath<PoolConfig>("Assets/NeonTunnelRunner/Configs/Pools.asset");
-            SetEntries(realRoads.GetEntry(0), realRoads.GetEntry(1), realRoads.GetEntry(2), realRoads.GetEntry(3), realRoads.GetEntry(4), realRoads.GetEntry(5),
-                new PoolConfig.Entry(PoolKey.Coin, template, 4));
+            SetEntries(realRoads.GetEntry(0), realRoads.GetEntry(1), realRoads.GetEntry(2), realRoads.GetEntry(3), realRoads.GetEntry(4), realRoads.GetEntry(5), realRoads.GetEntry(6), realRoads.GetEntry(7),
+                new PoolConfig.Entry(PoolKey.Spark, template, 4));
             Bootstrap();
             Assert.That(manager.StartRun(), Is.True);
             int worldActive=pools.ActiveCount;
@@ -308,7 +308,7 @@ namespace NeonTunnelRunner
                 }
                 expectedReturns+=(ulong)pools.ActiveCount;
                 Assert.That(manager.Restart(), Is.True);
-                AssertRestored(124, worldActive);
+                AssertRestored(308, worldActive);
                 Assert.That(manager.Loop.Player.LaneIndex, Is.Zero);
                 Assert.That(manager.Loop.Input.Actions.FindActionMap("Gameplay").enabled, Is.True);
             }
@@ -317,7 +317,7 @@ namespace NeonTunnelRunner
             Rent();
             manager.Pause();
             Assert.That(manager.ReturnToMenu(), Is.True);
-            AssertRestored(124);
+            AssertRestored(308);
             Assert.That(manager.StartRun(), Is.True);
             Debug.Log($"[Task04] 50 restarts + menu; created={pools.TotalCreated}, destroyed={pools.TotalDestroyed}, cleanupCallbacks={cleanupCallbacks}.");
         }
@@ -325,13 +325,13 @@ namespace NeonTunnelRunner
         [TestCase(false)] [TestCase(true)]
         public void EmptyOrInvalidCatalogBlocksRequiredWorldWithoutPartialRun(bool invalid)
         {
-            if (invalid) SetEntries(new PoolConfig.Entry(PoolKey.Coin, null, 4));
+            if (invalid) SetEntries(new PoolConfig.Entry(PoolKey.Spark, null, 4));
             else SetEntries();
             root.SetActive(true);
             var before = manager.Session.Snapshot;
             int events = 0;
             manager.StateChanged += (_, __) => events++;
-            if (invalid) LogAssert.Expect(LogType.Error, "[GameManager] Cannot start: Pools entry 0 (Coin): assign a prefab. Fix PoolConfig before StartRun.");
+            if (invalid) LogAssert.Expect(LogType.Error, "[GameManager] Cannot start: Pools entry 0 (Spark): assign a prefab. Fix PoolConfig before StartRun.");
             else LogAssert.Expect(LogType.Error, "[GameManager] Cannot start: Required road pool RoadOpen needs capacity >= 6.");
             Assert.That(manager.StartRun(), Is.False);
             {

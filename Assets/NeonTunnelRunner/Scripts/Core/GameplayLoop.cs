@@ -13,6 +13,7 @@ namespace NeonTunnelRunner
         [SerializeField] private SpawnDirector spawnDirector;
         [SerializeField] private InteractionSensor interactionSensor;
         [SerializeField] private PlayerSurvival survival;
+        [SerializeField] private ProgressionSystem progression;
         private RunSession session;
         private bool runPrepared;
 
@@ -24,6 +25,7 @@ namespace NeonTunnelRunner
         public SpawnDirector Planner => spawnDirector;
         public InteractionSensor Sensor => interactionSensor;
         public PlayerSurvival Survival => survival;
+        public ProgressionSystem Progression => progression;
         public bool IsStepping { get; private set; }
         public string WorldFailure { get; private set; }
         public ulong TickIndex { get; private set; }
@@ -42,9 +44,11 @@ namespace NeonTunnelRunner
             inputRouter.Initialize(owner);
             spawnDirector.Initialize();
             if (!survival || survival.Owner != owner || !interactionSensor || interactionSensor.Player != player ||
-                interactionSensor.Registry != spawnDirector || interactionSensor.Survival != survival)
+                interactionSensor.Registry != spawnDirector || interactionSensor.Survival != survival ||
+                !progression || progression.Owner!=owner || interactionSensor.Progression!=progression)
                 throw new System.InvalidOperationException("Assign sensor, survival and their explicit owners.");
             survival.Initialize(session);
+            progression.Initialize(session);
             interactionSensor.Initialize();
             CleanupRun();
         }
@@ -63,7 +67,7 @@ namespace NeonTunnelRunner
         private bool ValidateInteractions(out string error)
         {
             error=null;
-            if (!survival.isActiveAndEnabled || !interactionSensor.isActiveAndEnabled || spawnDirector.Pools != gameManager.Pools ||
+            if (!survival.isActiveAndEnabled || !interactionSensor.isActiveAndEnabled || !progression.isActiveAndEnabled || spawnDirector.Pools != gameManager.Pools ||
                 !worldOrigin.HasParticipant(spawnDirector) || interactionSensor.Capacity < spawnDirector.Capacity)
             { error="Enable and wire sensor/survival/traffic with one origin participant and sufficient contact capacity."; return false; }
             return true;
@@ -81,6 +85,8 @@ namespace NeonTunnelRunner
             interactionSensor.Clear();
             WorldFailure = null;
             if (!roads.EnsureCoverage(0d, 0d)) { WorldFailure = roads.LastError; return false; }
+            if (!spawnDirector.PrepareFuelSupply(0d,0d,0d)) { WorldFailure=spawnDirector.LastError; return false; }
+            spawnDirector.CommitFuelSupply();
             spawnDirector.FillWindow(0d);
             spawnDirector.MaintainTraffic(0d,0d);
             runPrepared = true;
@@ -128,13 +134,22 @@ namespace NeonTunnelRunner
             // Reserve the target coverage before mutating the player/session. Even a multi-window
             // catch-up either commits a complete window or leaves the existing road intact.
             double targetDistance = session.Snapshot.Distance + (double)session.Snapshot.CruiseSpeed * deltaTime;
+            if (!spawnDirector.PrepareFuelSupply(session.Snapshot.Distance,targetDistance,worldOrigin.Offset))
+            {
+                WorldFailure=spawnDirector.LastError;
+                Debug.LogError("[GameplayLoop] "+WorldFailure,this);
+                gameManager.Pause();
+                return false;
+            }
             if (!roads.EnsureCoverage(targetDistance, worldOrigin.Offset))
             {
+                spawnDirector.RollbackFuelSupply();
                 WorldFailure = roads.LastError;
                 Debug.LogError("[GameplayLoop] " + WorldFailure, this);
                 gameManager.Pause();
                 return false;
             }
+            spawnDirector.CommitFuelSupply();
             IsStepping=true;
             try
             {
@@ -148,6 +163,7 @@ namespace NeonTunnelRunner
                 player.CommitPose();
                 spawnDirector.CommitTraffic();
                 session.RecordMovement(deltaTime, travel);
+                progression.RecomputeScore();
                 TickIndex++;
                 survival.RefreshDebug();
                 // Task 08 adds fuel drain and final terminal resolution here.

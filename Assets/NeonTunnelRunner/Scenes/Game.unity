@@ -166,6 +166,7 @@ GameObject:
   - component: {fileID: 80797679}
   - component: {fileID: 80797678}
   - component: {fileID: 80797677}
+  - component: {fileID: 80797680}
   m_Layer: 0
   m_Name: Systems
   m_TagString: Untagged
@@ -225,6 +226,7 @@ MonoBehaviour:
   spawnDirector: {fileID: 80797677}
   interactionSensor: {fileID: 1992932452}
   survival: {fileID: 1992932453}
+  progression: {fileID: 80797680}
 --- !u!114 &80797675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,6 +272,11 @@ MonoBehaviour:
   gameplay: {fileID: 11400000, guid: 50e71278e264ab6f3b9bd533f16b2e30, type: 2}
   pools: {fileID: 80797676}
   activeRoot: {fileID: 775574893}
+  diagnosticSeed: 0
+  diagnosticBlock: 0
+  diagnosticSequence: 0
+  diagnosticRejection: 0
+  diagnosticMiss: 0
 --- !u!114 &80797678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,6 +310,21 @@ MonoBehaviour:
   configuration: {fileID: 11400000, guid: a3f0b189244308867b42882f15967d21, type: 2}
   pools: {fileID: 80797676}
   activeRoot: {fileID: 1075299423}
+--- !u!114 &80797680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80797671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58548e0d5a8318712b985f6a38a2025f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NeonTunnelRunner.Runtime::NeonTunnelRunner.ProgressionSystem
+  gameManager: {fileID: 80797673}
+  debugCoins: 0
+  debugScore: 0
 --- !u!1 &192598834
 GameObject:
   m_ObjectHideFlags: 0
@@ -1447,6 +1469,10 @@ PrefabInstance:
       propertyPath: registry
       value: 
       objectReference: {fileID: 80797677}
+    - target: {fileID: 3281914291220571836, guid: 3fe156509481777c8b2a4c1d32d2e622, type: 3}
+      propertyPath: progression
+      value: 
+      objectReference: {fileID: 80797680}
     - target: {fileID: 3471662616544751283, guid: 3fe156509481777c8b2a4c1d32d2e622, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

@@ -2,6 +2,19 @@ using System;
 
 namespace NeonTunnelRunner
 {
+    public readonly struct CollectedEvent
+    {
+        public Guid RunId { get; }
+        public Encounter Encounter { get; }
+        public PoolKey Kind => Encounter.Kind;
+        public UnityEngine.Vector3 LocalPosition => Encounter.LocalPosition;
+        public double AbsoluteZ => Encounter.AbsoluteZ;
+        public float Value { get; }
+        public float AppliedValue { get; }
+        internal CollectedEvent(Guid runId,Encounter encounter,float value,float appliedValue)
+        { RunId=runId; Encounter=encounter; Value=value; AppliedValue=appliedValue; }
+    }
+
     public readonly struct DamageEvent
     {
         public Guid RunId { get; }
@@ -64,7 +77,9 @@ namespace NeonTunnelRunner
 
         public event Action<RunSnapshot> SnapshotChanged;
         public event Action<DamageEvent> Damaged;
+        public event Action<CollectedEvent> Collected;
         internal void PublishDamage(DamageEvent damage) => Damaged?.Invoke(damage);
+        internal void PublishCollection(CollectedEvent collected) => Collected?.Invoke(collected);
 
         public RunSnapshot Snapshot => new RunSnapshot(runId, seed, lives, fuel, elapsedTime,
             distance, coins, score, bestScore, cruiseSpeed, actualSpeed);
@@ -150,6 +165,6 @@ namespace NeonTunnelRunner
             return snapshot;
         }
 
-        internal void DetachObservers() { SnapshotChanged = null; Damaged = null; }
+        internal void DetachObservers() { SnapshotChanged = null; Damaged = null; Collected = null; }
     }
 }

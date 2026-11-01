@@ -46,6 +46,7 @@ namespace NeonTunnelRunner
     {
         internal const ulong RoadStream = 0x726f6164UL;
         internal const ulong GameplayStream = 0x67616d65UL;
+        internal const ulong PickupStream = 0x7069636bUL;
         internal static uint Sample(int seed, long index, ulong stream, ulong counter = 0)
         {
             unchecked

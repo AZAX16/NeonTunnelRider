@@ -1,0 +1,114 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "file": "Docs/Setup/Task07Audit.cs",
+      "entry": "NeonTunnelRunner.Task07Audit.Inspect"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 231,
+      "executeMs": 124,
+      "assemblyName": "PipelineRunScript_Task07Audit_2f403f1785fd4fb59524d8704c705462",
+      "success": true,
+      "result": {
+        "editor": "6000.6.3f1",
+        "playing": false,
+        "scene": "Assets/NeonTunnelRunner/Scenes/Game.unity",
+        "dirty": false,
+        "instanceClear": true,
+        "timeScale": 1,
+        "ownerWired": true,
+        "originRegistered": true,
+        "entries": [
+          {
+            "key": "RoadOpen",
+            "Capacity": 8,
+            "prefab": "Assets/NeonTunnelRunner/Prefabs/Road/RoadOpen60.prefab",
+            "guid": "d22b4640bb487dfb081b276161c4fe40"
+          },
+          {
+            "key": "RoadTunnel",
+            "Capacity": 8,
+            "prefab": "Assets/NeonTunnelRunner/Prefabs/Road/RoadTunnel60.prefab",
+            "guid": "413c84f91350ee86587485145379c4c4"
+          },
+          {
+            "key": "RoadEntrance",
+            "Capacity": 4,
+            "prefab": "Assets/NeonTunnelRunner/Prefabs/Road/RoadEntrance60.prefab",
+            "guid": "a1bed7ac9f140d1cabcdb6745e0bc845"
+          },
+          {
+            "key": "RoadExit",
+            "Capacity": 4,
+            "prefab": "Assets/NeonTunnelRunner/Prefabs/Road/RoadExit60.prefab",
+            "guid": "e38623c39070b31a2a24fd1cb0bf0edb"
+          },
+          {
+            "key": "Stationary",
+            "Capacity": 64,
+            "prefab": "Assets/NeonTunnelRunner/Prefabs/Interactables/StationaryCar.prefab",
+            "guid": "d73bd934ff8c851658c0135f6ad1697f"
+          },
+          {
+            "key": "Moving",
+            "Capacity": 32,
+            "prefab": "Assets/NeonTunnelRunner/Prefabs/Interactables/MovingCar.prefab",
+            "guid": "a2b2abc969b6ed9928e611322cfd348c"
+          },
+          {
+            "key": "Coin",
+            "Capacity": 160,
+            "prefab": "Assets/NeonTunnelRunner/Prefabs/Interactables/Coin.prefab",
+            "guid": "488db8f507fb906e88a792a0097a03b7"
+          },
+          {
+            "key": "Fuel",
+            "Capacity": 24,
+            "prefab": "Assets/NeonTunnelRunner/Prefabs/Interactables/FuelCan.prefab",
+            "guid": "33610a61f2dece957bd7db2379103701"
+          }
+        ],
+        "packages": [
+          {
+            "name": "com.unity.inputsystem",
+            "version": "1.20.0"
+          },
+          {
+            "name": "com.unity.render-pipelines.universal",
+            "version": "17.6.0"
+          },
+          {
+            "name": "com.unity.test-framework",
+            "version": "1.8.0"
+          },
+          {
+            "name": "com.unity.pipeline",
+            "version": "0.9.1-exp.1"
+          }
+        ],
+        "autoTick": false,
+        "playerAssemblies": [
+          {
+            "name": "NeonTunnelRunner.Runtime",
+            "references": [
+              "Unity.InputSystem",
+              "UnityEngine.UI",
+              "Unity.TextMeshPro"
+            ]
+          }
+        ]
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,16 @@
+{
+  "editmode": {
+    "total": 109,
+    "passed": 109,
+    "failed": 0,
+    "skipped": 0,
+    "inconclusive": 0
+  },
+  "playmode": {
+    "total": 109,
+    "passed": 109,
+    "failed": 0,
+    "skipped": 0,
+    "inconclusive": 0
+  }
+}

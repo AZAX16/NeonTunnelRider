@@ -198,8 +198,10 @@ namespace NeonTunnelRunner
             var traffic=new GameObject("Interactables").transform; traffic.SetParent(root.transform,false);
             Assign(planner,"activeRoot",traffic);
             var survival=playerObject.AddComponent<PlayerSurvival>(); Assign(survival,"gameManager",manager);
+            var progression=root.AddComponent<ProgressionSystem>(); Assign(progression,"gameManager",manager); Assign(loop,"progression",progression);
             var sensor=playerObject.AddComponent<InteractionSensor>();
             Assign(sensor,"player",player); Assign(sensor,"registry",planner); Assign(sensor,"survival",survival);
+            Assign(sensor,"progression",progression);
             Assign(loop,"interactionSensor",sensor); Assign(loop,"survival",survival);
             Assign(origin,"additionalParticipants",new MonoBehaviour[] { planner });
             Assign(loop, "roads", roads); Assign(loop, "worldOrigin", origin); Assign(loop, "spawnDirector", planner);

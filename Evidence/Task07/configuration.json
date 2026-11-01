@@ -1,0 +1,47 @@
+{
+  "seedRange": [
+    0,
+    999
+  ],
+  "blocksPerSeed": 21,
+  "metresPerSeed": 10080,
+  "coverage": "63000 mandatory reservations; independent stationary/moving bounds at introduction distances 300m and 180m",
+  "gameplay": {
+    "startingSpeed": 22,
+    "maximumSpeed": 50,
+    "laneWidth": 3.2,
+    "laneDuration": 0.28,
+    "playerHalfExtents": [
+      0.85,
+      0.45,
+      1.8
+    ],
+    "coinScore": 100,
+    "fuelRefill": 30,
+    "fuelCapacity": 100
+  },
+  "world": {
+    "blockLength": 480,
+    "protectedSpan": 360,
+    "clearBuffer": 120,
+    "reaction": 0.7,
+    "margin": 0.3,
+    "ahead": 300,
+    "behind": 60,
+    "fuelOffsets": [
+      120,
+      300,
+      450
+    ],
+    "pickupHalfExtents": [
+      0.5,
+      0.6,
+      0.5
+    ]
+  },
+  "configSha256": {
+    "Pools.asset": "3936ff81b28e7f6df96e2e80239256aea371575a69efd8aceeac8e7414934093",
+    "Gameplay.asset": "a90e5b2a51873e65c9dae592129973e2188169ea97856e950d2c4f114efa9203",
+    "World.asset": "9e9272c239a8a26e8b3366a8e6d79ffff09aecadb9c4ae4fa7f2d13f5addc55f"
+  }
+}

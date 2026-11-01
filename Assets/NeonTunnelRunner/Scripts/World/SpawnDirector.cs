@@ -16,13 +16,18 @@ namespace NeonTunnelRunner
         public PoolKey Kind { get; }
         public PatternRejection Rejection { get; }
         public PoolRentFailure Miss { get; }
+        public PickupPlacement Pickup { get; }
+        public bool IsPickup { get; }
+        public long Sequence => IsPickup ? Pickup.SpawnSequence : Candidate.SpawnSequence;
         public double Ahead { get; }
         public double Behind { get; }
         public float MinimumSpeed { get; }
         public float MaximumSpeed { get; }
         public float Probability { get; }
         internal SpawnDiagnostic(TrafficCandidate candidate,PoolKey kind,PatternRejection rejection,PoolRentFailure miss,WorldConfig world,GameplayConfig gameplay)
-        { Candidate=candidate; Kind=kind; Rejection=rejection; Miss=miss; Ahead=world.Ahead; Behind=world.Behind; MinimumSpeed=gameplay.StartingSpeed; MaximumSpeed=gameplay.MaximumSpeed; Probability=world.CandidateProbability; }
+        { Candidate=candidate; Kind=kind; Rejection=rejection; Miss=miss; Pickup=default; IsPickup=false; Ahead=world.Ahead; Behind=world.Behind; MinimumSpeed=gameplay.StartingSpeed; MaximumSpeed=gameplay.MaximumSpeed; Probability=world.CandidateProbability; }
+        internal SpawnDiagnostic(PickupPlacement pickup,PatternRejection rejection,PoolRentFailure miss,WorldConfig world,GameplayConfig gameplay)
+        { Candidate=pickup.DiagnosticCandidate; Kind=pickup.Kind; Rejection=rejection; Miss=miss; Pickup=pickup; IsPickup=true; Ahead=world.Ahead; Behind=world.Behind; MinimumSpeed=gameplay.StartingSpeed; MaximumSpeed=gameplay.MaximumSpeed; Probability=world.CandidateProbability; }
     }
     /// <summary>Deterministic block data and independently leased traffic. All simulation is loop-owned.</summary>
     [DisallowMultipleComponent]
@@ -36,6 +41,9 @@ namespace NeonTunnelRunner
         private TrafficLease[] deferred = Array.Empty<TrafficLease>();
         private int deferredCount;
         private long nextRow;
+        private long nextCoinSlot, nextFuelIndex, fuelTransactionStart;
+        private TrafficLease[] stagedFuel = Array.Empty<TrafficLease>();
+        private int stagedFuelCount;
         private readonly SpawnDiagnostic[] diagnostics = new SpawnDiagnostic[64];
         private int diagnosticCursor;
         [Header("Latest bounded spawn diagnostic (read only during play)")]
@@ -53,15 +61,23 @@ namespace NeonTunnelRunner
         public ulong SpawnedStationary { get; private set; }
         public ulong SpawnedMoving { get; private set; }
         public ulong Omitted { get; private set; }
+        public ulong SpawnedCoins { get; private set; }
+        public ulong SpawnedFuel { get; private set; }
+        public ulong OmittedCoins { get; private set; }
+        public ulong FuelFailures { get; private set; }
+        public ulong FuelReclaims { get; private set; }
+        public long NextFuelIndex => nextFuelIndex;
+        public string LastError { get; private set; }
         public TrafficLease GetActive(int index) => index >= 0 && index < ActiveCount ? active[index] : throw new ArgumentOutOfRangeException(nameof(index));
         public SpawnDiagnostic GetDiagnostic(int index) => index >= 0 && index < DiagnosticCount ? diagnostics[(diagnosticCursor-DiagnosticCount+index+diagnostics.Length)%diagnostics.Length] : throw new ArgumentOutOfRangeException(nameof(index));
         internal void Initialize()
         {
-            int capacity=0;
+            int capacity=0, fuelCapacity=0;
             if (pools && pools.Configuration)
                 for (int i=0;i<pools.Configuration.EntryCount;i++)
-                { var entry=pools.Configuration.GetEntry(i); if (entry.Prefab && entry.Prefab.GetComponent<Interactable>()) capacity+=entry.Capacity; }
+                { var entry=pools.Configuration.GetEntry(i); if (entry.Prefab && entry.Prefab.GetComponent<Interactable>()) capacity+=entry.Capacity; if (entry.Key==PoolKey.Fuel) fuelCapacity=entry.Capacity; }
             active=new TrafficLease[capacity]; deferred=new TrafficLease[capacity];
+            stagedFuel=new TrafficLease[fuelCapacity];
         }
         public bool ValidateRequired(out string error)
         {
@@ -69,7 +85,7 @@ namespace NeonTunnelRunner
             if (!pools || !activeRoot || !activeRoot.gameObject.activeInHierarchy || activeRoot.position != Vector3.zero ||
                 activeRoot.rotation != Quaternion.identity || activeRoot.lossyScale != Vector3.one)
             { error="Assign neutral independent traffic root and PoolService."; return false; }
-            foreach (var key in new[] { PoolKey.Stationary, PoolKey.Moving })
+            foreach (var key in new[] { PoolKey.Stationary, PoolKey.Moving, PoolKey.Coin, PoolKey.Fuel })
             {
                 bool found=false;
                 for (int i=0;i<pools.Configuration.EntryCount;i++)
@@ -78,13 +94,15 @@ namespace NeonTunnelRunner
                     if (entry.Key != key) continue;
                     var car=entry.Prefab.GetComponent<Interactable>(); var box=entry.Prefab.GetComponent<BoxCollider>();
                     var body=entry.Prefab.GetComponent<Rigidbody>();
-                    found=car && (key==PoolKey.Stationary ? car is StationaryCar : car is MovingCar) &&
-                        entry.Capacity >= (key==PoolKey.Stationary ? 64 : 32) && box && box.isTrigger && box.center==Vector3.zero &&
-                        box.size==car.HalfExtents*2f && car.HalfExtents==new Vector3(1.1f,0.6f,2.2f) &&
+                    bool pickup=key==PoolKey.Coin || key==PoolKey.Fuel;
+                    found=car && (key==PoolKey.Stationary ? car is StationaryCar : key==PoolKey.Moving ? car is MovingCar : key==PoolKey.Coin ? car is Coin : car is FuelCan) &&
+                        entry.Capacity >= (key==PoolKey.Stationary ? 64 : key==PoolKey.Moving ? 32 : key==PoolKey.Coin ? 160 : 24) && box && box.isTrigger && box.center==Vector3.zero &&
+                        box.size==car.HalfExtents*2f && car.HalfExtents==(pickup ? PatternValidator.PickupHalfExtents : new Vector3(1.1f,0.6f,2.2f)) &&
                         entry.Prefab.transform.localScale==Vector3.one && entry.Prefab.transform.rotation==Quaternion.identity &&
+                        (!pickup || entry.Prefab.transform.Find("Visual")) &&
                         (key!=PoolKey.Moving || (body && body.isKinematic && !body.useGravity));
                 }
-                if (!found) { error="Missing/invalid required traffic pool "+key+" (64 stationary / 32 moving)."; return false; }
+                if (!found) { error="Missing/invalid required interactable pool "+key+" (64 stationary / 32 moving / 160 coin / 24 fuel)."; return false; }
             }
             if (gameplay.StartingSpeed <= 8f || !float.IsFinite(gameplay.StartingSpeed))
             { error="Minimum player speed must exceed maximum traffic speed 8 m/s."; return false; }
@@ -130,6 +148,80 @@ namespace NeonTunnelRunner
             Array.Clear(deferred,0,deferred.Length); deferredCount=0;
             while (ActiveCount>0) { var lease=active[ActiveCount-1]; if (lease.IsCurrent) lease.Item.ReturnToPool(lease.ActivationId); else active[--ActiveCount]=default; }
         }
+        public PickupPlacement FuelAt(long index)
+        {
+            if (index<0) throw new ArgumentOutOfRangeException(nameof(index));
+            return PlanAt(index/BlockPlan.FuelCount).GetFuel((int)(index%BlockPlan.FuelCount));
+        }
+        /// <summary>Reserve actual typed fuel rentals before any travel, including catch-up ticks.
+        /// The transaction is rolled back if road preflight subsequently fails.</summary>
+        internal bool PrepareFuelSupply(double playerZ,double targetZ,double offset)
+        {
+            if (stagedFuelCount!=0) throw new InvalidOperationException("Uncommitted fuel transaction.");
+            LastError=null; fuelTransactionStart=nextFuelIndex;
+            double limit=targetZ+configuration.Ahead;
+            if (!double.IsFinite(limit) || limit<0d || limit/WorldConfig.BlockLength>long.MaxValue/32d)
+                return FailFuel("Required fuel window is not representable.");
+            long block=(long)Math.Floor(limit/WorldConfig.BlockLength);
+            double local=limit-block*WorldConfig.BlockLength;
+            long count=checked(block*3+(local>=450d ? 3 : local>=300d ? 2 : local>=120d ? 1 : 0));
+            if (count-nextFuelIndex>stagedFuel.Length)
+                return FailFuel("Required fuel window exceeds reserved capacity; movement stopped.");
+            for (long index=nextFuelIndex;index<count;index++)
+            {
+                var placement=FuelAt(index);
+                if (!PatternValidator.ValidatePickup(this,placement,out var reason))
+                { Record(placement,reason,PoolRentFailure.None); RollbackFuelSupply(); return FailFuel("Required fuel reservation failed validation."); }
+                var context=PickupContext(placement,offset);
+                if (!pools.TryRent(context,out var item))
+                {
+                    Record(placement,PatternRejection.None,pools.LastRentFailure);
+                    // Reclaim only our own full bounds behind the current player. Never steal an
+                    // active opportunity, a foreign owner's rental, or use a coin as fuel.
+                    for (int i=ActiveCount-1;i>=0;i--)
+                    {
+                        var lease=active[i];
+                        if (lease.IsCurrent && lease.Item is FuelCan && lease.Item.AbsoluteZ+lease.Item.HalfExtents.z<playerZ-configuration.Behind)
+                        { lease.Item.ReturnToPool(lease.ActivationId); FuelReclaims++; }
+                    }
+                    if (!pools.TryRent(context,out item))
+                    { Record(placement,PatternRejection.None,pools.LastRentFailure); RollbackFuelSupply(); return FailFuel("Required fuel rental failed after safe reclaim: "+pools.LastRentFailure+". Movement stopped."); }
+                }
+                stagedFuel[stagedFuelCount++]=new TrafficLease((Interactable)item,item.ActivationId);
+                nextFuelIndex=index+1;
+            }
+            return true;
+        }
+        internal void CommitFuelSupply()
+        { SpawnedFuel+=(ulong)stagedFuelCount; Array.Clear(stagedFuel,0,stagedFuelCount); stagedFuelCount=0; }
+        internal void RollbackFuelSupply()
+        {
+            for (int i=stagedFuelCount-1;i>=0;i--) { var lease=stagedFuel[i]; if (lease.IsCurrent) lease.Item.ReturnToPool(lease.ActivationId); stagedFuel[i]=default; }
+            stagedFuelCount=0; nextFuelIndex=fuelTransactionStart;
+        }
+        private bool FailFuel(string error) { LastError=error; FuelFailures++; return false; }
+        private SpawnContext PickupContext(PickupPlacement placement,double offset) => new SpawnContext(placement.Kind,
+            new Vector3(placement.Lane*gameplay.LaneWidth,gameplay.StartingPosition.y,(float)(placement.AbsolutePosition-offset)),
+            Quaternion.identity,activeRoot,placement.Lane,placement.AbsolutePosition,seed,0f,placement.SpawnSequence,this);
+        private void MaintainCoins(double playerZ,double offset)
+        {
+            long firstBlock=Math.Max(0L,(long)Math.Floor(playerZ/WorldConfig.BlockLength));
+            long lastBlock=(long)Math.Floor((playerZ+configuration.Ahead)/WorldConfig.BlockLength);
+            long first=Math.Max(nextCoinSlot,firstBlock*BlockPlan.CoinSlots);
+            for (long index=first;index<(lastBlock+1)*BlockPlan.CoinSlots;index++)
+            {
+                var placement=PlanAt(index/BlockPlan.CoinSlots).GetCoin((int)(index%BlockPlan.CoinSlots));
+                if (placement.AbsolutePosition>playerZ+configuration.Ahead) break;
+                nextCoinSlot=index+1;
+                // Optional misses/skipped content are final; never retry close to the player.
+                if (placement.AbsolutePosition<playerZ+30d) { OmittedCoins++; continue; }
+                if (!PatternValidator.ValidatePickup(this,placement,out var rejection))
+                { OmittedCoins++; Record(placement,rejection,PoolRentFailure.None); continue; }
+                if (!pools.TryRent(PickupContext(placement,offset),out _))
+                { OmittedCoins++; Record(placement,PatternRejection.None,pools.LastRentFailure); }
+                else SpawnedCoins++;
+            }
+        }
         internal void MaintainTraffic(double playerZ,double offset)
         {
             for (int i=ActiveCount-1;i>=0;i--) { var lease=active[i]; if (lease.IsCurrent && lease.Item.AbsoluteZ+lease.Item.HalfExtents.z < playerZ-configuration.Behind) lease.Item.ReturnToPool(lease.ActivationId); }
@@ -154,11 +246,14 @@ namespace NeonTunnelRunner
                 }
             }
             nextRow=Math.Max(nextRow,last+1);
+            MaintainCoins(playerZ,offset);
         }
+        internal static bool ProposesMoving(TrafficCandidate candidate) =>
+            (WorldRandom.Sample(candidate.Seed,candidate.BlockIndex,WorldRandom.GameplayStream,(ulong)(64+candidate.Row*3+candidate.Lane+1))&1u)!=0;
         public bool TrySelectTraffic(TrafficCandidate candidate,double playerZ,out PoolKey key,out PatternRejection rejection)
         {
             var extent=new Vector3(1.1f,0.6f,2.2f);
-            bool proposeMoving=(WorldRandom.Sample(candidate.Seed,candidate.BlockIndex,WorldRandom.GameplayStream,(ulong)(64+candidate.Row*3+candidate.Lane+1))&1u)!=0;
+            bool proposeMoving=ProposesMoving(candidate);
             key=proposeMoving ? PoolKey.Moving : PoolKey.Stationary;
             if (PatternValidator.ValidateMovingEnvelope(this,candidate.Lane,candidate.AbsolutePosition,playerZ,proposeMoving ? 8f : 0f,extent,out rejection)) return true;
             if (!proposeMoving) return false;
@@ -172,6 +267,13 @@ namespace NeonTunnelRunner
             diagnostics[diagnosticCursor]=new SpawnDiagnostic(candidate,key,rejection,miss,configuration,gameplay);
             diagnosticCursor=(diagnosticCursor+1)%diagnostics.Length; DiagnosticCount=Math.Min(DiagnosticCount+1,diagnostics.Length);
         }
+        private void Record(PickupPlacement placement,PatternRejection rejection,PoolRentFailure miss)
+        {
+            diagnosticSeed=placement.Seed; diagnosticBlock=placement.BlockIndex; diagnosticSequence=placement.SpawnSequence;
+            diagnosticRejection=rejection; diagnosticMiss=miss;
+            diagnostics[diagnosticCursor]=new SpawnDiagnostic(placement,rejection,miss,configuration,gameplay);
+            diagnosticCursor=(diagnosticCursor+1)%diagnostics.Length; DiagnosticCount=Math.Min(DiagnosticCount+1,diagnostics.Length);
+        }
         private readonly BlockPlan[] plans = new BlockPlan[4];
         private int seed;
         public WorldConfig Configuration => configuration;
@@ -179,8 +281,8 @@ namespace NeonTunnelRunner
         public int PlanCount { get; private set; }
         public BlockPlan GetPlan(int index) => index >= 0 && index < PlanCount ? plans[index] : throw new ArgumentOutOfRangeException(nameof(index));
         internal void ResetRun(int runSeed)
-        { Clear(); seed=runSeed; nextRow=0; SpawnedMoving=SpawnedStationary=Omitted=0; DiagnosticCount=diagnosticCursor=0; diagnosticSeed=runSeed; diagnosticBlock=diagnosticSequence=0; diagnosticRejection=PatternRejection.None; diagnosticMiss=PoolRentFailure.None; Array.Clear(diagnostics,0,diagnostics.Length); }
-        internal void Clear() { ReleaseAll(); Array.Clear(plans, 0, plans.Length); PlanCount = 0; nextRow=0; }
+        { Clear(); seed=runSeed; SpawnedMoving=SpawnedStationary=Omitted=SpawnedCoins=SpawnedFuel=OmittedCoins=FuelFailures=FuelReclaims=0; DiagnosticCount=diagnosticCursor=0; diagnosticSeed=runSeed; diagnosticBlock=diagnosticSequence=0; diagnosticRejection=PatternRejection.None; diagnosticMiss=PoolRentFailure.None; Array.Clear(diagnostics,0,diagnostics.Length); }
+        internal void Clear() { ReleaseAll(); Array.Clear(plans,0,plans.Length); Array.Clear(stagedFuel,0,stagedFuel.Length); stagedFuelCount=0; PlanCount=0; nextRow=nextCoinSlot=nextFuelIndex=fuelTransactionStart=0; seed=0; LastError=null; }
         public BlockPlan PlanAt(long blockIndex)
         {
             if (blockIndex < 0) throw new ArgumentOutOfRangeException(nameof(blockIndex));

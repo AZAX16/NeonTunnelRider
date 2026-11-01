@@ -289,6 +289,10 @@ namespace NeonTunnelRunner
             Require(loop.Sensor && loop.Sensor.Player==loop.Player && loop.Sensor.Registry==loop.Planner && loop.Sensor.Survival==loop.Survival &&
                 loop.Survival && loop.Survival.Owner==manager && loop.Planner.Pools==manager.Pools && loop.Origin.HasParticipant(loop.Planner),
                 "Wire traffic, sensor, survival and origin explicitly.",errors);
+            Require(objects.Sum(g=>g.GetComponents<ProgressionSystem>().Length)==1 && loop.Progression && loop.Progression.Owner==manager &&
+                loop.Sensor && loop.Sensor.Progression==loop.Progression,"Wire one progression service through the loop and shared sensor.",errors);
+            Require(manager.Configuration.CoinScore==100 && manager.Configuration.FuelRefill==30f && manager.Configuration.FuelCapacity==100f,
+                "Keep the pickup reward baseline (100 points / 30 fuel / 100 capacity).",errors);
             if (!loop.Planner.ValidateRequired(out string error)) errors.Add(error);
             Require(loop.Player.gameObject.layer==LayerMask.NameToLayer("Player"),"Assign Player layer.",errors);
             for (int i=0;i<manager.Pools.Configuration.EntryCount;i++)
@@ -296,6 +300,8 @@ namespace NeonTunnelRunner
                 var e=manager.Pools.Configuration.GetEntry(i);
                 if (e.Key==PoolKey.Stationary || e.Key==PoolKey.Moving)
                     Require(e.Prefab.layer==LayerMask.NameToLayer("Obstacle") && e.Prefab.transform.Find("Visual"),"Assign Obstacle layer and separate Visual.",errors);
+                if (e.Key==PoolKey.Coin || e.Key==PoolKey.Fuel)
+                    Require(e.Prefab.layer==LayerMask.NameToLayer("Pickup") && e.Prefab.transform.Find("Visual"),"Assign Pickup layer and separate Visual.",errors);
             }
         }
 

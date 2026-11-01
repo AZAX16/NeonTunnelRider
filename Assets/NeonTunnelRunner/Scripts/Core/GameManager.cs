@@ -168,6 +168,7 @@ namespace NeonTunnelRunner
                 }
                 Session.Reset(runSeed, Session.Snapshot.BestScore);
                 gameplayLoop.Survival.RefreshDebug();
+                gameplayLoop.Progression.RefreshDebug();
                 EndReason = GameOverReason.None;
                 quitRequested = false;
                 CommitState(GameState.Playing);

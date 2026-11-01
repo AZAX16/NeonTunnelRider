@@ -279,7 +279,7 @@ namespace NeonTunnelRunner
             Assert.That(manager.State, Is.EqualTo(GameState.Playing));
             Assert.That(manager.Session.Snapshot.Fuel, Is.Zero);
             Assert.That(manager.Session.Snapshot.Distance, Is.EqualTo(22d * 0.25f));
-            Assert.That(manager.Session.Snapshot.Score, Is.Zero);
+            Assert.That(manager.Session.Snapshot.Score, Is.EqualTo(5));
         }
 
         [Test]

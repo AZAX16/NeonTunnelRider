@@ -61,6 +61,9 @@ namespace NeonTunnelRunner
             bool started = manager.StartRun();
             long bootstrap = GC.GetAllocatedBytesForCurrentThread() - allocationStart;
             Assert.That(started, Is.True);
+            int collectedCoins=0, collectedFuel=0;
+            manager.Session.Collected+=e=> { if (e.Kind==PoolKey.Coin) collectedCoins++; else if (e.Kind==PoolKey.Fuel) collectedFuel++; };
+            manager.Session.SetResources(3,20f);
             manager.Session.SetCruiseSpeed(speed);
             CheckCoverage(0d);
             float[] steps = { 0.02f, 0.137f, 1.2f, 9.73f, 31.25f };
@@ -75,18 +78,21 @@ namespace NeonTunnelRunner
                 Assert.That(loop.Player.CurrentPosition.z, Is.EqualTo((float)(snapshot.Distance - loop.Origin.Offset)));
                 Assert.That(loop.Player.CurrentPosition.z, Is.InRange(0f, 1000f));
                 CheckCoverage(snapshot.Distance);
+                Assert.That(snapshot.Score,Is.EqualTo((int)Math.Floor(snapshot.Distance)+100*snapshot.Coins));
                 Assert.That(loop.Planner.PlanCount, Is.InRange(2,4));
                 maxActive = Math.Max(maxActive, roads.ActiveCount); maxPlans = Math.Max(maxPlans, loop.Planner.PlanCount);
                 previous = snapshot.Distance;
             }
             Assert.That(loop.Origin.RebaseCount, Is.GreaterThan(40));
-            Assert.That(manager.Pools.TotalCreated, Is.EqualTo(120));
+            Assert.That(manager.Pools.TotalCreated, Is.EqualTo(304));
             Assert.That(manager.Pools.TotalDestroyed, Is.Zero);
             Assert.That(manager.Pools.PeakActive, Is.LessThanOrEqualTo(110));
             Assert.That(manager.Pools.Misses, Is.Zero);
             Assert.That(loop.Planner.SpawnedMoving,Is.GreaterThan(0));
             Assert.That(loop.Planner.SpawnedStationary,Is.GreaterThan(0));
-            Debug.Log($"[Task05] speed={speed}; distance={previous:R}; steps={iteration}; rebases={loop.Origin.RebaseCount}; maxActive={maxActive}; maxPlans={maxPlans}; created={manager.Pools.TotalCreated}; peakReservations={manager.Pools.PeakActive}; moving={loop.Planner.SpawnedMoving}; stationary={loop.Planner.SpawnedStationary}; contacts={loop.Sensor.TotalContacts}; initial reset/coverage sample={bootstrap} bytes (excludes prewarm).");
+            Assert.That(collectedCoins,Is.GreaterThan(0)); Assert.That(collectedFuel,Is.GreaterThan(0));
+            Assert.That(loop.Planner.SpawnedCoins,Is.GreaterThan(0)); Assert.That(loop.Planner.SpawnedFuel,Is.GreaterThan(0));
+            Debug.Log($"[Task05] coins={collectedCoins}; fuel={collectedFuel}; spawnedCoins={loop.Planner.SpawnedCoins}; spawnedFuel={loop.Planner.SpawnedFuel}; speed={speed}; distance={previous:R}; steps={iteration}; rebases={loop.Origin.RebaseCount}; maxActive={maxActive}; maxPlans={maxPlans}; created={manager.Pools.TotalCreated}; peakReservations={manager.Pools.PeakActive}; moving={loop.Planner.SpawnedMoving}; stationary={loop.Planner.SpawnedStationary}; contacts={loop.Sensor.TotalContacts}; initial reset/coverage sample={bootstrap} bytes (excludes prewarm).");
         }
         [TestCase(0d)] [TestCase(0.25d)] [TestCase(59.999d)] [TestCase(60d)] [TestCase(60.001d)]
         [TestCase(480d)] [TestCase(17117.125d)]
@@ -215,7 +221,7 @@ namespace NeonTunnelRunner
             }
             manager.Pause(); Assert.That(manager.ReturnToMenu(), Is.True);
             Assert.That(roads.ActiveCount, Is.Zero); Assert.That(loop.Planner.PlanCount, Is.Zero);
-            Assert.That(manager.Pools.ActiveCount, Is.Zero); Assert.That(manager.Pools.TotalCreated, Is.EqualTo(120));
+            Assert.That(manager.Pools.ActiveCount, Is.Zero); Assert.That(manager.Pools.TotalCreated, Is.EqualTo(304));
             Assert.That(manager.Pools.TotalDestroyed, Is.Zero);
         }
         [Test] public void PauseNearThresholdThenResumeRebasesExactlyOnce()
@@ -243,8 +249,10 @@ namespace NeonTunnelRunner
             Assert.That(manager.Session.Snapshot.Distance, Is.EqualTo(snapshot.Distance));
             Assert.That(loop.Player.CurrentPosition, Is.EqualTo(position));
             Assert.That(roads.ActiveCount, Is.EqualTo(active)); CheckCoverage(0d);
-            Assert.That(manager.Pools.TotalRents, Is.EqualTo(rents+2));
-            Assert.That(manager.Pools.TotalReturns, Is.EqualTo(returns+2));
+            // Four staged fuel rentals roll back alongside the two staged road rentals.
+            Assert.That(loop.Planner.NextFuelIndex,Is.EqualTo(2));
+            Assert.That(manager.Pools.TotalRents, Is.EqualTo(rents+6));
+            Assert.That(manager.Pools.TotalReturns, Is.EqualTo(returns+6));
             Assert.That(manager.Pools.TotalCreated, Is.EqualTo(created));
             Assert.That(manager.Resume(), Is.False);
             foreach (var lease in held) manager.Pools.Return(lease.Segment, lease.ActivationId);

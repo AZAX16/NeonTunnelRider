@@ -1,0 +1,14 @@
+{
+  "executedMessages": [
+    "[Task06] 1000 seeds x21 blocks x2 player speeds (22/50); accepted moving=52142, stationary=213156, omitted=54402; minimum-speed conservative horizon in both cases.",
+    "[Task07] seeds=0..999, 21x480=10080m/seed; max speed=50, min=22, reaction=.7, transition=.28, margin=.3; required fuel=63000, accepted coins=111279, rejected coins=56721, lane changes=13884, max fuel gap=180m.",
+    "[Task07] live route seed=12345, speed=22, distance=2880.9000429287553, fuel collections=18, coins=24, spawned fuel=20, rebases=2, created=304, peak=23.",
+    "[Task07] live route seed=12345, speed=50, distance=2880.0000429153442, fuel collections=18, coins=24, spawned fuel=20, rebases=2, created=304, peak=24.",
+    "[Task07] live route seed=0, speed=50, distance=2880.0000429153442, fuel collections=18, coins=24, spawned fuel=20, rebases=2, created=304, peak=24.",
+    "[Task07] live route seed=999, speed=50, distance=2880.0000429153442, fuel collections=18, coins=24, spawned fuel=20, rebases=2, created=304, peak=22.",
+    "[Task05] coins=168; fuel=194; spawnedCoins=598; spawnedFuel=630; speed=22; distance=100592.71101155877; steps=540; rebases=77; maxActive=7; maxPlans=3; created=304; peakReservations=33; moving=108; stationary=330; contacts=532; initial reset/coverage sample=0 bytes (excludes prewarm).",
+    "[Task05] coins=96; fuel=194; spawnedCoins=310; spawnedFuel=627; speed=50; distance=100046.29900157452; steps=239; rebases=47; maxActive=7; maxPlans=3; created=304; peakReservations=35; moving=51; stationary=157; contacts=356; initial reset/coverage sample=0 bytes (excludes prewarm).",
+    "[Task05] 1000 warm synchronous world/player/planning ticks allocated 0 managed bytes on current thread; excludes engine frames/observers/bootstrap."
+  ],
+  "scope": "Synchronous test logs; allocation sample is not a Profiler capture or whole-game zero-allocation proof."
+}

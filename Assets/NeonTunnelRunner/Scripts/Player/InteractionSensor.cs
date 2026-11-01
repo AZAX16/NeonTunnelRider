@@ -9,12 +9,14 @@ namespace NeonTunnelRunner
         [SerializeField] private PlayerController player;
         [SerializeField] private SpawnDirector registry;
         [SerializeField] private PlayerSurvival survival;
+        [SerializeField] private ProgressionSystem progression;
         private struct Contact
         { internal TrafficLease Lease; internal float Time; internal InteractionCategory Category; internal long Sequence; }
         private Contact[] contacts=Array.Empty<Contact>();
         public PlayerController Player => player;
         public SpawnDirector Registry => registry;
         public PlayerSurvival Survival => survival;
+        public ProgressionSystem Progression => progression;
         public int ContactCount { get; private set; }
         public int Capacity => contacts.Length;
         public ulong TotalContacts { get; private set; }
@@ -59,7 +61,7 @@ namespace NeonTunnelRunner
                     var position=Vector3.LerpUnclamped(item.PreviousPosition,item.CurrentPosition,contact.Time);
                     var encounter=new Encounter(item.Key,contact.Lease.ActivationId,item.SpawnSequence,item.Lane,
                         item.PreviousAbsoluteZ+(item.AbsoluteZ-item.PreviousAbsoluteZ)*contact.Time,position,start+(double)dt*contact.Time);
-                    if (item.TryInteract(new InteractionContext(session,survival,encounter))) TotalContacts++;
+                    if (item.TryInteract(new InteractionContext(session,survival,encounter,progression))) TotalContacts++;
                 }
             }
             finally { registry.EndDispatch(); Array.Clear(contacts,0,ContactCount); ContactCount=0; }

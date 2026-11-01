@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace NeonTunnelRunner
 {
-    // Pickups sort before obstacles only at equal TOI. Task 07 extends the same dispatch path.
+    // Pickups sort before obstacles only at equal TOI.
     public enum InteractionCategory { Pickup = 0, Obstacle = 1 }
 
     public readonly struct Encounter
@@ -24,8 +24,9 @@ namespace NeonTunnelRunner
         public RunSession Session { get; }
         public PlayerSurvival Survival { get; }
         public Encounter Encounter { get; }
-        public InteractionContext(RunSession session, PlayerSurvival survival, Encounter encounter)
-        { Session=session; Survival=survival; Encounter=encounter; }
+        public ProgressionSystem Progression { get; }
+        public InteractionContext(RunSession session, PlayerSurvival survival, Encounter encounter, ProgressionSystem progression=null)
+        { Session=session; Survival=survival; Encounter=encounter; Progression=progression; }
     }
 
     [RequireComponent(typeof(BoxCollider))]
@@ -36,6 +37,7 @@ namespace NeonTunnelRunner
         private Vector3 visualPosition, visualScale;
         private Quaternion visualRotation;
         private bool visualCached;
+        private double visualPhase;
         private Rigidbody body;
         private BoxCollider box;
         public SpawnDirector Registry { get; private set; }
@@ -58,6 +60,7 @@ namespace NeonTunnelRunner
             if (!visualCached && visual)
             { visualPosition=visual.localPosition; visualRotation=visual.localRotation; visualScale=visual.localScale; visualCached=true; }
             Encountered=false; Lane=context.Lane; Speed=WorldSpeed; SpawnSequence=context.SpawnSequence;
+            visualPhase=0d;
             PreviousPosition=CurrentPosition=context.LocalPosition;
             PreviousAbsoluteZ=AbsoluteZ=context.AbsoluteDistance;
             transform.SetPositionAndRotation(CurrentPosition,Quaternion.identity); transform.localScale=Vector3.one;
@@ -70,13 +73,17 @@ namespace NeonTunnelRunner
         {
             if (Registry) Registry.Unregister(this,ActivationId);
             Registry=null; Encountered=false; Lane=0; Speed=0; SpawnSequence=0;
+            visualPhase=0d;
             PreviousPosition=CurrentPosition=Vector3.zero; PreviousAbsoluteZ=AbsoluteZ=0d;
             if (box) box.enabled=false;
             RestoreVisual();
             base.OnReturn();
         }
         private void RestoreVisual()
-        { if (visual && visualCached) { visual.localPosition=visualPosition; visual.localRotation=visualRotation; visual.localScale=visualScale; } }
+        { if (visual && visualCached) { visual.gameObject.SetActive(true); visual.localPosition=visualPosition; visual.localRotation=visualRotation; visual.localScale=visualScale; } }
+        protected void HidePickup() { if (box) box.enabled=false; if (visual) visual.gameObject.SetActive(false); }
+        protected void RecyclePickup(ulong token)
+        { if (Registry) Registry.DeferReturn(this,token); else ReturnToPool(token); }
 
         public bool TryInteract(InteractionContext context)
         {
@@ -85,6 +92,7 @@ namespace NeonTunnelRunner
             var runOwner=context.Survival.Owner;
             if (!runOwner || !runOwner.IsOwner || runOwner.IsTransitioning || runOwner.State!=GameState.Playing ||
                 context.Session!=runOwner.Session || !Owner || Owner.Owner!=runOwner) return false;
+            if (Category==InteractionCategory.Pickup && (!context.Progression || context.Progression.Owner!=runOwner)) return false;
             Encountered=true; // Before callbacks, including grace rejection.
             OnInteract(context);
             return true;
@@ -95,6 +103,12 @@ namespace NeonTunnelRunner
             PreviousPosition=CurrentPosition; PreviousAbsoluteZ=AbsoluteZ;
             AbsoluteZ += (double)Speed*dt;
             var next=CurrentPosition; next.z=(float)(AbsoluteZ-offset); CurrentPosition=next;
+            if (Category==InteractionCategory.Pickup && visual && !Encountered)
+            {
+                visualPhase=(visualPhase+dt)%4d;
+                visual.localPosition=visualPosition+Vector3.up*(0.08f*(float)Math.Sin(visualPhase*Math.PI));
+                visual.localRotation=visualRotation*Quaternion.Euler(0f,(float)(visualPhase*90d),0f);
+            }
         }
         internal void CommitPose()
         { if (body) body.MovePosition(CurrentPosition); else transform.position=CurrentPosition; }

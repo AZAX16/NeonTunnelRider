@@ -31,3 +31,9 @@ MonoBehaviour:
   - key: 5
     prefab: {fileID: 1475378643319499356, guid: a2b2abc969b6ed9928e611322cfd348c, type: 3}
     capacity: 32
+  - key: 6
+    prefab: {fileID: 7320339458011358274, guid: 488db8f507fb906e88a792a0097a03b7, type: 3}
+    capacity: 160
+  - key: 7
+    prefab: {fileID: 8059426248661688149, guid: 33610a61f2dece957bd7db2379103701, type: 3}
+    capacity: 24

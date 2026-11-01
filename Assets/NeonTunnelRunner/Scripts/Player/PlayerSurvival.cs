@@ -9,6 +9,7 @@ namespace NeonTunnelRunner
         [SerializeField] private GameManager gameManager;
         [SerializeField] private int debugLives;
         [SerializeField] private float debugGraceRemaining;
+        [SerializeField] private float debugFuel;
         private RunSession session;
         private double graceUntil;
         public GameManager Owner => gameManager;
@@ -33,7 +34,8 @@ namespace NeonTunnelRunner
             if (!float.IsFinite(amount) || amount < 0f) throw new ArgumentOutOfRangeException(nameof(amount));
             if (session == null || !gameManager || gameManager.State != GameState.Playing || gameManager.IsTransitioning) return;
             session.SetResources(Lives,Mathf.Min(gameManager.Configuration.FuelCapacity,session.Snapshot.Fuel+amount));
+            RefreshDebug();
         }
-        internal void RefreshDebug() { debugLives=Lives; debugGraceRemaining=(float)GraceRemaining; }
+        internal void RefreshDebug() { debugLives=Lives; debugGraceRemaining=(float)GraceRemaining; debugFuel=session == null ? 0f : session.Snapshot.Fuel; }
     }
 }

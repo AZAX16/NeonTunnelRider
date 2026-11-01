@@ -36,6 +36,8 @@ namespace NeonTunnelRunner
             { error = "Invalid WorldConfig coverage, timing, probability or three-lane gameplay configuration."; return false; }
             if (!PatternValidator.CanTransition(-1, 1, this, gameplay))
             { error = "WorldConfig transition buffer is unsafe at maximum player speed."; return false; }
+            if (!PatternValidator.ValidateFuelRoute(new BlockPlan(0,1,-1,1,0),this,gameplay))
+            { error = "WorldConfig required buffer fuel is unreachable at maximum player speed."; return false; }
             error = null;
             return true;
         }
