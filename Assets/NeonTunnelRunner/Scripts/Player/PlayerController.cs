@@ -10,6 +10,18 @@ namespace NeonTunnelRunner
         [SerializeField] private GameplayConfig configuration;
         [SerializeField] private Rigidbody body;
         [SerializeField] private Transform cameraAnchor;
+        public readonly struct MotionLeg
+        {
+            public Vector3 Start { get; }
+            public Vector3 End { get; }
+            public float StartTime { get; }
+            public float EndTime { get; }
+            internal MotionLeg(Vector3 start, Vector3 end, float from, float to)
+            { Start=start; End=end; StartTime=from; EndTime=to; }
+        }
+        private readonly MotionLeg[] motionLegs = new MotionLeg[3];
+        public int MotionLegCount { get; private set; }
+        public MotionLeg GetMotionLeg(int index) => index >= 0 && index < MotionLegCount ? motionLegs[index] : throw new ArgumentOutOfRangeException(nameof(index));
         private int laneIndex;
         private int queuedCommand;
         private float transitionStartX;
@@ -37,6 +49,7 @@ namespace NeonTunnelRunner
 
         internal void ResetRun()
         {
+            MotionLegCount = 0;
             laneIndex = configuration.StartingLane;
             queuedCommand = 0;
             transitioning = false;
@@ -76,15 +89,22 @@ namespace NeonTunnelRunner
                 throw new ArgumentOutOfRangeException(nameof(speed));
             previousPosition = currentPosition;
             previousAbsoluteZ = currentAbsoluteZ;
+            MotionLegCount = 0;
             double remaining = deltaTime;
+            double elapsed = 0d;
             while (transitioning)
             {
                 double duration = configuration.LaneTransitionDuration;
                 double consumed = Math.Min(remaining, duration - transitionElapsed);
+                Vector3 legStart = currentPosition;
+                double from = elapsed;
+                elapsed += consumed;
                 transitionElapsed += consumed;
                 remaining -= consumed;
                 currentPosition.x = Mathf.Lerp(transitionStartX, laneIndex * configuration.LaneWidth,
                     (float)Math.Min(1d, transitionElapsed / duration));
+                currentPosition.z=(float)(previousAbsoluteZ+(double)speed*elapsed-originOffset);
+                if (consumed > 0d) motionLegs[MotionLegCount++]=new MotionLeg(legStart,currentPosition,(float)(from/deltaTime),(float)(elapsed/deltaTime));
                 // Accommodate float/rational timestep quantization without changing project timing.
                 if (duration - transitionElapsed > 0.000001d) break;
                 currentPosition.x = laneIndex * configuration.LaneWidth;
@@ -94,6 +114,12 @@ namespace NeonTunnelRunner
                 queuedCommand = 0;
                 if (queued != 0) BeginTransition(queued);
                 if (remaining <= 0d) break;
+            }
+            if (remaining > 0d)
+            {
+                Vector3 end=currentPosition;
+                end.z=(float)(previousAbsoluteZ+(double)speed*deltaTime-originOffset);
+                motionLegs[MotionLegCount++]=new MotionLeg(currentPosition,end,(float)(elapsed/deltaTime),1f);
             }
             double travel = (double)speed * deltaTime;
             currentAbsoluteZ += travel;
@@ -114,6 +140,13 @@ namespace NeonTunnelRunner
             originOffset = newOffset;
             previousPosition.z = (float)(previousAbsoluteZ - newOffset);
             currentPosition.z = (float)(currentAbsoluteZ - newOffset);
+            for (int i=0;i<MotionLegCount;i++)
+            {
+                var leg=motionLegs[i]; var start=leg.Start; var end=leg.End;
+                start.z=(float)(previousAbsoluteZ+(currentAbsoluteZ-previousAbsoluteZ)*leg.StartTime-newOffset);
+                end.z=(float)(previousAbsoluteZ+(currentAbsoluteZ-previousAbsoluteZ)*leg.EndTime-newOffset);
+                motionLegs[i]=new MotionLeg(start,end,leg.StartTime,leg.EndTime);
+            }
             // Teleport cancels the pending MovePosition and resets any Rigidbody interpolation history.
             var interpolation = body.interpolation;
             body.interpolation = RigidbodyInterpolation.None;

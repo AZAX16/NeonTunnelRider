@@ -109,6 +109,60 @@ namespace NeonTunnelRunner
             for (long i = -80; i < 80; i++)
                 Assert.That(RoadManager.KeyAt(i), Is.EqualTo(expected[(int)((i % 8 + 8) % 8)]));
         }
+        [Test] public void ThousandSeedsValidateRealTrafficEnvelopesAtStartingAndMaximumSpeeds()
+        {
+            int moving=0, stationary=0, omitted=0;
+            foreach (float speed in new[] {22f,50f})
+                for (int seed=0;seed<1000;seed++)
+                {
+                    planner.ResetRun(seed);
+                    for (long block=0;block<21;block++)
+                    {
+                        var plan=planner.PlanAt(block);
+                        for (int row=0;row<6;row++) for (int lane=-1;lane<=1;lane++)
+                        {
+                            if (!plan.TryGetCandidate(row,lane,out var candidate)) continue;
+                            double playerZ=System.Math.Max(0d,candidate.AbsolutePosition-world.Ahead);
+                            bool accepted=planner.TrySelectTraffic(candidate,playerZ,out var key,out _);
+                            if (!accepted) { omitted++; continue; }
+                            float velocity=key==PoolKey.Moving ? 8f : 0f;
+                            if (velocity>0) moving++; else stationary++;
+                            double horizon=(candidate.AbsolutePosition-playerZ+world.Behind+2.2f)/(gameplay.StartingSpeed-8f);
+                            double low=candidate.AbsolutePosition-4d, high=candidate.AbsolutePosition+velocity*horizon+4d;
+                            Assert.That(low,Is.GreaterThanOrEqualTo(180d));
+                            Assert.That(low,Is.GreaterThan(plan.AbsoluteStart));
+                            Assert.That(high,Is.LessThan(plan.BufferStart));
+                            Assert.That(lane,Is.Not.EqualTo(plan.ProtectedLane));
+                            Assert.That(PatternValidator.ValidateMovingEnvelope(planner,lane,candidate.AbsolutePosition,playerZ,velocity,new Vector3(1.1f,0.6f,2.2f),out _),Is.True);
+                            Assert.That(speed,Is.GreaterThanOrEqualTo(gameplay.StartingSpeed));
+                        }
+                    }
+                }
+            Assert.That(moving,Is.GreaterThan(1000)); Assert.That(stationary,Is.GreaterThan(1000)); Assert.That(omitted,Is.GreaterThan(0));
+            Debug.Log($"[Task06] 1000 seeds x21 blocks x2 player speeds (22/50); accepted moving={moving}, stationary={stationary}, omitted={omitted}; minimum-speed conservative horizon in both cases.");
+        }
+        [Test] public void FullExtentsAndPathsIntoNeighboringReservationsAreRejected()
+        {
+            planner.ResetRun(12345); var plan=planner.PlanAt(1); int lane=plan.ProtectedLane==0 ? 1 : 0;
+            var half=new Vector3(1.1f,0.6f,2.2f);
+            Assert.That(PatternValidator.ValidateMovingEnvelope(planner,lane,540d,240d,8f,half,out _),Is.True);
+            Assert.That(PatternValidator.ValidateMovingEnvelope(planner,lane,480d,180d,0f,half,out var reason),Is.False);
+            Assert.That(reason,Is.EqualTo(PatternRejection.TransitionBuffer));
+            Assert.That(PatternValidator.ValidateMovingEnvelope(planner,lane,837d,537d,0f,half,out reason),Is.False);
+            Assert.That(reason,Is.EqualTo(PatternRejection.TransitionBuffer));
+            Assert.That(PatternValidator.ValidateMovingEnvelope(planner,lane,780d,480d,8f,half,out reason),Is.False);
+            Assert.That(reason,Is.EqualTo(PatternRejection.TransitionBuffer));
+            // The complete path reaches blocks outside the visible 0..1 window; unknown data is reconstructed.
+            planner.FillWindow(0d); Assert.That(planner.GetPlan(planner.PlanCount-1).BlockIndex,Is.EqualTo(1));
+            Assert.That(PatternValidator.ValidateMovingEnvelope(planner,lane,600d,-1000d,8f,half,out reason),Is.False);
+            Assert.That(PatternValidator.ValidateMovingEnvelope(planner,plan.ProtectedLane,540d,240d,0f,half,out reason),Is.False);
+            Assert.That(reason,Is.EqualTo(PatternRejection.ProtectedEnvelope));
+            Assert.That(PatternValidator.ValidateMovingEnvelope(planner,lane,540d,240d,8f,new Vector3(float.NaN,0.6f,2.2f),out _),Is.False);
+            Assign(gameplay,"startingSpeed",8f);
+            Assert.That(PatternValidator.ValidateMovingEnvelope(planner,lane,540d,240d,8f,half,out reason),Is.False);
+            Assert.That(reason,Is.EqualTo(PatternRejection.InvalidEnvelope));
+        }
+
         private static void Assign(object target, string field, object value) => target.GetType().GetField(field, BindingFlags.Instance | BindingFlags.NonPublic).SetValue(target, value);
     }
 }

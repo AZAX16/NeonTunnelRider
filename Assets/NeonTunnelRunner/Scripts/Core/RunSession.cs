@@ -2,6 +2,15 @@ using System;
 
 namespace NeonTunnelRunner
 {
+    public readonly struct DamageEvent
+    {
+        public Guid RunId { get; }
+        public Encounter Encounter { get; }
+        public int RemainingLives { get; }
+        internal DamageEvent(Guid runId, Encounter encounter, int lives)
+        { RunId=runId; Encounter=encounter; RemainingLives=lives; }
+    }
+
     /// <summary>A value copy; observers cannot mutate the authoritative session or config.</summary>
     public readonly struct RunSnapshot
     {
@@ -54,6 +63,8 @@ namespace NeonTunnelRunner
         private float actualSpeed;
 
         public event Action<RunSnapshot> SnapshotChanged;
+        public event Action<DamageEvent> Damaged;
+        internal void PublishDamage(DamageEvent damage) => Damaged?.Invoke(damage);
 
         public RunSnapshot Snapshot => new RunSnapshot(runId, seed, lives, fuel, elapsedTime,
             distance, coins, score, bestScore, cruiseSpeed, actualSpeed);
@@ -139,6 +150,6 @@ namespace NeonTunnelRunner
             return snapshot;
         }
 
-        internal void DetachObservers() => SnapshotChanged = null;
+        internal void DetachObservers() { SnapshotChanged = null; Damaged = null; }
     }
 }

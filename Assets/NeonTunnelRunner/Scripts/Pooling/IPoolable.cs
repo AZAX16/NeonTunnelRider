@@ -20,10 +20,11 @@ namespace NeonTunnelRunner
         public int Seed { get; }
         public float Speed { get; }
         public long SpawnSequence { get; }
+        public SpawnDirector Registry { get; }
 
         public SpawnContext(PoolKey key, Vector3 localPosition, Quaternion localRotation,
             Transform activeParent = null, int lane = 0, double absoluteDistance = 0d,
-            int seed = 0, float speed = 0f, long spawnSequence = 0)
+            int seed = 0, float speed = 0f, long spawnSequence = 0, SpawnDirector registry = null)
         {
             Key = key;
             LocalPosition = localPosition;
@@ -34,6 +35,7 @@ namespace NeonTunnelRunner
             Seed = seed;
             Speed = speed;
             SpawnSequence = spawnSequence;
+            Registry = registry;
         }
     }
 }

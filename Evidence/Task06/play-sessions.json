@@ -1,0 +1,424 @@
+{
+  "originalOptions": {
+    "playing": false,
+    "enabled": true,
+    "options": 3
+  },
+  "cycles": [
+    {
+      "reloadsEnabled": true,
+      "smoke": {
+        "passed": true,
+        "traffic": {
+          "sawStationary": true,
+          "sawMoving": true,
+          "damageCount": 1,
+          "damages": [
+            {
+              "RemainingLives": 2,
+              "ActivationId": 43,
+              "SpawnSequence": 12,
+              "PlayingTime": 4.742399860715182,
+              "AbsoluteZ": 240
+            }
+          ],
+          "movingSpawned": 5,
+          "stationarySpawned": 25,
+          "active": 8,
+          "contactCapacity": 96,
+          "peak": 16,
+          "created": 120,
+          "destroyed": 0,
+          "misses": 0
+        },
+        "milestones": [
+          {
+            "Distance": 171.87993212789297,
+            "ElapsedTime": 3.45999863371253,
+            "frame": 555,
+            "tick": 173,
+            "offset": 0,
+            "rebases": 0,
+            "traffic": 2,
+            "movingSpawned": 0,
+            "stationarySpawned": 2,
+            "lives": 3,
+            "damageCount": 0,
+            "contacts": 0,
+            "localPlayer": "(-3.200, 0.600, 171.880)",
+            "localPlayerZ": 171.879929,
+            "ActiveCount": 7,
+            "maximumSeam": 0
+          },
+          {
+            "Distance": 240.87990488111973,
+            "ElapsedTime": 4.839998088777065,
+            "frame": 636,
+            "tick": 242,
+            "offset": 0,
+            "rebases": 0,
+            "traffic": 4,
+            "movingSpawned": 2,
+            "stationarySpawned": 2,
+            "lives": 2,
+            "damageCount": 1,
+            "contacts": 1,
+            "localPlayer": "(-3.200, 0.600, 240.880)",
+            "localPlayerZ": 240.8799,
+            "ActiveCount": 7,
+            "maximumSeam": 0
+          },
+          {
+            "Distance": 351.8798610493541,
+            "ElapsedTime": 7.059997212141752,
+            "frame": 765,
+            "tick": 353,
+            "offset": 0,
+            "rebases": 0,
+            "traffic": 4,
+            "movingSpawned": 2,
+            "stationarySpawned": 3,
+            "lives": 2,
+            "damageCount": 1,
+            "contacts": 1,
+            "localPlayer": "(-3.200, 0.600, 351.880)",
+            "localPlayerZ": 351.879852,
+            "ActiveCount": 7,
+            "maximumSeam": 0
+          },
+          {
+            "Distance": 451.8798215612769,
+            "ElapsedTime": 9.059996422380209,
+            "frame": 883,
+            "tick": 453,
+            "offset": 0,
+            "rebases": 0,
+            "traffic": 5,
+            "movingSpawned": 2,
+            "stationarySpawned": 5,
+            "lives": 2,
+            "damageCount": 1,
+            "contacts": 1,
+            "localPlayer": "(-3.200, 0.600, 451.880)",
+            "localPlayerZ": 451.879822,
+            "ActiveCount": 7,
+            "maximumSeam": 0
+          },
+          {
+            "Distance": 561.879778124392,
+            "ElapsedTime": 11.259995553642511,
+            "frame": 1011,
+            "tick": 563,
+            "offset": 0,
+            "rebases": 0,
+            "traffic": 6,
+            "movingSpawned": 2,
+            "stationarySpawned": 6,
+            "lives": 2,
+            "damageCount": 1,
+            "contacts": 1,
+            "localPlayer": "(-3.200, 0.600, 561.880)",
+            "localPlayerZ": 561.879761,
+            "ActiveCount": 7,
+            "maximumSeam": 0
+          },
+          {
+            "Distance": 1005.8796027973294,
+            "ElapsedTime": 20.13999204710126,
+            "frame": 1537,
+            "tick": 1007,
+            "offset": 960,
+            "rebases": 1,
+            "traffic": 6,
+            "movingSpawned": 3,
+            "stationarySpawned": 11,
+            "lives": 2,
+            "damageCount": 1,
+            "contacts": 1,
+            "localPlayer": "(-3.200, 0.600, 45.880)",
+            "localPlayerZ": 45.8796043,
+            "ActiveCount": 7,
+            "maximumSeam": 0
+          },
+          {
+            "Distance": 2020.8792019933462,
+            "ElapsedTime": 40.439984031021595,
+            "frame": 2723,
+            "tick": 2022,
+            "offset": 1920,
+            "rebases": 2,
+            "traffic": 8,
+            "movingSpawned": 5,
+            "stationarySpawned": 25,
+            "lives": 2,
+            "damageCount": 1,
+            "contacts": 1,
+            "localPlayer": "(-3.200, 0.600, 100.879)",
+            "localPlayerZ": 100.8792,
+            "ActiveCount": 7,
+            "maximumSeam": 0
+          }
+        ],
+        "bindings": [
+          {
+            "key": "A",
+            "lane": -1,
+            "tick": 27,
+            "Distance": 11.879995308816433,
+            "callbacks": 1
+          },
+          {
+            "key": "D",
+            "lane": 1,
+            "tick": 20,
+            "Distance": 8.79999652504921,
+            "callbacks": 1
+          },
+          {
+            "key": "LeftArrow",
+            "lane": -1,
+            "tick": 19,
+            "Distance": 8.35999669879675,
+            "callbacks": 1
+          },
+          {
+            "key": "RightArrow",
+            "lane": 1,
+            "tick": 19,
+            "Distance": 8.35999669879675,
+            "callbacks": 1
+          }
+        ],
+        "editorContextStart": true,
+        "nativeEscapePauseResume": true,
+        "pausedRestart": true,
+        "gameOverRestart": true,
+        "returnToMenu": true,
+        "finalState": "Menu",
+        "frame": 2727,
+        "ready": true,
+        "capacity": 120,
+        "created": 120,
+        "destroyed": 0
+      },
+      "exit": {
+        "playing": false,
+        "instanceClear": true,
+        "timeScale": 1
+      }
+    },
+    {
+      "reloadsEnabled": false,
+      "smoke": {
+        "passed": true,
+        "traffic": {
+          "sawStationary": true,
+          "sawMoving": true,
+          "damageCount": 1,
+          "damages": [
+            {
+              "RemainingLives": 2,
+              "ActivationId": 43,
+              "SpawnSequence": 12,
+              "PlayingTime": 4.742399860715182,
+              "AbsoluteZ": 240
+            }
+          ],
+          "movingSpawned": 5,
+          "stationarySpawned": 25,
+          "active": 8,
+          "contactCapacity": 96,
+          "peak": 16,
+          "created": 120,
+          "destroyed": 0,
+          "misses": 0
+        },
+        "milestones": [
+          {
+            "Distance": 170.87993252277374,
+            "ElapsedTime": 3.4399986416101456,
+            "frame": 559,
+            "tick": 172,
+            "offset": 0,
+            "rebases": 0,
+            "traffic": 2,
+            "movingSpawned": 0,
+            "stationarySpawned": 2,
+            "lives": 3,
+            "damageCount": 0,
+            "contacts": 0,
+            "localPlayer": "(-3.200, 0.600, 170.880)",
+            "localPlayerZ": 170.879929,
+            "ActiveCount": 7,
+            "maximumSeam": 0
+          },
+          {
+            "Distance": 241.87990448623896,
+            "ElapsedTime": 4.85999808087945,
+            "frame": 639,
+            "tick": 243,
+            "offset": 0,
+            "rebases": 0,
+            "traffic": 4,
+            "movingSpawned": 2,
+            "stationarySpawned": 2,
+            "lives": 2,
+            "damageCount": 1,
+            "contacts": 1,
+            "localPlayer": "(-3.200, 0.600, 241.880)",
+            "localPlayerZ": 241.8799,
+            "ActiveCount": 7,
+            "maximumSeam": 0
+          },
+          {
+            "Distance": 350.87986144423485,
+            "ElapsedTime": 7.039997220039368,
+            "frame": 762,
+            "tick": 352,
+            "offset": 0,
+            "rebases": 0,
+            "traffic": 4,
+            "movingSpawned": 2,
+            "stationarySpawned": 3,
+            "lives": 2,
+            "damageCount": 1,
+            "contacts": 1,
+            "localPlayer": "(-3.200, 0.600, 350.880)",
+            "localPlayerZ": 350.879852,
+            "ActiveCount": 7,
+            "maximumSeam": 0
+          },
+          {
+            "Distance": 451.8798215612769,
+            "ElapsedTime": 9.059996422380209,
+            "frame": 880,
+            "tick": 453,
+            "offset": 0,
+            "rebases": 0,
+            "traffic": 5,
+            "movingSpawned": 2,
+            "stationarySpawned": 5,
+            "lives": 2,
+            "damageCount": 1,
+            "contacts": 1,
+            "localPlayer": "(-3.200, 0.600, 451.880)",
+            "localPlayerZ": 451.879822,
+            "ActiveCount": 7,
+            "maximumSeam": 0
+          },
+          {
+            "Distance": 560.8797785192728,
+            "ElapsedTime": 11.239995561540127,
+            "frame": 998,
+            "tick": 562,
+            "offset": 0,
+            "rebases": 0,
+            "traffic": 6,
+            "movingSpawned": 2,
+            "stationarySpawned": 6,
+            "lives": 2,
+            "damageCount": 1,
+            "contacts": 1,
+            "localPlayer": "(-3.200, 0.600, 560.880)",
+            "localPlayerZ": 560.879761,
+            "ActiveCount": 7,
+            "maximumSeam": 0
+          },
+          {
+            "Distance": 1005.8796027973294,
+            "ElapsedTime": 20.13999204710126,
+            "frame": 1504,
+            "tick": 1007,
+            "offset": 960,
+            "rebases": 1,
+            "traffic": 6,
+            "movingSpawned": 3,
+            "stationarySpawned": 11,
+            "lives": 2,
+            "damageCount": 1,
+            "contacts": 1,
+            "localPlayer": "(-3.200, 0.600, 45.880)",
+            "localPlayerZ": 45.8796043,
+            "ActiveCount": 7,
+            "maximumSeam": 0
+          },
+          {
+            "Distance": 2020.8792019933462,
+            "ElapsedTime": 40.439984031021595,
+            "frame": 2603,
+            "tick": 2022,
+            "offset": 1920,
+            "rebases": 2,
+            "traffic": 8,
+            "movingSpawned": 5,
+            "stationarySpawned": 25,
+            "lives": 2,
+            "damageCount": 1,
+            "contacts": 1,
+            "localPlayer": "(-3.200, 0.600, 100.879)",
+            "localPlayerZ": 100.8792,
+            "ActiveCount": 7,
+            "maximumSeam": 0
+          }
+        ],
+        "bindings": [
+          {
+            "key": "A",
+            "lane": -1,
+            "tick": 31,
+            "Distance": 13.639994613826275,
+            "callbacks": 1
+          },
+          {
+            "key": "D",
+            "lane": 1,
+            "tick": 20,
+            "Distance": 8.79999652504921,
+            "callbacks": 1
+          },
+          {
+            "key": "LeftArrow",
+            "lane": -1,
+            "tick": 19,
+            "Distance": 8.35999669879675,
+            "callbacks": 1
+          },
+          {
+            "key": "RightArrow",
+            "lane": 1,
+            "tick": 20,
+            "Distance": 8.79999652504921,
+            "callbacks": 1
+          }
+        ],
+        "editorContextStart": true,
+        "nativeEscapePauseResume": true,
+        "pausedRestart": true,
+        "gameOverRestart": true,
+        "returnToMenu": true,
+        "finalState": "Menu",
+        "frame": 2606,
+        "ready": true,
+        "capacity": 120,
+        "created": 120,
+        "destroyed": 0
+      },
+      "exit": {
+        "playing": false,
+        "instanceClear": true,
+        "timeScale": 1
+      }
+    }
+  ],
+  "passed": true,
+  "configBefore": {
+    "Pools.asset": "7833e8ac13095419c9b5be2e6f0cfe787ee56f817fe6c74d3541989264a85cb8",
+    "Gameplay.asset": "a90e5b2a51873e65c9dae592129973e2188169ea97856e950d2c4f114efa9203",
+    "World.asset": "9e9272c239a8a26e8b3366a8e6d79ffff09aecadb9c4ae4fa7f2d13f5addc55f"
+  },
+  "configAfter": {
+    "Pools.asset": "7833e8ac13095419c9b5be2e6f0cfe787ee56f817fe6c74d3541989264a85cb8",
+    "Gameplay.asset": "a90e5b2a51873e65c9dae592129973e2188169ea97856e950d2c4f114efa9203",
+    "World.asset": "9e9272c239a8a26e8b3366a8e6d79ffff09aecadb9c4ae4fa7f2d13f5addc55f"
+  }
+}

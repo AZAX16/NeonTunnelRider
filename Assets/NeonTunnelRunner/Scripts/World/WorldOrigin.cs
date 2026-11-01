@@ -27,6 +27,8 @@ namespace NeonTunnelRunner
         public double Offset { get; private set; }
         public long RebaseCount { get; private set; }
 
+        public bool HasParticipant(MonoBehaviour component)
+        { int count=0; foreach (var participant in additionalParticipants) if (participant==component) count++; return count==1; }
         public bool TryValidate(out string error)
         {
             error = null;

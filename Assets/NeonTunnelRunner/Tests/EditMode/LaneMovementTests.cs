@@ -190,6 +190,14 @@ namespace NeonTunnelRunner
             Assign(roads, "pools", pools); Assign(roads, "activeRoot", active);
             Assign(origin, "player", player); Assign(origin, "roads", roads); Assign(origin, "chaseCamera", player.CameraAnchor);
             Assign(planner, "gameplay", config);
+            Assign(planner,"pools",pools);
+            var traffic=new GameObject("Interactables").transform; traffic.SetParent(root.transform,false);
+            Assign(planner,"activeRoot",traffic);
+            var survival=player.gameObject.AddComponent<PlayerSurvival>(); Assign(survival,"gameManager",manager);
+            var sensor=player.gameObject.AddComponent<InteractionSensor>();
+            Assign(sensor,"player",player); Assign(sensor,"registry",planner); Assign(sensor,"survival",survival);
+            Assign(loop,"interactionSensor",sensor); Assign(loop,"survival",survival);
+            Assign(origin,"additionalParticipants",new MonoBehaviour[] { planner });
             Assign(loop, "roads", roads); Assign(loop, "worldOrigin", origin); Assign(loop, "spawnDirector", planner);
 
         }

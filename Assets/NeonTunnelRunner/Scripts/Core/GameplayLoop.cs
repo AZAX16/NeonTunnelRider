@@ -11,6 +11,8 @@ namespace NeonTunnelRunner
         [SerializeField] private RoadManager roads;
         [SerializeField] private WorldOrigin worldOrigin;
         [SerializeField] private SpawnDirector spawnDirector;
+        [SerializeField] private InteractionSensor interactionSensor;
+        [SerializeField] private PlayerSurvival survival;
         private RunSession session;
         private bool runPrepared;
 
@@ -20,6 +22,9 @@ namespace NeonTunnelRunner
         public RoadManager Roads => roads;
         public WorldOrigin Origin => worldOrigin;
         public SpawnDirector Planner => spawnDirector;
+        public InteractionSensor Sensor => interactionSensor;
+        public PlayerSurvival Survival => survival;
+        public bool IsStepping { get; private set; }
         public string WorldFailure { get; private set; }
         public ulong TickIndex { get; private set; }
         public bool IsRunning => isActiveAndEnabled && gameManager && gameManager.isActiveAndEnabled &&
@@ -35,6 +40,12 @@ namespace NeonTunnelRunner
                 throw new System.InvalidOperationException("Assign the player, InputRouter and its owner.");
             player.Initialize(owner.Configuration);
             inputRouter.Initialize(owner);
+            spawnDirector.Initialize();
+            if (!survival || survival.Owner != owner || !interactionSensor || interactionSensor.Player != player ||
+                interactionSensor.Registry != spawnDirector || interactionSensor.Survival != survival)
+                throw new System.InvalidOperationException("Assign sensor, survival and their explicit owners.");
+            survival.Initialize(session);
+            interactionSensor.Initialize();
             CleanupRun();
         }
 
@@ -45,7 +56,17 @@ namespace NeonTunnelRunner
                 roads.Pools != gameManager.Pools || worldOrigin.Player != player || worldOrigin.Roads != roads ||
                 spawnDirector.Configuration != roads.Configuration || spawnDirector.Gameplay != gameManager.Configuration)
             { error = "Assign RoadManager, WorldOrigin and SpawnDirector with shared configuration and explicit owners."; return false; }
-            return roads.ValidateRequired(gameManager.Configuration, out error) && worldOrigin.TryValidate(out error);
+            return roads.ValidateRequired(gameManager.Configuration, out error) && worldOrigin.TryValidate(out error) &&
+                spawnDirector.ValidateRequired(out error) && ValidateInteractions(out error);
+        }
+
+        private bool ValidateInteractions(out string error)
+        {
+            error=null;
+            if (!survival.isActiveAndEnabled || !interactionSensor.isActiveAndEnabled || spawnDirector.Pools != gameManager.Pools ||
+                !worldOrigin.HasParticipant(spawnDirector) || interactionSensor.Capacity < spawnDirector.Capacity)
+            { error="Enable and wire sensor/survival/traffic with one origin participant and sufficient contact capacity."; return false; }
+            return true;
         }
 
         internal bool ResetRun(int seed)
@@ -56,9 +77,12 @@ namespace NeonTunnelRunner
             roads.ResetRun(seed);
             spawnDirector.ResetRun(seed);
             player.ResetRun();
+            survival.ResetRun();
+            interactionSensor.Clear();
             WorldFailure = null;
             if (!roads.EnsureCoverage(0d, 0d)) { WorldFailure = roads.LastError; return false; }
             spawnDirector.FillWindow(0d);
+            spawnDirector.MaintainTraffic(0d,0d);
             runPrepared = true;
             return true;
         }
@@ -71,8 +95,10 @@ namespace NeonTunnelRunner
             TickIndex = 0;
             if (inputRouter) inputRouter.ApplyState(GameState.Menu);
             if (player) player.ClearQueuedCommand();
-            if (roads) roads.ReleaseAll();
+            if (interactionSensor) interactionSensor.Clear();
             if (spawnDirector) spawnDirector.Clear();
+            if (survival) survival.ResetRun();
+            if (roads) roads.ReleaseAll();
         }
 
         internal void ApplyState(GameState state)
@@ -96,7 +122,7 @@ namespace NeonTunnelRunner
         /// <summary>Deterministic entry point shared by FixedUpdate and integration tests.</summary>
         public bool Step(float deltaTime)
         {
-            if (!IsRunning) return false;
+            if (!IsRunning || IsStepping) return false;
             if (float.IsNaN(deltaTime) || float.IsInfinity(deltaTime) || deltaTime <= 0f)
                 throw new System.ArgumentOutOfRangeException(nameof(deltaTime));
             // Reserve the target coverage before mutating the player/session. Even a multi-window
@@ -109,18 +135,29 @@ namespace NeonTunnelRunner
                 gameManager.Pause();
                 return false;
             }
-            int command = inputRouter.ConsumeLaneCommand();
-            if (command != 0) player.RequestLane(command);
-            double travel = player.PredictStep(deltaTime, session.Snapshot.CruiseSpeed);
-            player.SetAbsoluteForward(targetDistance, worldOrigin.Offset);
-            player.CommitPose();
-            session.RecordMovement(deltaTime, travel);
-            TickIndex++;
-            // Contact dispatch/pose commit precede this explicit world phase (Task 06 extends it).
-            spawnDirector.FillWindow(targetDistance);
-            worldOrigin.RebaseIfNeeded(targetDistance);
-            session.PublishSnapshot();
-            return true;
+            IsStepping=true;
+            try
+            {
+                int command = inputRouter.ConsumeLaneCommand();
+                if (command != 0) player.RequestLane(command);
+                double travel = player.PredictStep(deltaTime, session.Snapshot.CruiseSpeed);
+                player.SetAbsoluteForward(targetDistance, worldOrigin.Offset);
+                spawnDirector.PredictTraffic(deltaTime,worldOrigin.Offset);
+                interactionSensor.CollectContacts();
+                interactionSensor.DispatchContacts(session,deltaTime);
+                player.CommitPose();
+                spawnDirector.CommitTraffic();
+                session.RecordMovement(deltaTime, travel);
+                TickIndex++;
+                survival.RefreshDebug();
+                // Task 08 adds fuel drain and final terminal resolution here.
+                spawnDirector.FillWindow(targetDistance);
+                spawnDirector.MaintainTraffic(targetDistance,worldOrigin.Offset);
+                worldOrigin.RebaseIfNeeded(targetDistance);
+                session.PublishSnapshot();
+                return true;
+            }
+            finally { IsStepping=false; }
         }
     }
 }

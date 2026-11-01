@@ -270,10 +270,12 @@ namespace NeonTunnelRunner
         [Test] public void FiftyRestartsGateInputBeforeCleanupAndPreservePools()
         {
             var realRoads = UnityEditor.AssetDatabase.LoadAssetAtPath<PoolConfig>("Assets/NeonTunnelRunner/Configs/Pools.asset");
-            SetEntries(realRoads.GetEntry(0), realRoads.GetEntry(1), realRoads.GetEntry(2), realRoads.GetEntry(3),
+            SetEntries(realRoads.GetEntry(0), realRoads.GetEntry(1), realRoads.GetEntry(2), realRoads.GetEntry(3), realRoads.GetEntry(4), realRoads.GetEntry(5),
                 new PoolConfig.Entry(PoolKey.Coin, template, 4));
             Bootstrap();
             Assert.That(manager.StartRun(), Is.True);
+            int worldActive=pools.ActiveCount;
+            ulong expectedReturns=pools.TotalReturns;
             ulong previousToken = 0;
             int cleanupCallbacks = 0;
             for (int cycle = 0; cycle < 50; cycle++)
@@ -296,25 +298,26 @@ namespace NeonTunnelRunner
                     Assert.That(first.IsRented && second.IsRented, Is.True);
                     manager.Resume();
                     Assert.That(second.ActivationId, Is.EqualTo(previousToken));
-                    Assert.That(pools.ActiveCount, Is.EqualTo(8));
+                    Assert.That(pools.ActiveCount, Is.EqualTo(worldActive+2));
                     manager.Pause();
                 }
                 else
                 {
                     manager.EndRun(GameOverReason.Lives);
-                    Assert.That(pools.ActiveCount, Is.EqualTo(8));
+                    Assert.That(pools.ActiveCount, Is.EqualTo(worldActive+2));
                 }
+                expectedReturns+=(ulong)pools.ActiveCount;
                 Assert.That(manager.Restart(), Is.True);
-                AssertRestored(28, 6);
+                AssertRestored(124, worldActive);
                 Assert.That(manager.Loop.Player.LaneIndex, Is.Zero);
                 Assert.That(manager.Loop.Input.Actions.FindActionMap("Gameplay").enabled, Is.True);
             }
             Assert.That(cleanupCallbacks, Is.EqualTo(100));
-            Assert.That(pools.TotalReturns, Is.EqualTo(400));
+            Assert.That(pools.TotalReturns, Is.EqualTo(expectedReturns));
             Rent();
             manager.Pause();
             Assert.That(manager.ReturnToMenu(), Is.True);
-            AssertRestored(28);
+            AssertRestored(124);
             Assert.That(manager.StartRun(), Is.True);
             Debug.Log($"[Task04] 50 restarts + menu; created={pools.TotalCreated}, destroyed={pools.TotalDestroyed}, cleanupCallbacks={cleanupCallbacks}.");
         }

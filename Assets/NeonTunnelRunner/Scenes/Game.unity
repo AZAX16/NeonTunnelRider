@@ -223,6 +223,8 @@ MonoBehaviour:
   roads: {fileID: 80797679}
   worldOrigin: {fileID: 80797678}
   spawnDirector: {fileID: 80797677}
+  interactionSensor: {fileID: 1992932452}
+  survival: {fileID: 1992932453}
 --- !u!114 &80797675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,6 +268,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: NeonTunnelRunner.Runtime::NeonTunnelRunner.SpawnDirector
   configuration: {fileID: 11400000, guid: a3f0b189244308867b42882f15967d21, type: 2}
   gameplay: {fileID: 11400000, guid: 50e71278e264ab6f3b9bd533f16b2e30, type: 2}
+  pools: {fileID: 80797676}
+  activeRoot: {fileID: 775574893}
 --- !u!114 &80797678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,7 +286,8 @@ MonoBehaviour:
   player: {fileID: 1992932450}
   roads: {fileID: 80797679}
   chaseCamera: {fileID: 2056537198}
-  additionalParticipants: []
+  additionalParticipants:
+  - {fileID: 80797677}
 --- !u!114 &80797679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1438,6 +1443,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3281914291220571836, guid: 3fe156509481777c8b2a4c1d32d2e622, type: 3}
+      propertyPath: registry
+      value: 
+      objectReference: {fileID: 80797677}
     - target: {fileID: 3471662616544751283, guid: 3fe156509481777c8b2a4c1d32d2e622, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1478,6 +1487,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7062171466699912757, guid: 3fe156509481777c8b2a4c1d32d2e622, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 80797673}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -1502,6 +1515,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7209050131299341751, guid: 3fe156509481777c8b2a4c1d32d2e622, type: 3}
   m_PrefabInstance: {fileID: 1992932449}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1992932452 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3281914291220571836, guid: 3fe156509481777c8b2a4c1d32d2e622, type: 3}
+  m_PrefabInstance: {fileID: 1992932449}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32d83f1a79c67e655861021f6db5e789, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NeonTunnelRunner.Runtime::NeonTunnelRunner.InteractionSensor
+--- !u!114 &1992932453 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7062171466699912757, guid: 3fe156509481777c8b2a4c1d32d2e622, type: 3}
+  m_PrefabInstance: {fileID: 1992932449}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6749d5a7940738caa1b4593dfdfe935, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NeonTunnelRunner.Runtime::NeonTunnelRunner.PlayerSurvival
 --- !u!1 &2056537197
 GameObject:
   m_ObjectHideFlags: 0

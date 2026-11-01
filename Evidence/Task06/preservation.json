@@ -1,0 +1,30 @@
+{
+  "base": "22f4e5e9407464ecff4643b0e4bada7a195e76bf",
+  "changedTrackedFiles": [
+    "Assets/NeonTunnelRunner/Configs/Pools.asset",
+    "Assets/NeonTunnelRunner/Prefabs/Player/PlayerHovercar.prefab",
+    "Assets/NeonTunnelRunner/Scenes/Game.unity",
+    "Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs",
+    "Assets/NeonTunnelRunner/Scripts/Core/GameplayLoop.cs",
+    "Assets/NeonTunnelRunner/Scripts/Core/RunSession.cs",
+    "Assets/NeonTunnelRunner/Scripts/Editor/ProjectSetupValidator.cs",
+    "Assets/NeonTunnelRunner/Scripts/Player/PlayerController.cs",
+    "Assets/NeonTunnelRunner/Scripts/Pooling/IPoolable.cs",
+    "Assets/NeonTunnelRunner/Scripts/Pooling/PoolService.cs",
+    "Assets/NeonTunnelRunner/Scripts/World/PatternValidator.cs",
+    "Assets/NeonTunnelRunner/Scripts/World/SpawnDirector.cs",
+    "Assets/NeonTunnelRunner/Scripts/World/WorldOrigin.cs",
+    "Assets/NeonTunnelRunner/Tests/EditMode/LaneMovementTests.cs",
+    "Assets/NeonTunnelRunner/Tests/EditMode/PatternSafetyTests.cs",
+    "Assets/NeonTunnelRunner/Tests/PlayMode/PlayerLifecycleTests.cs",
+    "Assets/NeonTunnelRunner/Tests/PlayMode/PoolLifecycleTests.cs",
+    "Assets/NeonTunnelRunner/Tests/PlayMode/RoadContinuityTests.cs",
+    "CREDITS.md",
+    "ProjectSettings/TagManager.asset"
+  ],
+  "protectedCount": 205,
+  "protectedChanged": [],
+  "duplicateGuids": {},
+  "missingMetas": [],
+  "ignoreMatchesAssignment": true
+}

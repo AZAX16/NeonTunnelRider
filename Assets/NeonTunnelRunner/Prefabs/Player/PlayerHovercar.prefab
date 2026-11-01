@@ -12,7 +12,9 @@ GameObject:
   - component: {fileID: 463480920805297050}
   - component: {fileID: 4800882392078538056}
   - component: {fileID: 482812753612654963}
-  m_Layer: 0
+  - component: {fileID: 7062171466699912757}
+  - component: {fileID: 3281914291220571836}
+  m_Layer: 8
   m_Name: PlayerHovercar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,6 +101,36 @@ MonoBehaviour:
   configuration: {fileID: 11400000, guid: 50e71278e264ab6f3b9bd533f16b2e30, type: 2}
   body: {fileID: 463480920805297050}
   cameraAnchor: {fileID: 7209050131299341751}
+--- !u!114 &7062171466699912757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004737645062352705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6749d5a7940738caa1b4593dfdfe935, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NeonTunnelRunner.Runtime::NeonTunnelRunner.PlayerSurvival
+  gameManager: {fileID: 0}
+  debugLives: 0
+  debugGraceRemaining: 0
+--- !u!114 &3281914291220571836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004737645062352705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32d83f1a79c67e655861021f6db5e789, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NeonTunnelRunner.Runtime::NeonTunnelRunner.InteractionSensor
+  player: {fileID: 482812753612654963}
+  registry: {fileID: 0}
+  survival: {fileID: 7062171466699912757}
 --- !u!1 &2753436262975936255
 GameObject:
   m_ObjectHideFlags: 0

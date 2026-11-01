@@ -140,7 +140,7 @@ namespace NeonTunnelRunner
             Bucket bucket = GetBucket(context.Key);
             if (!IsReady || !isActiveAndEnabled) return Miss(context.Key, bucket, PoolRentFailure.NotReady);
             // Return and ReturnAll are allowed from hooks; nested rentals are deterministically rejected.
-            if (IsBusy) return Miss(context.Key, bucket, PoolRentFailure.Busy);
+            if (IsBusy || (context.Registry && context.Registry.IsDispatching)) return Miss(context.Key, bucket, PoolRentFailure.Busy);
             if (bucket == null) return Miss(context.Key, null, PoolRentFailure.UnknownKey);
             if (bucket.Inactive.Count == 0) return Miss(context.Key, bucket, PoolRentFailure.Exhausted);
             Transform parent = context.ActiveParent;
@@ -196,6 +196,8 @@ namespace NeonTunnelRunner
                 instance.ActivationId != expectedActivationId) return false;
             Bucket bucket = GetBucket(instance.Key);
             if (bucket == null || !bucket.Active.Contains(instance)) return false;
+            if (instance is Interactable traffic && traffic.Registry && traffic.Registry.IsDispatching)
+                return traffic.Registry.DeferReturn(traffic, expectedActivationId);
             operationDepth++;
             try
             {

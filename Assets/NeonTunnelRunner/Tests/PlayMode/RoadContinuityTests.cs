@@ -80,11 +80,13 @@ namespace NeonTunnelRunner
                 previous = snapshot.Distance;
             }
             Assert.That(loop.Origin.RebaseCount, Is.GreaterThan(40));
-            Assert.That(manager.Pools.TotalCreated, Is.EqualTo(24));
+            Assert.That(manager.Pools.TotalCreated, Is.EqualTo(120));
             Assert.That(manager.Pools.TotalDestroyed, Is.Zero);
-            Assert.That(manager.Pools.PeakActive, Is.LessThanOrEqualTo(14));
+            Assert.That(manager.Pools.PeakActive, Is.LessThanOrEqualTo(110));
             Assert.That(manager.Pools.Misses, Is.Zero);
-            Debug.Log($"[Task05] speed={speed}; distance={previous:R}; steps={iteration}; rebases={loop.Origin.RebaseCount}; maxActive={maxActive}; maxPlans={maxPlans}; created={manager.Pools.TotalCreated}; peakReservations={manager.Pools.PeakActive}; initial reset/coverage sample={bootstrap} bytes (excludes prewarm).");
+            Assert.That(loop.Planner.SpawnedMoving,Is.GreaterThan(0));
+            Assert.That(loop.Planner.SpawnedStationary,Is.GreaterThan(0));
+            Debug.Log($"[Task05] speed={speed}; distance={previous:R}; steps={iteration}; rebases={loop.Origin.RebaseCount}; maxActive={maxActive}; maxPlans={maxPlans}; created={manager.Pools.TotalCreated}; peakReservations={manager.Pools.PeakActive}; moving={loop.Planner.SpawnedMoving}; stationary={loop.Planner.SpawnedStationary}; contacts={loop.Sensor.TotalContacts}; initial reset/coverage sample={bootstrap} bytes (excludes prewarm).");
         }
         [TestCase(0d)] [TestCase(0.25d)] [TestCase(59.999d)] [TestCase(60d)] [TestCase(60.001d)]
         [TestCase(480d)] [TestCase(17117.125d)]
@@ -191,7 +193,7 @@ namespace NeonTunnelRunner
             {
                 loop.Step(120f); loop.Step(100f);
                 Assert.That(loop.Origin.RebaseCount, Is.GreaterThanOrEqualTo(2));
-                var old = roads.GetLease(0); int count = roads.ActiveCount;
+                var old = roads.GetLease(0); int count = manager.Pools.ActiveCount;
                 if (cycle%2==0)
                 {
                     manager.Pause(); var origin = loop.Origin.Offset; var plan = loop.Planner.GetPlan(0);
@@ -213,7 +215,7 @@ namespace NeonTunnelRunner
             }
             manager.Pause(); Assert.That(manager.ReturnToMenu(), Is.True);
             Assert.That(roads.ActiveCount, Is.Zero); Assert.That(loop.Planner.PlanCount, Is.Zero);
-            Assert.That(manager.Pools.ActiveCount, Is.Zero); Assert.That(manager.Pools.TotalCreated, Is.EqualTo(24));
+            Assert.That(manager.Pools.ActiveCount, Is.Zero); Assert.That(manager.Pools.TotalCreated, Is.EqualTo(120));
             Assert.That(manager.Pools.TotalDestroyed, Is.Zero);
         }
         [Test] public void PauseNearThresholdThenResumeRebasesExactlyOnce()

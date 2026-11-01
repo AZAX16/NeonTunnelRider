@@ -105,6 +105,7 @@ namespace NeonTunnelRunner
                 CheckPools(objects, errors);
                 CheckPlayerInput(objects, errors);
                 CheckWorld(objects, errors);
+                CheckTraffic(objects, errors);
                 foreach (var go in objects)
                 {
                     Require(GameObjectUtility.GetMonoBehavioursWithMissingScriptCount(go) == 0, "Missing script on " + go.name, errors);
@@ -275,6 +276,26 @@ namespace NeonTunnelRunner
                 if (entries.Length != 1 || !entries[0].Prefab) continue;
                 var road = entries[0].Prefab.GetComponent<RoadSegment>();
                 Require(road && road.IsValidFor(entries[0].Key), "Invalid road endpoints/environment: " + (PoolKey)key, errors);
+            }
+        }
+
+        private static void CheckTraffic(GameObject[] objects,List<string> errors)
+        {
+            var manager=objects.SelectMany(g=>g.GetComponents<GameManager>()).SingleOrDefault();
+            if (!manager || !manager.Loop || !manager.Loop.Planner) return;
+            var loop=manager.Loop;
+            Require(objects.Sum(g=>g.GetComponents<InteractionSensor>().Length)==1 && objects.Sum(g=>g.GetComponents<PlayerSurvival>().Length)==1,
+                "Require one sensor and survival component.",errors);
+            Require(loop.Sensor && loop.Sensor.Player==loop.Player && loop.Sensor.Registry==loop.Planner && loop.Sensor.Survival==loop.Survival &&
+                loop.Survival && loop.Survival.Owner==manager && loop.Planner.Pools==manager.Pools && loop.Origin.HasParticipant(loop.Planner),
+                "Wire traffic, sensor, survival and origin explicitly.",errors);
+            if (!loop.Planner.ValidateRequired(out string error)) errors.Add(error);
+            Require(loop.Player.gameObject.layer==LayerMask.NameToLayer("Player"),"Assign Player layer.",errors);
+            for (int i=0;i<manager.Pools.Configuration.EntryCount;i++)
+            {
+                var e=manager.Pools.Configuration.GetEntry(i);
+                if (e.Key==PoolKey.Stationary || e.Key==PoolKey.Moving)
+                    Require(e.Prefab.layer==LayerMask.NameToLayer("Obstacle") && e.Prefab.transform.Find("Visual"),"Assign Obstacle layer and separate Visual.",errors);
             }
         }
 

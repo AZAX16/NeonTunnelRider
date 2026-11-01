@@ -1,0 +1,9 @@
+{
+  "source": "Logs/Editor.log",
+  "latestSamples": [
+    "[Task06] 1000 seeds x21 blocks x2 player speeds (22/50); accepted moving=52142, stationary=213156, omitted=54402; minimum-speed conservative horizon in both cases.",
+    "[Task05] speed=22; distance=100592.71101155877; steps=540; rebases=77; maxActive=7; maxPlans=3; created=120; peakReservations=22; moving=108; stationary=330; contacts=170; initial reset/coverage sample=0 bytes (excludes prewarm).",
+    "[Task05] speed=50; distance=100046.29900157452; steps=239; rebases=47; maxActive=7; maxPlans=3; created=120; peakReservations=21; moving=51; stationary=157; contacts=66; initial reset/coverage sample=0 bytes (excludes prewarm).",
+    "[Task05] 1000 warm synchronous world/player/planning ticks allocated 0 managed bytes on current thread; excludes engine frames/observers/bootstrap."
+  ]
+}

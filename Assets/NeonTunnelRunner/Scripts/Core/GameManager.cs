@@ -167,6 +167,7 @@ namespace NeonTunnelRunner
                     return false;
                 }
                 Session.Reset(runSeed, Session.Snapshot.BestScore);
+                gameplayLoop.Survival.RefreshDebug();
                 EndReason = GameOverReason.None;
                 quitRequested = false;
                 CommitState(GameState.Playing);
@@ -198,7 +199,7 @@ namespace NeonTunnelRunner
             return snapshot;
         }
 
-        private bool Accepts(GameState required) => IsOwner && isActiveAndEnabled && !transitioning && State == required;
+        private bool Accepts(GameState required) => IsOwner && isActiveAndEnabled && !transitioning && !gameplayLoop.IsStepping && State == required;
 
         private bool Reject(string command)
         {

@@ -1,0 +1,35 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "file": "Docs/Setup/Task06Setup.cs",
+      "entry": "NeonTunnelRunner.Task06Setup.Configure"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 2696,
+      "executeMs": 1075,
+      "assemblyName": "PipelineRunScript_Task06Setup_a8fe38c1fef64186a18447d290323e2e",
+      "success": true,
+      "result": {
+        "saved": "Assets/NeonTunnelRunner/Scenes/Game.unity",
+        "catalogEntries": 6,
+        "stationary": 64,
+        "moving": 32,
+        "root": "Interactables",
+        "sensor": "Player",
+        "survival": "Player",
+        "originRegistered": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

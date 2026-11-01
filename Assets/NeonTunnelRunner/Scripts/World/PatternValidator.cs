@@ -1,8 +1,9 @@
 using System;
+using UnityEngine;
 
 namespace NeonTunnelRunner
 {
-    public enum PatternRejection { None, InvalidLane, UnsafeTiming, ProtectedLaneOccupied, InvalidOccupancy, WarmupOccupied }
+    public enum PatternRejection { None, InvalidLane, UnsafeTiming, ProtectedLaneOccupied, InvalidOccupancy, WarmupOccupied, InvalidEnvelope, TransitionBuffer, ProtectedEnvelope, LookaheadLimit }
 
     /// <summary>Value-only proposal. Bits 0..2 per row encode lanes -1,0,+1; never a live object reference.</summary>
     public readonly struct BlockPlan : IEquatable<BlockPlan>
@@ -56,6 +57,39 @@ namespace NeonTunnelRunner
 
     public static class PatternValidator
     {
+        // A bounded reconstruction of every reservation reached, including blocks outside FillWindow.
+        public static bool ValidateMovingEnvelope(SpawnDirector planner, int lane, double spawnZ, double playerZ,
+            float trafficSpeed, Vector3 halfExtents, out PatternRejection rejection)
+        {
+            rejection=PatternRejection.None;
+            var world=planner.Configuration; var gameplay=planner.Gameplay;
+            double minimum=gameplay.StartingSpeed, maximum=8d;
+            double denominator=minimum-maximum;
+            if (lane < -1 || lane > 1 || !double.IsFinite(spawnZ) || !double.IsFinite(playerZ) ||
+                !float.IsFinite(trafficSpeed) || trafficSpeed < 0 || trafficSpeed > maximum || !double.IsFinite(denominator) || denominator <= 0 ||
+                !float.IsFinite(halfExtents.z) || halfExtents.z <= 0 || halfExtents.z > 2.2f ||
+                !float.IsFinite(halfExtents.x) || halfExtents.x <= 0 || halfExtents.x > 1.1f ||
+                !float.IsFinite(halfExtents.y) || halfExtents.y <= 0 || halfExtents.y > 0.6f)
+            { rejection=PatternRejection.InvalidEnvelope; return false; }
+            double horizon=(spawnZ-playerZ+world.Behind+halfExtents.z)/denominator;
+            double padding=(double)halfExtents.z+gameplay.PlayerHalfExtents.z;
+            double low=spawnZ-padding, high=spawnZ+trafficSpeed*Math.Max(0d,horizon)+padding;
+            if (low < 180d) { rejection=PatternRejection.WarmupOccupied; return false; }
+            long first=(long)Math.Floor(low/WorldConfig.BlockLength), last=(long)Math.Floor(high/WorldConfig.BlockLength);
+            // Real coverage permits at most two blocks. Reject pathological inputs without unbounded work.
+            if (first < 0 || last < first || last-first > 8 || high > long.MaxValue)
+            { rejection=PatternRejection.LookaheadLimit; return false; }
+            for (long block=first;block<=last;block++)
+            {
+                var plan=planner.PlanAt(block);
+                if (low <= plan.AbsoluteEnd && high >= plan.BufferStart)
+                { rejection=PatternRejection.TransitionBuffer; return false; }
+                if (lane==plan.ProtectedLane && low <= plan.ProtectedEnd && high >= plan.AbsoluteStart)
+                { rejection=PatternRejection.ProtectedEnvelope; return false; }
+            }
+            return true;
+        }
+
         public static bool CanTransition(int from, int to, WorldConfig world, GameplayConfig gameplay)
         {
             if (from < -1 || from > 1 || to < -1 || to > 1 || !world || !gameplay ||
