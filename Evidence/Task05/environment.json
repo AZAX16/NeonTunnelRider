@@ -1,0 +1,16 @@
+{
+  "os": "Linux Mint 21.3 Virginia x86_64",
+  "glibc": "2.35",
+  "cliUsed": "1.0.0-beta.13",
+  "plugin": "0.1.8-beta",
+  "editor": "m_EditorVersion: 6000.6.3f1\nm_EditorVersionWithRevision: 6000.6.3f1 (45d8eee7de74)",
+  "packages": {
+    "com.unity.pipeline": "0.9.1-exp.1",
+    "com.unity.render-pipelines.universal": "17.6.0",
+    "com.unity.render-pipelines.core": "17.6.0",
+    "com.unity.inputsystem": "1.20.0",
+    "com.unity.test-framework": "1.8.0",
+    "com.unity.ext.nunit": "2.1.0",
+    "com.unity.ugui": "2.6.0"
+  }
+}

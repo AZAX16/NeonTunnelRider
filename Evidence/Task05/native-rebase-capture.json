@@ -1,0 +1,42 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "file": "Docs/Setup/Task05RebaseCapture.cs",
+      "entry": "NeonTunnelRunner.Task05RebaseCapture.Run",
+      "timeout": "90"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 240,
+      "executeMs": 40436,
+      "assemblyName": "PipelineRunScript_Task05RebaseCapture_69ff4b788a9a42d1a9d9918c89914f43",
+      "success": true,
+      "result": {
+        "passed": true,
+        "speed": 50,
+        "Distance": 2021.9992015510798,
+        "ElapsedTime": 40.439984031021595,
+        "frame": 1745,
+        "tick": 2022,
+        "offset": 1920,
+        "rebases": 2,
+        "localPlayer": "(0.000, 0.600, 101.999)",
+        "cameraOffset": "(0.000, 4.400, -10.000)",
+        "ActiveCount": 7,
+        "TotalCreated": 24,
+        "TotalDestroyed": 0,
+        "Misses": 0
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

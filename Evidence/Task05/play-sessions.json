@@ -1,0 +1,260 @@
+{
+  "originalOptions": {
+    "playing": false,
+    "enabled": true,
+    "options": 3
+  },
+  "cycles": [
+    {
+      "reloadsEnabled": true,
+      "smoke": {
+        "passed": true,
+        "milestones": [
+          {
+            "Distance": 170.2799327597022,
+            "ElapsedTime": 7.7399969436228275,
+            "frame": 594,
+            "tick": 387,
+            "offset": 0,
+            "rebases": 0,
+            "localPlayer": "(0.000, 0.600, 170.280)",
+            "ActiveCount": 7,
+            "maximumSeam": 0
+          },
+          {
+            "Distance": 240.67990496009588,
+            "ElapsedTime": 10.939995680004358,
+            "frame": 725,
+            "tick": 547,
+            "offset": 0,
+            "rebases": 0,
+            "localPlayer": "(0.000, 0.600, 240.680)",
+            "ActiveCount": 7,
+            "maximumSeam": 0
+          },
+          {
+            "Distance": 350.679861523211,
+            "ElapsedTime": 15.9399937056005,
+            "frame": 945,
+            "tick": 797,
+            "offset": 0,
+            "rebases": 0,
+            "localPlayer": "(0.000, 0.600, 350.680)",
+            "ActiveCount": 7,
+            "maximumSeam": 0
+          },
+          {
+            "Distance": 450.11982225626707,
+            "ElapsedTime": 20.459991920739412,
+            "frame": 1147,
+            "tick": 1023,
+            "offset": 0,
+            "rebases": 0,
+            "localPlayer": "(0.000, 0.600, 450.120)",
+            "ActiveCount": 7,
+            "maximumSeam": 0
+          },
+          {
+            "Distance": 1005.3996029868722,
+            "ElapsedTime": 45.699981953948736,
+            "frame": 2206,
+            "tick": 2285,
+            "offset": 960,
+            "rebases": 1,
+            "localPlayer": "(0.000, 0.600, 45.400)",
+            "ActiveCount": 7,
+            "maximumSeam": 0
+          },
+          {
+            "Distance": 2020.039202325046,
+            "ElapsedTime": 91.81996374204755,
+            "frame": 4199,
+            "tick": 4591,
+            "offset": 1920,
+            "rebases": 2,
+            "localPlayer": "(0.000, 0.600, 100.039)",
+            "ActiveCount": 7,
+            "maximumSeam": 0
+          }
+        ],
+        "bindings": [
+          {
+            "key": "A",
+            "lane": -1,
+            "tick": 36,
+            "Distance": 15.839993745088577,
+            "callbacks": 1
+          },
+          {
+            "key": "D",
+            "lane": 1,
+            "tick": 21,
+            "Distance": 9.23999635130167,
+            "callbacks": 1
+          },
+          {
+            "key": "LeftArrow",
+            "lane": -1,
+            "tick": 21,
+            "Distance": 9.23999635130167,
+            "callbacks": 1
+          },
+          {
+            "key": "RightArrow",
+            "lane": 1,
+            "tick": 19,
+            "Distance": 8.35999669879675,
+            "callbacks": 1
+          }
+        ],
+        "editorContextStart": true,
+        "nativeEscapePauseResume": true,
+        "pausedRestart": true,
+        "gameOverRestart": true,
+        "returnToMenu": true,
+        "finalState": "Menu",
+        "frame": 4199,
+        "ready": true,
+        "capacity": 24,
+        "created": 24,
+        "destroyed": 0
+      },
+      "exit": {
+        "playing": false,
+        "instanceClear": true,
+        "timeScale": 1
+      }
+    },
+    {
+      "reloadsEnabled": false,
+      "smoke": {
+        "passed": true,
+        "milestones": [
+          {
+            "Distance": 170.2799327597022,
+            "ElapsedTime": 7.7399969436228275,
+            "frame": 524,
+            "tick": 387,
+            "offset": 0,
+            "rebases": 0,
+            "localPlayer": "(0.000, 0.600, 170.280)",
+            "ActiveCount": 7,
+            "maximumSeam": 0
+          },
+          {
+            "Distance": 240.67990496009588,
+            "ElapsedTime": 10.939995680004358,
+            "frame": 663,
+            "tick": 547,
+            "offset": 0,
+            "rebases": 0,
+            "localPlayer": "(0.000, 0.600, 240.680)",
+            "ActiveCount": 7,
+            "maximumSeam": 0
+          },
+          {
+            "Distance": 350.679861523211,
+            "ElapsedTime": 15.9399937056005,
+            "frame": 879,
+            "tick": 797,
+            "offset": 0,
+            "rebases": 0,
+            "localPlayer": "(0.000, 0.600, 350.680)",
+            "ActiveCount": 7,
+            "maximumSeam": 0
+          },
+          {
+            "Distance": 450.55982208251953,
+            "ElapsedTime": 20.479991912841797,
+            "frame": 1074,
+            "tick": 1024,
+            "offset": 0,
+            "rebases": 0,
+            "localPlayer": "(0.000, 0.600, 450.560)",
+            "ActiveCount": 7,
+            "maximumSeam": 0
+          },
+          {
+            "Distance": 1005.8396028131247,
+            "ElapsedTime": 45.71998194605112,
+            "frame": 2156,
+            "tick": 2286,
+            "offset": 960,
+            "rebases": 1,
+            "localPlayer": "(0.000, 0.600, 45.840)",
+            "ActiveCount": 7,
+            "maximumSeam": 0
+          },
+          {
+            "Distance": 2020.039202325046,
+            "ElapsedTime": 91.81996374204755,
+            "frame": 4139,
+            "tick": 4591,
+            "offset": 1920,
+            "rebases": 2,
+            "localPlayer": "(0.000, 0.600, 100.039)",
+            "ActiveCount": 7,
+            "maximumSeam": 0
+          }
+        ],
+        "bindings": [
+          {
+            "key": "A",
+            "lane": -1,
+            "tick": 32,
+            "Distance": 14.079994440078735,
+            "callbacks": 1
+          },
+          {
+            "key": "D",
+            "lane": 1,
+            "tick": 21,
+            "Distance": 9.23999635130167,
+            "callbacks": 1
+          },
+          {
+            "key": "LeftArrow",
+            "lane": -1,
+            "tick": 21,
+            "Distance": 9.23999635130167,
+            "callbacks": 1
+          },
+          {
+            "key": "RightArrow",
+            "lane": 1,
+            "tick": 20,
+            "Distance": 8.79999652504921,
+            "callbacks": 1
+          }
+        ],
+        "editorContextStart": true,
+        "nativeEscapePauseResume": true,
+        "pausedRestart": true,
+        "gameOverRestart": true,
+        "returnToMenu": true,
+        "finalState": "Menu",
+        "frame": 4139,
+        "ready": true,
+        "capacity": 24,
+        "created": 24,
+        "destroyed": 0
+      },
+      "exit": {
+        "playing": false,
+        "instanceClear": true,
+        "timeScale": 1
+      }
+    }
+  ],
+  "passed": true,
+  "configBefore": {
+    "Pools.asset": "ad69fc416e3f19a1350ddab28c638247576647c506c847acf1bfb3585f9d8275",
+    "Gameplay.asset": "a90e5b2a51873e65c9dae592129973e2188169ea97856e950d2c4f114efa9203",
+    "World.asset": "9e9272c239a8a26e8b3366a8e6d79ffff09aecadb9c4ae4fa7f2d13f5addc55f"
+  },
+  "configAfter": {
+    "Pools.asset": "ad69fc416e3f19a1350ddab28c638247576647c506c847acf1bfb3585f9d8275",
+    "Gameplay.asset": "a90e5b2a51873e65c9dae592129973e2188169ea97856e950d2c4f114efa9203",
+    "World.asset": "9e9272c239a8a26e8b3366a8e6d79ffff09aecadb9c4ae4fa7f2d13f5addc55f"
+  }
+}

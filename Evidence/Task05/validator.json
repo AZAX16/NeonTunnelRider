@@ -1,0 +1,54 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "file": "Docs/Setup/Task05Setup.cs",
+      "entry": "NeonTunnelRunner.Task05Setup.Inspect"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 3823,
+      "executeMs": 66,
+      "assemblyName": "PipelineRunScript_Task05Setup_07c9f81764814512bb0a19ddff9091f5",
+      "success": true,
+      "result": {
+        "scene": "Assets/NeonTunnelRunner/Scenes/Game.unity",
+        "dirty": false,
+        "world": "Assets/NeonTunnelRunner/Configs/World.asset",
+        "pools": [
+          {
+            "key": "RoadOpen",
+            "Capacity": 8,
+            "prefab": "Assets/NeonTunnelRunner/Prefabs/Road/RoadOpen60.prefab"
+          },
+          {
+            "key": "RoadTunnel",
+            "Capacity": 8,
+            "prefab": "Assets/NeonTunnelRunner/Prefabs/Road/RoadTunnel60.prefab"
+          },
+          {
+            "key": "RoadEntrance",
+            "Capacity": 4,
+            "prefab": "Assets/NeonTunnelRunner/Prefabs/Road/RoadEntrance60.prefab"
+          },
+          {
+            "key": "RoadExit",
+            "Capacity": 4,
+            "prefab": "Assets/NeonTunnelRunner/Prefabs/Road/RoadExit60.prefab"
+          }
+        ],
+        "activeRoot": "RoadSegments",
+        "cameraOwnedByPlayer": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

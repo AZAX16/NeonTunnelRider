@@ -86,7 +86,7 @@ namespace NeonTunnelRunner
 
         public bool Pause() => Accepts(GameState.Playing) ? ChangeState(GameState.Paused) : Reject(nameof(Pause));
 
-        public bool Resume() => Accepts(GameState.Paused) ? ChangeState(GameState.Playing) : Reject(nameof(Resume));
+        public bool Resume() => Accepts(GameState.Paused) && gameplayLoop.WorldFailure == null ? ChangeState(GameState.Playing) : Reject(nameof(Resume));
 
         public bool Restart() => Accepts(GameState.Paused) || Accepts(GameState.GameOver)
             ? BeginRun() : Reject(nameof(Restart));
@@ -143,6 +143,11 @@ namespace NeonTunnelRunner
                 Debug.LogError("[GameManager] Cannot start: " + (poolService.LastError ?? "PoolService is not ready/enabled; prewarm in Menu."), this);
                 return false;
             }
+            if (!gameplayLoop.ValidateWorld(out string worldError))
+            {
+                Debug.LogError("[GameManager] Cannot start: " + worldError, this);
+                return false;
+            }
             transitioning = true;
             try
             {
@@ -154,8 +159,14 @@ namespace NeonTunnelRunner
                     Debug.LogError("[GameManager] Cannot start: PoolService shut down during reset cleanup.", this);
                     return false;
                 }
+                if (!gameplayLoop.ResetRun(runSeed))
+                {
+                    gameplayLoop.CleanupRun();
+                    gameplayLoop.ApplyState(State);
+                    Debug.LogError("[GameManager] Cannot start: " + gameplayLoop.WorldFailure, this);
+                    return false;
+                }
                 Session.Reset(runSeed, Session.Snapshot.BestScore);
-                gameplayLoop.ResetRun();
                 EndReason = GameOverReason.None;
                 quitRequested = false;
                 CommitState(GameState.Playing);

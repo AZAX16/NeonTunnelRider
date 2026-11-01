@@ -16,6 +16,7 @@ namespace NeonTunnelRunner
         private double transitionElapsed;
         private bool transitioning;
         private Vector3 previousPosition, currentPosition;
+        private double previousAbsoluteZ, currentAbsoluteZ, originOffset;
 
         public GameplayConfig Configuration => configuration;
         public Rigidbody Body => body;
@@ -41,6 +42,7 @@ namespace NeonTunnelRunner
             transitioning = false;
             transitionElapsed = 0d;
             previousPosition = currentPosition = configuration.StartingPosition;
+            previousAbsoluteZ = currentAbsoluteZ = originOffset = 0d;
             transitionStartX = currentPosition.x;
             transform.localScale = Vector3.one;
             HoldPose();
@@ -73,6 +75,7 @@ namespace NeonTunnelRunner
             if (float.IsNaN(speed) || float.IsInfinity(speed) || speed < 0f)
                 throw new ArgumentOutOfRangeException(nameof(speed));
             previousPosition = currentPosition;
+            previousAbsoluteZ = currentAbsoluteZ;
             double remaining = deltaTime;
             while (transitioning)
             {
@@ -93,9 +96,29 @@ namespace NeonTunnelRunner
                 if (remaining <= 0d) break;
             }
             double travel = (double)speed * deltaTime;
-            currentPosition.z += (float)travel;
+            currentAbsoluteZ += travel;
+            currentPosition.z = (float)(currentAbsoluteZ - originOffset);
             currentPosition.y = configuration.StartingPosition.y;
             return travel;
+        }
+
+        internal void SetAbsoluteForward(double absoluteZ, double offset)
+        {
+            currentAbsoluteZ = absoluteZ;
+            originOffset = offset;
+            currentPosition.z = (float)(absoluteZ - offset);
+        }
+
+        internal void ShiftOrigin(double newOffset)
+        {
+            originOffset = newOffset;
+            previousPosition.z = (float)(previousAbsoluteZ - newOffset);
+            currentPosition.z = (float)(currentAbsoluteZ - newOffset);
+            // Teleport cancels the pending MovePosition and resets any Rigidbody interpolation history.
+            var interpolation = body.interpolation;
+            body.interpolation = RigidbodyInterpolation.None;
+            HoldPose();
+            body.interpolation = interpolation;
         }
 
         public void CommitPose() => body.MovePosition(currentPosition);

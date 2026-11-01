@@ -1,0 +1,8 @@
+{
+  "measurements": [
+    "[Task05] speed=22; distance=100592.71101155877; steps=540; rebases=77; maxActive=7; maxPlans=3; created=24; peakReservations=14; initial reset/coverage sample=0 bytes (excludes prewarm).",
+    "[Task05] speed=50; distance=100046.29900157452; steps=239; rebases=47; maxActive=7; maxPlans=3; created=24; peakReservations=14; initial reset/coverage sample=0 bytes (excludes prewarm).",
+    "[Task05] 1000 warm synchronous world/player/planning ticks allocated 0 managed bytes on current thread; excludes engine frames/observers/bootstrap."
+  ],
+  "scope": "Synchronous current-thread samples in the integration fixture; prewarm/native engine frames/observers not measured."
+}

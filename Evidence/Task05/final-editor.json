@@ -1,0 +1,40 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "code": "return new { playing=UnityEditor.EditorApplication.isPlaying, autoTick=UnityEditor.SessionState.GetBool(\"Unity.Pipeline.AutoTick.Enabled\",true), instanceClear=NeonTunnelRunner.GameManager.Instance==null, timeScale=UnityEngine.Time.timeScale, scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene().path, dirty=UnityEngine.SceneManagement.SceneManager.GetActiveScene().isDirty, playerAssemblies=UnityEditor.Compilation.CompilationPipeline.GetAssemblies(UnityEditor.Compilation.AssembliesType.PlayerWithoutTestAssemblies).Where(a=>a.name.StartsWith(\"NeonTunnelRunner\")).Select(a=>new { a.name, references=a.assemblyReferences.Select(r=>r.name).ToArray() }).ToArray() };"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "playing": false,
+        "autoTick": false,
+        "instanceClear": true,
+        "timeScale": 1,
+        "scene": "Assets/NeonTunnelRunner/Scenes/Game.unity",
+        "dirty": false,
+        "playerAssemblies": [
+          {
+            "name": "NeonTunnelRunner.Runtime",
+            "references": [
+              "Unity.InputSystem",
+              "UnityEngine.UI",
+              "Unity.TextMeshPro"
+            ]
+          }
+        ]
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

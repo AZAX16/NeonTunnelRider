@@ -176,6 +176,22 @@ namespace NeonTunnelRunner
             Assign(input, "actionsAsset", UnityEditor.AssetDatabase.LoadMainAssetAtPath("Assets/NeonTunnelRunner/Input/Runner.inputactions"));
             Assign(loop, "inputRouter", input);
             Assign(loop, "player", player);
+            var roads = root.AddComponent<RoadManager>();
+            var origin = root.AddComponent<WorldOrigin>();
+            var planner = root.AddComponent<SpawnDirector>();
+            var active = new GameObject("RoadSegments").transform;
+            active.SetParent(root.transform, false);
+#if UNITY_EDITOR
+            var world = UnityEditor.AssetDatabase.LoadAssetAtPath<WorldConfig>("Assets/NeonTunnelRunner/Configs/World.asset");
+            Assign(roads, "configuration", world);
+            Assign(origin, "configuration", world);
+            Assign(planner, "configuration", world);
+#endif
+            Assign(roads, "pools", pools); Assign(roads, "activeRoot", active);
+            Assign(origin, "player", player); Assign(origin, "roads", roads); Assign(origin, "chaseCamera", player.CameraAnchor);
+            Assign(planner, "gameplay", config);
+            Assign(loop, "roads", roads); Assign(loop, "worldOrigin", origin); Assign(loop, "spawnDirector", planner);
+
         }
 
         private static void Assign(object target, string field, object value) =>

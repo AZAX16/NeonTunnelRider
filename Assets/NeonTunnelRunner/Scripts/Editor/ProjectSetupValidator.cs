@@ -104,6 +104,7 @@ namespace NeonTunnelRunner
                 CheckCore(objects, errors);
                 CheckPools(objects, errors);
                 CheckPlayerInput(objects, errors);
+                CheckWorld(objects, errors);
                 foreach (var go in objects)
                 {
                     Require(GameObjectUtility.GetMonoBehavioursWithMissingScriptCount(go) == 0, "Missing script on " + go.name, errors);
@@ -239,6 +240,42 @@ namespace NeonTunnelRunner
                 navigate.bindings.Skip(1).Select(b => b.path).OrderBy(p => p).SequenceEqual(new[] {
                     "<Keyboard>/downArrow", "<Keyboard>/leftArrow", "<Keyboard>/rightArrow", "<Keyboard>/upArrow" }),
                 "Use an arrow-key Vector2 composite for UI/Navigate.", errors);
+        }
+
+        private static void CheckWorld(GameObject[] objects, List<string> errors)
+        {
+            var managers = objects.SelectMany(g => g.GetComponents<GameManager>()).ToArray();
+            if (managers.Length != 1) return;
+            var manager = managers[0]; var loop = manager.Loop;
+            Require(objects.Sum(g => g.GetComponents<RoadManager>().Length) == 1 &&
+                objects.Sum(g => g.GetComponents<WorldOrigin>().Length) == 1 &&
+                objects.Sum(g => g.GetComponents<SpawnDirector>().Length) == 1,
+                "Require one RoadManager, WorldOrigin and SpawnDirector.", errors);
+            Require(loop && loop.Roads && loop.Origin && loop.Planner, "Assign world services to GameplayLoop.", errors);
+            if (!loop || !loop.Roads || !loop.Origin || !loop.Planner) return;
+            var roads = loop.Roads;
+            Require(roads.Pools == manager.Pools && roads.ActiveRoot && roads.ActiveRoot.name == "RoadSegments" &&
+                roads.ActiveRoot.parent && roads.ActiveRoot.parent.name == "World" &&
+                roads.ActiveRoot.position == Vector3.zero && roads.ActiveRoot.rotation == Quaternion.identity && roads.ActiveRoot.lossyScale == Vector3.one,
+                "Assign neutral World/RoadSegments separately from storage and interactables.", errors);
+            var config = roads.Configuration;
+            Require(config && AssetDatabase.GetAssetPath(config) == Root + "/Configs/World.asset", "Assign World.asset.", errors);
+            if (config && !config.TryValidate(manager.Configuration, out string error)) errors.Add(error);
+            Require(loop.Origin.Player == loop.Player && loop.Origin.Roads == roads && loop.Origin.Configuration == config &&
+                loop.Planner.Configuration == config && loop.Planner.Gameplay == manager.Configuration,
+                "World services must share explicit player/road/config dependencies.", errors);
+            if (!loop.Origin.TryValidate(out string originError)) errors.Add(originError);
+            Require(objects.Any(g => g.name == "Interactables" && g.transform.parent == roads.ActiveRoot.parent), "Keep a separate World/Interactables root.", errors);
+            Require(objects.Where(g => g.name == "ReferenceRoad").All(g => !g.activeSelf), "Disable the old static ReferenceRoad.", errors);
+            var catalog = manager.Pools.Configuration;
+            for (int key = 0; key < 4; key++)
+            {
+                var entries = Enumerable.Range(0, catalog.EntryCount).Select(catalog.GetEntry).Where(e => (int)e.Key == key).ToArray();
+                Require(entries.Length == 1 && entries[0].Capacity >= (key < 2 ? 6 : 2), "Missing/undersized required road pool " + (PoolKey)key, errors);
+                if (entries.Length != 1 || !entries[0].Prefab) continue;
+                var road = entries[0].Prefab.GetComponent<RoadSegment>();
+                Require(road && road.IsValidFor(entries[0].Key), "Invalid road endpoints/environment: " + (PoolKey)key, errors);
+            }
         }
 
         private static void CheckAction(InputActionAsset asset, string name, InputActionType type, string[] paths, List<string> errors)

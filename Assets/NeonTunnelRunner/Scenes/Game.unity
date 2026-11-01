@@ -163,6 +163,9 @@ GameObject:
   - component: {fileID: 80797673}
   - component: {fileID: 80797675}
   - component: {fileID: 80797676}
+  - component: {fileID: 80797679}
+  - component: {fileID: 80797678}
+  - component: {fileID: 80797677}
   m_Layer: 0
   m_Name: Systems
   m_TagString: Untagged
@@ -217,6 +220,9 @@ MonoBehaviour:
   gameManager: {fileID: 80797673}
   inputRouter: {fileID: 80797675}
   player: {fileID: 1992932450}
+  roads: {fileID: 80797679}
+  worldOrigin: {fileID: 80797678}
+  spawnDirector: {fileID: 80797677}
 --- !u!114 &80797675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -246,6 +252,52 @@ MonoBehaviour:
   gameManager: {fileID: 80797673}
   configuration: {fileID: 11400000, guid: 241596b69c8a69f3f8abd11ab4e827f1, type: 2}
   storageRoot: {fileID: 821574525}
+--- !u!114 &80797677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80797671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8396f155e2d9bce068f44544855f45a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NeonTunnelRunner.Runtime::NeonTunnelRunner.SpawnDirector
+  configuration: {fileID: 11400000, guid: a3f0b189244308867b42882f15967d21, type: 2}
+  gameplay: {fileID: 11400000, guid: 50e71278e264ab6f3b9bd533f16b2e30, type: 2}
+--- !u!114 &80797678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80797671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3850ca4d5d0dcd687b5901068d2533db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NeonTunnelRunner.Runtime::NeonTunnelRunner.WorldOrigin
+  configuration: {fileID: 11400000, guid: a3f0b189244308867b42882f15967d21, type: 2}
+  player: {fileID: 1992932450}
+  roads: {fileID: 80797679}
+  chaseCamera: {fileID: 2056537198}
+  additionalParticipants: []
+--- !u!114 &80797679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80797671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3585be7c66efcd2dda69aaa694a4fa9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NeonTunnelRunner.Runtime::NeonTunnelRunner.RoadManager
+  configuration: {fileID: 11400000, guid: a3f0b189244308867b42882f15967d21, type: 2}
+  pools: {fileID: 80797676}
+  activeRoot: {fileID: 1075299423}
 --- !u!1 &192598834
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,7 +425,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &192997114
 Transform:
   m_ObjectHideFlags: 0
@@ -538,6 +590,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 192997114}
+  - {fileID: 1075299423}
+  - {fileID: 775574893}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &754769652
@@ -701,6 +755,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 765596864}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &775574892
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 775574893}
+  m_Layer: 0
+  m_Name: Interactables
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &775574893
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775574892}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 448569009}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &821574524
 GameObject:
   m_ObjectHideFlags: 0
@@ -844,6 +929,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 909762794}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1075299422
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1075299423}
+  m_Layer: 0
+  m_Name: RoadSegments
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1075299423
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075299422}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 448569009}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1327308204
 GameObject:
   m_ObjectHideFlags: 0

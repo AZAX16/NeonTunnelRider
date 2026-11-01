@@ -12,4 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bf61be27e165883e837447c71410b9c, type: 3}
   m_Name: Pools
   m_EditorClassIdentifier: NeonTunnelRunner.Runtime::NeonTunnelRunner.PoolConfig
-  entries: []
+  entries:
+  - key: 0
+    prefab: {fileID: 6165894420166711233, guid: d22b4640bb487dfb081b276161c4fe40, type: 3}
+    capacity: 8
+  - key: 1
+    prefab: {fileID: 654869371386464100, guid: 413c84f91350ee86587485145379c4c4, type: 3}
+    capacity: 8
+  - key: 2
+    prefab: {fileID: 2218758600915649083, guid: a1bed7ac9f140d1cabcdb6745e0bc845, type: 3}
+    capacity: 4
+  - key: 3
+    prefab: {fileID: 1501224025689451202, guid: e38623c39070b31a2a24fd1cb0bf0edb, type: 3}
+    capacity: 4
