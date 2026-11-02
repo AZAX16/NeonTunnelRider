@@ -148,6 +148,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: NeonTunnelRunner.Runtime::NeonTunnelRunner.VehicleVisuals
   gameManager: {fileID: 0}
   flashRenderer: {fileID: 4194840026508648501}
+  player: {fileID: 482812753612654963}
+  configuration: {fileID: 11400000, guid: 8cc0bd840e8337a3fbe4656ff60cee73, type: 2}
+  visualPivot: {fileID: 4465797103070491600}
   flashDuration: 0.25
   flashColor: {r: 1, g: 0.18, b: 0.1, a: 1}
   debugFlashRemaining: 0

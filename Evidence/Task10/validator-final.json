@@ -1,0 +1,79 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "file": "Docs/Setup/Task09Audit.cs",
+      "entry": "NeonTunnelRunner.Task09Audit.Inspect"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 79,
+      "executeMs": 114,
+      "assemblyName": "PipelineRunScript_Task09Audit_9b242452b6f343c9be555ba309cd0c33",
+      "success": true,
+      "result": {
+        "editor": "6000.6.3f1",
+        "playing": false,
+        "scene": "Assets/NeonTunnelRunner/Scenes/Game.unity",
+        "dirty": false,
+        "instanceClear": true,
+        "timeScale": 1,
+        "autoTick": false,
+        "ownerWired": true,
+        "flashRenderer": "Body",
+        "shader": "Universal Render Pipeline/Lit",
+        "prefabFlashRenderer": "Body",
+        "defaults": {
+          "StartingLives": 3,
+          "FuelCapacity": 100,
+          "FuelDrainPerSecond": 2,
+          "FuelRefill": 30,
+          "DamageGraceDuration": 1,
+          "StartingSpeed": 22,
+          "MaximumSpeed": 50,
+          "DifficultyDuration": 180,
+          "DifficultyDistance": 6000,
+          "StartingOccupancy": 0.25,
+          "MaximumOccupancy": 0.8
+        },
+        "packages": [
+          {
+            "name": "com.unity.inputsystem",
+            "version": "1.20.0"
+          },
+          {
+            "name": "com.unity.render-pipelines.universal",
+            "version": "17.6.0"
+          },
+          {
+            "name": "com.unity.test-framework",
+            "version": "1.8.0"
+          },
+          {
+            "name": "com.unity.pipeline",
+            "version": "0.9.1-exp.1"
+          }
+        ],
+        "playerAssemblies": [
+          {
+            "name": "NeonTunnelRunner.Runtime",
+            "references": [
+              "Unity.InputSystem",
+              "UnityEngine.UI",
+              "Unity.TextMeshPro"
+            ]
+          }
+        ]
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

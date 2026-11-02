@@ -1,0 +1,461 @@
+[
+  {
+    "seq": 1498,
+    "timestampUtc": "2026-11-02T09:05:45.837673Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task06] 1000 seeds x21 blocks x2 player speeds (22/50); accepted moving=51554, stationary=210926, omitted=52174; minimum-speed conservative horizon in both cases.",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PatternSafetyTests:ThousandSeedsValidateRealTrafficEnvelopesAtStartingAndMaximumSpeeds () (at Assets/NeonTunnelRunner/Tests/EditMode/PatternSafetyTests.cs:142)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1499,
+    "timestampUtc": "2026-11-02T09:06:03.472715Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task07] seeds=0..999, 21x480=10080m/seed; max speed=50, min=22, reaction=.7, transition=.28, margin=.3; required fuel=63000, accepted coins=113122, rejected coins=54878, lane changes=13884, max fuel gap=180m.",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PickupPlanTests:ThousandSeedsCoverTenKilometresOfContinuousFuelRoutesAndPickupBounds () (at Assets/NeonTunnelRunner/Tests/EditMode/PickupPlanTests.cs:79)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1500,
+    "timestampUtc": "2026-11-02T09:06:04.658192Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task09 density] d=0, eligible=246000, proposed=61424, accepted=51066, rejected=10358, moving=9953, fallbacks=15576, poolMisses=NA(pure planner), rate=0.249691056910569",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.ProgressionTests:SeededDensityMeasuresProposalsSeparatelyFromSafetyAtStartMiddleAndCap () (at Assets/NeonTunnelRunner/Tests/EditMode/ProgressionTests.cs:71)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1501,
+    "timestampUtc": "2026-11-02T09:06:05.587728Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task09 density] d=0.5, eligible=246000, proposed=128907, accepted=107002, rejected=21905, moving=20982, fallbacks=32568, poolMisses=NA(pure planner), rate=0.524012195121951",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.ProgressionTests:SeededDensityMeasuresProposalsSeparatelyFromSafetyAtStartMiddleAndCap () (at Assets/NeonTunnelRunner/Tests/EditMode/ProgressionTests.cs:71)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1502,
+    "timestampUtc": "2026-11-02T09:06:06.758948Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task09 density] d=1, eligible=246000, proposed=196805, accepted=163229, rejected=33576, moving=31954, fallbacks=49559, poolMisses=NA(pure planner), rate=0.800020325203252",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.ProgressionTests:SeededDensityMeasuresProposalsSeparatelyFromSafetyAtStartMiddleAndCap () (at Assets/NeonTunnelRunner/Tests/EditMode/ProgressionTests.cs:71)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1519,
+    "timestampUtc": "2026-11-02T09:06:19.171499Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task08] native fixedDelta=0.0199999921, ticks=2500, depleted at elapsed=49.999980255961418, tolerance=0.0001 fuel.",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.GameOverTests:NativeFixedDeltaQuantizationDoesNotAddADepletionTick () (at Assets/NeonTunnelRunner/Tests/PlayMode/GameOverTests.cs:75)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1554,
+    "timestampUtc": "2026-11-02T09:06:26.634297Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task07] live route seed=12345, speed=22, distance=2880.2803875011255, fuel collections=18, coins=24, spawned fuel=20, rebases=2, created=304, peak=21.",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PickupTests:PlannedFuelBecomesRealRentalsAndIsCollectibleThroughEveryProtectedTransition (single,int) (at Assets/NeonTunnelRunner/Tests/PlayMode/PickupTests.cs:260)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1555,
+    "timestampUtc": "2026-11-02T09:06:26.711936Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task07] live route seed=12345, speed=50, distance=2880.0000429153442, fuel collections=18, coins=24, spawned fuel=20, rebases=2, created=304, peak=22.",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PickupTests:PlannedFuelBecomesRealRentalsAndIsCollectibleThroughEveryProtectedTransition (single,int) (at Assets/NeonTunnelRunner/Tests/PlayMode/PickupTests.cs:260)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1556,
+    "timestampUtc": "2026-11-02T09:06:26.797568Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task07] live route seed=0, speed=50, distance=2880.0000429153442, fuel collections=18, coins=24, spawned fuel=20, rebases=2, created=304, peak=23.",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PickupTests:PlannedFuelBecomesRealRentalsAndIsCollectibleThroughEveryProtectedTransition (single,int) (at Assets/NeonTunnelRunner/Tests/PlayMode/PickupTests.cs:260)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1557,
+    "timestampUtc": "2026-11-02T09:06:26.892488Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task07] live route seed=999, speed=50, distance=2880.0000429153442, fuel collections=18, coins=24, spawned fuel=20, rebases=2, created=304, peak=23.",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PickupTests:PlannedFuelBecomesRealRentalsAndIsCollectibleThroughEveryProtectedTransition (single,int) (at Assets/NeonTunnelRunner/Tests/PlayMode/PickupTests.cs:260)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1563,
+    "timestampUtc": "2026-11-02T09:06:28.143244Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task04] 50 restarts + menu; created=308, destroyed=0, cleanupCallbacks=101.",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PoolLifecycleTests:FiftyRestartsGateInputBeforeCleanupAndPreservePools () (at Assets/NeonTunnelRunner/Tests/PlayMode/PoolLifecycleTests.cs:322)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1564,
+    "timestampUtc": "2026-11-02T09:06:28.455122Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task04] 1000 measured steady-state rents/returns: 0 managed bytes on current thread.",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PoolLifecycleTests:SuccessfulSteadyStatePoolOperationsAllocateNoManagedBytes () (at Assets/NeonTunnelRunner/Tests/PlayMode/PoolLifecycleTests.cs:380)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1565,
+    "timestampUtc": "2026-11-02T09:06:29.407651Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task04] 12000 rents/returns; created=24, destroyed=0, capacity=24.",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PoolLifecycleTests:ThousandRentReturnsForEveryKeyPreserveIdentityAndCounts () (at Assets/NeonTunnelRunner/Tests/PlayMode/PoolLifecycleTests.cs:131)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1566,
+    "timestampUtc": "2026-11-02T09:06:29.630669Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task09 cap] distance=6554.21204166728, elapsed=181, difficulty=1, actual=50, fuel=99.2, score=12054, best=12054, rebases=7",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.ProgressionLifecycleTests:RealProtectedRouteReachesCapAndRebasesWithoutChangingCommittedRows () (at Assets/NeonTunnelRunner/Tests/PlayMode/ProgressionLifecycleTests.cs:58)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1572,
+    "timestampUtc": "2026-11-02T09:06:44.20635Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task05] coins=844; fuel=632; spawnedCoins=1018; spawnedFuel=634; speed=22; distance=101229.86457051983; steps=245; rebases=105; maxActive=7; maxPlans=3; created=304; peakReservations=26; moving=337; stationary=1348; contacts=1476; proposed=2013; eligible=2536; rejected=328; misses=0; fallback=508; initial reset/coverage sample=0 bytes (excludes prewarm).",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.RoadContinuityTests:HundredKilometresMaintainsSeamsCoverageAndBoundedPools (single) (at Assets/NeonTunnelRunner/Tests/PlayMode/RoadContinuityTests.cs:101)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1573,
+    "timestampUtc": "2026-11-02T09:06:45.243703Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task05] coins=834; fuel=625; spawnedCoins=1006; spawnedFuel=627; speed=50; distance=100046.29900157452; steps=239; rebases=104; maxActive=7; maxPlans=3; created=304; peakReservations=26; moving=333; stationary=1329; contacts=1459; proposed=1986; eligible=2504; rejected=324; misses=0; fallback=505; initial reset/coverage sample=0 bytes (excludes prewarm).",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.RoadContinuityTests:HundredKilometresMaintainsSeamsCoverageAndBoundedPools (single) (at Assets/NeonTunnelRunner/Tests/PlayMode/RoadContinuityTests.cs:101)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1578,
+    "timestampUtc": "2026-11-02T09:06:45.744222Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task05] 1000 warm synchronous world/player/planning ticks allocated 0 managed bytes on current thread; excludes engine frames/observers/bootstrap.",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.RoadContinuityTests:WarmWorldMaintenanceAllocationIsMeasuredSeparatelyFromPrewarm () (at Assets/NeonTunnelRunner/Tests/PlayMode/RoadContinuityTests.cs:322)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1649,
+    "timestampUtc": "2026-11-02T09:12:52.908419Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task06] 1000 seeds x21 blocks x2 player speeds (22/50); accepted moving=51554, stationary=210926, omitted=52174; minimum-speed conservative horizon in both cases.",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PatternSafetyTests:ThousandSeedsValidateRealTrafficEnvelopesAtStartingAndMaximumSpeeds () (at Assets/NeonTunnelRunner/Tests/EditMode/PatternSafetyTests.cs:142)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1650,
+    "timestampUtc": "2026-11-02T09:13:25.673593Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task07] seeds=0..999, 21x480=10080m/seed; max speed=50, min=22, reaction=.7, transition=.28, margin=.3; required fuel=63000, accepted coins=113122, rejected coins=54878, lane changes=13884, max fuel gap=180m.",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PickupPlanTests:ThousandSeedsCoverTenKilometresOfContinuousFuelRoutesAndPickupBounds () (at Assets/NeonTunnelRunner/Tests/EditMode/PickupPlanTests.cs:79)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1651,
+    "timestampUtc": "2026-11-02T09:13:27.395686Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task09 density] d=0, eligible=246000, proposed=61424, accepted=51066, rejected=10358, moving=9953, fallbacks=15576, poolMisses=NA(pure planner), rate=0.249691056910569",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.ProgressionTests:SeededDensityMeasuresProposalsSeparatelyFromSafetyAtStartMiddleAndCap () (at Assets/NeonTunnelRunner/Tests/EditMode/ProgressionTests.cs:71)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1652,
+    "timestampUtc": "2026-11-02T09:13:28.707539Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task09 density] d=0.5, eligible=246000, proposed=128907, accepted=107002, rejected=21905, moving=20982, fallbacks=32568, poolMisses=NA(pure planner), rate=0.524012195121951",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.ProgressionTests:SeededDensityMeasuresProposalsSeparatelyFromSafetyAtStartMiddleAndCap () (at Assets/NeonTunnelRunner/Tests/EditMode/ProgressionTests.cs:71)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1653,
+    "timestampUtc": "2026-11-02T09:13:30.007225Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task09 density] d=1, eligible=246000, proposed=196805, accepted=163229, rejected=33576, moving=31954, fallbacks=49559, poolMisses=NA(pure planner), rate=0.800020325203252",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.ProgressionTests:SeededDensityMeasuresProposalsSeparatelyFromSafetyAtStartMiddleAndCap () (at Assets/NeonTunnelRunner/Tests/EditMode/ProgressionTests.cs:71)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1668,
+    "timestampUtc": "2026-11-02T09:13:43.876722Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task08] native fixedDelta=0.0199999921, ticks=2500, depleted at elapsed=49.999980255961418, tolerance=0.0001 fuel.",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.GameOverTests:NativeFixedDeltaQuantizationDoesNotAddADepletionTick () (at Assets/NeonTunnelRunner/Tests/PlayMode/GameOverTests.cs:75)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1703,
+    "timestampUtc": "2026-11-02T09:13:51.435289Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task07] live route seed=12345, speed=22, distance=2880.2803875011255, fuel collections=18, coins=24, spawned fuel=20, rebases=2, created=304, peak=21.",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PickupTests:PlannedFuelBecomesRealRentalsAndIsCollectibleThroughEveryProtectedTransition (single,int) (at Assets/NeonTunnelRunner/Tests/PlayMode/PickupTests.cs:260)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1704,
+    "timestampUtc": "2026-11-02T09:13:51.523971Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task07] live route seed=12345, speed=50, distance=2880.0000429153442, fuel collections=18, coins=24, spawned fuel=20, rebases=2, created=304, peak=22.",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PickupTests:PlannedFuelBecomesRealRentalsAndIsCollectibleThroughEveryProtectedTransition (single,int) (at Assets/NeonTunnelRunner/Tests/PlayMode/PickupTests.cs:260)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1705,
+    "timestampUtc": "2026-11-02T09:13:51.654428Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task07] live route seed=0, speed=50, distance=2880.0000429153442, fuel collections=18, coins=24, spawned fuel=20, rebases=2, created=304, peak=23.",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PickupTests:PlannedFuelBecomesRealRentalsAndIsCollectibleThroughEveryProtectedTransition (single,int) (at Assets/NeonTunnelRunner/Tests/PlayMode/PickupTests.cs:260)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1706,
+    "timestampUtc": "2026-11-02T09:13:51.744572Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task07] live route seed=999, speed=50, distance=2880.0000429153442, fuel collections=18, coins=24, spawned fuel=20, rebases=2, created=304, peak=23.",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PickupTests:PlannedFuelBecomesRealRentalsAndIsCollectibleThroughEveryProtectedTransition (single,int) (at Assets/NeonTunnelRunner/Tests/PlayMode/PickupTests.cs:260)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1712,
+    "timestampUtc": "2026-11-02T09:13:52.968209Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task04] 50 restarts + menu; created=308, destroyed=0, cleanupCallbacks=101.",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PoolLifecycleTests:FiftyRestartsGateInputBeforeCleanupAndPreservePools () (at Assets/NeonTunnelRunner/Tests/PlayMode/PoolLifecycleTests.cs:322)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1713,
+    "timestampUtc": "2026-11-02T09:13:53.137136Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task04] 1000 measured steady-state rents/returns: 0 managed bytes on current thread.",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PoolLifecycleTests:SuccessfulSteadyStatePoolOperationsAllocateNoManagedBytes () (at Assets/NeonTunnelRunner/Tests/PlayMode/PoolLifecycleTests.cs:380)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1714,
+    "timestampUtc": "2026-11-02T09:13:53.682326Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task04] 12000 rents/returns; created=24, destroyed=0, capacity=24.",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PoolLifecycleTests:ThousandRentReturnsForEveryKeyPreserveIdentityAndCounts () (at Assets/NeonTunnelRunner/Tests/PlayMode/PoolLifecycleTests.cs:131)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1715,
+    "timestampUtc": "2026-11-02T09:13:53.813242Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task09 cap] distance=6554.21204166728, elapsed=181, difficulty=1, actual=50, fuel=99.2, score=12054, best=12054, rebases=7",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.ProgressionLifecycleTests:RealProtectedRouteReachesCapAndRebasesWithoutChangingCommittedRows () (at Assets/NeonTunnelRunner/Tests/PlayMode/ProgressionLifecycleTests.cs:58)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1721,
+    "timestampUtc": "2026-11-02T09:14:01.438935Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task05] coins=844; fuel=632; spawnedCoins=1018; spawnedFuel=634; speed=22; distance=101229.86457051983; steps=245; rebases=105; maxActive=7; maxPlans=3; created=304; peakReservations=26; moving=337; stationary=1348; contacts=1476; proposed=2013; eligible=2536; rejected=328; misses=0; fallback=508; initial reset/coverage sample=0 bytes (excludes prewarm).",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.RoadContinuityTests:HundredKilometresMaintainsSeamsCoverageAndBoundedPools (single) (at Assets/NeonTunnelRunner/Tests/PlayMode/RoadContinuityTests.cs:101)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1722,
+    "timestampUtc": "2026-11-02T09:14:02.433113Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task05] coins=834; fuel=625; spawnedCoins=1006; spawnedFuel=627; speed=50; distance=100046.29900157452; steps=239; rebases=104; maxActive=7; maxPlans=3; created=304; peakReservations=26; moving=333; stationary=1329; contacts=1459; proposed=1986; eligible=2504; rejected=324; misses=0; fallback=505; initial reset/coverage sample=0 bytes (excludes prewarm).",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.RoadContinuityTests:HundredKilometresMaintainsSeamsCoverageAndBoundedPools (single) (at Assets/NeonTunnelRunner/Tests/PlayMode/RoadContinuityTests.cs:101)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1727,
+    "timestampUtc": "2026-11-02T09:14:02.902583Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task05] 1000 warm synchronous world/player/planning ticks allocated 0 managed bytes on current thread; excludes engine frames/observers/bootstrap.",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.RoadContinuityTests:WarmWorldMaintenanceAllocationIsMeasuredSeparatelyFromPrewarm () (at Assets/NeonTunnelRunner/Tests/PlayMode/RoadContinuityTests.cs:322)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1767,
+    "timestampUtc": "2026-11-02T09:15:31.789581Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task06] 1000 seeds x21 blocks x2 player speeds (22/50); accepted moving=51554, stationary=210926, omitted=52174; minimum-speed conservative horizon in both cases.",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PatternSafetyTests:ThousandSeedsValidateRealTrafficEnvelopesAtStartingAndMaximumSpeeds () (at Assets/NeonTunnelRunner/Tests/EditMode/PatternSafetyTests.cs:142)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1768,
+    "timestampUtc": "2026-11-02T09:15:49.486913Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task07] seeds=0..999, 21x480=10080m/seed; max speed=50, min=22, reaction=.7, transition=.28, margin=.3; required fuel=63000, accepted coins=113122, rejected coins=54878, lane changes=13884, max fuel gap=180m.",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PickupPlanTests:ThousandSeedsCoverTenKilometresOfContinuousFuelRoutesAndPickupBounds () (at Assets/NeonTunnelRunner/Tests/EditMode/PickupPlanTests.cs:79)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1769,
+    "timestampUtc": "2026-11-02T09:15:50.689284Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task09 density] d=0, eligible=246000, proposed=61424, accepted=51066, rejected=10358, moving=9953, fallbacks=15576, poolMisses=NA(pure planner), rate=0.249691056910569",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.ProgressionTests:SeededDensityMeasuresProposalsSeparatelyFromSafetyAtStartMiddleAndCap () (at Assets/NeonTunnelRunner/Tests/EditMode/ProgressionTests.cs:71)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1770,
+    "timestampUtc": "2026-11-02T09:15:51.6137Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task09 density] d=0.5, eligible=246000, proposed=128907, accepted=107002, rejected=21905, moving=20982, fallbacks=32568, poolMisses=NA(pure planner), rate=0.524012195121951",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.ProgressionTests:SeededDensityMeasuresProposalsSeparatelyFromSafetyAtStartMiddleAndCap () (at Assets/NeonTunnelRunner/Tests/EditMode/ProgressionTests.cs:71)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1771,
+    "timestampUtc": "2026-11-02T09:15:52.903272Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task09 density] d=1, eligible=246000, proposed=196805, accepted=163229, rejected=33576, moving=31954, fallbacks=49559, poolMisses=NA(pure planner), rate=0.800020325203252",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.ProgressionTests:SeededDensityMeasuresProposalsSeparatelyFromSafetyAtStartMiddleAndCap () (at Assets/NeonTunnelRunner/Tests/EditMode/ProgressionTests.cs:71)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1786,
+    "timestampUtc": "2026-11-02T09:16:11.389768Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task08] native fixedDelta=0.0199999921, ticks=2500, depleted at elapsed=49.999980255961418, tolerance=0.0001 fuel.",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.GameOverTests:NativeFixedDeltaQuantizationDoesNotAddADepletionTick () (at Assets/NeonTunnelRunner/Tests/PlayMode/GameOverTests.cs:75)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1821,
+    "timestampUtc": "2026-11-02T09:16:25.038202Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task07] live route seed=12345, speed=22, distance=2880.2803875011255, fuel collections=18, coins=24, spawned fuel=20, rebases=2, created=304, peak=21.",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PickupTests:PlannedFuelBecomesRealRentalsAndIsCollectibleThroughEveryProtectedTransition (single,int) (at Assets/NeonTunnelRunner/Tests/PlayMode/PickupTests.cs:260)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1822,
+    "timestampUtc": "2026-11-02T09:16:25.229988Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task07] live route seed=12345, speed=50, distance=2880.0000429153442, fuel collections=18, coins=24, spawned fuel=20, rebases=2, created=304, peak=22.",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PickupTests:PlannedFuelBecomesRealRentalsAndIsCollectibleThroughEveryProtectedTransition (single,int) (at Assets/NeonTunnelRunner/Tests/PlayMode/PickupTests.cs:260)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1823,
+    "timestampUtc": "2026-11-02T09:16:25.448538Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task07] live route seed=0, speed=50, distance=2880.0000429153442, fuel collections=18, coins=24, spawned fuel=20, rebases=2, created=304, peak=23.",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PickupTests:PlannedFuelBecomesRealRentalsAndIsCollectibleThroughEveryProtectedTransition (single,int) (at Assets/NeonTunnelRunner/Tests/PlayMode/PickupTests.cs:260)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1824,
+    "timestampUtc": "2026-11-02T09:16:25.612279Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task07] live route seed=999, speed=50, distance=2880.0000429153442, fuel collections=18, coins=24, spawned fuel=20, rebases=2, created=304, peak=23.",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PickupTests:PlannedFuelBecomesRealRentalsAndIsCollectibleThroughEveryProtectedTransition (single,int) (at Assets/NeonTunnelRunner/Tests/PlayMode/PickupTests.cs:260)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1830,
+    "timestampUtc": "2026-11-02T09:16:27.70278Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task04] 50 restarts + menu; created=308, destroyed=0, cleanupCallbacks=101.",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PoolLifecycleTests:FiftyRestartsGateInputBeforeCleanupAndPreservePools () (at Assets/NeonTunnelRunner/Tests/PlayMode/PoolLifecycleTests.cs:322)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1831,
+    "timestampUtc": "2026-11-02T09:16:28.03849Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task04] 1000 measured steady-state rents/returns: 0 managed bytes on current thread.",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PoolLifecycleTests:SuccessfulSteadyStatePoolOperationsAllocateNoManagedBytes () (at Assets/NeonTunnelRunner/Tests/PlayMode/PoolLifecycleTests.cs:380)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1832,
+    "timestampUtc": "2026-11-02T09:16:29.008251Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task04] 12000 rents/returns; created=24, destroyed=0, capacity=24.",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PoolLifecycleTests:ThousandRentReturnsForEveryKeyPreserveIdentityAndCounts () (at Assets/NeonTunnelRunner/Tests/PlayMode/PoolLifecycleTests.cs:131)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1833,
+    "timestampUtc": "2026-11-02T09:16:29.224199Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task09 cap] distance=6554.21204166728, elapsed=181, difficulty=1, actual=50, fuel=99.2, score=12054, best=12054, rebases=7",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.ProgressionLifecycleTests:RealProtectedRouteReachesCapAndRebasesWithoutChangingCommittedRows () (at Assets/NeonTunnelRunner/Tests/PlayMode/ProgressionLifecycleTests.cs:58)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1839,
+    "timestampUtc": "2026-11-02T09:16:43.523456Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task05] coins=844; fuel=632; spawnedCoins=1018; spawnedFuel=634; speed=22; distance=101229.86457051983; steps=245; rebases=105; maxActive=7; maxPlans=3; created=304; peakReservations=26; moving=337; stationary=1348; contacts=1476; proposed=2013; eligible=2536; rejected=328; misses=0; fallback=508; initial reset/coverage sample=0 bytes (excludes prewarm).",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.RoadContinuityTests:HundredKilometresMaintainsSeamsCoverageAndBoundedPools (single) (at Assets/NeonTunnelRunner/Tests/PlayMode/RoadContinuityTests.cs:101)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1840,
+    "timestampUtc": "2026-11-02T09:16:45.386617Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task05] coins=834; fuel=625; spawnedCoins=1006; spawnedFuel=627; speed=50; distance=100046.29900157452; steps=239; rebases=104; maxActive=7; maxPlans=3; created=304; peakReservations=26; moving=333; stationary=1329; contacts=1459; proposed=1986; eligible=2504; rejected=324; misses=0; fallback=505; initial reset/coverage sample=0 bytes (excludes prewarm).",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.RoadContinuityTests:HundredKilometresMaintainsSeamsCoverageAndBoundedPools (single) (at Assets/NeonTunnelRunner/Tests/PlayMode/RoadContinuityTests.cs:101)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  },
+  {
+    "seq": 1845,
+    "timestampUtc": "2026-11-02T09:16:46.377166Z",
+    "level": "log",
+    "logType": "Log",
+    "message": "[Task05] 1000 warm synchronous world/player/planning ticks allocated 0 managed bytes on current thread; excludes engine frames/observers/bootstrap.",
+    "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.RoadContinuityTests:WarmWorldMaintenanceAllocationIsMeasuredSeparatelyFromPrewarm () (at Assets/NeonTunnelRunner/Tests/PlayMode/RoadContinuityTests.cs:322)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+    "seeded": false
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "file": "Docs/Setup/Task10Aspect.cs",
+      "entry": "NeonTunnelRunner.Task10Aspect.Run",
+      "timeout": "45"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 202,
+      "executeMs": 5234,
+      "assemblyName": "PipelineRunScript_Task10Aspect_fbb9427e06384d6497d919d09229c3f0",
+      "success": true,
+      "result": {
+        "passed": true,
+        "width": 960,
+        "height": 720,
+        "aspect": 1.33333337,
+        "actual": 50,
+        "distance": 260.9998969361186,
+        "lane": 0,
+        "relative": "(0.0000, 4.2000, -8.0000)"
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

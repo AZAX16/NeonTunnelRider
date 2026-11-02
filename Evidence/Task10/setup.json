@@ -1,0 +1,44 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "file": "Docs/Setup/Task10Setup.cs",
+      "entry": "NeonTunnelRunner.Task10Setup.Configure"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 2599,
+      "executeMs": 737,
+      "assemblyName": "PipelineRunScript_Task10Setup_c27fc2452e65459689d43aea01e2c722",
+      "success": true,
+      "result": {
+        "passed": true,
+        "scene": "Assets/NeonTunnelRunner/Scenes/Game.unity",
+        "dirty": false,
+        "camera": "MainCamera",
+        "parent": "Presentation",
+        "config": "Assets/NeonTunnelRunner/Configs/Presentation.asset",
+        "position": "(0.000, 4.800, -8.000)",
+        "euler": "(11.860, 0.000, 0.000)",
+        "fieldOfView": 65,
+        "nearClipPlane": 0.1,
+        "farClipPlane": 280,
+        "interpolation": "None",
+        "pivot": "Visual",
+        "playerPrefab": "Assets/NeonTunnelRunner/Prefabs/Player/PlayerHovercar.prefab",
+        "playing": false,
+        "timeScale": 1,
+        "instanceClear": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

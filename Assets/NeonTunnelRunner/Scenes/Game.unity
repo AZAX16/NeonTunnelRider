@@ -230,6 +230,7 @@ MonoBehaviour:
   survival: {fileID: 1992932453}
   progression: {fileID: 80797680}
   vehicleVisuals: {fileID: 1992932454}
+  chaseCamera: {fileID: 2056537202}
 --- !u!114 &80797675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -298,6 +299,7 @@ MonoBehaviour:
   chaseCamera: {fileID: 2056537198}
   additionalParticipants:
   - {fileID: 80797677}
+  - {fileID: 2056537202}
 --- !u!114 &80797679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1459,6 +1461,7 @@ Transform:
   m_Children:
   - {fileID: 1475446190}
   - {fileID: 754769653}
+  - {fileID: 2056537198}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1992932449
@@ -1531,10 +1534,7 @@ PrefabInstance:
       objectReference: {fileID: 80797673}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 7209050131299341751, guid: 3fe156509481777c8b2a4c1d32d2e622, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2056537198}
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fe156509481777c8b2a4c1d32d2e622, type: 3}
 --- !u!114 &1992932450 stripped
@@ -1548,11 +1548,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9767eeaacdfd2641c8f95f77f359c8bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: NeonTunnelRunner.Runtime::NeonTunnelRunner.PlayerController
---- !u!4 &1992932451 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7209050131299341751, guid: 3fe156509481777c8b2a4c1d32d2e622, type: 3}
-  m_PrefabInstance: {fileID: 1992932449}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1992932452 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3281914291220571836, guid: 3fe156509481777c8b2a4c1d32d2e622, type: 3}
@@ -1598,6 +1593,7 @@ GameObject:
   - component: {fileID: 2056537201}
   - component: {fileID: 2056537200}
   - component: {fileID: 2056537199}
+  - component: {fileID: 2056537202}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -1613,12 +1609,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2056537197}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.103311434, y: -0, z: -0, w: 0.9946491}
+  m_LocalPosition: {x: 0, y: 4.7999997, z: -8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1992932451}
+  m_Father: {fileID: 1688247555}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2056537199
 MonoBehaviour:
@@ -1704,8 +1700,8 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.1
-  far clip plane: 500
-  field of view: 60
+  far clip plane: 280
+  field of view: 65
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -1723,6 +1719,23 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &2056537202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2056537197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 450082a77976b44718ab8f8dd443abbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NeonTunnelRunner.Runtime::NeonTunnelRunner.ChaseCamera
+  gameManager: {fileID: 80797673}
+  player: {fileID: 1992932450}
+  configuration: {fileID: 11400000, guid: 8cc0bd840e8337a3fbe4656ff60cee73, type: 2}
+  viewCamera: {fileID: 2056537201}
+  worldOrigin: {fileID: 80797678}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

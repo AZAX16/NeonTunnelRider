@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command editor",
+  "data": {
+    "command": "editor",
+    "parameters": {},
+    "result": {
+      "status": "ready",
+      "compiling": false,
+      "domainReloadInProgress": false,
+      "playMode": "stopped",
+      "runInBackground": false,
+      "lastHeartbeat": "2026-11-02T09:28:38.947354Z",
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner",
+      "unityVersion": "6000.6.3f1",
+      "role": "main",
+      "instanceName": "Main Editor"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

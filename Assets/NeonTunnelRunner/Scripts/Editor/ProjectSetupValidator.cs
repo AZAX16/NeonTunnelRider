@@ -221,8 +221,14 @@ namespace NeonTunnelRunner
             Require(player.transform.Find("Visual") && player.CameraAnchor && player.CameraAnchor.parent == player.transform,
                 "Keep Visual and CameraAnchor as separate player children.", errors);
             var camera = objects.SelectMany(g => g.GetComponents<Camera>()).FirstOrDefault();
-            Require(camera && camera.transform.parent == player.CameraAnchor && camera.transform.localPosition == Vector3.zero,
-                "Attach the existing camera directly to the stable rear CameraAnchor.", errors);
+            var follow=camera ? camera.GetComponent<ChaseCamera>() : null;
+            Require(follow && follow.enabled && follow.Owner==owner && follow.Player==player && follow.ViewCamera==camera &&
+                follow.Origin==owner.Loop.Origin && owner.Loop.Camera==follow && owner.Loop.Origin.HasParticipant(follow) &&
+                camera.transform.parent && camera.transform.parent.name=="Presentation" &&
+                follow.Configuration && follow.Configuration==owner.Loop.Visuals.Configuration &&
+                owner.Loop.Visuals.VisualPivot==player.transform.Find("Visual") &&
+                owner.Loop.Visuals.VisualPivot.GetComponentsInChildren<Collider>(true).Length==0,
+                "Wire one independent ChaseCamera and collider-free Visual pivot with shared Presentation.asset.", errors);
             Require(PrefabUtility.GetPrefabAssetPathOfNearestInstanceRoot(player) == Root + "/Prefabs/Player/PlayerHovercar.prefab",
                 "Use the PlayerHovercar prefab instance.", errors);
             var asset = input.SourceActions;

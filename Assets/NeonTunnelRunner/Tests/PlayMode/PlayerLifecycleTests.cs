@@ -208,6 +208,8 @@ namespace NeonTunnelRunner
             var renderer=visualObject.AddComponent<MeshRenderer>();
             renderer.sharedMaterial=UnityEditor.AssetDatabase.LoadAssetAtPath<Material>("Assets/NeonTunnelRunner/Materials/ReferenceMarking.mat");
             var visuals=player.gameObject.AddComponent<VehicleVisuals>();
+            Assign(visuals,"player",player); Assign(visuals,"visualPivot",visualObject.transform);
+            Assign(visuals,"configuration",UnityEditor.AssetDatabase.LoadAssetAtPath<PresentationConfig>("Assets/NeonTunnelRunner/Configs/Presentation.asset"));
             Assign(visuals,"gameManager",manager); Assign(visuals,"flashRenderer",renderer); Assign(loop,"vehicleVisuals",visuals);
             Assign(origin,"additionalParticipants",new MonoBehaviour[] { planner });
             Assign(loop, "roads", roads); Assign(loop, "worldOrigin", origin); Assign(loop, "spawnDirector", planner);

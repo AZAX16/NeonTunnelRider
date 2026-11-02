@@ -33,8 +33,8 @@ namespace NeonTunnelRunner
         {
             error = null;
             if (!enabled || !gameObject.activeInHierarchy || !configuration || !player || !roads || roads.Configuration != configuration ||
-                !chaseCamera || !chaseCamera.IsChildOf(player.transform) || player.transform.IsChildOf(roads.ActiveRoot))
-            { error = "Assign WorldOrigin, player, roads and the existing player-owned chase camera."; return false; }
+                !chaseCamera || !ValidCameraOwner() || player.transform.IsChildOf(roads.ActiveRoot))
+            { error = "Assign WorldOrigin, player, roads and one correctly owned chase camera."; return false; }
             for (int i = 0; i < additionalParticipants.Length; i++)
             {
                 var participant = additionalParticipants[i] as IWorldOriginParticipant;
@@ -47,6 +47,12 @@ namespace NeonTunnelRunner
             }
             return true;
         }
+        private bool ValidCameraOwner()
+        {
+            if (chaseCamera.IsChildOf(player.transform)) return !chaseCamera.GetComponent<ChaseCamera>();
+            var follow=chaseCamera.GetComponent<ChaseCamera>();
+            return follow && follow.Player == player && follow.Origin == this && HasParticipant(follow);
+        }
         private static bool Overlaps(Transform a, Transform b) => a && b && (a == b || a.IsChildOf(b) || b.IsChildOf(a));
         internal void ResetRun() { Offset = 0d; RebaseCount = 0; }
         /// <summary>Explicit end-of-tick world phase; never invoke during contact dispatch.</summary>
@@ -58,8 +64,8 @@ namespace NeonTunnelRunner
             Offset += delta;
             player.ShiftOrigin(Offset);
             roads.SetOrigin(Offset);
-            // Camera/anchor are children of the teleported player: shifted once by that owner.
-            // There is no follow/damping/interpolation component in the Task 03 camera.
+            // Legacy anchors inherit the player shift. An independent ChaseCamera is a single
+            // registered participant owning its Transform and position-valued caches.
             foreach (var component in additionalParticipants)
                 ((IWorldOriginParticipant)component).ShiftOrigin(Offset, delta);
             RebaseCount++;

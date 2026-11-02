@@ -1,0 +1,37 @@
+{
+  "success": true,
+  "command": "command test",
+  "data": {
+    "command": "test",
+    "parameters": {
+      "mode": "playmode",
+      "filter": "NeonTunnelRunner.CameraResetTests",
+      "filter_type": "testName",
+      "async_tests": "true"
+    },
+    "result": {
+      "Summary": {
+        "Total": 0,
+        "Passed": 0,
+        "Failed": 0,
+        "Skipped": 0,
+        "Inconclusive": 0
+      },
+      "Results": [],
+      "Duration": 0,
+      "StatusPath": "Temp/pipeline_test_status.json",
+      "Mode": "PlayMode",
+      "FilterApplied": "testname: NeonTunnelRunner.CameraResetTests",
+      "success": true,
+      "result": "running",
+      "message": "Tests started in async mode. Poll /test-status for results."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

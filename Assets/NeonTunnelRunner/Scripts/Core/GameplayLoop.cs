@@ -15,6 +15,7 @@ namespace NeonTunnelRunner
         [SerializeField] private PlayerSurvival survival;
         [SerializeField] private ProgressionSystem progression;
         [SerializeField] private VehicleVisuals vehicleVisuals;
+        [SerializeField] private ChaseCamera chaseCamera;
         private RunSession session;
         private bool runPrepared;
 
@@ -28,6 +29,7 @@ namespace NeonTunnelRunner
         public PlayerSurvival Survival => survival;
         public ProgressionSystem Progression => progression;
         public VehicleVisuals Visuals => vehicleVisuals;
+        public ChaseCamera Camera => chaseCamera;
         public bool IsStepping { get; private set; }
         public string WorldFailure { get; private set; }
         public ulong TickIndex { get; private set; }
@@ -53,6 +55,12 @@ namespace NeonTunnelRunner
             survival.Initialize(session);
             progression.Initialize(session);
             vehicleVisuals.Initialize(session);
+            if (chaseCamera)
+            {
+                if (chaseCamera.Owner != owner || chaseCamera.Player != player || chaseCamera.Origin != worldOrigin)
+                    throw new System.InvalidOperationException("Assign chase camera ownership explicitly.");
+                chaseCamera.Initialize(session);
+            }
             interactionSensor.Initialize();
             CleanupRun();
         }
@@ -88,7 +96,8 @@ namespace NeonTunnelRunner
             progression.RefreshDebug();
             player.ResetRun();
             survival.ResetRun();
-            vehicleVisuals.ResetVisuals();
+            vehicleVisuals.PrepareRun();
+            if (chaseCamera) chaseCamera.PrepareRun();
             interactionSensor.Clear();
             WorldFailure = null;
             if (!roads.EnsureCoverage(0d, 0d)) { WorldFailure = roads.LastError; return false; }
@@ -111,7 +120,8 @@ namespace NeonTunnelRunner
             if (interactionSensor) interactionSensor.Clear();
             if (spawnDirector) spawnDirector.Clear();
             if (survival) survival.ResetRun();
-            if (vehicleVisuals) vehicleVisuals.ResetVisuals();
+            if (vehicleVisuals) vehicleVisuals.CleanupRun();
+            if (chaseCamera) chaseCamera.CleanupRun();
             if (roads) roads.ReleaseAll();
         }
 
@@ -121,6 +131,7 @@ namespace NeonTunnelRunner
             {
                 player.ClearQueuedCommand();
                 player.HoldPose();
+                if (chaseCamera) chaseCamera.HoldView();
                 spawnDirector.HoldTraffic();
             }
             inputRouter.ApplyState(state);
@@ -130,6 +141,7 @@ namespace NeonTunnelRunner
         {
             CleanupRun();
             if (inputRouter) inputRouter.Shutdown();
+            if (chaseCamera) chaseCamera.Shutdown();
         }
 
         private void FixedUpdate() => Step(Time.fixedDeltaTime);
