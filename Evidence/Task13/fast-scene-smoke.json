@@ -1,0 +1,85 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "file": "Docs/Setup/Task13SceneSmoke.cs",
+      "entry": "NeonTunnelRunner.Task13SceneSmoke.Run",
+      "timeout": "140"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 257,
+      "executeMs": 35262,
+      "assemblyName": "PipelineRunScript_Task13SceneSmoke_7607f32e67854e1480406f1771145d76",
+      "success": true,
+      "result": {
+        "passed": true,
+        "firstLaunch": 2.3399990759789944,
+        "pauseSeconds": 10.158693396999979,
+        "sources": 10,
+        "listeners": 1,
+        "musicStarts": 1,
+        "engineStarts": 54,
+        "peak": 8,
+        "dropped": 1,
+        "stolen": 1,
+        "created": 352,
+        "destroyed": 0,
+        "misses": 0,
+        "horizon": [
+          {
+            "width": 1280,
+            "lane": -1,
+            "x": 0.4887996,
+            "y": 0.6381126,
+            "z": 126.130829
+          },
+          {
+            "width": 1280,
+            "lane": 0,
+            "x": 0.5,
+            "y": 0.6381126,
+            "z": 126.130829
+          },
+          {
+            "width": 1280,
+            "lane": 1,
+            "x": 0.5112004,
+            "y": 0.6381126,
+            "z": 126.130829
+          },
+          {
+            "width": 960,
+            "lane": -1,
+            "x": 0.485066116,
+            "y": 0.6381126,
+            "z": 126.130829
+          },
+          {
+            "width": 960,
+            "lane": 0,
+            "x": 0.5,
+            "y": 0.6381126,
+            "z": 126.130829
+          },
+          {
+            "width": 960,
+            "lane": 1,
+            "x": 0.5149339,
+            "y": 0.6381126,
+            "z": 126.130829
+          }
+        ]
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

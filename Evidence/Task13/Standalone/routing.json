@@ -1,0 +1,8 @@
+[
+  {
+    "input": 13,
+    "pid": 27991,
+    "fromSink": 0,
+    "toSink": "ntr_task13_capture"
+  }
+]

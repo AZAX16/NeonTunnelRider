@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "scope": "PCM numeric only; no perceptual acceptance",
+  "clips": [
+    {
+      "clip": "CoinChime.wav",
+      "peak": 0.649993896484375,
+      "dc": [
+        1.230237465356513e-07
+      ],
+      "adjacentJoinDelta": [
+        0.0
+      ],
+      "neighborhoodMaxSlope": 0.00030517578125,
+      "nonzeroSamples": 7904,
+      "sha256": "4a0c6d3635fa0fbaf99a16c9116e9e848d094de810084f56ad98db498fec1fed"
+    },
+    {
+      "clip": "FuelCharge.wav",
+      "peak": 0.649993896484375,
+      "dc": [
+        7.123617676237161e-08
+      ],
+      "adjacentJoinDelta": [
+        0.0
+      ],
+      "neighborhoodMaxSlope": 0.0,
+      "nonzeroSamples": 14950,
+      "sha256": "b7736f611d9e60b222d2ca4a642f8219db3ea3135d3fa2943d7f8c377125356d"
+    },
+    {
+      "clip": "HoverEngine.wav",
+      "peak": 0.649993896484375,
+      "dc": [
+        -1.3840171485260772e-08
+      ],
+      "adjacentJoinDelta": [
+        0.01995849609375
+      ],
+      "neighborhoodMaxSlope": 0.01995849609375,
+      "nonzeroSamples": 88194,
+      "sha256": "842f3c92c5fbb7ac664e7e9f259ba09069e89d0bd0bdacc3318d435537947f95"
+    },
+    {
+      "clip": "Impact.wav",
+      "peak": 0.649993896484375,
+      "dc": [
+        -9.158937012304922e-08
+      ],
+      "adjacentJoinDelta": [
+        0.0
+      ],
+      "neighborhoodMaxSlope": 0.00341796875,
+      "nonzeroSamples": 14984,
+      "sha256": "8b8fa5b6c336282732830fe694787a25fd879b9d7d5548df00391bae4cfe733b"
+    },
+    {
+      "clip": "VectorNight.wav",
+      "peak": 0.649993896484375,
+      "dc": [
+        3.0599754143193734e-09,
+        -3.892548230229592e-09
+      ],
+      "adjacentJoinDelta": [
+        0.001983642578125,
+        0.00201416015625
+      ],
+      "neighborhoodMaxSlope": 0.01544189453125,
+      "nonzeroSamples": 5643344,
+      "sha256": "1172515d873fabb0358127b8ddce921f7badbb42fc5fc5c34e564a2b483a7cbf"
+    }
+  ]
+}

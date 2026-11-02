@@ -1,0 +1,65 @@
+{
+  "base": "5f8c84b71d284beb966db564723cf9f27acbd33c",
+  "protectedFileCount": 389,
+  "changedProtected": [],
+  "prefabs": [
+    {
+      "path": "Assets/NeonTunnelRunner/Prefabs/Interactables/Coin.prefab",
+      "protected": 5
+    },
+    {
+      "path": "Assets/NeonTunnelRunner/Prefabs/Interactables/FuelCan.prefab",
+      "protected": 6
+    },
+    {
+      "path": "Assets/NeonTunnelRunner/Prefabs/Interactables/MovingCar.prefab",
+      "protected": 8
+    },
+    {
+      "path": "Assets/NeonTunnelRunner/Prefabs/Interactables/StationaryCar.prefab",
+      "protected": 7
+    },
+    {
+      "path": "Assets/NeonTunnelRunner/Prefabs/Player/PlayerHovercar.prefab",
+      "protected": 37
+    },
+    {
+      "path": "Assets/NeonTunnelRunner/Prefabs/Road/RoadEntrance60.prefab",
+      "protected": 14
+    },
+    {
+      "path": "Assets/NeonTunnelRunner/Prefabs/Road/RoadExit60.prefab",
+      "protected": 14
+    },
+    {
+      "path": "Assets/NeonTunnelRunner/Prefabs/Road/RoadOpen60.prefab",
+      "protected": 14
+    },
+    {
+      "path": "Assets/NeonTunnelRunner/Prefabs/Road/RoadTunnel60.prefab",
+      "protected": 14
+    },
+    {
+      "path": "Assets/NeonTunnelRunner/Prefabs/VFX/CoinBurst.prefab",
+      "protected": 5
+    },
+    {
+      "path": "Assets/NeonTunnelRunner/Prefabs/VFX/Firework.prefab",
+      "protected": 8
+    },
+    {
+      "path": "Assets/NeonTunnelRunner/Prefabs/VFX/FuelBurst.prefab",
+      "protected": 5
+    },
+    {
+      "path": "Assets/NeonTunnelRunner/Prefabs/VFX/Spark.prefab",
+      "protected": 5
+    }
+  ],
+  "protectedSceneComponents": 25,
+  "missingMetas": [],
+  "duplicateGuids": [],
+  "ignoreSha256": "c735b75517ecf18563ce4bf269eb4fe158a5539f7d554823578a85eaec795f45",
+  "ignoreMatchesAssignment": true,
+  "passed": true
+}

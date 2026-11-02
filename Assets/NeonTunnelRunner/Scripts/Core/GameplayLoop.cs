@@ -17,6 +17,8 @@ namespace NeonTunnelRunner
         [SerializeField] private VehicleVisuals vehicleVisuals;
         [SerializeField] private ChaseCamera chaseCamera;
         [SerializeField] private VfxController vfx;
+        [SerializeField] private AudioController audioController;
+        public AudioController Audio => audioController;
         public VfxController Vfx => vfx;
         private RunSession session;
         private bool runPrepared;
@@ -64,6 +66,7 @@ namespace NeonTunnelRunner
                 chaseCamera.Initialize(session);
             }
             if (vfx) vfx.Initialize(session);
+            if (audioController) audioController.Initialize(session);
             interactionSensor.Initialize();
             CleanupRun();
         }
@@ -85,7 +88,8 @@ namespace NeonTunnelRunner
             if (!survival.isActiveAndEnabled || !interactionSensor.isActiveAndEnabled || !progression.isActiveAndEnabled || !vehicleVisuals.isActiveAndEnabled || spawnDirector.Pools != gameManager.Pools ||
                 !worldOrigin.HasParticipant(spawnDirector) || interactionSensor.Capacity < spawnDirector.Capacity)
             { error="Enable and wire sensor/survival/traffic with one origin participant and sufficient contact capacity."; return false; }
-            return !vfx || vfx.ValidateRequired(this,out error);
+            return (!vfx || vfx.ValidateRequired(this,out error)) &&
+                (!audioController || audioController.ValidateRequired(this,out error));
         }
 
         internal bool ResetRun(int seed)
@@ -109,6 +113,7 @@ namespace NeonTunnelRunner
             spawnDirector.FillWindow(0d);
             spawnDirector.MaintainTraffic(0d,0d);
             if (vfx) vfx.PrepareRun(seed);
+            if (audioController) audioController.PrepareRun();
             runPrepared = true;
             return true;
         }
@@ -122,6 +127,7 @@ namespace NeonTunnelRunner
             if (inputRouter) inputRouter.ApplyState(GameState.Menu);
             if (player) player.ClearQueuedCommand();
             if (interactionSensor) interactionSensor.Clear();
+            if (audioController) audioController.CleanupRun();
             if (vfx) vfx.CleanupRun();
             if (spawnDirector) spawnDirector.Clear();
             if (survival) survival.ResetRun();
@@ -134,6 +140,7 @@ namespace NeonTunnelRunner
         {
             if (vehicleVisuals) vehicleVisuals.RefreshLighting();
             if (vfx) vfx.ApplyState(state);
+            if (audioController) audioController.ApplyState(state);
             if (state != GameState.Playing)
             {
                 player.ClearQueuedCommand();
@@ -149,6 +156,7 @@ namespace NeonTunnelRunner
             CleanupRun();
             if (inputRouter) inputRouter.Shutdown();
             if (chaseCamera) chaseCamera.Shutdown();
+            if (audioController) audioController.Shutdown();
         }
 
         private void FixedUpdate() => Step(Time.fixedDeltaTime);

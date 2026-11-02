@@ -1,0 +1,35 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "file": "Docs/Setup/Task13Build.cs",
+      "entry": "NeonTunnelRunner.Task13Build.Run",
+      "timeout": "600"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 714,
+      "executeMs": 104,
+      "assemblyName": "PipelineRunScript_Task13Build_d164f5cbac50473a94d3d5631969bf2e",
+      "success": true,
+      "result": {
+        "result": "Unknown",
+        "totalErrors": 0,
+        "totalWarnings": 0,
+        "totalSize": 0,
+        "seconds": 0,
+        "outputPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner/Builds/Task13Audio/NeonTunnelRunner.x86_64",
+        "steps": []
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

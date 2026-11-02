@@ -106,6 +106,11 @@ namespace NeonTunnelRunner
                 CheckPlayerInput(objects, errors);
                 CheckWorld(objects, errors);
                 CheckTraffic(objects, errors);
+                var audio = objects.SelectMany(g => g.GetComponents<AudioController>()).ToArray();
+                var loop = objects.SelectMany(g => g.GetComponents<GameplayLoop>()).SingleOrDefault();
+                Require(audio.Length == 1 && loop && loop.Audio == audio[0], "Assign exactly one AudioController through GameplayLoop.", errors);
+                Require(objects.Sum(g => g.GetComponents<AudioSource>().Length) == 10, "Audio requires exactly two loop sources and eight reusable SFX voices.", errors);
+                if (audio.Length == 1 && loop && !audio[0].ValidateRequired(loop, out string audioError)) errors.Add(audioError);
                 foreach (var go in objects)
                 {
                     Require(GameObjectUtility.GetMonoBehavioursWithMissingScriptCount(go) == 0, "Missing script on " + go.name, errors);

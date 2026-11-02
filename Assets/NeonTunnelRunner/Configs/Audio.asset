@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73deb2e2fc742905298a449ae1cbe33f, type: 3}
+  m_Name: Audio
+  m_EditorClassIdentifier: NeonTunnelRunner.Runtime::NeonTunnelRunner.AudioConfig
+  music: {fileID: 8300000, guid: 77614ff50be276e4e966a85156a8818d, type: 3}
+  engine: {fileID: 8300000, guid: 9d49076de0eedf7c1b5202e4dc26f2c1, type: 3}
+  collision: {fileID: 8300000, guid: dcbebae4881fe06659f5e492bf9601e4, type: 3}
+  coin: {fileID: 8300000, guid: 04ca0a40d56bd05d7aad34d123b5ff67, type: 3}
+  fuel: {fileID: 8300000, guid: 10b3c3775e4db3fc78fb8accbeb42004, type: 3}
+  musicGroup: {fileID: -389914958308466304, guid: eaf52a3fb498d8c0c8b11f7f2655cd15, type: 2}
+  engineGroup: {fileID: -4124355827596444314, guid: eaf52a3fb498d8c0c8b11f7f2655cd15, type: 2}
+  sfxGroup: {fileID: -687381556931697818, guid: eaf52a3fb498d8c0c8b11f7f2655cd15, type: 2}
+  musicLevel: 0.24
+  menuMusicLevel: 0.16
+  pausedMusicLevel: 0.08
+  gameOverMusicLevel: 0.14
+  engineLowLevel: 0.05
+  engineHighLevel: 0.075
+  collisionLevel: 0.14
+  coinLevel: 0.14
+  fuelLevel: 0.12
+  maximumSpeed: 50

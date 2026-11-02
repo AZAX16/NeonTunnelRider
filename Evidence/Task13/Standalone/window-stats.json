@@ -1,0 +1,77 @@
+{
+  "scope": "Digital supporting measurements only; cue windows approximately align to timeline",
+  "windows": [
+    {
+      "label": "menu",
+      "fromSeconds": 0.3,
+      "toSeconds": 2.5,
+      "peak": 0.088897705078125,
+      "rms": 0.011445248886721389,
+      "dominant40to100Hz": 80.0
+    },
+    {
+      "label": "engine22",
+      "fromSeconds": 3.7,
+      "toSeconds": 5.8,
+      "peak": 0.139984130859375,
+      "rms": 0.02368441374259136,
+      "dominant40to100Hz": 60.95238095238095
+    },
+    {
+      "label": "engine50",
+      "fromSeconds": 6.7,
+      "toSeconds": 8.8,
+      "peak": 0.148529052734375,
+      "rms": 0.025384081096597177,
+      "dominant40to100Hz": 82.38095238095238
+    },
+    {
+      "label": "coin",
+      "fromSeconds": 9.15,
+      "toSeconds": 9.6,
+      "peak": 0.1409912109375,
+      "rms": 0.025745408436489703,
+      "dominant40to100Hz": 82.22222222222223
+    },
+    {
+      "label": "fuel",
+      "fromSeconds": 10.15,
+      "toSeconds": 10.6,
+      "peak": 0.099945068359375,
+      "rms": 0.0298244714268238,
+      "dominant40to100Hz": 82.22222222222223
+    },
+    {
+      "label": "collision",
+      "fromSeconds": 11.15,
+      "toSeconds": 11.6,
+      "peak": 0.141021728515625,
+      "rms": 0.030959899056036484,
+      "dominant40to100Hz": 82.22222222222223
+    },
+    {
+      "label": "saturated",
+      "fromSeconds": 12.15,
+      "toSeconds": 12.6,
+      "peak": 0.420257568359375,
+      "rms": 0.13709809393926956,
+      "dominant40to100Hz": 82.22222222222223
+    },
+    {
+      "label": "paused",
+      "fromSeconds": 13.6,
+      "toSeconds": 14.6,
+      "peak": 0.042236328125,
+      "rms": 0.006106176229573195,
+      "dominant40to100Hz": 98.0
+    },
+    {
+      "label": "terminal",
+      "fromSeconds": 17.3,
+      "toSeconds": 17.8,
+      "peak": 0.0709228515625,
+      "rms": 0.015828328403264966,
+      "dominant40to100Hz": 84.0
+    }
+  ]
+}

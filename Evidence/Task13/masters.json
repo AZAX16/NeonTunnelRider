@@ -1,0 +1,84 @@
+[
+  {
+    "file": "Assets/NeonTunnelRunner/Audio/Clips/VectorNight.wav",
+    "seconds": 64.0,
+    "channels": 2,
+    "sampleRate": 44100,
+    "peak": 0.65,
+    "rms": 0.07514219204374693,
+    "dc": [
+      2.660736494957936e-17,
+      -1.7179375186682372e-17
+    ],
+    "joinDelta": [
+      0.0019639848311794267,
+      0.0020131989938890057
+    ],
+    "sha256": "1172515d873fabb0358127b8ddce921f7badbb42fc5fc5c34e564a2b483a7cbf",
+    "loop": true
+  },
+  {
+    "file": "Assets/NeonTunnelRunner/Audio/Clips/HoverEngine.wav",
+    "seconds": 2.0,
+    "channels": 1,
+    "sampleRate": 44100,
+    "peak": 0.65,
+    "rms": 0.35496081718334677,
+    "dc": [
+      6.525392471266226e-18
+    ],
+    "joinDelta": [
+      0.01995292153691598
+    ],
+    "sha256": "842f3c92c5fbb7ac664e7e9f259ba09069e89d0bd0bdacc3318d435537947f95",
+    "loop": true
+  },
+  {
+    "file": "Assets/NeonTunnelRunner/Audio/Clips/Impact.wav",
+    "seconds": 0.34,
+    "channels": 1,
+    "sampleRate": 44100,
+    "peak": 0.65,
+    "rms": 0.21391850130308643,
+    "dc": [
+      -1.184711777644558e-18
+    ],
+    "joinDelta": [
+      -5.229748642099873e-35
+    ],
+    "sha256": "8b8fa5b6c336282732830fe694787a25fd879b9d7d5548df00391bae4cfe733b",
+    "loop": false
+  },
+  {
+    "file": "Assets/NeonTunnelRunner/Audio/Clips/CoinChime.wav",
+    "seconds": 0.18,
+    "channels": 1,
+    "sampleRate": 44100,
+    "peak": 0.65,
+    "rms": 0.12211118786493141,
+    "dc": [
+      -2.5524779792654455e-19
+    ],
+    "joinDelta": [
+      -4.775451598539104e-38
+    ],
+    "sha256": "4a0c6d3635fa0fbaf99a16c9116e9e848d094de810084f56ad98db498fec1fed",
+    "loop": false
+  },
+  {
+    "file": "Assets/NeonTunnelRunner/Audio/Clips/FuelCharge.wav",
+    "seconds": 0.34,
+    "channels": 1,
+    "sampleRate": 44100,
+    "peak": 0.65,
+    "rms": 0.25853706148720285,
+    "dc": [
+      2.369423555289116e-19
+    ],
+    "joinDelta": [
+      3.1061576991520293e-37
+    ],
+    "sha256": "b7736f611d9e60b222d2ca4a642f8219db3ea3135d3fa2943d7f8c377125356d",
+    "loop": false
+  }
+]

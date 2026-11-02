@@ -1,0 +1,5 @@
+{
+  "differences": [],
+  "audioInputsMatch": true,
+  "note": "Unity incidental material GI flags may be serialized during build/tests; baseline is restored for the checkpoint."
+}

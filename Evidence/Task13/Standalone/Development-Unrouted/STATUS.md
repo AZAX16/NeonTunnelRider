@@ -1,0 +1,1 @@
+NOT acceptance: FMOD ignored PULSE_SINK and output to the ordinary sink. The monitor was silent; this attempt was terminated. No unrelated desktop audio was recorded. A later run explicitly routes only the player PID.\n

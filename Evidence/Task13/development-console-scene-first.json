@@ -1,0 +1,312 @@
+{
+  "success": true,
+  "command": "command console",
+  "data": {
+    "command": "console",
+    "parameters": {
+      "tail": "30",
+      "level": "warn"
+    },
+    "result": {
+      "entries": [
+        {
+          "seq": 716,
+          "timestampUtc": "2026-11-02T21:27:37.136845Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentNullException: Value cannot be null.\nParameter name: dest",
+          "stackTrace": "UnityEngine.Renderer.Internal_GetPropertyBlock (UnityEngine.MaterialPropertyBlock dest) (at <041882d98cde4be487d4a83bd5ec5256>:0)\nUnityEngine.Renderer.GetPropertyBlock (UnityEngine.MaterialPropertyBlock properties) (at /home/bokken/build/output/unity/unity/Runtime/Export/Graphics/GraphicsRenderers.bindings.cs:67)\nNeonTunnelRunner.VehicleVisuals.RefreshLighting () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:124)\nNeonTunnelRunner.VehicleVisuals.Render (System.Single deltaTime) (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:90)\nNeonTunnelRunner.VehicleVisuals.LateUpdate () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:86)\nUnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)\n",
+          "seeded": false
+        },
+        {
+          "seq": 717,
+          "timestampUtc": "2026-11-02T21:27:37.22273Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentNullException: Value cannot be null.\nParameter name: dest",
+          "stackTrace": "UnityEngine.Renderer.Internal_GetPropertyBlock (UnityEngine.MaterialPropertyBlock dest) (at <041882d98cde4be487d4a83bd5ec5256>:0)\nUnityEngine.Renderer.GetPropertyBlock (UnityEngine.MaterialPropertyBlock properties) (at /home/bokken/build/output/unity/unity/Runtime/Export/Graphics/GraphicsRenderers.bindings.cs:67)\nNeonTunnelRunner.VehicleVisuals.RefreshLighting () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:124)\nNeonTunnelRunner.VehicleVisuals.Render (System.Single deltaTime) (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:90)\nNeonTunnelRunner.VehicleVisuals.LateUpdate () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:86)\nUnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)\n",
+          "seeded": false
+        },
+        {
+          "seq": 718,
+          "timestampUtc": "2026-11-02T21:27:37.309213Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentNullException: Value cannot be null.\nParameter name: dest",
+          "stackTrace": "UnityEngine.Renderer.Internal_GetPropertyBlock (UnityEngine.MaterialPropertyBlock dest) (at <041882d98cde4be487d4a83bd5ec5256>:0)\nUnityEngine.Renderer.GetPropertyBlock (UnityEngine.MaterialPropertyBlock properties) (at /home/bokken/build/output/unity/unity/Runtime/Export/Graphics/GraphicsRenderers.bindings.cs:67)\nNeonTunnelRunner.VehicleVisuals.RefreshLighting () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:124)\nNeonTunnelRunner.VehicleVisuals.Render (System.Single deltaTime) (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:90)\nNeonTunnelRunner.VehicleVisuals.LateUpdate () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:86)\nUnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)\n",
+          "seeded": false
+        },
+        {
+          "seq": 719,
+          "timestampUtc": "2026-11-02T21:27:37.386966Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentNullException: Value cannot be null.\nParameter name: dest",
+          "stackTrace": "UnityEngine.Renderer.Internal_GetPropertyBlock (UnityEngine.MaterialPropertyBlock dest) (at <041882d98cde4be487d4a83bd5ec5256>:0)\nUnityEngine.Renderer.GetPropertyBlock (UnityEngine.MaterialPropertyBlock properties) (at /home/bokken/build/output/unity/unity/Runtime/Export/Graphics/GraphicsRenderers.bindings.cs:67)\nNeonTunnelRunner.VehicleVisuals.RefreshLighting () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:124)\nNeonTunnelRunner.VehicleVisuals.Render (System.Single deltaTime) (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:90)\nNeonTunnelRunner.VehicleVisuals.LateUpdate () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:86)\nUnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)\n",
+          "seeded": false
+        },
+        {
+          "seq": 720,
+          "timestampUtc": "2026-11-02T21:27:37.469269Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentNullException: Value cannot be null.\nParameter name: dest",
+          "stackTrace": "UnityEngine.Renderer.Internal_GetPropertyBlock (UnityEngine.MaterialPropertyBlock dest) (at <041882d98cde4be487d4a83bd5ec5256>:0)\nUnityEngine.Renderer.GetPropertyBlock (UnityEngine.MaterialPropertyBlock properties) (at /home/bokken/build/output/unity/unity/Runtime/Export/Graphics/GraphicsRenderers.bindings.cs:67)\nNeonTunnelRunner.VehicleVisuals.RefreshLighting () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:124)\nNeonTunnelRunner.VehicleVisuals.Render (System.Single deltaTime) (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:90)\nNeonTunnelRunner.VehicleVisuals.LateUpdate () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:86)\nUnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)\n",
+          "seeded": false
+        },
+        {
+          "seq": 721,
+          "timestampUtc": "2026-11-02T21:27:37.547075Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentNullException: Value cannot be null.\nParameter name: dest",
+          "stackTrace": "UnityEngine.Renderer.Internal_GetPropertyBlock (UnityEngine.MaterialPropertyBlock dest) (at <041882d98cde4be487d4a83bd5ec5256>:0)\nUnityEngine.Renderer.GetPropertyBlock (UnityEngine.MaterialPropertyBlock properties) (at /home/bokken/build/output/unity/unity/Runtime/Export/Graphics/GraphicsRenderers.bindings.cs:67)\nNeonTunnelRunner.VehicleVisuals.RefreshLighting () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:124)\nNeonTunnelRunner.VehicleVisuals.Render (System.Single deltaTime) (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:90)\nNeonTunnelRunner.VehicleVisuals.LateUpdate () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:86)\nUnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)\n",
+          "seeded": false
+        },
+        {
+          "seq": 722,
+          "timestampUtc": "2026-11-02T21:27:37.634477Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentNullException: Value cannot be null.\nParameter name: dest",
+          "stackTrace": "UnityEngine.Renderer.Internal_GetPropertyBlock (UnityEngine.MaterialPropertyBlock dest) (at <041882d98cde4be487d4a83bd5ec5256>:0)\nUnityEngine.Renderer.GetPropertyBlock (UnityEngine.MaterialPropertyBlock properties) (at /home/bokken/build/output/unity/unity/Runtime/Export/Graphics/GraphicsRenderers.bindings.cs:67)\nNeonTunnelRunner.VehicleVisuals.RefreshLighting () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:124)\nNeonTunnelRunner.VehicleVisuals.Render (System.Single deltaTime) (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:90)\nNeonTunnelRunner.VehicleVisuals.LateUpdate () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:86)\nUnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)\n",
+          "seeded": false
+        },
+        {
+          "seq": 723,
+          "timestampUtc": "2026-11-02T21:27:37.71082Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentNullException: Value cannot be null.\nParameter name: dest",
+          "stackTrace": "UnityEngine.Renderer.Internal_GetPropertyBlock (UnityEngine.MaterialPropertyBlock dest) (at <041882d98cde4be487d4a83bd5ec5256>:0)\nUnityEngine.Renderer.GetPropertyBlock (UnityEngine.MaterialPropertyBlock properties) (at /home/bokken/build/output/unity/unity/Runtime/Export/Graphics/GraphicsRenderers.bindings.cs:67)\nNeonTunnelRunner.VehicleVisuals.RefreshLighting () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:124)\nNeonTunnelRunner.VehicleVisuals.Render (System.Single deltaTime) (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:90)\nNeonTunnelRunner.VehicleVisuals.LateUpdate () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:86)\nUnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)\n",
+          "seeded": false
+        },
+        {
+          "seq": 724,
+          "timestampUtc": "2026-11-02T21:27:37.787636Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentNullException: Value cannot be null.\nParameter name: dest",
+          "stackTrace": "UnityEngine.Renderer.Internal_GetPropertyBlock (UnityEngine.MaterialPropertyBlock dest) (at <041882d98cde4be487d4a83bd5ec5256>:0)\nUnityEngine.Renderer.GetPropertyBlock (UnityEngine.MaterialPropertyBlock properties) (at /home/bokken/build/output/unity/unity/Runtime/Export/Graphics/GraphicsRenderers.bindings.cs:67)\nNeonTunnelRunner.VehicleVisuals.RefreshLighting () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:124)\nNeonTunnelRunner.VehicleVisuals.Render (System.Single deltaTime) (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:90)\nNeonTunnelRunner.VehicleVisuals.LateUpdate () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:86)\nUnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)\n",
+          "seeded": false
+        },
+        {
+          "seq": 725,
+          "timestampUtc": "2026-11-02T21:27:37.868724Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentNullException: Value cannot be null.\nParameter name: dest",
+          "stackTrace": "UnityEngine.Renderer.Internal_GetPropertyBlock (UnityEngine.MaterialPropertyBlock dest) (at <041882d98cde4be487d4a83bd5ec5256>:0)\nUnityEngine.Renderer.GetPropertyBlock (UnityEngine.MaterialPropertyBlock properties) (at /home/bokken/build/output/unity/unity/Runtime/Export/Graphics/GraphicsRenderers.bindings.cs:67)\nNeonTunnelRunner.VehicleVisuals.RefreshLighting () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:124)\nNeonTunnelRunner.VehicleVisuals.Render (System.Single deltaTime) (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:90)\nNeonTunnelRunner.VehicleVisuals.LateUpdate () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:86)\nUnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)\n",
+          "seeded": false
+        },
+        {
+          "seq": 726,
+          "timestampUtc": "2026-11-02T21:27:37.950411Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentNullException: Value cannot be null.\nParameter name: dest",
+          "stackTrace": "UnityEngine.Renderer.Internal_GetPropertyBlock (UnityEngine.MaterialPropertyBlock dest) (at <041882d98cde4be487d4a83bd5ec5256>:0)\nUnityEngine.Renderer.GetPropertyBlock (UnityEngine.MaterialPropertyBlock properties) (at /home/bokken/build/output/unity/unity/Runtime/Export/Graphics/GraphicsRenderers.bindings.cs:67)\nNeonTunnelRunner.VehicleVisuals.RefreshLighting () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:124)\nNeonTunnelRunner.VehicleVisuals.Render (System.Single deltaTime) (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:90)\nNeonTunnelRunner.VehicleVisuals.LateUpdate () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:86)\nUnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)\n",
+          "seeded": false
+        },
+        {
+          "seq": 727,
+          "timestampUtc": "2026-11-02T21:27:38.036229Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentNullException: Value cannot be null.\nParameter name: dest",
+          "stackTrace": "UnityEngine.Renderer.Internal_GetPropertyBlock (UnityEngine.MaterialPropertyBlock dest) (at <041882d98cde4be487d4a83bd5ec5256>:0)\nUnityEngine.Renderer.GetPropertyBlock (UnityEngine.MaterialPropertyBlock properties) (at /home/bokken/build/output/unity/unity/Runtime/Export/Graphics/GraphicsRenderers.bindings.cs:67)\nNeonTunnelRunner.VehicleVisuals.RefreshLighting () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:124)\nNeonTunnelRunner.VehicleVisuals.Render (System.Single deltaTime) (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:90)\nNeonTunnelRunner.VehicleVisuals.LateUpdate () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:86)\nUnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)\n",
+          "seeded": false
+        },
+        {
+          "seq": 728,
+          "timestampUtc": "2026-11-02T21:27:38.115127Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentNullException: Value cannot be null.\nParameter name: dest",
+          "stackTrace": "UnityEngine.Renderer.Internal_GetPropertyBlock (UnityEngine.MaterialPropertyBlock dest) (at <041882d98cde4be487d4a83bd5ec5256>:0)\nUnityEngine.Renderer.GetPropertyBlock (UnityEngine.MaterialPropertyBlock properties) (at /home/bokken/build/output/unity/unity/Runtime/Export/Graphics/GraphicsRenderers.bindings.cs:67)\nNeonTunnelRunner.VehicleVisuals.RefreshLighting () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:124)\nNeonTunnelRunner.VehicleVisuals.Render (System.Single deltaTime) (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:90)\nNeonTunnelRunner.VehicleVisuals.LateUpdate () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:86)\nUnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)\n",
+          "seeded": false
+        },
+        {
+          "seq": 729,
+          "timestampUtc": "2026-11-02T21:27:38.197116Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentNullException: Value cannot be null.\nParameter name: dest",
+          "stackTrace": "UnityEngine.Renderer.Internal_GetPropertyBlock (UnityEngine.MaterialPropertyBlock dest) (at <041882d98cde4be487d4a83bd5ec5256>:0)\nUnityEngine.Renderer.GetPropertyBlock (UnityEngine.MaterialPropertyBlock properties) (at /home/bokken/build/output/unity/unity/Runtime/Export/Graphics/GraphicsRenderers.bindings.cs:67)\nNeonTunnelRunner.VehicleVisuals.RefreshLighting () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:124)\nNeonTunnelRunner.VehicleVisuals.Render (System.Single deltaTime) (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:90)\nNeonTunnelRunner.VehicleVisuals.LateUpdate () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:86)\nUnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)\n",
+          "seeded": false
+        },
+        {
+          "seq": 730,
+          "timestampUtc": "2026-11-02T21:27:38.28387Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentNullException: Value cannot be null.\nParameter name: dest",
+          "stackTrace": "UnityEngine.Renderer.Internal_GetPropertyBlock (UnityEngine.MaterialPropertyBlock dest) (at <041882d98cde4be487d4a83bd5ec5256>:0)\nUnityEngine.Renderer.GetPropertyBlock (UnityEngine.MaterialPropertyBlock properties) (at /home/bokken/build/output/unity/unity/Runtime/Export/Graphics/GraphicsRenderers.bindings.cs:67)\nNeonTunnelRunner.VehicleVisuals.RefreshLighting () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:124)\nNeonTunnelRunner.VehicleVisuals.Render (System.Single deltaTime) (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:90)\nNeonTunnelRunner.VehicleVisuals.LateUpdate () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:86)\nUnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)\n",
+          "seeded": false
+        },
+        {
+          "seq": 731,
+          "timestampUtc": "2026-11-02T21:27:38.363653Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentNullException: Value cannot be null.\nParameter name: dest",
+          "stackTrace": "UnityEngine.Renderer.Internal_GetPropertyBlock (UnityEngine.MaterialPropertyBlock dest) (at <041882d98cde4be487d4a83bd5ec5256>:0)\nUnityEngine.Renderer.GetPropertyBlock (UnityEngine.MaterialPropertyBlock properties) (at /home/bokken/build/output/unity/unity/Runtime/Export/Graphics/GraphicsRenderers.bindings.cs:67)\nNeonTunnelRunner.VehicleVisuals.RefreshLighting () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:124)\nNeonTunnelRunner.VehicleVisuals.Render (System.Single deltaTime) (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:90)\nNeonTunnelRunner.VehicleVisuals.LateUpdate () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:86)\nUnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)\n",
+          "seeded": false
+        },
+        {
+          "seq": 732,
+          "timestampUtc": "2026-11-02T21:27:38.443976Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentNullException: Value cannot be null.\nParameter name: dest",
+          "stackTrace": "UnityEngine.Renderer.Internal_GetPropertyBlock (UnityEngine.MaterialPropertyBlock dest) (at <041882d98cde4be487d4a83bd5ec5256>:0)\nUnityEngine.Renderer.GetPropertyBlock (UnityEngine.MaterialPropertyBlock properties) (at /home/bokken/build/output/unity/unity/Runtime/Export/Graphics/GraphicsRenderers.bindings.cs:67)\nNeonTunnelRunner.VehicleVisuals.RefreshLighting () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:124)\nNeonTunnelRunner.VehicleVisuals.Render (System.Single deltaTime) (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:90)\nNeonTunnelRunner.VehicleVisuals.LateUpdate () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:86)\nUnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)\n",
+          "seeded": false
+        },
+        {
+          "seq": 733,
+          "timestampUtc": "2026-11-02T21:27:38.521671Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentNullException: Value cannot be null.\nParameter name: dest",
+          "stackTrace": "UnityEngine.Renderer.Internal_GetPropertyBlock (UnityEngine.MaterialPropertyBlock dest) (at <041882d98cde4be487d4a83bd5ec5256>:0)\nUnityEngine.Renderer.GetPropertyBlock (UnityEngine.MaterialPropertyBlock properties) (at /home/bokken/build/output/unity/unity/Runtime/Export/Graphics/GraphicsRenderers.bindings.cs:67)\nNeonTunnelRunner.VehicleVisuals.RefreshLighting () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:124)\nNeonTunnelRunner.VehicleVisuals.Render (System.Single deltaTime) (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:90)\nNeonTunnelRunner.VehicleVisuals.LateUpdate () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:86)\nUnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)\n",
+          "seeded": false
+        },
+        {
+          "seq": 734,
+          "timestampUtc": "2026-11-02T21:27:38.599996Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentNullException: Value cannot be null.\nParameter name: dest",
+          "stackTrace": "UnityEngine.Renderer.Internal_GetPropertyBlock (UnityEngine.MaterialPropertyBlock dest) (at <041882d98cde4be487d4a83bd5ec5256>:0)\nUnityEngine.Renderer.GetPropertyBlock (UnityEngine.MaterialPropertyBlock properties) (at /home/bokken/build/output/unity/unity/Runtime/Export/Graphics/GraphicsRenderers.bindings.cs:67)\nNeonTunnelRunner.VehicleVisuals.RefreshLighting () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:124)\nNeonTunnelRunner.VehicleVisuals.Render (System.Single deltaTime) (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:90)\nNeonTunnelRunner.VehicleVisuals.LateUpdate () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:86)\nUnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)\n",
+          "seeded": false
+        },
+        {
+          "seq": 735,
+          "timestampUtc": "2026-11-02T21:27:38.676477Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentNullException: Value cannot be null.\nParameter name: dest",
+          "stackTrace": "UnityEngine.Renderer.Internal_GetPropertyBlock (UnityEngine.MaterialPropertyBlock dest) (at <041882d98cde4be487d4a83bd5ec5256>:0)\nUnityEngine.Renderer.GetPropertyBlock (UnityEngine.MaterialPropertyBlock properties) (at /home/bokken/build/output/unity/unity/Runtime/Export/Graphics/GraphicsRenderers.bindings.cs:67)\nNeonTunnelRunner.VehicleVisuals.RefreshLighting () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:124)\nNeonTunnelRunner.VehicleVisuals.Render (System.Single deltaTime) (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:90)\nNeonTunnelRunner.VehicleVisuals.LateUpdate () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:86)\nUnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)\n",
+          "seeded": false
+        },
+        {
+          "seq": 736,
+          "timestampUtc": "2026-11-02T21:27:38.755805Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentNullException: Value cannot be null.\nParameter name: dest",
+          "stackTrace": "UnityEngine.Renderer.Internal_GetPropertyBlock (UnityEngine.MaterialPropertyBlock dest) (at <041882d98cde4be487d4a83bd5ec5256>:0)\nUnityEngine.Renderer.GetPropertyBlock (UnityEngine.MaterialPropertyBlock properties) (at /home/bokken/build/output/unity/unity/Runtime/Export/Graphics/GraphicsRenderers.bindings.cs:67)\nNeonTunnelRunner.VehicleVisuals.RefreshLighting () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:124)\nNeonTunnelRunner.VehicleVisuals.Render (System.Single deltaTime) (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:90)\nNeonTunnelRunner.VehicleVisuals.LateUpdate () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:86)\nUnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)\n",
+          "seeded": false
+        },
+        {
+          "seq": 737,
+          "timestampUtc": "2026-11-02T21:27:38.832249Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentNullException: Value cannot be null.\nParameter name: dest",
+          "stackTrace": "UnityEngine.Renderer.Internal_GetPropertyBlock (UnityEngine.MaterialPropertyBlock dest) (at <041882d98cde4be487d4a83bd5ec5256>:0)\nUnityEngine.Renderer.GetPropertyBlock (UnityEngine.MaterialPropertyBlock properties) (at /home/bokken/build/output/unity/unity/Runtime/Export/Graphics/GraphicsRenderers.bindings.cs:67)\nNeonTunnelRunner.VehicleVisuals.RefreshLighting () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:124)\nNeonTunnelRunner.VehicleVisuals.Render (System.Single deltaTime) (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:90)\nNeonTunnelRunner.VehicleVisuals.LateUpdate () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:86)\nUnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)\n",
+          "seeded": false
+        },
+        {
+          "seq": 738,
+          "timestampUtc": "2026-11-02T21:27:38.91452Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentNullException: Value cannot be null.\nParameter name: dest",
+          "stackTrace": "UnityEngine.Renderer.Internal_GetPropertyBlock (UnityEngine.MaterialPropertyBlock dest) (at <041882d98cde4be487d4a83bd5ec5256>:0)\nUnityEngine.Renderer.GetPropertyBlock (UnityEngine.MaterialPropertyBlock properties) (at /home/bokken/build/output/unity/unity/Runtime/Export/Graphics/GraphicsRenderers.bindings.cs:67)\nNeonTunnelRunner.VehicleVisuals.RefreshLighting () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:124)\nNeonTunnelRunner.VehicleVisuals.Render (System.Single deltaTime) (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:90)\nNeonTunnelRunner.VehicleVisuals.LateUpdate () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:86)\nUnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)\n",
+          "seeded": false
+        },
+        {
+          "seq": 739,
+          "timestampUtc": "2026-11-02T21:27:38.999975Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentNullException: Value cannot be null.\nParameter name: dest",
+          "stackTrace": "UnityEngine.Renderer.Internal_GetPropertyBlock (UnityEngine.MaterialPropertyBlock dest) (at <041882d98cde4be487d4a83bd5ec5256>:0)\nUnityEngine.Renderer.GetPropertyBlock (UnityEngine.MaterialPropertyBlock properties) (at /home/bokken/build/output/unity/unity/Runtime/Export/Graphics/GraphicsRenderers.bindings.cs:67)\nNeonTunnelRunner.VehicleVisuals.RefreshLighting () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:124)\nNeonTunnelRunner.VehicleVisuals.Render (System.Single deltaTime) (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:90)\nNeonTunnelRunner.VehicleVisuals.LateUpdate () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:86)\nUnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)\n",
+          "seeded": false
+        },
+        {
+          "seq": 740,
+          "timestampUtc": "2026-11-02T21:27:39.081683Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentNullException: Value cannot be null.\nParameter name: dest",
+          "stackTrace": "UnityEngine.Renderer.Internal_GetPropertyBlock (UnityEngine.MaterialPropertyBlock dest) (at <041882d98cde4be487d4a83bd5ec5256>:0)\nUnityEngine.Renderer.GetPropertyBlock (UnityEngine.MaterialPropertyBlock properties) (at /home/bokken/build/output/unity/unity/Runtime/Export/Graphics/GraphicsRenderers.bindings.cs:67)\nNeonTunnelRunner.VehicleVisuals.RefreshLighting () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:124)\nNeonTunnelRunner.VehicleVisuals.Render (System.Single deltaTime) (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:90)\nNeonTunnelRunner.VehicleVisuals.LateUpdate () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:86)\nUnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)\n",
+          "seeded": false
+        },
+        {
+          "seq": 741,
+          "timestampUtc": "2026-11-02T21:27:39.16239Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentNullException: Value cannot be null.\nParameter name: dest",
+          "stackTrace": "UnityEngine.Renderer.Internal_GetPropertyBlock (UnityEngine.MaterialPropertyBlock dest) (at <041882d98cde4be487d4a83bd5ec5256>:0)\nUnityEngine.Renderer.GetPropertyBlock (UnityEngine.MaterialPropertyBlock properties) (at /home/bokken/build/output/unity/unity/Runtime/Export/Graphics/GraphicsRenderers.bindings.cs:67)\nNeonTunnelRunner.VehicleVisuals.RefreshLighting () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:124)\nNeonTunnelRunner.VehicleVisuals.Render (System.Single deltaTime) (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:90)\nNeonTunnelRunner.VehicleVisuals.LateUpdate () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:86)\nUnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)\n",
+          "seeded": false
+        },
+        {
+          "seq": 742,
+          "timestampUtc": "2026-11-02T21:27:39.243397Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentNullException: Value cannot be null.\nParameter name: dest",
+          "stackTrace": "UnityEngine.Renderer.Internal_GetPropertyBlock (UnityEngine.MaterialPropertyBlock dest) (at <041882d98cde4be487d4a83bd5ec5256>:0)\nUnityEngine.Renderer.GetPropertyBlock (UnityEngine.MaterialPropertyBlock properties) (at /home/bokken/build/output/unity/unity/Runtime/Export/Graphics/GraphicsRenderers.bindings.cs:67)\nNeonTunnelRunner.VehicleVisuals.RefreshLighting () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:124)\nNeonTunnelRunner.VehicleVisuals.Render (System.Single deltaTime) (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:90)\nNeonTunnelRunner.VehicleVisuals.LateUpdate () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:86)\nUnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)\n",
+          "seeded": false
+        },
+        {
+          "seq": 743,
+          "timestampUtc": "2026-11-02T21:27:39.321261Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentNullException: Value cannot be null.\nParameter name: dest",
+          "stackTrace": "UnityEngine.Renderer.Internal_GetPropertyBlock (UnityEngine.MaterialPropertyBlock dest) (at <041882d98cde4be487d4a83bd5ec5256>:0)\nUnityEngine.Renderer.GetPropertyBlock (UnityEngine.MaterialPropertyBlock properties) (at /home/bokken/build/output/unity/unity/Runtime/Export/Graphics/GraphicsRenderers.bindings.cs:67)\nNeonTunnelRunner.VehicleVisuals.RefreshLighting () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:124)\nNeonTunnelRunner.VehicleVisuals.Render (System.Single deltaTime) (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:90)\nNeonTunnelRunner.VehicleVisuals.LateUpdate () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:86)\nUnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)\n",
+          "seeded": false
+        },
+        {
+          "seq": 744,
+          "timestampUtc": "2026-11-02T21:27:39.454042Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentNullException: Value cannot be null.\nParameter name: dest",
+          "stackTrace": "UnityEngine.Renderer.Internal_GetPropertyBlock (UnityEngine.MaterialPropertyBlock dest) (at <041882d98cde4be487d4a83bd5ec5256>:0)\nUnityEngine.Renderer.GetPropertyBlock (UnityEngine.MaterialPropertyBlock properties) (at /home/bokken/build/output/unity/unity/Runtime/Export/Graphics/GraphicsRenderers.bindings.cs:67)\nNeonTunnelRunner.VehicleVisuals.RefreshLighting () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:124)\nNeonTunnelRunner.VehicleVisuals.Render (System.Single deltaTime) (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:90)\nNeonTunnelRunner.VehicleVisuals.LateUpdate () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:86)\nUnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)\n",
+          "seeded": false
+        },
+        {
+          "seq": 745,
+          "timestampUtc": "2026-11-02T21:27:39.603196Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentNullException: Value cannot be null.\nParameter name: dest",
+          "stackTrace": "UnityEngine.Renderer.Internal_GetPropertyBlock (UnityEngine.MaterialPropertyBlock dest) (at <041882d98cde4be487d4a83bd5ec5256>:0)\nUnityEngine.Renderer.GetPropertyBlock (UnityEngine.MaterialPropertyBlock properties) (at /home/bokken/build/output/unity/unity/Runtime/Export/Graphics/GraphicsRenderers.bindings.cs:67)\nNeonTunnelRunner.VehicleVisuals.RefreshLighting () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:124)\nNeonTunnelRunner.VehicleVisuals.ResetVisuals () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:169)\nNeonTunnelRunner.VehicleVisuals.OnDisable () (at Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:137)\nUnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)\n",
+          "seeded": false
+        }
+      ],
+      "cursor": 745,
+      "session": "829f86c1098d4c6caf2f8b0cc0910e16",
+      "returned": 30,
+      "dropped": false,
+      "reset": false,
+      "counts": {
+        "error": 216,
+        "warn": 0,
+        "log": 0
+      },
+      "groundTruth": {
+        "sampledUtc": "2026-11-02T21:27:41.781608Z",
+        "ageMs": 99,
+        "compilationFailed": false,
+        "compiling": false,
+        "consoleErrors": 216,
+        "consoleWarnings": 0,
+        "consoleLogs": 0,
+        "seeded": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

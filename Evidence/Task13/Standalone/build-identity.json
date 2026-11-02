@@ -1,0 +1,16 @@
+{
+  "build": {
+    "result": "Succeeded",
+    "totalErrors": 0,
+    "totalWarnings": 0,
+    "totalSize": 207937504,
+    "seconds": 145.90520999999998,
+    "outputPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner/Builds/Task13Audio/NeonTunnelRunner.x86_64"
+  },
+  "artifacts": {
+    "Builds/Task13Audio/NeonTunnelRunner.x86_64": "de3009bc2c3a8a7c25f347c0c0a098a1c49dbbb6ee6ec100562e61fb50cae261",
+    "Builds/Task13Audio/UnityPlayer.so": "76ad72abeda8d274883e4a833cd9cd9f279c2668e708ea1a7321554e01536696",
+    "Builds/Task13Audio/NeonTunnelRunner_Data/Managed/NeonTunnelRunner.Runtime.dll": "dee5428f8b80605b125bcc3a82f7d5f63c683e288a30ab99956753efc25e5ce5"
+  },
+  "fixtureRemoved": true
+}

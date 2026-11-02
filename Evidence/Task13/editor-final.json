@@ -1,0 +1,12 @@
+{
+  "playing": false,
+  "paused": false,
+  "compiling": false,
+  "compilationFailed": false,
+  "scene": "Assets/NeonTunnelRunner/Scenes/Game.unity",
+  "dirty": false,
+  "ownerClear": true,
+  "timeScale": 1,
+  "reloadsEnabled": true,
+  "reloadOptions": 3
+}

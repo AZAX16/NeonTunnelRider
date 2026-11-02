@@ -1,0 +1,265 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "file": "Docs/Setup/Task13Audit.cs",
+      "entry": "NeonTunnelRunner.Task13Audit.Inspect",
+      "timeout": "60"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 494,
+      "executeMs": 68,
+      "assemblyName": "PipelineRunScript_Task13Audit_c4c372d6224046cb8dd91dfd9459947c",
+      "success": true,
+      "result": {
+        "unity": "6000.6.3f1",
+        "scene": "Assets/NeonTunnelRunner/Scenes/Game.unity",
+        "dirty": false,
+        "compiling": false,
+        "compilationFailed": false,
+        "sources": [
+          {
+            "path": "Audio/SfxVoice1",
+            "clip": null,
+            "group": "SFX",
+            "loop": false,
+            "playOnAwake": false,
+            "spatialBlend": 0,
+            "dopplerLevel": 0,
+            "volume": 0,
+            "mute": false
+          },
+          {
+            "path": "Audio/SfxVoice7",
+            "clip": null,
+            "group": "SFX",
+            "loop": false,
+            "playOnAwake": false,
+            "spatialBlend": 0,
+            "dopplerLevel": 0,
+            "volume": 0,
+            "mute": false
+          },
+          {
+            "path": "Audio/Music",
+            "clip": "VectorNight",
+            "group": "Music",
+            "loop": true,
+            "playOnAwake": false,
+            "spatialBlend": 0,
+            "dopplerLevel": 0,
+            "volume": 0,
+            "mute": false
+          },
+          {
+            "path": "Audio/SfxVoice3",
+            "clip": null,
+            "group": "SFX",
+            "loop": false,
+            "playOnAwake": false,
+            "spatialBlend": 0,
+            "dopplerLevel": 0,
+            "volume": 0,
+            "mute": false
+          },
+          {
+            "path": "Player/EngineAudio",
+            "clip": "HoverEngine",
+            "group": "Engine",
+            "loop": true,
+            "playOnAwake": false,
+            "spatialBlend": 0,
+            "dopplerLevel": 0,
+            "volume": 0,
+            "mute": false
+          },
+          {
+            "path": "Audio/SfxVoice6",
+            "clip": null,
+            "group": "SFX",
+            "loop": false,
+            "playOnAwake": false,
+            "spatialBlend": 0,
+            "dopplerLevel": 0,
+            "volume": 0,
+            "mute": false
+          },
+          {
+            "path": "Audio/SfxVoice2",
+            "clip": null,
+            "group": "SFX",
+            "loop": false,
+            "playOnAwake": false,
+            "spatialBlend": 0,
+            "dopplerLevel": 0,
+            "volume": 0,
+            "mute": false
+          },
+          {
+            "path": "Audio/SfxVoice5",
+            "clip": null,
+            "group": "SFX",
+            "loop": false,
+            "playOnAwake": false,
+            "spatialBlend": 0,
+            "dopplerLevel": 0,
+            "volume": 0,
+            "mute": false
+          },
+          {
+            "path": "Audio/SfxVoice4",
+            "clip": null,
+            "group": "SFX",
+            "loop": false,
+            "playOnAwake": false,
+            "spatialBlend": 0,
+            "dopplerLevel": 0,
+            "volume": 0,
+            "mute": false
+          },
+          {
+            "path": "Audio/SfxVoice0",
+            "clip": null,
+            "group": "SFX",
+            "loop": false,
+            "playOnAwake": false,
+            "spatialBlend": 0,
+            "dopplerLevel": 0,
+            "volume": 0,
+            "mute": false
+          }
+        ],
+        "listeners": [
+          "Presentation/MainCamera"
+        ],
+        "clips": [
+          {
+            "path": "Assets/NeonTunnelRunner/Audio/Clips/VectorNight.wav",
+            "channels": 2,
+            "frequency": 44100,
+            "samples": 2822400,
+            "length": 64,
+            "load": "Streaming",
+            "loadState": "Unloaded",
+            "format": "Vorbis",
+            "quality": 0.8,
+            "preloadAudioData": true,
+            "loadInBackground": false,
+            "forceToMono": false,
+            "rate": "PreserveSampleRate"
+          },
+          {
+            "path": "Assets/NeonTunnelRunner/Audio/Clips/HoverEngine.wav",
+            "channels": 1,
+            "frequency": 44100,
+            "samples": 88200,
+            "length": 2,
+            "load": "DecompressOnLoad",
+            "loadState": "Loaded",
+            "format": "PCM",
+            "quality": 0.8,
+            "preloadAudioData": true,
+            "loadInBackground": false,
+            "forceToMono": true,
+            "rate": "PreserveSampleRate"
+          },
+          {
+            "path": "Assets/NeonTunnelRunner/Audio/Clips/Impact.wav",
+            "channels": 1,
+            "frequency": 44100,
+            "samples": 14994,
+            "length": 0.34,
+            "load": "DecompressOnLoad",
+            "loadState": "Loaded",
+            "format": "PCM",
+            "quality": 0.8,
+            "preloadAudioData": true,
+            "loadInBackground": false,
+            "forceToMono": true,
+            "rate": "PreserveSampleRate"
+          },
+          {
+            "path": "Assets/NeonTunnelRunner/Audio/Clips/CoinChime.wav",
+            "channels": 1,
+            "frequency": 44100,
+            "samples": 7938,
+            "length": 0.18,
+            "load": "DecompressOnLoad",
+            "loadState": "Loaded",
+            "format": "PCM",
+            "quality": 0.8,
+            "preloadAudioData": true,
+            "loadInBackground": false,
+            "forceToMono": true,
+            "rate": "PreserveSampleRate"
+          },
+          {
+            "path": "Assets/NeonTunnelRunner/Audio/Clips/FuelCharge.wav",
+            "channels": 1,
+            "frequency": 44100,
+            "samples": 14994,
+            "length": 0.34,
+            "load": "DecompressOnLoad",
+            "loadState": "Loaded",
+            "format": "PCM",
+            "quality": 0.8,
+            "preloadAudioData": true,
+            "loadInBackground": false,
+            "forceToMono": true,
+            "rate": "PreserveSampleRate"
+          }
+        ],
+        "pitch": [
+          {
+            "speed": 0,
+            "pitch": 0.8,
+            "volume": 0.05
+          },
+          {
+            "speed": 22,
+            "pitch": 1.108,
+            "volume": 0.061
+          },
+          {
+            "speed": 50,
+            "pitch": 1.5,
+            "volume": 0.075
+          },
+          {
+            "speed": 60,
+            "pitch": 1.5,
+            "volume": 0.075
+          }
+        ],
+        "musicLevels": [
+          {
+            "state": "Menu",
+            "level": 0.16
+          },
+          {
+            "state": "Playing",
+            "level": 0.24
+          },
+          {
+            "state": "Paused",
+            "level": 0.08
+          },
+          {
+            "state": "GameOver",
+            "level": 0.14
+          }
+        ]
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
