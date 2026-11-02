@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "code": "var path=\"Assets/NeonTunnelRunner/Prefabs/Player/PlayerHovercar.prefab\";var p=UnityEditor.PrefabUtility.LoadPrefabContents(path);try{p.transform.Find(\"Visual/DeckVents\").GetComponent<UnityEngine.Renderer>().sharedMaterial=UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.Material>(\"Assets/NeonTunnelRunner/Materials/PlayerIndigo.mat\");UnityEditor.PrefabUtility.SaveAsPrefabAsset(p,path);}finally{UnityEditor.PrefabUtility.UnloadPrefabContents(p);}UnityEditor.AssetDatabase.SaveAssets();UnityEditor.AssetDatabase.Refresh();return true;"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": true
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

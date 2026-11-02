@@ -19,6 +19,9 @@ namespace NeonTunnelRunner
         [SerializeField, Min(0f)] private float bobFrequency = 1.4f;
         [SerializeField, Range(0f, .12f)] private float impulseMagnitude = .085f;
         [SerializeField, Min(.01f)] private float impulseDuration = .24f;
+        [SerializeField, Min(.01f)] private float neonMaximumSpeed = 50f;
+        [SerializeField] private Vector2 underglowLightRange = new Vector2(.3f, 3f);
+        [SerializeField] private Vector2 underglowEmissionRange = new Vector2(1f, 5f);
         public Vector3 CameraOffset => cameraOffset;
         public float LookAhead => lookAhead;
         public float FieldOfView => fieldOfView;
@@ -32,5 +35,10 @@ namespace NeonTunnelRunner
         public float BobFrequency => bobFrequency;
         public float ImpulseMagnitude => Mathf.Clamp(impulseMagnitude, 0f, .12f);
         public float ImpulseDuration => impulseDuration;
+        public float NeonMaximumSpeed => Mathf.Max(.01f, neonMaximumSpeed);
+        private float NeonFraction(float actualSpeed) => Mathf.InverseLerp(0f, NeonMaximumSpeed,
+            float.IsFinite(actualSpeed) ? actualSpeed : 0f);
+        public float UnderglowIntensity(float actualSpeed) => Mathf.Lerp(underglowLightRange.x, underglowLightRange.y, NeonFraction(actualSpeed));
+        public float UnderglowEmission(float actualSpeed) => Mathf.Lerp(underglowEmissionRange.x, underglowEmissionRange.y, NeonFraction(actualSpeed));
     }
 }

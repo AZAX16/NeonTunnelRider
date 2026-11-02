@@ -1,0 +1,1369 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "file": "Docs/Setup/Task11Visual.cs",
+      "entry": "NeonTunnelRunner.Task11Visual.Run",
+      "timeout": "150"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 458,
+      "executeMs": 21586,
+      "assemblyName": "PipelineRunScript_Task11Visual_ad657f12c6334c0e99a544ceb6f840af",
+      "success": true,
+      "result": {
+        "passed": true,
+        "method": "Saved Game runtime camera renders plus native ScreenCapture",
+        "captures": [
+          {
+            "label": "near-start",
+            "path": "Evidence/Task11/near-start.png",
+            "width": 1280,
+            "height": 720,
+            "state": "Playing",
+            "ActualSpeed": 22,
+            "CruiseSpeed": 22,
+            "ElapsedTime": 0,
+            "Distance": 0,
+            "lane": 0,
+            "light": 1.488,
+            "emission": 2.76,
+            "emissionColor": "RGBA(0.04913, 1.09199, 1.38000, 1.38000)",
+            "headlights": true,
+            "flash": false,
+            "flashRemaining": 0,
+            "activeStreet": 2,
+            "moon": 0.65,
+            "exposure": "Skybox=1; no exposure/tonemapping/Bloom overrides",
+            "camera": "(0.0000, 4.8000, -8.0000)",
+            "player": "(0.0000, 0.6000, 0.0000)",
+            "offset": 0,
+            "rebases": 0,
+            "seam": 0,
+            "roadAhead": 300,
+            "horizon": [
+              {
+                "lane": -1,
+                "viewport": "(0.48880, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 0,
+                "viewport": "(0.50000, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 1,
+                "viewport": "(0.51120, 0.63811, 126.13080)"
+              }
+            ],
+            "stats": {
+              "drawCalls": 36,
+              "triangles": 2295,
+              "vertices": 6349
+            }
+          },
+          {
+            "label": "near-start-4x3",
+            "path": "Evidence/Task11/near-start-4x3.png",
+            "width": 960,
+            "height": 720,
+            "state": "Playing",
+            "ActualSpeed": 22,
+            "CruiseSpeed": 22,
+            "ElapsedTime": 0,
+            "Distance": 0,
+            "lane": 0,
+            "light": 1.488,
+            "emission": 2.76,
+            "emissionColor": "RGBA(0.04913, 1.09199, 1.38000, 1.38000)",
+            "headlights": true,
+            "flash": false,
+            "flashRemaining": 0,
+            "activeStreet": 2,
+            "moon": 0.65,
+            "exposure": "Skybox=1; no exposure/tonemapping/Bloom overrides",
+            "camera": "(0.0000, 4.8000, -8.0000)",
+            "player": "(0.0000, 0.6000, 0.0000)",
+            "offset": 0,
+            "rebases": 0,
+            "seam": 0,
+            "roadAhead": 300,
+            "horizon": [
+              {
+                "lane": -1,
+                "viewport": "(0.48507, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 0,
+                "viewport": "(0.50000, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 1,
+                "viewport": "(0.51493, 0.63811, 126.13080)"
+              }
+            ],
+            "stats": {
+              "drawCalls": 36,
+              "triangles": 2295,
+              "vertices": 6349
+            }
+          },
+          {
+            "label": "near-start-headlights-off",
+            "path": "Evidence/Task11/near-start-headlights-off.png",
+            "width": 1280,
+            "height": 720,
+            "state": "Playing",
+            "ActualSpeed": 22,
+            "CruiseSpeed": 22,
+            "ElapsedTime": 0,
+            "Distance": 0,
+            "lane": 0,
+            "light": 1.488,
+            "emission": 2.76,
+            "emissionColor": "RGBA(0.04913, 1.09199, 1.38000, 1.38000)",
+            "headlights": false,
+            "flash": false,
+            "flashRemaining": 0,
+            "activeStreet": 2,
+            "moon": 0.65,
+            "exposure": "Skybox=1; no exposure/tonemapping/Bloom overrides",
+            "camera": "(0.0000, 4.8000, -8.0000)",
+            "player": "(0.0000, 0.6000, 0.0000)",
+            "offset": 0,
+            "rebases": 0,
+            "seam": 0,
+            "roadAhead": 300,
+            "horizon": [
+              {
+                "lane": -1,
+                "viewport": "(0.48880, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 0,
+                "viewport": "(0.50000, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 1,
+                "viewport": "(0.51120, 0.63811, 126.13080)"
+              }
+            ],
+            "stats": {
+              "drawCalls": 36,
+              "triangles": 2295,
+              "vertices": 6349
+            }
+          },
+          {
+            "label": "cap",
+            "path": "Evidence/Task11/cap.png",
+            "width": 1280,
+            "height": 720,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "CruiseSpeed": 50,
+            "ElapsedTime": 180.01999999955297,
+            "Distance": 0.9999999776482582,
+            "lane": 0,
+            "light": 3,
+            "emission": 5,
+            "emissionColor": "RGBA(0.08900, 1.97825, 2.50000, 2.50000)",
+            "headlights": true,
+            "flash": false,
+            "flashRemaining": 0,
+            "activeStreet": 2,
+            "moon": 0.65,
+            "exposure": "Skybox=1; no exposure/tonemapping/Bloom overrides",
+            "camera": "(0.0000, 4.8000, -7.0000)",
+            "player": "(0.0000, 0.6000, 1.0000)",
+            "offset": 0,
+            "rebases": 0,
+            "seam": 0,
+            "roadAhead": 359.00000002235174,
+            "horizon": [
+              {
+                "lane": -1,
+                "viewport": "(0.48880, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 0,
+                "viewport": "(0.50000, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 1,
+                "viewport": "(0.51120, 0.63811, 126.13080)"
+              }
+            ],
+            "stats": {
+              "drawCalls": 36,
+              "triangles": 2295,
+              "vertices": 6349
+            }
+          },
+          {
+            "label": "cap-4x3",
+            "path": "Evidence/Task11/cap-4x3.png",
+            "width": 960,
+            "height": 720,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "CruiseSpeed": 50,
+            "ElapsedTime": 180.01999999955297,
+            "Distance": 0.9999999776482582,
+            "lane": 0,
+            "light": 3,
+            "emission": 5,
+            "emissionColor": "RGBA(0.08900, 1.97825, 2.50000, 2.50000)",
+            "headlights": true,
+            "flash": false,
+            "flashRemaining": 0,
+            "activeStreet": 2,
+            "moon": 0.65,
+            "exposure": "Skybox=1; no exposure/tonemapping/Bloom overrides",
+            "camera": "(0.0000, 4.8000, -7.0000)",
+            "player": "(0.0000, 0.6000, 1.0000)",
+            "offset": 0,
+            "rebases": 0,
+            "seam": 0,
+            "roadAhead": 359.00000002235174,
+            "horizon": [
+              {
+                "lane": -1,
+                "viewport": "(0.48507, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 0,
+                "viewport": "(0.50000, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 1,
+                "viewport": "(0.51493, 0.63811, 126.13080)"
+              }
+            ],
+            "stats": {
+              "drawCalls": 36,
+              "triangles": 2295,
+              "vertices": 6349
+            }
+          },
+          {
+            "label": "cap-headlights-off",
+            "path": "Evidence/Task11/cap-headlights-off.png",
+            "width": 1280,
+            "height": 720,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "CruiseSpeed": 50,
+            "ElapsedTime": 180.01999999955297,
+            "Distance": 0.9999999776482582,
+            "lane": 0,
+            "light": 3,
+            "emission": 5,
+            "emissionColor": "RGBA(0.08900, 1.97825, 2.50000, 2.50000)",
+            "headlights": false,
+            "flash": false,
+            "flashRemaining": 0,
+            "activeStreet": 2,
+            "moon": 0.65,
+            "exposure": "Skybox=1; no exposure/tonemapping/Bloom overrides",
+            "camera": "(0.0000, 4.8000, -7.0000)",
+            "player": "(0.0000, 0.6000, 1.0000)",
+            "offset": 0,
+            "rebases": 0,
+            "seam": 0,
+            "roadAhead": 359.00000002235174,
+            "horizon": [
+              {
+                "lane": -1,
+                "viewport": "(0.48880, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 0,
+                "viewport": "(0.50000, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 1,
+                "viewport": "(0.51120, 0.63811, 126.13080)"
+              }
+            ],
+            "stats": {
+              "drawCalls": 36,
+              "triangles": 2295,
+              "vertices": 6349
+            }
+          },
+          {
+            "label": "paused",
+            "path": "Evidence/Task11/paused.png",
+            "width": 1280,
+            "height": 720,
+            "state": "Paused",
+            "ActualSpeed": 0,
+            "CruiseSpeed": 50,
+            "ElapsedTime": 180.01999999955297,
+            "Distance": 0.9999999776482582,
+            "lane": 0,
+            "light": 0.3,
+            "emission": 1,
+            "emissionColor": "RGBA(0.01780, 0.39565, 0.50000, 0.50000)",
+            "headlights": true,
+            "flash": false,
+            "flashRemaining": 0,
+            "activeStreet": 2,
+            "moon": 0.65,
+            "exposure": "Skybox=1; no exposure/tonemapping/Bloom overrides",
+            "camera": "(0.0000, 4.8000, -7.0000)",
+            "player": "(0.0000, 0.6000, 1.0000)",
+            "offset": 0,
+            "rebases": 0,
+            "seam": 0,
+            "roadAhead": 359.00000002235174,
+            "horizon": [
+              {
+                "lane": -1,
+                "viewport": "(0.48880, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 0,
+                "viewport": "(0.50000, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 1,
+                "viewport": "(0.51120, 0.63811, 126.13080)"
+              }
+            ],
+            "stats": {
+              "drawCalls": 36,
+              "triangles": 2295,
+              "vertices": 6349
+            }
+          },
+          {
+            "label": "resumed",
+            "path": "Evidence/Task11/resumed.png",
+            "width": 1280,
+            "height": 720,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "CruiseSpeed": 50,
+            "ElapsedTime": 180.01999999955297,
+            "Distance": 0.9999999776482582,
+            "lane": 0,
+            "light": 3,
+            "emission": 5,
+            "emissionColor": "RGBA(0.08900, 1.97825, 2.50000, 2.50000)",
+            "headlights": true,
+            "flash": false,
+            "flashRemaining": 0,
+            "activeStreet": 2,
+            "moon": 0.65,
+            "exposure": "Skybox=1; no exposure/tonemapping/Bloom overrides",
+            "camera": "(0.0000, 4.8000, -7.0000)",
+            "player": "(0.0000, 0.6000, 1.0000)",
+            "offset": 0,
+            "rebases": 0,
+            "seam": 0,
+            "roadAhead": 359.00000002235174,
+            "horizon": [
+              {
+                "lane": -1,
+                "viewport": "(0.48880, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 0,
+                "viewport": "(0.50000, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 1,
+                "viewport": "(0.51120, 0.63811, 126.13080)"
+              }
+            ],
+            "stats": {
+              "drawCalls": 36,
+              "triangles": 2295,
+              "vertices": 6349
+            }
+          },
+          {
+            "label": "accepted-hit",
+            "path": "Evidence/Task11/accepted-hit.png",
+            "width": 1280,
+            "height": 720,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "CruiseSpeed": 50,
+            "ElapsedTime": 180.0599999986589,
+            "Distance": 2.9999999329447746,
+            "lane": 0,
+            "light": 3,
+            "emission": 5,
+            "emissionColor": "RGBA(0.08900, 1.97825, 2.50000, 2.50000)",
+            "headlights": true,
+            "flash": true,
+            "flashRemaining": 0.21199999894201937,
+            "activeStreet": 2,
+            "moon": 0.65,
+            "exposure": "Skybox=1; no exposure/tonemapping/Bloom overrides",
+            "camera": "(0.0384, 4.8759, -5.0000)",
+            "player": "(0.0000, 0.6000, 3.0000)",
+            "offset": 0,
+            "rebases": 0,
+            "seam": 0,
+            "roadAhead": 357.0000000670552,
+            "horizon": [
+              {
+                "lane": -1,
+                "viewport": "(0.48867, 0.63763, 126.14640)"
+              },
+              {
+                "lane": 0,
+                "viewport": "(0.49987, 0.63763, 126.14640)"
+              },
+              {
+                "lane": 1,
+                "viewport": "(0.51106, 0.63763, 126.14640)"
+              }
+            ],
+            "stats": {
+              "drawCalls": 36,
+              "triangles": 2295,
+              "vertices": 6349
+            }
+          },
+          {
+            "label": "hit-paused",
+            "path": "Evidence/Task11/hit-paused.png",
+            "width": 1280,
+            "height": 720,
+            "state": "Paused",
+            "ActualSpeed": 0,
+            "CruiseSpeed": 50,
+            "ElapsedTime": 180.0599999986589,
+            "Distance": 2.9999999329447746,
+            "lane": 0,
+            "light": 0.3,
+            "emission": 1,
+            "emissionColor": "RGBA(0.01780, 0.39565, 0.50000, 0.50000)",
+            "headlights": true,
+            "flash": true,
+            "flashRemaining": 0.21199999894201937,
+            "activeStreet": 2,
+            "moon": 0.65,
+            "exposure": "Skybox=1; no exposure/tonemapping/Bloom overrides",
+            "camera": "(0.0384, 4.8759, -5.0000)",
+            "player": "(0.0000, 0.6000, 3.0000)",
+            "offset": 0,
+            "rebases": 0,
+            "seam": 0,
+            "roadAhead": 357.0000000670552,
+            "horizon": [
+              {
+                "lane": -1,
+                "viewport": "(0.48867, 0.63763, 126.14640)"
+              },
+              {
+                "lane": 0,
+                "viewport": "(0.49987, 0.63763, 126.14640)"
+              },
+              {
+                "lane": 1,
+                "viewport": "(0.51106, 0.63763, 126.14640)"
+              }
+            ],
+            "stats": {
+              "drawCalls": 36,
+              "triangles": 2295,
+              "vertices": 6349
+            }
+          },
+          {
+            "label": "flash-expired",
+            "path": "Evidence/Task11/flash-expired.png",
+            "width": 1280,
+            "height": 720,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "CruiseSpeed": 50,
+            "ElapsedTime": 180.36000001057982,
+            "Distance": 18.000000528991222,
+            "lane": 0,
+            "light": 3,
+            "emission": 5,
+            "emissionColor": "RGBA(0.08900, 1.97825, 2.50000, 2.50000)",
+            "headlights": true,
+            "flash": false,
+            "flashRemaining": 0,
+            "activeStreet": 3,
+            "moon": 0.65,
+            "exposure": "Skybox=1; no exposure/tonemapping/Bloom overrides",
+            "camera": "(0.0384, 4.8759, 10.0000)",
+            "player": "(0.0000, 0.6000, 18.0000)",
+            "offset": 0,
+            "rebases": 0,
+            "seam": 0,
+            "roadAhead": 341.9999994710088,
+            "horizon": [
+              {
+                "lane": -1,
+                "viewport": "(0.48867, 0.63763, 126.14640)"
+              },
+              {
+                "lane": 0,
+                "viewport": "(0.49987, 0.63763, 126.14640)"
+              },
+              {
+                "lane": 1,
+                "viewport": "(0.51106, 0.63763, 126.14640)"
+              }
+            ],
+            "stats": {
+              "drawCalls": 36,
+              "triangles": 2295,
+              "vertices": 6349
+            }
+          },
+          {
+            "label": "gameover",
+            "path": "Evidence/Task11/gameover.png",
+            "width": 1280,
+            "height": 720,
+            "state": "GameOver",
+            "ActualSpeed": 0,
+            "CruiseSpeed": 50,
+            "ElapsedTime": 180.36000001057982,
+            "Distance": 18.000000528991222,
+            "lane": 0,
+            "light": 0.3,
+            "emission": 1,
+            "emissionColor": "RGBA(0.01780, 0.39565, 0.50000, 0.50000)",
+            "headlights": true,
+            "flash": false,
+            "flashRemaining": 0,
+            "activeStreet": 3,
+            "moon": 0.65,
+            "exposure": "Skybox=1; no exposure/tonemapping/Bloom overrides",
+            "camera": "(0.0384, 4.8759, 10.0000)",
+            "player": "(0.0000, 0.6000, 18.0000)",
+            "offset": 0,
+            "rebases": 0,
+            "seam": 0,
+            "roadAhead": 341.9999994710088,
+            "horizon": [
+              {
+                "lane": -1,
+                "viewport": "(0.48867, 0.63763, 126.14640)"
+              },
+              {
+                "lane": 0,
+                "viewport": "(0.49987, 0.63763, 126.14640)"
+              },
+              {
+                "lane": 1,
+                "viewport": "(0.51106, 0.63763, 126.14640)"
+              }
+            ],
+            "stats": {
+              "drawCalls": 36,
+              "triangles": 2295,
+              "vertices": 6349
+            }
+          },
+          {
+            "label": "restart",
+            "path": "Evidence/Task11/restart.png",
+            "width": 1280,
+            "height": 720,
+            "state": "Playing",
+            "ActualSpeed": 22,
+            "CruiseSpeed": 22,
+            "ElapsedTime": 0,
+            "Distance": 0,
+            "lane": 0,
+            "light": 1.488,
+            "emission": 2.76,
+            "emissionColor": "RGBA(0.04913, 1.09199, 1.38000, 1.38000)",
+            "headlights": true,
+            "flash": false,
+            "flashRemaining": 0,
+            "activeStreet": 2,
+            "moon": 0.65,
+            "exposure": "Skybox=1; no exposure/tonemapping/Bloom overrides",
+            "camera": "(0.0000, 4.8000, -8.0000)",
+            "player": "(0.0000, 0.6000, 0.0000)",
+            "offset": 0,
+            "rebases": 0,
+            "seam": 0,
+            "roadAhead": 300,
+            "horizon": [
+              {
+                "lane": -1,
+                "viewport": "(0.48880, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 0,
+                "viewport": "(0.50000, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 1,
+                "viewport": "(0.51120, 0.63811, 126.13080)"
+              }
+            ],
+            "stats": {
+              "drawCalls": 36,
+              "triangles": 2295,
+              "vertices": 6349
+            }
+          },
+          {
+            "label": "open-sky",
+            "path": "Evidence/Task11/open-sky.png",
+            "width": 1280,
+            "height": 720,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "CruiseSpeed": 50,
+            "ElapsedTime": 182.51999900490046,
+            "Distance": 125.99995024502277,
+            "lane": 0,
+            "light": 3,
+            "emission": 5,
+            "emissionColor": "RGBA(0.08900, 1.97825, 2.50000, 2.50000)",
+            "headlights": true,
+            "flash": false,
+            "flashRemaining": 0,
+            "activeStreet": 3,
+            "moon": 0.65,
+            "exposure": "Skybox=1; no exposure/tonemapping/Bloom overrides",
+            "camera": "(0.0000, 4.8000, 117.9999)",
+            "player": "(0.0000, 0.6000, 125.9999)",
+            "offset": 0,
+            "rebases": 0,
+            "seam": 0,
+            "roadAhead": 354.0000497549772,
+            "horizon": [
+              {
+                "lane": -1,
+                "viewport": "(0.48880, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 0,
+                "viewport": "(0.50000, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 1,
+                "viewport": "(0.51120, 0.63811, 126.13080)"
+              }
+            ],
+            "stats": {
+              "drawCalls": 118,
+              "triangles": 10719,
+              "vertices": 23293
+            }
+          },
+          {
+            "label": "open-sky-4x3",
+            "path": "Evidence/Task11/open-sky-4x3.png",
+            "width": 960,
+            "height": 720,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "CruiseSpeed": 50,
+            "ElapsedTime": 182.51999900490046,
+            "Distance": 125.99995024502277,
+            "lane": 0,
+            "light": 3,
+            "emission": 5,
+            "emissionColor": "RGBA(0.08900, 1.97825, 2.50000, 2.50000)",
+            "headlights": true,
+            "flash": false,
+            "flashRemaining": 0,
+            "activeStreet": 3,
+            "moon": 0.65,
+            "exposure": "Skybox=1; no exposure/tonemapping/Bloom overrides",
+            "camera": "(0.0000, 4.8000, 117.9999)",
+            "player": "(0.0000, 0.6000, 125.9999)",
+            "offset": 0,
+            "rebases": 0,
+            "seam": 0,
+            "roadAhead": 354.0000497549772,
+            "horizon": [
+              {
+                "lane": -1,
+                "viewport": "(0.48507, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 0,
+                "viewport": "(0.50000, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 1,
+                "viewport": "(0.51493, 0.63811, 126.13080)"
+              }
+            ],
+            "stats": {
+              "drawCalls": 118,
+              "triangles": 10719,
+              "vertices": 23293
+            }
+          },
+          {
+            "label": "entrance",
+            "path": "Evidence/Task11/entrance.png",
+            "width": 1280,
+            "height": 720,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "CruiseSpeed": 50,
+            "ElapsedTime": 183.6199985705316,
+            "Distance": 180.99992852658033,
+            "lane": 0,
+            "light": 3,
+            "emission": 5,
+            "emissionColor": "RGBA(0.08900, 1.97825, 2.50000, 2.50000)",
+            "headlights": true,
+            "flash": false,
+            "flashRemaining": 0,
+            "activeStreet": 2,
+            "moon": 0.65,
+            "exposure": "Skybox=1; no exposure/tonemapping/Bloom overrides",
+            "camera": "(0.0000, 4.8000, 172.9999)",
+            "player": "(0.0000, 0.6000, 180.9999)",
+            "offset": 0,
+            "rebases": 0,
+            "seam": 0,
+            "roadAhead": 359.00007147341967,
+            "horizon": [
+              {
+                "lane": -1,
+                "viewport": "(0.48880, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 0,
+                "viewport": "(0.50000, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 1,
+                "viewport": "(0.51120, 0.63811, 126.13080)"
+              }
+            ],
+            "stats": {
+              "drawCalls": 124,
+              "triangles": 11479,
+              "vertices": 24845
+            }
+          },
+          {
+            "label": "entrance-4x3",
+            "path": "Evidence/Task11/entrance-4x3.png",
+            "width": 960,
+            "height": 720,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "CruiseSpeed": 50,
+            "ElapsedTime": 183.6199985705316,
+            "Distance": 180.99992852658033,
+            "lane": 0,
+            "light": 3,
+            "emission": 5,
+            "emissionColor": "RGBA(0.08900, 1.97825, 2.50000, 2.50000)",
+            "headlights": true,
+            "flash": false,
+            "flashRemaining": 0,
+            "activeStreet": 2,
+            "moon": 0.65,
+            "exposure": "Skybox=1; no exposure/tonemapping/Bloom overrides",
+            "camera": "(0.0000, 4.8000, 172.9999)",
+            "player": "(0.0000, 0.6000, 180.9999)",
+            "offset": 0,
+            "rebases": 0,
+            "seam": 0,
+            "roadAhead": 359.00007147341967,
+            "horizon": [
+              {
+                "lane": -1,
+                "viewport": "(0.48507, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 0,
+                "viewport": "(0.50000, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 1,
+                "viewport": "(0.51493, 0.63811, 126.13080)"
+              }
+            ],
+            "stats": {
+              "drawCalls": 124,
+              "triangles": 11479,
+              "vertices": 24845
+            }
+          },
+          {
+            "label": "tunnel",
+            "path": "Evidence/Task11/tunnel.png",
+            "width": 1280,
+            "height": 720,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "CruiseSpeed": 50,
+            "ElapsedTime": 185.21999793872237,
+            "Distance": 260.9998969361186,
+            "lane": 0,
+            "light": 3,
+            "emission": 5,
+            "emissionColor": "RGBA(0.08900, 1.97825, 2.50000, 2.50000)",
+            "headlights": true,
+            "flash": false,
+            "flashRemaining": 0,
+            "activeStreet": 3,
+            "moon": 0.65,
+            "exposure": "Skybox=1; no exposure/tonemapping/Bloom overrides",
+            "camera": "(0.0000, 4.8000, 252.9999)",
+            "player": "(0.0000, 0.6000, 260.9999)",
+            "offset": 0,
+            "rebases": 0,
+            "seam": 0,
+            "roadAhead": 339.0001030638814,
+            "horizon": [
+              {
+                "lane": -1,
+                "viewport": "(0.48880, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 0,
+                "viewport": "(0.50000, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 1,
+                "viewport": "(0.51120, 0.63811, 126.13080)"
+              }
+            ],
+            "stats": {
+              "drawCalls": 108,
+              "triangles": 9887,
+              "vertices": 21597
+            }
+          },
+          {
+            "label": "tunnel-4x3",
+            "path": "Evidence/Task11/tunnel-4x3.png",
+            "width": 960,
+            "height": 720,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "CruiseSpeed": 50,
+            "ElapsedTime": 185.21999793872237,
+            "Distance": 260.9998969361186,
+            "lane": 0,
+            "light": 3,
+            "emission": 5,
+            "emissionColor": "RGBA(0.08900, 1.97825, 2.50000, 2.50000)",
+            "headlights": true,
+            "flash": false,
+            "flashRemaining": 0,
+            "activeStreet": 3,
+            "moon": 0.65,
+            "exposure": "Skybox=1; no exposure/tonemapping/Bloom overrides",
+            "camera": "(0.0000, 4.8000, 252.9999)",
+            "player": "(0.0000, 0.6000, 260.9999)",
+            "offset": 0,
+            "rebases": 0,
+            "seam": 0,
+            "roadAhead": 339.0001030638814,
+            "horizon": [
+              {
+                "lane": -1,
+                "viewport": "(0.48507, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 0,
+                "viewport": "(0.50000, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 1,
+                "viewport": "(0.51493, 0.63811, 126.13080)"
+              }
+            ],
+            "stats": {
+              "drawCalls": 108,
+              "triangles": 9887,
+              "vertices": 21597
+            }
+          },
+          {
+            "label": "exit",
+            "path": "Evidence/Task11/exit.png",
+            "width": 1280,
+            "height": 720,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "CruiseSpeed": 50,
+            "ElapsedTime": 188.63999658823013,
+            "Distance": 431.99982941150665,
+            "lane": -1,
+            "light": 3,
+            "emission": 5,
+            "emissionColor": "RGBA(0.08900, 1.97825, 2.50000, 2.50000)",
+            "headlights": true,
+            "flash": false,
+            "flashRemaining": 0,
+            "activeStreet": 3,
+            "moon": 0.65,
+            "exposure": "Skybox=1; no exposure/tonemapping/Bloom overrides",
+            "camera": "(-3.1956, 4.8000, 423.9998)",
+            "player": "(-3.2000, 0.6000, 431.9998)",
+            "offset": 0,
+            "rebases": 0,
+            "seam": 0,
+            "roadAhead": 348.00017058849335,
+            "horizon": [
+              {
+                "lane": -1,
+                "viewport": "(0.49998, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 0,
+                "viewport": "(0.51119, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 1,
+                "viewport": "(0.52239, 0.63811, 126.13080)"
+              }
+            ],
+            "stats": {
+              "drawCalls": 124,
+              "triangles": 8511,
+              "vertices": 18973
+            }
+          },
+          {
+            "label": "exit-4x3",
+            "path": "Evidence/Task11/exit-4x3.png",
+            "width": 960,
+            "height": 720,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "CruiseSpeed": 50,
+            "ElapsedTime": 188.63999658823013,
+            "Distance": 431.99982941150665,
+            "lane": -1,
+            "light": 3,
+            "emission": 5,
+            "emissionColor": "RGBA(0.08900, 1.97825, 2.50000, 2.50000)",
+            "headlights": true,
+            "flash": false,
+            "flashRemaining": 0,
+            "activeStreet": 3,
+            "moon": 0.65,
+            "exposure": "Skybox=1; no exposure/tonemapping/Bloom overrides",
+            "camera": "(-3.1956, 4.8000, 423.9998)",
+            "player": "(-3.2000, 0.6000, 431.9998)",
+            "offset": 0,
+            "rebases": 0,
+            "seam": 0,
+            "roadAhead": 348.00017058849335,
+            "horizon": [
+              {
+                "lane": -1,
+                "viewport": "(0.49998, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 0,
+                "viewport": "(0.51491, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 1,
+                "viewport": "(0.52985, 0.63811, 126.13080)"
+              }
+            ],
+            "stats": {
+              "drawCalls": 124,
+              "triangles": 8511,
+              "vertices": 18973
+            }
+          },
+          {
+            "label": "open-after-exit",
+            "path": "Evidence/Task11/open-after-exit.png",
+            "width": 1280,
+            "height": 720,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "CruiseSpeed": 50,
+            "ElapsedTime": 189.81999612227082,
+            "Distance": 490.9998061135411,
+            "lane": -1,
+            "light": 3,
+            "emission": 5,
+            "emissionColor": "RGBA(0.08900, 1.97825, 2.50000, 2.50000)",
+            "headlights": true,
+            "flash": false,
+            "flashRemaining": 0,
+            "activeStreet": 3,
+            "moon": 0.65,
+            "exposure": "Skybox=1; no exposure/tonemapping/Bloom overrides",
+            "camera": "(-3.2000, 4.8000, 482.9998)",
+            "player": "(-3.2000, 0.6000, 490.9998)",
+            "offset": 0,
+            "rebases": 0,
+            "seam": 0,
+            "roadAhead": 349.0001938864589,
+            "horizon": [
+              {
+                "lane": -1,
+                "viewport": "(0.50000, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 0,
+                "viewport": "(0.51120, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 1,
+                "viewport": "(0.52240, 0.63811, 126.13080)"
+              }
+            ],
+            "stats": {
+              "drawCalls": 128,
+              "triangles": 9295,
+              "vertices": 20573
+            }
+          },
+          {
+            "label": "open-after-exit-4x3",
+            "path": "Evidence/Task11/open-after-exit-4x3.png",
+            "width": 960,
+            "height": 720,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "CruiseSpeed": 50,
+            "ElapsedTime": 189.81999612227082,
+            "Distance": 490.9998061135411,
+            "lane": -1,
+            "light": 3,
+            "emission": 5,
+            "emissionColor": "RGBA(0.08900, 1.97825, 2.50000, 2.50000)",
+            "headlights": true,
+            "flash": false,
+            "flashRemaining": 0,
+            "activeStreet": 3,
+            "moon": 0.65,
+            "exposure": "Skybox=1; no exposure/tonemapping/Bloom overrides",
+            "camera": "(-3.2000, 4.8000, 482.9998)",
+            "player": "(-3.2000, 0.6000, 490.9998)",
+            "offset": 0,
+            "rebases": 0,
+            "seam": 0,
+            "roadAhead": 349.0001938864589,
+            "horizon": [
+              {
+                "lane": -1,
+                "viewport": "(0.50000, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 0,
+                "viewport": "(0.51493, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 1,
+                "viewport": "(0.52987, 0.63811, 126.13080)"
+              }
+            ],
+            "stats": {
+              "drawCalls": 128,
+              "triangles": 9295,
+              "vertices": 20573
+            }
+          },
+          {
+            "label": "rebase",
+            "path": "Evidence/Task11/rebase.png",
+            "width": 1280,
+            "height": 720,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "CruiseSpeed": 50,
+            "ElapsedTime": 200.11999205499887,
+            "Distance": 1005.9996027499437,
+            "lane": -1,
+            "light": 3,
+            "emission": 5,
+            "emissionColor": "RGBA(0.08900, 1.97825, 2.50000, 2.50000)",
+            "headlights": true,
+            "flash": false,
+            "flashRemaining": 0,
+            "activeStreet": 3,
+            "moon": 0.65,
+            "exposure": "Skybox=1; no exposure/tonemapping/Bloom overrides",
+            "camera": "(-3.2000, 4.8000, 37.9996)",
+            "player": "(-3.2000, 0.6000, 45.9996)",
+            "offset": 960,
+            "rebases": 1,
+            "seam": 0,
+            "roadAhead": 314.00039725005627,
+            "horizon": [
+              {
+                "lane": -1,
+                "viewport": "(0.50000, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 0,
+                "viewport": "(0.51120, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 1,
+                "viewport": "(0.52240, 0.63811, 126.13080)"
+              }
+            ],
+            "stats": {
+              "drawCalls": 152,
+              "triangles": 11631,
+              "vertices": 25405
+            }
+          },
+          {
+            "label": "rebase-4x3",
+            "path": "Evidence/Task11/rebase-4x3.png",
+            "width": 960,
+            "height": 720,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "CruiseSpeed": 50,
+            "ElapsedTime": 200.11999205499887,
+            "Distance": 1005.9996027499437,
+            "lane": -1,
+            "light": 3,
+            "emission": 5,
+            "emissionColor": "RGBA(0.08900, 1.97825, 2.50000, 2.50000)",
+            "headlights": true,
+            "flash": false,
+            "flashRemaining": 0,
+            "activeStreet": 3,
+            "moon": 0.65,
+            "exposure": "Skybox=1; no exposure/tonemapping/Bloom overrides",
+            "camera": "(-3.2000, 4.8000, 37.9996)",
+            "player": "(-3.2000, 0.6000, 45.9996)",
+            "offset": 960,
+            "rebases": 1,
+            "seam": 0,
+            "roadAhead": 314.00039725005627,
+            "horizon": [
+              {
+                "lane": -1,
+                "viewport": "(0.50000, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 0,
+                "viewport": "(0.51493, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 1,
+                "viewport": "(0.52987, 0.63811, 126.13080)"
+              }
+            ],
+            "stats": {
+              "drawCalls": 152,
+              "triangles": 11631,
+              "vertices": 25405
+            }
+          },
+          {
+            "label": "cap-outer-1",
+            "path": "Evidence/Task11/cap-outer-1.png",
+            "width": 1280,
+            "height": 720,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "CruiseSpeed": 50,
+            "ElapsedTime": 180.2800000011921,
+            "Distance": 14.000000059604645,
+            "lane": -1,
+            "light": 3,
+            "emission": 5,
+            "emissionColor": "RGBA(0.08900, 1.97825, 2.50000, 2.50000)",
+            "headlights": true,
+            "flash": false,
+            "flashRemaining": 0,
+            "activeStreet": 3,
+            "moon": 0.65,
+            "exposure": "Skybox=1; no exposure/tonemapping/Bloom overrides",
+            "camera": "(-3.2000, 4.8000, 6.0000)",
+            "player": "(-3.2000, 0.6000, 14.0000)",
+            "offset": 0,
+            "rebases": 0,
+            "seam": 0,
+            "roadAhead": 345.99999994039536,
+            "horizon": [
+              {
+                "lane": -1,
+                "viewport": "(0.50000, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 0,
+                "viewport": "(0.51120, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 1,
+                "viewport": "(0.52240, 0.63811, 126.13080)"
+              }
+            ],
+            "stats": {
+              "drawCalls": 154,
+              "triangles": 11967,
+              "vertices": 26077
+            }
+          },
+          {
+            "label": "cap-outer-1-4x3",
+            "path": "Evidence/Task11/cap-outer-1-4x3.png",
+            "width": 960,
+            "height": 720,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "CruiseSpeed": 50,
+            "ElapsedTime": 180.2800000011921,
+            "Distance": 14.000000059604645,
+            "lane": -1,
+            "light": 3,
+            "emission": 5,
+            "emissionColor": "RGBA(0.08900, 1.97825, 2.50000, 2.50000)",
+            "headlights": true,
+            "flash": false,
+            "flashRemaining": 0,
+            "activeStreet": 3,
+            "moon": 0.65,
+            "exposure": "Skybox=1; no exposure/tonemapping/Bloom overrides",
+            "camera": "(-3.2000, 4.8000, 6.0000)",
+            "player": "(-3.2000, 0.6000, 14.0000)",
+            "offset": 0,
+            "rebases": 0,
+            "seam": 0,
+            "roadAhead": 345.99999994039536,
+            "horizon": [
+              {
+                "lane": -1,
+                "viewport": "(0.50000, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 0,
+                "viewport": "(0.51493, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 1,
+                "viewport": "(0.52987, 0.63811, 126.13080)"
+              }
+            ],
+            "stats": {
+              "drawCalls": 154,
+              "triangles": 11967,
+              "vertices": 26077
+            }
+          },
+          {
+            "label": "cap-outer1",
+            "path": "Evidence/Task11/cap-outer1.png",
+            "width": 1280,
+            "height": 720,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "CruiseSpeed": 50,
+            "ElapsedTime": 180.84000000357628,
+            "Distance": 42.000000178813934,
+            "lane": 1,
+            "light": 3,
+            "emission": 5,
+            "emissionColor": "RGBA(0.08900, 1.97825, 2.50000, 2.50000)",
+            "headlights": true,
+            "flash": false,
+            "flashRemaining": 0,
+            "activeStreet": 3,
+            "moon": 0.65,
+            "exposure": "Skybox=1; no exposure/tonemapping/Bloom overrides",
+            "camera": "(3.2000, 4.8000, 34.0000)",
+            "player": "(3.2000, 0.6000, 42.0000)",
+            "offset": 0,
+            "rebases": 0,
+            "seam": 0,
+            "roadAhead": 317.99999982118607,
+            "horizon": [
+              {
+                "lane": -1,
+                "viewport": "(0.47760, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 0,
+                "viewport": "(0.48880, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 1,
+                "viewport": "(0.50000, 0.63811, 126.13080)"
+              }
+            ],
+            "stats": {
+              "drawCalls": 154,
+              "triangles": 11967,
+              "vertices": 26077
+            }
+          },
+          {
+            "label": "cap-outer1-4x3",
+            "path": "Evidence/Task11/cap-outer1-4x3.png",
+            "width": 960,
+            "height": 720,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "CruiseSpeed": 50,
+            "ElapsedTime": 180.84000000357628,
+            "Distance": 42.000000178813934,
+            "lane": 1,
+            "light": 3,
+            "emission": 5,
+            "emissionColor": "RGBA(0.08900, 1.97825, 2.50000, 2.50000)",
+            "headlights": true,
+            "flash": false,
+            "flashRemaining": 0,
+            "activeStreet": 3,
+            "moon": 0.65,
+            "exposure": "Skybox=1; no exposure/tonemapping/Bloom overrides",
+            "camera": "(3.2000, 4.8000, 34.0000)",
+            "player": "(3.2000, 0.6000, 42.0000)",
+            "offset": 0,
+            "rebases": 0,
+            "seam": 0,
+            "roadAhead": 317.99999982118607,
+            "horizon": [
+              {
+                "lane": -1,
+                "viewport": "(0.47013, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 0,
+                "viewport": "(0.48507, 0.63811, 126.13080)"
+              },
+              {
+                "lane": 1,
+                "viewport": "(0.50000, 0.63811, 126.13080)"
+              }
+            ],
+            "stats": {
+              "drawCalls": 154,
+              "triangles": 11967,
+              "vertices": 26077
+            }
+          }
+        ],
+        "framesAdvanced": 1114,
+        "created": 304,
+        "misses": 0
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

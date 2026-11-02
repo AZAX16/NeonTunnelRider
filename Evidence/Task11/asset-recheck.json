@@ -1,0 +1,91 @@
+{
+  "success": true,
+  "command": "command test",
+  "data": {
+    "command": "test",
+    "parameters": {},
+    "result": {
+      "status": "completed",
+      "duration": 0.66,
+      "summary": {
+        "total": 9,
+        "passed": 9,
+        "failed": 0,
+        "skipped": 0,
+        "inconclusive": 0
+      },
+      "results": [
+        {
+          "FullName": "NeonTunnelRunner.NightAssetTests.AuthoredCurveClampsActualSpeed(-20,0.3f,1)",
+          "Status": "Passed",
+          "Duration": 0.0431038,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.NightAssetTests.AuthoredCurveClampsActualSpeed(0,0.3f,1)",
+          "Status": "Passed",
+          "Duration": 0.0001923,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.NightAssetTests.AuthoredCurveClampsActualSpeed(12.5f,0.975f,2)",
+          "Status": "Passed",
+          "Duration": 9.8e-05,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.NightAssetTests.AuthoredCurveClampsActualSpeed(22,1.488f,2.76f)",
+          "Status": "Passed",
+          "Duration": 0.0001009,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.NightAssetTests.AuthoredCurveClampsActualSpeed(25,1.65f,3)",
+          "Status": "Passed",
+          "Duration": 0.0001135,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.NightAssetTests.AuthoredCurveClampsActualSpeed(50,3,5)",
+          "Status": "Passed",
+          "Duration": 9.97e-05,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.NightAssetTests.AuthoredCurveClampsActualSpeed(100,3,5)",
+          "Status": "Passed",
+          "Duration": 9.12e-05,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.NightAssetTests.ProductionMeshesHaveFiniteUnitNormalsAndPositiveChildTransforms",
+          "Status": "Passed",
+          "Duration": 0.0696709,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.NightAssetTests.SavedPrefabsKeepGameplayBoxesPivotsEndpointsAndBoundedLights",
+          "Status": "Passed",
+          "Duration": 0.0743807,
+          "Message": null,
+          "StackTrace": null
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

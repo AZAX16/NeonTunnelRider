@@ -1,0 +1,31 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "file": "Docs/Setup/Task11Art.cs",
+      "entry": "NeonTunnelRunner.Task11Art.Configure"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 1806,
+      "executeMs": 4405,
+      "assemblyName": "PipelineRunScript_Task11Art_cb91cf4f39364382b67189656577d624",
+      "success": true,
+      "result": {
+        "saved": "Assets/NeonTunnelRunner/Scenes/Game.unity",
+        "materials": 10,
+        "moon": 0.65,
+        "pixelLightLimit": 7
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

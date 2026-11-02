@@ -1,0 +1,686 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "code": "return new {prefabs=System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Select(UnityEditor.AssetDatabase.FindAssets(\"t:Prefab\",new[]{\"Assets/NeonTunnelRunner/Prefabs\"}), id=> {var g=UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.GameObject>(UnityEditor.AssetDatabase.GUIDToAssetPath(id));return new {g.name,g.layer,children=System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Select(g.GetComponentsInChildren<UnityEngine.Transform>(true),t=>new{t.name,t.gameObject.layer,position=t.localPosition.ToString(),scale=t.localScale.ToString()}))};}))};"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "prefabs": [
+          {
+            "name": "Coin",
+            "layer": 10,
+            "children": [
+              {
+                "name": "Coin",
+                "layer": 10,
+                "position": "(0.00, 0.00, 0.00)",
+                "scale": "(1.00, 1.00, 1.00)"
+              },
+              {
+                "name": "Visual",
+                "layer": 0,
+                "position": "(0.00, 0.00, 0.00)",
+                "scale": "(1.00, 1.00, 1.00)"
+              },
+              {
+                "name": "GoldRing",
+                "layer": 0,
+                "position": "(0.00, 0.00, 0.00)",
+                "scale": "(1.00, 1.00, 1.00)"
+              }
+            ]
+          },
+          {
+            "name": "FuelCan",
+            "layer": 10,
+            "children": [
+              {
+                "name": "FuelCan",
+                "layer": 10,
+                "position": "(0.00, 0.00, 0.00)",
+                "scale": "(1.00, 1.00, 1.00)"
+              },
+              {
+                "name": "Visual",
+                "layer": 0,
+                "position": "(0.00, 0.00, 0.00)",
+                "scale": "(1.00, 1.00, 1.00)"
+              },
+              {
+                "name": "Can",
+                "layer": 0,
+                "position": "(0.00, -0.08, 0.00)",
+                "scale": "(0.65, 0.70, 0.38)"
+              },
+              {
+                "name": "Shoulder",
+                "layer": 0,
+                "position": "(0.00, 0.30, 0.00)",
+                "scale": "(0.50, 0.10, 0.34)"
+              },
+              {
+                "name": "HandleTop",
+                "layer": 0,
+                "position": "(-0.08, 0.47, 0.00)",
+                "scale": "(0.35, 0.08, 0.13)"
+              },
+              {
+                "name": "HandleSide",
+                "layer": 0,
+                "position": "(-0.22, 0.40, 0.00)",
+                "scale": "(0.07, 0.13, 0.13)"
+              },
+              {
+                "name": "HandleSide",
+                "layer": 0,
+                "position": "(0.06, 0.40, 0.00)",
+                "scale": "(0.07, 0.13, 0.13)"
+              },
+              {
+                "name": "Cap",
+                "layer": 0,
+                "position": "(0.22, 0.37, 0.00)",
+                "scale": "(0.15, 0.10, 0.20)"
+              },
+              {
+                "name": "Label",
+                "layer": 0,
+                "position": "(0.00, -0.07, -0.20)",
+                "scale": "(0.38, 0.30, 0.02)"
+              },
+              {
+                "name": "FuelMark",
+                "layer": 0,
+                "position": "(0.00, -0.07, -0.21)",
+                "scale": "(0.08, 0.20, 0.02)"
+              }
+            ]
+          },
+          {
+            "name": "MovingCar",
+            "layer": 9,
+            "children": [
+              {
+                "name": "MovingCar",
+                "layer": 9,
+                "position": "(0.00, 0.00, 0.00)",
+                "scale": "(1.00, 1.00, 1.00)"
+              },
+              {
+                "name": "Visual",
+                "layer": 0,
+                "position": "(0.00, 0.00, 0.00)",
+                "scale": "(1.00, 1.00, 1.00)"
+              },
+              {
+                "name": "Body",
+                "layer": 0,
+                "position": "(0.00, -0.10, 0.00)",
+                "scale": "(2.20, 0.65, 4.40)"
+              },
+              {
+                "name": "Cabin",
+                "layer": 0,
+                "position": "(0.00, 0.37, 0.15)",
+                "scale": "(1.65, 0.45, 1.90)"
+              },
+              {
+                "name": "TailLamp",
+                "layer": 0,
+                "position": "(-0.78, -0.02, -2.21)",
+                "scale": "(0.40, 0.18, 0.04)"
+              },
+              {
+                "name": "TailLamp",
+                "layer": 0,
+                "position": "(0.78, -0.02, -2.21)",
+                "scale": "(0.40, 0.18, 0.04)"
+              }
+            ]
+          },
+          {
+            "name": "StationaryCar",
+            "layer": 9,
+            "children": [
+              {
+                "name": "StationaryCar",
+                "layer": 9,
+                "position": "(0.00, 0.00, 0.00)",
+                "scale": "(1.00, 1.00, 1.00)"
+              },
+              {
+                "name": "Visual",
+                "layer": 0,
+                "position": "(0.00, 0.00, 0.00)",
+                "scale": "(1.00, 1.00, 1.00)"
+              },
+              {
+                "name": "Body",
+                "layer": 0,
+                "position": "(0.00, -0.10, 0.00)",
+                "scale": "(2.20, 0.65, 4.40)"
+              },
+              {
+                "name": "Cabin",
+                "layer": 0,
+                "position": "(0.00, 0.37, 0.15)",
+                "scale": "(1.65, 0.45, 1.90)"
+              },
+              {
+                "name": "TailLamp",
+                "layer": 0,
+                "position": "(-0.78, -0.02, -2.21)",
+                "scale": "(0.40, 0.18, 0.04)"
+              },
+              {
+                "name": "TailLamp",
+                "layer": 0,
+                "position": "(0.78, -0.02, -2.21)",
+                "scale": "(0.40, 0.18, 0.04)"
+              }
+            ]
+          },
+          {
+            "name": "PlayerHovercar",
+            "layer": 8,
+            "children": [
+              {
+                "name": "PlayerHovercar",
+                "layer": 8,
+                "position": "(0.00, 0.60, 0.00)",
+                "scale": "(1.00, 1.00, 1.00)"
+              },
+              {
+                "name": "Visual",
+                "layer": 0,
+                "position": "(0.00, 0.00, 0.00)",
+                "scale": "(1.00, 1.00, 1.00)"
+              },
+              {
+                "name": "Body",
+                "layer": 0,
+                "position": "(0.00, 0.00, 0.00)",
+                "scale": "(1.60, 0.60, 3.40)"
+              },
+              {
+                "name": "Canopy",
+                "layer": 0,
+                "position": "(0.00, 0.30, -0.20)",
+                "scale": "(1.30, 0.25, 1.35)"
+              },
+              {
+                "name": "CameraAnchor",
+                "layer": 0,
+                "position": "(0.00, 4.40, -10.00)",
+                "scale": "(1.00, 1.00, 1.00)"
+              }
+            ]
+          },
+          {
+            "name": "RoadEntrance60",
+            "layer": 0,
+            "children": [
+              {
+                "name": "RoadEntrance60",
+                "layer": 0,
+                "position": "(0.00, 0.00, 0.00)",
+                "scale": "(1.00, 1.00, 1.00)"
+              },
+              {
+                "name": "Surface",
+                "layer": 0,
+                "position": "(0.00, -0.10, 30.00)",
+                "scale": "(9.60, 0.20, 60.00)"
+              },
+              {
+                "name": "LaneMark -4.8",
+                "layer": 0,
+                "position": "(-4.80, 0.01, 30.00)",
+                "scale": "(0.05, 0.02, 60.00)"
+              },
+              {
+                "name": "LaneMark -1.6",
+                "layer": 0,
+                "position": "(-1.60, 0.01, 30.00)",
+                "scale": "(0.05, 0.02, 60.00)"
+              },
+              {
+                "name": "LaneMark 1.6",
+                "layer": 0,
+                "position": "(1.60, 0.01, 30.00)",
+                "scale": "(0.05, 0.02, 60.00)"
+              },
+              {
+                "name": "LaneMark 4.8",
+                "layer": 0,
+                "position": "(4.80, 0.01, 30.00)",
+                "scale": "(0.05, 0.02, 60.00)"
+              },
+              {
+                "name": "OuterRail",
+                "layer": 0,
+                "position": "(-5.05, 0.40, 30.00)",
+                "scale": "(0.30, 0.30, 60.00)"
+              },
+              {
+                "name": "OuterRail",
+                "layer": 0,
+                "position": "(5.05, 0.40, 30.00)",
+                "scale": "(0.30, 0.30, 60.00)"
+              },
+              {
+                "name": "ArchPost",
+                "layer": 0,
+                "position": "(-5.30, 4.20, 30.00)",
+                "scale": "(0.40, 8.40, 0.40)"
+              },
+              {
+                "name": "ArchPost",
+                "layer": 0,
+                "position": "(5.30, 4.20, 30.00)",
+                "scale": "(0.40, 8.40, 0.40)"
+              },
+              {
+                "name": "ArchTop",
+                "layer": 0,
+                "position": "(0.00, 8.50, 30.00)",
+                "scale": "(11.00, 0.40, 0.40)"
+              },
+              {
+                "name": "ArchPost",
+                "layer": 0,
+                "position": "(-5.30, 4.20, 45.00)",
+                "scale": "(0.40, 8.40, 0.40)"
+              },
+              {
+                "name": "ArchPost",
+                "layer": 0,
+                "position": "(5.30, 4.20, 45.00)",
+                "scale": "(0.40, 8.40, 0.40)"
+              },
+              {
+                "name": "ArchTop",
+                "layer": 0,
+                "position": "(0.00, 8.50, 45.00)",
+                "scale": "(11.00, 0.40, 0.40)"
+              },
+              {
+                "name": "Ceiling",
+                "layer": 0,
+                "position": "(0.00, 8.80, 45.00)",
+                "scale": "(11.00, 0.25, 30.00)"
+              },
+              {
+                "name": "EntryMarker",
+                "layer": 0,
+                "position": "(0.00, 0.00, 0.00)",
+                "scale": "(1.00, 1.00, 1.00)"
+              },
+              {
+                "name": "ExitMarker",
+                "layer": 0,
+                "position": "(0.00, 0.00, 60.00)",
+                "scale": "(1.00, 1.00, 1.00)"
+              }
+            ]
+          },
+          {
+            "name": "RoadExit60",
+            "layer": 0,
+            "children": [
+              {
+                "name": "RoadExit60",
+                "layer": 0,
+                "position": "(0.00, 0.00, 0.00)",
+                "scale": "(1.00, 1.00, 1.00)"
+              },
+              {
+                "name": "Surface",
+                "layer": 0,
+                "position": "(0.00, -0.10, 30.00)",
+                "scale": "(9.60, 0.20, 60.00)"
+              },
+              {
+                "name": "LaneMark -4.8",
+                "layer": 0,
+                "position": "(-4.80, 0.01, 30.00)",
+                "scale": "(0.05, 0.02, 60.00)"
+              },
+              {
+                "name": "LaneMark -1.6",
+                "layer": 0,
+                "position": "(-1.60, 0.01, 30.00)",
+                "scale": "(0.05, 0.02, 60.00)"
+              },
+              {
+                "name": "LaneMark 1.6",
+                "layer": 0,
+                "position": "(1.60, 0.01, 30.00)",
+                "scale": "(0.05, 0.02, 60.00)"
+              },
+              {
+                "name": "LaneMark 4.8",
+                "layer": 0,
+                "position": "(4.80, 0.01, 30.00)",
+                "scale": "(0.05, 0.02, 60.00)"
+              },
+              {
+                "name": "OuterRail",
+                "layer": 0,
+                "position": "(-5.05, 0.40, 30.00)",
+                "scale": "(0.30, 0.30, 60.00)"
+              },
+              {
+                "name": "OuterRail",
+                "layer": 0,
+                "position": "(5.05, 0.40, 30.00)",
+                "scale": "(0.30, 0.30, 60.00)"
+              },
+              {
+                "name": "ArchPost",
+                "layer": 0,
+                "position": "(-5.30, 4.20, 0.00)",
+                "scale": "(0.40, 8.40, 0.40)"
+              },
+              {
+                "name": "ArchPost",
+                "layer": 0,
+                "position": "(5.30, 4.20, 0.00)",
+                "scale": "(0.40, 8.40, 0.40)"
+              },
+              {
+                "name": "ArchTop",
+                "layer": 0,
+                "position": "(0.00, 8.50, 0.00)",
+                "scale": "(11.00, 0.40, 0.40)"
+              },
+              {
+                "name": "ArchPost",
+                "layer": 0,
+                "position": "(-5.30, 4.20, 15.00)",
+                "scale": "(0.40, 8.40, 0.40)"
+              },
+              {
+                "name": "ArchPost",
+                "layer": 0,
+                "position": "(5.30, 4.20, 15.00)",
+                "scale": "(0.40, 8.40, 0.40)"
+              },
+              {
+                "name": "ArchTop",
+                "layer": 0,
+                "position": "(0.00, 8.50, 15.00)",
+                "scale": "(11.00, 0.40, 0.40)"
+              },
+              {
+                "name": "Ceiling",
+                "layer": 0,
+                "position": "(0.00, 8.80, 15.00)",
+                "scale": "(11.00, 0.25, 30.00)"
+              },
+              {
+                "name": "EntryMarker",
+                "layer": 0,
+                "position": "(0.00, 0.00, 0.00)",
+                "scale": "(1.00, 1.00, 1.00)"
+              },
+              {
+                "name": "ExitMarker",
+                "layer": 0,
+                "position": "(0.00, 0.00, 60.00)",
+                "scale": "(1.00, 1.00, 1.00)"
+              }
+            ]
+          },
+          {
+            "name": "RoadOpen60",
+            "layer": 0,
+            "children": [
+              {
+                "name": "RoadOpen60",
+                "layer": 0,
+                "position": "(0.00, 0.00, 0.00)",
+                "scale": "(1.00, 1.00, 1.00)"
+              },
+              {
+                "name": "Surface",
+                "layer": 0,
+                "position": "(0.00, -0.10, 30.00)",
+                "scale": "(9.60, 0.20, 60.00)"
+              },
+              {
+                "name": "LaneMark -4.8",
+                "layer": 0,
+                "position": "(-4.80, 0.01, 30.00)",
+                "scale": "(0.05, 0.02, 60.00)"
+              },
+              {
+                "name": "LaneMark -1.6",
+                "layer": 0,
+                "position": "(-1.60, 0.01, 30.00)",
+                "scale": "(0.05, 0.02, 60.00)"
+              },
+              {
+                "name": "LaneMark 1.6",
+                "layer": 0,
+                "position": "(1.60, 0.01, 30.00)",
+                "scale": "(0.05, 0.02, 60.00)"
+              },
+              {
+                "name": "LaneMark 4.8",
+                "layer": 0,
+                "position": "(4.80, 0.01, 30.00)",
+                "scale": "(0.05, 0.02, 60.00)"
+              },
+              {
+                "name": "OuterRail",
+                "layer": 0,
+                "position": "(-5.05, 0.40, 30.00)",
+                "scale": "(0.30, 0.30, 60.00)"
+              },
+              {
+                "name": "OuterRail",
+                "layer": 0,
+                "position": "(5.05, 0.40, 30.00)",
+                "scale": "(0.30, 0.30, 60.00)"
+              },
+              {
+                "name": "LightPost",
+                "layer": 0,
+                "position": "(-5.40, 3.00, 30.00)",
+                "scale": "(0.15, 6.00, 0.15)"
+              },
+              {
+                "name": "Lamp",
+                "layer": 0,
+                "position": "(-5.40, 6.00, 30.00)",
+                "scale": "(0.50, 0.15, 1.50)"
+              },
+              {
+                "name": "LightPost",
+                "layer": 0,
+                "position": "(5.40, 3.00, 30.00)",
+                "scale": "(0.15, 6.00, 0.15)"
+              },
+              {
+                "name": "Lamp",
+                "layer": 0,
+                "position": "(5.40, 6.00, 30.00)",
+                "scale": "(0.50, 0.15, 1.50)"
+              },
+              {
+                "name": "EntryMarker",
+                "layer": 0,
+                "position": "(0.00, 0.00, 0.00)",
+                "scale": "(1.00, 1.00, 1.00)"
+              },
+              {
+                "name": "ExitMarker",
+                "layer": 0,
+                "position": "(0.00, 0.00, 60.00)",
+                "scale": "(1.00, 1.00, 1.00)"
+              }
+            ]
+          },
+          {
+            "name": "RoadTunnel60",
+            "layer": 0,
+            "children": [
+              {
+                "name": "RoadTunnel60",
+                "layer": 0,
+                "position": "(0.00, 0.00, 0.00)",
+                "scale": "(1.00, 1.00, 1.00)"
+              },
+              {
+                "name": "Surface",
+                "layer": 0,
+                "position": "(0.00, -0.10, 30.00)",
+                "scale": "(9.60, 0.20, 60.00)"
+              },
+              {
+                "name": "LaneMark -4.8",
+                "layer": 0,
+                "position": "(-4.80, 0.01, 30.00)",
+                "scale": "(0.05, 0.02, 60.00)"
+              },
+              {
+                "name": "LaneMark -1.6",
+                "layer": 0,
+                "position": "(-1.60, 0.01, 30.00)",
+                "scale": "(0.05, 0.02, 60.00)"
+              },
+              {
+                "name": "LaneMark 1.6",
+                "layer": 0,
+                "position": "(1.60, 0.01, 30.00)",
+                "scale": "(0.05, 0.02, 60.00)"
+              },
+              {
+                "name": "LaneMark 4.8",
+                "layer": 0,
+                "position": "(4.80, 0.01, 30.00)",
+                "scale": "(0.05, 0.02, 60.00)"
+              },
+              {
+                "name": "OuterRail",
+                "layer": 0,
+                "position": "(-5.05, 0.40, 30.00)",
+                "scale": "(0.30, 0.30, 60.00)"
+              },
+              {
+                "name": "OuterRail",
+                "layer": 0,
+                "position": "(5.05, 0.40, 30.00)",
+                "scale": "(0.30, 0.30, 60.00)"
+              },
+              {
+                "name": "ArchPost",
+                "layer": 0,
+                "position": "(-5.30, 4.20, 0.00)",
+                "scale": "(0.40, 8.40, 0.40)"
+              },
+              {
+                "name": "ArchPost",
+                "layer": 0,
+                "position": "(5.30, 4.20, 0.00)",
+                "scale": "(0.40, 8.40, 0.40)"
+              },
+              {
+                "name": "ArchTop",
+                "layer": 0,
+                "position": "(0.00, 8.50, 0.00)",
+                "scale": "(11.00, 0.40, 0.40)"
+              },
+              {
+                "name": "ArchPost",
+                "layer": 0,
+                "position": "(-5.30, 4.20, 15.00)",
+                "scale": "(0.40, 8.40, 0.40)"
+              },
+              {
+                "name": "ArchPost",
+                "layer": 0,
+                "position": "(5.30, 4.20, 15.00)",
+                "scale": "(0.40, 8.40, 0.40)"
+              },
+              {
+                "name": "ArchTop",
+                "layer": 0,
+                "position": "(0.00, 8.50, 15.00)",
+                "scale": "(11.00, 0.40, 0.40)"
+              },
+              {
+                "name": "ArchPost",
+                "layer": 0,
+                "position": "(-5.30, 4.20, 30.00)",
+                "scale": "(0.40, 8.40, 0.40)"
+              },
+              {
+                "name": "ArchPost",
+                "layer": 0,
+                "position": "(5.30, 4.20, 30.00)",
+                "scale": "(0.40, 8.40, 0.40)"
+              },
+              {
+                "name": "ArchTop",
+                "layer": 0,
+                "position": "(0.00, 8.50, 30.00)",
+                "scale": "(11.00, 0.40, 0.40)"
+              },
+              {
+                "name": "ArchPost",
+                "layer": 0,
+                "position": "(-5.30, 4.20, 45.00)",
+                "scale": "(0.40, 8.40, 0.40)"
+              },
+              {
+                "name": "ArchPost",
+                "layer": 0,
+                "position": "(5.30, 4.20, 45.00)",
+                "scale": "(0.40, 8.40, 0.40)"
+              },
+              {
+                "name": "ArchTop",
+                "layer": 0,
+                "position": "(0.00, 8.50, 45.00)",
+                "scale": "(11.00, 0.40, 0.40)"
+              },
+              {
+                "name": "Ceiling",
+                "layer": 0,
+                "position": "(0.00, 8.80, 30.00)",
+                "scale": "(11.00, 0.25, 60.00)"
+              },
+              {
+                "name": "EntryMarker",
+                "layer": 0,
+                "position": "(0.00, 0.00, 0.00)",
+                "scale": "(1.00, 1.00, 1.00)"
+              },
+              {
+                "name": "ExitMarker",
+                "layer": 0,
+                "position": "(0.00, 0.00, 60.00)",
+                "scale": "(1.00, 1.00, 1.00)"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

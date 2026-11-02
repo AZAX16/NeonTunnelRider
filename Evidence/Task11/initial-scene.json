@@ -1,0 +1,38 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "code": "return new { scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene().path, dirty=UnityEngine.SceneManagement.SceneManager.GetActiveScene().isDirty, playing=UnityEditor.EditorApplication.isPlaying, player=UnityEditor.EditorJsonUtility.ToJson(UnityEngine.Object.FindAnyObjectByType<NeonTunnelRunner.PlayerController>()), visuals=UnityEditor.EditorJsonUtility.ToJson(UnityEngine.Object.FindAnyObjectByType<NeonTunnelRunner.VehicleVisuals>()), lights=System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Select(UnityEngine.Object.FindObjectsByType<UnityEngine.Light>(UnityEngine.FindObjectsInactive.Include), l=>new {l.name,l.type,l.intensity,l.range,position=l.transform.position.ToString()})) };"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "scene": "Assets/NeonTunnelRunner/Scenes/Game.unity",
+        "dirty": false,
+        "playing": false,
+        "player": "{\"MonoBehaviour\":{\"m_Enabled\":true,\"m_EditorHideFlags\":0,\"m_Name\":\"\",\"m_EditorClassIdentifier\":\"NeonTunnelRunner.Runtime::NeonTunnelRunner.PlayerController\",\"configuration\":{\"fileID\":11400000,\"guid\":\"50e71278e264ab6f3b9bd533f16b2e30\",\"type\":2},\"body\":{\"instanceID\":0},\"cameraAnchor\":{\"instanceID\":0}}}",
+        "visuals": "{\"MonoBehaviour\":{\"m_Enabled\":true,\"m_EditorHideFlags\":0,\"m_Name\":\"\",\"m_EditorClassIdentifier\":\"NeonTunnelRunner.Runtime::NeonTunnelRunner.VehicleVisuals\",\"gameManager\":{\"instanceID\":0},\"flashRenderer\":{\"instanceID\":0},\"player\":{\"instanceID\":0},\"configuration\":{\"fileID\":11400000,\"guid\":\"8cc0bd840e8337a3fbe4656ff60cee73\",\"type\":2},\"visualPivot\":{\"instanceID\":0},\"flashDuration\":0.25,\"flashColor\":{\"r\":1.0,\"g\":0.18000000715255737,\"b\":0.10000000149011612,\"a\":1.0},\"debugFlashRemaining\":0.0}}",
+        "lights": [
+          {
+            "name": "ReferenceLight",
+            "type": 1,
+            "intensity": 1.4,
+            "range": 10,
+            "position": "(0.00, 0.00, 0.00)"
+          }
+        ]
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

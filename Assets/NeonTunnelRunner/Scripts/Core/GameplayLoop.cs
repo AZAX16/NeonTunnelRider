@@ -127,6 +127,7 @@ namespace NeonTunnelRunner
 
         internal void ApplyState(GameState state)
         {
+            if (vehicleVisuals) vehicleVisuals.RefreshLighting();
             if (state != GameState.Playing)
             {
                 player.ClearQueuedCommand();

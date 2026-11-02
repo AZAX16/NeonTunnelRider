@@ -1,0 +1,824 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "file": "Docs/Setup/Task11Audit.cs",
+      "entry": "NeonTunnelRunner.Task11Audit.Inspect"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 218,
+      "executeMs": 103,
+      "assemblyName": "PipelineRunScript_Task11Audit_23d4cdc2e791407694a9ddf06e596480",
+      "success": true,
+      "result": {
+        "scene": "Assets/NeonTunnelRunner/Scenes/Game.unity",
+        "dirty": false,
+        "playing": false,
+        "instanceClear": true,
+        "timeScale": 1,
+        "camera": {
+          "fieldOfView": 65,
+          "nearClipPlane": 0.1,
+          "farClipPlane": 280,
+          "allowHDR": true,
+          "clearFlags": 1,
+          "renderPostProcessing": true,
+          "volumeMask": 1,
+          "count": 1,
+          "listeners": 1
+        },
+        "lighting": {
+          "sky": "Assets/NeonTunnelRunner/Materials/RetroNightSky.mat",
+          "ambientMode": 1,
+          "ambientSky": "RGBA(0.18000, 0.22000, 0.40000, 1.00000)",
+          "ambientEquator": "RGBA(0.12000, 0.15000, 0.27000, 1.00000)",
+          "ambientGround": "RGBA(0.06000, 0.08000, 0.16000, 1.00000)",
+          "fog": false,
+          "sceneLights": [
+            {
+              "name": "HeadlightRight",
+              "type": "Spot",
+              "intensity": 220,
+              "range": 38,
+              "spotAngle": 50,
+              "innerSpotAngle": 29,
+              "cullingMask": 1793,
+              "shadows": "None",
+              "position": "(0.550, 0.520, 1.550)"
+            },
+            {
+              "name": "ReferenceLight",
+              "type": "Directional",
+              "intensity": 0.65,
+              "range": 10,
+              "spotAngle": 30,
+              "innerSpotAngle": 21.80208,
+              "cullingMask": -1,
+              "shadows": "None",
+              "position": "(0.000, 0.000, 0.000)"
+            },
+            {
+              "name": "HeadlightLeft",
+              "type": "Spot",
+              "intensity": 220,
+              "range": 38,
+              "spotAngle": 50,
+              "innerSpotAngle": 29,
+              "cullingMask": 1793,
+              "shadows": "None",
+              "position": "(-0.550, 0.520, 1.550)"
+            },
+            {
+              "name": "UnderglowLight",
+              "type": "Point",
+              "intensity": 0.3,
+              "range": 3.8,
+              "spotAngle": 70,
+              "innerSpotAngle": 40.6,
+              "cullingMask": 1793,
+              "shadows": "None",
+              "position": "(0.000, 0.230, -0.200)"
+            }
+          ]
+        },
+        "pipeline": {
+          "quality": "PC",
+          "activePipeline": "Assets/NeonTunnelRunner/Settings/URP/PC_RPAsset.asset",
+          "supportsHDR": true,
+          "maxAdditionalLightsCount": 7,
+          "supportsMainLightShadows": true,
+          "supportsAdditionalLightShadows": true,
+          "renderer": "PC_Renderer Forward; existing SSAO retained",
+          "volume": "Assets/NeonTunnelRunner/Settings/Volumes/GlobalVolumeProfile.asset",
+          "overrides": []
+        },
+        "materials": [
+          {
+            "path": "Assets/NeonTunnelRunner/Materials/CoinGold.mat",
+            "shader": "Universal Render Pipeline/Lit",
+            "baseColor": "RGBA(1.00000, 0.67954, 0.14413, 1.00000)",
+            "emission": "RGBA(0.65000, 0.44170, 0.09368, 0.65000)",
+            "keyword": true
+          },
+          {
+            "path": "Assets/NeonTunnelRunner/Materials/DepthViolet.mat",
+            "shader": "Universal Render Pipeline/Lit",
+            "baseColor": "RGBA(0.25818, 0.10702, 1.00000, 1.00000)",
+            "emission": "RGBA(0.03873, 0.01605, 0.15000, 0.15000)",
+            "keyword": true
+          },
+          {
+            "path": "Assets/NeonTunnelRunner/Materials/EnergyMagenta.mat",
+            "shader": "Universal Render Pipeline/Lit",
+            "baseColor": "RGBA(1.00000, 0.06848, 0.57758, 1.00000)",
+            "emission": "RGBA(0.65000, 0.04451, 0.37543, 0.65000)",
+            "keyword": true
+          },
+          {
+            "path": "Assets/NeonTunnelRunner/Materials/FuelMint.mat",
+            "shader": "Universal Render Pipeline/Lit",
+            "baseColor": "RGBA(0.14126, 0.91310, 0.39676, 1.00000)",
+            "emission": "RGBA(0.07769, 0.50220, 0.21822, 0.55000)",
+            "keyword": true
+          },
+          {
+            "path": "Assets/NeonTunnelRunner/Materials/MovingCar.mat",
+            "shader": "Universal Render Pipeline/Lit",
+            "baseColor": "RGBA(1.00000, 0.25818, 0.07421, 1.00000)",
+            "emission": "RGBA(0.18000, 0.04647, 0.01336, 0.18000)",
+            "keyword": true
+          },
+          {
+            "path": "Assets/NeonTunnelRunner/Materials/PlayerIndigo.mat",
+            "shader": "Universal Render Pipeline/Lit",
+            "baseColor": "RGBA(0.00700, 0.01096, 0.04971, 1.00000)",
+            "emission": "RGBA(0.00280, 0.00438, 0.01988, 0.40000)",
+            "keyword": true
+          },
+          {
+            "path": "Assets/NeonTunnelRunner/Materials/ReferenceMarking.mat",
+            "shader": "Universal Render Pipeline/Lit",
+            "baseColor": "RGBA(0.03560, 0.79130, 1.00000, 1.00000)",
+            "emission": "RGBA(0.01780, 0.39565, 0.50000, 0.50000)",
+            "keyword": true
+          },
+          {
+            "path": "Assets/NeonTunnelRunner/Materials/ReferenceRoad.mat",
+            "shader": "Universal Render Pipeline/Lit",
+            "baseColor": "RGBA(0.00700, 0.01096, 0.04971, 1.00000)",
+            "emission": "RGBA(0.00000, 0.00000, 0.00000, 0.00000)",
+            "keyword": true
+          },
+          {
+            "path": "Assets/NeonTunnelRunner/Materials/RetroNightSky.mat",
+            "shader": "Skybox/Panoramic",
+            "baseColor": null,
+            "emission": null,
+            "keyword": false
+          },
+          {
+            "path": "Assets/NeonTunnelRunner/Materials/RoadArchitecture.mat",
+            "shader": "Universal Render Pipeline/Lit",
+            "baseColor": "RGBA(0.00700, 0.01096, 0.04971, 1.00000)",
+            "emission": "RGBA(0.00126, 0.00197, 0.00895, 0.18000)",
+            "keyword": true
+          },
+          {
+            "path": "Assets/NeonTunnelRunner/Materials/StationaryCar.mat",
+            "shader": "Universal Render Pipeline/Lit",
+            "baseColor": "RGBA(1.00000, 0.25818, 0.07421, 1.00000)",
+            "emission": "RGBA(0.30000, 0.07745, 0.02226, 0.30000)",
+            "keyword": true
+          }
+        ],
+        "prefabs": [
+          {
+            "path": "Assets/NeonTunnelRunner/Prefabs/Interactables/Coin.prefab",
+            "renderers": 1,
+            "triangles": 96,
+            "materials": 1,
+            "materialAssignments": [
+              {
+                "name": "GoldRing",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/CoinGold.mat"
+                ]
+              }
+            ],
+            "colliders": 1,
+            "lights": []
+          },
+          {
+            "path": "Assets/NeonTunnelRunner/Prefabs/Interactables/FuelCan.prefab",
+            "renderers": 2,
+            "triangles": 140,
+            "materials": 2,
+            "materialAssignments": [
+              {
+                "name": "MintCan",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/FuelMint.mat"
+                ]
+              },
+              {
+                "name": "CanCapAndStamp",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/RoadArchitecture.mat"
+                ]
+              }
+            ],
+            "colliders": 1,
+            "lights": []
+          },
+          {
+            "path": "Assets/NeonTunnelRunner/Prefabs/Interactables/MovingCar.prefab",
+            "renderers": 3,
+            "triangles": 160,
+            "materials": 2,
+            "materialAssignments": [
+              {
+                "name": "MovingHull",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/MovingCar.mat"
+                ]
+              },
+              {
+                "name": "MovingChassis",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/RoadArchitecture.mat"
+                ]
+              },
+              {
+                "name": "MovingLamps",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/MovingCar.mat"
+                ]
+              }
+            ],
+            "colliders": 1,
+            "lights": []
+          },
+          {
+            "path": "Assets/NeonTunnelRunner/Prefabs/Interactables/StationaryCar.prefab",
+            "renderers": 3,
+            "triangles": 196,
+            "materials": 2,
+            "materialAssignments": [
+              {
+                "name": "StationaryHull",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/StationaryCar.mat"
+                ]
+              },
+              {
+                "name": "StationaryChassis",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/RoadArchitecture.mat"
+                ]
+              },
+              {
+                "name": "StationaryLamps",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/StationaryCar.mat"
+                ]
+              }
+            ],
+            "colliders": 1,
+            "lights": []
+          },
+          {
+            "path": "Assets/NeonTunnelRunner/Prefabs/Player/PlayerHovercar.prefab",
+            "renderers": 6,
+            "triangles": 296,
+            "materials": 3,
+            "materialAssignments": [
+              {
+                "name": "Body",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/PlayerIndigo.mat"
+                ]
+              },
+              {
+                "name": "Canopy",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/ReferenceMarking.mat"
+                ]
+              },
+              {
+                "name": "TwinThrusters",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/EnergyMagenta.mat"
+                ]
+              },
+              {
+                "name": "DeckVents",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/PlayerIndigo.mat"
+                ]
+              },
+              {
+                "name": "Underglow",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/ReferenceMarking.mat"
+                ]
+              },
+              {
+                "name": "HeadlightLenses",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/ReferenceMarking.mat"
+                ]
+              }
+            ],
+            "colliders": 1,
+            "lights": [
+              {
+                "name": "HeadlightLeft",
+                "type": "Spot",
+                "intensity": 220,
+                "range": 38,
+                "spotAngle": 50,
+                "cullingMask": 1793,
+                "enabled": true,
+                "position": "(-0.550, -0.080, 1.550)",
+                "euler": "(3.000, 353.000, 0.000)",
+                "shadows": "None"
+              },
+              {
+                "name": "HeadlightRight",
+                "type": "Spot",
+                "intensity": 220,
+                "range": 38,
+                "spotAngle": 50,
+                "cullingMask": 1793,
+                "enabled": true,
+                "position": "(0.550, -0.080, 1.550)",
+                "euler": "(3.000, 7.000, 0.000)",
+                "shadows": "None"
+              },
+              {
+                "name": "UnderglowLight",
+                "type": "Point",
+                "intensity": 0.3,
+                "range": 3.8,
+                "spotAngle": 70,
+                "cullingMask": 1793,
+                "enabled": true,
+                "position": "(0.000, -0.370, -0.200)",
+                "euler": "(0.000, 0.000, 0.000)",
+                "shadows": "None"
+              }
+            ]
+          },
+          {
+            "path": "Assets/NeonTunnelRunner/Prefabs/Road/RoadEntrance60.prefab",
+            "renderers": 6,
+            "triangles": 576,
+            "materials": 6,
+            "materialAssignments": [
+              {
+                "name": "Surface",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/ReferenceRoad.mat"
+                ]
+              },
+              {
+                "name": "RoadEntrance60LaneMarks",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/ReferenceMarking.mat"
+                ]
+              },
+              {
+                "name": "RoadEntrance60Structure",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/RoadArchitecture.mat"
+                ]
+              },
+              {
+                "name": "RoadEntrance60ArchTrim",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/EnergyMagenta.mat"
+                ]
+              },
+              {
+                "name": "RoadEntrance60Skyline",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/PlayerIndigo.mat"
+                ]
+              },
+              {
+                "name": "RoadEntrance60Windows",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/DepthViolet.mat"
+                ]
+              }
+            ],
+            "colliders": 1,
+            "lights": [
+              {
+                "name": "Streetlight",
+                "type": "Spot",
+                "intensity": 20,
+                "range": 20,
+                "spotAngle": 110,
+                "cullingMask": 1793,
+                "enabled": false,
+                "position": "(-5.100, 5.900, 20.000)",
+                "euler": "(62.000, 90.000, 0.000)",
+                "shadows": "None"
+              }
+            ]
+          },
+          {
+            "path": "Assets/NeonTunnelRunner/Prefabs/Road/RoadExit60.prefab",
+            "renderers": 6,
+            "triangles": 576,
+            "materials": 6,
+            "materialAssignments": [
+              {
+                "name": "Surface",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/ReferenceRoad.mat"
+                ]
+              },
+              {
+                "name": "RoadExit60LaneMarks",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/ReferenceMarking.mat"
+                ]
+              },
+              {
+                "name": "RoadExit60Structure",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/RoadArchitecture.mat"
+                ]
+              },
+              {
+                "name": "RoadExit60ArchTrim",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/EnergyMagenta.mat"
+                ]
+              },
+              {
+                "name": "RoadExit60Skyline",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/PlayerIndigo.mat"
+                ]
+              },
+              {
+                "name": "RoadExit60Windows",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/DepthViolet.mat"
+                ]
+              }
+            ],
+            "colliders": 1,
+            "lights": [
+              {
+                "name": "Streetlight",
+                "type": "Spot",
+                "intensity": 20,
+                "range": 20,
+                "spotAngle": 110,
+                "cullingMask": 1793,
+                "enabled": false,
+                "position": "(-5.100, 5.900, 20.000)",
+                "euler": "(62.000, 90.000, 0.000)",
+                "shadows": "None"
+              }
+            ]
+          },
+          {
+            "path": "Assets/NeonTunnelRunner/Prefabs/Road/RoadOpen60.prefab",
+            "renderers": 6,
+            "triangles": 300,
+            "materials": 6,
+            "materialAssignments": [
+              {
+                "name": "Surface",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/ReferenceRoad.mat"
+                ]
+              },
+              {
+                "name": "RoadOpen60LaneMarks",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/ReferenceMarking.mat"
+                ]
+              },
+              {
+                "name": "RoadOpen60Structure",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/RoadArchitecture.mat"
+                ]
+              },
+              {
+                "name": "RoadOpen60ArchTrim",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/EnergyMagenta.mat"
+                ]
+              },
+              {
+                "name": "RoadOpen60Skyline",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/PlayerIndigo.mat"
+                ]
+              },
+              {
+                "name": "RoadOpen60Windows",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/DepthViolet.mat"
+                ]
+              }
+            ],
+            "colliders": 1,
+            "lights": [
+              {
+                "name": "Streetlight",
+                "type": "Spot",
+                "intensity": 20,
+                "range": 20,
+                "spotAngle": 110,
+                "cullingMask": 1793,
+                "enabled": false,
+                "position": "(-5.100, 5.900, 20.000)",
+                "euler": "(62.000, 90.000, 0.000)",
+                "shadows": "None"
+              }
+            ]
+          },
+          {
+            "path": "Assets/NeonTunnelRunner/Prefabs/Road/RoadTunnel60.prefab",
+            "renderers": 6,
+            "triangles": 816,
+            "materials": 6,
+            "materialAssignments": [
+              {
+                "name": "Surface",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/ReferenceRoad.mat"
+                ]
+              },
+              {
+                "name": "RoadTunnel60LaneMarks",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/ReferenceMarking.mat"
+                ]
+              },
+              {
+                "name": "RoadTunnel60Structure",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/RoadArchitecture.mat"
+                ]
+              },
+              {
+                "name": "RoadTunnel60ArchTrim",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/EnergyMagenta.mat"
+                ]
+              },
+              {
+                "name": "RoadTunnel60Skyline",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/PlayerIndigo.mat"
+                ]
+              },
+              {
+                "name": "RoadTunnel60Windows",
+                "materials": [
+                  "Assets/NeonTunnelRunner/Materials/DepthViolet.mat"
+                ]
+              }
+            ],
+            "colliders": 1,
+            "lights": [
+              {
+                "name": "Streetlight",
+                "type": "Spot",
+                "intensity": 20,
+                "range": 20,
+                "spotAngle": 110,
+                "cullingMask": 1793,
+                "enabled": false,
+                "position": "(-5.100, 5.900, 20.000)",
+                "euler": "(62.000, 90.000, 0.000)",
+                "shadows": "None"
+              }
+            ]
+          }
+        ],
+        "meshes": [
+          {
+            "name": "Body",
+            "vertexCount": 128,
+            "triangles": 56,
+            "bounds": "Center: (0.0000, 0.0200, 0.0100), Extents: (0.8400, 0.3100, 1.7100)"
+          },
+          {
+            "name": "CanCapAndStamp",
+            "vertexCount": 120,
+            "triangles": 60,
+            "bounds": "Center: (0.0481, 0.0596, 0.0000), Extents: (0.2419, 0.3704, 0.1975)"
+          },
+          {
+            "name": "Canopy",
+            "vertexCount": 60,
+            "triangles": 24,
+            "bounds": "Center: (0.0000, 0.2550, 0.2000), Extents: (0.3200, 0.1350, 0.5500)"
+          },
+          {
+            "name": "CoinRing",
+            "vertexCount": 192,
+            "triangles": 96,
+            "bounds": "Center: (0.0000, 0.0000, 0.0000), Extents: (0.4300, 0.4300, 0.0750)"
+          },
+          {
+            "name": "DeckVents",
+            "vertexCount": 192,
+            "triangles": 96,
+            "bounds": "Center: (0.0000, 0.1900, -0.8550), Extents: (0.6250, 0.0125, 0.2875)"
+          },
+          {
+            "name": "HeadlightLenses",
+            "vertexCount": 48,
+            "triangles": 24,
+            "bounds": "Center: (0.0000, -0.0450, 1.5900), Extents: (0.5950, 0.0350, 0.0350)"
+          },
+          {
+            "name": "MintCan",
+            "vertexCount": 176,
+            "triangles": 80,
+            "bounds": "Center: (0.0000, 0.0363, 0.0000), Extents: (0.3400, 0.4763, 0.1800)"
+          },
+          {
+            "name": "MovingChassis",
+            "vertexCount": 144,
+            "triangles": 72,
+            "bounds": "Center: (0.0000, -0.0975, -0.3025), Extents: (1.0400, 0.4425, 1.8275)"
+          },
+          {
+            "name": "MovingHull",
+            "vertexCount": 160,
+            "triangles": 64,
+            "bounds": "Center: (0.0000, -0.0100, 0.0000), Extents: (1.0400, 0.3900, 2.0500)"
+          },
+          {
+            "name": "MovingLamps",
+            "vertexCount": 48,
+            "triangles": 24,
+            "bounds": "Center: (0.0000, 0.0400, -2.1100), Extents: (0.8750, 0.0375, 0.0275)"
+          },
+          {
+            "name": "RoadEntrance60ArchTrim",
+            "vertexCount": 288,
+            "triangles": 144,
+            "bounds": "Center: (0.0000, 4.3163, 32.5000), Extents: (5.5000, 4.3163, 13.0500)"
+          },
+          {
+            "name": "RoadEntrance60LaneMarks",
+            "vertexCount": 96,
+            "triangles": 48,
+            "bounds": "Center: (0.0000, 0.0120, 30.0000), Extents: (4.8325, 0.0100, 30.0000)"
+          },
+          {
+            "name": "RoadEntrance60Skyline",
+            "vertexCount": 192,
+            "triangles": 96,
+            "bounds": "Center: (0.0000, 6.5000, 28.0000), Extents: (38.7500, 7.5000, 25.0000)"
+          },
+          {
+            "name": "RoadEntrance60Structure",
+            "vertexCount": 456,
+            "triangles": 228,
+            "bounds": "Center: (0.0000, 4.5025, 30.0000), Extents: (6.3700, 4.5025, 30.0000)"
+          },
+          {
+            "name": "RoadEntrance60Windows",
+            "vertexCount": 96,
+            "triangles": 48,
+            "bounds": "Center: (0.0000, 7.0000, 21.0000), Extents: (29.2525, 3.5450, 15.5000)"
+          },
+          {
+            "name": "RoadExit60ArchTrim",
+            "vertexCount": 288,
+            "triangles": 144,
+            "bounds": "Center: (0.0000, 4.3163, 22.6338), Extents: (5.5000, 4.3163, 22.9163)"
+          },
+          {
+            "name": "RoadExit60LaneMarks",
+            "vertexCount": 96,
+            "triangles": 48,
+            "bounds": "Center: (0.0000, 0.0120, 30.0000), Extents: (4.8325, 0.0100, 30.0000)"
+          },
+          {
+            "name": "RoadExit60Skyline",
+            "vertexCount": 192,
+            "triangles": 96,
+            "bounds": "Center: (0.0000, 6.5000, 28.0000), Extents: (38.7500, 7.5000, 25.0000)"
+          },
+          {
+            "name": "RoadExit60Structure",
+            "vertexCount": 456,
+            "triangles": 228,
+            "bounds": "Center: (0.0000, 4.5025, 29.8750), Extents: (6.3700, 4.5025, 30.1250)"
+          },
+          {
+            "name": "RoadExit60Windows",
+            "vertexCount": 96,
+            "triangles": 48,
+            "bounds": "Center: (0.0000, 7.0000, 21.0000), Extents: (29.2525, 3.5450, 15.5000)"
+          },
+          {
+            "name": "RoadOpen60ArchTrim",
+            "vertexCount": 48,
+            "triangles": 24,
+            "bounds": "Center: (0.0000, 6.0000, 32.5000), Extents: (5.5000, 0.0350, 13.0500)"
+          },
+          {
+            "name": "RoadOpen60LaneMarks",
+            "vertexCount": 96,
+            "triangles": 48,
+            "bounds": "Center: (0.0000, 0.0120, 30.0000), Extents: (4.8325, 0.0100, 30.0000)"
+          },
+          {
+            "name": "RoadOpen60Skyline",
+            "vertexCount": 192,
+            "triangles": 96,
+            "bounds": "Center: (0.0000, 6.5000, 28.0000), Extents: (38.7500, 7.5000, 25.0000)"
+          },
+          {
+            "name": "RoadOpen60Structure",
+            "vertexCount": 144,
+            "triangles": 72,
+            "bounds": "Center: (0.0000, 3.0823, 30.0000), Extents: (6.3700, 3.0823, 30.0000)"
+          },
+          {
+            "name": "RoadOpen60Windows",
+            "vertexCount": 96,
+            "triangles": 48,
+            "bounds": "Center: (0.0000, 7.0000, 21.0000), Extents: (29.2525, 3.5450, 15.5000)"
+          },
+          {
+            "name": "RoadTunnel60ArchTrim",
+            "vertexCount": 528,
+            "triangles": 264,
+            "bounds": "Center: (0.0000, 4.3163, 22.6338), Extents: (5.5000, 4.3163, 22.9163)"
+          },
+          {
+            "name": "RoadTunnel60LaneMarks",
+            "vertexCount": 96,
+            "triangles": 48,
+            "bounds": "Center: (0.0000, 0.0120, 30.0000), Extents: (4.8325, 0.0100, 30.0000)"
+          },
+          {
+            "name": "RoadTunnel60Skyline",
+            "vertexCount": 192,
+            "triangles": 96,
+            "bounds": "Center: (0.0000, 6.5000, 28.0000), Extents: (38.7500, 7.5000, 25.0000)"
+          },
+          {
+            "name": "RoadTunnel60Structure",
+            "vertexCount": 696,
+            "triangles": 348,
+            "bounds": "Center: (0.0000, 4.5025, 29.8750), Extents: (6.3700, 4.5025, 30.1250)"
+          },
+          {
+            "name": "RoadTunnel60Windows",
+            "vertexCount": 96,
+            "triangles": 48,
+            "bounds": "Center: (0.0000, 7.0000, 21.0000), Extents: (29.2525, 3.5450, 15.5000)"
+          },
+          {
+            "name": "StationaryChassis",
+            "vertexCount": 144,
+            "triangles": 72,
+            "bounds": "Center: (0.0000, -0.0075, -0.3025), Extents: (1.0400, 0.5325, 1.8275)"
+          },
+          {
+            "name": "StationaryHull",
+            "vertexCount": 160,
+            "triangles": 64,
+            "bounds": "Center: (0.0000, 0.0800, 0.0000), Extents: (1.0400, 0.4800, 2.0500)"
+          },
+          {
+            "name": "StationaryLamps",
+            "vertexCount": 120,
+            "triangles": 60,
+            "bounds": "Center: (0.0000, 0.2263, -1.0813), Extents: (0.8750, 0.3738, 1.0563)"
+          },
+          {
+            "name": "TwinThrusters",
+            "vertexCount": 96,
+            "triangles": 48,
+            "bounds": "Center: (0.0000, 0.0988, -1.1550), Extents: (0.7800, 0.0938, 0.5350)"
+          },
+          {
+            "name": "Underglow",
+            "vertexCount": 96,
+            "triangles": 48,
+            "bounds": "Center: (0.0000, -0.2650, -0.2500), Extents: (0.8300, 0.0675, 1.5000)"
+          }
+        ],
+        "playerAssemblies": [
+          {
+            "name": "NeonTunnelRunner.Runtime",
+            "references": [
+              "Unity.InputSystem",
+              "UnityEngine.UI",
+              "Unity.TextMeshPro"
+            ]
+          }
+        ]
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

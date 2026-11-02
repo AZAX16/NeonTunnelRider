@@ -10,6 +10,8 @@ namespace NeonTunnelRunner
         [SerializeField] private RoadEnvironment environment;
         [SerializeField] private Transform entry;
         [SerializeField] private Transform exit;
+        [SerializeField] private Light streetlight;
+        public Light Streetlight => streetlight;
         public RoadEnvironment Environment => environment;
         public Transform Entry => entry;
         public Transform Exit => exit;
@@ -30,15 +32,20 @@ namespace NeonTunnelRunner
             SegmentIndex = context.SpawnSequence;
             AbsoluteStart = context.AbsoluteDistance;
             DecorationVariant = WorldRandom.Sample(context.Seed, SegmentIndex, WorldRandom.RoadStream) % 3;
+            if (streetlight) streetlight.enabled = false;
         }
         public override void OnReturn()
         {
+            if (streetlight) streetlight.enabled = false;
             SegmentIndex = 0;
             AbsoluteStart = 0d;
             DecorationVariant = 0;
             base.OnReturn();
         }
         internal void SetOrigin(double offset) => transform.localPosition = new Vector3(0f, 0f, (float)(AbsoluteStart - offset));
+        // One source per 60m module and a 170m selection window bound enabled sources to three.
+        internal void RefreshLighting(double playerDistance)
+        { if (streetlight) streetlight.enabled = IsRented && Math.Abs(AbsoluteStart + 30d - playerDistance) <= 85d; }
     }
 
     // Counter-based streams: no traversal/history dependency, UnityEngine.Random or cosmetic state.

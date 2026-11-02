@@ -25,3 +25,6 @@ MonoBehaviour:
   bobFrequency: 1.4
   impulseMagnitude: 0.085
   impulseDuration: 0.24
+  neonMaximumSpeed: 50
+  underglowLightRange: {x: 0.3, y: 3}
+  underglowEmissionRange: {x: 1, y: 5}

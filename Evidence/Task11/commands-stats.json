@@ -1,0 +1,48 @@
+{
+  "success": true,
+  "command": "command",
+  "data": {
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    },
+    "server": {
+      "version": "0.0.1",
+      "port": 7800
+    },
+    "commands": [
+      {
+        "command": "diagnostics get_performance",
+        "name": "get_performance",
+        "group": "diagnostics",
+        "description": "Read render, memory, and frame-timing stats (structured, read-only).",
+        "tags": [
+          "observability/performance"
+        ],
+        "package": "Unity.Pipeline.Editor",
+        "mainThreadRequired": true,
+        "parameters": [],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "diagnostics get_performance",
+          "description": "Read render, memory, and frame-timing stats (structured, read-only).",
+          "properties": {},
+          "required": [],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": true,
+            "methodName": "Unity.Pipeline.Editor.Commands.Observability.PerformanceCommands.GetPerformance"
+          }
+        }
+      }
+    ],
+    "count": 1,
+    "total": 1,
+    "offset": 0,
+    "limit": null
+  },
+  "errors": [],
+  "warnings": []
+}

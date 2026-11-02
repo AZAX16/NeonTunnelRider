@@ -1,0 +1,42 @@
+{
+  "method": "Visual inspection of real saved-Game runtime PNGs via view_image; no concepts or recolored mockups used",
+  "passed": true,
+  "viewports": [
+    [
+      1280,
+      720
+    ],
+    [
+      960,
+      720
+    ]
+  ],
+  "images": [
+    "near-start.png",
+    "cap.png",
+    "paused.png",
+    "tunnel.png",
+    "entrance-4x3.png",
+    "cap-tunnel-4x3.png",
+    "cap-outer-1-4x3.png",
+    "cap-outer1-4x3.png",
+    "native-open.png"
+  ],
+  "observations": [
+    "Starry open sky and dark skyline stay visible; tunnel roof shoulders retain full-width >=8m clearance.",
+    "Two headlight road cones and emissive rear/side underbody remain visible with Bloom disabled.",
+    "Three lane definitions and 120m measured horizon remain clear; outer-lane player framing retained.",
+    "Warm parked/lower-moving silhouettes, gold ring hole and mint can/handle/stamp distinguish gameplay roles.",
+    "Measured 22/50/Paused actual0 light/emission differences are supported by visual-route.json; fixed sky exposure1 and no Volume overrides."
+  ],
+  "requirementScope": {
+    "R29": "Runtime night images",
+    "R30": "Actual panoramic skybox visible",
+    "R31": "Dark readable road/hazards",
+    "R32": "Two real spotlights plus on/off captures",
+    "R33": "Point Light and emissive underbody",
+    "R34": "Actual-speed/state mapping with measured values",
+    "R35": "Recommended streetlight geometry and bounded lights implemented",
+    "R28": "Art progress; final presentation grading pending"
+  }
+}

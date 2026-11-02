@@ -1,0 +1,26 @@
+{
+  "success": false,
+  "command": "recompile",
+  "data": {
+    "status": "completed",
+    "compiling": false,
+    "failed": true,
+    "compilationFailed": true,
+    "errors": [
+      {
+        "type": "compile-error",
+        "raw": "Assets/NeonTunnelRunner/Tests/PlayMode/NeonLightingTests.cs(66,25): error CS0266: Cannot implicitly convert type 'ulong' to 'int'. An explicit conversion exists (are you missing a cast?)",
+        "file": "Assets/NeonTunnelRunner/Tests/PlayMode/NeonLightingTests.cs",
+        "line": 66,
+        "column": 25,
+        "code": "CS0266",
+        "message": "Cannot implicitly convert type 'ulong' to 'int'. An explicit conversion exists (are you missing a cast?)"
+      }
+    ],
+    "warnings": [],
+    "summary": {
+      "errors": 1,
+      "warnings": 0
+    }
+  }
+}

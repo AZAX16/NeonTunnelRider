@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "code": "foreach(var name in new[]{\"RoadOpen60\",\"RoadTunnel60\",\"RoadEntrance60\",\"RoadExit60\"}){var path=\"Assets/NeonTunnelRunner/Prefabs/Road/\"+name+\".prefab\";var p=UnityEditor.PrefabUtility.LoadPrefabContents(path);try{p.transform.Find(\"Scenery/Streetlight\").localPosition=new UnityEngine.Vector3(-5.1f,5.9f,20);UnityEditor.PrefabUtility.SaveAsPrefabAsset(p,path);}finally{UnityEditor.PrefabUtility.UnloadPrefabContents(p);}}UnityEditor.AssetDatabase.SaveAssets();return true;"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": true
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

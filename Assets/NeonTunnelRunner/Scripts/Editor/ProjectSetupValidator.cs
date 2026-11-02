@@ -309,6 +309,15 @@ namespace NeonTunnelRunner
                 loop.Visuals.FlashRenderer.transform.IsChildOf(loop.Player.transform.Find("Visual")) &&
                 loop.Visuals.FlashRenderer.sharedMaterial.HasProperty("_BaseColor"),
                 "Assign one enabled VehicleVisuals with its scene owner and supported player visual renderer.",errors);
+            var visuals=loop.Visuals;
+            Require(visuals && visuals.LeftHeadlight && visuals.RightHeadlight && visuals.UnderglowLight && visuals.UnderglowRenderer &&
+                visuals.LeftHeadlight!=visuals.RightHeadlight && visuals.LeftHeadlight.type==LightType.Spot && visuals.RightHeadlight.type==LightType.Spot &&
+                visuals.LeftHeadlight.transform.IsChildOf(loop.Player.transform) && visuals.RightHeadlight.transform.IsChildOf(loop.Player.transform) &&
+                visuals.UnderglowLight.transform.IsChildOf(loop.Player.transform) && visuals.UnderglowRenderer.transform.IsChildOf(visuals.VisualPivot) &&
+                visuals.UnderglowRenderer.sharedMaterial && visuals.UnderglowRenderer.sharedMaterial.IsKeywordEnabled("_EMISSION"),
+                "Assign the two player headlight spots and the child-owned underglow Light/emissive renderer.",errors);
+            Require(RenderSettings.skybox && objects.SelectMany(g=>g.GetComponents<Camera>()).All(c=>c.clearFlags==CameraClearFlags.Skybox),
+                "Assign the night skybox and render it through the Game camera.",errors);
             if (!loop.Planner.ValidateRequired(out string error)) errors.Add(error);
             Require(loop.Player.gameObject.layer==LayerMask.NameToLayer("Player"),"Assign Player layer.",errors);
             for (int i=0;i<manager.Pools.Configuration.EntryCount;i++)

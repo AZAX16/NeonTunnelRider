@@ -1,0 +1,321 @@
+{
+  "success": true,
+  "command": "command",
+  "data": {
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    },
+    "server": {
+      "version": "0.0.1",
+      "port": 7800
+    },
+    "commands": [
+      {
+        "command": "editor.playmode list_instances",
+        "name": "list_instances",
+        "group": "editor.playmode",
+        "description": "List running Editor instances reachable over Pipeline (this Editor + its MPPM virtual player clones). Connect to one with 'unity command --project-path <its projectPath>'.",
+        "tags": [
+          "editor/instances"
+        ],
+        "package": "Unity.Pipeline.Editor",
+        "mainThreadRequired": false,
+        "parameters": [],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "editor.playmode list_instances",
+          "description": "List running Editor instances reachable over Pipeline (this Editor + its MPPM virtual player clones). Connect to one with 'unity command --project-path <its projectPath>'.",
+          "properties": {},
+          "required": [],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": false,
+            "methodName": "Unity.Pipeline.Editor.Commands.InstanceCommands.ListInstances"
+          }
+        }
+      },
+      {
+        "command": "editor.playmode pause",
+        "name": "pause",
+        "group": "editor.playmode",
+        "description": "Toggle pause state of Unity Editor play mode",
+        "tags": [
+          "editor/playmode"
+        ],
+        "package": "Unity.Pipeline.Editor",
+        "mainThreadRequired": true,
+        "parameters": [],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "editor.playmode pause",
+          "description": "Toggle pause state of Unity Editor play mode",
+          "properties": {},
+          "required": [],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": true,
+            "methodName": "Unity.Pipeline.Editor.Commands.PlayModeCommands.Pause"
+          }
+        }
+      },
+      {
+        "command": "editor.playmode set_run_in_background",
+        "name": "set_run_in_background",
+        "group": "editor.playmode",
+        "description": "Override the project's Run In Background Player Setting, recording enough state to restore it later and to keep it out of builds",
+        "tags": [
+          "editor/playmode"
+        ],
+        "package": "Unity.Pipeline.Editor",
+        "mainThreadRequired": true,
+        "parameters": [
+          {
+            "name": "enable",
+            "description": "Turn the override on (true, default) or stop it (false) and restore the project's own value, unless the \"Ensure editor runs in background in PlayMode\" setting is still forcing it on right now",
+            "type": "Boolean",
+            "required": false,
+            "defaultValue": true
+          }
+        ],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "editor.playmode set_run_in_background",
+          "description": "Override the project's Run In Background Player Setting, recording enough state to restore it later and to keep it out of builds",
+          "properties": {
+            "enable": {
+              "type": "boolean",
+              "description": "Turn the override on (true, default) or stop it (false) and restore the project's own value, unless the \"Ensure editor runs in background in PlayMode\" setting is still forcing it on right now",
+              "default": true
+            }
+          },
+          "required": [],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": true,
+            "methodName": "Unity.Pipeline.Editor.Commands.PlayModeCommands.SetRunInBackground"
+          }
+        }
+      },
+      {
+        "command": "editor.playmode start",
+        "name": "start",
+        "group": "editor.playmode",
+        "description": "Enter Unity Editor play mode",
+        "tags": [
+          "editor/playmode"
+        ],
+        "package": "Unity.Pipeline.Editor",
+        "mainThreadRequired": true,
+        "parameters": [],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "editor.playmode start",
+          "description": "Enter Unity Editor play mode",
+          "properties": {},
+          "required": [],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": true,
+            "methodName": "Unity.Pipeline.Editor.Commands.PlayModeCommands.Start"
+          }
+        }
+      },
+      {
+        "command": "editor.playmode stop",
+        "name": "stop",
+        "group": "editor.playmode",
+        "description": "Exit Unity Editor play mode",
+        "tags": [
+          "editor/playmode"
+        ],
+        "package": "Unity.Pipeline.Editor",
+        "mainThreadRequired": true,
+        "parameters": [],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "editor.playmode stop",
+          "description": "Exit Unity Editor play mode",
+          "properties": {},
+          "required": [],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": true,
+            "methodName": "Unity.Pipeline.Editor.Commands.PlayModeCommands.Stop"
+          }
+        }
+      },
+      {
+        "command": "job batch",
+        "name": "batch",
+        "group": "job",
+        "description": "Run multiple registered commands in one transactional request. Later ops can reference earlier results with \"$<id-or-index>.<jsonPath>\" (e.g. \"$0.instanceId\"; \"$$\" escapes a literal '$'). transactional=true (default) groups every op into one Undo step and reverts all applied ops if any op fails; commands that mutate outside the Undo system (asset/file/settings writes) are rejected unless transactional=false. on_error=abort|continue (continue forces transactional=false); dry_run validates without mutating; timeout (seconds, default 60) bounds execution \u2014 when it is about to run out the remaining ops are skipped and a transactional batch rolls back (submit long batches with \"job\": true). Excludes build run, build.target switch, the package commands, editor.playmode start/stop/pause, script recompile, script eval, script eval_file, script run, editor invoke_menu, scene open/scene create, async commands (test run/test list), runtime-only commands, and nested job batch.",
+        "tags": [
+          "batch"
+        ],
+        "package": "Unity.Pipeline.Editor",
+        "mainThreadRequired": true,
+        "parameters": [
+          {
+            "name": "operations",
+            "description": "Ordered operations to run; each is { id?, command, params }, with command written as \"<group> <name>\" (e.g. \"gameobject create\"). Max 200.",
+            "type": "List`1",
+            "required": true,
+            "defaultValue": null
+          },
+          {
+            "name": "transactional",
+            "description": "Group all ops into one Undo step and revert every applied op if any op fails. Default true. Forced false when on_error=continue. Rejects commands whose mutations Undo cannot revert (asset/file/settings writes).",
+            "type": "Boolean",
+            "required": false,
+            "defaultValue": true
+          },
+          {
+            "name": "on_error",
+            "description": "abort (default): stop at the first failing op. continue: run every op, collecting per-op errors (forces transactional=false).",
+            "type": "String",
+            "required": false,
+            "defaultValue": "abort"
+          },
+          {
+            "name": "dry_run",
+            "description": "Validate command names, parameters, reference topology and excluded commands without mutating anything.",
+            "type": "Boolean",
+            "required": false,
+            "defaultValue": false
+          },
+          {
+            "name": "result_fields",
+            "description": "Optional per-op result projection: map of op id-or-index -> array of result field paths to keep (context economy).",
+            "type": "JObject",
+            "required": false,
+            "defaultValue": null
+          },
+          {
+            "name": "timeout",
+            "description": "Timeout for the whole batch in seconds (default 60). Checked before each op after the first; when it is about to run out the remaining ops are skipped and a transactional batch rolls back. Use \"job\": true for long batches.",
+            "type": "Double",
+            "required": false,
+            "defaultValue": 60
+          }
+        ],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "job batch",
+          "description": "Run multiple registered commands in one transactional request. Later ops can reference earlier results with \"$<id-or-index>.<jsonPath>\" (e.g. \"$0.instanceId\"; \"$$\" escapes a literal '$'). transactional=true (default) groups every op into one Undo step and reverts all applied ops if any op fails; commands that mutate outside the Undo system (asset/file/settings writes) are rejected unless transactional=false. on_error=abort|continue (continue forces transactional=false); dry_run validates without mutating; timeout (seconds, default 60) bounds execution \u2014 when it is about to run out the remaining ops are skipped and a transactional batch rolls back (submit long batches with \"job\": true). Excludes build run, build.target switch, the package commands, editor.playmode start/stop/pause, script recompile, script eval, script eval_file, script run, editor invoke_menu, scene open/scene create, async commands (test run/test list), runtime-only commands, and nested job batch.",
+          "properties": {
+            "operations": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "description": "Optional id for referencing this op's result from a later op (\"$<id>.<field>\"). Unique within the batch; must match ^[A-Za-z_][A-Za-z0-9_-]*$ (not purely numeric, no dots)."
+                  },
+                  "command": {
+                    "type": "string",
+                    "description": "The command to run, written as \"<group> <name>\" (e.g. \"gameobject create\")."
+                  },
+                  "params": {
+                    "type": "string",
+                    "description": "Parameters for the command. String values may reference a prior op's result: \"$<id-or-index>.<jsonPath>\"."
+                  }
+                },
+                "required": [
+                  "command"
+                ],
+                "additionalProperties": false
+              },
+              "description": "Ordered operations to run; each is { id?, command, params }, with command written as \"<group> <name>\" (e.g. \"gameobject create\"). Max 200."
+            },
+            "transactional": {
+              "type": "boolean",
+              "description": "Group all ops into one Undo step and revert every applied op if any op fails. Default true. Forced false when on_error=continue. Rejects commands whose mutations Undo cannot revert (asset/file/settings writes).",
+              "default": true
+            },
+            "on_error": {
+              "type": "string",
+              "description": "abort (default): stop at the first failing op. continue: run every op, collecting per-op errors (forces transactional=false).",
+              "default": "abort"
+            },
+            "dry_run": {
+              "type": "boolean",
+              "description": "Validate command names, parameters, reference topology and excluded commands without mutating anything.",
+              "default": false
+            },
+            "result_fields": {
+              "type": "string",
+              "description": "Optional per-op result projection: map of op id-or-index -> array of result field paths to keep (context economy)."
+            },
+            "timeout": {
+              "type": "number",
+              "description": "Timeout for the whole batch in seconds (default 60). Checked before each op after the first; when it is about to run out the remaining ops are skipped and a transactional batch rolls back. Use \"job\": true for long batches.",
+              "default": 60
+            }
+          },
+          "required": [
+            "operations"
+          ],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": true,
+            "methodName": "Unity.Pipeline.Editor.Commands.Batch.BatchCommand.Batch"
+          }
+        }
+      },
+      {
+        "command": "test list",
+        "name": "list",
+        "group": "test",
+        "description": "List all available tests (EditMode and/or PlayMode) without running them",
+        "tags": [
+          "tests"
+        ],
+        "package": "Unity.Pipeline.Editor",
+        "mainThreadRequired": true,
+        "parameters": [
+          {
+            "name": "mode",
+            "description": "Test mode: all, editor, playmode (default: all)",
+            "type": "String",
+            "required": false,
+            "defaultValue": "all"
+          }
+        ],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "test list",
+          "description": "List all available tests (EditMode and/or PlayMode) without running them",
+          "properties": {
+            "mode": {
+              "type": "string",
+              "description": "Test mode: all, editor, playmode (default: all)",
+              "default": "all"
+            }
+          },
+          "required": [],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": true,
+            "methodName": "Unity.Pipeline.Editor.Commands.TestCommands.List"
+          }
+        }
+      }
+    ],
+    "count": 7,
+    "total": 7,
+    "offset": 0,
+    "limit": null
+  },
+  "errors": [],
+  "warnings": []
+}

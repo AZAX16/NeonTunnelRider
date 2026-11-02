@@ -1,0 +1,177 @@
+{
+  "success": true,
+  "command": "command console",
+  "data": {
+    "command": "console",
+    "parameters": {
+      "tail": "100",
+      "level": "warn"
+    },
+    "result": {
+      "entries": [
+        {
+          "seq": 224,
+          "timestampUtc": "2026-11-02T12:58:16.690922Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[GameplayLoop] Required fuel rental failed after safe reclaim: Exhausted. Movement stopped.",
+          "stackTrace": "UnityEngine.Debug:LogError (object,UnityEngine.Object)\nNeonTunnelRunner.GameplayLoop:Step (single) (at Assets/NeonTunnelRunner/Scripts/Core/GameplayLoop.cs:164)\nNeonTunnelRunner.PickupTests:FuelExhaustionPausesBeforeTravelAndNeverStealsActiveRequiredRentals () (at Assets/NeonTunnelRunner/Tests/PlayMode/PickupTests.cs:181)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 226,
+          "timestampUtc": "2026-11-02T12:58:16.827888Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[GameManager] Cannot start: Missing/invalid required interactable pool Coin (64 stationary / 32 moving / 160 coin / 24 fuel).",
+          "stackTrace": "UnityEngine.Debug:LogError (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:BeginRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:180)\nNeonTunnelRunner.GameManager:StartRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:113)\nNeonTunnelRunner.PickupTests:MissingRealPickupPoolBlocksStartWithoutPublishingAPartialRun (NeonTunnelRunner.PoolKey) (at Assets/NeonTunnelRunner/Tests/PlayMode/PickupTests.cs:227)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 227,
+          "timestampUtc": "2026-11-02T12:58:16.896784Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[GameManager] Cannot start: Missing/invalid required interactable pool Fuel (64 stationary / 32 moving / 160 coin / 24 fuel).",
+          "stackTrace": "UnityEngine.Debug:LogError (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:BeginRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:180)\nNeonTunnelRunner.GameManager:StartRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:113)\nNeonTunnelRunner.PickupTests:MissingRealPickupPoolBlocksStartWithoutPublishingAPartialRun (NeonTunnelRunner.PoolKey) (at Assets/NeonTunnelRunner/Tests/PlayMode/PickupTests.cs:227)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 228,
+          "timestampUtc": "2026-11-02T12:58:16.951754Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[GameplayLoop] Required fuel rental failed after safe reclaim: Exhausted. Movement stopped.",
+          "stackTrace": "UnityEngine.Debug:LogError (object,UnityEngine.Object)\nNeonTunnelRunner.GameplayLoop:Step (single) (at Assets/NeonTunnelRunner/Scripts/Core/GameplayLoop.cs:164)\nNeonTunnelRunner.PickupTests:PartialRequiredFuelReservationRollsBackWithoutAdvancingFrontier () (at Assets/NeonTunnelRunner/Tests/PlayMode/PickupTests.cs:209)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 235,
+          "timestampUtc": "2026-11-02T12:58:17.727512Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[GameplayLoop] Required fuel window exceeds reserved capacity; movement stopped.",
+          "stackTrace": "UnityEngine.Debug:LogError (object,UnityEngine.Object)\nNeonTunnelRunner.GameplayLoop:Step (single) (at Assets/NeonTunnelRunner/Scripts/Core/GameplayLoop.cs:164)\nNeonTunnelRunner.PickupTests:UnboundedCatchUpFailsExplicitlyInsteadOfSkippingMandatorySupply () (at Assets/NeonTunnelRunner/Tests/PlayMode/PickupTests.cs:202)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 236,
+          "timestampUtc": "2026-11-02T12:58:18.275504Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[GameManager] Cannot start: Required road pool RoadOpen needs capacity >= 6.",
+          "stackTrace": "UnityEngine.Debug:LogError (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:BeginRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:180)\nNeonTunnelRunner.GameManager:StartRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:113)\nNeonTunnelRunner.PoolLifecycleTests:EmptyOrInvalidCatalogBlocksRequiredWorldWithoutPartialRun (bool) (at Assets/NeonTunnelRunner/Tests/PlayMode/PoolLifecycleTests.cs:336)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 237,
+          "timestampUtc": "2026-11-02T12:58:18.287637Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[GameManager] Cannot start: Pools entry 0 (Spark): assign a prefab. Fix PoolConfig before StartRun.",
+          "stackTrace": "UnityEngine.Debug:LogError (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:BeginRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:175)\nNeonTunnelRunner.GameManager:StartRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:113)\nNeonTunnelRunner.PoolLifecycleTests:EmptyOrInvalidCatalogBlocksRequiredWorldWithoutPartialRun (bool) (at Assets/NeonTunnelRunner/Tests/PlayMode/PoolLifecycleTests.cs:336)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 242,
+          "timestampUtc": "2026-11-02T12:58:19.95045Z",
+          "level": "warn",
+          "logType": "Warning",
+          "message": "[GameManager] Duplicate rejected; the existing owner is unchanged.",
+          "stackTrace": "UnityEngine.Debug:LogWarning (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:Initialize () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:80)\nNeonTunnelRunner.GameManager:Awake () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:66)\nUnityEngine.GameObject:SetActive (bool)\nNeonTunnelRunner.RestartTests:CreateFixture (string,NeonTunnelRunner.GameplayConfig,int) (at Assets/NeonTunnelRunner/Tests/PlayMode/RestartTests.cs:218)\nNeonTunnelRunner.RestartTests/<RejectedDuplicateCannotReplaceOwnerOrUnpauseOnDestruction>d__9:MoveNext () (at Assets/NeonTunnelRunner/Tests/PlayMode/RestartTests.cs:127)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 243,
+          "timestampUtc": "2026-11-02T12:58:20.537029Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[GameManager] Cannot start: Required road pool RoadOpen needs capacity >= 6.",
+          "stackTrace": "UnityEngine.Debug:LogError (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:BeginRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:180)\nNeonTunnelRunner.GameManager:StartRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:113)\nNeonTunnelRunner.RoadContinuityTests:EachMissingRequiredPoolBlocksBeforeSessionOrInputChanges (NeonTunnelRunner.PoolKey) (at Assets/NeonTunnelRunner/Tests/PlayMode/RoadContinuityTests.cs:295)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 244,
+          "timestampUtc": "2026-11-02T12:58:20.613646Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[GameManager] Cannot start: Required road pool RoadTunnel needs capacity >= 6.",
+          "stackTrace": "UnityEngine.Debug:LogError (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:BeginRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:180)\nNeonTunnelRunner.GameManager:StartRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:113)\nNeonTunnelRunner.RoadContinuityTests:EachMissingRequiredPoolBlocksBeforeSessionOrInputChanges (NeonTunnelRunner.PoolKey) (at Assets/NeonTunnelRunner/Tests/PlayMode/RoadContinuityTests.cs:295)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 245,
+          "timestampUtc": "2026-11-02T12:58:20.693366Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[GameManager] Cannot start: Required road pool RoadEntrance needs capacity >= 2.",
+          "stackTrace": "UnityEngine.Debug:LogError (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:BeginRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:180)\nNeonTunnelRunner.GameManager:StartRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:113)\nNeonTunnelRunner.RoadContinuityTests:EachMissingRequiredPoolBlocksBeforeSessionOrInputChanges (NeonTunnelRunner.PoolKey) (at Assets/NeonTunnelRunner/Tests/PlayMode/RoadContinuityTests.cs:295)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 246,
+          "timestampUtc": "2026-11-02T12:58:20.778895Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[GameManager] Cannot start: Required road pool RoadExit needs capacity >= 2.",
+          "stackTrace": "UnityEngine.Debug:LogError (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:BeginRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:180)\nNeonTunnelRunner.GameManager:StartRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:113)\nNeonTunnelRunner.RoadContinuityTests:EachMissingRequiredPoolBlocksBeforeSessionOrInputChanges (NeonTunnelRunner.PoolKey) (at Assets/NeonTunnelRunner/Tests/PlayMode/RoadContinuityTests.cs:295)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 249,
+          "timestampUtc": "2026-11-02T12:58:26.841976Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[GameManager] Cannot start: Assign WorldOrigin, player, roads and one correctly owned chase camera.",
+          "stackTrace": "UnityEngine.Debug:LogError (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:BeginRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:180)\nNeonTunnelRunner.GameManager:StartRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:113)\nNeonTunnelRunner.RoadContinuityTests:MissingRequiredPoolOrWorldBlocksStartupWithoutPublishingRun () (at Assets/NeonTunnelRunner/Tests/PlayMode/RoadContinuityTests.cs:272)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 250,
+          "timestampUtc": "2026-11-02T12:58:27.06832Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[GameplayLoop] Required road rental failed at segment 12 (RoadTunnel): Exhausted. Simulation stopped before movement.",
+          "stackTrace": "UnityEngine.Debug:LogError (object,UnityEngine.Object)\nNeonTunnelRunner.GameplayLoop:Step (single) (at Assets/NeonTunnelRunner/Scripts/Core/GameplayLoop.cs:172)\nNeonTunnelRunner.RoadContinuityTests:RequiredPoolExhaustionRollsBackAndStopsBeforeForwardMovement () (at Assets/NeonTunnelRunner/Tests/PlayMode/RoadContinuityTests.cs:253)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 252,
+          "timestampUtc": "2026-11-02T12:58:27.158562Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[GameplayLoop] Stale or disabled required road lease; reset the run.",
+          "stackTrace": "UnityEngine.Debug:LogError (object,UnityEngine.Object)\nNeonTunnelRunner.GameplayLoop:Step (single) (at Assets/NeonTunnelRunner/Scripts/Core/GameplayLoop.cs:172)\nNeonTunnelRunner.RoadContinuityTests:StaleLeaseDetectedBeforeMovementAndResetRestoresIt () (at Assets/NeonTunnelRunner/Tests/PlayMode/RoadContinuityTests.cs:309)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        }
+      ],
+      "cursor": 258,
+      "session": "eb40d6a27c09427f8c533a817a19dfa0",
+      "returned": 15,
+      "dropped": false,
+      "reset": false,
+      "counts": {
+        "error": 14,
+        "warn": 1,
+        "log": 99
+      },
+      "groundTruth": {
+        "sampledUtc": "2026-11-02T12:59:22.051516Z",
+        "ageMs": 86,
+        "compilationFailed": false,
+        "compiling": false,
+        "consoleErrors": 14,
+        "consoleWarnings": 1,
+        "consoleLogs": 58,
+        "seeded": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

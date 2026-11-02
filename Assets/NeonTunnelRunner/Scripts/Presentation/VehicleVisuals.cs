@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace NeonTunnelRunner
 {
-    /// <summary>Owns mesh-only motion and damage color. Never moves the gameplay body.</summary>
+    /// <summary>Owns child motion, damage color and actual-speed lighting. Never moves the gameplay body.</summary>
     [DisallowMultipleComponent]
     public sealed class VehicleVisuals : MonoBehaviour
     {
@@ -12,6 +12,19 @@ namespace NeonTunnelRunner
         [SerializeField] private PlayerController player;
         [SerializeField] private PresentationConfig configuration;
         [SerializeField] private Transform visualPivot;
+        [SerializeField] private Light leftHeadlight;
+        [SerializeField] private Light rightHeadlight;
+        [SerializeField] private Light underglowLight;
+        [SerializeField] private Renderer underglowRenderer;
+        private static readonly int EmissionProperty = Shader.PropertyToID("_EmissionColor");
+        private MaterialPropertyBlock neonProperties;
+        private Color neonColor;
+        private bool neonCached;
+        public Light LeftHeadlight => leftHeadlight;
+        public Light RightHeadlight => rightHeadlight;
+        public Light UnderglowLight => underglowLight;
+        public Renderer UnderglowRenderer => underglowRenderer;
+        public float EmissionMultiplier { get; private set; } = 1f;
         private Vector3 neutralPosition, neutralScale;
         private Quaternion neutralRotation;
         private bool neutralCached;
@@ -43,6 +56,8 @@ namespace NeonTunnelRunner
             AcceptedFlashes=0;
             CacheRenderer();
             CacheNeutral();
+            CacheNeon();
+            RefreshLighting();
             Subscribe();
         }
 
@@ -71,6 +86,8 @@ namespace NeonTunnelRunner
         private void LateUpdate() => Render(Time.deltaTime);
         internal void Render(float deltaTime)
         {
+            // State-derived light values still change when the playing clock and mesh animation freeze.
+            if (isActiveAndEnabled) RefreshLighting();
             if (!isActiveAndEnabled || !neutralCached || session == null || !gameManager || !gameManager.Loop.IsRunning ||
                 !float.IsFinite(deltaTime) || deltaTime <= 0f) return;
             // Logical lateral motion supplies direction; no new controls or render-position differencing.
@@ -83,6 +100,32 @@ namespace NeonTunnelRunner
             bobPhase=(bobPhase+deltaTime*configuration.BobFrequency*Mathf.Lerp(.8f,1.2f,speed)*Mathf.PI*2f)%(Mathf.PI*2f);
             visualPivot.localPosition=neutralPosition+Vector3.up*(Mathf.Sin(bobPhase)*configuration.BobAmplitude*speed);
             visualPivot.localRotation=neutralRotation*Quaternion.AngleAxis(roll,Vector3.forward);
+        }
+        private void CacheNeon()
+        {
+            if (neonCached || (!underglowRenderer && !underglowLight && !leftHeadlight && !rightHeadlight)) return;
+            if (!underglowRenderer || !underglowLight || !leftHeadlight || !rightHeadlight ||
+                leftHeadlight == rightHeadlight || leftHeadlight.type != LightType.Spot || rightHeadlight.type != LightType.Spot ||
+                !leftHeadlight.transform.IsChildOf(player.transform) || !rightHeadlight.transform.IsChildOf(player.transform) ||
+                !underglowLight.transform.IsChildOf(player.transform) || !underglowRenderer.transform.IsChildOf(visualPivot) ||
+                !underglowRenderer.sharedMaterial || !underglowRenderer.sharedMaterial.HasProperty(EmissionProperty) ||
+                !underglowRenderer.sharedMaterial.IsKeywordEnabled("_EMISSION"))
+                throw new InvalidOperationException("Assign two headlight spots, an underglow light and an emission-enabled shared material.");
+            neonProperties = new MaterialPropertyBlock();
+            neonColor = underglowRenderer.sharedMaterial.GetColor(EmissionProperty);
+            neonCached = true;
+        }
+        internal void RefreshLighting()
+        {
+            if (!neonCached || !configuration) return;
+            float actualSpeed = session == null ? 0f : session.Snapshot.ActualSpeed;
+            underglowLight.intensity = configuration.UnderglowIntensity(actualSpeed);
+            EmissionMultiplier = configuration.UnderglowEmission(actualSpeed);
+            underglowRenderer.GetPropertyBlock(neonProperties);
+            neonProperties.SetColor(EmissionProperty, neonColor * EmissionMultiplier);
+            underglowRenderer.SetPropertyBlock(neonProperties);
+            bool enabledForRun = prepared && isActiveAndEnabled;
+            leftHeadlight.enabled = rightHeadlight.enabled = underglowLight.enabled = enabledForRun;
         }
         private void ResetMotion()
         {
@@ -116,13 +159,14 @@ namespace NeonTunnelRunner
         }
         internal void FinishTick()
         {
+            RefreshLighting();
             if (!isActiveAndEnabled || !flashing) return;
             debugFlashRemaining=(float)FlashRemaining;
             if (debugFlashRemaining <= 0f) ResetFlash();
         }
         internal void PrepareRun() { prepared=true; ResetVisuals(); Subscribe(); }
         internal void CleanupRun() { prepared=false; Unsubscribe(); ResetVisuals(); }
-        public void ResetVisuals() { ResetFlash(); ResetMotion(); }
+        public void ResetVisuals() { ResetFlash(); ResetMotion(); RefreshLighting(); }
         private void ResetFlash()
         {
             if (flashing) ApplyColor(baselineColor);

@@ -108,6 +108,7 @@ namespace NeonTunnelRunner
             Array.Copy(desired, active, count);
             Array.Clear(desired, 0, desired.Length);
             ActiveCount = count;
+            for (int i = 0; i < ActiveCount; i++) active[i].Segment.RefreshLighting(distance);
             return true;
         }
         private void RollbackReservations(int count)
