@@ -271,12 +271,13 @@ namespace NeonTunnelRunner
         }
 
         [Test]
-        public void ZeroResourcesDoNotAutomaticallyEvaluateGameOverInTask02()
+        public void ZeroResourcesResolveLivesAfterTheCommittedTick()
         {
             manager.StartRun();
             manager.Session.SetResources(0, 0f);
             loop.Step(0.25f);
-            Assert.That(manager.State, Is.EqualTo(GameState.Playing));
+            Assert.That(manager.State, Is.EqualTo(GameState.GameOver));
+            Assert.That(manager.EndReason, Is.EqualTo(GameOverReason.Lives));
             Assert.That(manager.Session.Snapshot.Fuel, Is.Zero);
             Assert.That(manager.Session.Snapshot.Distance, Is.EqualTo(22d * 0.25f));
             Assert.That(manager.Session.Snapshot.Score, Is.EqualTo(5));

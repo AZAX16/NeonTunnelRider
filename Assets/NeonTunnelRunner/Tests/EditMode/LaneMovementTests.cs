@@ -198,6 +198,11 @@ namespace NeonTunnelRunner
             var sensor=player.gameObject.AddComponent<InteractionSensor>();
             Assign(sensor,"player",player); Assign(sensor,"registry",planner); Assign(sensor,"survival",survival); Assign(sensor,"progression",progression);
             Assign(loop,"interactionSensor",sensor); Assign(loop,"survival",survival);
+            var visualObject=new GameObject("Visual"); visualObject.transform.SetParent(player.transform,false);
+            var renderer=visualObject.AddComponent<MeshRenderer>();
+            renderer.sharedMaterial=UnityEditor.AssetDatabase.LoadAssetAtPath<Material>("Assets/NeonTunnelRunner/Materials/ReferenceMarking.mat");
+            var visuals=player.gameObject.AddComponent<VehicleVisuals>();
+            Assign(visuals,"gameManager",manager); Assign(visuals,"flashRenderer",renderer); Assign(loop,"vehicleVisuals",visuals);
             Assign(origin,"additionalParticipants",new MonoBehaviour[] { planner });
             Assign(loop, "roads", roads); Assign(loop, "worldOrigin", origin); Assign(loop, "spawnDirector", planner);
 

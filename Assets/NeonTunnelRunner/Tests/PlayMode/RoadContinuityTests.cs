@@ -72,9 +72,10 @@ namespace NeonTunnelRunner
             while (manager.Session.Snapshot.Distance < 100000d)
             {
                 float dt = steps[iteration++ % steps.Length];
-                Assert.That(loop.Step(dt), Is.True);
+                // Retain varied catch-up durations, steering along the actual route in bounded ticks.
+                SurvivalRoute.Advance(loop,dt);
                 var snapshot = manager.Session.Snapshot;
-                Assert.That(snapshot.Distance, Is.EqualTo(previous + (double)speed * dt));
+                Assert.That(snapshot.Distance, Is.EqualTo(previous + (double)speed * dt).Within(.0001d));
                 Assert.That(loop.Player.CurrentPosition.z, Is.EqualTo((float)(snapshot.Distance - loop.Origin.Offset)));
                 Assert.That(loop.Player.CurrentPosition.z, Is.InRange(0f, 1000f));
                 CheckCoverage(snapshot.Distance);
@@ -91,6 +92,8 @@ namespace NeonTunnelRunner
             Assert.That(loop.Planner.SpawnedMoving,Is.GreaterThan(0));
             Assert.That(loop.Planner.SpawnedStationary,Is.GreaterThan(0));
             Assert.That(collectedCoins,Is.GreaterThan(0)); Assert.That(collectedFuel,Is.GreaterThan(0));
+            Assert.That(manager.State,Is.EqualTo(GameState.Playing)); Assert.That(manager.Session.Snapshot.Lives,Is.EqualTo(3));
+            Assert.That(manager.Session.Snapshot.Fuel,Is.GreaterThan(0f));
             Assert.That(loop.Planner.SpawnedCoins,Is.GreaterThan(0)); Assert.That(loop.Planner.SpawnedFuel,Is.GreaterThan(0));
             Debug.Log($"[Task05] coins={collectedCoins}; fuel={collectedFuel}; spawnedCoins={loop.Planner.SpawnedCoins}; spawnedFuel={loop.Planner.SpawnedFuel}; speed={speed}; distance={previous:R}; steps={iteration}; rebases={loop.Origin.RebaseCount}; maxActive={maxActive}; maxPlans={maxPlans}; created={manager.Pools.TotalCreated}; peakReservations={manager.Pools.PeakActive}; moving={loop.Planner.SpawnedMoving}; stationary={loop.Planner.SpawnedStationary}; contacts={loop.Sensor.TotalContacts}; initial reset/coverage sample={bootstrap} bytes (excludes prewarm).");
         }
@@ -197,7 +200,7 @@ namespace NeonTunnelRunner
             var initial = loop.Planner.PlanAt(2);
             for (int cycle=0;cycle<50;cycle++)
             {
-                loop.Step(120f); loop.Step(100f);
+                SurvivalRoute.Advance(loop,120f); SurvivalRoute.Advance(loop,100f);
                 Assert.That(loop.Origin.RebaseCount, Is.GreaterThanOrEqualTo(2));
                 var old = roads.GetLease(0); int count = manager.Pools.ActiveCount;
                 if (cycle%2==0)
@@ -307,10 +310,10 @@ namespace NeonTunnelRunner
         [Test] public void WarmWorldMaintenanceAllocationIsMeasuredSeparatelyFromPrewarm()
         {
             manager.StartRun();
-            for (int i=0;i<32;i++) loop.Step(0.137f);
+            for (int i=0;i<32;i++) { SurvivalRoute.Guide(loop); loop.Step(0.137f); }
             long before=GC.GetAllocatedBytesForCurrentThread();
             bool success=true;
-            for (int i=0;i<1000;i++) success &= loop.Step(0.137f);
+            for (int i=0;i<1000;i++) { SurvivalRoute.Guide(loop); success &= loop.Step(0.137f); }
             long bytes=GC.GetAllocatedBytesForCurrentThread()-before;
             Assert.That(success, Is.True);
             Debug.Log($"[Task05] 1000 warm synchronous world/player/planning ticks allocated {bytes} managed bytes on current thread; excludes engine frames/observers/bootstrap.");

@@ -14,6 +14,7 @@ namespace NeonTunnelRunner
         [SerializeField] private InteractionSensor interactionSensor;
         [SerializeField] private PlayerSurvival survival;
         [SerializeField] private ProgressionSystem progression;
+        [SerializeField] private VehicleVisuals vehicleVisuals;
         private RunSession session;
         private bool runPrepared;
 
@@ -26,6 +27,7 @@ namespace NeonTunnelRunner
         public InteractionSensor Sensor => interactionSensor;
         public PlayerSurvival Survival => survival;
         public ProgressionSystem Progression => progression;
+        public VehicleVisuals Visuals => vehicleVisuals;
         public bool IsStepping { get; private set; }
         public string WorldFailure { get; private set; }
         public ulong TickIndex { get; private set; }
@@ -45,10 +47,12 @@ namespace NeonTunnelRunner
             spawnDirector.Initialize();
             if (!survival || survival.Owner != owner || !interactionSensor || interactionSensor.Player != player ||
                 interactionSensor.Registry != spawnDirector || interactionSensor.Survival != survival ||
-                !progression || progression.Owner!=owner || interactionSensor.Progression!=progression)
+                !progression || progression.Owner!=owner || interactionSensor.Progression!=progression ||
+                !vehicleVisuals || vehicleVisuals.Owner!=owner)
                 throw new System.InvalidOperationException("Assign sensor, survival and their explicit owners.");
             survival.Initialize(session);
             progression.Initialize(session);
+            vehicleVisuals.Initialize(session);
             interactionSensor.Initialize();
             CleanupRun();
         }
@@ -67,7 +71,7 @@ namespace NeonTunnelRunner
         private bool ValidateInteractions(out string error)
         {
             error=null;
-            if (!survival.isActiveAndEnabled || !interactionSensor.isActiveAndEnabled || !progression.isActiveAndEnabled || spawnDirector.Pools != gameManager.Pools ||
+            if (!survival.isActiveAndEnabled || !interactionSensor.isActiveAndEnabled || !progression.isActiveAndEnabled || !vehicleVisuals.isActiveAndEnabled || spawnDirector.Pools != gameManager.Pools ||
                 !worldOrigin.HasParticipant(spawnDirector) || interactionSensor.Capacity < spawnDirector.Capacity)
             { error="Enable and wire sensor/survival/traffic with one origin participant and sufficient contact capacity."; return false; }
             return true;
@@ -80,8 +84,11 @@ namespace NeonTunnelRunner
             worldOrigin.ResetRun();
             roads.ResetRun(seed);
             spawnDirector.ResetRun(seed);
+            session.Reset(seed, session.Snapshot.BestScore);
+            progression.RefreshDebug();
             player.ResetRun();
             survival.ResetRun();
+            vehicleVisuals.ResetVisuals();
             interactionSensor.Clear();
             WorldFailure = null;
             if (!roads.EnsureCoverage(0d, 0d)) { WorldFailure = roads.LastError; return false; }
@@ -104,6 +111,7 @@ namespace NeonTunnelRunner
             if (interactionSensor) interactionSensor.Clear();
             if (spawnDirector) spawnDirector.Clear();
             if (survival) survival.ResetRun();
+            if (vehicleVisuals) vehicleVisuals.ResetVisuals();
             if (roads) roads.ReleaseAll();
         }
 
@@ -113,6 +121,7 @@ namespace NeonTunnelRunner
             {
                 player.ClearQueuedCommand();
                 player.HoldPose();
+                spawnDirector.HoldTraffic();
             }
             inputRouter.ApplyState(state);
         }
@@ -129,8 +138,9 @@ namespace NeonTunnelRunner
         public bool Step(float deltaTime)
         {
             if (!IsRunning || IsStepping) return false;
-            if (float.IsNaN(deltaTime) || float.IsInfinity(deltaTime) || deltaTime <= 0f)
+            if (!float.IsFinite(deltaTime) || deltaTime < 0f)
                 throw new System.ArgumentOutOfRangeException(nameof(deltaTime));
+            if (deltaTime == 0f) return false;
             // Reserve the target coverage before mutating the player/session. Even a multi-window
             // catch-up either commits a complete window or leaves the existing road intact.
             double targetDistance = session.Snapshot.Distance + (double)session.Snapshot.CruiseSpeed * deltaTime;
@@ -150,6 +160,7 @@ namespace NeonTunnelRunner
                 return false;
             }
             spawnDirector.CommitFuelSupply();
+            GameOverReason terminal=GameOverReason.None;
             IsStepping=true;
             try
             {
@@ -165,15 +176,22 @@ namespace NeonTunnelRunner
                 session.RecordMovement(deltaTime, travel);
                 progression.RecomputeScore();
                 TickIndex++;
-                survival.RefreshDebug();
-                // Task 08 adds fuel drain and final terminal resolution here.
-                spawnDirector.FillWindow(targetDistance);
-                spawnDirector.MaintainTraffic(targetDistance,worldOrigin.Offset);
-                worldOrigin.RebaseIfNeeded(targetDistance);
-                session.PublishSnapshot();
-                return true;
+                survival.StepFuel(deltaTime);
+                vehicleVisuals.FinishTick();
+                terminal=survival.EvaluateEnd();
+                if (terminal == GameOverReason.None)
+                {
+                    spawnDirector.FillWindow(targetDistance);
+                    spawnDirector.MaintainTraffic(targetDistance,worldOrigin.Offset);
+                    worldOrigin.RebaseIfNeeded(targetDistance);
+                    session.PublishSnapshot();
+                }
             }
             finally { IsStepping=false; }
+            // Contact callbacks cannot end/reset a transaction. Release that guard only
+            // after commit/drain, then let the existing lifecycle guard publish one frozen result.
+            if (terminal != GameOverReason.None) gameManager.EndRun(terminal);
+            return true;
         }
     }
 }

@@ -78,7 +78,7 @@ namespace NeonTunnelRunner
         {
             manager.Session.SetResources(3,start); var fuel=Rent(PoolKey.Fuel); int events=0;
             manager.Session.Collected+=e=> { events++; Assert.That(e.Value,Is.EqualTo(30f)); Assert.That(e.AppliedValue,Is.EqualTo(applied)); };
-            loop.Step(.02f); Assert.That(manager.Session.Snapshot.Fuel,Is.EqualTo(expected)); Assert.That(events,Is.EqualTo(1)); Assert.That(fuel.IsRented,Is.False);
+            loop.Step(.02f); Assert.That(manager.Session.Snapshot.Fuel,Is.EqualTo(expected-.04f).Within(.00001f)); Assert.That(events,Is.EqualTo(1)); Assert.That(fuel.IsRented,Is.False);
         }
         [Test] public void GraceDoesNotBlockEitherPickupAndExactTieSortsPickupsThenSequence()
         {
@@ -88,7 +88,7 @@ namespace NeonTunnelRunner
             Rent(PoolKey.Coin,manager.Session.Snapshot.Distance,sequence:20); Rent(PoolKey.Fuel,manager.Session.Snapshot.Distance,sequence:10);
             var order=new List<PoolKey>(); manager.Session.Collected+=e=>order.Add(e.Kind);
             loop.Step(.02f); CollectionAssert.AreEqual(new[] {PoolKey.Fuel,PoolKey.Coin},order);
-            Assert.That(manager.Session.Snapshot.Coins,Is.EqualTo(1)); Assert.That(manager.Session.Snapshot.Fuel,Is.EqualTo(70f)); Assert.That(manager.Session.Snapshot.Lives,Is.EqualTo(2));
+            Assert.That(manager.Session.Snapshot.Coins,Is.EqualTo(1)); Assert.That(manager.Session.Snapshot.Fuel,Is.EqualTo(69.96f).Within(.00001f)); Assert.That(manager.Session.Snapshot.Lives,Is.EqualTo(2));
             planner.ReleaseAll(); manager.Session.Advance(2f,0d); order.Clear();
             Rent(PoolKey.Stationary,manager.Session.Snapshot.Distance,sequence:0); Rent(PoolKey.Coin,manager.Session.Snapshot.Distance,sequence:100);
             manager.Session.Damaged+=_=>order.Add(PoolKey.Stationary); loop.Step(.02f);
@@ -142,7 +142,7 @@ namespace NeonTunnelRunner
             loop.Step(1.25f); Assert.That(manager.Session.Snapshot.Score,Is.EqualTo(27));
             var coin=Rent(PoolKey.Coin,manager.Session.Snapshot.Distance); int score=manager.Session.Snapshot.Score;
             Assert.That(coin.TryInteract(Context(coin)),Is.True); Assert.That(manager.Session.Snapshot.Score,Is.EqualTo(score+100));
-            loop.Step(45f); loop.Step(48f); var snapshot=manager.Session.Snapshot;
+            SurvivalRoute.Advance(loop,45f); SurvivalRoute.Advance(loop,48f); var snapshot=manager.Session.Snapshot;
             Assert.That(loop.Origin.RebaseCount,Is.GreaterThanOrEqualTo(2)); Assert.That(snapshot.Score,Is.EqualTo((int)Math.Floor(snapshot.Distance)+100*snapshot.Coins));
             manager.Pause(); Assert.That(loop.Step(10f),Is.False); Assert.That(manager.Session.Snapshot.Score,Is.EqualTo(snapshot.Score));
             Assert.That(manager.Restart(),Is.True); Assert.That(manager.Session.Snapshot.Coins,Is.Zero); Assert.That(manager.Session.Snapshot.Score,Is.Zero);
@@ -239,7 +239,7 @@ namespace NeonTunnelRunner
         public void PlannedFuelBecomesRealRentalsAndIsCollectibleThroughEveryProtectedTransition(float speed,int seed)
         {
             manager.Pause(); typeof(GameManager).GetField("runSeed",BindingFlags.Instance|BindingFlags.NonPublic).SetValue(manager,seed);
-            Assert.That(manager.Restart(),Is.True); manager.Session.SetResources(3,10f); manager.Session.SetCruiseSpeed(speed);
+            Assert.That(manager.Restart(),Is.True); manager.Session.SetResources(3,20f); manager.Session.SetCruiseSpeed(speed);
             int fuels=0,coins=0; var seen=new HashSet<long>();
             manager.Session.Collected+=e=>
             {
@@ -255,7 +255,7 @@ namespace NeonTunnelRunner
                 Assert.That(planner.PlanCount,Is.LessThanOrEqualTo(4)); Assert.That(planner.ActiveCount,Is.LessThanOrEqualTo(280));
             }
             Assert.That(fuels,Is.EqualTo(18)); Assert.That(coins,Is.GreaterThanOrEqualTo(24)); Assert.That(manager.Session.Snapshot.Lives,Is.EqualTo(3));
-            Assert.That(manager.Session.Snapshot.Fuel,Is.EqualTo(100f)); Assert.That(planner.SpawnedFuel,Is.GreaterThanOrEqualTo(18));
+            Assert.That(manager.Session.Snapshot.Fuel,Is.InRange(95f,100f)); Assert.That(manager.State,Is.EqualTo(GameState.Playing)); Assert.That(planner.SpawnedFuel,Is.GreaterThanOrEqualTo(18));
             Assert.That(loop.Origin.RebaseCount,Is.GreaterThanOrEqualTo(2)); Assert.That(manager.Pools.Misses,Is.Zero);
             Debug.Log($"[Task07] live route seed={seed}, speed={speed}, distance={manager.Session.Snapshot.Distance:R}, fuel collections={fuels}, coins={coins}, spawned fuel={planner.SpawnedFuel}, rebases={loop.Origin.RebaseCount}, created={manager.Pools.TotalCreated}, peak={manager.Pools.PeakActive}.");
         }
@@ -265,7 +265,7 @@ namespace NeonTunnelRunner
             {
                 Rent(PoolKey.Coin); var fuel=Rent(PoolKey.Fuel); var context=Context(fuel); ulong old=fuel.ActivationId;
                 loop.Step(.02f); Assert.That(manager.Session.Snapshot.Coins,Is.EqualTo(1));
-                loop.Step(48f); loop.Step(48f); Assert.That(loop.Origin.RebaseCount,Is.GreaterThanOrEqualTo(2));
+                SurvivalRoute.Advance(loop,48f); SurvivalRoute.Advance(loop,48f); Assert.That(loop.Origin.RebaseCount,Is.GreaterThanOrEqualTo(2));
                 if ((cycle&1)==0) manager.Pause(); else manager.EndRun(GameOverReason.Lives);
                 Assert.That(manager.Restart(),Is.True); Assert.That(fuel.TryInteract(context),Is.False); Assert.That(fuel.ReturnToPool(old),Is.False);
                 Assert.That(manager.Session.Snapshot.Coins,Is.Zero); Assert.That(manager.Session.Snapshot.Score,Is.Zero); Assert.That(manager.Session.Snapshot.Fuel,Is.EqualTo(100f));

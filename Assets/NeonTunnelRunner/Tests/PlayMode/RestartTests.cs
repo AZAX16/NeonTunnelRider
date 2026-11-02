@@ -63,7 +63,7 @@ namespace NeonTunnelRunner
             manager.Resume();
             Assert.That(manager.Session.Snapshot.RunId, Is.EqualTo(paused.RunId));
             Assert.That(manager.Session.Snapshot.ElapsedTime, Is.EqualTo(paused.ElapsedTime));
-            Assert.That(manager.Session.Snapshot.Fuel, Is.EqualTo(100f));
+            Assert.That(manager.Session.Snapshot.Fuel, Is.EqualTo(paused.Fuel));
             Assert.That(Time.timeScale, Is.EqualTo(1f));
             manager.EndRun(GameOverReason.Fuel);
             Assert.That(loop.Step(10f), Is.False);

@@ -1,0 +1,35 @@
+{
+  "success": false,
+  "command": "recompile",
+  "data": {
+    "status": "completed",
+    "compiling": false,
+    "failed": true,
+    "compilationFailed": false,
+    "errors": [
+      {
+        "type": "compile-error",
+        "raw": "Assets/NeonTunnelRunner/Tests/PlayMode/GameOverTests.cs(80,67): error CS0266: Cannot implicitly convert type 'ulong' to 'int'. An explicit conversion exists (are you missing a cast?)",
+        "file": "Assets/NeonTunnelRunner/Tests/PlayMode/GameOverTests.cs",
+        "line": 80,
+        "column": 67,
+        "code": "CS0266",
+        "message": "Cannot implicitly convert type 'ulong' to 'int'. An explicit conversion exists (are you missing a cast?)"
+      },
+      {
+        "type": "compile-error",
+        "raw": "Assets/NeonTunnelRunner/Tests/PlayMode/GameOverTests.cs(80,108): error CS0266: Cannot implicitly convert type 'long' to 'ulong'. An explicit conversion exists (are you missing a cast?)",
+        "file": "Assets/NeonTunnelRunner/Tests/PlayMode/GameOverTests.cs",
+        "line": 80,
+        "column": 108,
+        "code": "CS0266",
+        "message": "Cannot implicitly convert type 'long' to 'ulong'. An explicit conversion exists (are you missing a cast?)"
+      }
+    ],
+    "warnings": [],
+    "summary": {
+      "errors": 2,
+      "warnings": 0
+    }
+  }
+}

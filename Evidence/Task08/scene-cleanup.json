@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "code": "var light = UnityEngine.Object.FindAnyObjectByType<UnityEngine.Light>(); var added=light.GetComponent<UnityEngine.Rendering.Universal.UniversalAdditionalLightData>(); if(added) UnityEngine.Object.DestroyImmediate(added); UnityEditor.SceneManagement.EditorSceneManager.SaveScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene()); return new {removed=added==null, scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene().path};"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "removed": true,
+        "scene": "Assets/NeonTunnelRunner/Scenes/Game.unity"
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

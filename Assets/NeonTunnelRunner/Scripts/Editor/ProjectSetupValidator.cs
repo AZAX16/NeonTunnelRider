@@ -293,6 +293,13 @@ namespace NeonTunnelRunner
                 loop.Sensor && loop.Sensor.Progression==loop.Progression,"Wire one progression service through the loop and shared sensor.",errors);
             Require(manager.Configuration.CoinScore==100 && manager.Configuration.FuelRefill==30f && manager.Configuration.FuelCapacity==100f,
                 "Keep the pickup reward baseline (100 points / 30 fuel / 100 capacity).",errors);
+            Require(manager.Configuration.FuelDrainPerSecond==2f && manager.Configuration.DamageGraceDuration==1f,
+                "Keep the survival baseline (2 fuel/playing second, 1 second damage grace).",errors);
+            Require(objects.Sum(g=>g.GetComponents<VehicleVisuals>().Length)==1 && loop.Visuals && loop.Visuals.Owner==manager &&
+                loop.Visuals.isActiveAndEnabled && loop.Visuals.FlashRenderer &&
+                loop.Visuals.FlashRenderer.transform.IsChildOf(loop.Player.transform.Find("Visual")) &&
+                loop.Visuals.FlashRenderer.sharedMaterial.HasProperty("_BaseColor"),
+                "Assign one enabled VehicleVisuals with its scene owner and supported player visual renderer.",errors);
             if (!loop.Planner.ValidateRequired(out string error)) errors.Add(error);
             Require(loop.Player.gameObject.layer==LayerMask.NameToLayer("Player"),"Assign Player layer.",errors);
             for (int i=0;i<manager.Pools.Configuration.EntryCount;i++)

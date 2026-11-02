@@ -1,0 +1,70 @@
+{
+  "note": "Latest distinct diagnostic lines after the final full suites. Full Console, including earlier attempts, is test-console-final.json.",
+  "entries": [
+    {
+      "seq": 1039,
+      "timestampUtc": "2026-11-02T08:03:43.305587Z",
+      "message": "[Task06] 1000 seeds x21 blocks x2 player speeds (22/50); accepted moving=52142, stationary=213156, omitted=54402; minimum-speed conservative horizon in both cases."
+    },
+    {
+      "seq": 1040,
+      "timestampUtc": "2026-11-02T08:04:08.468256Z",
+      "message": "[Task07] seeds=0..999, 21x480=10080m/seed; max speed=50, min=22, reaction=.7, transition=.28, margin=.3; required fuel=63000, accepted coins=111279, rejected coins=56721, lane changes=13884, max fuel gap=180m."
+    },
+    {
+      "seq": 1055,
+      "timestampUtc": "2026-11-02T08:04:27.634421Z",
+      "message": "[Task08] native fixedDelta=0.0199999921, ticks=2500, depleted at elapsed=49.999980255961418, tolerance=0.0001 fuel."
+    },
+    {
+      "seq": 1084,
+      "timestampUtc": "2026-11-02T08:04:36.556803Z",
+      "message": "[Task07] live route seed=12345, speed=22, distance=2880.9000429287553, fuel collections=18, coins=24, spawned fuel=20, rebases=2, created=304, peak=23."
+    },
+    {
+      "seq": 1085,
+      "timestampUtc": "2026-11-02T08:04:36.663866Z",
+      "message": "[Task07] live route seed=12345, speed=50, distance=2880.0000429153442, fuel collections=18, coins=24, spawned fuel=20, rebases=2, created=304, peak=24."
+    },
+    {
+      "seq": 1086,
+      "timestampUtc": "2026-11-02T08:04:36.779759Z",
+      "message": "[Task07] live route seed=0, speed=50, distance=2880.0000429153442, fuel collections=18, coins=24, spawned fuel=20, rebases=2, created=304, peak=24."
+    },
+    {
+      "seq": 1087,
+      "timestampUtc": "2026-11-02T08:04:36.902031Z",
+      "message": "[Task07] live route seed=999, speed=50, distance=2880.0000429153442, fuel collections=18, coins=24, spawned fuel=20, rebases=2, created=304, peak=22."
+    },
+    {
+      "seq": 1093,
+      "timestampUtc": "2026-11-02T08:04:38.380481Z",
+      "message": "[Task04] 50 restarts + menu; created=308, destroyed=0, cleanupCallbacks=101."
+    },
+    {
+      "seq": 1094,
+      "timestampUtc": "2026-11-02T08:04:38.623228Z",
+      "message": "[Task04] 1000 measured steady-state rents/returns: 0 managed bytes on current thread."
+    },
+    {
+      "seq": 1095,
+      "timestampUtc": "2026-11-02T08:04:39.423555Z",
+      "message": "[Task04] 12000 rents/returns; created=24, destroyed=0, capacity=24."
+    },
+    {
+      "seq": 1101,
+      "timestampUtc": "2026-11-02T08:04:49.559045Z",
+      "message": "[Task05] coins=839; fuel=628; spawnedCoins=1091; spawnedFuel=630; speed=22; distance=100592.71101155877; steps=540; rebases=104; maxActive=7; maxPlans=3; created=304; peakReservations=24; moving=270; stationary=1125; contacts=1467; initial reset/coverage sample=0 bytes (excludes prewarm)."
+    },
+    {
+      "seq": 1102,
+      "timestampUtc": "2026-11-02T08:04:50.87163Z",
+      "message": "[Task05] coins=834; fuel=625; spawnedCoins=1086; spawnedFuel=627; speed=50; distance=100046.29900157452; steps=239; rebases=104; maxActive=7; maxPlans=3; created=304; peakReservations=25; moving=267; stationary=1118; contacts=1459; initial reset/coverage sample=0 bytes (excludes prewarm)."
+    },
+    {
+      "seq": 1107,
+      "timestampUtc": "2026-11-02T08:04:51.554599Z",
+      "message": "[Task05] 1000 warm synchronous world/player/planning ticks allocated 0 managed bytes on current thread; excludes engine frames/observers/bootstrap."
+    }
+  ]
+}

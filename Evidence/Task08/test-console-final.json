@@ -1,0 +1,1040 @@
+{
+  "success": true,
+  "command": "command console",
+  "data": {
+    "command": "console",
+    "parameters": {
+      "tail": "1000"
+    },
+    "result": {
+      "entries": [
+        {
+          "seq": 1002,
+          "timestampUtc": "2026-11-02T07:55:49.161899Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[ProjectSetupValidator] PASS: foundation, URP/HDR, Linux profile, core lifecycle, player, action wiring and pool catalog.",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.ProjectSetupValidator:ValidateProject () (at Assets/NeonTunnelRunner/Scripts/Editor/ProjectSetupValidator.cs:59)\nNeonTunnelRunner.Task08Audit:Inspect () (at Docs/Setup/Task08Audit.cs:13)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nUnity.Pipeline.Editor.Commands.Scripts.RunScriptCommand/<RunEphemeral>d__2:MoveNext () (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Editor/Commands/Scripts/RunScriptCommand.cs:217)\nSystem.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Unity.Pipeline.Editor.Commands.Scripts.RunScriptResponse>:Start<Unity.Pipeline.Editor.Commands.Scripts.RunScriptCommand/<RunEphemeral>d__2> (Unity.Pipeline.Editor.Commands.Scripts.RunScriptCommand/<RunEphemeral>d__2&)\nUnity.Pipeline.Editor.Commands.Scripts.RunScriptCommand:RunEphemeral (string,string,Newtonsoft.Json.Linq.JArray,string[],string[],bool,bool,System.TimeSpan,System.Diagnostics.Stopwatch)\nUnity.Pipeline.Editor.Commands.Scripts.RunScriptCommand/<Run>d__1:MoveNext () (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Editor/Commands/Scripts/RunScriptCommand.cs:75)\nSystem.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Unity.Pipeline.Editor.Commands.Scripts.RunScriptResponse>:Start<Unity.Pipeline.Editor.Commands.Scripts.RunScriptCommand/<Run>d__1> (Unity.Pipeline.Editor.Commands.Scripts.RunScriptCommand/<Run>d__1&)\nUnity.Pipeline.Editor.Commands.Scripts.RunScriptCommand:Run (string,string,Newtonsoft.Json.Linq.JArray,string,string[],string[],bool,double,bool)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nUnity.Pipeline.Commands.DefaultCommandQueue:InvokeDirect (Unity.Pipeline.Commands.CommandContext,Unity.Pipeline.Commands.CommandInfo,object[]) (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:487)\nUnity.Pipeline.Commands.DefaultCommandQueue/<>c__DisplayClass19_0:<Invoke>b__1 () (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:409)\nUnity.Pipeline.Threading.Dispatcher/WorkItem`1<object>:ExecuteCore () (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Runtime/Common/Dispatcher.cs:342)\nUnity.Pipeline.Threading.Dispatcher/WorkItem:Execute () (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Runtime/Common/Dispatcher.cs:285)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue (int) (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Runtime/Common/Dispatcher.cs:251)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue () (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Runtime/Common/Dispatcher.cs:266)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1003,
+          "timestampUtc": "2026-11-02T07:56:56.231267Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.Task08Smoke/<Run>d__0:MoveNext () (at Docs/Setup/Task08Smoke.cs:96)\nUnityEngine.UnitySynchronizationContext:ExecuteTasks () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnitySynchronizationContext.cs:110)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1004,
+          "timestampUtc": "2026-11-02T07:58:02.912058Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.Task08Smoke/<Run>d__0:MoveNext () (at Docs/Setup/Task08Smoke.cs:96)\nUnityEngine.UnitySynchronizationContext:ExecuteTasks () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnitySynchronizationContext.cs:110)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1005,
+          "timestampUtc": "2026-11-02T08:03:19.143266Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[PipelineTestRunner] Reattaching result collector after domain reload",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nUnity.Pipeline.Editor.Testing.PipelineTestRunner:CheckForPendingTests () (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Editor/Testing/PipelineTestRunner.cs:508)\nUnity.Pipeline.Editor.Testing.PipelineTestReloader:ResumePendingTests () (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Editor/Testing/PipelineTestReloader.cs:60)\nUnity.Pipeline.Editor.Testing.PipelineTestReloader:CheckForPendingTests () (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Editor/Testing/PipelineTestReloader.cs:34)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1006,
+          "timestampUtc": "2026-11-02T08:03:22.845911Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "Executing IPrebuildSetup for: Unity.PerformanceTesting.Editor.TestRunBuilder.",
+          "stackTrace": "UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1007,
+          "timestampUtc": "2026-11-02T08:03:23.453049Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[TestResultCollector] Run started: 122 test(s)",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nUnity.Pipeline.Editor.Testing.TestResultCollector:RunStarted (UnityEditor.TestTools.TestRunner.Api.ITestAdaptor) (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Editor/Testing/TestResultCollector.cs:54)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1008,
+          "timestampUtc": "2026-11-02T08:03:23.453912Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[TestResultCollector] Run started: 122 test(s)",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nUnity.Pipeline.Editor.Testing.TestResultCollector:RunStarted (UnityEditor.TestTools.TestRunner.Api.ITestAdaptor) (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Editor/Testing/TestResultCollector.cs:54)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1009,
+          "timestampUtc": "2026-11-02T08:03:24.196593Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Quit requested (Editor intent only).",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:Quit () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:135)\nNeonTunnelRunner.GameStateTests:EditorQuitLogsOnceWithoutChangingTheSession () (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:291)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1010,
+          "timestampUtc": "2026-11-02T08:03:24.199091Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored Quit in Menu.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:Quit () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:132)\nNeonTunnelRunner.GameStateTests:EditorQuitLogsOnceWithoutChangingTheSession () (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:292)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1011,
+          "timestampUtc": "2026-11-02T08:03:24.353742Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameStateTests:FirstTerminalResultIsRetained (NeonTunnelRunner.GameOverReason,NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:199)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1012,
+          "timestampUtc": "2026-11-02T08:03:24.35468Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameStateTests:FirstTerminalResultIsRetained (NeonTunnelRunner.GameOverReason,NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:200)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1013,
+          "timestampUtc": "2026-11-02T08:03:24.401543Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameStateTests:FirstTerminalResultIsRetained (NeonTunnelRunner.GameOverReason,NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:199)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1014,
+          "timestampUtc": "2026-11-02T08:03:24.402332Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameStateTests:FirstTerminalResultIsRetained (NeonTunnelRunner.GameOverReason,NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:200)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1015,
+          "timestampUtc": "2026-11-02T08:03:24.914733Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored Pause in Playing.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:Pause () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:91)\nNeonTunnelRunner.GameStateTests/<>c__DisplayClass15_0:<ReentrantCommandsCannotInterruptACommittedTransition>b__0 (NeonTunnelRunner.RunSnapshot) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:240)\nNeonTunnelRunner.RunSession:PublishSnapshot () (at Assets/NeonTunnelRunner/Scripts/Core/RunSession.cs:183)\nNeonTunnelRunner.GameManager:CommitState (NeonTunnelRunner.GameState) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:204)\nNeonTunnelRunner.GameManager:BeginRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:179)\nNeonTunnelRunner.GameManager:StartRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:89)\nNeonTunnelRunner.GameStateTests:ReentrantCommandsCannotInterruptACommittedTransition () (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:247)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1016,
+          "timestampUtc": "2026-11-02T08:03:24.915716Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in Playing.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameStateTests/<>c__DisplayClass15_0:<ReentrantCommandsCannotInterruptACommittedTransition>b__1 (NeonTunnelRunner.GameState,NeonTunnelRunner.GameState) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:244)\nNeonTunnelRunner.GameManager:CommitState (NeonTunnelRunner.GameState) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:205)\nNeonTunnelRunner.GameManager:BeginRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:179)\nNeonTunnelRunner.GameManager:StartRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:89)\nNeonTunnelRunner.GameStateTests:ReentrantCommandsCannotInterruptACommittedTransition () (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:247)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1017,
+          "timestampUtc": "2026-11-02T08:03:24.98749Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored Pause in Menu.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:Pause () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:91)\nNeonTunnelRunner.GameStateTests:Command (string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:310)\nNeonTunnelRunner.GameStateTests:RejectedCommandsDoNotMutateOrPublish (NeonTunnelRunner.GameState,string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:123)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1018,
+          "timestampUtc": "2026-11-02T08:03:25.031555Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored Resume in Menu.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:Resume () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:93)\nNeonTunnelRunner.GameStateTests:Command (string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:311)\nNeonTunnelRunner.GameStateTests:RejectedCommandsDoNotMutateOrPublish (NeonTunnelRunner.GameState,string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:123)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1019,
+          "timestampUtc": "2026-11-02T08:03:25.078913Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored Restart in Menu.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:Restart () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:95)\nNeonTunnelRunner.GameStateTests:Command (string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:312)\nNeonTunnelRunner.GameStateTests:RejectedCommandsDoNotMutateOrPublish (NeonTunnelRunner.GameState,string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:123)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1020,
+          "timestampUtc": "2026-11-02T08:03:25.123756Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored ReturnToMenu in Menu.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:ReturnToMenu () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:100)\nNeonTunnelRunner.GameStateTests:Command (string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:313)\nNeonTunnelRunner.GameStateTests:RejectedCommandsDoNotMutateOrPublish (NeonTunnelRunner.GameState,string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:123)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1021,
+          "timestampUtc": "2026-11-02T08:03:25.168364Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in Menu.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameStateTests:Command (string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:314)\nNeonTunnelRunner.GameStateTests:RejectedCommandsDoNotMutateOrPublish (NeonTunnelRunner.GameState,string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:123)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1022,
+          "timestampUtc": "2026-11-02T08:03:25.213773Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored StartRun in Playing.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:StartRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:89)\nNeonTunnelRunner.GameStateTests:Command (string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:309)\nNeonTunnelRunner.GameStateTests:RejectedCommandsDoNotMutateOrPublish (NeonTunnelRunner.GameState,string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:123)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1023,
+          "timestampUtc": "2026-11-02T08:03:25.261594Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored Resume in Playing.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:Resume () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:93)\nNeonTunnelRunner.GameStateTests:Command (string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:311)\nNeonTunnelRunner.GameStateTests:RejectedCommandsDoNotMutateOrPublish (NeonTunnelRunner.GameState,string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:123)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1024,
+          "timestampUtc": "2026-11-02T08:03:25.305093Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored Restart in Playing.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:Restart () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:95)\nNeonTunnelRunner.GameStateTests:Command (string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:312)\nNeonTunnelRunner.GameStateTests:RejectedCommandsDoNotMutateOrPublish (NeonTunnelRunner.GameState,string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:123)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1025,
+          "timestampUtc": "2026-11-02T08:03:25.349543Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored ReturnToMenu in Playing.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:ReturnToMenu () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:100)\nNeonTunnelRunner.GameStateTests:Command (string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:313)\nNeonTunnelRunner.GameStateTests:RejectedCommandsDoNotMutateOrPublish (NeonTunnelRunner.GameState,string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:123)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1026,
+          "timestampUtc": "2026-11-02T08:03:25.397469Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored Quit in Playing.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:Quit () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:132)\nNeonTunnelRunner.GameStateTests:Command (string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:315)\nNeonTunnelRunner.GameStateTests:RejectedCommandsDoNotMutateOrPublish (NeonTunnelRunner.GameState,string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:123)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1027,
+          "timestampUtc": "2026-11-02T08:03:25.443879Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored StartRun in Paused.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:StartRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:89)\nNeonTunnelRunner.GameStateTests:Command (string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:309)\nNeonTunnelRunner.GameStateTests:RejectedCommandsDoNotMutateOrPublish (NeonTunnelRunner.GameState,string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:123)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1028,
+          "timestampUtc": "2026-11-02T08:03:25.490866Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored Pause in Paused.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:Pause () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:91)\nNeonTunnelRunner.GameStateTests:Command (string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:310)\nNeonTunnelRunner.GameStateTests:RejectedCommandsDoNotMutateOrPublish (NeonTunnelRunner.GameState,string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:123)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1029,
+          "timestampUtc": "2026-11-02T08:03:25.538553Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in Paused.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameStateTests:Command (string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:314)\nNeonTunnelRunner.GameStateTests:RejectedCommandsDoNotMutateOrPublish (NeonTunnelRunner.GameState,string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:123)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1030,
+          "timestampUtc": "2026-11-02T08:03:25.584758Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored Quit in Paused.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:Quit () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:132)\nNeonTunnelRunner.GameStateTests:Command (string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:315)\nNeonTunnelRunner.GameStateTests:RejectedCommandsDoNotMutateOrPublish (NeonTunnelRunner.GameState,string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:123)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1031,
+          "timestampUtc": "2026-11-02T08:03:25.637135Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored StartRun in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:StartRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:89)\nNeonTunnelRunner.GameStateTests:Command (string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:309)\nNeonTunnelRunner.GameStateTests:RejectedCommandsDoNotMutateOrPublish (NeonTunnelRunner.GameState,string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:123)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1032,
+          "timestampUtc": "2026-11-02T08:03:25.687604Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored Pause in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:Pause () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:91)\nNeonTunnelRunner.GameStateTests:Command (string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:310)\nNeonTunnelRunner.GameStateTests:RejectedCommandsDoNotMutateOrPublish (NeonTunnelRunner.GameState,string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:123)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1033,
+          "timestampUtc": "2026-11-02T08:03:25.733907Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored Resume in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:Resume () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:93)\nNeonTunnelRunner.GameStateTests:Command (string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:311)\nNeonTunnelRunner.GameStateTests:RejectedCommandsDoNotMutateOrPublish (NeonTunnelRunner.GameState,string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:123)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1034,
+          "timestampUtc": "2026-11-02T08:03:25.781505Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored ReturnToMenu in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:ReturnToMenu () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:100)\nNeonTunnelRunner.GameStateTests:Command (string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:313)\nNeonTunnelRunner.GameStateTests:RejectedCommandsDoNotMutateOrPublish (NeonTunnelRunner.GameState,string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:123)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1035,
+          "timestampUtc": "2026-11-02T08:03:25.830004Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameStateTests:Command (string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:314)\nNeonTunnelRunner.GameStateTests:RejectedCommandsDoNotMutateOrPublish (NeonTunnelRunner.GameState,string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:123)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1036,
+          "timestampUtc": "2026-11-02T08:03:25.879213Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored Quit in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:Quit () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:132)\nNeonTunnelRunner.GameStateTests:Command (string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:315)\nNeonTunnelRunner.GameStateTests:RejectedCommandsDoNotMutateOrPublish (NeonTunnelRunner.GameState,string) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:123)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1037,
+          "timestampUtc": "2026-11-02T08:03:26.103863Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in Playing.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameStateTests:UndefinedTerminalReasonDoesNotEndTheRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:214)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1038,
+          "timestampUtc": "2026-11-02T08:03:26.148067Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in Playing.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameStateTests:UndefinedTerminalReasonDoesNotEndTheRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Tests/EditMode/GameStateTests.cs:214)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1039,
+          "timestampUtc": "2026-11-02T08:03:43.305587Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[Task06] 1000 seeds x21 blocks x2 player speeds (22/50); accepted moving=52142, stationary=213156, omitted=54402; minimum-speed conservative horizon in both cases.",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PatternSafetyTests:ThousandSeedsValidateRealTrafficEnvelopesAtStartingAndMaximumSpeeds () (at Assets/NeonTunnelRunner/Tests/EditMode/PatternSafetyTests.cs:142)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1040,
+          "timestampUtc": "2026-11-02T08:04:08.468256Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[Task07] seeds=0..999, 21x480=10080m/seed; max speed=50, min=22, reaction=.7, transition=.28, margin=.3; required fuel=63000, accepted coins=111279, rejected coins=56721, lane changes=13884, max fuel gap=180m.",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PickupPlanTests:ThousandSeedsCoverTenKilometresOfContinuousFuelRoutesAndPickupBounds () (at Assets/NeonTunnelRunner/Tests/EditMode/PickupPlanTests.cs:79)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1041,
+          "timestampUtc": "2026-11-02T08:04:09.686776Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "Saving results to: /home/alireza/.config/unity3d/DefaultCompany/NeonTunnelRunner/TestResults.xml",
+          "stackTrace": "",
+          "seeded": false
+        },
+        {
+          "seq": 1042,
+          "timestampUtc": "2026-11-02T08:04:09.807817Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[TestResultCollector] Run finished: 122 total, 122 passed, 0 failed",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nUnity.Pipeline.Editor.Testing.TestResultCollector:RunFinished (UnityEditor.TestTools.TestRunner.Api.ITestResultAdaptor) (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Editor/Testing/TestResultCollector.cs:106)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1043,
+          "timestampUtc": "2026-11-02T08:04:09.827706Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[TestResultCollector] Run finished: 122 total, 122 passed, 0 failed",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nUnity.Pipeline.Editor.Testing.TestResultCollector:RunFinished (UnityEditor.TestTools.TestRunner.Api.ITestResultAdaptor) (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Editor/Testing/TestResultCollector.cs:106)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1044,
+          "timestampUtc": "2026-11-02T08:04:10.062488Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "Executing IPostBuildCleanup for: Unity.PerformanceTesting.Editor.TestRunBuilder.",
+          "stackTrace": "UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1045,
+          "timestampUtc": "2026-11-02T08:04:22.206658Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "Executing IPrebuildSetup for: Unity.PerformanceTesting.Editor.TestRunBuilder.",
+          "stackTrace": "UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1046,
+          "timestampUtc": "2026-11-02T08:04:24.839762Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[TestResultCollector] Run started: 123 test(s)",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nUnity.Pipeline.Editor.Testing.TestResultCollector:RunStarted (UnityEditor.TestTools.TestRunner.Api.ITestAdaptor) (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Editor/Testing/TestResultCollector.cs:54)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1047,
+          "timestampUtc": "2026-11-02T08:04:24.840131Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[TestResultCollector] Run started: 123 test(s)",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nUnity.Pipeline.Editor.Testing.TestResultCollector:RunStarted (UnityEditor.TestTools.TestRunner.Api.ITestAdaptor) (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Editor/Testing/TestResultCollector.cs:54)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1048,
+          "timestampUtc": "2026-11-02T08:04:24.840382Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[TestResultCollector] Run started: 123 test(s)",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nUnity.Pipeline.Editor.Testing.TestResultCollector:RunStarted (UnityEditor.TestTools.TestRunner.Api.ITestAdaptor) (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Editor/Testing/TestResultCollector.cs:54)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1049,
+          "timestampUtc": "2026-11-02T08:04:27.455538Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameOverTests:LivesWinsTerminalTickWithCoinAndOptionalFuelAndPublishesOnlyTheFinalSnapshot (bool) (at Assets/NeonTunnelRunner/Tests/PlayMode/GameOverTests.cs:105)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1050,
+          "timestampUtc": "2026-11-02T08:04:27.45632Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameOverTests:LivesWinsTerminalTickWithCoinAndOptionalFuelAndPublishesOnlyTheFinalSnapshot (bool) (at Assets/NeonTunnelRunner/Tests/PlayMode/GameOverTests.cs:105)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1051,
+          "timestampUtc": "2026-11-02T08:04:27.456966Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameOverTests:LivesWinsTerminalTickWithCoinAndOptionalFuelAndPublishesOnlyTheFinalSnapshot (bool) (at Assets/NeonTunnelRunner/Tests/PlayMode/GameOverTests.cs:105)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1052,
+          "timestampUtc": "2026-11-02T08:04:27.517743Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameOverTests:LivesWinsTerminalTickWithCoinAndOptionalFuelAndPublishesOnlyTheFinalSnapshot (bool) (at Assets/NeonTunnelRunner/Tests/PlayMode/GameOverTests.cs:105)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1053,
+          "timestampUtc": "2026-11-02T08:04:27.518571Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameOverTests:LivesWinsTerminalTickWithCoinAndOptionalFuelAndPublishesOnlyTheFinalSnapshot (bool) (at Assets/NeonTunnelRunner/Tests/PlayMode/GameOverTests.cs:105)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1054,
+          "timestampUtc": "2026-11-02T08:04:27.51952Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameOverTests:LivesWinsTerminalTickWithCoinAndOptionalFuelAndPublishesOnlyTheFinalSnapshot (bool) (at Assets/NeonTunnelRunner/Tests/PlayMode/GameOverTests.cs:105)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1055,
+          "timestampUtc": "2026-11-02T08:04:27.634421Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[Task08] native fixedDelta=0.0199999921, ticks=2500, depleted at elapsed=49.999980255961418, tolerance=0.0001 fuel.",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.GameOverTests:NativeFixedDeltaQuantizationDoesNotAddADepletionTick () (at Assets/NeonTunnelRunner/Tests/PlayMode/GameOverTests.cs:73)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1056,
+          "timestampUtc": "2026-11-02T08:04:28.002146Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameOverTests:TankDepletesAfterFiftyPlayingSecondsWithOneFuelEnd (single) (at Assets/NeonTunnelRunner/Tests/PlayMode/GameOverTests.cs:51)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1057,
+          "timestampUtc": "2026-11-02T08:04:28.002878Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameOverTests:TankDepletesAfterFiftyPlayingSecondsWithOneFuelEnd (single) (at Assets/NeonTunnelRunner/Tests/PlayMode/GameOverTests.cs:51)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1058,
+          "timestampUtc": "2026-11-02T08:04:28.003535Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameOverTests:TankDepletesAfterFiftyPlayingSecondsWithOneFuelEnd (single) (at Assets/NeonTunnelRunner/Tests/PlayMode/GameOverTests.cs:51)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1059,
+          "timestampUtc": "2026-11-02T08:04:28.004368Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameOverTests:TankDepletesAfterFiftyPlayingSecondsWithOneFuelEnd (single) (at Assets/NeonTunnelRunner/Tests/PlayMode/GameOverTests.cs:51)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1060,
+          "timestampUtc": "2026-11-02T08:04:28.005437Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameOverTests:TankDepletesAfterFiftyPlayingSecondsWithOneFuelEnd (single) (at Assets/NeonTunnelRunner/Tests/PlayMode/GameOverTests.cs:51)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1061,
+          "timestampUtc": "2026-11-02T08:04:28.121771Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameOverTests:TankDepletesAfterFiftyPlayingSecondsWithOneFuelEnd (single) (at Assets/NeonTunnelRunner/Tests/PlayMode/GameOverTests.cs:51)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1062,
+          "timestampUtc": "2026-11-02T08:04:28.123103Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameOverTests:TankDepletesAfterFiftyPlayingSecondsWithOneFuelEnd (single) (at Assets/NeonTunnelRunner/Tests/PlayMode/GameOverTests.cs:51)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1063,
+          "timestampUtc": "2026-11-02T08:04:28.124252Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameOverTests:TankDepletesAfterFiftyPlayingSecondsWithOneFuelEnd (single) (at Assets/NeonTunnelRunner/Tests/PlayMode/GameOverTests.cs:51)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1064,
+          "timestampUtc": "2026-11-02T08:04:28.125508Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameOverTests:TankDepletesAfterFiftyPlayingSecondsWithOneFuelEnd (single) (at Assets/NeonTunnelRunner/Tests/PlayMode/GameOverTests.cs:51)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1065,
+          "timestampUtc": "2026-11-02T08:04:28.127386Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameOverTests:TankDepletesAfterFiftyPlayingSecondsWithOneFuelEnd (single) (at Assets/NeonTunnelRunner/Tests/PlayMode/GameOverTests.cs:51)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1066,
+          "timestampUtc": "2026-11-02T08:04:28.20733Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameOverTests:TankDepletesAfterFiftyPlayingSecondsWithOneFuelEnd (single) (at Assets/NeonTunnelRunner/Tests/PlayMode/GameOverTests.cs:51)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1067,
+          "timestampUtc": "2026-11-02T08:04:28.2084Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameOverTests:TankDepletesAfterFiftyPlayingSecondsWithOneFuelEnd (single) (at Assets/NeonTunnelRunner/Tests/PlayMode/GameOverTests.cs:51)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1068,
+          "timestampUtc": "2026-11-02T08:04:28.209329Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameOverTests:TankDepletesAfterFiftyPlayingSecondsWithOneFuelEnd (single) (at Assets/NeonTunnelRunner/Tests/PlayMode/GameOverTests.cs:51)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1069,
+          "timestampUtc": "2026-11-02T08:04:28.210429Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameOverTests:TankDepletesAfterFiftyPlayingSecondsWithOneFuelEnd (single) (at Assets/NeonTunnelRunner/Tests/PlayMode/GameOverTests.cs:51)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1070,
+          "timestampUtc": "2026-11-02T08:04:28.211468Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameOverTests:TankDepletesAfterFiftyPlayingSecondsWithOneFuelEnd (single) (at Assets/NeonTunnelRunner/Tests/PlayMode/GameOverTests.cs:51)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1071,
+          "timestampUtc": "2026-11-02T08:04:28.283402Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameOverTests:TankDepletesAfterFiftyPlayingSecondsWithOneFuelEnd (single) (at Assets/NeonTunnelRunner/Tests/PlayMode/GameOverTests.cs:51)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1072,
+          "timestampUtc": "2026-11-02T08:04:28.284438Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameOverTests:TankDepletesAfterFiftyPlayingSecondsWithOneFuelEnd (single) (at Assets/NeonTunnelRunner/Tests/PlayMode/GameOverTests.cs:51)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1073,
+          "timestampUtc": "2026-11-02T08:04:28.285157Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameOverTests:TankDepletesAfterFiftyPlayingSecondsWithOneFuelEnd (single) (at Assets/NeonTunnelRunner/Tests/PlayMode/GameOverTests.cs:51)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1074,
+          "timestampUtc": "2026-11-02T08:04:28.286055Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameOverTests:TankDepletesAfterFiftyPlayingSecondsWithOneFuelEnd (single) (at Assets/NeonTunnelRunner/Tests/PlayMode/GameOverTests.cs:51)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1075,
+          "timestampUtc": "2026-11-02T08:04:28.286863Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in GameOver.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.GameOverTests:TankDepletesAfterFiftyPlayingSecondsWithOneFuelEnd (single) (at Assets/NeonTunnelRunner/Tests/PlayMode/GameOverTests.cs:51)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1076,
+          "timestampUtc": "2026-11-02T08:04:29.687569Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored Pause in Playing.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:Pause () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:91)\nNeonTunnelRunner.InteractableTests/<>c__DisplayClass19_0:<CallbackReturnsAreDeferredAndLifecycleReentryIsRejected>b__0 (NeonTunnelRunner.DamageEvent) (at Assets/NeonTunnelRunner/Tests/PlayMode/InteractableTests.cs:134)\nNeonTunnelRunner.RunSession:PublishDamage (NeonTunnelRunner.DamageEvent) (at Assets/NeonTunnelRunner/Scripts/Core/RunSession.cs:83)\nNeonTunnelRunner.PlayerSurvival:TryDamage (NeonTunnelRunner.Encounter) (at Assets/NeonTunnelRunner/Scripts/Player/PlayerSurvival.cs:31)\nNeonTunnelRunner.StationaryCar:OnInteract (NeonTunnelRunner.InteractionContext) (at Assets/NeonTunnelRunner/Scripts/Interactables/StationaryCar.cs:6)\nNeonTunnelRunner.Interactable:TryInteract (NeonTunnelRunner.InteractionContext) (at Assets/NeonTunnelRunner/Scripts/Interactables/Interactable.cs:97)\nNeonTunnelRunner.InteractionSensor:DispatchContacts (NeonTunnelRunner.RunSession,single) (at Assets/NeonTunnelRunner/Scripts/Player/InteractionSensor.cs:64)\nNeonTunnelRunner.GameplayLoop:Step (single) (at Assets/NeonTunnelRunner/Scripts/Core/GameplayLoop.cs:173)\nNeonTunnelRunner.InteractableTests:CallbackReturnsAreDeferredAndLifecycleReentryIsRejected () (at Assets/NeonTunnelRunner/Tests/PlayMode/InteractableTests.cs:136)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1077,
+          "timestampUtc": "2026-11-02T08:04:29.688398Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in Playing.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.InteractableTests/<>c__DisplayClass19_0:<CallbackReturnsAreDeferredAndLifecycleReentryIsRejected>b__0 (NeonTunnelRunner.DamageEvent) (at Assets/NeonTunnelRunner/Tests/PlayMode/InteractableTests.cs:134)\nNeonTunnelRunner.RunSession:PublishDamage (NeonTunnelRunner.DamageEvent) (at Assets/NeonTunnelRunner/Scripts/Core/RunSession.cs:83)\nNeonTunnelRunner.PlayerSurvival:TryDamage (NeonTunnelRunner.Encounter) (at Assets/NeonTunnelRunner/Scripts/Player/PlayerSurvival.cs:31)\nNeonTunnelRunner.StationaryCar:OnInteract (NeonTunnelRunner.InteractionContext) (at Assets/NeonTunnelRunner/Scripts/Interactables/StationaryCar.cs:6)\nNeonTunnelRunner.Interactable:TryInteract (NeonTunnelRunner.InteractionContext) (at Assets/NeonTunnelRunner/Scripts/Interactables/Interactable.cs:97)\nNeonTunnelRunner.InteractionSensor:DispatchContacts (NeonTunnelRunner.RunSession,single) (at Assets/NeonTunnelRunner/Scripts/Player/InteractionSensor.cs:64)\nNeonTunnelRunner.GameplayLoop:Step (single) (at Assets/NeonTunnelRunner/Scripts/Core/GameplayLoop.cs:173)\nNeonTunnelRunner.InteractableTests:CallbackReturnsAreDeferredAndLifecycleReentryIsRejected () (at Assets/NeonTunnelRunner/Tests/PlayMode/InteractableTests.cs:136)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1078,
+          "timestampUtc": "2026-11-02T08:04:29.689092Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored Restart in Playing.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:Restart () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:95)\nNeonTunnelRunner.InteractableTests/<>c__DisplayClass19_0:<CallbackReturnsAreDeferredAndLifecycleReentryIsRejected>b__0 (NeonTunnelRunner.DamageEvent) (at Assets/NeonTunnelRunner/Tests/PlayMode/InteractableTests.cs:134)\nNeonTunnelRunner.RunSession:PublishDamage (NeonTunnelRunner.DamageEvent) (at Assets/NeonTunnelRunner/Scripts/Core/RunSession.cs:83)\nNeonTunnelRunner.PlayerSurvival:TryDamage (NeonTunnelRunner.Encounter) (at Assets/NeonTunnelRunner/Scripts/Player/PlayerSurvival.cs:31)\nNeonTunnelRunner.StationaryCar:OnInteract (NeonTunnelRunner.InteractionContext) (at Assets/NeonTunnelRunner/Scripts/Interactables/StationaryCar.cs:6)\nNeonTunnelRunner.Interactable:TryInteract (NeonTunnelRunner.InteractionContext) (at Assets/NeonTunnelRunner/Scripts/Interactables/Interactable.cs:97)\nNeonTunnelRunner.InteractionSensor:DispatchContacts (NeonTunnelRunner.RunSession,single) (at Assets/NeonTunnelRunner/Scripts/Player/InteractionSensor.cs:64)\nNeonTunnelRunner.GameplayLoop:Step (single) (at Assets/NeonTunnelRunner/Scripts/Core/GameplayLoop.cs:173)\nNeonTunnelRunner.InteractableTests:CallbackReturnsAreDeferredAndLifecycleReentryIsRejected () (at Assets/NeonTunnelRunner/Tests/PlayMode/InteractableTests.cs:136)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1079,
+          "timestampUtc": "2026-11-02T08:04:36.005916Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[GameplayLoop] Required fuel rental failed after safe reclaim: Exhausted. Movement stopped.",
+          "stackTrace": "UnityEngine.Debug:LogError (object,UnityEngine.Object)\nNeonTunnelRunner.GameplayLoop:Step (single) (at Assets/NeonTunnelRunner/Scripts/Core/GameplayLoop.cs:150)\nNeonTunnelRunner.PickupTests:FuelExhaustionPausesBeforeTravelAndNeverStealsActiveRequiredRentals () (at Assets/NeonTunnelRunner/Tests/PlayMode/PickupTests.cs:181)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1080,
+          "timestampUtc": "2026-11-02T08:04:36.007665Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored Resume in Paused.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:Resume () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:93)\nNeonTunnelRunner.PickupTests:FuelExhaustionPausesBeforeTravelAndNeverStealsActiveRequiredRentals () (at Assets/NeonTunnelRunner/Tests/PlayMode/PickupTests.cs:187)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1081,
+          "timestampUtc": "2026-11-02T08:04:36.205035Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[GameManager] Cannot start: Missing/invalid required interactable pool Coin (64 stationary / 32 moving / 160 coin / 24 fuel).",
+          "stackTrace": "UnityEngine.Debug:LogError (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:BeginRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:153)\nNeonTunnelRunner.GameManager:StartRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:89)\nNeonTunnelRunner.PickupTests:MissingRealPickupPoolBlocksStartWithoutPublishingAPartialRun (NeonTunnelRunner.PoolKey) (at Assets/NeonTunnelRunner/Tests/PlayMode/PickupTests.cs:227)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1082,
+          "timestampUtc": "2026-11-02T08:04:36.310744Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[GameManager] Cannot start: Missing/invalid required interactable pool Fuel (64 stationary / 32 moving / 160 coin / 24 fuel).",
+          "stackTrace": "UnityEngine.Debug:LogError (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:BeginRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:153)\nNeonTunnelRunner.GameManager:StartRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:89)\nNeonTunnelRunner.PickupTests:MissingRealPickupPoolBlocksStartWithoutPublishingAPartialRun (NeonTunnelRunner.PoolKey) (at Assets/NeonTunnelRunner/Tests/PlayMode/PickupTests.cs:227)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1083,
+          "timestampUtc": "2026-11-02T08:04:36.386465Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[GameplayLoop] Required fuel rental failed after safe reclaim: Exhausted. Movement stopped.",
+          "stackTrace": "UnityEngine.Debug:LogError (object,UnityEngine.Object)\nNeonTunnelRunner.GameplayLoop:Step (single) (at Assets/NeonTunnelRunner/Scripts/Core/GameplayLoop.cs:150)\nNeonTunnelRunner.PickupTests:PartialRequiredFuelReservationRollsBackWithoutAdvancingFrontier () (at Assets/NeonTunnelRunner/Tests/PlayMode/PickupTests.cs:209)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1084,
+          "timestampUtc": "2026-11-02T08:04:36.556803Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[Task07] live route seed=12345, speed=22, distance=2880.9000429287553, fuel collections=18, coins=24, spawned fuel=20, rebases=2, created=304, peak=23.",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PickupTests:PlannedFuelBecomesRealRentalsAndIsCollectibleThroughEveryProtectedTransition (single,int) (at Assets/NeonTunnelRunner/Tests/PlayMode/PickupTests.cs:260)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1085,
+          "timestampUtc": "2026-11-02T08:04:36.663866Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[Task07] live route seed=12345, speed=50, distance=2880.0000429153442, fuel collections=18, coins=24, spawned fuel=20, rebases=2, created=304, peak=24.",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PickupTests:PlannedFuelBecomesRealRentalsAndIsCollectibleThroughEveryProtectedTransition (single,int) (at Assets/NeonTunnelRunner/Tests/PlayMode/PickupTests.cs:260)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1086,
+          "timestampUtc": "2026-11-02T08:04:36.779759Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[Task07] live route seed=0, speed=50, distance=2880.0000429153442, fuel collections=18, coins=24, spawned fuel=20, rebases=2, created=304, peak=24.",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PickupTests:PlannedFuelBecomesRealRentalsAndIsCollectibleThroughEveryProtectedTransition (single,int) (at Assets/NeonTunnelRunner/Tests/PlayMode/PickupTests.cs:260)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1087,
+          "timestampUtc": "2026-11-02T08:04:36.902031Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[Task07] live route seed=999, speed=50, distance=2880.0000429153442, fuel collections=18, coins=24, spawned fuel=20, rebases=2, created=304, peak=22.",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PickupTests:PlannedFuelBecomesRealRentalsAndIsCollectibleThroughEveryProtectedTransition (single,int) (at Assets/NeonTunnelRunner/Tests/PlayMode/PickupTests.cs:260)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1088,
+          "timestampUtc": "2026-11-02T08:04:37.287115Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored Pause in Playing.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:Pause () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:91)\nNeonTunnelRunner.PickupTests/<>c__DisplayClass14_0:<SensorDefersReturnsAndRejectsLifecycleOrRentalReentryDuringCollection>b__0 (NeonTunnelRunner.CollectedEvent) (at Assets/NeonTunnelRunner/Tests/PlayMode/PickupTests.cs:112)\nNeonTunnelRunner.RunSession:PublishCollection (NeonTunnelRunner.CollectedEvent) (at Assets/NeonTunnelRunner/Scripts/Core/RunSession.cs:84)\nNeonTunnelRunner.Coin:OnInteract (NeonTunnelRunner.InteractionContext) (at Assets/NeonTunnelRunner/Scripts/Interactables/Coin.cs:13)\nNeonTunnelRunner.Interactable:TryInteract (NeonTunnelRunner.InteractionContext) (at Assets/NeonTunnelRunner/Scripts/Interactables/Interactable.cs:97)\nNeonTunnelRunner.InteractionSensor:DispatchContacts (NeonTunnelRunner.RunSession,single) (at Assets/NeonTunnelRunner/Scripts/Player/InteractionSensor.cs:64)\nNeonTunnelRunner.GameplayLoop:Step (single) (at Assets/NeonTunnelRunner/Scripts/Core/GameplayLoop.cs:173)\nNeonTunnelRunner.PickupTests:SensorDefersReturnsAndRejectsLifecycleOrRentalReentryDuringCollection () (at Assets/NeonTunnelRunner/Tests/PlayMode/PickupTests.cs:116)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1089,
+          "timestampUtc": "2026-11-02T08:04:37.288006Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored EndRun in Playing.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:EndRun (NeonTunnelRunner.GameOverReason) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:116)\nNeonTunnelRunner.PickupTests/<>c__DisplayClass14_0:<SensorDefersReturnsAndRejectsLifecycleOrRentalReentryDuringCollection>b__0 (NeonTunnelRunner.CollectedEvent) (at Assets/NeonTunnelRunner/Tests/PlayMode/PickupTests.cs:112)\nNeonTunnelRunner.RunSession:PublishCollection (NeonTunnelRunner.CollectedEvent) (at Assets/NeonTunnelRunner/Scripts/Core/RunSession.cs:84)\nNeonTunnelRunner.Coin:OnInteract (NeonTunnelRunner.InteractionContext) (at Assets/NeonTunnelRunner/Scripts/Interactables/Coin.cs:13)\nNeonTunnelRunner.Interactable:TryInteract (NeonTunnelRunner.InteractionContext) (at Assets/NeonTunnelRunner/Scripts/Interactables/Interactable.cs:97)\nNeonTunnelRunner.InteractionSensor:DispatchContacts (NeonTunnelRunner.RunSession,single) (at Assets/NeonTunnelRunner/Scripts/Player/InteractionSensor.cs:64)\nNeonTunnelRunner.GameplayLoop:Step (single) (at Assets/NeonTunnelRunner/Scripts/Core/GameplayLoop.cs:173)\nNeonTunnelRunner.PickupTests:SensorDefersReturnsAndRejectsLifecycleOrRentalReentryDuringCollection () (at Assets/NeonTunnelRunner/Tests/PlayMode/PickupTests.cs:116)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1090,
+          "timestampUtc": "2026-11-02T08:04:37.443524Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[GameplayLoop] Required fuel window exceeds reserved capacity; movement stopped.",
+          "stackTrace": "UnityEngine.Debug:LogError (object,UnityEngine.Object)\nNeonTunnelRunner.GameplayLoop:Step (single) (at Assets/NeonTunnelRunner/Scripts/Core/GameplayLoop.cs:150)\nNeonTunnelRunner.PickupTests:UnboundedCatchUpFailsExplicitlyInsteadOfSkippingMandatorySupply () (at Assets/NeonTunnelRunner/Tests/PlayMode/PickupTests.cs:202)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1091,
+          "timestampUtc": "2026-11-02T08:04:38.194868Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[GameManager] Cannot start: Required road pool RoadOpen needs capacity >= 6.",
+          "stackTrace": "UnityEngine.Debug:LogError (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:BeginRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:153)\nNeonTunnelRunner.GameManager:StartRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:89)\nNeonTunnelRunner.PoolLifecycleTests:EmptyOrInvalidCatalogBlocksRequiredWorldWithoutPartialRun (bool) (at Assets/NeonTunnelRunner/Tests/PlayMode/PoolLifecycleTests.cs:336)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1092,
+          "timestampUtc": "2026-11-02T08:04:38.210365Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[GameManager] Cannot start: Pools entry 0 (Spark): assign a prefab. Fix PoolConfig before StartRun.",
+          "stackTrace": "UnityEngine.Debug:LogError (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:BeginRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:148)\nNeonTunnelRunner.GameManager:StartRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:89)\nNeonTunnelRunner.PoolLifecycleTests:EmptyOrInvalidCatalogBlocksRequiredWorldWithoutPartialRun (bool) (at Assets/NeonTunnelRunner/Tests/PlayMode/PoolLifecycleTests.cs:336)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1093,
+          "timestampUtc": "2026-11-02T08:04:38.380481Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[Task04] 50 restarts + menu; created=308, destroyed=0, cleanupCallbacks=101.",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PoolLifecycleTests:FiftyRestartsGateInputBeforeCleanupAndPreservePools () (at Assets/NeonTunnelRunner/Tests/PlayMode/PoolLifecycleTests.cs:322)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1094,
+          "timestampUtc": "2026-11-02T08:04:38.623228Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[Task04] 1000 measured steady-state rents/returns: 0 managed bytes on current thread.",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PoolLifecycleTests:SuccessfulSteadyStatePoolOperationsAllocateNoManagedBytes () (at Assets/NeonTunnelRunner/Tests/PlayMode/PoolLifecycleTests.cs:380)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1095,
+          "timestampUtc": "2026-11-02T08:04:39.423555Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[Task04] 12000 rents/returns; created=24, destroyed=0, capacity=24.",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.PoolLifecycleTests:ThousandRentReturnsForEveryKeyPreserveIdentityAndCounts () (at Assets/NeonTunnelRunner/Tests/PlayMode/PoolLifecycleTests.cs:131)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1096,
+          "timestampUtc": "2026-11-02T08:04:40.202927Z",
+          "level": "warn",
+          "logType": "Warning",
+          "message": "[GameManager] Duplicate rejected; the existing owner is unchanged.",
+          "stackTrace": "UnityEngine.Debug:LogWarning (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:Initialize () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:61)\nNeonTunnelRunner.GameManager:Awake () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:47)\nUnityEngine.GameObject:SetActive (bool)\nNeonTunnelRunner.RestartTests:CreateFixture (string,NeonTunnelRunner.GameplayConfig,int) (at Assets/NeonTunnelRunner/Tests/PlayMode/RestartTests.cs:218)\nNeonTunnelRunner.RestartTests/<RejectedDuplicateCannotReplaceOwnerOrUnpauseOnDestruction>d__9:MoveNext () (at Assets/NeonTunnelRunner/Tests/PlayMode/RestartTests.cs:127)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1097,
+          "timestampUtc": "2026-11-02T08:04:40.992889Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[GameManager] Cannot start: Required road pool RoadOpen needs capacity >= 6.",
+          "stackTrace": "UnityEngine.Debug:LogError (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:BeginRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:153)\nNeonTunnelRunner.GameManager:StartRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:89)\nNeonTunnelRunner.RoadContinuityTests:EachMissingRequiredPoolBlocksBeforeSessionOrInputChanges (NeonTunnelRunner.PoolKey) (at Assets/NeonTunnelRunner/Tests/PlayMode/RoadContinuityTests.cs:292)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1098,
+          "timestampUtc": "2026-11-02T08:04:41.104027Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[GameManager] Cannot start: Required road pool RoadTunnel needs capacity >= 6.",
+          "stackTrace": "UnityEngine.Debug:LogError (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:BeginRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:153)\nNeonTunnelRunner.GameManager:StartRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:89)\nNeonTunnelRunner.RoadContinuityTests:EachMissingRequiredPoolBlocksBeforeSessionOrInputChanges (NeonTunnelRunner.PoolKey) (at Assets/NeonTunnelRunner/Tests/PlayMode/RoadContinuityTests.cs:292)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1099,
+          "timestampUtc": "2026-11-02T08:04:41.22578Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[GameManager] Cannot start: Required road pool RoadEntrance needs capacity >= 2.",
+          "stackTrace": "UnityEngine.Debug:LogError (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:BeginRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:153)\nNeonTunnelRunner.GameManager:StartRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:89)\nNeonTunnelRunner.RoadContinuityTests:EachMissingRequiredPoolBlocksBeforeSessionOrInputChanges (NeonTunnelRunner.PoolKey) (at Assets/NeonTunnelRunner/Tests/PlayMode/RoadContinuityTests.cs:292)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1100,
+          "timestampUtc": "2026-11-02T08:04:41.356366Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[GameManager] Cannot start: Required road pool RoadExit needs capacity >= 2.",
+          "stackTrace": "UnityEngine.Debug:LogError (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:BeginRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:153)\nNeonTunnelRunner.GameManager:StartRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:89)\nNeonTunnelRunner.RoadContinuityTests:EachMissingRequiredPoolBlocksBeforeSessionOrInputChanges (NeonTunnelRunner.PoolKey) (at Assets/NeonTunnelRunner/Tests/PlayMode/RoadContinuityTests.cs:292)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1101,
+          "timestampUtc": "2026-11-02T08:04:49.559045Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[Task05] coins=839; fuel=628; spawnedCoins=1091; spawnedFuel=630; speed=22; distance=100592.71101155877; steps=540; rebases=104; maxActive=7; maxPlans=3; created=304; peakReservations=24; moving=270; stationary=1125; contacts=1467; initial reset/coverage sample=0 bytes (excludes prewarm).",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.RoadContinuityTests:HundredKilometresMaintainsSeamsCoverageAndBoundedPools (single) (at Assets/NeonTunnelRunner/Tests/PlayMode/RoadContinuityTests.cs:98)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1102,
+          "timestampUtc": "2026-11-02T08:04:50.87163Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[Task05] coins=834; fuel=625; spawnedCoins=1086; spawnedFuel=627; speed=50; distance=100046.29900157452; steps=239; rebases=104; maxActive=7; maxPlans=3; created=304; peakReservations=25; moving=267; stationary=1118; contacts=1459; initial reset/coverage sample=0 bytes (excludes prewarm).",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.RoadContinuityTests:HundredKilometresMaintainsSeamsCoverageAndBoundedPools (single) (at Assets/NeonTunnelRunner/Tests/PlayMode/RoadContinuityTests.cs:98)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1103,
+          "timestampUtc": "2026-11-02T08:04:51.029936Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[GameManager] Cannot start: Assign WorldOrigin, player, roads and the existing player-owned chase camera.",
+          "stackTrace": "UnityEngine.Debug:LogError (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:BeginRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:153)\nNeonTunnelRunner.GameManager:StartRun () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:89)\nNeonTunnelRunner.RoadContinuityTests:MissingRequiredPoolOrWorldBlocksStartupWithoutPublishingRun () (at Assets/NeonTunnelRunner/Tests/PlayMode/RoadContinuityTests.cs:269)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1104,
+          "timestampUtc": "2026-11-02T08:04:51.280203Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[GameplayLoop] Required road rental failed at segment 12 (RoadTunnel): Exhausted. Simulation stopped before movement.",
+          "stackTrace": "UnityEngine.Debug:LogError (object,UnityEngine.Object)\nNeonTunnelRunner.GameplayLoop:Step (single) (at Assets/NeonTunnelRunner/Scripts/Core/GameplayLoop.cs:158)\nNeonTunnelRunner.RoadContinuityTests:RequiredPoolExhaustionRollsBackAndStopsBeforeForwardMovement () (at Assets/NeonTunnelRunner/Tests/PlayMode/RoadContinuityTests.cs:250)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1105,
+          "timestampUtc": "2026-11-02T08:04:51.283491Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[GameManager] Ignored Resume in Paused.",
+          "stackTrace": "UnityEngine.Debug:Log (object,UnityEngine.Object)\nNeonTunnelRunner.GameManager:LogRejected (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:218)\nNeonTunnelRunner.GameManager:Reject (string) (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:213)\nNeonTunnelRunner.GameManager:Resume () (at Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:93)\nNeonTunnelRunner.RoadContinuityTests:RequiredPoolExhaustionRollsBackAndStopsBeforeForwardMovement () (at Assets/NeonTunnelRunner/Tests/PlayMode/RoadContinuityTests.cs:260)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1106,
+          "timestampUtc": "2026-11-02T08:04:51.384301Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[GameplayLoop] Stale or disabled required road lease; reset the run.",
+          "stackTrace": "UnityEngine.Debug:LogError (object,UnityEngine.Object)\nNeonTunnelRunner.GameplayLoop:Step (single) (at Assets/NeonTunnelRunner/Scripts/Core/GameplayLoop.cs:158)\nNeonTunnelRunner.RoadContinuityTests:StaleLeaseDetectedBeforeMovementAndResetRestoresIt () (at Assets/NeonTunnelRunner/Tests/PlayMode/RoadContinuityTests.cs:306)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1107,
+          "timestampUtc": "2026-11-02T08:04:51.554599Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[Task05] 1000 warm synchronous world/player/planning ticks allocated 0 managed bytes on current thread; excludes engine frames/observers/bootstrap.",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.RoadContinuityTests:WarmWorldMaintenanceAllocationIsMeasuredSeparatelyFromPrewarm () (at Assets/NeonTunnelRunner/Tests/PlayMode/RoadContinuityTests.cs:319)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nNUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])\nNUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)\nNUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1108,
+          "timestampUtc": "2026-11-02T08:04:51.586208Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "Saving results to: /home/alireza/.config/unity3d/DefaultCompany/NeonTunnelRunner/TestResults.xml",
+          "stackTrace": "",
+          "seeded": false
+        },
+        {
+          "seq": 1109,
+          "timestampUtc": "2026-11-02T08:04:51.645853Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[TestResultCollector] Ignoring duplicate RunFinished (already completed)",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nUnity.Pipeline.Editor.Testing.TestResultCollector:RunFinished (UnityEditor.TestTools.TestRunner.Api.ITestResultAdaptor) (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Editor/Testing/TestResultCollector.cs:89)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1110,
+          "timestampUtc": "2026-11-02T08:04:51.646161Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[TestResultCollector] Ignoring duplicate RunFinished (already completed)",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nUnity.Pipeline.Editor.Testing.TestResultCollector:RunFinished (UnityEditor.TestTools.TestRunner.Api.ITestResultAdaptor) (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Editor/Testing/TestResultCollector.cs:89)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1111,
+          "timestampUtc": "2026-11-02T08:04:51.646435Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[TestResultCollector] Run finished: 123 total, 123 passed, 0 failed",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nUnity.Pipeline.Editor.Testing.TestResultCollector:RunFinished (UnityEditor.TestTools.TestRunner.Api.ITestResultAdaptor) (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Editor/Testing/TestResultCollector.cs:106)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1112,
+          "timestampUtc": "2026-11-02T08:04:52.387351Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "Executing IPostBuildCleanup for: Unity.PerformanceTesting.Editor.TestRunBuilder.",
+          "stackTrace": "UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        }
+      ],
+      "cursor": 1112,
+      "session": "12fbf3d9928e41ec948ae3edfdf03c72",
+      "returned": 111,
+      "dropped": false,
+      "reset": false,
+      "counts": {
+        "error": 14,
+        "warn": 1,
+        "log": 96
+      },
+      "groundTruth": {
+        "sampledUtc": "2026-11-02T08:05:41.515313Z",
+        "ageMs": 189,
+        "compilationFailed": false,
+        "compiling": false,
+        "consoleErrors": 14,
+        "consoleWarnings": 1,
+        "consoleLogs": 52,
+        "seeded": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

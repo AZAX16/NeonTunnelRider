@@ -206,6 +206,8 @@ MonoBehaviour:
   poolService: {fileID: 80797676}
   runSeed: 12345
   initialBestScore: 0
+  debugState: 0
+  debugEndReason: 0
 --- !u!114 &80797674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,6 +229,7 @@ MonoBehaviour:
   interactionSensor: {fileID: 1992932452}
   survival: {fileID: 1992932453}
   progression: {fileID: 80797680}
+  vehicleVisuals: {fileID: 1992932454}
 --- !u!114 &80797675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1461,6 +1464,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1428590503692550247, guid: 3fe156509481777c8b2a4c1d32d2e622, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 80797673}
     - target: {fileID: 2004737645062352705, guid: 3fe156509481777c8b2a4c1d32d2e622, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1563,6 +1570,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6749d5a7940738caa1b4593dfdfe935, type: 3}
   m_Name: 
   m_EditorClassIdentifier: NeonTunnelRunner.Runtime::NeonTunnelRunner.PlayerSurvival
+--- !u!114 &1992932454 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1428590503692550247, guid: 3fe156509481777c8b2a4c1d32d2e622, type: 3}
+  m_PrefabInstance: {fileID: 1992932449}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39e311d98dc116a4db2d54d7fbea909d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NeonTunnelRunner.Runtime::NeonTunnelRunner.VehicleVisuals
 --- !u!1 &2056537197
 GameObject:
   m_ObjectHideFlags: 0

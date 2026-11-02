@@ -58,7 +58,7 @@ namespace NeonTunnelRunner
 
     /// <summary>
     /// One run's authoritative data. Runtime services mutate internally, then publish once
-    /// after a complete lifecycle transaction or simulation tick. No persistence or resource ticking.
+    /// after a complete lifecycle transaction or simulation tick. No persistence or independent timers.
     /// </summary>
     public sealed class RunSession
     {
@@ -66,7 +66,9 @@ namespace NeonTunnelRunner
         private Guid runId;
         private int seed;
         private int lives;
-        private float fuel;
+        // Keep the accumulator in double; projecting each drain back through Snapshot.Fuel
+        // would repeatedly round at float precision (and shift the 50-second deadline).
+        private double fuel;
         private double elapsedTime;
         private double distance;
         private int coins;
@@ -81,7 +83,7 @@ namespace NeonTunnelRunner
         internal void PublishDamage(DamageEvent damage) => Damaged?.Invoke(damage);
         internal void PublishCollection(CollectedEvent collected) => Collected?.Invoke(collected);
 
-        public RunSnapshot Snapshot => new RunSnapshot(runId, seed, lives, fuel, elapsedTime,
+        public RunSnapshot Snapshot => new RunSnapshot(runId, seed, lives, (float)fuel, elapsedTime,
             distance, coins, score, bestScore, cruiseSpeed, actualSpeed);
 
         public RunSession(GameplayConfig config, int bestScore = 0)
@@ -125,6 +127,23 @@ namespace NeonTunnelRunner
                 throw new ArgumentOutOfRangeException(nameof(remainingFuel));
             lives = remainingLives;
             fuel = remainingFuel;
+        }
+
+        internal void RemoveLife() => lives = Math.Max(0, lives - 1);
+
+        internal void RestoreFuel(float amount) => fuel = Math.Min(config.FuelCapacity, fuel + amount);
+
+        // 1e-4 fuel = 50 microseconds at the authored 2 units/s, far below one tick.
+        // Covers both 2,500 float .02s steps and Unity's native fixedDeltaTime
+        // quantization (.0199999921 on the pinned Editor, ~3.95e-5 fuel at 50s).
+        internal const double FuelBoundaryTolerance = 0.0001d;
+        internal void DrainFuel(float deltaTime)
+        {
+            if (!float.IsFinite(deltaTime) || deltaTime < 0f)
+                throw new ArgumentOutOfRangeException(nameof(deltaTime));
+            if (deltaTime == 0f || config.FuelDrainPerSecond == 0f) return;
+            fuel = Math.Max(0d, fuel - (double)config.FuelDrainPerSecond * deltaTime);
+            if (fuel <= FuelBoundaryTolerance) fuel = 0d;
         }
 
         internal void RecordMovement(float deltaTime, double travelledDistance)

@@ -12,6 +12,8 @@ namespace NeonTunnelRunner
         [SerializeField] private PoolService poolService;
         [SerializeField] private int runSeed = 12345;
         [SerializeField, Min(0)] private int initialBestScore;
+        [SerializeField] private GameState debugState;
+        [SerializeField] private GameOverReason debugEndReason;
         private bool initialized;
         private bool ownsInstance;
         private bool transitioning;
@@ -72,6 +74,8 @@ namespace NeonTunnelRunner
             Session?.DetachObservers();
             State = GameState.Menu;
             EndReason = GameOverReason.None;
+            debugEndReason = EndReason;
+            debugState = State;
             Session = new RunSession(gameplayConfig, initialBestScore);
             poolService.Initialize(); // Failure leaves a usable Menu; StartRun reports the actionable error.
             gameplayLoop.Initialize(this, Session);
@@ -114,6 +118,7 @@ namespace NeonTunnelRunner
             try
             {
                 EndReason = reason;
+                debugEndReason = reason;
                 gameplayLoop.StopRun();
                 RunSnapshot result = CommitState(GameState.GameOver);
                 RunEnded?.Invoke(result, reason);
@@ -166,10 +171,10 @@ namespace NeonTunnelRunner
                     Debug.LogError("[GameManager] Cannot start: " + gameplayLoop.WorldFailure, this);
                     return false;
                 }
-                Session.Reset(runSeed, Session.Snapshot.BestScore);
                 gameplayLoop.Survival.RefreshDebug();
                 gameplayLoop.Progression.RefreshDebug();
                 EndReason = GameOverReason.None;
+                debugEndReason = EndReason;
                 quitRequested = false;
                 CommitState(GameState.Playing);
                 return true;
@@ -192,6 +197,7 @@ namespace NeonTunnelRunner
         {
             GameState previous = State;
             State = next;
+            debugState = next;
             Session.SetSimulationActive(next == GameState.Playing);
             Time.timeScale = next == GameState.Paused || next == GameState.GameOver ? 0f : 1f;
             gameplayLoop.ApplyState(next);

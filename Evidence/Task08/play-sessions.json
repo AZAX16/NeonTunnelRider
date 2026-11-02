@@ -1,0 +1,820 @@
+{
+  "originalOptions": {
+    "playing": false,
+    "enabled": true,
+    "options": 3
+  },
+  "cycles": [
+    {
+      "reloadsEnabled": true,
+      "smoke": {
+        "passed": true,
+        "exitWhilePaused": true,
+        "pauseWallSeconds": 10.120863,
+        "baseline": "RGBA(0.800, 0.830, 0.860, 1.000)",
+        "hitColor": "RGBA(1.000, 0.180, 0.100, 1.000)",
+        "route": {
+          "coins": 17,
+          "fuel": 12,
+          "Fuel": 94.44,
+          "Lives": 3,
+          "RebaseCount": 2,
+          "SpawnedFuel": 14,
+          "SpawnedMoving": 5,
+          "SpawnedStationary": 25
+        },
+        "bindings": [
+          {
+            "key": "A",
+            "lane": -1,
+            "tick": 35,
+            "callbacks": 1
+          },
+          {
+            "key": "D",
+            "lane": 1,
+            "tick": 19,
+            "callbacks": 1
+          },
+          {
+            "key": "LeftArrow",
+            "lane": -1,
+            "tick": 19,
+            "callbacks": 1
+          },
+          {
+            "key": "RightArrow",
+            "lane": 1,
+            "tick": 19,
+            "callbacks": 1
+          }
+        ],
+        "collections": [
+          {
+            "kind": "Coin",
+            "Value": 100,
+            "AppliedValue": 100,
+            "AbsoluteZ": 60,
+            "sequence": "4611686018427387907",
+            "PlayingTime": 1.1540000030247546
+          },
+          {
+            "kind": "Fuel",
+            "Value": 30,
+            "AppliedValue": 30.0000019,
+            "AbsoluteZ": 120,
+            "sequence": "4611686018427387904",
+            "PlayingTime": 2.3539999869313197
+          },
+          {
+            "kind": "Coin",
+            "Value": 100,
+            "AppliedValue": 100,
+            "AbsoluteZ": 150,
+            "sequence": "4611686018427387909",
+            "PlayingTime": 2.9540000551785175
+          },
+          {
+            "kind": "Coin",
+            "Value": 100,
+            "AppliedValue": 100,
+            "AbsoluteZ": 240,
+            "sequence": "4611686018427387911",
+            "PlayingTime": 4.75399995474445
+          },
+          {
+            "kind": "Fuel",
+            "Value": 30,
+            "AppliedValue": 29.9999962,
+            "AbsoluteZ": 300,
+            "sequence": "4611686018427387905",
+            "PlayingTime": 5.9540000912388455
+          },
+          {
+            "kind": "Coin",
+            "Value": 100,
+            "AppliedValue": 100,
+            "AbsoluteZ": 330,
+            "sequence": "4611686018427387913",
+            "PlayingTime": 6.553999854310383
+          },
+          {
+            "kind": "Fuel",
+            "Value": 30,
+            "AppliedValue": 30.0000038,
+            "AbsoluteZ": 450,
+            "sequence": "4611686018427387906",
+            "PlayingTime": 8.954000127299174
+          },
+          {
+            "kind": "Coin",
+            "Value": 100,
+            "AppliedValue": 100,
+            "AbsoluteZ": 540,
+            "sequence": "4611686018427387923",
+            "PlayingTime": 10.753999416513786
+          },
+          {
+            "kind": "Fuel",
+            "Value": 30,
+            "AppliedValue": 13.87999,
+            "AbsoluteZ": 600,
+            "sequence": "4611686018427387920",
+            "PlayingTime": 11.954000163359503
+          },
+          {
+            "kind": "Coin",
+            "Value": 100,
+            "AppliedValue": 100,
+            "AbsoluteZ": 630,
+            "sequence": "4611686018427387925",
+            "PlayingTime": 12.55399992643104
+          },
+          {
+            "kind": "Coin",
+            "Value": 100,
+            "AppliedValue": 100,
+            "AbsoluteZ": 720,
+            "sequence": "4611686018427387927",
+            "PlayingTime": 14.354000436348294
+          },
+          {
+            "kind": "Fuel",
+            "Value": 30,
+            "AppliedValue": 7.199997,
+            "AbsoluteZ": 780,
+            "sequence": "4611686018427387921",
+            "PlayingTime": 15.553999962491368
+          },
+          {
+            "kind": "Coin",
+            "Value": 100,
+            "AppliedValue": 100,
+            "AbsoluteZ": 810,
+            "sequence": "4611686018427387929",
+            "PlayingTime": 16.153999725562905
+          },
+          {
+            "kind": "Fuel",
+            "Value": 30,
+            "AppliedValue": 6,
+            "AbsoluteZ": 930,
+            "sequence": "4611686018427387922",
+            "PlayingTime": 18.553999998551696
+          },
+          {
+            "kind": "Coin",
+            "Value": 100,
+            "AppliedValue": 100,
+            "AbsoluteZ": 1020,
+            "sequence": "4611686018427387939",
+            "PlayingTime": 20.353999974411543
+          },
+          {
+            "kind": "Fuel",
+            "Value": 30,
+            "AppliedValue": 6,
+            "AbsoluteZ": 1080,
+            "sequence": "4611686018427387936",
+            "PlayingTime": 21.554000034612024
+          },
+          {
+            "kind": "Coin",
+            "Value": 100,
+            "AppliedValue": 100,
+            "AbsoluteZ": 1110,
+            "sequence": "4611686018427387941",
+            "PlayingTime": 22.15400010285922
+          },
+          {
+            "kind": "Coin",
+            "Value": 100,
+            "AppliedValue": 100,
+            "AbsoluteZ": 1200,
+            "sequence": "4611686018427387943",
+            "PlayingTime": 23.954000002425154
+          },
+          {
+            "kind": "Fuel",
+            "Value": 30,
+            "AppliedValue": 7.199997,
+            "AbsoluteZ": 1260,
+            "sequence": "4611686018427387937",
+            "PlayingTime": 25.15399983374389
+          },
+          {
+            "kind": "Coin",
+            "Value": 100,
+            "AppliedValue": 100,
+            "AbsoluteZ": 1290,
+            "sequence": "4611686018427387945",
+            "PlayingTime": 25.754000207166747
+          },
+          {
+            "kind": "Fuel",
+            "Value": 30,
+            "AppliedValue": 6,
+            "AbsoluteZ": 1410,
+            "sequence": "4611686018427387938",
+            "PlayingTime": 28.153999869804217
+          },
+          {
+            "kind": "Coin",
+            "Value": 100,
+            "AppliedValue": 100,
+            "AbsoluteZ": 1500,
+            "sequence": "4611686018427387955",
+            "PlayingTime": 29.95400037972147
+          },
+          {
+            "kind": "Fuel",
+            "Value": 30,
+            "AppliedValue": 6,
+            "AbsoluteZ": 1560,
+            "sequence": "4611686018427387952",
+            "PlayingTime": 31.153999905864545
+          },
+          {
+            "kind": "Coin",
+            "Value": 100,
+            "AppliedValue": 100,
+            "AbsoluteZ": 1590,
+            "sequence": "4611686018427387957",
+            "PlayingTime": 31.753999668936082
+          },
+          {
+            "kind": "Coin",
+            "Value": 100,
+            "AppliedValue": 100,
+            "AbsoluteZ": 1680,
+            "sequence": "4611686018427387959",
+            "PlayingTime": 33.554000178853336
+          },
+          {
+            "kind": "Fuel",
+            "Value": 30,
+            "AppliedValue": 7.199997,
+            "AbsoluteZ": 1740,
+            "sequence": "4611686018427387953",
+            "PlayingTime": 34.75399970499641
+          },
+          {
+            "kind": "Coin",
+            "Value": 100,
+            "AppliedValue": 100,
+            "AbsoluteZ": 1770,
+            "sequence": "4611686018427387961",
+            "PlayingTime": 35.35399946806795
+          },
+          {
+            "kind": "Fuel",
+            "Value": 30,
+            "AppliedValue": 6,
+            "AbsoluteZ": 1890,
+            "sequence": "4611686018427387954",
+            "PlayingTime": 37.75399974105674
+          },
+          {
+            "kind": "Coin",
+            "Value": 100,
+            "AppliedValue": 100,
+            "AbsoluteZ": 1980,
+            "sequence": "4611686018427387971",
+            "PlayingTime": 39.55400002209225
+          }
+        ],
+        "milestones": [
+          {
+            "target": 125,
+            "Distance": 125.99995024502277,
+            "ElapsedTime": 2.5199990049004555,
+            "Lives": 3,
+            "Fuel": 44.9600029,
+            "Coins": 1,
+            "Score": 225,
+            "tick": 126,
+            "frame": 725,
+            "rebases": 0,
+            "offset": 0,
+            "seam": 0
+          },
+          {
+            "target": 450,
+            "Distance": 451.9998215138912,
+            "ElapsedTime": 9.039996430277824,
+            "Lives": 3,
+            "Fuel": 91.9200058,
+            "Coins": 4,
+            "Score": 851,
+            "tick": 452,
+            "frame": 995,
+            "rebases": 0,
+            "offset": 0,
+            "seam": 0
+          },
+          {
+            "target": 1005,
+            "Distance": 1005.9996027499437,
+            "ElapsedTime": 20.119992054998875,
+            "Lives": 3,
+            "Fuel": 96.840004,
+            "Coins": 8,
+            "Score": 1805,
+            "tick": 1006,
+            "frame": 1456,
+            "rebases": 1,
+            "offset": 960,
+            "seam": 0
+          },
+          {
+            "target": 2020,
+            "Distance": 2020.9992019459605,
+            "ElapsedTime": 40.41998403891921,
+            "Lives": 3,
+            "Fuel": 94.64,
+            "Coins": 17,
+            "Score": 3720,
+            "tick": 2021,
+            "frame": 2294,
+            "rebases": 2,
+            "offset": 1920,
+            "seam": 0
+          }
+        ],
+        "damages": [
+          {
+            "RemainingLives": 2,
+            "PlayingTime": 0.1199999526143074,
+            "token": "81",
+            "flash": true
+          },
+          {
+            "RemainingLives": 2,
+            "PlayingTime": 0,
+            "token": "222",
+            "flash": true
+          },
+          {
+            "RemainingLives": 1,
+            "PlayingTime": 1.159999541938305,
+            "token": "223",
+            "flash": true
+          },
+          {
+            "RemainingLives": 0,
+            "PlayingTime": 2.2999990917742252,
+            "token": "224",
+            "flash": true
+          }
+        ],
+        "ends": [
+          {
+            "reason": "Fuel",
+            "Lives": 3,
+            "Fuel": 0,
+            "Distance": 0,
+            "ElapsedTime": 0.019999992102384567,
+            "Coins": 0,
+            "Score": 0,
+            "ActualSpeed": 0,
+            "CruiseSpeed": 0,
+            "flash": 0
+          },
+          {
+            "reason": "Lives",
+            "Lives": 0,
+            "Fuel": 95.36,
+            "Distance": 0,
+            "ElapsedTime": 2.31999908387661,
+            "Coins": 0,
+            "Score": 0,
+            "ActualSpeed": 0,
+            "CruiseSpeed": 0,
+            "flash": 0.23000000789761543
+          }
+        ],
+        "created": 304,
+        "misses": 0,
+        "pausedRestart": true,
+        "gameOverRestart": true,
+        "menuCleanup": true
+      },
+      "exit": {
+        "playing": false,
+        "instanceClear": true,
+        "timeScale": 1
+      }
+    },
+    {
+      "reloadsEnabled": false,
+      "smoke": {
+        "passed": true,
+        "exitWhilePaused": true,
+        "pauseWallSeconds": 10.117471,
+        "baseline": "RGBA(0.800, 0.830, 0.860, 1.000)",
+        "hitColor": "RGBA(1.000, 0.180, 0.100, 1.000)",
+        "route": {
+          "coins": 17,
+          "fuel": 12,
+          "Fuel": 94.36,
+          "Lives": 3,
+          "RebaseCount": 2,
+          "SpawnedFuel": 14,
+          "SpawnedMoving": 5,
+          "SpawnedStationary": 25
+        },
+        "bindings": [
+          {
+            "key": "A",
+            "lane": -1,
+            "tick": 34,
+            "callbacks": 1
+          },
+          {
+            "key": "D",
+            "lane": 1,
+            "tick": 19,
+            "callbacks": 1
+          },
+          {
+            "key": "LeftArrow",
+            "lane": -1,
+            "tick": 20,
+            "callbacks": 1
+          },
+          {
+            "key": "RightArrow",
+            "lane": 1,
+            "tick": 20,
+            "callbacks": 1
+          }
+        ],
+        "collections": [
+          {
+            "kind": "Coin",
+            "Value": 100,
+            "AppliedValue": 100,
+            "AbsoluteZ": 60,
+            "sequence": "4611686018427387907",
+            "PlayingTime": 1.1540000030247546
+          },
+          {
+            "kind": "Fuel",
+            "Value": 30,
+            "AppliedValue": 30.0000019,
+            "AbsoluteZ": 120,
+            "sequence": "4611686018427387904",
+            "PlayingTime": 2.3539999869313197
+          },
+          {
+            "kind": "Coin",
+            "Value": 100,
+            "AppliedValue": 100,
+            "AbsoluteZ": 150,
+            "sequence": "4611686018427387909",
+            "PlayingTime": 2.9540000551785175
+          },
+          {
+            "kind": "Coin",
+            "Value": 100,
+            "AppliedValue": 100,
+            "AbsoluteZ": 240,
+            "sequence": "4611686018427387911",
+            "PlayingTime": 4.75399995474445
+          },
+          {
+            "kind": "Fuel",
+            "Value": 30,
+            "AppliedValue": 29.9999962,
+            "AbsoluteZ": 300,
+            "sequence": "4611686018427387905",
+            "PlayingTime": 5.9540000912388455
+          },
+          {
+            "kind": "Coin",
+            "Value": 100,
+            "AppliedValue": 100,
+            "AbsoluteZ": 330,
+            "sequence": "4611686018427387913",
+            "PlayingTime": 6.553999854310383
+          },
+          {
+            "kind": "Fuel",
+            "Value": 30,
+            "AppliedValue": 30.0000038,
+            "AbsoluteZ": 450,
+            "sequence": "4611686018427387906",
+            "PlayingTime": 8.954000127299174
+          },
+          {
+            "kind": "Coin",
+            "Value": 100,
+            "AppliedValue": 100,
+            "AbsoluteZ": 540,
+            "sequence": "4611686018427387923",
+            "PlayingTime": 10.753999416513786
+          },
+          {
+            "kind": "Fuel",
+            "Value": 30,
+            "AppliedValue": 13.87999,
+            "AbsoluteZ": 600,
+            "sequence": "4611686018427387920",
+            "PlayingTime": 11.954000163359503
+          },
+          {
+            "kind": "Coin",
+            "Value": 100,
+            "AppliedValue": 100,
+            "AbsoluteZ": 630,
+            "sequence": "4611686018427387925",
+            "PlayingTime": 12.55399992643104
+          },
+          {
+            "kind": "Coin",
+            "Value": 100,
+            "AppliedValue": 100,
+            "AbsoluteZ": 720,
+            "sequence": "4611686018427387927",
+            "PlayingTime": 14.354000436348294
+          },
+          {
+            "kind": "Fuel",
+            "Value": 30,
+            "AppliedValue": 7.199997,
+            "AbsoluteZ": 780,
+            "sequence": "4611686018427387921",
+            "PlayingTime": 15.553999962491368
+          },
+          {
+            "kind": "Coin",
+            "Value": 100,
+            "AppliedValue": 100,
+            "AbsoluteZ": 810,
+            "sequence": "4611686018427387929",
+            "PlayingTime": 16.153999725562905
+          },
+          {
+            "kind": "Fuel",
+            "Value": 30,
+            "AppliedValue": 6,
+            "AbsoluteZ": 930,
+            "sequence": "4611686018427387922",
+            "PlayingTime": 18.553999998551696
+          },
+          {
+            "kind": "Coin",
+            "Value": 100,
+            "AppliedValue": 100,
+            "AbsoluteZ": 1020,
+            "sequence": "4611686018427387939",
+            "PlayingTime": 20.353999974411543
+          },
+          {
+            "kind": "Fuel",
+            "Value": 30,
+            "AppliedValue": 6,
+            "AbsoluteZ": 1080,
+            "sequence": "4611686018427387936",
+            "PlayingTime": 21.554000034612024
+          },
+          {
+            "kind": "Coin",
+            "Value": 100,
+            "AppliedValue": 100,
+            "AbsoluteZ": 1110,
+            "sequence": "4611686018427387941",
+            "PlayingTime": 22.15400010285922
+          },
+          {
+            "kind": "Coin",
+            "Value": 100,
+            "AppliedValue": 100,
+            "AbsoluteZ": 1200,
+            "sequence": "4611686018427387943",
+            "PlayingTime": 23.954000002425154
+          },
+          {
+            "kind": "Fuel",
+            "Value": 30,
+            "AppliedValue": 7.199997,
+            "AbsoluteZ": 1260,
+            "sequence": "4611686018427387937",
+            "PlayingTime": 25.15399983374389
+          },
+          {
+            "kind": "Coin",
+            "Value": 100,
+            "AppliedValue": 100,
+            "AbsoluteZ": 1290,
+            "sequence": "4611686018427387945",
+            "PlayingTime": 25.754000207166747
+          },
+          {
+            "kind": "Fuel",
+            "Value": 30,
+            "AppliedValue": 6,
+            "AbsoluteZ": 1410,
+            "sequence": "4611686018427387938",
+            "PlayingTime": 28.153999869804217
+          },
+          {
+            "kind": "Coin",
+            "Value": 100,
+            "AppliedValue": 100,
+            "AbsoluteZ": 1500,
+            "sequence": "4611686018427387955",
+            "PlayingTime": 29.95400037972147
+          },
+          {
+            "kind": "Fuel",
+            "Value": 30,
+            "AppliedValue": 6,
+            "AbsoluteZ": 1560,
+            "sequence": "4611686018427387952",
+            "PlayingTime": 31.153999905864545
+          },
+          {
+            "kind": "Coin",
+            "Value": 100,
+            "AppliedValue": 100,
+            "AbsoluteZ": 1590,
+            "sequence": "4611686018427387957",
+            "PlayingTime": 31.753999668936082
+          },
+          {
+            "kind": "Coin",
+            "Value": 100,
+            "AppliedValue": 100,
+            "AbsoluteZ": 1680,
+            "sequence": "4611686018427387959",
+            "PlayingTime": 33.554000178853336
+          },
+          {
+            "kind": "Fuel",
+            "Value": 30,
+            "AppliedValue": 7.199997,
+            "AbsoluteZ": 1740,
+            "sequence": "4611686018427387953",
+            "PlayingTime": 34.75399970499641
+          },
+          {
+            "kind": "Coin",
+            "Value": 100,
+            "AppliedValue": 100,
+            "AbsoluteZ": 1770,
+            "sequence": "4611686018427387961",
+            "PlayingTime": 35.35399946806795
+          },
+          {
+            "kind": "Fuel",
+            "Value": 30,
+            "AppliedValue": 6,
+            "AbsoluteZ": 1890,
+            "sequence": "4611686018427387954",
+            "PlayingTime": 37.75399974105674
+          },
+          {
+            "kind": "Coin",
+            "Value": 100,
+            "AppliedValue": 100,
+            "AbsoluteZ": 1980,
+            "sequence": "4611686018427387971",
+            "PlayingTime": 39.55400002209225
+          }
+        ],
+        "milestones": [
+          {
+            "target": 125,
+            "Distance": 125.99995024502277,
+            "ElapsedTime": 2.5199990049004555,
+            "Lives": 3,
+            "Fuel": 44.9600029,
+            "Coins": 1,
+            "Score": 225,
+            "tick": 126,
+            "frame": 720,
+            "rebases": 0,
+            "offset": 0,
+            "seam": 0
+          },
+          {
+            "target": 450,
+            "Distance": 451.9998215138912,
+            "ElapsedTime": 9.039996430277824,
+            "Lives": 3,
+            "Fuel": 91.9200058,
+            "Coins": 4,
+            "Score": 851,
+            "tick": 452,
+            "frame": 998,
+            "rebases": 0,
+            "offset": 0,
+            "seam": 0
+          },
+          {
+            "target": 1005,
+            "Distance": 1005.9996027499437,
+            "ElapsedTime": 20.119992054998875,
+            "Lives": 3,
+            "Fuel": 96.840004,
+            "Coins": 8,
+            "Score": 1805,
+            "tick": 1006,
+            "frame": 1476,
+            "rebases": 1,
+            "offset": 960,
+            "seam": 0
+          },
+          {
+            "target": 2020,
+            "Distance": 2021.9992015510798,
+            "ElapsedTime": 40.439984031021595,
+            "Lives": 3,
+            "Fuel": 94.6,
+            "Coins": 17,
+            "Score": 3721,
+            "tick": 2022,
+            "frame": 2334,
+            "rebases": 2,
+            "offset": 1920,
+            "seam": 0
+          }
+        ],
+        "damages": [
+          {
+            "RemainingLives": 2,
+            "PlayingTime": 0.09999996051192284,
+            "token": "81",
+            "flash": true
+          },
+          {
+            "RemainingLives": 2,
+            "PlayingTime": 0,
+            "token": "222",
+            "flash": true
+          },
+          {
+            "RemainingLives": 1,
+            "PlayingTime": 1.159999541938305,
+            "token": "223",
+            "flash": true
+          },
+          {
+            "RemainingLives": 0,
+            "PlayingTime": 2.2999990917742252,
+            "token": "224",
+            "flash": true
+          }
+        ],
+        "ends": [
+          {
+            "reason": "Fuel",
+            "Lives": 3,
+            "Fuel": 0,
+            "Distance": 0,
+            "ElapsedTime": 0.019999992102384567,
+            "Coins": 0,
+            "Score": 0,
+            "ActualSpeed": 0,
+            "CruiseSpeed": 0,
+            "flash": 0
+          },
+          {
+            "reason": "Lives",
+            "Lives": 0,
+            "Fuel": 95.36,
+            "Distance": 0,
+            "ElapsedTime": 2.31999908387661,
+            "Coins": 0,
+            "Score": 0,
+            "ActualSpeed": 0,
+            "CruiseSpeed": 0,
+            "flash": 0.23000000789761543
+          }
+        ],
+        "created": 304,
+        "misses": 0,
+        "pausedRestart": true,
+        "gameOverRestart": true,
+        "menuCleanup": true
+      },
+      "exit": {
+        "playing": false,
+        "instanceClear": true,
+        "timeScale": 1
+      }
+    }
+  ],
+  "passed": true,
+  "configBefore": {
+    "Pools.asset": "3936ff81b28e7f6df96e2e80239256aea371575a69efd8aceeac8e7414934093",
+    "Gameplay.asset": "a90e5b2a51873e65c9dae592129973e2188169ea97856e950d2c4f114efa9203",
+    "World.asset": "9e9272c239a8a26e8b3366a8e6d79ffff09aecadb9c4ae4fa7f2d13f5addc55f"
+  },
+  "configAfter": {
+    "Pools.asset": "3936ff81b28e7f6df96e2e80239256aea371575a69efd8aceeac8e7414934093",
+    "Gameplay.asset": "a90e5b2a51873e65c9dae592129973e2188169ea97856e950d2c4f114efa9203",
+    "World.asset": "9e9272c239a8a26e8b3366a8e6d79ffff09aecadb9c4ae4fa7f2d13f5addc55f"
+  }
+}

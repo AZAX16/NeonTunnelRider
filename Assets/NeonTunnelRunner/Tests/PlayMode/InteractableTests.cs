@@ -144,12 +144,12 @@ namespace NeonTunnelRunner
             loop.Player.PredictStep(0.02f,22f); traffic.PredictTraffic(0.02f,0d);
             Assert.Throws<InvalidOperationException>(()=>loop.Sensor.CollectContacts());
         }
-        [Test] public void FuelMutationClampsAndDamageClampsLivesWithoutTerminalResolution()
+        [Test] public void FuelMutationClampsAndThreeHitsResolveLivesOnce()
         {
             manager.Session.SetResources(3,95f); loop.Survival.AddFuel(30f); Assert.That(manager.Session.Snapshot.Fuel,Is.EqualTo(100f));
             Assert.Throws<ArgumentOutOfRangeException>(()=>loop.Survival.AddFuel(-1));
-            for (int i=0;i<4;i++) { Rent(PoolKey.Stationary,manager.Session.Snapshot.Distance,sequence:10000+i); loop.Step(1.1f); }
-            Assert.That(manager.Session.Snapshot.Lives,Is.Zero); Assert.That(manager.State,Is.EqualTo(GameState.Playing));
+            for (int i=0;i<3;i++) { Rent(PoolKey.Stationary,manager.Session.Snapshot.Distance,sequence:10000+i); loop.Step(1.1f); }
+            Assert.That(manager.Session.Snapshot.Lives,Is.Zero); Assert.That(manager.State,Is.EqualTo(GameState.GameOver)); Assert.That(manager.EndReason,Is.EqualTo(GameOverReason.Lives));
         }
         [Test] public void ExhaustionOmitsWithoutGrowthRetryOrChangedPlans()
         {
@@ -206,8 +206,8 @@ namespace NeonTunnelRunner
         {
             for (int cycle=0;cycle<50;cycle++)
             {
-                loop.Step(48f); loop.Step(48f); Assert.That(loop.Origin.RebaseCount,Is.GreaterThanOrEqualTo(2));
-                traffic.ReleaseAll(); var item=Rent(PoolKey.Stationary,manager.Session.Snapshot.Distance); ulong token=item.ActivationId;
+                SurvivalRoute.Advance(loop,48f); SurvivalRoute.Advance(loop,48f); Assert.That(loop.Origin.RebaseCount,Is.GreaterThanOrEqualTo(2));
+                traffic.ReleaseAll(); var item=Rent(PoolKey.Stationary,manager.Session.Snapshot.Distance,loop.Player.LaneIndex); ulong token=item.ActivationId;
                 loop.Step(0.02f); Assert.That(item.Encountered,Is.True);
                 if (cycle%2==0) manager.Pause(); else manager.EndRun(GameOverReason.Lives);
                 Assert.That(manager.Restart(),Is.True); Assert.That(item.ReturnToPool(token),Is.False);

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 482812753612654963}
   - component: {fileID: 7062171466699912757}
   - component: {fileID: 3281914291220571836}
+  - component: {fileID: 1428590503692550247}
   m_Layer: 8
   m_Name: PlayerHovercar
   m_TagString: Untagged
@@ -116,6 +117,7 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   debugLives: 0
   debugGraceRemaining: 0
+  debugFuel: 0
 --- !u!114 &3281914291220571836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,6 +133,24 @@ MonoBehaviour:
   player: {fileID: 482812753612654963}
   registry: {fileID: 0}
   survival: {fileID: 7062171466699912757}
+  progression: {fileID: 0}
+--- !u!114 &1428590503692550247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004737645062352705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39e311d98dc116a4db2d54d7fbea909d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NeonTunnelRunner.Runtime::NeonTunnelRunner.VehicleVisuals
+  gameManager: {fileID: 0}
+  flashRenderer: {fileID: 4194840026508648501}
+  flashDuration: 0.25
+  flashColor: {r: 1, g: 0.18, b: 0.1, a: 1}
+  debugFlashRemaining: 0
 --- !u!1 &2753436262975936255
 GameObject:
   m_ObjectHideFlags: 0

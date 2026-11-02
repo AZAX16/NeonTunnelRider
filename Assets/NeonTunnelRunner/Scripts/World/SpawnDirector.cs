@@ -140,6 +140,7 @@ namespace NeonTunnelRunner
         internal void PredictTraffic(float dt,double offset)
         { for (int i=0;i<ActiveCount;i++) { var lease=active[i]; if (!lease.IsCurrent) throw new InvalidOperationException("Stale traffic lease."); lease.Item.PredictStep(dt,offset); } }
         internal void CommitTraffic() { for (int i=0;i<ActiveCount;i++) if (active[i].IsCurrent) active[i].Item.CommitPose(); }
+        internal void HoldTraffic() { for (int i=0;i<ActiveCount;i++) if (active[i].IsCurrent) active[i].Item.HoldPose(); }
         public void ShiftOrigin(double newOffset,double delta)
         { for (int i=0;i<ActiveCount;i++) if (active[i].IsCurrent) active[i].Item.ShiftOrigin(newOffset); }
         internal void ReleaseAll()

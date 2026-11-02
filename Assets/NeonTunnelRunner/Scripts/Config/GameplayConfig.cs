@@ -17,7 +17,7 @@ namespace NeonTunnelRunner
         [SerializeField, Min(0f)] private float playerRootHeight = 0.6f;
         [SerializeField] private Vector3 playerHalfExtents = new Vector3(0.85f, 0.45f, 1.8f);
 
-        [Header("Survival and score authoring (later tasks)")]
+        [Header("Survival and score authoring")]
         [SerializeField, Min(0f)] private float damageGraceDuration = 1f;
         [SerializeField, Min(0f)] private float fuelDrainPerSecond = 2f;
         [SerializeField, Min(0f)] private float fuelRefill = 30f;

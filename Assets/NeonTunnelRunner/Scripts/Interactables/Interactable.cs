@@ -116,9 +116,13 @@ namespace NeonTunnelRunner
         {
             var previous=PreviousPosition; previous.z=(float)(PreviousAbsoluteZ-offset); PreviousPosition=previous;
             var current=CurrentPosition; current.z=(float)(AbsoluteZ-offset); CurrentPosition=current;
+            HoldPose();
+        }
+        internal void HoldPose()
+        {
             if (body) { var interpolation=body.interpolation; body.interpolation=RigidbodyInterpolation.None;
-                body.position=current; body.rotation=Quaternion.identity; transform.SetPositionAndRotation(current,Quaternion.identity); body.interpolation=interpolation; }
-            else transform.SetPositionAndRotation(current,Quaternion.identity);
+                body.position=CurrentPosition; body.rotation=Quaternion.identity; transform.SetPositionAndRotation(CurrentPosition,Quaternion.identity); body.interpolation=interpolation; }
+            else transform.SetPositionAndRotation(CurrentPosition,Quaternion.identity);
         }
 #if UNITY_EDITOR
         private void OnDrawGizmosSelected()

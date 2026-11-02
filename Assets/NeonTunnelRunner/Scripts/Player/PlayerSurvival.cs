@@ -12,6 +12,8 @@ namespace NeonTunnelRunner
         [SerializeField] private float debugFuel;
         private RunSession session;
         private double graceUntil;
+        // TOI is float; allow at most one microsecond of contact-time quantization.
+        internal const double GraceBoundaryTolerance = 0.000001d;
         public GameManager Owner => gameManager;
         public int Lives => session == null ? 0 : session.Snapshot.Lives;
         public double GraceUntil => graceUntil;
@@ -22,8 +24,8 @@ namespace NeonTunnelRunner
         {
             if (!gameManager || gameManager.State != GameState.Playing || gameManager.IsTransitioning ||
                 session == null || !double.IsFinite(encounter.PlayingTime) || encounter.PlayingTime < session.Snapshot.ElapsedTime ||
-                encounter.PlayingTime < graceUntil || Lives <= 0) return false;
-            session.SetResources(Math.Max(0,Lives-1),session.Snapshot.Fuel);
+                encounter.PlayingTime + GraceBoundaryTolerance < graceUntil || Lives <= 0) return false;
+            session.RemoveLife();
             graceUntil=encounter.PlayingTime+gameManager.Configuration.DamageGraceDuration;
             RefreshDebug();
             session.PublishDamage(new DamageEvent(session.Snapshot.RunId, encounter, Lives));
@@ -33,8 +35,22 @@ namespace NeonTunnelRunner
         {
             if (!float.IsFinite(amount) || amount < 0f) throw new ArgumentOutOfRangeException(nameof(amount));
             if (session == null || !gameManager || gameManager.State != GameState.Playing || gameManager.IsTransitioning) return;
-            session.SetResources(Lives,Mathf.Min(gameManager.Configuration.FuelCapacity,session.Snapshot.Fuel+amount));
+            session.RestoreFuel(amount);
             RefreshDebug();
+        }
+        internal void StepFuel(float deltaTime)
+        {
+            if (!float.IsFinite(deltaTime) || deltaTime < 0f) throw new ArgumentOutOfRangeException(nameof(deltaTime));
+            if (session == null || !gameManager || gameManager.State != GameState.Playing || gameManager.IsTransitioning) return;
+            session.DrainFuel(deltaTime);
+            RefreshDebug();
+        }
+        public GameOverReason EvaluateEnd()
+        {
+            if (session == null || !gameManager || gameManager.State != GameState.Playing || gameManager.IsTransitioning)
+                return GameOverReason.None;
+            var snapshot=session.Snapshot;
+            return snapshot.Lives <= 0 ? GameOverReason.Lives : snapshot.Fuel <= 0f ? GameOverReason.Fuel : GameOverReason.None;
         }
         internal void RefreshDebug() { debugLives=Lives; debugGraceRemaining=(float)GraceRemaining; debugFuel=session == null ? 0f : session.Snapshot.Fuel; }
     }

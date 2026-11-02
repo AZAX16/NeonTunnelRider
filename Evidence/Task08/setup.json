@@ -1,0 +1,31 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "file": "Docs/Setup/Task08Setup.cs",
+      "entry": "NeonTunnelRunner.Task08Setup.Configure"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 3149,
+      "executeMs": 573,
+      "assemblyName": "PipelineRunScript_Task08Setup_9b919512753746f3a483855b156c05eb",
+      "success": true,
+      "result": {
+        "scene": "Assets/NeonTunnelRunner/Scenes/Game.unity",
+        "prefab": "Assets/NeonTunnelRunner/Prefabs/Player/PlayerHovercar.prefab",
+        "renderer": "Body",
+        "owner": "Systems"
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
