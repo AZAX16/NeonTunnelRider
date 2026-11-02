@@ -1,0 +1,812 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "file": "Docs/Setup/Task09Build.cs",
+      "entry": "NeonTunnelRunner.Task09Build.Run",
+      "timeout": "900"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 2820,
+      "executeMs": 269387,
+      "assemblyName": "PipelineRunScript_Task09Build_28cb52fb7a194ee0b3a15fba6d86920c",
+      "success": true,
+      "result": {
+        "result": "Succeeded",
+        "totalErrors": 0,
+        "totalWarnings": 0,
+        "totalSize": 196570828,
+        "seconds": 269.17116699999997,
+        "outputPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner/Builds/Task09Persistence/NeonTunnelRunner.x86_64",
+        "steps": [
+          {
+            "name": "Build player",
+            "duration": 268.92876
+          },
+          {
+            "name": "Call PrepareForBuild callbacks",
+            "duration": 0.0081
+          },
+          {
+            "name": "Call internal build started callbacks",
+            "duration": 0.006483999999999999
+          },
+          {
+            "name": "Preprocess Player",
+            "duration": 0.833239
+          },
+          {
+            "name": "Save scenes before build",
+            "duration": 0.004663
+          },
+          {
+            "name": "Back up scenes",
+            "duration": 0.127061
+          },
+          {
+            "name": "Unload asset bundles",
+            "duration": 0.001611
+          },
+          {
+            "name": "Prepare For Build",
+            "duration": 0.0033169999999999996
+          },
+          {
+            "name": "ProducePlayerScriptAssemblies",
+            "duration": 31.132742
+          },
+          {
+            "name": "Prebuild Cleanup and Recompile",
+            "duration": 26.790461
+          },
+          {
+            "name": "Compile scripts",
+            "duration": 26.506853
+          },
+          {
+            "name": "Generate and validate platform script types",
+            "duration": 0.091948
+          },
+          {
+            "name": "Verify Build setup",
+            "duration": 0.107073
+          },
+          {
+            "name": "GetUnityAssemblies",
+            "duration": 0.035026
+          },
+          {
+            "name": "GetPlayerAssemblies",
+            "duration": 0.019319
+          },
+          {
+            "name": "Check old data build",
+            "duration": 0.0010689999999999999
+          },
+          {
+            "name": "Prepare assets for target platform",
+            "duration": 0.005266
+          },
+          {
+            "name": "Prepare splash screen",
+            "duration": 0.10135899999999999
+          },
+          {
+            "name": "Build scripts DLLs",
+            "duration": 0.047866
+          },
+          {
+            "name": "GetSystemAssemblies",
+            "duration": 0.005477
+          },
+          {
+            "name": "Compile Global Game Manager dependencies",
+            "duration": 0.17019199999999998
+          },
+          {
+            "name": "Load object[unnamed] (MonoManager) from Library/MonoManager.asset",
+            "duration": 0.005405
+          },
+          {
+            "name": "Building scenes",
+            "duration": 0.36491199999999996
+          },
+          {
+            "name": "Building scene Assets/NeonTunnelRunner/Scenes/Game.unity",
+            "duration": 0.36477
+          },
+          {
+            "name": "Building scene 0: Game",
+            "duration": 0.346254
+          },
+          {
+            "name": "Load scene (and close previous ones)",
+            "duration": 0.194591
+          },
+          {
+            "name": "Compile game scene dependencies",
+            "duration": 0.10027799999999999
+          },
+          {
+            "name": "Load object[unnamed] (MeshRenderer) from Assets/NeonTunnelRunner/Prefabs/Interactables/FuelCan.prefab",
+            "duration": 0.055904999999999996
+          },
+          {
+            "name": "Load object[unnamed] (MeshRenderer) from Assets/NeonTunnelRunner/Prefabs/Interactables/StationaryCar.prefab",
+            "duration": 0.0039429999999999995
+          },
+          {
+            "name": "Load object[unnamed] (GameObject) from Assets/NeonTunnelRunner/Prefabs/Road/RoadExit60.prefab",
+            "duration": 0.003377
+          },
+          {
+            "name": "Load object[unnamed] (GameObject) from Assets/NeonTunnelRunner/Prefabs/Road/RoadEntrance60.prefab",
+            "duration": 0.002525
+          },
+          {
+            "name": "Load object[unnamed] (GameObject) from Assets/NeonTunnelRunner/Prefabs/Road/RoadTunnel60.prefab",
+            "duration": 0.003434
+          },
+          {
+            "name": "Load object[unnamed] (GameObject) from Assets/NeonTunnelRunner/Prefabs/Road/RoadOpen60.prefab",
+            "duration": 0.0024709999999999997
+          },
+          {
+            "name": "Compile game scene",
+            "duration": 0.034707999999999996
+          },
+          {
+            "name": "Load object[unnamed] (MeshRenderer) from Assets/NeonTunnelRunner/Prefabs/Interactables/StationaryCar.prefab",
+            "duration": 0.0012519999999999999
+          },
+          {
+            "name": "Load object[unnamed] (GameObject) from Assets/NeonTunnelRunner/Prefabs/Road/RoadExit60.prefab",
+            "duration": 0.003113
+          },
+          {
+            "name": "Load object[unnamed] (GameObject) from Assets/NeonTunnelRunner/Prefabs/Road/RoadEntrance60.prefab",
+            "duration": 0.002466
+          },
+          {
+            "name": "Load object[unnamed] (GameObject) from Assets/NeonTunnelRunner/Prefabs/Road/RoadTunnel60.prefab",
+            "duration": 0.003109
+          },
+          {
+            "name": "Load object[unnamed] (GameObject) from Assets/NeonTunnelRunner/Prefabs/Road/RoadOpen60.prefab",
+            "duration": 0.002208
+          },
+          {
+            "name": "Rebuild resources",
+            "duration": 0.012747999999999999
+          },
+          {
+            "name": "Build GlobalGameManagers file",
+            "duration": 0.47459999999999997
+          },
+          {
+            "name": "Writing asset files",
+            "duration": 190.09965499999998
+          },
+          {
+            "name": "Packaging assets - globalgamemanagers.assets",
+            "duration": 67.53440599999999
+          },
+          {
+            "name": "Extract assets to write",
+            "duration": 0.194631
+          },
+          {
+            "name": "Write file:globalgamemanagers.assets",
+            "duration": 67.333213
+          },
+          {
+            "name": "Write object - Bloom (MonoScript) from Packages/com.unity.render-pipelines.universal/Runtime/Overrides/Bloom.cs",
+            "duration": 0.001005
+          },
+          {
+            "name": "Write object - Dropdown (MonoScript) from Packages/com.unity.ugui/Runtime/UGUI/UI/Core/Dropdown.cs",
+            "duration": 0.001259
+          },
+          {
+            "name": "Write object - TMP_InputField (MonoScript) from Packages/com.unity.ugui/Runtime/TMP/TMP_InputField.cs",
+            "duration": 0.0039109999999999995
+          },
+          {
+            "name": "Write object - InputActionAsset (MonoScript) from Packages/com.unity.inputsystem/InputSystem/Runtime/Actions/InputActionAsset.cs",
+            "duration": 0.0015869999999999999
+          },
+          {
+            "name": "Write object - VirtualMouseInput (MonoScript) from Packages/com.unity.inputsystem/InputSystem/Runtime/Plugins/UI/VirtualMouseInput.cs",
+            "duration": 0.0016129999999999999
+          },
+          {
+            "name": "Write object - ProbeVolumeBakingSet (MonoScript) from Packages/com.unity.render-pipelines.core/Runtime/Lighting/ProbeVolume/ProbeVolumeBakingSet.cs",
+            "duration": 0.0022489999999999997
+          },
+          {
+            "name": "Write object - TMP_FontAsset (MonoScript) from Packages/com.unity.ugui/Runtime/TMP/TMP_FontAsset.cs",
+            "duration": 0.002369
+          },
+          {
+            "name": "Write object - LensFlareDataSRP (MonoScript) from Packages/com.unity.render-pipelines.core/Runtime/PostProcessing/LensFlareDataSRP.cs",
+            "duration": 0.001162
+          },
+          {
+            "name": "Write object - TextMeshPro (MonoScript) from Packages/com.unity.ugui/Runtime/TMP/TextMeshPro.cs",
+            "duration": 0.0010999999999999998
+          },
+          {
+            "name": "Write object - UniversalRenderPipelineAsset (MonoScript) from Packages/com.unity.render-pipelines.universal/Runtime/Data/UniversalRenderPipelineAsset.cs",
+            "duration": 0.0017079999999999999
+          },
+          {
+            "name": "Write object - TrackedPoseDriver (MonoScript) from Packages/com.unity.inputsystem/InputSystem/Runtime/Plugins/XR/TrackedPoseDriver.cs",
+            "duration": 0.001266
+          },
+          {
+            "name": "Write object - InputField (MonoScript) from Packages/com.unity.ugui/Runtime/UGUI/UI/Core/InputField.cs",
+            "duration": 0.001967
+          },
+          {
+            "name": "Write object - TextMeshProUGUI (MonoScript) from Packages/com.unity.ugui/Runtime/TMP/TextMeshProUGUI.cs",
+            "duration": 0.0010329999999999998
+          },
+          {
+            "name": "Write object - Sprites-Default (Material) from Resources/unity_builtin_extra",
+            "duration": 0.004455
+          },
+          {
+            "name": "Write object - Splash Screen Unity Logo (Texture2D) from Library/SplashScreenCache/08/08eed5d1725539099d9be75e3d6dbdcf",
+            "duration": 0.004265
+          },
+          {
+            "name": "Load object from Library/SplashScreenCache/08/08eed5d1725539099d9be75e3d6dbdcf",
+            "duration": 0.001625
+          },
+          {
+            "name": "Write object - Hidden/Universal Render Pipeline/Sampling (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/Utils/Sampling.shader",
+            "duration": 1.826147
+          },
+          {
+            "name": "Write object - Hidden/Universal Render Pipeline/ScreenSpaceAmbientOcclusion (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/Utils/ScreenSpaceAmbientOcclusion.shader",
+            "duration": 2.666842
+          },
+          {
+            "name": "Write object - Hidden/Universal Render Pipeline/Stop NaN (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/PostProcessing/StopNaN.shader",
+            "duration": 0.148053
+          },
+          {
+            "name": "Write object - Hidden/CoreSRP/CoreCopy (Shader) from Packages/com.unity.render-pipelines.core/Shaders/CoreCopy.shader",
+            "duration": 0.239838
+          },
+          {
+            "name": "Write object - Hidden/Universal Render Pipeline/CameraMotionBlur (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/PostProcessing/CameraMotionBlur.shader",
+            "duration": 0.392601
+          },
+          {
+            "name": "Write object - Hidden/Universal Render Pipeline/ClusterDeferred (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/Utils/ClusterDeferred.shader",
+            "duration": 0.002657
+          },
+          {
+            "name": "Write object - Hidden/TerrainEngine/Details/UniversalPipeline/BillboardWavingDoublePass (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/Terrain/WavingGrassBillboard.shader",
+            "duration": 6.836014
+          },
+          {
+            "name": "Write object - Hidden/Universal Render Pipeline/BokehDepthOfField (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/PostProcessing/BokehDepthOfField.shader",
+            "duration": 0.010693
+          },
+          {
+            "name": "Write object - Hidden/Core/FallbackError (Shader) from Packages/com.unity.render-pipelines.core/Runtime/RenderPipelineResources/FallbackShader.shader",
+            "duration": 0.041226
+          },
+          {
+            "name": "Write object - Hidden/Universal Render Pipeline/XR/XROcclusionMesh (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/XR/XROcclusionMesh.shader",
+            "duration": 0.00179
+          },
+          {
+            "name": "Write object - Hidden/Universal Render Pipeline/Edge Adaptive Spatial Upsampling (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/PostProcessing/EdgeAdaptiveSpatialUpsampling.shader",
+            "duration": 0.33231299999999997
+          },
+          {
+            "name": "Write object - Hidden/Universal/HDRDebugView (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/Debug/HDRDebugView.shader",
+            "duration": 0.44692499999999996
+          },
+          {
+            "name": "Write object - Hidden/Universal Render Pipeline/GaussianDepthOfField (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/PostProcessing/GaussianDepthOfField.shader",
+            "duration": 0.0054719999999999994
+          },
+          {
+            "name": "Write object - Hidden/Universal Render Pipeline/Bloom (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/PostProcessing/Bloom.shader",
+            "duration": 0.494347
+          },
+          {
+            "name": "Write object - Hidden/Core/VrsVisualization (Shader) from Packages/com.unity.render-pipelines.core/Runtime/Vrs/Shaders/VrsVisualization.shader",
+            "duration": 0.091929
+          },
+          {
+            "name": "Write object - Hidden/ColorPyramidPS (Shader) from Packages/com.unity.render-pipelines.universal/Runtime/MipGen/Shaders/ColorPyramidPS.shader",
+            "duration": 0.10205499999999999
+          },
+          {
+            "name": "Write object - Hidden/Universal Render Pipeline/SubpixelMorphologicalAntialiasing (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/PostProcessing/SubpixelMorphologicalAntialiasing.shader",
+            "duration": 1.09693
+          },
+          {
+            "name": "Write object - Hidden/Universal Render Pipeline/LutBuilderLdr (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/PostProcessing/LutBuilderLdr.shader",
+            "duration": 0.27465
+          },
+          {
+            "name": "Write object - Hidden/Universal Render Pipeline/LensFlareDataDriven (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/PostProcessing/LensFlareDataDriven.shader",
+            "duration": 6.856949999999999
+          },
+          {
+            "name": "Write object - Hidden/Universal Render Pipeline/LensFlareScreenSpace (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/PostProcessing/LensFlareScreenSpace.shader",
+            "duration": 0.495795
+          },
+          {
+            "name": "Write object - Hidden/Universal Render Pipeline/ComputeScreenSpaceReflection (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/Utils/ComputeScreenSpaceReflection.shader",
+            "duration": 2.8973579999999997
+          },
+          {
+            "name": "Write object - Hidden/Universal/BlitFullPrecision (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/Utils/BlitFullPrecision.shader",
+            "duration": 0.141324
+          },
+          {
+            "name": "Write object - Hidden/Universal Render Pipeline/UIBackdropFilterComposite (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/Utils/UIBackdropFilterComposite.shader",
+            "duration": 0.123694
+          },
+          {
+            "name": "Write object - Hidden/Universal Render Pipeline/StencilDitherMaskSeed (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/Utils/StencilDitherMaskSeed.shader",
+            "duration": 0.131537
+          },
+          {
+            "name": "Write object - Hidden/Universal/CoreBlit (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/Utils/CoreBlit.shader",
+            "duration": 1.646749
+          },
+          {
+            "name": "Write object - Hidden/Universal Render Pipeline/TemporalAA (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/PostProcessing/TemporalAA.shader",
+            "duration": 0.678348
+          },
+          {
+            "name": "Write object - Hidden/Universal Render Pipeline/PaniniProjection (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/PostProcessing/PaniniProjection.shader",
+            "duration": 0.0014039999999999999
+          },
+          {
+            "name": "Write object - Hidden/Universal/BlitHDROverlay (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/Utils/BlitHDROverlay.shader",
+            "duration": 0.002051
+          },
+          {
+            "name": "Write object - Hidden/Universal Render Pipeline/FinalPost (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/PostProcessing/FinalPost.shader",
+            "duration": 8.916703
+          },
+          {
+            "name": "Write object - Hidden/Universal Render Pipeline/CameraMotionVectors (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/CameraMotionVectors.shader",
+            "duration": 0.08254399999999999
+          },
+          {
+            "name": "Write object - Hidden/Universal Render Pipeline/Debug/DebugReplacement (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/Debug/DebugReplacement.shader",
+            "duration": 0.9080499999999999
+          },
+          {
+            "name": "Write object - Hidden/Universal/CoreBlitColorAndDepth (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/Utils/CoreBlitColorAndDepth.shader",
+            "duration": 0.232011
+          },
+          {
+            "name": "Write object - Hidden/Universal Render Pipeline/XR/XRMirrorView (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/XR/XRMirrorView.shader",
+            "duration": 0.0016029999999999998
+          },
+          {
+            "name": "Write object - Hidden/Universal Render Pipeline/CopyDepth (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/Utils/CopyDepth.shader",
+            "duration": 0.644381
+          },
+          {
+            "name": "Write object - Hidden/TerrainEngine/Details/UniversalPipeline/WavingDoublePass (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/Terrain/WavingGrass.shader",
+            "duration": 16.151405
+          },
+          {
+            "name": "Write object - Hidden/Universal Render Pipeline/FallbackError (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/Utils/FallbackError.shader",
+            "duration": 0.558327
+          },
+          {
+            "name": "Write object - Hidden/Universal Render Pipeline/UberPost (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/PostProcessing/UberPost.shader",
+            "duration": 4.95569
+          },
+          {
+            "name": "Write object - Hidden/Universal Render Pipeline/Scaling Setup (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/PostProcessing/ScalingSetup.shader",
+            "duration": 0.442415
+          },
+          {
+            "name": "Write object - Hidden/Universal Render Pipeline/StencilDeferred (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/Utils/StencilDeferred.shader",
+            "duration": 0.004014
+          },
+          {
+            "name": "Write object - Hidden/Universal Render Pipeline/LutBuilderHdr (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/PostProcessing/LutBuilderHdr.shader",
+            "duration": 0.508103
+          },
+          {
+            "name": "Write object - Hidden/Universal Render Pipeline/DBufferClear (Shader) from Packages/com.unity.render-pipelines.universal/Runtime/Decal/DBuffer/DBufferClear.shader",
+            "duration": 0.001261
+          },
+          {
+            "name": "Write object - Hidden/TerrainEngine/Details/UniversalPipeline/Vertexlit (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/Terrain/TerrainDetailLit.shader",
+            "duration": 4.296085
+          },
+          {
+            "name": "Write object - Hidden/Universal Render Pipeline/XR/XRMotionVector (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/XR/XRMotionVector.shader",
+            "duration": 0.001313
+          },
+          {
+            "name": "Write object - ColorPyramid (ComputeShader) from Packages/com.unity.render-pipelines.universal/Runtime/MipGen/Shaders/ColorPyramid.compute",
+            "duration": 0.726664
+          },
+          {
+            "name": "Write object - DepthPyramid (ComputeShader) from Packages/com.unity.render-pipelines.universal/Runtime/MipGen/Shaders/DepthPyramid.compute",
+            "duration": 0.323769
+          },
+          {
+            "name": "Write object - VrsTexture (ComputeShader) from Packages/com.unity.render-pipelines.core/Runtime/Vrs/Shaders/VrsTexture.compute",
+            "duration": 0.357382
+          },
+          {
+            "name": "Write object - [unnamed] (Sprite) from Library/SplashScreenCache/08/08eed5d1725539099d9be75e3d6dbdcf",
+            "duration": 0.00724
+          },
+          {
+            "name": "Write object - [unnamed] (MonoBehaviour) from Assets/Settings/SampleSceneProfile.asset",
+            "duration": 0.0011049999999999999
+          },
+          {
+            "name": "Write object - [unnamed] (MonoBehaviour) from Assets/NeonTunnelRunner/Settings/URP/PC_RPAsset.asset",
+            "duration": 0.001142
+          },
+          {
+            "name": "Write object - [unnamed] (MonoBehaviour) from Assets/NeonTunnelRunner/Settings/URP/UniversalRenderPipelineGlobalSettings.asset",
+            "duration": 0.051248999999999996
+          },
+          {
+            "name": "Write object - [unnamed] (MonoBehaviour) from Assets/Settings/SampleSceneProfile.asset",
+            "duration": 0.001874
+          },
+          {
+            "name": "Write object - [unnamed] (MonoBehaviour) from Assets/Settings/DefaultVolumeProfile.asset",
+            "duration": 0.004746
+          },
+          {
+            "name": "Write object - [unnamed] (MonoBehaviour) from Assets/Settings/DefaultVolumeProfile.asset",
+            "duration": 0.001483
+          },
+          {
+            "name": "Write object - [unnamed] (MonoBehaviour) from Assets/Settings/DefaultVolumeProfile.asset",
+            "duration": 0.005632
+          },
+          {
+            "name": "Write object - [unnamed] (MonoBehaviour) from Assets/Settings/DefaultVolumeProfile.asset",
+            "duration": 0.002123
+          },
+          {
+            "name": "Write object - [unnamed] (MonoBehaviour) from Assets/Settings/DefaultVolumeProfile.asset",
+            "duration": 0.001008
+          },
+          {
+            "name": "Write object - [unnamed] (MonoBehaviour) from Assets/Settings/DefaultVolumeProfile.asset",
+            "duration": 0.001403
+          },
+          {
+            "name": "Write object - [unnamed] (MonoBehaviour) from Assets/Settings/DefaultVolumeProfile.asset",
+            "duration": 0.001518
+          },
+          {
+            "name": "Finish writing",
+            "duration": 0.007715
+          },
+          {
+            "name": "Packaging assets - resources.assets",
+            "duration": 0.011967
+          },
+          {
+            "name": "Extract assets to write",
+            "duration": 0.0022359999999999997
+          },
+          {
+            "name": "Write file:resources.assets",
+            "duration": 0.004661
+          },
+          {
+            "name": "Packaging assets - sharedassets0.assets = additional assets for scene 0: Assets/NeonTunnelRunner/Scenes/Game.unity",
+            "duration": 122.479973
+          },
+          {
+            "name": "Extract assets to write",
+            "duration": 0.045069
+          },
+          {
+            "name": "Load dependencies - [unnamed] (MonoBehaviour) from Assets/NeonTunnelRunner/Input/Runner.inputactions",
+            "duration": 0.0022429999999999998
+          },
+          {
+            "name": "Load dependencies - ReferenceRoad (Material) from Assets/NeonTunnelRunner/Materials/ReferenceRoad.mat",
+            "duration": 0.001238
+          },
+          {
+            "name": "Load dependencies - [unnamed] (Transform) from Assets/NeonTunnelRunner/Prefabs/Road/RoadOpen60.prefab",
+            "duration": 0.005428
+          },
+          {
+            "name": "Load dependencies - [unnamed] (Transform) from Assets/NeonTunnelRunner/Prefabs/Road/RoadTunnel60.prefab",
+            "duration": 0.004522
+          },
+          {
+            "name": "Load dependencies - [unnamed] (Transform) from Assets/NeonTunnelRunner/Prefabs/Road/RoadEntrance60.prefab",
+            "duration": 0.002255
+          },
+          {
+            "name": "Load dependencies - [unnamed] (Transform) from Assets/NeonTunnelRunner/Prefabs/Road/RoadExit60.prefab",
+            "duration": 0.00199
+          },
+          {
+            "name": "Load dependencies - [unnamed] (MonoBehaviour) from Assets/NeonTunnelRunner/Configs/Pools.asset",
+            "duration": 0.009904
+          },
+          {
+            "name": "Load dependencies - [unnamed] (MonoBehaviour) from Assets/NeonTunnelRunner/Configs/World.asset",
+            "duration": 0.001017
+          },
+          {
+            "name": "Write file:sharedassets0.assets",
+            "duration": 122.432841
+          },
+          {
+            "name": "Write object - CoinRing (Mesh) from Assets/NeonTunnelRunner/Meshes/CoinRing.asset",
+            "duration": 0.0022069999999999998
+          },
+          {
+            "name": "Write object - Skybox/Procedural (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.24748199999999998
+          },
+          {
+            "name": "Write object - Universal Render Pipeline/Lit (Shader) from Packages/com.unity.render-pipelines.universal/Shaders/Lit.shader",
+            "duration": 122.05791599999999
+          },
+          {
+            "name": "Write object - [unnamed] (MonoBehaviour) from Assets/NeonTunnelRunner/Input/Runner.inputactions",
+            "duration": 0.0023049999999999998
+          },
+          {
+            "name": "Finish writing",
+            "duration": 0.004652
+          },
+          {
+            "name": "Building Resources/unity_builtin_extra",
+            "duration": 17.033023999999997
+          },
+          {
+            "name": "Write file:Library/PlayerDataCache/Linux642/Data/Resources/unity_builtin_extra",
+            "duration": 17.030981
+          },
+          {
+            "name": "Write object - Legacy Shaders/VertexLit (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.216005
+          },
+          {
+            "name": "Write object - Legacy Shaders/Diffuse (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.796389
+          },
+          {
+            "name": "Write object - Hidden/Internal-StencilWrite (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.031059
+          },
+          {
+            "name": "Write object - Hidden/Internal-DepthNormalsTexture (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.40594399999999997
+          },
+          {
+            "name": "Write object - Hidden/Internal-ScreenSpaceShadows (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.904948
+          },
+          {
+            "name": "Write object - Hidden/Internal-CombineDepthNormals (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.04811
+          },
+          {
+            "name": "Write object - Hidden/BlitCopy (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.038636
+          },
+          {
+            "name": "Write object - Hidden/BlitCopyDepth (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.105638
+          },
+          {
+            "name": "Write object - Hidden/ConvertTexture (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.054107999999999996
+          },
+          {
+            "name": "Write object - Hidden/Internal-DeferredShading (Shader) from Resources/unity_builtin_extra",
+            "duration": 1.7823749999999998
+          },
+          {
+            "name": "Write object - Hidden/Internal-DeferredReflections (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.130099
+          },
+          {
+            "name": "Write object - Hidden/Internal-MotionVectors (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.092331
+          },
+          {
+            "name": "Write object - Hidden/Internal-Flare (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.033353
+          },
+          {
+            "name": "Write object - Hidden/Internal-Halo (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.052738
+          },
+          {
+            "name": "Write object - Hidden/BlitCopyWithDepth (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.040410999999999996
+          },
+          {
+            "name": "Write object - Hidden/BlitToDepth (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.038224999999999995
+          },
+          {
+            "name": "Write object - Hidden/BlitToDepth_MSAA (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.032362
+          },
+          {
+            "name": "Write object - Hidden/BlitCopyHDRTonemap (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.061942
+          },
+          {
+            "name": "Write object - Hidden/Internal-DebugPattern (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.060150999999999996
+          },
+          {
+            "name": "Write object - Hidden/Internal-GUITextureClip (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.001803
+          },
+          {
+            "name": "Write object - Hidden/Internal-GUITextureClipText (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.002614
+          },
+          {
+            "name": "Write object - Hidden/Internal-GUITexture (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.002229
+          },
+          {
+            "name": "Write object - Hidden/Internal-GUITextureBlit (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.004693
+          },
+          {
+            "name": "Write object - Hidden/Internal-GUIRoundedRect (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.002925
+          },
+          {
+            "name": "Write object - Hidden/Internal-GUIRoundedRectWithColorPerBorder (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.0033239999999999997
+          },
+          {
+            "name": "Write object - Hidden/Internal-UIRDefault (Shader) from Resources/unity_builtin_extra",
+            "duration": 9.240368
+          },
+          {
+            "name": "Write object - Hidden/Internal-UIRAtlasBlitCopy (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.003816
+          },
+          {
+            "name": "Write object - Sprites/Default (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.106154
+          },
+          {
+            "name": "Write object - Sprites/Mask (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.110869
+          },
+          {
+            "name": "Write object - UI/Default (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.308201
+          },
+          {
+            "name": "Write object - UI/DefaultETC1 (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.175306
+          },
+          {
+            "name": "Write object - Hidden/CubeBlur (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.308426
+          },
+          {
+            "name": "Write object - Hidden/CubeCopy (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.057717
+          },
+          {
+            "name": "Write object - Hidden/CubeBlend (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.065575
+          },
+          {
+            "name": "Write object - Hidden/VR/BlitTexArraySlice (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.038558999999999996
+          },
+          {
+            "name": "Write object - Hidden/Internal-ODSWorldTexture (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.32442699999999997
+          },
+          {
+            "name": "Write object - Hidden/Internal-CubemapToEquirect (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.038440999999999996
+          },
+          {
+            "name": "Write object - Hidden/VR/BlitFromTex2DToTexArraySlice (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.077065
+          },
+          {
+            "name": "Write object - Hidden/VideoComposite (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.039161
+          },
+          {
+            "name": "Write object - Hidden/VideoDecode (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.336818
+          },
+          {
+            "name": "Write object - Hidden/Compositing (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.036708
+          },
+          {
+            "name": "Write object - Hidden/TextCore/Distance Field SSD (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.20002499999999998
+          },
+          {
+            "name": "Write object - Hidden/Physics2D/SDF_CircleGeometry (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.13055999999999998
+          },
+          {
+            "name": "Write object - Hidden/Physics2D/SDF_CapsuleGeometry (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.075864
+          },
+          {
+            "name": "Write object - Hidden/Physics2D/SDF_PolygonGeometry (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.235404
+          },
+          {
+            "name": "Write object - Hidden/Physics2D/SDF_Line (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.09246399999999999
+          },
+          {
+            "name": "Write object - Hidden/Physics2D/SDF_Point (Shader) from Resources/unity_builtin_extra",
+            "duration": 0.083809
+          },
+          {
+            "name": "Write data build dirty tracking information",
+            "duration": 0.24324199999999999
+          },
+          {
+            "name": "Postprocess built player",
+            "duration": 25.412848
+          },
+          {
+            "name": "Setup incremental player build",
+            "duration": 0.092746
+          },
+          {
+            "name": "Incremental player build",
+            "duration": 25.275249
+          },
+          {
+            "name": "Report output files",
+            "duration": 0.026598999999999998
+          },
+          {
+            "name": "Call Post-Process callbacks",
+            "duration": 1.094844
+          }
+        ]
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

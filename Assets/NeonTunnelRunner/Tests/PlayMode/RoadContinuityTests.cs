@@ -64,7 +64,8 @@ namespace NeonTunnelRunner
             int collectedCoins=0, collectedFuel=0;
             manager.Session.Collected+=e=> { if (e.Kind==PoolKey.Coin) collectedCoins++; else if (e.Kind==PoolKey.Fuel) collectedFuel++; };
             manager.Session.SetResources(3,20f);
-            manager.Session.SetCruiseSpeed(speed);
+            // 22 case starts naturally and reaches the cap; 50 case begins with a cap clock.
+            if(speed==50f) manager.Session.Advance(180f,0d);
             CheckCoverage(0d);
             float[] steps = { 0.02f, 0.137f, 1.2f, 9.73f, 31.25f };
             int iteration = 0, maxActive = 0, maxPlans = 0;
@@ -75,7 +76,7 @@ namespace NeonTunnelRunner
                 // Retain varied catch-up durations, steering along the actual route in bounded ticks.
                 SurvivalRoute.Advance(loop,dt);
                 var snapshot = manager.Session.Snapshot;
-                Assert.That(snapshot.Distance, Is.EqualTo(previous + (double)speed * dt).Within(.0001d));
+                Assert.That(snapshot.Distance-previous, Is.InRange(22d*dt-.0001d,50d*dt+.0001d));
                 Assert.That(loop.Player.CurrentPosition.z, Is.EqualTo((float)(snapshot.Distance - loop.Origin.Offset)));
                 Assert.That(loop.Player.CurrentPosition.z, Is.InRange(0f, 1000f));
                 CheckCoverage(snapshot.Distance);
@@ -84,6 +85,8 @@ namespace NeonTunnelRunner
                 maxActive = Math.Max(maxActive, roads.ActiveCount); maxPlans = Math.Max(maxPlans, loop.Planner.PlanCount);
                 previous = snapshot.Distance;
             }
+            Assert.That(manager.Session.Snapshot.Difficulty,Is.EqualTo(1f));
+            Assert.That(manager.Session.Snapshot.CruiseSpeed,Is.EqualTo(50f));
             Assert.That(loop.Origin.RebaseCount, Is.GreaterThan(40));
             Assert.That(manager.Pools.TotalCreated, Is.EqualTo(304));
             Assert.That(manager.Pools.TotalDestroyed, Is.Zero);
@@ -95,7 +98,7 @@ namespace NeonTunnelRunner
             Assert.That(manager.State,Is.EqualTo(GameState.Playing)); Assert.That(manager.Session.Snapshot.Lives,Is.EqualTo(3));
             Assert.That(manager.Session.Snapshot.Fuel,Is.GreaterThan(0f));
             Assert.That(loop.Planner.SpawnedCoins,Is.GreaterThan(0)); Assert.That(loop.Planner.SpawnedFuel,Is.GreaterThan(0));
-            Debug.Log($"[Task05] coins={collectedCoins}; fuel={collectedFuel}; spawnedCoins={loop.Planner.SpawnedCoins}; spawnedFuel={loop.Planner.SpawnedFuel}; speed={speed}; distance={previous:R}; steps={iteration}; rebases={loop.Origin.RebaseCount}; maxActive={maxActive}; maxPlans={maxPlans}; created={manager.Pools.TotalCreated}; peakReservations={manager.Pools.PeakActive}; moving={loop.Planner.SpawnedMoving}; stationary={loop.Planner.SpawnedStationary}; contacts={loop.Sensor.TotalContacts}; initial reset/coverage sample={bootstrap} bytes (excludes prewarm).");
+            Debug.Log($"[Task05] coins={collectedCoins}; fuel={collectedFuel}; spawnedCoins={loop.Planner.SpawnedCoins}; spawnedFuel={loop.Planner.SpawnedFuel}; speed={speed}; distance={previous:R}; steps={iteration}; rebases={loop.Origin.RebaseCount}; maxActive={maxActive}; maxPlans={maxPlans}; created={manager.Pools.TotalCreated}; peakReservations={manager.Pools.PeakActive}; moving={loop.Planner.SpawnedMoving}; stationary={loop.Planner.SpawnedStationary}; contacts={loop.Sensor.TotalContacts}; proposed={loop.Planner.ProposedTraffic}; eligible={loop.Planner.EligibleSlots}; rejected={loop.Planner.RejectedTraffic}; misses={loop.Planner.TrafficPoolMisses}; fallback={loop.Planner.MovingFallbacks}; initial reset/coverage sample={bootstrap} bytes (excludes prewarm).");
         }
         [TestCase(0d)] [TestCase(0.25d)] [TestCase(59.999d)] [TestCase(60d)] [TestCase(60.001d)]
         [TestCase(480d)] [TestCase(17117.125d)]

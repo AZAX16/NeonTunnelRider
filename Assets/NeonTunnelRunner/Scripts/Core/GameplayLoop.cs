@@ -141,6 +141,7 @@ namespace NeonTunnelRunner
             if (!float.IsFinite(deltaTime) || deltaTime < 0f)
                 throw new System.ArgumentOutOfRangeException(nameof(deltaTime));
             if (deltaTime == 0f) return false;
+            progression.EvaluateTickStart();
             // Reserve the target coverage before mutating the player/session. Even a multi-window
             // catch-up either commits a complete window or leaves the existing road intact.
             double targetDistance = session.Snapshot.Distance + (double)session.Snapshot.CruiseSpeed * deltaTime;
@@ -184,6 +185,7 @@ namespace NeonTunnelRunner
                     spawnDirector.FillWindow(targetDistance);
                     spawnDirector.MaintainTraffic(targetDistance,worldOrigin.Offset);
                     worldOrigin.RebaseIfNeeded(targetDistance);
+                    progression.RefreshDebug();
                     session.PublishSnapshot();
                 }
             }

@@ -1,0 +1,6 @@
+{
+  "result": "NOT STARTED",
+  "stage": "script run immediately after importing probe",
+  "observedError": "No Pipeline instance found for project: /home/alireza/NeonTunnelRider/NeonTunnelRunner. Make sure Unity Editor is running with the Pipeline package installed.",
+  "resolution": "Same Editor ready after domain reload; add settle/readiness check before dependent call. No Editor, package or tool was replaced."
+}

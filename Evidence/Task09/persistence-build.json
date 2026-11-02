@@ -1,0 +1,152 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "file": "Docs/Setup/Task09Build.cs",
+      "entry": "NeonTunnelRunner.Task09Build.Run",
+      "timeout": "900"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 2543,
+      "executeMs": 16054,
+      "assemblyName": "PipelineRunScript_Task09Build_026a4853990049c3939409e9ee1d6bb6",
+      "success": true,
+      "result": {
+        "result": "Succeeded",
+        "totalErrors": 0,
+        "totalWarnings": 0,
+        "totalSize": 196572542,
+        "seconds": 16.001465,
+        "outputPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner/Builds/Task09Persistence/NeonTunnelRunner.x86_64",
+        "steps": [
+          {
+            "name": "Build player",
+            "duration": 15.981738
+          },
+          {
+            "name": "Call PrepareForBuild callbacks",
+            "duration": 0.008291
+          },
+          {
+            "name": "Call internal build started callbacks",
+            "duration": 0.001289
+          },
+          {
+            "name": "Preprocess Player",
+            "duration": 0.688037
+          },
+          {
+            "name": "Save scenes before build",
+            "duration": 0.004946
+          },
+          {
+            "name": "Back up scenes",
+            "duration": 0.08258
+          },
+          {
+            "name": "Prepare For Build",
+            "duration": 0.0058059999999999995
+          },
+          {
+            "name": "ProducePlayerScriptAssemblies",
+            "duration": 5.9224499999999995
+          },
+          {
+            "name": "Prebuild Cleanup and Recompile",
+            "duration": 2.714369
+          },
+          {
+            "name": "Compile scripts",
+            "duration": 2.478307
+          },
+          {
+            "name": "Generate and validate platform script types",
+            "duration": 0.067769
+          },
+          {
+            "name": "Verify Build setup",
+            "duration": 0.314895
+          },
+          {
+            "name": "GetUnityAssemblies",
+            "duration": 0.011
+          },
+          {
+            "name": "GetPlayerAssemblies",
+            "duration": 0.017592
+          },
+          {
+            "name": "Check old data build",
+            "duration": 0.26056999999999997
+          },
+          {
+            "name": "Set up scripts only build",
+            "duration": 9.099999999999999e-05
+          },
+          {
+            "name": "Prepare assets for target platform",
+            "duration": 0.003333
+          },
+          {
+            "name": "Prepare splash screen",
+            "duration": 0.043049
+          },
+          {
+            "name": "Run script only build",
+            "duration": 0.196413
+          },
+          {
+            "name": "Compile Global Game Manager dependencies",
+            "duration": 0.18812399999999999
+          },
+          {
+            "name": "Load object[unnamed] (Sprite) from Library/SplashScreenCache/08/08eed5d1725539099d9be75e3d6dbdcf",
+            "duration": 0.022073
+          },
+          {
+            "name": "Load object[unnamed] (MonoManager) from Library/MonoManager.asset",
+            "duration": 0.009647
+          },
+          {
+            "name": "Build scripts DLLs",
+            "duration": 0.10170399999999999
+          },
+          {
+            "name": "GetSystemAssemblies",
+            "duration": 0.002871
+          },
+          {
+            "name": "Postprocess built player",
+            "duration": 7.57374
+          },
+          {
+            "name": "Setup incremental player build",
+            "duration": 0.135077
+          },
+          {
+            "name": "Incremental player build",
+            "duration": 7.400322
+          },
+          {
+            "name": "Report output files",
+            "duration": 0.026011
+          },
+          {
+            "name": "Call Post-Process callbacks",
+            "duration": 0.41864799999999996
+          }
+        ]
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

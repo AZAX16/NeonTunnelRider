@@ -1,0 +1,32 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "file": "Docs/Setup/Task09Setup.cs",
+      "entry": "NeonTunnelRunner.Task09Setup.Configure"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 92,
+      "executeMs": 414,
+      "assemblyName": "PipelineRunScript_Task09Setup_8bd03ce28d9c4f8697a1696ad11f2a11",
+      "success": true,
+      "result": {
+        "passed": true,
+        "scene": "Assets/NeonTunnelRunner/Scenes/Game.unity",
+        "key": "NTR.HighScore.v1",
+        "StartingOccupancy": 0.25,
+        "MaximumOccupancy": 0.8
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

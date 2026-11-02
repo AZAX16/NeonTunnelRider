@@ -1,0 +1,40 @@
+{
+  "key": "NTR.Tests.Task09.Process.d1fe2faebb4c4a199845960133dfe8e6",
+  "executable": "Builds/Task09Persistence/NeonTunnelRunner.x86_64",
+  "processes": [
+    {
+      "phase": "establish",
+      "pid": 121727,
+      "exitCode": 0,
+      "log": "Evidence/Task09/process-establish.log",
+      "probeLines": [
+        "[Task09Probe] PASS mode=establish pid=121727 loaded=0 score=4321 best=4321 key=NTR.Tests.Task09.Process.d1fe2faebb4c4a199845960133dfe8e6"
+      ],
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "phase": "lower",
+      "pid": 121807,
+      "exitCode": 0,
+      "log": "Evidence/Task09/process-lower.log",
+      "probeLines": [
+        "[Task09Probe] PASS mode=lower pid=121807 loaded=4321 score=123 best=4321 key=NTR.Tests.Task09.Process.d1fe2faebb4c4a199845960133dfe8e6"
+      ],
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "phase": "verify",
+      "pid": 121871,
+      "exitCode": 0,
+      "log": "Evidence/Task09/process-verify.log",
+      "probeLines": [
+        "[Task09Probe] PASS mode=verify pid=121871 loaded=4321 score=123 best=4321 key=NTR.Tests.Task09.Process.d1fe2faebb4c4a199845960133dfe8e6"
+      ],
+      "stderr": "",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

@@ -17,4 +17,3 @@ MonoBehaviour:
   rebaseThreshold: 1000
   reactionTime: 0.7
   transitionMargin: 0.3
-  candidateProbability: 0.65

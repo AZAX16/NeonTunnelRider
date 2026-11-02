@@ -1,0 +1,72 @@
+Processor: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz, 8 core(s) @ 1800 MHz 
+Available Memory: 15881 MB 
+Linux Kernel and distribution: Linux 5.15 Linux Mint 21.3 64bit
+System Language: C
+Keyboard Layout: us
+Selected window backend: x11 
+Mono path[0] = '/home/alireza/NeonTunnelRider/NeonTunnelRunner/Builds/Task09Persistence/NeonTunnelRunner_Data/Managed'
+Mono config path = '/home/alireza/NeonTunnelRider/NeonTunnelRunner/Builds/Task09Persistence/NeonTunnelRunner_Data/MonoBleedingEdge/etc'
+CodeReloadManager initialized
+Found 2 interfaces on host : 0) 192.168.31.221 1) 172.18.0.1
+Player connection [140209618362432]  Target information:
+
+Player connection [140209618362432]  * "[IP] 192.168.31.221 [Port] 55000 [Flags] 2 [Guid] 2211370095 [EditorId] 853108191 [Version] 1048832 [Id] LinuxPlayer(13,192.168.31.221) [Debug] 0 [PackageName] LinuxPlayer [ProjectName] NeonTunnelRunner" 
+
+Player connection [140209618362432]  * "[IP] 172.18.0.1 [Port] 55000 [Flags] 2 [Guid] 2211370095 [EditorId] 853108191 [Version] 1048832 [Id] LinuxPlayer(13,192.168.31.221) [Debug] 0 [PackageName] LinuxPlayer [ProjectName] NeonTunnelRunner" 
+
+Player connection [140209618362432] Started UDP target info broadcast (1) on [225.0.0.222:54997].
+
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Initialize engine version: 6000.6.3f1 (45d8eee7de74)
+[EntityIdStore] init: VM path (explicit commit), pageSize=4096, blockCount=1048576, entitiesPerBlock=256, slots reserved=4294967296 bytes
+[Subsystems] Discovering subsystems at path /home/alireza/NeonTunnelRider/NeonTunnelRunner/Builds/Task09Persistence/NeonTunnelRunner_Data/UnitySubsystems
+Forcing GfxDevice: Null
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Finished resetting the current domain, in  0.019 seconds
+[Physics::Module] Selected backend (deferred post-plugins).
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Disable old input system
+UnloadTime: 1.734888 ms
+InvalidOperationException: Assign a player visual renderer with a supported base color property.
+  at NeonTunnelRunner.VehicleVisuals.CacheRenderer () [0x000d1] in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:48 
+  at NeonTunnelRunner.VehicleVisuals.Initialize (NeonTunnelRunner.RunSession run) [0x0001b] in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:33 
+  at NeonTunnelRunner.GameplayLoop.Initialize (NeonTunnelRunner.GameManager owner, NeonTunnelRunner.RunSession runSession) [0x00189] in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Scripts/Core/GameplayLoop.cs:55 
+  at NeonTunnelRunner.GameManager.Initialize () [0x0013e] in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:105 
+  at NeonTunnelRunner.GameManager.Awake () [0x00000] in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:66 
+UnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)
+
+(Filename: /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs Line: 48)
+
+[Task09Probe] FAIL System.Exception: Isolated store was not composed.
+  at NeonTunnelRunner.Task09PlayerProbe.Verify () [0x0001c] in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Scripts/Persistence/Task09PlayerProbe.cs:32 
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /home/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /home/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:LogError (object) (at /home/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:158)
+NeonTunnelRunner.Task09PlayerProbe:Verify () (at /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Scripts/Persistence/Task09PlayerProbe.cs:45)
+NeonTunnelRunner.Task09ProbeRunner/<Start>d__0:MoveNext () (at /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Scripts/Persistence/Task09PlayerProbe.cs:54)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /home/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 158)
+
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+CodeReloadManager destroyed
+PlayerConnection::Cleanup##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1793609143826,"processId":121368,"allocatedMemory":51266,"memoryLabels":[{"Default":6904},{"NewDelete":8192},{"Manager":8850},{"Shader":1688},{"Audio":552},{"Serialization":14936},{"String":468},{"Utility":752},{"PoolAlloc":144},{"ScriptManager":5696},{"CodeReload":440},{"CloudService":144},{"VR":1904},{"NativeArray":372},{"Subsystems":96},{"CoreBusinessMetrics":128}]}

@@ -1,0 +1,128 @@
+Processor: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz, 8 core(s) @ 1800 MHz 
+Available Memory: 15881 MB 
+Linux Kernel and distribution: Linux 5.15 Linux Mint 21.3 64bit
+System Language: C
+Keyboard Layout: us
+Selected window backend: x11 
+Mono path[0] = '/home/alireza/NeonTunnelRider/NeonTunnelRunner/Builds/Task09Persistence/NeonTunnelRunner_Data/Managed'
+Mono config path = '/home/alireza/NeonTunnelRider/NeonTunnelRunner/Builds/Task09Persistence/NeonTunnelRunner_Data/MonoBleedingEdge/etc'
+CodeReloadManager initialized
+Found 2 interfaces on host : 0) 192.168.31.221 1) 172.18.0.1
+Player connection [140437985906752]  Target information:
+
+Player connection [140437985906752]  * "[IP] 192.168.31.221 [Port] 55000 [Flags] 2 [Guid] 137829716 [EditorId] 853108191 [Version] 1048832 [Id] LinuxPlayer(13,192.168.31.221) [Debug] 0 [PackageName] LinuxPlayer [ProjectName] NeonTunnelRunner" 
+
+Player connection [140437985906752]  * "[IP] 172.18.0.1 [Port] 55000 [Flags] 2 [Guid] 137829716 [EditorId] 853108191 [Version] 1048832 [Id] LinuxPlayer(13,192.168.31.221) [Debug] 0 [PackageName] LinuxPlayer [ProjectName] NeonTunnelRunner" 
+
+Player connection [140437985906752] Started UDP target info broadcast (1) on [225.0.0.222:54997].
+
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Initialize engine version: 6000.6.3f1 (45d8eee7de74)
+[EntityIdStore] init: VM path (explicit commit), pageSize=4096, blockCount=1048576, entitiesPerBlock=256, slots reserved=4294967296 bytes
+[Subsystems] Discovering subsystems at path /home/alireza/NeonTunnelRider/NeonTunnelRunner/Builds/Task09Persistence/NeonTunnelRunner_Data/UnitySubsystems
+Forcing GfxDevice: Null
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Finished resetting the current domain, in  0.021 seconds
+[Physics::Module] Selected backend (deferred post-plugins).
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Disable old input system
+UnloadTime: 0.823153 ms
+[Task09Probe] No saved-scene composition before Awake.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /home/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /home/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:LogError (object) (at /home/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:158)
+NeonTunnelRunner.Task09PlayerProbe:Configure () (at /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Scripts/Persistence/Task09PlayerProbe.cs:21)
+
+(Filename: /home/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 158)
+
+InvalidOperationException: Assign a player visual renderer with a supported base color property.
+  at NeonTunnelRunner.VehicleVisuals.CacheRenderer () [0x000d1] in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:48 
+  at NeonTunnelRunner.VehicleVisuals.Initialize (NeonTunnelRunner.RunSession run) [0x0001b] in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs:33 
+  at NeonTunnelRunner.GameplayLoop.Initialize (NeonTunnelRunner.GameManager owner, NeonTunnelRunner.RunSession runSession) [0x00189] in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Scripts/Core/GameplayLoop.cs:55 
+  at NeonTunnelRunner.GameManager.Initialize () [0x0013e] in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:105 
+  at NeonTunnelRunner.GameManager.Awake () [0x00000] in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Scripts/Core/GameManager.cs:66 
+UnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)
+
+(Filename: /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Scripts/Presentation/VehicleVisuals.cs Line: 48)
+
+[Task09Probe] FAIL System.Exception: Isolated store was not composed.
+  at NeonTunnelRunner.Task09PlayerProbe.Verify () [0x0001c] in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Scripts/Persistence/Task09PlayerProbe.cs:30 
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /home/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /home/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:LogError (object) (at /home/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:158)
+NeonTunnelRunner.Task09PlayerProbe:Verify () (at /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Scripts/Persistence/Task09PlayerProbe.cs:43)
+
+(Filename: /home/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 158)
+
+
+=================================================================
+	Native Crash Reporting
+=================================================================
+Got a SIGSEGV while executing native code. This usually indicates
+a fatal error in the mono runtime or one of the native libraries 
+used by your application.
+=================================================================
+
+=================================================================
+	Native stacktrace:
+=================================================================
+	0x7fb8adf15a9a - /home/alireza/NeonTunnelRider/NeonTunnelRunner/Builds/Task09Persistence/NeonTunnelRunner_Data/MonoBleedingEdge/x86_64/libmonobdwgc-2.0.so : 
+	0x7fb8adebe5ce - /home/alireza/NeonTunnelRider/NeonTunnelRunner/Builds/Task09Persistence/NeonTunnelRunner_Data/MonoBleedingEdge/x86_64/libmonobdwgc-2.0.so : 
+	0x7fb8ade43ad0 - /home/alireza/NeonTunnelRider/NeonTunnelRunner/Builds/Task09Persistence/NeonTunnelRunner_Data/MonoBleedingEdge/x86_64/libmonobdwgc-2.0.so : 
+	0x7fba44480520 - /lib/x86_64-linux-gnu/libc.so.6 : 
+	0x7fba4852f196 - /home/alireza/NeonTunnelRider/NeonTunnelRunner/Builds/Task09Persistence/UnityPlayer.so : 
+	0x7fba4852fce1 - /home/alireza/NeonTunnelRider/NeonTunnelRunner/Builds/Task09Persistence/UnityPlayer.so : 
+	0x7fba48d25b29 - /home/alireza/NeonTunnelRider/NeonTunnelRunner/Builds/Task09Persistence/UnityPlayer.so : 
+	0x7fba444d2a83 - /lib/x86_64-linux-gnu/libc.so.6 : 
+	0x7fba445648e0 - /lib/x86_64-linux-gnu/libc.so.6 : 
+
+=================================================================
+	Telemetry Dumper:
+=================================================================
+Thread 0x7fb83a7fc640 may have been prematurely finalized* Assertion at mono-threads.c:702, condition `info' not met, function:mono_thread_info_current, 
+
+An error has occured in the native fault reporting. Some diagnostic information will be unavailable.
+
+=================================================================
+	Native stacktrace:
+=================================================================
+	0x7fb8adf15a9a - /home/alireza/NeonTunnelRider/NeonTunnelRunner/Builds/Task09Persistence/NeonTunnelRunner_Data/MonoBleedingEdge/x86_64/libmonobdwgc-2.0.so : 
+	0x7fb8ae060d2e - /home/alireza/NeonTunnelRider/NeonTunnelRunner/Builds/Task09Persistence/NeonTunnelRunner_Data/MonoBleedingEdge/x86_64/libmonobdwgc-2.0.so : mono_assertion_message_disabled
+	0x7fb8ae056278 - /home/alireza/NeonTunnelRider/NeonTunnelRunner/Builds/Task09Persistence/NeonTunnelRunner_Data/MonoBleedingEdge/x86_64/libmonobdwgc-2.0.so : 
+	0x7fb8ae057740 - /home/alireza/NeonTunnelRider/NeonTunnelRunner/Builds/Task09Persistence/NeonTunnelRunner_Data/MonoBleedingEdge/x86_64/libmonobdwgc-2.0.so : 
+	0x7fb8ae003fec - /home/alireza/NeonTunnelRider/NeonTunnelRunner/Builds/Task09Persistence/NeonTunnelRunner_Data/MonoBleedingEdge/x86_64/libmonobdwgc-2.0.so : 
+	0x7fb8adf15c2d - /home/alireza/NeonTunnelRider/NeonTunnelRunner/Builds/Task09Persistence/NeonTunnelRunner_Data/MonoBleedingEdge/x86_64/libmonobdwgc-2.0.so : 
+	0x7fb8adebe5ce - /home/alireza/NeonTunnelRider/NeonTunnelRunner/Builds/Task09Persistence/NeonTunnelRunner_Data/MonoBleedingEdge/x86_64/libmonobdwgc-2.0.so : 
+	0x7fb8ade43ad0 - /home/alireza/NeonTunnelRider/NeonTunnelRunner/Builds/Task09Persistence/NeonTunnelRunner_Data/MonoBleedingEdge/x86_64/libmonobdwgc-2.0.so : 
+	0x7fba44480520 - /lib/x86_64-linux-gnu/libc.so.6 : 
+	0x7fba4852f196 - /home/alireza/NeonTunnelRider/NeonTunnelRunner/Builds/Task09Persistence/UnityPlayer.so : 
+	0x7fba4852fce1 - /home/alireza/NeonTunnelRider/NeonTunnelRunner/Builds/Task09Persistence/UnityPlayer.so : 
+	0x7fba48d25b29 - /home/alireza/NeonTunnelRider/NeonTunnelRunner/Builds/Task09Persistence/UnityPlayer.so : 
+	0x7fba444d2a83 - /lib/x86_64-linux-gnu/libc.so.6 : 
+	0x7fba445648e0 - /lib/x86_64-linux-gnu/libc.so.6 : 
+
+=================================================================
+	External Debugger Dump:
+=================================================================
+Calling Deallocate on pointer, that can not be deallocated by allocator ALLOC_TEMP_AUDIO_FMOD stream thread
+##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1793609029624,"processId":119670,"allocatedMemory":39181201,"memoryLabels":[{"Default":530505},{"Permanent":1840},{"NewDelete":43716},{"Thread":2336},{"Manager":16836167},{"VertexData":6080},{"Geometry":192},{"Particles":12664},{"VFX":13100},{"Texture":89205},{"Shader":40920},{"Material":13206},{"GfxDevice":25536},{"GfxThread":96},{"Animation":4632},{"Audio":1328},{"FMODOther":1368200},{"Font":72},{"FreeType":1896},{"Physics":299080},{"Physics2D":429632},{"Serialization":3266067},{"Input":32808},{"JobScheduler":7637032},{"GarbageCollector":1049088},{"Mono":40},{"ScriptingNativeRuntime":219672},{"BaseObject":1652237},{"Resource":11216},{"Renderer":5016},{"File":4446},{"Culling":8},{"Terrain":56},{"TerrainPhysics":8},{"Shadow":56},{"String":107855},{"Utility":752},{"PoolAlloc":144},{"AI":344},{"ScriptManager":86115},{"CodeReload":7328},{"MonoScriptCache":60128},{"AncestorCache":32},{"Sprites":4718816},{"GI":27584},{"CloudService":152},{"VR":2328},{"Video":72},{"Tilemap":160},{"ManagedAttributeManager":128},{"TextureStreaming":1408},{"NativeArray":31037},{"ScreenCapture":8},{"Camera":864},{"CrashReporter":1024},{"Subsystems":96},{"VirtualTexturing":736},{"Analytics":352},{"UIElements":704},{"Identifiers":565},{"Gui":534028},{"EditorUtility":40},{"CoreBusinessMetrics":248}]}
+/tmp/mono-gdb-commands.119670:1: Error in sourced command file:
+ptrace: No such process.

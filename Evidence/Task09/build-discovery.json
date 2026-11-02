@@ -1,0 +1,1230 @@
+{
+  "success": true,
+  "command": "command",
+  "data": {
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    },
+    "server": {
+      "version": "0.0.1",
+      "port": 7800
+    },
+    "commands": [
+      {
+        "command": "build create_profile",
+        "name": "create_profile",
+        "group": "build",
+        "description": "Create a Build Profile asset for a platform (Unity 6 only). Call build list_platforms first to get a platform id. Returns feature_unavailable on earlier versions.",
+        "tags": [
+          "build/settings"
+        ],
+        "package": "Unity.Pipeline.Editor",
+        "mainThreadRequired": true,
+        "parameters": [
+          {
+            "name": "name",
+            "description": "Profile name (e.g. \"Meta Quest\"). A Build Profile is named after its file, so this is also the file name and the name build run --profileName matches.",
+            "type": "String",
+            "required": true,
+            "defaultValue": ""
+          },
+          {
+            "name": "platform",
+            "description": "Platform id, display name (\"Meta Quest\") or BuildTarget name (\"Android\"). See build list_platforms.",
+            "type": "String",
+            "required": true,
+            "defaultValue": ""
+          },
+          {
+            "name": "subtarget",
+            "description": "Standalone only: Player | Server. Disambiguates desktop platforms; ignored elsewhere.",
+            "type": "String",
+            "required": false,
+            "defaultValue": ""
+          },
+          {
+            "name": "folder",
+            "description": "Folder to create the profile in. Defaults to Assets/Settings/Build Profiles.",
+            "type": "String",
+            "required": false,
+            "defaultValue": ""
+          },
+          {
+            "name": "activate",
+            "description": "Make the new profile the active Build Profile after creating it.",
+            "type": "Boolean",
+            "required": false,
+            "defaultValue": false
+          },
+          {
+            "name": "confirm",
+            "description": "Required (true) only when overwriting an existing profile of the same name in the folder.",
+            "type": "Boolean",
+            "required": false,
+            "defaultValue": false
+          },
+          {
+            "name": "dry_run",
+            "description": "Validate the name, platform and folder and report what would be created, without writing anything.",
+            "type": "Boolean",
+            "required": false,
+            "defaultValue": false
+          }
+        ],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "build create_profile",
+          "description": "Create a Build Profile asset for a platform (Unity 6 only). Call build list_platforms first to get a platform id. Returns feature_unavailable on earlier versions.",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Profile name (e.g. \"Meta Quest\"). A Build Profile is named after its file, so this is also the file name and the name build run --profileName matches.",
+              "default": ""
+            },
+            "platform": {
+              "type": "string",
+              "description": "Platform id, display name (\"Meta Quest\") or BuildTarget name (\"Android\"). See build list_platforms.",
+              "default": ""
+            },
+            "subtarget": {
+              "type": "string",
+              "description": "Standalone only: Player | Server. Disambiguates desktop platforms; ignored elsewhere.",
+              "default": ""
+            },
+            "folder": {
+              "type": "string",
+              "description": "Folder to create the profile in. Defaults to Assets/Settings/Build Profiles.",
+              "default": ""
+            },
+            "activate": {
+              "type": "boolean",
+              "description": "Make the new profile the active Build Profile after creating it.",
+              "default": false
+            },
+            "confirm": {
+              "type": "boolean",
+              "description": "Required (true) only when overwriting an existing profile of the same name in the folder.",
+              "default": false
+            },
+            "dry_run": {
+              "type": "boolean",
+              "description": "Validate the name, platform and folder and report what would be created, without writing anything.",
+              "default": false
+            }
+          },
+          "required": [
+            "name",
+            "platform"
+          ],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": true,
+            "methodName": "Unity.Pipeline.Editor.Commands.Build.BuildProfileCommands.CreateProfile"
+          }
+        }
+      },
+      {
+        "command": "build get_settings",
+        "name": "get_settings",
+        "group": "build",
+        "description": "Read the current build configuration from EditorUserBuildSettings / EditorBuildSettings.",
+        "tags": [
+          "build/settings"
+        ],
+        "package": "Unity.Pipeline.Editor",
+        "mainThreadRequired": true,
+        "parameters": [],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "build get_settings",
+          "description": "Read the current build configuration from EditorUserBuildSettings / EditorBuildSettings.",
+          "properties": {},
+          "required": [],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": true,
+            "methodName": "Unity.Pipeline.Editor.Commands.Build.BuildConfigCommands.GetSettings"
+          }
+        }
+      },
+      {
+        "command": "build list_platforms",
+        "name": "list_platforms",
+        "group": "build",
+        "description": "List the platforms a Build Profile can target, with their platform id (Unity 6 only). Lists only platforms whose build support is installed; pass showAll=true for every known platform.",
+        "tags": [
+          "build/settings"
+        ],
+        "package": "Unity.Pipeline.Editor",
+        "mainThreadRequired": true,
+        "parameters": [
+          {
+            "name": "showAll",
+            "description": "Include platforms whose build support module is not installed.",
+            "type": "Boolean",
+            "required": false,
+            "defaultValue": false
+          }
+        ],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "build list_platforms",
+          "description": "List the platforms a Build Profile can target, with their platform id (Unity 6 only). Lists only platforms whose build support is installed; pass showAll=true for every known platform.",
+          "properties": {
+            "showAll": {
+              "type": "boolean",
+              "description": "Include platforms whose build support module is not installed.",
+              "default": false
+            }
+          },
+          "required": [],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": true,
+            "methodName": "Unity.Pipeline.Editor.Commands.Build.BuildProfileCommands.ListPlatforms"
+          }
+        }
+      },
+      {
+        "command": "build list_profiles",
+        "name": "list_profiles",
+        "group": "build",
+        "description": "List Build Profile assets in the project (Unity 6 only). Returns feature_unavailable on earlier versions.",
+        "tags": [
+          "build/settings"
+        ],
+        "package": "Unity.Pipeline.Editor",
+        "mainThreadRequired": true,
+        "parameters": [],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "build list_profiles",
+          "description": "List Build Profile assets in the project (Unity 6 only). Returns feature_unavailable on earlier versions.",
+          "properties": {},
+          "required": [],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": true,
+            "methodName": "Unity.Pipeline.Editor.Commands.Build.BuildConfigCommands.ListProfiles"
+          }
+        }
+      },
+      {
+        "command": "build run",
+        "name": "run",
+        "group": "build",
+        "description": "Trigger an async Player build and report the full BuildReport. Returns immediately (queued); poll build status until status is 'completed'. DetailedBuildReport is included by default unless 'options' is supplied. Use dry_run to validate without building.",
+        "tags": [
+          "build"
+        ],
+        "package": "Unity.Pipeline.Editor",
+        "mainThreadRequired": false,
+        "parameters": [
+          {
+            "name": "target",
+            "description": "BuildTarget name (e.g. StandaloneWindows64). Defaults to the active target. Must be installed.",
+            "type": "String",
+            "required": false,
+            "defaultValue": ""
+          },
+          {
+            "name": "outputPath",
+            "description": "Output path (absolute, or relative to the project root). Defaults to the last/auto path.",
+            "type": "String",
+            "required": false,
+            "defaultValue": ""
+          },
+          {
+            "name": "profileName",
+            "description": "Build Profile name to activate before building (Unity 6 only; ignored otherwise).",
+            "type": "String",
+            "required": false,
+            "defaultValue": ""
+          },
+          {
+            "name": "options",
+            "description": "BuildOptions names. Omit to get just DetailedBuildReport; supplying any disables that default.",
+            "type": "String[]",
+            "required": false,
+            "defaultValue": null
+          },
+          {
+            "name": "scenes",
+            "description": "Scene asset paths to build (e.g. Assets/Scenes/Main.unity). Defaults to EditorBuildSettings.",
+            "type": "String[]",
+            "required": false,
+            "defaultValue": null
+          },
+          {
+            "name": "confirm",
+            "description": "Acknowledge and run the build; without it the call is refused. Use dry_run to validate only.",
+            "type": "Boolean",
+            "required": false,
+            "defaultValue": false
+          },
+          {
+            "name": "dry_run",
+            "description": "Validate target/outputPath/scenes without building.",
+            "type": "Boolean",
+            "required": false,
+            "defaultValue": false
+          },
+          {
+            "name": "timeout",
+            "description": "Seconds to wait for the build to be validated and queued (the build itself is polled via build status).",
+            "type": "Double",
+            "required": false,
+            "defaultValue": 60
+          }
+        ],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "build run",
+          "description": "Trigger an async Player build and report the full BuildReport. Returns immediately (queued); poll build status until status is 'completed'. DetailedBuildReport is included by default unless 'options' is supplied. Use dry_run to validate without building.",
+          "properties": {
+            "target": {
+              "type": "string",
+              "description": "BuildTarget name (e.g. StandaloneWindows64). Defaults to the active target. Must be installed.",
+              "default": ""
+            },
+            "outputPath": {
+              "type": "string",
+              "description": "Output path (absolute, or relative to the project root). Defaults to the last/auto path.",
+              "default": ""
+            },
+            "profileName": {
+              "type": "string",
+              "description": "Build Profile name to activate before building (Unity 6 only; ignored otherwise).",
+              "default": ""
+            },
+            "options": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "BuildOptions names. Omit to get just DetailedBuildReport; supplying any disables that default."
+            },
+            "scenes": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "Scene asset paths to build (e.g. Assets/Scenes/Main.unity). Defaults to EditorBuildSettings."
+            },
+            "confirm": {
+              "type": "boolean",
+              "description": "Acknowledge and run the build; without it the call is refused. Use dry_run to validate only.",
+              "default": false
+            },
+            "dry_run": {
+              "type": "boolean",
+              "description": "Validate target/outputPath/scenes without building.",
+              "default": false
+            },
+            "timeout": {
+              "type": "number",
+              "description": "Seconds to wait for the build to be validated and queued (the build itself is polled via build status).",
+              "default": 60
+            }
+          },
+          "required": [],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": false,
+            "methodName": "Unity.Pipeline.Editor.Commands.Build.BuildCommand.Run"
+          }
+        }
+      },
+      {
+        "command": "build set_profile",
+        "name": "set_profile",
+        "group": "build",
+        "description": "Edit an existing Build Profile's scene list and scripting defines (Unity 6 only). Every setting is optional; only the ones supplied change. The platform cannot be changed here: recreate the profile with build create_profile and confirm=true. Returns feature_unavailable on earlier versions.",
+        "tags": [
+          "build/settings"
+        ],
+        "package": "Unity.Pipeline.Editor",
+        "mainThreadRequired": true,
+        "parameters": [
+          {
+            "name": "name",
+            "description": "Name of the profile to edit (see build list_profiles).",
+            "type": "String",
+            "required": true,
+            "defaultValue": ""
+          },
+          {
+            "name": "folder",
+            "description": "Folder holding the profile. Only needed when several profiles share the name.",
+            "type": "String",
+            "required": false,
+            "defaultValue": ""
+          },
+          {
+            "name": "overrideGlobalScenes",
+            "description": "Build with the profile's own scene list instead of the global Build Settings list. Omit to leave unchanged.",
+            "type": "Nullable`1",
+            "required": false,
+            "defaultValue": null
+          },
+          {
+            "name": "scenes",
+            "description": "Scene asset paths in build order, replacing the profile's scene list; all are enabled. An empty list clears it. Omit to leave unchanged.",
+            "type": "String[]",
+            "required": false,
+            "defaultValue": null
+          },
+          {
+            "name": "scriptingDefines",
+            "description": "Scripting define symbols replacing the profile's own. An empty list clears them. Omit to leave unchanged.",
+            "type": "String[]",
+            "required": false,
+            "defaultValue": null
+          },
+          {
+            "name": "confirm",
+            "description": "Accepted for parity; not required, since the edit is undoable.",
+            "type": "Boolean",
+            "required": false,
+            "defaultValue": false
+          },
+          {
+            "name": "dry_run",
+            "description": "Validate the changes and report what would change, without writing anything.",
+            "type": "Boolean",
+            "required": false,
+            "defaultValue": false
+          }
+        ],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "build set_profile",
+          "description": "Edit an existing Build Profile's scene list and scripting defines (Unity 6 only). Every setting is optional; only the ones supplied change. The platform cannot be changed here: recreate the profile with build create_profile and confirm=true. Returns feature_unavailable on earlier versions.",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Name of the profile to edit (see build list_profiles).",
+              "default": ""
+            },
+            "folder": {
+              "type": "string",
+              "description": "Folder holding the profile. Only needed when several profiles share the name.",
+              "default": ""
+            },
+            "overrideGlobalScenes": {
+              "type": "boolean",
+              "description": "Build with the profile's own scene list instead of the global Build Settings list. Omit to leave unchanged."
+            },
+            "scenes": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "Scene asset paths in build order, replacing the profile's scene list; all are enabled. An empty list clears it. Omit to leave unchanged."
+            },
+            "scriptingDefines": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "Scripting define symbols replacing the profile's own. An empty list clears them. Omit to leave unchanged."
+            },
+            "confirm": {
+              "type": "boolean",
+              "description": "Accepted for parity; not required, since the edit is undoable.",
+              "default": false
+            },
+            "dry_run": {
+              "type": "boolean",
+              "description": "Validate the changes and report what would change, without writing anything.",
+              "default": false
+            }
+          },
+          "required": [
+            "name"
+          ],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": true,
+            "methodName": "Unity.Pipeline.Editor.Commands.Build.BuildProfileCommands.SetProfile"
+          }
+        }
+      },
+      {
+        "command": "build set_settings",
+        "name": "set_settings",
+        "group": "build",
+        "description": "Set mutable EditorUserBuildSettings fields. Does NOT manage scenes (use scene add_to_build / scene remove_from_build) or switch target (use build.target switch). Use dry_run to preview.",
+        "tags": [
+          "build/settings"
+        ],
+        "package": "Unity.Pipeline.Editor",
+        "mainThreadRequired": true,
+        "parameters": [
+          {
+            "name": "settings",
+            "description": "Fields to change; omitted fields are left unchanged.",
+            "type": "SetBuildSettingsInput",
+            "required": false,
+            "defaultValue": null
+          },
+          {
+            "name": "confirm",
+            "description": "Apply the changes. Without it the call is refused.",
+            "type": "Boolean",
+            "required": false,
+            "defaultValue": false
+          },
+          {
+            "name": "dry_run",
+            "description": "Preview the change without applying it.",
+            "type": "Boolean",
+            "required": false,
+            "defaultValue": false
+          }
+        ],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "build set_settings",
+          "description": "Set mutable EditorUserBuildSettings fields. Does NOT manage scenes (use scene add_to_build / scene remove_from_build) or switch target (use build.target switch). Use dry_run to preview.",
+          "properties": {
+            "settings": {
+              "type": "object",
+              "properties": {
+                "developmentBuild": {
+                  "type": "boolean",
+                  "description": "Build a Development Player (enables the debugger/profiler)."
+                },
+                "allowDebugging": {
+                  "type": "boolean",
+                  "description": "Allow script debugging (only effective with developmentBuild=true)."
+                },
+                "connectWithProfiler": {
+                  "type": "boolean",
+                  "description": "Auto-connect the Profiler (only effective with developmentBuild=true)."
+                },
+                "buildScriptsOnly": {
+                  "type": "boolean",
+                  "description": "Build only the scripts (skip data) for faster iteration."
+                },
+                "symlinkSources": {
+                  "type": "boolean",
+                  "description": "Symlink runtime/plugin sources instead of copying (where supported)."
+                },
+                "il2CppCodeGeneration": {
+                  "type": "string",
+                  "description": "IL2CPP code generation for the active target: OptimizeSpeed | OptimizeSize."
+                }
+              },
+              "additionalProperties": false,
+              "description": "Fields to change; omitted fields are left unchanged."
+            },
+            "confirm": {
+              "type": "boolean",
+              "description": "Apply the changes. Without it the call is refused.",
+              "default": false
+            },
+            "dry_run": {
+              "type": "boolean",
+              "description": "Preview the change without applying it.",
+              "default": false
+            }
+          },
+          "required": [],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": true,
+            "methodName": "Unity.Pipeline.Editor.Commands.Build.BuildConfigCommands.SetSettings"
+          }
+        }
+      },
+      {
+        "command": "build status",
+        "name": "status",
+        "group": "build",
+        "description": "Status of the current/most recent build: idle | queued | building | completed, with the full BuildReport (files, packedAssets, buildSteps, errors, warnings) once completed. Retained until the next build.",
+        "tags": [
+          "build"
+        ],
+        "package": "Unity.Pipeline.Editor",
+        "mainThreadRequired": false,
+        "parameters": [],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "build status",
+          "description": "Status of the current/most recent build: idle | queued | building | completed, with the full BuildReport (files, packedAssets, buildSteps, errors, warnings) once completed. Retained until the next build.",
+          "properties": {},
+          "required": [],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": false,
+            "methodName": "Unity.Pipeline.Editor.Commands.Build.BuildCommand.Status"
+          }
+        }
+      },
+      {
+        "command": "build.target list",
+        "name": "list",
+        "group": "build.target",
+        "description": "List the known BuildTarget values with their group and whether build support is installed.",
+        "tags": [
+          "build/targets"
+        ],
+        "package": "Unity.Pipeline.Editor",
+        "mainThreadRequired": true,
+        "parameters": [],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "build.target list",
+          "description": "List the known BuildTarget values with their group and whether build support is installed.",
+          "properties": {},
+          "required": [],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": true,
+            "methodName": "Unity.Pipeline.Editor.Commands.Build.BuildConfigCommands.List"
+          }
+        }
+      },
+      {
+        "command": "build.target switch",
+        "name": "switch",
+        "group": "build.target",
+        "description": "Switch the active build target (destructive, long-running: triggers a full reimport + domain reload). Requires confirm=true. Returns immediately; poll build.target switch_status.",
+        "tags": [
+          "build/targets"
+        ],
+        "package": "Unity.Pipeline.Editor",
+        "mainThreadRequired": false,
+        "parameters": [
+          {
+            "name": "target",
+            "description": "BuildTarget name to switch to (must be installed; see build.target list).",
+            "type": "String",
+            "required": true,
+            "defaultValue": ""
+          },
+          {
+            "name": "confirm",
+            "description": "Apply the switch. Without it the call is refused.",
+            "type": "Boolean",
+            "required": false,
+            "defaultValue": false
+          },
+          {
+            "name": "timeout",
+            "description": "Seconds to wait for the switch to be validated and queued (poll build.target switch_status).",
+            "type": "Double",
+            "required": false,
+            "defaultValue": 60
+          }
+        ],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "build.target switch",
+          "description": "Switch the active build target (destructive, long-running: triggers a full reimport + domain reload). Requires confirm=true. Returns immediately; poll build.target switch_status.",
+          "properties": {
+            "target": {
+              "type": "string",
+              "description": "BuildTarget name to switch to (must be installed; see build.target list).",
+              "default": ""
+            },
+            "confirm": {
+              "type": "boolean",
+              "description": "Apply the switch. Without it the call is refused.",
+              "default": false
+            },
+            "timeout": {
+              "type": "number",
+              "description": "Seconds to wait for the switch to be validated and queued (poll build.target switch_status).",
+              "default": 60
+            }
+          },
+          "required": [
+            "target"
+          ],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": false,
+            "methodName": "Unity.Pipeline.Editor.Commands.Build.SwitchBuildTargetCommand.Switch"
+          }
+        }
+      },
+      {
+        "command": "build.target switch_status",
+        "name": "switch_status",
+        "group": "build.target",
+        "description": "Status of the last target switch: idle | switching | completed (with success + activeBuildTarget).",
+        "tags": [
+          "build/targets"
+        ],
+        "package": "Unity.Pipeline.Editor",
+        "mainThreadRequired": false,
+        "parameters": [],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "build.target switch_status",
+          "description": "Status of the last target switch: idle | switching | completed (with success + activeBuildTarget).",
+          "properties": {},
+          "required": [],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": false,
+            "methodName": "Unity.Pipeline.Editor.Commands.Build.SwitchBuildTargetCommand.SwitchStatus"
+          }
+        }
+      },
+      {
+        "command": "editor.playmode set_run_in_background",
+        "name": "set_run_in_background",
+        "group": "editor.playmode",
+        "description": "Override the project's Run In Background Player Setting, recording enough state to restore it later and to keep it out of builds",
+        "tags": [
+          "editor/playmode"
+        ],
+        "package": "Unity.Pipeline.Editor",
+        "mainThreadRequired": true,
+        "parameters": [
+          {
+            "name": "enable",
+            "description": "Turn the override on (true, default) or stop it (false) and restore the project's own value, unless the \"Ensure editor runs in background in PlayMode\" setting is still forcing it on right now",
+            "type": "Boolean",
+            "required": false,
+            "defaultValue": true
+          }
+        ],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "editor.playmode set_run_in_background",
+          "description": "Override the project's Run In Background Player Setting, recording enough state to restore it later and to keep it out of builds",
+          "properties": {
+            "enable": {
+              "type": "boolean",
+              "description": "Turn the override on (true, default) or stop it (false) and restore the project's own value, unless the \"Ensure editor runs in background in PlayMode\" setting is still forcing it on right now",
+              "default": true
+            }
+          },
+          "required": [],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": true,
+            "methodName": "Unity.Pipeline.Editor.Commands.PlayModeCommands.SetRunInBackground"
+          }
+        }
+      },
+      {
+        "command": "job batch",
+        "name": "batch",
+        "group": "job",
+        "description": "Run multiple registered commands in one transactional request. Later ops can reference earlier results with \"$<id-or-index>.<jsonPath>\" (e.g. \"$0.instanceId\"; \"$$\" escapes a literal '$'). transactional=true (default) groups every op into one Undo step and reverts all applied ops if any op fails; commands that mutate outside the Undo system (asset/file/settings writes) are rejected unless transactional=false. on_error=abort|continue (continue forces transactional=false); dry_run validates without mutating; timeout (seconds, default 60) bounds execution — when it is about to run out the remaining ops are skipped and a transactional batch rolls back (submit long batches with \"job\": true). Excludes build run, build.target switch, the package commands, editor.playmode start/stop/pause, script recompile, script eval, script eval_file, script run, editor invoke_menu, scene open/scene create, async commands (test run/test list), runtime-only commands, and nested job batch.",
+        "tags": [
+          "batch"
+        ],
+        "package": "Unity.Pipeline.Editor",
+        "mainThreadRequired": true,
+        "parameters": [
+          {
+            "name": "operations",
+            "description": "Ordered operations to run; each is { id?, command, params }, with command written as \"<group> <name>\" (e.g. \"gameobject create\"). Max 200.",
+            "type": "List`1",
+            "required": true,
+            "defaultValue": null
+          },
+          {
+            "name": "transactional",
+            "description": "Group all ops into one Undo step and revert every applied op if any op fails. Default true. Forced false when on_error=continue. Rejects commands whose mutations Undo cannot revert (asset/file/settings writes).",
+            "type": "Boolean",
+            "required": false,
+            "defaultValue": true
+          },
+          {
+            "name": "on_error",
+            "description": "abort (default): stop at the first failing op. continue: run every op, collecting per-op errors (forces transactional=false).",
+            "type": "String",
+            "required": false,
+            "defaultValue": "abort"
+          },
+          {
+            "name": "dry_run",
+            "description": "Validate command names, parameters, reference topology and excluded commands without mutating anything.",
+            "type": "Boolean",
+            "required": false,
+            "defaultValue": false
+          },
+          {
+            "name": "result_fields",
+            "description": "Optional per-op result projection: map of op id-or-index -> array of result field paths to keep (context economy).",
+            "type": "JObject",
+            "required": false,
+            "defaultValue": null
+          },
+          {
+            "name": "timeout",
+            "description": "Timeout for the whole batch in seconds (default 60). Checked before each op after the first; when it is about to run out the remaining ops are skipped and a transactional batch rolls back. Use \"job\": true for long batches.",
+            "type": "Double",
+            "required": false,
+            "defaultValue": 60
+          }
+        ],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "job batch",
+          "description": "Run multiple registered commands in one transactional request. Later ops can reference earlier results with \"$<id-or-index>.<jsonPath>\" (e.g. \"$0.instanceId\"; \"$$\" escapes a literal '$'). transactional=true (default) groups every op into one Undo step and reverts all applied ops if any op fails; commands that mutate outside the Undo system (asset/file/settings writes) are rejected unless transactional=false. on_error=abort|continue (continue forces transactional=false); dry_run validates without mutating; timeout (seconds, default 60) bounds execution — when it is about to run out the remaining ops are skipped and a transactional batch rolls back (submit long batches with \"job\": true). Excludes build run, build.target switch, the package commands, editor.playmode start/stop/pause, script recompile, script eval, script eval_file, script run, editor invoke_menu, scene open/scene create, async commands (test run/test list), runtime-only commands, and nested job batch.",
+          "properties": {
+            "operations": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "description": "Optional id for referencing this op's result from a later op (\"$<id>.<field>\"). Unique within the batch; must match ^[A-Za-z_][A-Za-z0-9_-]*$ (not purely numeric, no dots)."
+                  },
+                  "command": {
+                    "type": "string",
+                    "description": "The command to run, written as \"<group> <name>\" (e.g. \"gameobject create\")."
+                  },
+                  "params": {
+                    "type": "string",
+                    "description": "Parameters for the command. String values may reference a prior op's result: \"$<id-or-index>.<jsonPath>\"."
+                  }
+                },
+                "required": [
+                  "command"
+                ],
+                "additionalProperties": false
+              },
+              "description": "Ordered operations to run; each is { id?, command, params }, with command written as \"<group> <name>\" (e.g. \"gameobject create\"). Max 200."
+            },
+            "transactional": {
+              "type": "boolean",
+              "description": "Group all ops into one Undo step and revert every applied op if any op fails. Default true. Forced false when on_error=continue. Rejects commands whose mutations Undo cannot revert (asset/file/settings writes).",
+              "default": true
+            },
+            "on_error": {
+              "type": "string",
+              "description": "abort (default): stop at the first failing op. continue: run every op, collecting per-op errors (forces transactional=false).",
+              "default": "abort"
+            },
+            "dry_run": {
+              "type": "boolean",
+              "description": "Validate command names, parameters, reference topology and excluded commands without mutating anything.",
+              "default": false
+            },
+            "result_fields": {
+              "type": "string",
+              "description": "Optional per-op result projection: map of op id-or-index -> array of result field paths to keep (context economy)."
+            },
+            "timeout": {
+              "type": "number",
+              "description": "Timeout for the whole batch in seconds (default 60). Checked before each op after the first; when it is about to run out the remaining ops are skipped and a transactional batch rolls back. Use \"job\": true for long batches.",
+              "default": 60
+            }
+          },
+          "required": [
+            "operations"
+          ],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": true,
+            "methodName": "Unity.Pipeline.Editor.Commands.Batch.BatchCommand.Batch"
+          }
+        }
+      },
+      {
+        "command": "navmesh bake",
+        "name": "bake",
+        "group": "navmesh",
+        "description": "Trigger an async legacy NavMesh bake of the open scene(s) via UnityEditor.AI.NavMeshBuilder. Returns immediately; poll navmesh bake_status until completed.",
+        "tags": [
+          "baking/navmesh"
+        ],
+        "package": "Unity.Pipeline.Editor",
+        "mainThreadRequired": true,
+        "parameters": [
+          {
+            "name": "confirm",
+            "description": "Accepted for parity (a bake overwrites the existing NavMesh); not required.",
+            "type": "Boolean",
+            "required": false,
+            "defaultValue": false
+          },
+          {
+            "name": "dry_run",
+            "description": "If true, validate there is an open scene and return current NavMesh settings without baking.",
+            "type": "Boolean",
+            "required": false,
+            "defaultValue": false
+          }
+        ],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "navmesh bake",
+          "description": "Trigger an async legacy NavMesh bake of the open scene(s) via UnityEditor.AI.NavMeshBuilder. Returns immediately; poll navmesh bake_status until completed.",
+          "properties": {
+            "confirm": {
+              "type": "boolean",
+              "description": "Accepted for parity (a bake overwrites the existing NavMesh); not required.",
+              "default": false
+            },
+            "dry_run": {
+              "type": "boolean",
+              "description": "If true, validate there is an open scene and return current NavMesh settings without baking.",
+              "default": false
+            }
+          },
+          "required": [],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": true,
+            "methodName": "Unity.Pipeline.Editor.Commands.Baking.NavMeshBakeCommands.Bake"
+          }
+        }
+      },
+      {
+        "command": "navmesh cancel_bake",
+        "name": "cancel_bake",
+        "group": "navmesh",
+        "description": "Cancel an in-progress NavMesh bake (NavMeshBuilder.Cancel()).",
+        "tags": [
+          "baking/navmesh"
+        ],
+        "package": "Unity.Pipeline.Editor",
+        "mainThreadRequired": true,
+        "parameters": [],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "navmesh cancel_bake",
+          "description": "Cancel an in-progress NavMesh bake (NavMeshBuilder.Cancel()).",
+          "properties": {},
+          "required": [],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": true,
+            "methodName": "Unity.Pipeline.Editor.Commands.Baking.NavMeshBakeCommands.CancelBake"
+          }
+        }
+      },
+      {
+        "command": "scene add_to_build",
+        "name": "add_to_build",
+        "group": "scene",
+        "description": "Add a scene to the Build Settings scene list (idempotent). Optionally enable it.",
+        "tags": [
+          "scenes",
+          "build/settings"
+        ],
+        "package": "Unity.Pipeline.Editor",
+        "mainThreadRequired": true,
+        "parameters": [
+          {
+            "name": "path",
+            "description": "Scene path to add (authoring-root relative; Assets/ prefix and .unity optional).",
+            "type": "String",
+            "required": true,
+            "defaultValue": null
+          },
+          {
+            "name": "enabled",
+            "description": "Whether the scene is enabled in the build list.",
+            "type": "Boolean",
+            "required": false,
+            "defaultValue": true
+          }
+        ],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "scene add_to_build",
+          "description": "Add a scene to the Build Settings scene list (idempotent). Optionally enable it.",
+          "properties": {
+            "path": {
+              "type": "string",
+              "description": "Scene path to add (authoring-root relative; Assets/ prefix and .unity optional)."
+            },
+            "enabled": {
+              "type": "boolean",
+              "description": "Whether the scene is enabled in the build list.",
+              "default": true
+            }
+          },
+          "required": [
+            "path"
+          ],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": true,
+            "methodName": "Unity.Pipeline.Editor.Commands.Scenes.SceneCommands.AddToBuild"
+          }
+        }
+      },
+      {
+        "command": "scene remove_from_build",
+        "name": "remove_from_build",
+        "group": "scene",
+        "description": "Remove a scene from the Build Settings scene list (idempotent).",
+        "tags": [
+          "scenes",
+          "build/settings"
+        ],
+        "package": "Unity.Pipeline.Editor",
+        "mainThreadRequired": true,
+        "parameters": [
+          {
+            "name": "path",
+            "description": "Scene path to remove (authoring-root relative; Assets/ prefix and .unity optional).",
+            "type": "String",
+            "required": true,
+            "defaultValue": null
+          }
+        ],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "scene remove_from_build",
+          "description": "Remove a scene from the Build Settings scene list (idempotent).",
+          "properties": {
+            "path": {
+              "type": "string",
+              "description": "Scene path to remove (authoring-root relative; Assets/ prefix and .unity optional)."
+            }
+          },
+          "required": [
+            "path"
+          ],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": true,
+            "methodName": "Unity.Pipeline.Editor.Commands.Scenes.SceneCommands.RemoveFromBuild"
+          }
+        }
+      },
+      {
+        "command": "script run",
+        "name": "run",
+        "group": "script",
+        "description": "Compile a project C# file in memory (no domain reload) and execute a named static entry point. The builder-pattern path for bulk construction. Still arbitrary code execution — shares script eval's capability gate.",
+        "tags": [
+          "scripts/eval"
+        ],
+        "package": "Unity.Pipeline.Editor",
+        "mainThreadRequired": true,
+        "parameters": [
+          {
+            "name": "file",
+            "description": "Path to a .cs file to compile. Relative paths resolve against the PROJECT ROOT (the parent of Assets/), not the process working directory. May live OUTSIDE Assets/ (e.g. AgentScripts/) so writing it never triggers an asset import or domain reload.",
+            "type": "String",
+            "required": true,
+            "defaultValue": null
+          },
+          {
+            "name": "entry",
+            "description": "Entry point as Namespace.Type.Method (or Type.Method, or a bare Method name). Default: the single public static method if unambiguous, else a method named Main. Static methods only in v1. Ephemeral mode only (rejected with mode=hotpatch, which never invokes an entry point).",
+            "type": "String",
+            "required": false,
+            "defaultValue": null
+          },
+          {
+            "name": "args",
+            "description": "JSON array of arguments passed to the entry point, coerced to its parameter types: primitives, enum names, string[], and a string/object handle (ObjectRef) for UnityEngine.Object parameters. Ephemeral mode only (rejected with mode=hotpatch).",
+            "type": "JArray",
+            "required": false,
+            "defaultValue": null
+          },
+          {
+            "name": "mode",
+            "description": "ephemeral (default): compile to an in-memory assembly, run the entry, discard. hotpatch: apply [MethodReload] method replacements to already-loaded types (script.methodreload reload semantics).",
+            "type": "String",
+            "required": false,
+            "defaultValue": "ephemeral"
+          },
+          {
+            "name": "references",
+            "description": "Extra assembly name prefixes to reference beyond the auto-resolved set. In the Editor all loaded assemblies are already referenced, so this is effectively a no-op there. Ephemeral mode only; not applied by hotpatch (which delegates to script.methodreload reload's own compile).",
+            "type": "String[]",
+            "required": false,
+            "defaultValue": null
+          },
+          {
+            "name": "defines",
+            "description": "Extra scripting define symbols APPENDED to the project's active editor defines (UNITY_EDITOR etc. are already set) for the compilation's #if directives. Ephemeral mode only; not applied by hotpatch.",
+            "type": "String[]",
+            "required": false,
+            "defaultValue": null
+          },
+          {
+            "name": "pdb",
+            "description": "Emit a portable PDB mapped to the source file so breakpoints bind and exception stack traces map to file:line. Compiles unoptimized.",
+            "type": "Boolean",
+            "required": false,
+            "defaultValue": false
+          },
+          {
+            "name": "timeout",
+            "description": "Timeout in seconds. Bounds the whole run, including how long an async entry point's Task is awaited (on expiry the task keeps running detached).",
+            "type": "Double",
+            "required": false,
+            "defaultValue": 60
+          },
+          {
+            "name": "dry_run",
+            "description": "Compile only: return diagnostics; the emitted assembly is NOT loaded into the domain and nothing executes. Ephemeral mode only (rejected with mode=hotpatch, which would apply live method replacements).",
+            "type": "Boolean",
+            "required": false,
+            "defaultValue": false
+          }
+        ],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "script run",
+          "description": "Compile a project C# file in memory (no domain reload) and execute a named static entry point. The builder-pattern path for bulk construction. Still arbitrary code execution — shares script eval's capability gate.",
+          "properties": {
+            "file": {
+              "type": "string",
+              "description": "Path to a .cs file to compile. Relative paths resolve against the PROJECT ROOT (the parent of Assets/), not the process working directory. May live OUTSIDE Assets/ (e.g. AgentScripts/) so writing it never triggers an asset import or domain reload."
+            },
+            "entry": {
+              "type": "string",
+              "description": "Entry point as Namespace.Type.Method (or Type.Method, or a bare Method name). Default: the single public static method if unambiguous, else a method named Main. Static methods only in v1. Ephemeral mode only (rejected with mode=hotpatch, which never invokes an entry point)."
+            },
+            "args": {
+              "type": "string",
+              "description": "JSON array of arguments passed to the entry point, coerced to its parameter types: primitives, enum names, string[], and a string/object handle (ObjectRef) for UnityEngine.Object parameters. Ephemeral mode only (rejected with mode=hotpatch)."
+            },
+            "mode": {
+              "type": "string",
+              "description": "ephemeral (default): compile to an in-memory assembly, run the entry, discard. hotpatch: apply [MethodReload] method replacements to already-loaded types (script.methodreload reload semantics).",
+              "default": "ephemeral"
+            },
+            "references": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "Extra assembly name prefixes to reference beyond the auto-resolved set. In the Editor all loaded assemblies are already referenced, so this is effectively a no-op there. Ephemeral mode only; not applied by hotpatch (which delegates to script.methodreload reload's own compile)."
+            },
+            "defines": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "Extra scripting define symbols APPENDED to the project's active editor defines (UNITY_EDITOR etc. are already set) for the compilation's #if directives. Ephemeral mode only; not applied by hotpatch."
+            },
+            "pdb": {
+              "type": "boolean",
+              "description": "Emit a portable PDB mapped to the source file so breakpoints bind and exception stack traces map to file:line. Compiles unoptimized.",
+              "default": false
+            },
+            "timeout": {
+              "type": "number",
+              "description": "Timeout in seconds. Bounds the whole run, including how long an async entry point's Task is awaited (on expiry the task keeps running detached).",
+              "default": 60
+            },
+            "dry_run": {
+              "type": "boolean",
+              "description": "Compile only: return diagnostics; the emitted assembly is NOT loaded into the domain and nothing executes. Ephemeral mode only (rejected with mode=hotpatch, which would apply live method replacements).",
+              "default": false
+            }
+          },
+          "required": [
+            "file"
+          ],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": true,
+            "methodName": "Unity.Pipeline.Editor.Commands.Scripts.RunScriptCommand.Run"
+          }
+        }
+      },
+      {
+        "command": "script.methodreload generate_link_xml",
+        "name": "generate_link_xml",
+        "group": "script.methodreload",
+        "description": "Generate ProjectSettings/Packages/com.unity.pipeline/MethodReload.link.xml: per-type preservation of the engine/package types the game's assemblies reference and of the game's own types, plus the interpreter's host surface and [MethodReload] targets. Applied to IL2CPP development builds only, while the Pipeline is enabled in development builds. Pass delete=true to remove the file instead.",
+        "tags": [
+          "build",
+          "scripts/methodreload"
+        ],
+        "package": "Unity.Pipeline.Editor",
+        "mainThreadRequired": true,
+        "parameters": [
+          {
+            "name": "delete",
+            "description": "Remove the generated file instead of (re)generating it.",
+            "type": "Boolean",
+            "required": false,
+            "defaultValue": false
+          }
+        ],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "script.methodreload generate_link_xml",
+          "description": "Generate ProjectSettings/Packages/com.unity.pipeline/MethodReload.link.xml: per-type preservation of the engine/package types the game's assemblies reference and of the game's own types, plus the interpreter's host surface and [MethodReload] targets. Applied to IL2CPP development builds only, while the Pipeline is enabled in development builds. Pass delete=true to remove the file instead.",
+          "properties": {
+            "delete": {
+              "type": "boolean",
+              "description": "Remove the generated file instead of (re)generating it.",
+              "default": false
+            }
+          },
+          "required": [],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": true,
+            "methodName": "Unity.Pipeline.Editor.Commands.Build.MethodReloadLinkXmlCommand.GenerateLinkXml"
+          }
+        }
+      },
+      {
+        "command": "settings.runtime_pipeline get",
+        "name": "get",
+        "group": "settings.runtime_pipeline",
+        "description": "Read Pipeline Runtime settings (enableInDevelopmentBuilds, enableInReleaseBuilds, port, enableAuditLogging, autoStart, maxWorkItemsPerFrame). Reports the settings in effect, falling back to built-in defaults when none have been authored; never creates the settings file. The two toggles are reported for the active build target.",
+        "tags": [
+          "settings/runtime_pipeline"
+        ],
+        "package": "Unity.Pipeline.Editor",
+        "mainThreadRequired": true,
+        "parameters": [],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "settings.runtime_pipeline get",
+          "description": "Read Pipeline Runtime settings (enableInDevelopmentBuilds, enableInReleaseBuilds, port, enableAuditLogging, autoStart, maxWorkItemsPerFrame). Reports the settings in effect, falling back to built-in defaults when none have been authored; never creates the settings file. The two toggles are reported for the active build target.",
+          "properties": {},
+          "required": [],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": true,
+            "methodName": "Unity.Pipeline.Editor.Commands.ProjectSettings.RuntimePipelineSettingsCommands.Get"
+          }
+        }
+      }
+    ],
+    "count": 20,
+    "total": 21,
+    "offset": 0,
+    "limit": 20
+  },
+  "errors": [],
+  "warnings": []
+}

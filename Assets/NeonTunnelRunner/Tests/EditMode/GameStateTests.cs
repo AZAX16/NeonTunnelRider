@@ -142,7 +142,7 @@ namespace NeonTunnelRunner
             manager.Pause();
             RunSnapshot paused = manager.Session.Snapshot;
             Assert.That(paused.ActualSpeed, Is.Zero);
-            Assert.That(paused.CruiseSpeed, Is.EqualTo(31f));
+            Assert.That(paused.CruiseSpeed, Is.EqualTo(playing.CruiseSpeed));
             Assert.That(loop.Step(5f), Is.False);
             Assert.That(manager.Session.Snapshot, Is.EqualTo(paused));
             Assert.That(manager.Resume(), Is.True);

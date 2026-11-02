@@ -49,8 +49,9 @@ namespace NeonTunnelRunner
             for (int i = 0; i < 100; i++) { SurvivalRoute.Guide(loop); loop.Step(dt); }
             var snapshot = manager.Session.Snapshot;
             Assert.That(snapshot.ElapsedTime, Is.EqualTo(100d * dt).Within(0.0000001d));
-            Assert.That(snapshot.Distance, Is.EqualTo(22d * dt * 100).Within(0.0000001d));
-            Assert.That(snapshot.ActualSpeed, Is.EqualTo(22f));
+            double expected=22d*dt*100d+(28d/180d)*dt*dt*100d*99d/2d;
+            Assert.That(snapshot.Distance, Is.EqualTo(expected).Within(.00002d));
+            Assert.That(snapshot.ActualSpeed, Is.EqualTo(22f+28f*(99f*dt/180f)).Within(.00001f));
             Assert.That(player.CurrentPosition.z, Is.EqualTo(snapshot.Distance - loop.Origin.Offset).Within(0.002d));
             manager.Pause();
             var paused = manager.Session.Snapshot;

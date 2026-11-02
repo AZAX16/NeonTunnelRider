@@ -24,6 +24,8 @@ namespace NeonTunnelRunner
         [SerializeField, Min(0)] private int coinScore = 100;
         [SerializeField, Min(1f)] private float difficultyDuration = 180f;
         [SerializeField, Min(1f)] private float difficultyDistance = 6000f;
+        [SerializeField, Range(0f, 1f)] private float startingOccupancy = 0.25f;
+        [SerializeField, Range(0f, 1f)] private float maximumOccupancy = 0.8f;
 
         public int StartingLives => startingLives;
         public float FuelCapacity => fuelCapacity;
@@ -40,6 +42,8 @@ namespace NeonTunnelRunner
         public int CoinScore => coinScore;
         public float DifficultyDuration => difficultyDuration;
         public float DifficultyDistance => difficultyDistance;
+        public float StartingOccupancy => startingOccupancy;
+        public float MaximumOccupancy => maximumOccupancy;
 
         // Authoring validation only. Runtime code reads these values and never writes them.
         private void OnValidate()
@@ -58,6 +62,8 @@ namespace NeonTunnelRunner
             coinScore = Mathf.Max(0, coinScore);
             difficultyDuration = Mathf.Max(1f, difficultyDuration);
             difficultyDistance = Mathf.Max(1f, difficultyDistance);
+            startingOccupancy = Mathf.Clamp01(startingOccupancy);
+            maximumOccupancy = Mathf.Clamp(maximumOccupancy, startingOccupancy, 1f);
         }
     }
 }

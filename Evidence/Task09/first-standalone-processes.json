@@ -1,0 +1,19 @@
+{
+  "key": "NTR.Tests.Task09.Process.6e916c979fb0410dbade57cee300ac6d",
+  "executable": "Builds/Task09Persistence/NeonTunnelRunner.x86_64",
+  "processes": [
+    {
+      "phase": "establish",
+      "pid": 119670,
+      "exitCode": 4,
+      "log": "Evidence/Task09/process-establish.log",
+      "probeLines": [
+        "[Task09Probe] No saved-scene composition before Awake.",
+        "[Task09Probe] FAIL System.Exception: Isolated store was not composed."
+      ],
+      "stderr": "",
+      "passed": false
+    }
+  ],
+  "passed": false
+}

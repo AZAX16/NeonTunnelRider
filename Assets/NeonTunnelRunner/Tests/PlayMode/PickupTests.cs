@@ -98,7 +98,7 @@ namespace NeonTunnelRunner
         {
             var order=new List<PoolKey>(); manager.Session.Damaged+=e=>order.Add(e.Encounter.Kind); manager.Session.Collected+=e=>order.Add(e.Kind);
             Rent(PoolKey.Coin,15d,sequence:1); Rent(PoolKey.Fuel,25d,sequence:2); Rent(PoolKey.Stationary,5d,sequence:100);
-            manager.Session.SetCruiseSpeed(50f); loop.Step(1f);
+            manager.Session.Advance(180f,0d); loop.Step(1f);
             CollectionAssert.AreEqual(new[] {PoolKey.Stationary,PoolKey.Coin,PoolKey.Fuel},order);
             Assert.That(manager.Session.Snapshot.Score,Is.EqualTo(150)); Assert.That(manager.Session.Snapshot.Coins,Is.EqualTo(1));
         }
@@ -239,7 +239,7 @@ namespace NeonTunnelRunner
         public void PlannedFuelBecomesRealRentalsAndIsCollectibleThroughEveryProtectedTransition(float speed,int seed)
         {
             manager.Pause(); typeof(GameManager).GetField("runSeed",BindingFlags.Instance|BindingFlags.NonPublic).SetValue(manager,seed);
-            Assert.That(manager.Restart(),Is.True); manager.Session.SetResources(3,20f); manager.Session.SetCruiseSpeed(speed);
+            Assert.That(manager.Restart(),Is.True); manager.Session.SetResources(3,20f); if(speed==50f) manager.Session.Advance(180f,0d);
             int fuels=0,coins=0; var seen=new HashSet<long>();
             manager.Session.Collected+=e=>
             {

@@ -24,8 +24,9 @@ namespace NeonTunnelRunner
             if (manager) manager.Shutdown(); if (root) Object.Destroy(root); if (config) Object.Destroy(config);
             yield return null; Assert.That(GameManager.Instance,Is.Null); Assert.That(Time.timeScale,Is.EqualTo(1f));
         }
-        private Interactable Rent(PoolKey key,double z=0d,long sequence=100000,int lane=0)
+        private Interactable Rent(PoolKey key,double z=double.NaN,long sequence=100000,int lane=0)
         {
+            if(double.IsNaN(z)) z=manager.Session.Snapshot.Distance;
             Assert.That(manager.Pools.TryRent(new SpawnContext(key,new Vector3(lane*3.2f,.6f,(float)(z-loop.Origin.Offset)),Quaternion.identity,
                 loop.Planner.OriginRoot,lane,z,12345,0,sequence,loop.Planner),out var item),Is.True);
             return (Interactable)item;
@@ -36,8 +37,9 @@ namespace NeonTunnelRunner
         [TestCase(.01f)] [TestCase(.02f)] [TestCase(.1f)] [TestCase(.5f)]
         public void TankDepletesAfterFiftyPlayingSecondsWithOneFuelEnd(float dt)
         {
-            // Controlled no-encounter fixture: the stationary player never reaches a pickup.
-            manager.Session.SetCruiseSpeed(0f); int ended=0; manager.RunEnded+=(_,reason)=> { ended++; Assert.That(reason,Is.EqualTo(GameOverReason.Fuel)); };
+            // Controlled no-encounter fixture: return optional/required content after each tick.
+            // Movement and progression remain real; this fixture deliberately supplies no pickups.
+            manager.Session.SnapshotChanged+=_=>loop.Planner.ReleaseAll(); int ended=0; manager.RunEnded+=(_,reason)=> { ended++; Assert.That(reason,Is.EqualTo(GameOverReason.Fuel)); };
             int ticks=(int)Math.Round(50d/dt);
             for (int i=0;i<ticks;i++)
             {
@@ -61,7 +63,7 @@ namespace NeonTunnelRunner
         }
         [Test] public void NativeFixedDeltaQuantizationDoesNotAddADepletionTick()
         {
-            manager.Session.SetCruiseSpeed(0f); float dt=Time.fixedDeltaTime;
+            manager.Session.SnapshotChanged+=_=>loop.Planner.ReleaseAll(); float dt=Time.fixedDeltaTime;
             int ticks=(int)Math.Round(50d/dt),ends=0; manager.RunEnded+=(_,__)=>ends++;
             for (int i=0;i<ticks;i++)
             {
@@ -108,7 +110,7 @@ namespace NeonTunnelRunner
         }
         [Test] public void ThreeAcceptedHitsWithGraceRejectedOverlapAndReusedActivationFlashExactlyThreeTimes()
         {
-            manager.Session.SetCruiseSpeed(0f); int damage=0,ends=0; manager.Session.Damaged+=_=>damage++; manager.RunEnded+=(_,__)=>ends++;
+            int damage=0,ends=0; manager.Session.Damaged+=_=>damage++; manager.RunEnded+=(_,__)=>ends++;
             Color baseline=ColorNow(); var first=Rent(PoolKey.Stationary); ulong token=first.ActivationId; loop.Step(.02f);
             Assert.That(ColorNow(),Is.Not.EqualTo(baseline)); double until=loop.Survival.GraceUntil;
             var rejected=Rent(PoolKey.Stationary,sequence:100001); double flash=loop.Visuals.FlashRemaining; loop.Step(.02f);
@@ -120,7 +122,7 @@ namespace NeonTunnelRunner
         }
         [Test] public void GraceExpiryAcceptsExactDeadlineButRejectsBeforeItAndNeverDelaysConsumedOverlap()
         {
-            manager.Session.SetCruiseSpeed(0f); Rent(PoolKey.Stationary); loop.Step(.02f); loop.Step(.97998f);
+            Rent(PoolKey.Stationary); loop.Step(.02f); loop.Step(.97998f);
             var rejected=Rent(PoolKey.Stationary,sequence:100001); loop.Step(.00001f); Assert.That(manager.Session.Snapshot.Lives,Is.EqualTo(2)); Assert.That(rejected.Encountered,Is.True);
             loop.Step((float)(loop.Survival.GraceUntil-manager.Session.Snapshot.ElapsedTime));
             Rent(PoolKey.Stationary,sequence:100002); loop.Step(.02f); Assert.That(manager.Session.Snapshot.Lives,Is.EqualTo(1)); Assert.That(loop.Visuals.AcceptedFlashes,Is.EqualTo(2));
@@ -158,9 +160,10 @@ namespace NeonTunnelRunner
                 var encounter=new Encounter(car.Key,token,car.SpawnSequence,0,car.AbsoluteZ,car.CurrentPosition,manager.Session.Snapshot.ElapsedTime);
                 manager.Session.SetResources((i&1)==0 ? 3 : 1,40f); loop.Step(.02f); Assert.That(loop.Visuals.IsFlashing,Is.True);
                 if ((i&1)==0) manager.Pause(); else Assert.That(manager.State,Is.EqualTo(GameState.GameOver));
+                int outgoingBest=manager.Session.Snapshot.BestScore;
                 Assert.That(manager.Restart(),Is.True); var s=manager.Session.Snapshot;
                 Assert.That(s.Lives,Is.EqualTo(3)); Assert.That(s.Fuel,Is.EqualTo(100f)); Assert.That(s.ElapsedTime+s.Distance+s.Score+s.Coins,Is.Zero);
-                Assert.That(s.ActualSpeed,Is.EqualTo(22f)); Assert.That(s.Seed,Is.EqualTo(12345)); Assert.That(s.BestScore,Is.EqualTo(1500));
+                Assert.That(s.ActualSpeed,Is.EqualTo(22f)); Assert.That(s.Seed,Is.EqualTo(12345)); Assert.That(s.BestScore,Is.EqualTo(outgoingBest));
                 Assert.That(loop.Player.LaneIndex,Is.Zero); Assert.That(loop.Player.CurrentPosition,Is.EqualTo(config.StartingPosition)); Assert.That(loop.Player.Body.position,Is.EqualTo(config.StartingPosition));
                 Assert.That(loop.Survival.GraceUntil,Is.Zero); Assert.That(loop.Visuals.IsFlashing,Is.False); Assert.That(ColorNow(),Is.EqualTo(baseline)); Assert.That(loop.Sensor.ContactCount,Is.Zero);
                 Assert.That(loop.Planner.PlanAt(2),Is.EqualTo(plan)); Assert.That(loop.Origin.Offset,Is.Zero); Assert.That(manager.EndReason,Is.EqualTo(GameOverReason.None));

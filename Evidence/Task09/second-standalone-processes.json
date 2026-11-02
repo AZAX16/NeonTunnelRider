@@ -1,0 +1,18 @@
+{
+  "key": "NTR.Tests.Task09.Process.dbcf886d99b24d559dd7c5b5fdc9601a",
+  "executable": "Builds/Task09Persistence/NeonTunnelRunner.x86_64",
+  "processes": [
+    {
+      "phase": "establish",
+      "pid": 121368,
+      "exitCode": 4,
+      "log": "Evidence/Task09/process-establish.log",
+      "probeLines": [
+        "[Task09Probe] FAIL System.Exception: Isolated store was not composed."
+      ],
+      "stderr": "",
+      "passed": false
+    }
+  ],
+  "passed": false
+}

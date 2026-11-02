@@ -3,16 +3,36 @@ using UnityEngine;
 
 namespace NeonTunnelRunner
 {
-    /// <summary>Score rules only. RunSession remains the sole owner of distance, coins and score.</summary>
+    /// <summary>Pure progression rules; all run values remain in RunSession.</summary>
     [DisallowMultipleComponent]
     public sealed class ProgressionSystem : MonoBehaviour
     {
         [SerializeField] private GameManager gameManager;
         [SerializeField] private int debugCoins;
         [SerializeField] private int debugScore;
+        [SerializeField] private int debugBest;
+        [SerializeField] private float debugDifficulty;
+        [SerializeField] private float debugTargetSpeed;
+        [SerializeField] private float debugActualSpeed;
+        [SerializeField] private float debugOccupancy;
         private RunSession session;
         public GameManager Owner => gameManager;
         internal void Initialize(RunSession run) { session=run; RefreshDebug(); }
+        public static float EvaluateDifficulty(double elapsedPlayingSeconds, double absoluteDistance, GameplayConfig config)
+        {
+            if (!double.IsFinite(elapsedPlayingSeconds) || elapsedPlayingSeconds < 0d) throw new ArgumentOutOfRangeException(nameof(elapsedPlayingSeconds));
+            if (!double.IsFinite(absoluteDistance) || absoluteDistance < 0d) throw new ArgumentOutOfRangeException(nameof(absoluteDistance));
+            return (float)Math.Clamp(Math.Max(elapsedPlayingSeconds / config.DifficultyDuration, absoluteDistance / config.DifficultyDistance), 0d, 1d);
+        }
+        public static float Occupancy(float difficulty, GameplayConfig config) =>
+            Mathf.Lerp(config.StartingOccupancy, config.MaximumOccupancy, difficulty);
+        internal void EvaluateTickStart()
+        {
+            var s = session.Snapshot;
+            float d = EvaluateDifficulty(s.ElapsedTime, s.Distance, gameManager.Configuration);
+            session.SetProgression(d, Mathf.Lerp(gameManager.Configuration.StartingSpeed, gameManager.Configuration.MaximumSpeed, d),
+                Occupancy(d, gameManager.Configuration));
+        }
         public void AddCoin()
         {
             if (session == null || !gameManager || !gameManager.IsOwner || gameManager.IsTransitioning ||
@@ -20,12 +40,14 @@ namespace NeonTunnelRunner
             int coins=session.Snapshot.Coins;
             if (coins < int.MaxValue) coins++;
             session.SetScore(coins,ComputeScore(session.Snapshot.Distance,coins,gameManager.Configuration.CoinScore));
+            gameManager.CaptureBest();
             RefreshDebug();
         }
         internal void RecomputeScore()
         {
             var snapshot=session.Snapshot;
             session.SetScore(snapshot.Coins,ComputeScore(snapshot.Distance,snapshot.Coins,gameManager.Configuration.CoinScore));
+            gameManager.CaptureBest();
             RefreshDebug();
         }
         public static int ComputeScore(double distance,int coins,int coinValue)
@@ -38,6 +60,12 @@ namespace NeonTunnelRunner
             return (int)Math.Floor(distance)+(int)reward;
         }
         internal void RefreshDebug()
-        { debugCoins=session == null ? 0 : session.Snapshot.Coins; debugScore=session == null ? 0 : session.Snapshot.Score; }
+        {
+            if (session == null) return;
+            var s = session.Snapshot;
+            debugCoins=s.Coins; debugScore=s.Score; debugBest=s.BestScore;
+            debugDifficulty=s.Difficulty; debugTargetSpeed=s.CruiseSpeed;
+            debugActualSpeed=s.ActualSpeed; debugOccupancy=s.AllowedSlotOccupancy;
+        }
     }
 }

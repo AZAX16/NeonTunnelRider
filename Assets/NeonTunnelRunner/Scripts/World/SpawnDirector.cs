@@ -25,9 +25,9 @@ namespace NeonTunnelRunner
         public float MaximumSpeed { get; }
         public float Probability { get; }
         internal SpawnDiagnostic(TrafficCandidate candidate,PoolKey kind,PatternRejection rejection,PoolRentFailure miss,WorldConfig world,GameplayConfig gameplay)
-        { Candidate=candidate; Kind=kind; Rejection=rejection; Miss=miss; Pickup=default; IsPickup=false; Ahead=world.Ahead; Behind=world.Behind; MinimumSpeed=gameplay.StartingSpeed; MaximumSpeed=gameplay.MaximumSpeed; Probability=world.CandidateProbability; }
+        { Candidate=candidate; Kind=kind; Rejection=rejection; Miss=miss; Pickup=default; IsPickup=false; Ahead=world.Ahead; Behind=world.Behind; MinimumSpeed=gameplay.StartingSpeed; MaximumSpeed=gameplay.MaximumSpeed; Probability=ProgressionSystem.Occupancy(ProgressionSystem.EvaluateDifficulty(0d,candidate.AbsolutePosition,gameplay),gameplay); }
         internal SpawnDiagnostic(PickupPlacement pickup,PatternRejection rejection,PoolRentFailure miss,WorldConfig world,GameplayConfig gameplay)
-        { Candidate=pickup.DiagnosticCandidate; Kind=pickup.Kind; Rejection=rejection; Miss=miss; Pickup=pickup; IsPickup=true; Ahead=world.Ahead; Behind=world.Behind; MinimumSpeed=gameplay.StartingSpeed; MaximumSpeed=gameplay.MaximumSpeed; Probability=world.CandidateProbability; }
+        { Candidate=pickup.DiagnosticCandidate; Kind=pickup.Kind; Rejection=rejection; Miss=miss; Pickup=pickup; IsPickup=true; Ahead=world.Ahead; Behind=world.Behind; MinimumSpeed=gameplay.StartingSpeed; MaximumSpeed=gameplay.MaximumSpeed; Probability=ProgressionSystem.Occupancy(ProgressionSystem.EvaluateDifficulty(0d,pickup.AbsolutePosition,gameplay),gameplay); }
     }
     /// <summary>Deterministic block data and independently leased traffic. All simulation is loop-owned.</summary>
     [DisallowMultipleComponent]
@@ -61,6 +61,12 @@ namespace NeonTunnelRunner
         public ulong SpawnedStationary { get; private set; }
         public ulong SpawnedMoving { get; private set; }
         public ulong Omitted { get; private set; }
+        public ulong EligibleSlots { get; private set; }
+        public ulong ProposedTraffic { get; private set; }
+        public ulong AcceptedTraffic => ProposedTraffic - RejectedTraffic;
+        public ulong RejectedTraffic { get; private set; }
+        public ulong TrafficPoolMisses { get; private set; }
+        public ulong MovingFallbacks { get; private set; }
         public ulong SpawnedCoins { get; private set; }
         public ulong SpawnedFuel { get; private set; }
         public ulong OmittedCoins { get; private set; }
@@ -234,15 +240,18 @@ namespace NeonTunnelRunner
                 long block=absoluteRow/8; int row=(int)(absoluteRow%8);
                 if (row>=WorldConfig.RowsPerBlock) continue;
                 var plan=PlanAt(block);
-                for (int lane=-1;lane<=1;lane++) if (plan.TryGetCandidate(row,lane,out var candidate))
+                for (int lane=-1;lane<=1;lane++)
                 {
+                    if (lane != plan.ProtectedLane && absoluteRow*60d >= 180d) EligibleSlots++;
+                    if (!plan.TryGetCandidate(row,lane,out var candidate)) continue;
+                    ProposedTraffic++;
                     if (!TrySelectTraffic(candidate,playerZ,out var key,out var rejection))
-                    { Omitted++; Record(candidate,key,rejection,PoolRentFailure.None); continue; }
-                    if (rejection!=PatternRejection.None) Record(candidate,key,rejection,PoolRentFailure.None);
+                    { Omitted++; RejectedTraffic++; Record(candidate,key,rejection,PoolRentFailure.None); continue; }
+                    if (rejection!=PatternRejection.None) { MovingFallbacks++; Record(candidate,key,rejection,PoolRentFailure.None); }
                     var position=new Vector3(lane*gameplay.LaneWidth,gameplay.StartingPosition.y,(float)(candidate.AbsolutePosition-offset));
                     var context=new SpawnContext(key,position,Quaternion.identity,activeRoot,lane,candidate.AbsolutePosition,seed,
                         key==PoolKey.Moving ? 8f : 0f,candidate.SpawnSequence,this);
-                    if (!pools.TryRent(context,out _)) { Omitted++; Record(candidate,key,PatternRejection.None,pools.LastRentFailure); }
+                    if (!pools.TryRent(context,out _)) { Omitted++; TrafficPoolMisses++; Record(candidate,key,PatternRejection.None,pools.LastRentFailure); }
                     else if (key==PoolKey.Moving) SpawnedMoving++; else SpawnedStationary++;
                 }
             }
@@ -282,8 +291,13 @@ namespace NeonTunnelRunner
         public int PlanCount { get; private set; }
         public BlockPlan GetPlan(int index) => index >= 0 && index < PlanCount ? plans[index] : throw new ArgumentOutOfRangeException(nameof(index));
         internal void ResetRun(int runSeed)
-        { Clear(); seed=runSeed; SpawnedMoving=SpawnedStationary=Omitted=SpawnedCoins=SpawnedFuel=OmittedCoins=FuelFailures=FuelReclaims=0; DiagnosticCount=diagnosticCursor=0; diagnosticSeed=runSeed; diagnosticBlock=diagnosticSequence=0; diagnosticRejection=PatternRejection.None; diagnosticMiss=PoolRentFailure.None; Array.Clear(diagnostics,0,diagnostics.Length); }
+        { Clear(); seed=runSeed; EligibleSlots=ProposedTraffic=RejectedTraffic=TrafficPoolMisses=MovingFallbacks=0; SpawnedMoving=SpawnedStationary=Omitted=SpawnedCoins=SpawnedFuel=OmittedCoins=FuelFailures=FuelReclaims=0; DiagnosticCount=diagnosticCursor=0; diagnosticSeed=runSeed; diagnosticBlock=diagnosticSequence=0; diagnosticRejection=PatternRejection.None; diagnosticMiss=PoolRentFailure.None; Array.Clear(diagnostics,0,diagnostics.Length); }
         internal void Clear() { ReleaseAll(); Array.Clear(plans,0,plans.Length); Array.Clear(stagedFuel,0,stagedFuel.Length); stagedFuelCount=0; PlanCount=0; nextRow=nextCoinSlot=nextFuelIndex=fuelTransactionStart=0; seed=0; LastError=null; }
+        /// <summary>Rows finalize by absolute world address, using their distance as the
+        /// deterministic progression context (elapsed=0). Queries never commit/redraw state.
+        /// This also permits conservative reconstruction beyond the bounded visible window.</summary>
+        public float RowOccupancy(long blockIndex, int row) => ProgressionSystem.Occupancy(
+            ProgressionSystem.EvaluateDifficulty(0d, (double)blockIndex * WorldConfig.BlockLength + row * WorldConfig.SegmentLength, gameplay), gameplay);
         public BlockPlan PlanAt(long blockIndex)
         {
             if (blockIndex < 0) throw new ArgumentOutOfRangeException(nameof(blockIndex));
@@ -292,7 +306,7 @@ namespace NeonTunnelRunner
             for (int row = 0; row < WorldConfig.RowsPerBlock; row++)
                 for (int candidateLane = -1; candidateLane <= 1; candidateLane++)
                     if (candidateLane != lane && (double)blockIndex * WorldConfig.BlockLength + row * WorldConfig.SegmentLength >= 180d &&
-                        WorldRandom.Sample(seed, blockIndex, WorldRandom.GameplayStream, (ulong)(1 + row * 3 + candidateLane + 1)) / 4294967296d < configuration.CandidateProbability)
+                        WorldRandom.Sample(seed, blockIndex, WorldRandom.GameplayStream, (ulong)(1 + row * 3 + candidateLane + 1)) / 4294967296d < RowOccupancy(blockIndex, row))
                         rows |= 1u << (row * 3 + candidateLane + 1);
             var plan = new BlockPlan(seed, blockIndex, lane, nextLane, rows);
             if (!PatternValidator.Validate(plan, configuration, gameplay, out var reason))

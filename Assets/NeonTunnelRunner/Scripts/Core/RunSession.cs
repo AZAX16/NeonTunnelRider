@@ -38,9 +38,11 @@ namespace NeonTunnelRunner
         public int BestScore { get; }
         public float CruiseSpeed { get; }
         public float ActualSpeed { get; }
+        public float Difficulty { get; }
+        public float AllowedSlotOccupancy { get; }
 
         internal RunSnapshot(Guid runId, int seed, int lives, float fuel, double elapsedTime,
-            double distance, int coins, int score, int bestScore, float cruiseSpeed, float actualSpeed)
+            double distance, int coins, int score, int bestScore, float cruiseSpeed, float actualSpeed, float difficulty, float occupancy)
         {
             RunId = runId;
             Seed = seed;
@@ -53,6 +55,8 @@ namespace NeonTunnelRunner
             BestScore = bestScore;
             CruiseSpeed = cruiseSpeed;
             ActualSpeed = actualSpeed;
+            Difficulty = difficulty;
+            AllowedSlotOccupancy = occupancy;
         }
     }
 
@@ -76,6 +80,8 @@ namespace NeonTunnelRunner
         private int bestScore;
         private float cruiseSpeed;
         private float actualSpeed;
+        private float difficulty;
+        private float occupancy;
 
         public event Action<RunSnapshot> SnapshotChanged;
         public event Action<DamageEvent> Damaged;
@@ -84,7 +90,7 @@ namespace NeonTunnelRunner
         internal void PublishCollection(CollectedEvent collected) => Collected?.Invoke(collected);
 
         public RunSnapshot Snapshot => new RunSnapshot(runId, seed, lives, (float)fuel, elapsedTime,
-            distance, coins, score, bestScore, cruiseSpeed, actualSpeed);
+            distance, coins, score, bestScore, cruiseSpeed, actualSpeed, difficulty, occupancy);
 
         public RunSession(GameplayConfig config, int bestScore = 0)
         {
@@ -93,6 +99,8 @@ namespace NeonTunnelRunner
             lives = config.StartingLives;
             fuel = config.FuelCapacity;
             cruiseSpeed = config.StartingSpeed;
+            difficulty = 0f;
+            occupancy = config.StartingOccupancy;
             // Menu has no active run: Guid.Empty and actual speed zero until StartRun.
         }
 
@@ -106,6 +114,8 @@ namespace NeonTunnelRunner
             coins = score = 0;
             bestScore = Math.Max(0, preservedBestScore);
             cruiseSpeed = config.StartingSpeed;
+            difficulty = 0f;
+            occupancy = config.StartingOccupancy;
             actualSpeed = 0f;
         }
 
@@ -163,6 +173,13 @@ namespace NeonTunnelRunner
         internal void RetainBestScore(int suppliedBestScore)
         {
             bestScore = Math.Max(bestScore, Math.Max(0, suppliedBestScore));
+        }
+
+        internal void SetProgression(float value, float targetSpeed, float allowedOccupancy)
+        {
+            difficulty = value;
+            occupancy = allowedOccupancy;
+            SetCruiseSpeed(targetSpeed);
         }
 
         internal void SetCruiseSpeed(float speed)

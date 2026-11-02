@@ -1,0 +1,20 @@
+{
+  "success": true,
+  "command": "status",
+  "data": {
+    "count": 1,
+    "instances": [
+      {
+        "port": 7800,
+        "project": "/home/alireza/NeonTunnelRider/NeonTunnelRunner",
+        "version": "6000.6.3f1",
+        "pid": 12746,
+        "state": "ready",
+        "role": "main",
+        "instanceName": "Main Editor"
+      }
+    ]
+  },
+  "errors": [],
+  "warnings": []
+}

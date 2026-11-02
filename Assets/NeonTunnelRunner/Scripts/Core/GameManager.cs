@@ -18,6 +18,25 @@ namespace NeonTunnelRunner
         private bool ownsInstance;
         private bool transitioning;
         private bool quitRequested;
+        private HighScoreStore highScores;
+#if UNITY_EDITOR
+        // Scoped by the test suites/smoke harness; never present in a Player.
+        internal static Func<HighScoreStore> HighScoreTestFactory;
+#endif
+        internal void ConfigureHighScores(HighScoreStore store)
+        {
+            if (initialized) throw new InvalidOperationException("Configure storage before bootstrap.");
+            highScores = store ?? throw new ArgumentNullException(nameof(store));
+        }
+        public HighScoreStore HighScores => highScores;
+        internal void CaptureBest()
+        {
+            if (Session == null || highScores == null) return;
+            var s = Session.Snapshot;
+            highScores.SetIfHigher(Math.Max(s.BestScore, s.Score));
+            Session.RetainBestScore(highScores.Best);
+        }
+        private void FlushBest() { CaptureBest(); highScores?.Flush(); }
 
         public static GameManager Instance { get; private set; }
         public GameState State { get; private set; } = GameState.Menu;
@@ -69,6 +88,7 @@ namespace NeonTunnelRunner
                 return false;
             }
 
+            FlushBest();
             StateChanged = null;
             RunEnded = null;
             Session?.DetachObservers();
@@ -76,7 +96,11 @@ namespace NeonTunnelRunner
             EndReason = GameOverReason.None;
             debugEndReason = EndReason;
             debugState = State;
-            Session = new RunSession(gameplayConfig, initialBestScore);
+#if UNITY_EDITOR
+            highScores ??= HighScoreTestFactory?.Invoke();
+#endif
+            highScores ??= new HighScoreStore();
+            Session = new RunSession(gameplayConfig, Math.Max(highScores.Load(), initialBestScore));
             poolService.Initialize(); // Failure leaves a usable Menu; StartRun reports the actionable error.
             gameplayLoop.Initialize(this, Session);
             Instance = this;
@@ -102,6 +126,7 @@ namespace NeonTunnelRunner
             transitioning = true;
             try
             {
+                FlushBest();
                 gameplayLoop.CleanupRun();
                 poolService.ReturnAll();
                 CommitState(GameState.Menu);
@@ -121,6 +146,7 @@ namespace NeonTunnelRunner
                 debugEndReason = reason;
                 gameplayLoop.StopRun();
                 RunSnapshot result = CommitState(GameState.GameOver);
+                FlushBest();
                 RunEnded?.Invoke(result, reason);
                 return true;
             }
@@ -130,6 +156,7 @@ namespace NeonTunnelRunner
         public bool Quit()
         {
             if (!Accepts(GameState.Menu) || quitRequested) return Reject(nameof(Quit));
+            FlushBest();
             quitRequested = true;
 #if UNITY_EDITOR
             Debug.Log("[GameManager] Quit requested (Editor intent only).", this);
@@ -156,6 +183,7 @@ namespace NeonTunnelRunner
             transitioning = true;
             try
             {
+                FlushBest();
                 gameplayLoop.CleanupRun();
                 poolService.ReturnAll();
                 if (!poolService.IsReady)
@@ -198,9 +226,11 @@ namespace NeonTunnelRunner
             GameState previous = State;
             State = next;
             debugState = next;
+            CaptureBest();
             Session.SetSimulationActive(next == GameState.Playing);
             Time.timeScale = next == GameState.Paused || next == GameState.GameOver ? 0f : 1f;
             gameplayLoop.ApplyState(next);
+            gameplayLoop.Progression.RefreshDebug();
             RunSnapshot snapshot = Session.PublishSnapshot();
             StateChanged?.Invoke(previous, next);
             return snapshot;
@@ -221,14 +251,21 @@ namespace NeonTunnelRunner
 
         private void OnApplicationQuit() => Shutdown();
 
+        private void OnApplicationPause(bool paused)
+        {
+            if (paused && IsOwner) FlushBest();
+        }
+
         internal void Shutdown()
         {
             if (!ownsInstance || Instance != this) return;
+            FlushBest();
             gameplayLoop?.Shutdown();
             if (poolService) poolService.Shutdown();
             Session?.DetachObservers();
             StateChanged = null;
             RunEnded = null;
+            highScores = null;
             initialized = ownsInstance = false;
             Instance = null;
             Time.timeScale = 1f;

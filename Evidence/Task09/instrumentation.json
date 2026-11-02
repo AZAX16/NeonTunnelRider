@@ -1,0 +1,10 @@
+[
+  "[Task06] 1000 seeds x21 blocks x2 player speeds (22/50); accepted moving=51554, stationary=210926, omitted=52174; minimum-speed conservative horizon in both cases.",
+  "[Task07] seeds=0..999, 21x480=10080m/seed; max speed=50, min=22, reaction=.7, transition=.28, margin=.3; required fuel=63000, accepted coins=113122, rejected coins=54878, lane changes=13884, max fuel gap=180m.",
+  "[Task09 density] d=0, eligible=246000, proposed=61424, accepted=51066, rejected=10358, moving=9953, fallbacks=15576, poolMisses=NA(pure planner), rate=0.249691056910569",
+  "[Task09 density] d=0.5, eligible=246000, proposed=128907, accepted=107002, rejected=21905, moving=20982, fallbacks=32568, poolMisses=NA(pure planner), rate=0.524012195121951",
+  "[Task09 density] d=1, eligible=246000, proposed=196805, accepted=163229, rejected=33576, moving=31954, fallbacks=49559, poolMisses=NA(pure planner), rate=0.800020325203252",
+  "[Task09 cap] distance=6554.21204166728, elapsed=181, difficulty=1, actual=50, fuel=99.2, score=12054, best=12054, rebases=7",
+  "[Task05] coins=844; fuel=632; spawnedCoins=1018; spawnedFuel=634; speed=22; distance=101229.86457051983; steps=245; rebases=105; maxActive=7; maxPlans=3; created=304; peakReservations=26; moving=337; stationary=1348; contacts=1476; proposed=2013; eligible=2536; rejected=328; misses=0; fallback=508; initial reset/coverage sample=0 bytes (excludes prewarm).",
+  "[Task05] coins=834; fuel=625; spawnedCoins=1006; spawnedFuel=627; speed=50; distance=100046.29900157452; steps=239; rebases=104; maxActive=7; maxPlans=3; created=304; peakReservations=26; moving=333; stationary=1329; contacts=1459; proposed=1986; eligible=2504; rejected=324; misses=0; fallback=505; initial reset/coverage sample=0 bytes (excludes prewarm)."
+]

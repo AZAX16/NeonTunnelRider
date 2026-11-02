@@ -161,6 +161,9 @@ namespace NeonTunnelRunner
                 "Assign the project Gameplay.asset to GameManager.", errors);
             if (!config) return;
             Require(config.StartingLives == 3 && config.FuelCapacity == 100f, "New-run baseline is three lives and fuel 100.", errors);
+            Require(config.StartingSpeed==22f && config.MaximumSpeed==50f && config.DifficultyDuration==180f &&
+                config.DifficultyDistance==6000f && config.StartingOccupancy==.25f && config.MaximumOccupancy==.8f,
+                "Retain Task09 speed/difficulty/occupancy defaults on Gameplay.asset.", errors);
             Require(config.StartingSpeed >= 0f && config.MaximumSpeed >= config.StartingSpeed &&
                 config.StartingLane == 0 && config.LaneWidth > 0f && config.LaneTransitionDuration > 0f,
                 "Resolve invalid gameplay configuration defaults.", errors);

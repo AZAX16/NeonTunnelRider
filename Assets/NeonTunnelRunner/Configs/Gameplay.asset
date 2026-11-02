@@ -26,3 +26,5 @@ MonoBehaviour:
   coinScore: 100
   difficultyDuration: 180
   difficultyDistance: 6000
+  startingOccupancy: 0.25
+  maximumOccupancy: 0.8

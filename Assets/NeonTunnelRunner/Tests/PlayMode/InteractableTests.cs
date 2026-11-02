@@ -87,7 +87,7 @@ namespace NeonTunnelRunner
         {
             var first=Rent(PoolKey.Stationary,0); loop.Step(0.02f);
             var second=Rent(PoolKey.Stationary,0,sequence:10001);
-            manager.Session.SetCruiseSpeed(0f); loop.Step(0.02f); loop.Step(1.5f);
+            loop.Step(0.02f); loop.Step(1.5f);
             Assert.That(first.Encountered && second.Encountered,Is.True); Assert.That(manager.Session.Snapshot.Lives,Is.EqualTo(2));
             Rent(PoolKey.Stationary,loop.Player.CurrentPosition.z,sequence:10002); loop.Step(0.02f); Assert.That(manager.Session.Snapshot.Lives,Is.EqualTo(1));
         }
@@ -106,7 +106,7 @@ namespace NeonTunnelRunner
         }
         [Test] public void SweptContactsAtFiftyWithBothMoversCrossDisjointEndpoints()
         {
-            var moving=Rent(PoolKey.Moving,10); manager.Session.SetCruiseSpeed(50f); loop.Step(1f);
+            var moving=Rent(PoolKey.Moving,10); manager.Session.Advance(180f,0d); loop.Step(1f);
             Assert.That(moving.Encountered,Is.True); Assert.That(moving.AbsoluteZ,Is.EqualTo(18d)); Assert.That(manager.Session.Snapshot.Lives,Is.EqualTo(2));
         }
         [Test] public void BentLanePathSweepsEachLegInsteadOfAChord()
@@ -197,7 +197,7 @@ namespace NeonTunnelRunner
         [Test] public void ContactOnRebaseTickDoesNotCreateAdditionalHits()
         {
             loop.Step(45f); traffic.ReleaseAll(); var item=Rent(PoolKey.Moving,1000d); int events=0; manager.Session.Damaged+=_=>events++;
-            manager.Session.SetCruiseSpeed(50f); loop.Step(0.3f);
+            manager.Session.Advance(180f,0d); loop.Step(0.3f);
             Assert.That(item.Encountered,Is.True); Assert.That(events,Is.EqualTo(1)); Assert.That(loop.Origin.RebaseCount,Is.EqualTo(1));
             Assert.That(item.AbsoluteZ,Is.EqualTo(1002.4d).Within(0.00001d));
             loop.Step(0.02f); Assert.That(events,Is.EqualTo(1));

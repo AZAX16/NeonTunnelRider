@@ -328,6 +328,11 @@ MonoBehaviour:
   gameManager: {fileID: 80797673}
   debugCoins: 0
   debugScore: 0
+  debugBest: 0
+  debugDifficulty: 0
+  debugTargetSpeed: 22
+  debugActualSpeed: 0
+  debugOccupancy: 0.25
 --- !u!1 &192598834
 GameObject:
   m_ObjectHideFlags: 0
