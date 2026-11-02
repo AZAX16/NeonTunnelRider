@@ -1,0 +1,26 @@
+{
+  "success": false,
+  "command": "recompile",
+  "data": {
+    "status": "completed",
+    "compiling": false,
+    "failed": true,
+    "compilationFailed": true,
+    "errors": [
+      {
+        "type": "compile-error",
+        "raw": "Assets/NeonTunnelRunner/Scripts/Presentation/PooledVfx.cs(24,94): error CS0122: 'ParticleSystem.Trails.positions' is inaccessible due to its protection level",
+        "file": "Assets/NeonTunnelRunner/Scripts/Presentation/PooledVfx.cs",
+        "line": 24,
+        "column": 94,
+        "code": "CS0122",
+        "message": "'ParticleSystem.Trails.positions' is inaccessible due to its protection level"
+      }
+    ],
+    "warnings": [],
+    "summary": {
+      "errors": 1,
+      "warnings": 0
+    }
+  }
+}

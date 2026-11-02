@@ -168,7 +168,7 @@ namespace NeonTunnelRunner
                 Assert.That(loop.Survival.GraceUntil,Is.Zero); Assert.That(loop.Visuals.IsFlashing,Is.False); Assert.That(ColorNow(),Is.EqualTo(baseline)); Assert.That(loop.Sensor.ContactCount,Is.Zero);
                 Assert.That(loop.Planner.PlanAt(2),Is.EqualTo(plan)); Assert.That(loop.Origin.Offset,Is.Zero); Assert.That(manager.EndReason,Is.EqualTo(GameOverReason.None));
                 Assert.That(car.ReturnToPool(token),Is.False); Assert.That(car.TryInteract(new InteractionContext(manager.Session,loop.Survival,encounter,loop.Progression)),Is.False);
-                if (i==0) initialCount=manager.Pools.ActiveCount; Assert.That(manager.Pools.ActiveCount,Is.EqualTo(initialCount)); Assert.That(manager.Pools.TotalCreated,Is.EqualTo(304));
+                if (i==0) initialCount=manager.Pools.ActiveCount; Assert.That(manager.Pools.ActiveCount,Is.EqualTo(initialCount)); Assert.That(manager.Pools.TotalCreated,Is.EqualTo(352));
             }
             Assert.That(ends,Is.EqualTo(25)); Assert.That(loop.Visuals.AcceptedFlashes,Is.EqualTo(50)); Assert.That(manager.Pools.Misses,Is.Zero);
             manager.Pause(); manager.ReturnToMenu(); Assert.That(manager.Pools.ActiveCount,Is.Zero); Assert.That(Time.timeScale,Is.EqualTo(1f));

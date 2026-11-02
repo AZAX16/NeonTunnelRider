@@ -35,7 +35,8 @@ namespace NeonTunnelRunner
             var p=AssetDatabase.LoadAssetAtPath<GameObject>(Root+"Prefabs/Player/PlayerHovercar.prefab");var v=p.GetComponent<VehicleVisuals>();
             Assert.That(p.GetComponent<BoxCollider>().size,Is.EqualTo(new Vector3(1.7f,.9f,3.6f)));
             Assert.That(v.VisualPivot.localPosition,Is.EqualTo(Vector3.zero));Assert.That(v.VisualPivot.GetComponentsInChildren<Collider>(true),Is.Empty);
-            Assert.That(p.GetComponentsInChildren<Renderer>(true).SelectMany(r=>r.sharedMaterials).Distinct().Count(),Is.LessThanOrEqualTo(3));
+            Assert.That(p.GetComponentsInChildren<MeshRenderer>(true).SelectMany(r=>r.sharedMaterials).Distinct().Count(),Is.LessThanOrEqualTo(3));
+            Assert.That(p.GetComponentsInChildren<ParticleSystemRenderer>(true).SelectMany(r=>r.sharedMaterials).Distinct().Count(),Is.LessThanOrEqualTo(2));
             Assert.That(p.GetComponentsInChildren<Light>(true).Length,Is.EqualTo(3));Assert.That(v.LeftHeadlight.type,Is.EqualTo(LightType.Spot));Assert.That(v.RightHeadlight.type,Is.EqualTo(LightType.Spot));
             Assert.That(v.UnderglowRenderer.sharedMaterial.IsKeywordEnabled("_EMISSION"),Is.True);
             var catalog=AssetDatabase.LoadAssetAtPath<PoolConfig>(Root+"Configs/Pools.asset");

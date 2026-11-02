@@ -194,7 +194,7 @@ namespace NeonTunnelRunner
             Assert.That(loop.Step(10f),Is.True); Assert.That(planner.FuelReclaims,Is.EqualTo(1)); Assert.That(planner.FuelFailures,Is.Zero);
             Assert.That(recyclable.ActivationId,Is.Not.EqualTo(old)); Assert.That(recyclable.AbsoluteZ,Is.EqualTo(450d));
             foreach (var lease in held) Assert.That(lease.IsCurrent,Is.True);
-            Assert.That(manager.Pools.TotalCreated,Is.EqualTo(304));
+            Assert.That(manager.Pools.TotalCreated,Is.EqualTo(352));
         }
         [Test] public void UnboundedCatchUpFailsExplicitlyInsteadOfSkippingMandatorySupply()
         {
@@ -209,7 +209,7 @@ namespace NeonTunnelRunner
             Assert.That(loop.Step(30f),Is.False); Assert.That(planner.NextFuelIndex,Is.EqualTo(2));
             Assert.That(manager.Pools.TotalRents,Is.EqualTo(rents+2)); Assert.That(manager.Pools.TotalReturns,Is.EqualTo(returns+2));
             Assert.That(planner.ActiveCount,Is.EqualTo(22)); Assert.That(manager.Session.Snapshot.Distance,Is.Zero);
-            Assert.That(manager.Pools.TotalCreated,Is.EqualTo(304));
+            Assert.That(manager.Pools.TotalCreated,Is.EqualTo(352));
         }
         [TestCase(PoolKey.Coin)] [TestCase(PoolKey.Fuel)]
         public void MissingRealPickupPoolBlocksStartWithoutPublishingAPartialRun(PoolKey missing)
@@ -270,7 +270,7 @@ namespace NeonTunnelRunner
                 Assert.That(manager.Restart(),Is.True); Assert.That(fuel.TryInteract(context),Is.False); Assert.That(fuel.ReturnToPool(old),Is.False);
                 Assert.That(manager.Session.Snapshot.Coins,Is.Zero); Assert.That(manager.Session.Snapshot.Score,Is.Zero); Assert.That(manager.Session.Snapshot.Fuel,Is.EqualTo(100f));
                 Assert.That(planner.NextFuelIndex,Is.EqualTo(2)); Assert.That(loop.Sensor.ContactCount,Is.Zero); Assert.That(loop.Origin.Offset,Is.Zero);
-                Assert.That(manager.Pools.TotalCreated,Is.EqualTo(304)); Assert.That(manager.Pools.TotalDestroyed,Is.Zero);
+                Assert.That(manager.Pools.TotalCreated,Is.EqualTo(352)); Assert.That(manager.Pools.TotalDestroyed,Is.Zero);
                 planner.ReleaseAll();
             }
             manager.Pause(); Assert.That(manager.ReturnToMenu(),Is.True); Assert.That(planner.ActiveCount,Is.Zero); Assert.That(planner.PlanCount,Is.Zero); Assert.That(planner.NextFuelIndex,Is.Zero);

@@ -1,0 +1,271 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "file": "Docs/Setup/Task12RenderProbe.cs",
+      "entry": "NeonTunnelRunner.Task12RenderProbe.Run",
+      "timeout": "60"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 88,
+      "executeMs": 6,
+      "assemblyName": "PipelineRunScript_Task12RenderProbe_ae32082fa2984b3a8f487c1da9571f49",
+      "success": true,
+      "result": [
+        {
+          "age": 0.02,
+          "ps": [
+            {
+              "name": "Rocket",
+              "n": 1,
+              "mean": [
+                -15.999567,
+                10.26,
+                131.995544
+              ],
+              "color": "RGBA(255, 255, 184, 255)",
+              "material": "RGBA(1.000, 1.000, 1.000, 1.000)"
+            },
+            {
+              "name": "Burst",
+              "n": 180,
+              "mean": [
+                -16.008007,
+                9.99044,
+                132.004791
+              ],
+              "color": "RGBA(255, 52, 255, 255)",
+              "material": "RGBA(1.000, 1.000, 1.000, 1.000)"
+            }
+          ]
+        },
+        {
+          "age": 0.32,
+          "ps": [
+            {
+              "name": "Rocket",
+              "n": 1,
+              "mean": [
+                -15.999567,
+                14.16,
+                131.995544
+              ],
+              "color": "RGBA(255, 255, 184, 255)",
+              "material": "RGBA(1.000, 1.000, 1.000, 1.000)"
+            },
+            {
+              "name": "Burst",
+              "n": 180,
+              "mean": [
+                -16.0828552,
+                9.813474,
+                132.039
+              ],
+              "color": "RGBA(255, 52, 255, 255)",
+              "material": "RGBA(1.000, 1.000, 1.000, 1.000)"
+            }
+          ]
+        },
+        {
+          "age": 0.62,
+          "ps": [
+            {
+              "name": "Rocket",
+              "n": 1,
+              "mean": [
+                -15.999567,
+                18.0600052,
+                131.995544
+              ],
+              "color": "RGBA(255, 255, 184, 255)",
+              "material": "RGBA(1.000, 1.000, 1.000, 1.000)"
+            },
+            {
+              "name": "Burst",
+              "n": 180,
+              "mean": [
+                -16.1576881,
+                9.477587,
+                132.073181
+              ],
+              "color": "RGBA(255, 52, 255, 255)",
+              "material": "RGBA(1.000, 1.000, 1.000, 1.000)"
+            }
+          ]
+        },
+        {
+          "age": 0.919999957,
+          "ps": [
+            {
+              "name": "Rocket",
+              "n": 1,
+              "mean": [
+                -15.999567,
+                21.9600067,
+                131.995544
+              ],
+              "color": "RGBA(255, 255, 184, 255)",
+              "material": "RGBA(1.000, 1.000, 1.000, 1.000)"
+            },
+            {
+              "name": "Burst",
+              "n": 180,
+              "mean": [
+                -16.2325325,
+                8.9827795,
+                132.107437
+              ],
+              "color": "RGBA(255, 52, 255, 255)",
+              "material": "RGBA(1.000, 1.000, 1.000, 1.000)"
+            }
+          ]
+        },
+        {
+          "age": 1.22,
+          "ps": [
+            {
+              "name": "Rocket",
+              "n": 1,
+              "mean": [
+                -15.999567,
+                24.8200111,
+                131.995544
+              ],
+              "color": "RGBA(255, 255, 184, 255)",
+              "material": "RGBA(1.000, 1.000, 1.000, 1.000)"
+            },
+            {
+              "name": "Burst",
+              "n": 0,
+              "mean": [
+                0,
+                0,
+                0
+              ],
+              "color": "none",
+              "material": "RGBA(1.000, 1.000, 1.000, 1.000)"
+            }
+          ]
+        },
+        {
+          "age": 1.52,
+          "ps": [
+            {
+              "name": "Rocket",
+              "n": 1,
+              "mean": [
+                -15.999567,
+                24.8200111,
+                131.995544
+              ],
+              "color": "RGBA(255, 255, 184, 255)",
+              "material": "RGBA(1.000, 1.000, 1.000, 1.000)"
+            },
+            {
+              "name": "Burst",
+              "n": 0,
+              "mean": [
+                0,
+                0,
+                0
+              ],
+              "color": "none",
+              "material": "RGBA(1.000, 1.000, 1.000, 1.000)"
+            }
+          ]
+        },
+        {
+          "age": 1.81999993,
+          "ps": [
+            {
+              "name": "Rocket",
+              "n": 0,
+              "mean": [
+                0,
+                0,
+                0
+              ],
+              "color": "none",
+              "material": "RGBA(1.000, 1.000, 1.000, 1.000)"
+            },
+            {
+              "name": "Burst",
+              "n": 180,
+              "mean": [
+                -15.911643,
+                24.82334,
+                131.977844
+              ],
+              "color": "RGBA(255, 52, 255, 255)",
+              "material": "RGBA(1.000, 1.000, 1.000, 1.000)"
+            }
+          ]
+        },
+        {
+          "age": 2.12,
+          "ps": [
+            {
+              "name": "Rocket",
+              "n": 0,
+              "mean": [
+                0,
+                0,
+                0
+              ],
+              "color": "none",
+              "material": "RGBA(1.000, 1.000, 1.000, 1.000)"
+            },
+            {
+              "name": "Burst",
+              "n": 180,
+              "mean": [
+                -15.7873278,
+                24.691349,
+                131.954819
+              ],
+              "color": "RGBA(255, 52, 255, 255)",
+              "material": "RGBA(1.000, 1.000, 1.000, 1.000)"
+            }
+          ]
+        },
+        {
+          "age": 2.41999984,
+          "ps": [
+            {
+              "name": "Rocket",
+              "n": 0,
+              "mean": [
+                0,
+                0,
+                0
+              ],
+              "color": "none",
+              "material": "RGBA(1.000, 1.000, 1.000, 1.000)"
+            },
+            {
+              "name": "Burst",
+              "n": 180,
+              "mean": [
+                -15.6630087,
+                24.4004288,
+                131.931808
+              ],
+              "color": "RGBA(255, 52, 255, 255)",
+              "material": "RGBA(1.000, 1.000, 1.000, 1.000)"
+            }
+          ]
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

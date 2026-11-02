@@ -168,10 +168,10 @@ namespace NeonTunnelRunner
             manager.Shutdown(); Object.DestroyImmediate(root);
             var catalog=ScriptableObject.CreateInstance<PoolConfig>();
             var original=UnityEditor.AssetDatabase.LoadAssetAtPath<PoolConfig>("Assets/NeonTunnelRunner/Configs/Pools.asset");
-            var entries=new PoolConfig.Entry[original.EntryCount+1];
+            var entries=new PoolConfig.Entry[original.EntryCount];
             for (int i=0;i<original.EntryCount;i++) entries[i]=original.GetEntry(i);
             var template=new GameObject("InteractionProbeTemplate"); template.SetActive(false); template.AddComponent<InteractionProbe>();
-            entries[entries.Length-1]=new PoolConfig.Entry(PoolKey.Spark,template,1);
+            for(int i=0;i<entries.Length;i++) if(entries[i].Key==PoolKey.Spark) entries[i]=new PoolConfig.Entry(PoolKey.Spark,template,1);
             typeof(PoolConfig).GetField("entries",BindingFlags.Instance|BindingFlags.NonPublic).SetValue(catalog,entries);
             try
             {
@@ -213,7 +213,7 @@ namespace NeonTunnelRunner
                 Assert.That(manager.Restart(),Is.True); Assert.That(item.ReturnToPool(token),Is.False);
                 Assert.That(loop.Origin.Offset,Is.Zero); Assert.That(loop.Sensor.ContactCount,Is.Zero); Assert.That(loop.Survival.GraceRemaining,Is.Zero);
                 Assert.That(manager.Session.Snapshot.Lives,Is.EqualTo(3)); Assert.That(traffic.ActiveCount,Is.GreaterThan(0));
-                Assert.That(manager.Pools.TotalCreated,Is.EqualTo(304)); Assert.That(manager.Pools.TotalDestroyed,Is.Zero);
+                Assert.That(manager.Pools.TotalCreated,Is.EqualTo(352)); Assert.That(manager.Pools.TotalDestroyed,Is.Zero);
             }
             manager.Pause(); manager.ReturnToMenu(); Assert.That(traffic.ActiveCount,Is.Zero); Assert.That(manager.Pools.ActiveCount,Is.Zero);
         }

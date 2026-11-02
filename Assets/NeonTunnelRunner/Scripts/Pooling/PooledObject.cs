@@ -21,6 +21,7 @@ namespace NeonTunnelRunner
         // PoolService calls these once per accepted rental/return. Derived types reset their own
         // colliders, pose history, consumed flags, timers, particles, audio, trails and visuals here.
         // OnRent runs inactive with new context/identity; OnReturn runs after unregistration.
+        public virtual void OnPrewarm() { }
         public virtual void OnRent(SpawnContext context) { }
         public virtual void OnReturn() { }
 

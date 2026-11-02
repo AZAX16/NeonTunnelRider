@@ -107,6 +107,7 @@ namespace NeonTunnelRunner
                         instance.Key = entry.Key;
                         instance.AuthoredScale = clone.transform.localScale;
                         instance.Status = PooledObject.RentalState.Inactive;
+                        instance.OnPrewarm();
                         bucket.Inactive.Push(instance);
                         InactiveCount++;
                     }

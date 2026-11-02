@@ -28,3 +28,6 @@ MonoBehaviour:
   neonMaximumSpeed: 50
   underglowLightRange: {x: 0.3, y: 3}
   underglowEmissionRange: {x: 1, y: 5}
+  firstFireworkInterval: {x: 2, y: 4}
+  fireworkInterval: {x: 8, y: 14}
+  maximumVisibleFireworks: 2

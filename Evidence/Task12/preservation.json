@@ -1,0 +1,49 @@
+{
+  "base": "6fbb47c4a8381b6287997f1385b4590d198cbc7e",
+  "protectedFileCount": 367,
+  "changedProtected": [],
+  "prefabs": [
+    {
+      "path": "Assets/NeonTunnelRunner/Prefabs/Interactables/Coin.prefab",
+      "protectedComponentsAndPoses": 5
+    },
+    {
+      "path": "Assets/NeonTunnelRunner/Prefabs/Interactables/FuelCan.prefab",
+      "protectedComponentsAndPoses": 6
+    },
+    {
+      "path": "Assets/NeonTunnelRunner/Prefabs/Interactables/MovingCar.prefab",
+      "protectedComponentsAndPoses": 8
+    },
+    {
+      "path": "Assets/NeonTunnelRunner/Prefabs/Interactables/StationaryCar.prefab",
+      "protectedComponentsAndPoses": 7
+    },
+    {
+      "path": "Assets/NeonTunnelRunner/Prefabs/Player/PlayerHovercar.prefab",
+      "protectedComponentsAndPoses": 25
+    },
+    {
+      "path": "Assets/NeonTunnelRunner/Prefabs/Road/RoadEntrance60.prefab",
+      "protectedComponentsAndPoses": 14
+    },
+    {
+      "path": "Assets/NeonTunnelRunner/Prefabs/Road/RoadExit60.prefab",
+      "protectedComponentsAndPoses": 14
+    },
+    {
+      "path": "Assets/NeonTunnelRunner/Prefabs/Road/RoadOpen60.prefab",
+      "protectedComponentsAndPoses": 14
+    },
+    {
+      "path": "Assets/NeonTunnelRunner/Prefabs/Road/RoadTunnel60.prefab",
+      "protectedComponentsAndPoses": 14
+    }
+  ],
+  "sceneProtectedComponents": 22,
+  "missingMetas": [],
+  "duplicateGuids": [],
+  "ignoreSha256": "c735b75517ecf18563ce4bf269eb4fe158a5539f7d554823578a85eaec795f45",
+  "ignoreMatchesAssignment": true,
+  "passed": true
+}

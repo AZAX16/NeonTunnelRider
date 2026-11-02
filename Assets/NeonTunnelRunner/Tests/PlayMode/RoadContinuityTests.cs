@@ -88,7 +88,7 @@ namespace NeonTunnelRunner
             Assert.That(manager.Session.Snapshot.Difficulty,Is.EqualTo(1f));
             Assert.That(manager.Session.Snapshot.CruiseSpeed,Is.EqualTo(50f));
             Assert.That(loop.Origin.RebaseCount, Is.GreaterThan(40));
-            Assert.That(manager.Pools.TotalCreated, Is.EqualTo(304));
+            Assert.That(manager.Pools.TotalCreated, Is.EqualTo(352));
             Assert.That(manager.Pools.TotalDestroyed, Is.Zero);
             Assert.That(manager.Pools.PeakActive, Is.LessThanOrEqualTo(110));
             Assert.That(manager.Pools.Misses, Is.Zero);
@@ -227,7 +227,7 @@ namespace NeonTunnelRunner
             }
             manager.Pause(); Assert.That(manager.ReturnToMenu(), Is.True);
             Assert.That(roads.ActiveCount, Is.Zero); Assert.That(loop.Planner.PlanCount, Is.Zero);
-            Assert.That(manager.Pools.ActiveCount, Is.Zero); Assert.That(manager.Pools.TotalCreated, Is.EqualTo(304));
+            Assert.That(manager.Pools.ActiveCount, Is.Zero); Assert.That(manager.Pools.TotalCreated, Is.EqualTo(352));
             Assert.That(manager.Pools.TotalDestroyed, Is.Zero);
         }
         [Test] public void PauseNearThresholdThenResumeRebasesExactlyOnce()

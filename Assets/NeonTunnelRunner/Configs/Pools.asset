@@ -37,3 +37,15 @@ MonoBehaviour:
   - key: 7
     prefab: {fileID: 8059426248661688149, guid: 33610a61f2dece957bd7db2379103701, type: 3}
     capacity: 24
+  - key: 8
+    prefab: {fileID: 311555933015462226, guid: 11b8ae2cc5b33d010b260b3d44628aeb, type: 3}
+    capacity: 16
+  - key: 9
+    prefab: {fileID: 4836245312231357259, guid: 86f69c0959c0f630c92a24e939c65e56, type: 3}
+    capacity: 16
+  - key: 10
+    prefab: {fileID: 9166710769814804828, guid: 821d656a6fff0464f8a34cedb716a9a3, type: 3}
+    capacity: 8
+  - key: 11
+    prefab: {fileID: 2048361544440906415, guid: a3e070f165cf428bda256f150edc03da, type: 3}
+    capacity: 8

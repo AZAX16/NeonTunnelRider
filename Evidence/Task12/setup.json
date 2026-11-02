@@ -1,0 +1,42 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "file": "Docs/Setup/Task12Setup.cs",
+      "entry": "NeonTunnelRunner.Task12Setup.Configure",
+      "timeout": "60"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 3884,
+      "executeMs": 1070,
+      "assemblyName": "PipelineRunScript_Task12Setup_7c9bfb60a3554aa6ac7afbbba9bbf559",
+      "success": true,
+      "result": {
+        "saved": true,
+        "profile": "Assets/NeonTunnelRunner/Settings/Volumes/GlobalVolumeProfile.asset",
+        "capacities": [
+          16,
+          16,
+          8,
+          8
+        ],
+        "exhaustMax": 160,
+        "bloom": {
+          "threshold": 1.15,
+          "intensity": 0.28,
+          "scatter": 0.55
+        }
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,5368 @@
+{
+  "original": {
+    "playing": false,
+    "enabled": true,
+    "options": 3
+  },
+  "cycles": [
+    {
+      "fast": false,
+      "result": {
+        "passed": true,
+        "reloads": {
+          "enabled": false,
+          "options": 0
+        },
+        "launchTime": 2.3399990759789944,
+        "launchPosition": [
+          -16,
+          10,
+          151.902222
+        ],
+        "launchSky": true,
+        "pauseSeconds": 10.116748,
+        "framesAdvanced": 3249,
+        "created": 352,
+        "destroyed": 0,
+        "misses": 0,
+        "maxEffects": 2,
+        "maxFireworks": 1,
+        "maxParticles": 250,
+        "maxLights": 7,
+        "maxMaterials": 12,
+        "horizon": [
+          {
+            "lane": -1,
+            "width": 1280,
+            "viewport": [
+              0.488799632,
+              0.638112664,
+              126.130829
+            ]
+          },
+          {
+            "lane": -1,
+            "width": 960,
+            "viewport": [
+              0.485066116,
+              0.638112664,
+              126.130829
+            ]
+          },
+          {
+            "lane": 0,
+            "width": 1280,
+            "viewport": [
+              0.5,
+              0.638112664,
+              126.130829
+            ]
+          },
+          {
+            "lane": 0,
+            "width": 960,
+            "viewport": [
+              0.5,
+              0.638112664,
+              126.130829
+            ]
+          },
+          {
+            "lane": 1,
+            "width": 1280,
+            "viewport": [
+              0.5112004,
+              0.638112664,
+              126.130829
+            ]
+          },
+          {
+            "lane": 1,
+            "width": 960,
+            "viewport": [
+              0.5149339,
+              0.638112664,
+              126.130829
+            ]
+          }
+        ],
+        "pools": [
+          {
+            "key": "Spark",
+            "Capacity": 16,
+            "Created": 16,
+            "Active": 0,
+            "Inactive": 16,
+            "PeakActive": 1,
+            "Misses": 0
+          },
+          {
+            "key": "CoinBurst",
+            "Capacity": 16,
+            "Created": 16,
+            "Active": 0,
+            "Inactive": 16,
+            "PeakActive": 1,
+            "Misses": 0
+          },
+          {
+            "key": "FuelBurst",
+            "Capacity": 8,
+            "Created": 8,
+            "Active": 0,
+            "Inactive": 8,
+            "PeakActive": 1,
+            "Misses": 0
+          },
+          {
+            "key": "Firework",
+            "Capacity": 8,
+            "Created": 8,
+            "Active": 0,
+            "Inactive": 8,
+            "PeakActive": 1,
+            "Misses": 0
+          }
+        ],
+        "captures": [
+          {
+            "path": "Evidence/Task12/normal-opening-launch.png",
+            "width": 1280,
+            "frame": 166,
+            "ElapsedTime": 2.3399990759789944,
+            "Distance": 51.90221934244997,
+            "state": "Playing",
+            "ActualSpeed": 22.36089,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 11.407958,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 30,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 0.02,
+                "ParticleCount": 1,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.02,
+                    "particleCount": 1,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      -16.0048141,
+                      10.24,
+                      151.905441
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.02,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-opening-launch-4x3.png",
+            "width": 960,
+            "frame": 166,
+            "ElapsedTime": 2.3399990759789944,
+            "Distance": 51.90221934244997,
+            "state": "Playing",
+            "ActualSpeed": 22.36089,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 11.407958,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 30,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 0.02,
+                "ParticleCount": 1,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.02,
+                    "particleCount": 1,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      -16.0048141,
+                      10.24,
+                      151.905441
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.02,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-opening-ascent.png",
+            "width": 1280,
+            "frame": 179,
+            "ElapsedTime": 2.779998902231455,
+            "Distance": 61.756748722873816,
+            "state": "Playing",
+            "ActualSpeed": 22.4293327,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 2,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 10.967948,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 32,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 0.45999974,
+                "ParticleCount": 1,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 1,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      -16.0048141,
+                      15.5199986,
+                      151.905441
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              },
+              {
+                "kind": "CoinBurst",
+                "Age": 0.199999943,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  0.6,
+                  60
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -0.08590128,
+                      0.59590596,
+                      59.9548836
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-opening-ascent-4x3.png",
+            "width": 960,
+            "frame": 179,
+            "ElapsedTime": 2.779998902231455,
+            "Distance": 61.756748722873816,
+            "state": "Playing",
+            "ActualSpeed": 22.4293327,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 2,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 10.967948,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 32,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 0.45999974,
+                "ParticleCount": 1,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 1,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      -16.0048141,
+                      15.5199986,
+                      151.905441
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              },
+              {
+                "kind": "CoinBurst",
+                "Age": 0.199999943,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  0.6,
+                  60
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -0.08590128,
+                      0.59590596,
+                      59.9548836
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-ascent-paused.png",
+            "width": 1280,
+            "frame": 179,
+            "ElapsedTime": 2.779998902231455,
+            "Distance": 61.756748722873816,
+            "state": "Paused",
+            "ActualSpeed": 0,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 2,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 10.967948,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 32,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 0.45999974,
+                "ParticleCount": 1,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 1,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      -16.0048141,
+                      15.5199986,
+                      151.905441
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              },
+              {
+                "kind": "CoinBurst",
+                "Age": 0.199999943,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  0.6,
+                  60
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -0.08590128,
+                      0.59590596,
+                      59.9548836
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-ascent-paused-4x3.png",
+            "width": 960,
+            "frame": 179,
+            "ElapsedTime": 2.779998902231455,
+            "Distance": 61.756748722873816,
+            "state": "Paused",
+            "ActualSpeed": 0,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 2,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 10.967948,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 32,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 0.45999974,
+                "ParticleCount": 1,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 1,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      -16.0048141,
+                      15.5199986,
+                      151.905441
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              },
+              {
+                "kind": "CoinBurst",
+                "Age": 0.199999943,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  0.6,
+                  60
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -0.08590128,
+                      0.59590596,
+                      59.9548836
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-ascent-after-ten-seconds.png",
+            "width": 1280,
+            "frame": 780,
+            "ElapsedTime": 2.779998902231455,
+            "Distance": 61.756748722873816,
+            "state": "Paused",
+            "ActualSpeed": 0,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 2,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 10.967948,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 32,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 0.45999974,
+                "ParticleCount": 1,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 1,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      -16.0048141,
+                      15.5199986,
+                      151.905441
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              },
+              {
+                "kind": "CoinBurst",
+                "Age": 0.199999943,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  0.6,
+                  60
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -0.08590128,
+                      0.59590596,
+                      59.9548836
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-ascent-after-ten-seconds-4x3.png",
+            "width": 960,
+            "frame": 780,
+            "ElapsedTime": 2.779998902231455,
+            "Distance": 61.756748722873816,
+            "state": "Paused",
+            "ActualSpeed": 0,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 2,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 10.967948,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 32,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 0.45999974,
+                "ParticleCount": 1,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 1,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      -16.0048141,
+                      15.5199986,
+                      151.905441
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              },
+              {
+                "kind": "CoinBurst",
+                "Age": 0.199999943,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  0.6,
+                  60
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -0.08590128,
+                      0.59590596,
+                      59.9548836
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-opening-late-ascent.png",
+            "width": 1280,
+            "frame": 798,
+            "ElapsedTime": 3.2399987205863,
+            "Distance": 72.09141123737164,
+            "state": "Playing",
+            "ActualSpeed": 22.5008888,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 2,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 10.5079374,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 30,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 0.9199993,
+                "ParticleCount": 1,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 1,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      -16.0048141,
+                      20.7999935,
+                      151.905441
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              },
+              {
+                "kind": "CoinBurst",
+                "Age": 0.659999549,
+                "ParticleCount": 0,
+                "position": [
+                  0,
+                  0.6,
+                  60
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-opening-late-ascent-4x3.png",
+            "width": 960,
+            "frame": 798,
+            "ElapsedTime": 3.2399987205863,
+            "Distance": 72.09141123737164,
+            "state": "Playing",
+            "ActualSpeed": 22.5008888,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 2,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 10.5079374,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 30,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 0.9199993,
+                "ParticleCount": 1,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 1,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      -16.0048141,
+                      20.7999935,
+                      151.905441
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              },
+              {
+                "kind": "CoinBurst",
+                "Age": 0.659999549,
+                "ParticleCount": 0,
+                "position": [
+                  0,
+                  0.6,
+                  60
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-opening-burst-ignition.png",
+            "width": 1280,
+            "frame": 803,
+            "ElapsedTime": 3.4799986258149147,
+            "Distance": 77.496475707629,
+            "state": "Playing",
+            "ActualSpeed": 22.5382214,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 10.2679319,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 30,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 1.15999913,
+                "ParticleCount": 180,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 180,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -16.0030689,
+                      20.7980652,
+                      151.9079
+                    ],
+                    "color": "RGBA(255, 89, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-opening-burst-ignition-4x3.png",
+            "width": 960,
+            "frame": 803,
+            "ElapsedTime": 3.4799986258149147,
+            "Distance": 77.496475707629,
+            "state": "Playing",
+            "ActualSpeed": 22.5382214,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 10.2679319,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 30,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 1.15999913,
+                "ParticleCount": 180,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 180,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -16.0030689,
+                      20.7980652,
+                      151.9079
+                    ],
+                    "color": "RGBA(255, 89, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-opening-burst.png",
+            "width": 1280,
+            "frame": 815,
+            "ElapsedTime": 3.8599984757602215,
+            "Distance": 86.07281890912935,
+            "state": "Playing",
+            "ActualSpeed": 22.5973339,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 9.887923,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 30,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 1.53999877,
+                "ParticleCount": 180,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 180,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -15.9908123,
+                      20.631176,
+                      151.928467
+                    ],
+                    "color": "RGBA(255, 89, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-opening-burst-4x3.png",
+            "width": 960,
+            "frame": 815,
+            "ElapsedTime": 3.8599984757602215,
+            "Distance": 86.07281890912935,
+            "state": "Playing",
+            "ActualSpeed": 22.5973339,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 9.887923,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 30,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 1.53999877,
+                "ParticleCount": 180,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 180,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -15.9908123,
+                      20.631176,
+                      151.928467
+                    ],
+                    "color": "RGBA(255, 89, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-opening-burst-bloom-off.png",
+            "width": 1280,
+            "frame": 815,
+            "ElapsedTime": 3.8599984757602215,
+            "Distance": 86.07281890912935,
+            "state": "Playing",
+            "ActualSpeed": 22.5973339,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 9.887923,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 30,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 1.53999877,
+                "ParticleCount": 180,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 180,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -15.9908123,
+                      20.631176,
+                      151.928467
+                    ],
+                    "color": "RGBA(255, 89, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-opening-burst-bloom-off-4x3.png",
+            "width": 960,
+            "frame": 815,
+            "ElapsedTime": 3.8599984757602215,
+            "Distance": 86.07281890912935,
+            "state": "Playing",
+            "ActualSpeed": 22.5973339,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 9.887923,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 30,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 1.53999877,
+                "ParticleCount": 180,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 180,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -15.9908123,
+                      20.631176,
+                      151.928467
+                    ],
+                    "color": "RGBA(255, 89, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-opening-burst-bloom-on.png",
+            "width": 1280,
+            "frame": 815,
+            "ElapsedTime": 3.8599984757602215,
+            "Distance": 86.07281890912935,
+            "state": "Playing",
+            "ActualSpeed": 22.5973339,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 9.887923,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 30,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 1.53999877,
+                "ParticleCount": 180,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 180,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -15.9908123,
+                      20.631176,
+                      151.928467
+                    ],
+                    "color": "RGBA(255, 89, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-opening-burst-bloom-on-4x3.png",
+            "width": 960,
+            "frame": 815,
+            "ElapsedTime": 3.8599984757602215,
+            "Distance": 86.07281890912935,
+            "state": "Playing",
+            "ActualSpeed": 22.5973339,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 9.887923,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 30,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 1.53999877,
+                "ParticleCount": 180,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 180,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -15.9908123,
+                      20.631176,
+                      151.928467
+                    ],
+                    "color": "RGBA(255, 89, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-coin-burst.png",
+            "width": 1280,
+            "frame": 863,
+            "ElapsedTime": 0.13999994471669197,
+            "Distance": 3.0813054315056476,
+            "state": "Playing",
+            "ActualSpeed": 22.0186672,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 2.19847155,
+            "LastLaunchTime": 0,
+            "open": true,
+            "exhaust": 12,
+            "effects": [
+              {
+                "kind": "CoinBurst",
+                "Age": 0.139999956,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  1.2,
+                  2.1
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.139999956,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0.04823862,
+                      1.166547,
+                      2.120517
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-coin-burst-4x3.png",
+            "width": 960,
+            "frame": 863,
+            "ElapsedTime": 0.13999994471669197,
+            "Distance": 3.0813054315056476,
+            "state": "Playing",
+            "ActualSpeed": 22.0186672,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 2.19847155,
+            "LastLaunchTime": 0,
+            "open": true,
+            "exhaust": 12,
+            "effects": [
+              {
+                "kind": "CoinBurst",
+                "Age": 0.139999956,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  1.2,
+                  2.1
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.139999956,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0.04823862,
+                      1.166547,
+                      2.120517
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-fuel-burst.png",
+            "width": 1280,
+            "frame": 907,
+            "ElapsedTime": 1.019999597221613,
+            "Distance": 22.519324412907174,
+            "state": "Playing",
+            "ActualSpeed": 22.1555557,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 1.31847239,
+            "LastLaunchTime": 0,
+            "open": true,
+            "exhaust": 28,
+            "effects": [
+              {
+                "kind": "FuelBurst",
+                "Age": 0.139999956,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  1.2,
+                  21.5188541
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.139999956,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -0.07195041,
+                      1.20000029,
+                      21.5086288
+                    ],
+                    "color": "RGBA(36, 233, 101, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-fuel-burst-4x3.png",
+            "width": 960,
+            "frame": 907,
+            "ElapsedTime": 1.019999597221613,
+            "Distance": 22.519324412907174,
+            "state": "Playing",
+            "ActualSpeed": 22.1555557,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 1.31847239,
+            "LastLaunchTime": 0,
+            "open": true,
+            "exhaust": 28,
+            "effects": [
+              {
+                "kind": "FuelBurst",
+                "Age": 0.139999956,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  1.2,
+                  21.5188541
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.139999956,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -0.07195041,
+                      1.20000029,
+                      21.5086288
+                    ],
+                    "color": "RGBA(36, 233, 101, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-collision-sparks.png",
+            "width": 1280,
+            "frame": 951,
+            "ElapsedTime": 1.899999249726534,
+            "Distance": 42.077805497314245,
+            "state": "Playing",
+            "ActualSpeed": 22.2924442,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 0.438473225,
+            "LastLaunchTime": 0,
+            "open": true,
+            "exhaust": 30,
+            "effects": [
+              {
+                "kind": "Spark",
+                "Age": 0.139999956,
+                "ParticleCount": 36,
+                "position": [
+                  0,
+                  0.6,
+                  41.05817
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.139999956,
+                    "particleCount": 36,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -0.003048246,
+                      1.36910152,
+                      41.08167
+                    ],
+                    "color": "RGBA(255, 83, 36, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-collision-sparks-4x3.png",
+            "width": 960,
+            "frame": 951,
+            "ElapsedTime": 1.899999249726534,
+            "Distance": 42.077805497314245,
+            "state": "Playing",
+            "ActualSpeed": 22.2924442,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 0.438473225,
+            "LastLaunchTime": 0,
+            "open": true,
+            "exhaust": 30,
+            "effects": [
+              {
+                "kind": "Spark",
+                "Age": 0.139999956,
+                "ParticleCount": 36,
+                "position": [
+                  0,
+                  0.6,
+                  41.05817
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.139999956,
+                    "particleCount": 36,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -0.003048246,
+                      1.36910152,
+                      41.08167
+                    ],
+                    "color": "RGBA(255, 83, 36, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-neon-bloom-on.png",
+            "width": 1280,
+            "frame": 990,
+            "ElapsedTime": 2.7599989101290703,
+            "Distance": 61.308162245348974,
+            "state": "Paused",
+            "ActualSpeed": 0,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 2,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 10.9879484,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 28,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 0.439999759,
+                "ParticleCount": 1,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 1,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      -16.0048141,
+                      15.2799988,
+                      151.905441
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              },
+              {
+                "kind": "CoinBurst",
+                "Age": 0.179999948,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  0.6,
+                  60
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -0.0785151646,
+                      0.5961363,
+                      59.959095
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-neon-bloom-on-4x3.png",
+            "width": 960,
+            "frame": 990,
+            "ElapsedTime": 2.7599989101290703,
+            "Distance": 61.308162245348974,
+            "state": "Paused",
+            "ActualSpeed": 0,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 2,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 10.9879484,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 28,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 0.439999759,
+                "ParticleCount": 1,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 1,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      -16.0048141,
+                      15.2799988,
+                      151.905441
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              },
+              {
+                "kind": "CoinBurst",
+                "Age": 0.179999948,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  0.6,
+                  60
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -0.0785151646,
+                      0.5961363,
+                      59.959095
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-neon-bloom-off.png",
+            "width": 1280,
+            "frame": 990,
+            "ElapsedTime": 2.7599989101290703,
+            "Distance": 61.308162245348974,
+            "state": "Paused",
+            "ActualSpeed": 0,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 2,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 10.9879484,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 28,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 0.439999759,
+                "ParticleCount": 1,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 1,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      -16.0048141,
+                      15.2799988,
+                      151.905441
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              },
+              {
+                "kind": "CoinBurst",
+                "Age": 0.179999948,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  0.6,
+                  60
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -0.0785151646,
+                      0.5961363,
+                      59.959095
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-neon-bloom-off-4x3.png",
+            "width": 960,
+            "frame": 990,
+            "ElapsedTime": 2.7599989101290703,
+            "Distance": 61.308162245348974,
+            "state": "Paused",
+            "ActualSpeed": 0,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 2,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 10.9879484,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 28,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 0.439999759,
+                "ParticleCount": 1,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 1,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      -16.0048141,
+                      15.2799988,
+                      151.905441
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              },
+              {
+                "kind": "CoinBurst",
+                "Age": 0.179999948,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  0.6,
+                  60
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -0.0785151646,
+                      0.5961363,
+                      59.959095
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-cap-open.png",
+            "width": 1280,
+            "frame": 1121,
+            "ElapsedTime": 182.51999900490046,
+            "Distance": 125.99995024502277,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 0,
+            "LastLaunchTime": 0,
+            "open": false,
+            "exhaust": 44,
+            "effects": [
+              {
+                "kind": "FuelBurst",
+                "Age": 0.179999948,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  0.6,
+                  120
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0.000233461455,
+                      0.600000143,
+                      120.111351
+                    ],
+                    "color": "RGBA(36, 233, 101, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-cap-open-4x3.png",
+            "width": 960,
+            "frame": 1121,
+            "ElapsedTime": 182.51999900490046,
+            "Distance": 125.99995024502277,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 0,
+            "LastLaunchTime": 0,
+            "open": false,
+            "exhaust": 44,
+            "effects": [
+              {
+                "kind": "FuelBurst",
+                "Age": 0.179999948,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  0.6,
+                  120
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0.000233461455,
+                      0.600000143,
+                      120.111351
+                    ],
+                    "color": "RGBA(36, 233, 101, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-entrance.png",
+            "width": 1280,
+            "frame": 1177,
+            "ElapsedTime": 183.6199985705316,
+            "Distance": 180.99992852658033,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 0,
+            "LastLaunchTime": 0,
+            "open": false,
+            "exhaust": 44,
+            "effects": [
+              {
+                "kind": "CoinBurst",
+                "Age": 0.67999953,
+                "ParticleCount": 0,
+                "position": [
+                  0,
+                  0.6,
+                  150
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-entrance-4x3.png",
+            "width": 960,
+            "frame": 1177,
+            "ElapsedTime": 183.6199985705316,
+            "Distance": 180.99992852658033,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 0,
+            "LastLaunchTime": 0,
+            "open": false,
+            "exhaust": 44,
+            "effects": [
+              {
+                "kind": "CoinBurst",
+                "Age": 0.67999953,
+                "ParticleCount": 0,
+                "position": [
+                  0,
+                  0.6,
+                  150
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-tunnel.png",
+            "width": 1280,
+            "frame": 1263,
+            "ElapsedTime": 185.21999793872237,
+            "Distance": 260.9998969361186,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 0,
+            "LastLaunchTime": 0,
+            "open": false,
+            "exhaust": 46,
+            "effects": [
+              {
+                "kind": "CoinBurst",
+                "Age": 0.479999721,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  0.6,
+                  240
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0.026613174,
+                      0.786945045,
+                      240.0099
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-tunnel-4x3.png",
+            "width": 960,
+            "frame": 1263,
+            "ElapsedTime": 185.21999793872237,
+            "Distance": 260.9998969361186,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 0,
+            "LastLaunchTime": 0,
+            "open": false,
+            "exhaust": 46,
+            "effects": [
+              {
+                "kind": "CoinBurst",
+                "Age": 0.479999721,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  0.6,
+                  240
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0.026613174,
+                      0.786945045,
+                      240.0099
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-exit.png",
+            "width": 1280,
+            "frame": 1454,
+            "ElapsedTime": 188.61999659612775,
+            "Distance": 430.9998298063874,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 0,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 0,
+            "LastLaunchTime": 0,
+            "open": false,
+            "exhaust": 44,
+            "effects": []
+          },
+          {
+            "path": "Evidence/Task12/normal-exit-4x3.png",
+            "width": 960,
+            "frame": 1454,
+            "ElapsedTime": 188.61999659612775,
+            "Distance": 430.9998298063874,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 0,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 0,
+            "LastLaunchTime": 0,
+            "open": false,
+            "exhaust": 44,
+            "effects": []
+          },
+          {
+            "path": "Evidence/Task12/normal-post-exit.png",
+            "width": 1280,
+            "frame": 1514,
+            "ElapsedTime": 189.8399961143732,
+            "Distance": 491.99980571866035,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 10.7679434,
+            "LastLaunchTime": 189.1999963670969,
+            "open": true,
+            "exhaust": 44,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 0.659999549,
+                "ParticleCount": 1,
+                "position": [
+                  -16,
+                  10,
+                  619.9998
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 1,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      -16.0048141,
+                      17.9199963,
+                      620.003052
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-post-exit-4x3.png",
+            "width": 960,
+            "frame": 1514,
+            "ElapsedTime": 189.8399961143732,
+            "Distance": 491.99980571866035,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 10.7679434,
+            "LastLaunchTime": 189.1999963670969,
+            "open": true,
+            "exhaust": 44,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 0.659999549,
+                "ParticleCount": 1,
+                "position": [
+                  -16,
+                  10,
+                  619.9998
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 1,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      -16.0048141,
+                      17.9199963,
+                      620.003052
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-rebase.png",
+            "width": 1280,
+            "frame": 2112,
+            "ElapsedTime": 200.11999205499887,
+            "Distance": 1005.9996027499437,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 960,
+            "RebaseCount": 1,
+            "ActiveCount": 0,
+            "ActiveFireworks": 0,
+            "Launches": 1,
+            "Remaining": 0.487887383,
+            "LastLaunchTime": 189.1999963670969,
+            "open": false,
+            "exhaust": 44,
+            "effects": []
+          },
+          {
+            "path": "Evidence/Task12/normal-rebase-4x3.png",
+            "width": 960,
+            "frame": 2112,
+            "ElapsedTime": 200.11999205499887,
+            "Distance": 1005.9996027499437,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 960,
+            "RebaseCount": 1,
+            "ActiveCount": 0,
+            "ActiveFireworks": 0,
+            "Launches": 1,
+            "Remaining": 0.487887383,
+            "LastLaunchTime": 189.1999963670969,
+            "open": false,
+            "exhaust": 44,
+            "effects": []
+          },
+          {
+            "path": "Evidence/Task12/normal-second-rebase.png",
+            "width": 1280,
+            "frame": 3287,
+            "ElapsedTime": 220.4399840310216,
+            "Distance": 2021.9992015510798,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 1920,
+            "RebaseCount": 2,
+            "ActiveCount": 0,
+            "ActiveFireworks": 0,
+            "Launches": 2,
+            "Remaining": 0.3275137,
+            "LastLaunchTime": 208.39998878538609,
+            "open": false,
+            "exhaust": 44,
+            "effects": []
+          },
+          {
+            "path": "Evidence/Task12/normal-second-rebase-4x3.png",
+            "width": 960,
+            "frame": 3287,
+            "ElapsedTime": 220.4399840310216,
+            "Distance": 2021.9992015510798,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 1920,
+            "RebaseCount": 2,
+            "ActiveCount": 0,
+            "ActiveFireworks": 0,
+            "Launches": 2,
+            "Remaining": 0.3275137,
+            "LastLaunchTime": 208.39998878538609,
+            "open": false,
+            "exhaust": 44,
+            "effects": []
+          },
+          {
+            "path": "Evidence/Task12/normal-horizon-cap.png",
+            "width": 1280,
+            "frame": 3289,
+            "ElapsedTime": 180.01999999955297,
+            "Distance": 0.9999999776482582,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 0,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 2.31847143,
+            "LastLaunchTime": 0,
+            "open": true,
+            "exhaust": 2,
+            "effects": []
+          },
+          {
+            "path": "Evidence/Task12/normal-horizon-cap-4x3.png",
+            "width": 960,
+            "frame": 3289,
+            "ElapsedTime": 180.01999999955297,
+            "Distance": 0.9999999776482582,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 0,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 2.31847143,
+            "LastLaunchTime": 0,
+            "open": true,
+            "exhaust": 2,
+            "effects": []
+          },
+          {
+            "path": "Evidence/Task12/normal-horizon-cap-bloom-off.png",
+            "width": 1280,
+            "frame": 3289,
+            "ElapsedTime": 180.01999999955297,
+            "Distance": 0.9999999776482582,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 0,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 2.31847143,
+            "LastLaunchTime": 0,
+            "open": true,
+            "exhaust": 2,
+            "effects": []
+          },
+          {
+            "path": "Evidence/Task12/normal-horizon-cap-bloom-off-4x3.png",
+            "width": 960,
+            "frame": 3289,
+            "ElapsedTime": 180.01999999955297,
+            "Distance": 0.9999999776482582,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 0,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 2.31847143,
+            "LastLaunchTime": 0,
+            "open": true,
+            "exhaust": 2,
+            "effects": []
+          },
+          {
+            "path": "Evidence/Task12/normal-terminal-sparks.png",
+            "width": 1280,
+            "frame": 3289,
+            "ElapsedTime": 0,
+            "Distance": 0,
+            "state": "GameOver",
+            "ActualSpeed": 0,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 2.33847141,
+            "LastLaunchTime": 0,
+            "open": true,
+            "exhaust": 0,
+            "effects": [
+              {
+                "kind": "Spark",
+                "Age": 0.02,
+                "ParticleCount": 36,
+                "position": [
+                  0,
+                  0.6,
+                  0
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.02,
+                    "particleCount": 36,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0.0244762357,
+                      1.40319586,
+                      -0.00152498437
+                    ],
+                    "color": "RGBA(255, 136, 88, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-terminal-sparks-4x3.png",
+            "width": 960,
+            "frame": 3289,
+            "ElapsedTime": 0,
+            "Distance": 0,
+            "state": "GameOver",
+            "ActualSpeed": 0,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 2.33847141,
+            "LastLaunchTime": 0,
+            "open": true,
+            "exhaust": 0,
+            "effects": [
+              {
+                "kind": "Spark",
+                "Age": 0.02,
+                "ParticleCount": 36,
+                "position": [
+                  0,
+                  0.6,
+                  0
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.02,
+                    "particleCount": 36,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0.0244762357,
+                      1.40319586,
+                      -0.00152498437
+                    ],
+                    "color": "RGBA(255, 136, 88, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/normal-restart-clean.png",
+            "width": 1280,
+            "frame": 3298,
+            "ElapsedTime": 0,
+            "Distance": 0,
+            "state": "Playing",
+            "ActualSpeed": 22,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 0,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 2.33847141,
+            "LastLaunchTime": 0,
+            "open": true,
+            "exhaust": 0,
+            "effects": []
+          },
+          {
+            "path": "Evidence/Task12/normal-restart-clean-4x3.png",
+            "width": 960,
+            "frame": 3298,
+            "ElapsedTime": 0,
+            "Distance": 0,
+            "state": "Playing",
+            "ActualSpeed": 22,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 0,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 2.33847141,
+            "LastLaunchTime": 0,
+            "open": true,
+            "exhaust": 0,
+            "effects": []
+          }
+        ]
+      }
+    },
+    {
+      "fast": true,
+      "result": {
+        "passed": true,
+        "reloads": {
+          "enabled": true,
+          "options": 3
+        },
+        "launchTime": 2.3399990759789944,
+        "launchPosition": [
+          -16,
+          10,
+          151.902222
+        ],
+        "launchSky": true,
+        "pauseSeconds": 10.11584,
+        "framesAdvanced": 3268,
+        "created": 352,
+        "destroyed": 0,
+        "misses": 0,
+        "maxEffects": 2,
+        "maxFireworks": 1,
+        "maxParticles": 250,
+        "maxLights": 7,
+        "maxMaterials": 12,
+        "horizon": [
+          {
+            "lane": -1,
+            "width": 1280,
+            "viewport": [
+              0.488799632,
+              0.638112664,
+              126.130829
+            ]
+          },
+          {
+            "lane": -1,
+            "width": 960,
+            "viewport": [
+              0.485066116,
+              0.638112664,
+              126.130829
+            ]
+          },
+          {
+            "lane": 0,
+            "width": 1280,
+            "viewport": [
+              0.5,
+              0.638112664,
+              126.130829
+            ]
+          },
+          {
+            "lane": 0,
+            "width": 960,
+            "viewport": [
+              0.5,
+              0.638112664,
+              126.130829
+            ]
+          },
+          {
+            "lane": 1,
+            "width": 1280,
+            "viewport": [
+              0.5112004,
+              0.638112664,
+              126.130829
+            ]
+          },
+          {
+            "lane": 1,
+            "width": 960,
+            "viewport": [
+              0.5149339,
+              0.638112664,
+              126.130829
+            ]
+          }
+        ],
+        "pools": [
+          {
+            "key": "Spark",
+            "Capacity": 16,
+            "Created": 16,
+            "Active": 0,
+            "Inactive": 16,
+            "PeakActive": 1,
+            "Misses": 0
+          },
+          {
+            "key": "CoinBurst",
+            "Capacity": 16,
+            "Created": 16,
+            "Active": 0,
+            "Inactive": 16,
+            "PeakActive": 1,
+            "Misses": 0
+          },
+          {
+            "key": "FuelBurst",
+            "Capacity": 8,
+            "Created": 8,
+            "Active": 0,
+            "Inactive": 8,
+            "PeakActive": 1,
+            "Misses": 0
+          },
+          {
+            "key": "Firework",
+            "Capacity": 8,
+            "Created": 8,
+            "Active": 0,
+            "Inactive": 8,
+            "PeakActive": 1,
+            "Misses": 0
+          }
+        ],
+        "captures": [
+          {
+            "path": "Evidence/Task12/fast-opening-launch.png",
+            "width": 1280,
+            "frame": 478,
+            "ElapsedTime": 2.3399990759789944,
+            "Distance": 51.90221934244997,
+            "state": "Playing",
+            "ActualSpeed": 22.36089,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 11.407958,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 30,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 0.02,
+                "ParticleCount": 1,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.02,
+                    "particleCount": 1,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      -16.0048141,
+                      10.24,
+                      151.905441
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.02,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-opening-launch-4x3.png",
+            "width": 960,
+            "frame": 478,
+            "ElapsedTime": 2.3399990759789944,
+            "Distance": 51.90221934244997,
+            "state": "Playing",
+            "ActualSpeed": 22.36089,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 11.407958,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 30,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 0.02,
+                "ParticleCount": 1,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.02,
+                    "particleCount": 1,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      -16.0048141,
+                      10.24,
+                      151.905441
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.02,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-opening-ascent.png",
+            "width": 1280,
+            "frame": 494,
+            "ElapsedTime": 2.779998902231455,
+            "Distance": 61.756748722873816,
+            "state": "Playing",
+            "ActualSpeed": 22.4293327,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 2,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 10.967948,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 32,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 0.45999974,
+                "ParticleCount": 1,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 1,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      -16.0048141,
+                      15.5199986,
+                      151.905441
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              },
+              {
+                "kind": "CoinBurst",
+                "Age": 0.199999943,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  0.6,
+                  60
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -0.08590128,
+                      0.59590596,
+                      59.9548836
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-opening-ascent-4x3.png",
+            "width": 960,
+            "frame": 494,
+            "ElapsedTime": 2.779998902231455,
+            "Distance": 61.756748722873816,
+            "state": "Playing",
+            "ActualSpeed": 22.4293327,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 2,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 10.967948,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 32,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 0.45999974,
+                "ParticleCount": 1,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 1,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      -16.0048141,
+                      15.5199986,
+                      151.905441
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              },
+              {
+                "kind": "CoinBurst",
+                "Age": 0.199999943,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  0.6,
+                  60
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -0.08590128,
+                      0.59590596,
+                      59.9548836
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-ascent-paused.png",
+            "width": 1280,
+            "frame": 494,
+            "ElapsedTime": 2.779998902231455,
+            "Distance": 61.756748722873816,
+            "state": "Paused",
+            "ActualSpeed": 0,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 2,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 10.967948,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 32,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 0.45999974,
+                "ParticleCount": 1,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 1,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      -16.0048141,
+                      15.5199986,
+                      151.905441
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              },
+              {
+                "kind": "CoinBurst",
+                "Age": 0.199999943,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  0.6,
+                  60
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -0.08590128,
+                      0.59590596,
+                      59.9548836
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-ascent-paused-4x3.png",
+            "width": 960,
+            "frame": 494,
+            "ElapsedTime": 2.779998902231455,
+            "Distance": 61.756748722873816,
+            "state": "Paused",
+            "ActualSpeed": 0,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 2,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 10.967948,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 32,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 0.45999974,
+                "ParticleCount": 1,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 1,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      -16.0048141,
+                      15.5199986,
+                      151.905441
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              },
+              {
+                "kind": "CoinBurst",
+                "Age": 0.199999943,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  0.6,
+                  60
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -0.08590128,
+                      0.59590596,
+                      59.9548836
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-ascent-after-ten-seconds.png",
+            "width": 1280,
+            "frame": 1094,
+            "ElapsedTime": 2.779998902231455,
+            "Distance": 61.756748722873816,
+            "state": "Paused",
+            "ActualSpeed": 0,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 2,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 10.967948,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 32,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 0.45999974,
+                "ParticleCount": 1,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 1,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      -16.0048141,
+                      15.5199986,
+                      151.905441
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              },
+              {
+                "kind": "CoinBurst",
+                "Age": 0.199999943,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  0.6,
+                  60
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -0.08590128,
+                      0.59590596,
+                      59.9548836
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-ascent-after-ten-seconds-4x3.png",
+            "width": 960,
+            "frame": 1094,
+            "ElapsedTime": 2.779998902231455,
+            "Distance": 61.756748722873816,
+            "state": "Paused",
+            "ActualSpeed": 0,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 2,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 10.967948,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 32,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 0.45999974,
+                "ParticleCount": 1,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 1,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      -16.0048141,
+                      15.5199986,
+                      151.905441
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              },
+              {
+                "kind": "CoinBurst",
+                "Age": 0.199999943,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  0.6,
+                  60
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -0.08590128,
+                      0.59590596,
+                      59.9548836
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-opening-late-ascent.png",
+            "width": 1280,
+            "frame": 1112,
+            "ElapsedTime": 3.2599987126886845,
+            "Distance": 72.54149105384536,
+            "state": "Playing",
+            "ActualSpeed": 22.504,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 2,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 10.487937,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 30,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 0.9399993,
+                "ParticleCount": 1,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 1,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      -16.0048141,
+                      20.7999935,
+                      151.905441
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              },
+              {
+                "kind": "CoinBurst",
+                "Age": 0.67999953,
+                "ParticleCount": 0,
+                "position": [
+                  0,
+                  0.6,
+                  60
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-opening-late-ascent-4x3.png",
+            "width": 960,
+            "frame": 1112,
+            "ElapsedTime": 3.2599987126886845,
+            "Distance": 72.54149105384536,
+            "state": "Playing",
+            "ActualSpeed": 22.504,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 2,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 10.487937,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 30,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 0.9399993,
+                "ParticleCount": 1,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 1,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      -16.0048141,
+                      20.7999935,
+                      151.905441
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              },
+              {
+                "kind": "CoinBurst",
+                "Age": 0.67999953,
+                "ParticleCount": 0,
+                "position": [
+                  0,
+                  0.6,
+                  60
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-opening-burst-ignition.png",
+            "width": 1280,
+            "frame": 1115,
+            "ElapsedTime": 3.4799986258149147,
+            "Distance": 77.496475707629,
+            "state": "Playing",
+            "ActualSpeed": 22.5382214,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 10.2679319,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 30,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 1.15999913,
+                "ParticleCount": 180,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 180,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -16.0030689,
+                      20.7980652,
+                      151.9079
+                    ],
+                    "color": "RGBA(255, 89, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-opening-burst-ignition-4x3.png",
+            "width": 960,
+            "frame": 1115,
+            "ElapsedTime": 3.4799986258149147,
+            "Distance": 77.496475707629,
+            "state": "Playing",
+            "ActualSpeed": 22.5382214,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 10.2679319,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 30,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 1.15999913,
+                "ParticleCount": 180,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 180,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -16.0030689,
+                      20.7980652,
+                      151.9079
+                    ],
+                    "color": "RGBA(255, 89, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-opening-burst.png",
+            "width": 1280,
+            "frame": 1129,
+            "ElapsedTime": 3.8599984757602215,
+            "Distance": 86.07281890912935,
+            "state": "Playing",
+            "ActualSpeed": 22.5973339,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 9.887923,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 30,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 1.53999877,
+                "ParticleCount": 180,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 180,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -15.9908123,
+                      20.631176,
+                      151.928467
+                    ],
+                    "color": "RGBA(255, 89, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-opening-burst-4x3.png",
+            "width": 960,
+            "frame": 1129,
+            "ElapsedTime": 3.8599984757602215,
+            "Distance": 86.07281890912935,
+            "state": "Playing",
+            "ActualSpeed": 22.5973339,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 9.887923,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 30,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 1.53999877,
+                "ParticleCount": 180,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 180,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -15.9908123,
+                      20.631176,
+                      151.928467
+                    ],
+                    "color": "RGBA(255, 89, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-opening-burst-bloom-off.png",
+            "width": 1280,
+            "frame": 1129,
+            "ElapsedTime": 3.8599984757602215,
+            "Distance": 86.07281890912935,
+            "state": "Playing",
+            "ActualSpeed": 22.5973339,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 9.887923,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 30,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 1.53999877,
+                "ParticleCount": 180,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 180,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -15.9908123,
+                      20.631176,
+                      151.928467
+                    ],
+                    "color": "RGBA(255, 89, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-opening-burst-bloom-off-4x3.png",
+            "width": 960,
+            "frame": 1129,
+            "ElapsedTime": 3.8599984757602215,
+            "Distance": 86.07281890912935,
+            "state": "Playing",
+            "ActualSpeed": 22.5973339,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 9.887923,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 30,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 1.53999877,
+                "ParticleCount": 180,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 180,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -15.9908123,
+                      20.631176,
+                      151.928467
+                    ],
+                    "color": "RGBA(255, 89, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-opening-burst-bloom-on.png",
+            "width": 1280,
+            "frame": 1129,
+            "ElapsedTime": 3.8599984757602215,
+            "Distance": 86.07281890912935,
+            "state": "Playing",
+            "ActualSpeed": 22.5973339,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 9.887923,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 30,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 1.53999877,
+                "ParticleCount": 180,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 180,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -15.9908123,
+                      20.631176,
+                      151.928467
+                    ],
+                    "color": "RGBA(255, 89, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-opening-burst-bloom-on-4x3.png",
+            "width": 960,
+            "frame": 1129,
+            "ElapsedTime": 3.8599984757602215,
+            "Distance": 86.07281890912935,
+            "state": "Playing",
+            "ActualSpeed": 22.5973339,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 9.887923,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 30,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 1.53999877,
+                "ParticleCount": 180,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 180,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -15.9908123,
+                      20.631176,
+                      151.928467
+                    ],
+                    "color": "RGBA(255, 89, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-coin-burst.png",
+            "width": 1280,
+            "frame": 1178,
+            "ElapsedTime": 0.13999994471669197,
+            "Distance": 3.0813054315056476,
+            "state": "Playing",
+            "ActualSpeed": 22.0186672,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 2.19847155,
+            "LastLaunchTime": 0,
+            "open": true,
+            "exhaust": 12,
+            "effects": [
+              {
+                "kind": "CoinBurst",
+                "Age": 0.139999956,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  1.2,
+                  2.1
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.139999956,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0.04823862,
+                      1.166547,
+                      2.120517
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-coin-burst-4x3.png",
+            "width": 960,
+            "frame": 1178,
+            "ElapsedTime": 0.13999994471669197,
+            "Distance": 3.0813054315056476,
+            "state": "Playing",
+            "ActualSpeed": 22.0186672,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 2.19847155,
+            "LastLaunchTime": 0,
+            "open": true,
+            "exhaust": 12,
+            "effects": [
+              {
+                "kind": "CoinBurst",
+                "Age": 0.139999956,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  1.2,
+                  2.1
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.139999956,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0.04823862,
+                      1.166547,
+                      2.120517
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-fuel-burst.png",
+            "width": 1280,
+            "frame": 1222,
+            "ElapsedTime": 1.0399995893239975,
+            "Distance": 22.962497570120902,
+            "state": "Playing",
+            "ActualSpeed": 22.1586666,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 1.2984724,
+            "LastLaunchTime": 0,
+            "open": true,
+            "exhaust": 28,
+            "effects": [
+              {
+                "kind": "FuelBurst",
+                "Age": 0.139999956,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  1.2,
+                  21.9615917
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.139999956,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -0.07195041,
+                      1.20000029,
+                      21.9513683
+                    ],
+                    "color": "RGBA(36, 233, 101, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-fuel-burst-4x3.png",
+            "width": 960,
+            "frame": 1222,
+            "ElapsedTime": 1.0399995893239975,
+            "Distance": 22.962497570120902,
+            "state": "Playing",
+            "ActualSpeed": 22.1586666,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 1.2984724,
+            "LastLaunchTime": 0,
+            "open": true,
+            "exhaust": 28,
+            "effects": [
+              {
+                "kind": "FuelBurst",
+                "Age": 0.139999956,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  1.2,
+                  21.9615917
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.139999956,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -0.07195041,
+                      1.20000029,
+                      21.9513683
+                    ],
+                    "color": "RGBA(36, 233, 101, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-collision-sparks.png",
+            "width": 1280,
+            "frame": 1267,
+            "ElapsedTime": 1.939999233931303,
+            "Distance": 42.96968956742848,
+            "state": "Playing",
+            "ActualSpeed": 22.298666,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 0.398473263,
+            "LastLaunchTime": 0,
+            "open": true,
+            "exhaust": 28,
+            "effects": [
+              {
+                "kind": "Spark",
+                "Age": 0.139999956,
+                "ParticleCount": 36,
+                "position": [
+                  0,
+                  0.6,
+                  41.9491844
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.139999956,
+                    "particleCount": 36,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -0.003048246,
+                      1.36910152,
+                      41.97268
+                    ],
+                    "color": "RGBA(255, 83, 36, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-collision-sparks-4x3.png",
+            "width": 960,
+            "frame": 1267,
+            "ElapsedTime": 1.939999233931303,
+            "Distance": 42.96968956742848,
+            "state": "Playing",
+            "ActualSpeed": 22.298666,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 0.398473263,
+            "LastLaunchTime": 0,
+            "open": true,
+            "exhaust": 28,
+            "effects": [
+              {
+                "kind": "Spark",
+                "Age": 0.139999956,
+                "ParticleCount": 36,
+                "position": [
+                  0,
+                  0.6,
+                  41.9491844
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.139999956,
+                    "particleCount": 36,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -0.003048246,
+                      1.36910152,
+                      41.97268
+                    ],
+                    "color": "RGBA(255, 83, 36, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-neon-bloom-on.png",
+            "width": 1280,
+            "frame": 1310,
+            "ElapsedTime": 2.779998902231455,
+            "Distance": 61.756748722873816,
+            "state": "Paused",
+            "ActualSpeed": 0,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 2,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 10.967948,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 32,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 0.45999974,
+                "ParticleCount": 1,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 1,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      -16.0048141,
+                      15.5199986,
+                      151.905441
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              },
+              {
+                "kind": "CoinBurst",
+                "Age": 0.199999943,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  0.6,
+                  60
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -0.08590128,
+                      0.59590596,
+                      59.9548836
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-neon-bloom-on-4x3.png",
+            "width": 960,
+            "frame": 1310,
+            "ElapsedTime": 2.779998902231455,
+            "Distance": 61.756748722873816,
+            "state": "Paused",
+            "ActualSpeed": 0,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 2,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 10.967948,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 32,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 0.45999974,
+                "ParticleCount": 1,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 1,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      -16.0048141,
+                      15.5199986,
+                      151.905441
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              },
+              {
+                "kind": "CoinBurst",
+                "Age": 0.199999943,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  0.6,
+                  60
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -0.08590128,
+                      0.59590596,
+                      59.9548836
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-neon-bloom-off.png",
+            "width": 1280,
+            "frame": 1310,
+            "ElapsedTime": 2.779998902231455,
+            "Distance": 61.756748722873816,
+            "state": "Paused",
+            "ActualSpeed": 0,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 2,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 10.967948,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 32,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 0.45999974,
+                "ParticleCount": 1,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 1,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      -16.0048141,
+                      15.5199986,
+                      151.905441
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              },
+              {
+                "kind": "CoinBurst",
+                "Age": 0.199999943,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  0.6,
+                  60
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -0.08590128,
+                      0.59590596,
+                      59.9548836
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-neon-bloom-off-4x3.png",
+            "width": 960,
+            "frame": 1310,
+            "ElapsedTime": 2.779998902231455,
+            "Distance": 61.756748722873816,
+            "state": "Paused",
+            "ActualSpeed": 0,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 2,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 10.967948,
+            "LastLaunchTime": 2.3399990759789944,
+            "open": true,
+            "exhaust": 32,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 0.45999974,
+                "ParticleCount": 1,
+                "position": [
+                  -16,
+                  10,
+                  151.902222
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 1,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      -16.0048141,
+                      15.5199986,
+                      151.905441
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              },
+              {
+                "kind": "CoinBurst",
+                "Age": 0.199999943,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  0.6,
+                  60
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      -0.08590128,
+                      0.59590596,
+                      59.9548836
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-cap-open.png",
+            "width": 1280,
+            "frame": 1442,
+            "ElapsedTime": 182.51999900490046,
+            "Distance": 125.99995024502277,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 0,
+            "LastLaunchTime": 0,
+            "open": false,
+            "exhaust": 44,
+            "effects": [
+              {
+                "kind": "FuelBurst",
+                "Age": 0.179999948,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  0.6,
+                  120
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0.000233461455,
+                      0.600000143,
+                      120.111351
+                    ],
+                    "color": "RGBA(36, 233, 101, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-cap-open-4x3.png",
+            "width": 960,
+            "frame": 1442,
+            "ElapsedTime": 182.51999900490046,
+            "Distance": 125.99995024502277,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 0,
+            "LastLaunchTime": 0,
+            "open": false,
+            "exhaust": 44,
+            "effects": [
+              {
+                "kind": "FuelBurst",
+                "Age": 0.179999948,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  0.6,
+                  120
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0.000233461455,
+                      0.600000143,
+                      120.111351
+                    ],
+                    "color": "RGBA(36, 233, 101, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-entrance.png",
+            "width": 1280,
+            "frame": 1497,
+            "ElapsedTime": 183.6199985705316,
+            "Distance": 180.99992852658033,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 0,
+            "LastLaunchTime": 0,
+            "open": false,
+            "exhaust": 44,
+            "effects": [
+              {
+                "kind": "CoinBurst",
+                "Age": 0.67999953,
+                "ParticleCount": 0,
+                "position": [
+                  0,
+                  0.6,
+                  150
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-entrance-4x3.png",
+            "width": 960,
+            "frame": 1497,
+            "ElapsedTime": 183.6199985705316,
+            "Distance": 180.99992852658033,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 0,
+            "LastLaunchTime": 0,
+            "open": false,
+            "exhaust": 44,
+            "effects": [
+              {
+                "kind": "CoinBurst",
+                "Age": 0.67999953,
+                "ParticleCount": 0,
+                "position": [
+                  0,
+                  0.6,
+                  150
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-tunnel.png",
+            "width": 1280,
+            "frame": 1584,
+            "ElapsedTime": 185.23999793082476,
+            "Distance": 261.99989654123783,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 0,
+            "LastLaunchTime": 0,
+            "open": false,
+            "exhaust": 42,
+            "effects": [
+              {
+                "kind": "CoinBurst",
+                "Age": 0.4999997,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  0.6,
+                  240
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0.027640095,
+                      0.7945075,
+                      240.0103
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-tunnel-4x3.png",
+            "width": 960,
+            "frame": 1584,
+            "ElapsedTime": 185.23999793082476,
+            "Distance": 261.99989654123783,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 0,
+            "LastLaunchTime": 0,
+            "open": false,
+            "exhaust": 42,
+            "effects": [
+              {
+                "kind": "CoinBurst",
+                "Age": 0.4999997,
+                "ParticleCount": 24,
+                "position": [
+                  0,
+                  0.6,
+                  240
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 24,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0.027640095,
+                      0.7945075,
+                      240.0103
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-exit.png",
+            "width": 1280,
+            "frame": 1775,
+            "ElapsedTime": 188.61999659612775,
+            "Distance": 430.9998298063874,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 0,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 0,
+            "LastLaunchTime": 0,
+            "open": false,
+            "exhaust": 44,
+            "effects": []
+          },
+          {
+            "path": "Evidence/Task12/fast-exit-4x3.png",
+            "width": 960,
+            "frame": 1775,
+            "ElapsedTime": 188.61999659612775,
+            "Distance": 430.9998298063874,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 0,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 0,
+            "LastLaunchTime": 0,
+            "open": false,
+            "exhaust": 44,
+            "effects": []
+          },
+          {
+            "path": "Evidence/Task12/fast-post-exit.png",
+            "width": 1280,
+            "frame": 1838,
+            "ElapsedTime": 189.81999612227082,
+            "Distance": 490.9998061135411,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 10.7879438,
+            "LastLaunchTime": 189.1999963670969,
+            "open": true,
+            "exhaust": 42,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 0.639999568,
+                "ParticleCount": 1,
+                "position": [
+                  -16,
+                  10,
+                  619.9998
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 1,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      -16.0048141,
+                      17.6799965,
+                      620.003052
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-post-exit-4x3.png",
+            "width": 960,
+            "frame": 1838,
+            "ElapsedTime": 189.81999612227082,
+            "Distance": 490.9998061135411,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 1,
+            "Launches": 1,
+            "Remaining": 10.7879438,
+            "LastLaunchTime": 189.1999963670969,
+            "open": true,
+            "exhaust": 42,
+            "effects": [
+              {
+                "kind": "Firework",
+                "Age": 0.639999568,
+                "ParticleCount": 1,
+                "position": [
+                  -16,
+                  10,
+                  619.9998
+                ],
+                "children": [
+                  {
+                    "name": "Rocket",
+                    "time": 0.1,
+                    "particleCount": 1,
+                    "localSpace": "Local",
+                    "trail": true,
+                    "meanWorld": [
+                      -16.0048141,
+                      17.6799965,
+                      620.003052
+                    ],
+                    "color": "RGBA(255, 173, 37, 255)"
+                  },
+                  {
+                    "name": "Burst",
+                    "time": 0.15,
+                    "particleCount": 0,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "color": "none"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-rebase.png",
+            "width": 1280,
+            "frame": 2434,
+            "ElapsedTime": 200.13999204710126,
+            "Distance": 1006.999602355063,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 960,
+            "RebaseCount": 1,
+            "ActiveCount": 0,
+            "ActiveFireworks": 0,
+            "Launches": 1,
+            "Remaining": 0.4678874,
+            "LastLaunchTime": 189.1999963670969,
+            "open": false,
+            "exhaust": 44,
+            "effects": []
+          },
+          {
+            "path": "Evidence/Task12/fast-rebase-4x3.png",
+            "width": 960,
+            "frame": 2434,
+            "ElapsedTime": 200.13999204710126,
+            "Distance": 1006.999602355063,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 960,
+            "RebaseCount": 1,
+            "ActiveCount": 0,
+            "ActiveFireworks": 0,
+            "Launches": 1,
+            "Remaining": 0.4678874,
+            "LastLaunchTime": 189.1999963670969,
+            "open": false,
+            "exhaust": 44,
+            "effects": []
+          },
+          {
+            "path": "Evidence/Task12/fast-second-rebase.png",
+            "width": 1280,
+            "frame": 3612,
+            "ElapsedTime": 220.4199840389192,
+            "Distance": 2020.9992019459605,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 1920,
+            "RebaseCount": 2,
+            "ActiveCount": 0,
+            "ActiveFireworks": 0,
+            "Launches": 2,
+            "Remaining": 0.347513676,
+            "LastLaunchTime": 208.39998878538609,
+            "open": false,
+            "exhaust": 44,
+            "effects": []
+          },
+          {
+            "path": "Evidence/Task12/fast-second-rebase-4x3.png",
+            "width": 960,
+            "frame": 3612,
+            "ElapsedTime": 220.4199840389192,
+            "Distance": 2020.9992019459605,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 1920,
+            "RebaseCount": 2,
+            "ActiveCount": 0,
+            "ActiveFireworks": 0,
+            "Launches": 2,
+            "Remaining": 0.347513676,
+            "LastLaunchTime": 208.39998878538609,
+            "open": false,
+            "exhaust": 44,
+            "effects": []
+          },
+          {
+            "path": "Evidence/Task12/fast-horizon-cap.png",
+            "width": 1280,
+            "frame": 3614,
+            "ElapsedTime": 180.01999999955297,
+            "Distance": 0.9999999776482582,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 0,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 2.31847143,
+            "LastLaunchTime": 0,
+            "open": true,
+            "exhaust": 2,
+            "effects": []
+          },
+          {
+            "path": "Evidence/Task12/fast-horizon-cap-4x3.png",
+            "width": 960,
+            "frame": 3614,
+            "ElapsedTime": 180.01999999955297,
+            "Distance": 0.9999999776482582,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 0,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 2.31847143,
+            "LastLaunchTime": 0,
+            "open": true,
+            "exhaust": 2,
+            "effects": []
+          },
+          {
+            "path": "Evidence/Task12/fast-horizon-cap-bloom-off.png",
+            "width": 1280,
+            "frame": 3614,
+            "ElapsedTime": 180.01999999955297,
+            "Distance": 0.9999999776482582,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 0,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 2.31847143,
+            "LastLaunchTime": 0,
+            "open": true,
+            "exhaust": 2,
+            "effects": []
+          },
+          {
+            "path": "Evidence/Task12/fast-horizon-cap-bloom-off-4x3.png",
+            "width": 960,
+            "frame": 3614,
+            "ElapsedTime": 180.01999999955297,
+            "Distance": 0.9999999776482582,
+            "state": "Playing",
+            "ActualSpeed": 50,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 0,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 2.31847143,
+            "LastLaunchTime": 0,
+            "open": true,
+            "exhaust": 2,
+            "effects": []
+          },
+          {
+            "path": "Evidence/Task12/fast-terminal-sparks.png",
+            "width": 1280,
+            "frame": 3614,
+            "ElapsedTime": 0,
+            "Distance": 0,
+            "state": "GameOver",
+            "ActualSpeed": 0,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 2.33847141,
+            "LastLaunchTime": 0,
+            "open": true,
+            "exhaust": 0,
+            "effects": [
+              {
+                "kind": "Spark",
+                "Age": 0.02,
+                "ParticleCount": 36,
+                "position": [
+                  0,
+                  0.6,
+                  0
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.02,
+                    "particleCount": 36,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0.0244762357,
+                      1.40319586,
+                      -0.00152498437
+                    ],
+                    "color": "RGBA(255, 136, 88, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-terminal-sparks-4x3.png",
+            "width": 960,
+            "frame": 3614,
+            "ElapsedTime": 0,
+            "Distance": 0,
+            "state": "GameOver",
+            "ActualSpeed": 0,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 1,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 2.33847141,
+            "LastLaunchTime": 0,
+            "open": true,
+            "exhaust": 0,
+            "effects": [
+              {
+                "kind": "Spark",
+                "Age": 0.02,
+                "ParticleCount": 36,
+                "position": [
+                  0,
+                  0.6,
+                  0
+                ],
+                "children": [
+                  {
+                    "name": "Burst",
+                    "time": 0.02,
+                    "particleCount": 36,
+                    "localSpace": "Local",
+                    "trail": false,
+                    "meanWorld": [
+                      0.0244762357,
+                      1.40319586,
+                      -0.00152498437
+                    ],
+                    "color": "RGBA(255, 136, 88, 255)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Evidence/Task12/fast-restart-clean.png",
+            "width": 1280,
+            "frame": 3624,
+            "ElapsedTime": 0,
+            "Distance": 0,
+            "state": "Playing",
+            "ActualSpeed": 22,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 0,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 2.33847141,
+            "LastLaunchTime": 0,
+            "open": true,
+            "exhaust": 0,
+            "effects": []
+          },
+          {
+            "path": "Evidence/Task12/fast-restart-clean-4x3.png",
+            "width": 960,
+            "frame": 3624,
+            "ElapsedTime": 0,
+            "Distance": 0,
+            "state": "Playing",
+            "ActualSpeed": 22,
+            "Offset": 0,
+            "RebaseCount": 0,
+            "ActiveCount": 0,
+            "ActiveFireworks": 0,
+            "Launches": 0,
+            "Remaining": 2.33847141,
+            "LastLaunchTime": 0,
+            "open": true,
+            "exhaust": 0,
+            "effects": []
+          }
+        ]
+      }
+    }
+  ],
+  "passed": true,
+  "configBefore": {
+    "Pools.asset": "17e6935b8835102ead4b4d712e365ad8d143555c773fef2a43561ad9d4252536",
+    "Gameplay.asset": "8cb671477b31631487d25788305076f2835a428ceba648f87774d08ca99494aa",
+    "Presentation.asset": "02a572cd8f26523d3da24b3a127e7098b70cea6b303b4ebb5c65e7b82e97ae13",
+    "World.asset": "60809325a6542c99f82835360c0035d6a19bd15b8fdca38e69d4f36a3a2cf2cf"
+  },
+  "configAfter": {
+    "Pools.asset": "17e6935b8835102ead4b4d712e365ad8d143555c773fef2a43561ad9d4252536",
+    "Gameplay.asset": "8cb671477b31631487d25788305076f2835a428ceba648f87774d08ca99494aa",
+    "Presentation.asset": "02a572cd8f26523d3da24b3a127e7098b70cea6b303b4ebb5c65e7b82e97ae13",
+    "World.asset": "60809325a6542c99f82835360c0035d6a19bd15b8fdca38e69d4f36a3a2cf2cf"
+  }
+}

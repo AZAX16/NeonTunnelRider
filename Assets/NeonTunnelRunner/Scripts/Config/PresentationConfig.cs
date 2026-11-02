@@ -22,6 +22,12 @@ namespace NeonTunnelRunner
         [SerializeField, Min(.01f)] private float neonMaximumSpeed = 50f;
         [SerializeField] private Vector2 underglowLightRange = new Vector2(.3f, 3f);
         [SerializeField] private Vector2 underglowEmissionRange = new Vector2(1f, 5f);
+        [SerializeField] private Vector2 firstFireworkInterval = new Vector2(2f, 4f);
+        [SerializeField] private Vector2 fireworkInterval = new Vector2(8f, 14f);
+        [SerializeField, Range(1, 2)] private int maximumVisibleFireworks = 2;
+        public Vector2 FirstFireworkInterval => firstFireworkInterval;
+        public Vector2 FireworkInterval => fireworkInterval;
+        public int MaximumVisibleFireworks => Mathf.Clamp(maximumVisibleFireworks,1,2);
         public Vector3 CameraOffset => cameraOffset;
         public float LookAhead => lookAhead;
         public float FieldOfView => fieldOfView;

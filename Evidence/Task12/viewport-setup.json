@@ -1,0 +1,30 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "file": "Docs/Setup/Task12Viewport.cs",
+      "entry": "NeonTunnelRunner.Task12Viewport.Configure",
+      "timeout": "60"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 652,
+      "executeMs": 213,
+      "assemblyName": "PipelineRunScript_Task12Viewport_d99c5f56567d4a12842c786ac551ff03",
+      "success": true,
+      "result": {
+        "oldIndex": 6,
+        "addedIndex": 7
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

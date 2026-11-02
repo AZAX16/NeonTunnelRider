@@ -231,6 +231,7 @@ MonoBehaviour:
   progression: {fileID: 80797680}
   vehicleVisuals: {fileID: 1992932454}
   chaseCamera: {fileID: 2056537202}
+  vfx: {fileID: 1441100072}
 --- !u!114 &80797675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -300,6 +301,7 @@ MonoBehaviour:
   additionalParticipants:
   - {fileID: 80797677}
   - {fileID: 2056537202}
+  - {fileID: 1441100072}
 --- !u!114 &80797679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -629,6 +631,7 @@ Transform:
   - {fileID: 192997114}
   - {fileID: 1075299423}
   - {fileID: 775574893}
+  - {fileID: 1104748959}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &754769652
@@ -997,6 +1000,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 448569009}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1104748958
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1104748959}
+  m_Layer: 0
+  m_Name: ActiveVFX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1104748959
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104748958}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 448569009}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1327308204
 GameObject:
   m_ObjectHideFlags: 0
@@ -1333,6 +1367,80 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1402296604}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1441100071
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1441100074}
+  - component: {fileID: 1441100072}
+  - component: {fileID: 1441100073}
+  m_Layer: 0
+  m_Name: VFX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1441100072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441100071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11ac5130620c08793a26c31a71a06f98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NeonTunnelRunner.Runtime::NeonTunnelRunner.VfxController
+  gameManager: {fileID: 80797673}
+  pools: {fileID: 80797676}
+  origin: {fileID: 80797678}
+  activeRoot: {fileID: 1104748959}
+  configuration: {fileID: 11400000, guid: 8cc0bd840e8337a3fbe4656ff60cee73, type: 2}
+  fireworks: {fileID: 1441100073}
+  exhaust:
+  - {fileID: 1992932457}
+  - {fileID: 1992932456}
+  - {fileID: 1992932455}
+  - {fileID: 1992932451}
+--- !u!114 &1441100073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441100071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82f3a86801799bce6ac7d145afbfe5cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NeonTunnelRunner.Runtime::NeonTunnelRunner.FireworkDirector
+  gameManager: {fileID: 80797673}
+  roads: {fileID: 80797679}
+  origin: {fileID: 80797678}
+  chaseCamera: {fileID: 2056537202}
+  effects: {fileID: 1441100072}
+  configuration: {fileID: 11400000, guid: 8cc0bd840e8337a3fbe4656ff60cee73, type: 2}
+--- !u!4 &1441100074
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441100071}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1688247555}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1475446189
 GameObject:
   m_ObjectHideFlags: 0
@@ -1492,6 +1600,7 @@ Transform:
   - {fileID: 1475446190}
   - {fileID: 754769653}
   - {fileID: 2056537198}
+  - {fileID: 1441100074}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1992932449
@@ -1578,6 +1687,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9767eeaacdfd2641c8f95f77f359c8bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: NeonTunnelRunner.Runtime::NeonTunnelRunner.PlayerController
+--- !u!198 &1992932451 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1330550991625448054, guid: 3fe156509481777c8b2a4c1d32d2e622, type: 3}
+  m_PrefabInstance: {fileID: 1992932449}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1992932452 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3281914291220571836, guid: 3fe156509481777c8b2a4c1d32d2e622, type: 3}
@@ -1611,6 +1725,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39e311d98dc116a4db2d54d7fbea909d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: NeonTunnelRunner.Runtime::NeonTunnelRunner.VehicleVisuals
+--- !u!198 &1992932455 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4162445436209492645, guid: 3fe156509481777c8b2a4c1d32d2e622, type: 3}
+  m_PrefabInstance: {fileID: 1992932449}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1992932456 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6995607996237050868, guid: 3fe156509481777c8b2a4c1d32d2e622, type: 3}
+  m_PrefabInstance: {fileID: 1992932449}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1992932457 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3804036057206708778, guid: 3fe156509481777c8b2a4c1d32d2e622, type: 3}
+  m_PrefabInstance: {fileID: 1992932449}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2056537197
 GameObject:
   m_ObjectHideFlags: 0

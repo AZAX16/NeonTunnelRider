@@ -1,0 +1,2092 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "file": "Docs/Setup/Task12ParticleProbe.cs",
+      "entry": "NeonTunnelRunner.Task12ParticleProbe.Run",
+      "timeout": "60"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 2395,
+      "executeMs": 8,
+      "assemblyName": "PipelineRunScript_Task12ParticleProbe_f6fa4e49d02a402b94d77bf137c10d4f",
+      "success": true,
+      "result": [
+        {
+          "mode": 0,
+          "steps": [
+            {
+              "i": 0,
+              "time": 0.02,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 128,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 10,
+              "time": 0.1,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 512,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 20,
+              "time": 0.1,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 30,
+              "time": 0.1,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 40,
+              "time": 0.1,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 50,
+              "time": 0.1,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 60,
+              "time": 0.1,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 70,
+              "time": 0.1,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 80,
+              "time": 0.1,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 81,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 82,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 83,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 84,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 85,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 86,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 87,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 88,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 89,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 90,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 91,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 92,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 93,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 94,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 95,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 96,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 97,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 98,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 99,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 100,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 101,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 102,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 103,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 104,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 105,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 106,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 107,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 108,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 109,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 110,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 111,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 112,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 113,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 114,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 115,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 116,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 117,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 118,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 119,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 120,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 121,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 122,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 123,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 124,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 125,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 126,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 127,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 128,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 129,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 130,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 131,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 132,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 140,
+              "time": 0.1,
+              "root": 0,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            }
+          ],
+          "cleared": {
+            "root": 0,
+            "child": 0,
+            "alive": false,
+            "trailCount": 1024
+          }
+        },
+        {
+          "mode": 1,
+          "steps": [
+            {
+              "i": 0,
+              "time": 0.02,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 128,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 10,
+              "time": 0.1,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 512,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 20,
+              "time": 0.1,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 30,
+              "time": 0.1,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 40,
+              "time": 0.1,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 50,
+              "time": 0.1,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 60,
+              "time": 0.1,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 70,
+              "time": 0.1,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 80,
+              "time": 0.1,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 81,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 82,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 83,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 84,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 85,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 86,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 87,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 88,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 89,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 90,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 91,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 92,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 93,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 94,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 95,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 96,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 97,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 98,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 99,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 100,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 101,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 102,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 103,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 104,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 105,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 106,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 107,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 108,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 109,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 110,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 111,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 112,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 113,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 114,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 115,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 116,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 117,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 118,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 119,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 120,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 121,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 122,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 123,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 124,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 125,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 126,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 127,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 128,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 129,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 130,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 131,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 132,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 140,
+              "time": 0.1,
+              "root": 0,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            }
+          ],
+          "cleared": {
+            "root": 0,
+            "child": 0,
+            "alive": false,
+            "trailCount": 1024
+          }
+        },
+        {
+          "mode": 2,
+          "steps": [
+            {
+              "i": 0,
+              "time": 0.02,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 128,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 10,
+              "time": 0.1,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 512,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 20,
+              "time": 0.1,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 30,
+              "time": 0.1,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 40,
+              "time": 0.1,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 50,
+              "time": 0.1,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 60,
+              "time": 0.1,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 70,
+              "time": 0.1,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 80,
+              "time": 0.1,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 81,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 82,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 83,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 84,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 85,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 86,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 87,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 88,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 89,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 90,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 91,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 92,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 93,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 94,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 95,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 96,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 97,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 98,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 99,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 100,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 101,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 102,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 103,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 104,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 105,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 106,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 110,
+              "time": 0.1,
+              "root": 0,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 120,
+              "time": 0.1,
+              "root": 0,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 130,
+              "time": 0.1,
+              "root": 0,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 140,
+              "time": 0.1,
+              "root": 0,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            }
+          ],
+          "cleared": {
+            "root": 0,
+            "child": 0,
+            "alive": false,
+            "trailCount": 1024
+          }
+        },
+        {
+          "mode": 3,
+          "steps": [
+            {
+              "i": 0,
+              "time": 0.02,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 128,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 10,
+              "time": 0.1,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 512,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 20,
+              "time": 0.1,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 30,
+              "time": 0.1,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 40,
+              "time": 0.1,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 50,
+              "time": 0.1,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 60,
+              "time": 0.1,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 70,
+              "time": 0.1,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 80,
+              "time": 0.1,
+              "root": 1,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 81,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 82,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 83,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 84,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 85,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 86,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 87,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 88,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 89,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 90,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 91,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 92,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 93,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 94,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 95,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 96,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 97,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 98,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 99,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 100,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 101,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 102,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 103,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 104,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 105,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 106,
+              "time": 0.1,
+              "root": 0,
+              "child": 180,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 110,
+              "time": 0.1,
+              "root": 0,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 120,
+              "time": 0.1,
+              "root": 0,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 130,
+              "time": 0.1,
+              "root": 0,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            },
+            {
+              "i": 140,
+              "time": 0.1,
+              "root": 0,
+              "child": 0,
+              "alive": true,
+              "trailCount": 1024,
+              "emitting": false,
+              "sub": 1
+            }
+          ],
+          "cleared": {
+            "root": 0,
+            "child": 0,
+            "alive": false,
+            "trailCount": 1024
+          }
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

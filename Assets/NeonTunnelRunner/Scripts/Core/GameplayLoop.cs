@@ -16,6 +16,8 @@ namespace NeonTunnelRunner
         [SerializeField] private ProgressionSystem progression;
         [SerializeField] private VehicleVisuals vehicleVisuals;
         [SerializeField] private ChaseCamera chaseCamera;
+        [SerializeField] private VfxController vfx;
+        public VfxController Vfx => vfx;
         private RunSession session;
         private bool runPrepared;
 
@@ -61,6 +63,7 @@ namespace NeonTunnelRunner
                     throw new System.InvalidOperationException("Assign chase camera ownership explicitly.");
                 chaseCamera.Initialize(session);
             }
+            if (vfx) vfx.Initialize(session);
             interactionSensor.Initialize();
             CleanupRun();
         }
@@ -82,7 +85,7 @@ namespace NeonTunnelRunner
             if (!survival.isActiveAndEnabled || !interactionSensor.isActiveAndEnabled || !progression.isActiveAndEnabled || !vehicleVisuals.isActiveAndEnabled || spawnDirector.Pools != gameManager.Pools ||
                 !worldOrigin.HasParticipant(spawnDirector) || interactionSensor.Capacity < spawnDirector.Capacity)
             { error="Enable and wire sensor/survival/traffic with one origin participant and sufficient contact capacity."; return false; }
-            return true;
+            return !vfx || vfx.ValidateRequired(this,out error);
         }
 
         internal bool ResetRun(int seed)
@@ -105,6 +108,7 @@ namespace NeonTunnelRunner
             spawnDirector.CommitFuelSupply();
             spawnDirector.FillWindow(0d);
             spawnDirector.MaintainTraffic(0d,0d);
+            if (vfx) vfx.PrepareRun(seed);
             runPrepared = true;
             return true;
         }
@@ -118,6 +122,7 @@ namespace NeonTunnelRunner
             if (inputRouter) inputRouter.ApplyState(GameState.Menu);
             if (player) player.ClearQueuedCommand();
             if (interactionSensor) interactionSensor.Clear();
+            if (vfx) vfx.CleanupRun();
             if (spawnDirector) spawnDirector.Clear();
             if (survival) survival.ResetRun();
             if (vehicleVisuals) vehicleVisuals.CleanupRun();
@@ -128,6 +133,7 @@ namespace NeonTunnelRunner
         internal void ApplyState(GameState state)
         {
             if (vehicleVisuals) vehicleVisuals.RefreshLighting();
+            if (vfx) vfx.ApplyState(state);
             if (state != GameState.Playing)
             {
                 player.ClearQueuedCommand();
@@ -192,6 +198,7 @@ namespace NeonTunnelRunner
                 TickIndex++;
                 survival.StepFuel(deltaTime);
                 vehicleVisuals.FinishTick();
+                if (vfx) vfx.Step(deltaTime);
                 terminal=survival.EvaluateEnd();
                 if (terminal == GameOverReason.None)
                 {

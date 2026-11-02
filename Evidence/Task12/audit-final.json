@@ -1,0 +1,140 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "file": "Docs/Setup/Task12Audit.cs",
+      "entry": "NeonTunnelRunner.Task12Audit.Inspect",
+      "timeout": "60"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 172,
+      "executeMs": 200,
+      "assemblyName": "PipelineRunScript_Task12Audit_eb5ff204be214a079ad3c80799648391",
+      "success": true,
+      "result": {
+        "passed": true,
+        "scene": "Assets/NeonTunnelRunner/Scenes/Game.unity",
+        "totalPrewarm": 352,
+        "exhaustMax": 160,
+        "inventory": [
+          {
+            "key": "Spark",
+            "Capacity": 16,
+            "prefab": "Assets/NeonTunnelRunner/Prefabs/VFX/Spark.prefab",
+            "maxParticles": 36,
+            "systems": [
+              {
+                "name": "Burst",
+                "max": 36,
+                "lifetime": 0.42,
+                "duration": 0.15,
+                "trail": false,
+                "trailLifetime": 1,
+                "blend": 2,
+                "material": "Assets/NeonTunnelRunner/Materials/ParticleStreak.mat"
+              }
+            ]
+          },
+          {
+            "key": "CoinBurst",
+            "Capacity": 16,
+            "prefab": "Assets/NeonTunnelRunner/Prefabs/VFX/CoinBurst.prefab",
+            "maxParticles": 24,
+            "systems": [
+              {
+                "name": "Burst",
+                "max": 24,
+                "lifetime": 0.5,
+                "duration": 0.15,
+                "trail": false,
+                "trailLifetime": 1,
+                "blend": 2,
+                "material": "Assets/NeonTunnelRunner/Materials/ParticleAdditive.mat"
+              }
+            ]
+          },
+          {
+            "key": "FuelBurst",
+            "Capacity": 8,
+            "prefab": "Assets/NeonTunnelRunner/Prefabs/VFX/FuelBurst.prefab",
+            "maxParticles": 24,
+            "systems": [
+              {
+                "name": "Burst",
+                "max": 24,
+                "lifetime": 0.5,
+                "duration": 0.15,
+                "trail": false,
+                "trailLifetime": 1,
+                "blend": 2,
+                "material": "Assets/NeonTunnelRunner/Materials/ParticleAdditive.mat"
+              }
+            ]
+          },
+          {
+            "key": "Firework",
+            "Capacity": 8,
+            "prefab": "Assets/NeonTunnelRunner/Prefabs/VFX/Firework.prefab",
+            "maxParticles": 181,
+            "systems": [
+              {
+                "name": "Rocket",
+                "max": 1,
+                "lifetime": 0.9,
+                "duration": 0.1,
+                "trail": true,
+                "trailLifetime": 0.25,
+                "blend": 2,
+                "material": "Assets/NeonTunnelRunner/Materials/ParticleAdditive.mat"
+              },
+              {
+                "name": "Burst",
+                "max": 180,
+                "lifetime": 1.05,
+                "duration": 0.15,
+                "trail": false,
+                "trailLifetime": 1,
+                "blend": 2,
+                "material": "Assets/NeonTunnelRunner/Materials/ParticleAdditive.mat"
+              }
+            ]
+          }
+        ],
+        "profile": "Assets/NeonTunnelRunner/Settings/Volumes/GlobalVolumeProfile.asset",
+        "bloom": {
+          "threshold": 1.15,
+          "intensity": 0.28,
+          "scatter": 0.55,
+          "clamp": 12
+        },
+        "tone": "Neutral",
+        "exposure": 0,
+        "HDR": true,
+        "post": true,
+        "volumeMask": 1,
+        "originRoot": "ActiveVFX",
+        "sceneDirty": false,
+        "assemblies": [
+          {
+            "name": "NeonTunnelRunner.Runtime",
+            "references": [
+              "Unity.InputSystem",
+              "UnityEngine.UI",
+              "Unity.TextMeshPro"
+            ]
+          }
+        ]
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

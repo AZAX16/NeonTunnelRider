@@ -59,6 +59,22 @@ namespace NeonTunnelRunner
             return true;
         }
 
+        /// <summary>Actual active coverage and authored half-segment roof footprints, in absolute metres.</summary>
+        public bool IsOpenSkySpan(double from, double to)
+        {
+            if(!double.IsFinite(from) || !double.IsFinite(to) || from>to || from<CoverageStart || to>=CoverageEnd) return false;
+            for(int i=0;i<ActiveCount;i++)
+            {
+                var lease=active[i]; if(!lease.IsCurrent) return false;
+                var road=lease.Segment; double start=road.AbsoluteStart, end=start+WorldConfig.SegmentLength;
+                if(end<=from || start>to || road.Environment==RoadEnvironment.Open) continue;
+                double roofStart=start+(road.Environment==RoadEnvironment.Entrance?30d:0d);
+                double roofEnd=end-(road.Environment==RoadEnvironment.Exit?30d:0d);
+                if(roofStart<=to && roofEnd>from) return false;
+            }
+            return true;
+        }
+
         internal void ResetRun(int runSeed) { ReleaseAll(); seed = runSeed; LastError = null; }
         internal void ReleaseAll()
         {
