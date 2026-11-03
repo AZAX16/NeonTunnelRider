@@ -1,0 +1,332 @@
+[
+  {
+    "utc": "2026-11-02T23:59:18Z",
+    "elapsed": 10.539703035001367,
+    "label": "launched",
+    "pid": 75373,
+    "window": "0x7400008"
+  },
+  {
+    "utc": "2026-11-02T23:59:19Z",
+    "elapsed": 11.102016352000646,
+    "label": "capture",
+    "image": "pointer-fuel-final-main.png",
+    "width": 1280,
+    "height": 720,
+    "pixelsSha256": "75e804a75cac055015e68179107ffe83517da7db4588e4019b81b1f65bbec50a"
+  },
+  {
+    "utc": "2026-11-02T23:59:19Z",
+    "elapsed": 11.528398743001162,
+    "label": "click",
+    "x": 640,
+    "y": 371
+  },
+  {
+    "utc": "2026-11-02T23:59:20Z",
+    "elapsed": 11.811546548000479,
+    "label": "key",
+    "key": "Escape"
+  },
+  {
+    "utc": "2026-11-02T23:59:20Z",
+    "elapsed": 12.24010897900007,
+    "label": "click",
+    "x": 640,
+    "y": 349
+  },
+  {
+    "utc": "2026-11-02T23:59:20Z",
+    "elapsed": 12.525149023000267,
+    "label": "key",
+    "key": "Escape"
+  },
+  {
+    "utc": "2026-11-02T23:59:21Z",
+    "elapsed": 12.951519687001564,
+    "label": "click",
+    "x": 640,
+    "y": 413
+  },
+  {
+    "utc": "2026-11-02T23:59:21Z",
+    "elapsed": 13.236890780000977,
+    "label": "key",
+    "key": "Escape"
+  },
+  {
+    "utc": "2026-11-02T23:59:22Z",
+    "elapsed": 13.66498090800087,
+    "label": "click",
+    "x": 640,
+    "y": 477
+  },
+  {
+    "utc": "2026-11-02T23:59:22Z",
+    "elapsed": 13.942561622001449,
+    "label": "key",
+    "key": "Return"
+  },
+  {
+    "utc": "2026-11-02T23:59:22Z",
+    "elapsed": 13.94550515300034,
+    "label": "native-keyboard-route",
+    "seconds": 51,
+    "avoidFuel": true,
+    "seed": 12345
+  },
+  {
+    "utc": "2026-11-02T23:59:26Z",
+    "elapsed": 18.25383592000071,
+    "label": "key",
+    "key": "Right"
+  },
+  {
+    "utc": "2026-11-02T23:59:28Z",
+    "elapsed": 19.829872619000525,
+    "label": "key",
+    "key": "Left"
+  },
+  {
+    "utc": "2026-11-02T23:59:34Z",
+    "elapsed": 25.99885747799999,
+    "label": "key",
+    "key": "Right"
+  },
+  {
+    "utc": "2026-11-02T23:59:35Z",
+    "elapsed": 27.48550547600098,
+    "label": "key",
+    "key": "Left"
+  },
+  {
+    "utc": "2026-11-02T23:59:39Z",
+    "elapsed": 30.898975964000783,
+    "label": "key",
+    "key": "Left"
+  },
+  {
+    "utc": "2026-11-02T23:59:40Z",
+    "elapsed": 32.15007933200104,
+    "label": "key",
+    "key": "Right"
+  },
+  {
+    "utc": "2026-11-02T23:59:41Z",
+    "elapsed": 33.603045785001086,
+    "label": "key",
+    "key": "Left"
+  },
+  {
+    "utc": "2026-11-02T23:59:42Z",
+    "elapsed": 34.191227360000994,
+    "label": "capture",
+    "image": "pointer-fuel-final-route-20.png",
+    "width": 1280,
+    "height": 720,
+    "pixelsSha256": "14e8dd690bbc9f096e4d6a0ab07cfa030fd87a299cd2f1d6ea8e76571306180e"
+  },
+  {
+    "utc": "2026-11-02T23:59:46Z",
+    "elapsed": 38.086525370001254,
+    "label": "key",
+    "key": "Right"
+  },
+  {
+    "utc": "2026-11-02T23:59:46Z",
+    "elapsed": 38.36661151500084,
+    "label": "key",
+    "key": "Right"
+  },
+  {
+    "utc": "2026-11-02T23:59:47Z",
+    "elapsed": 39.46628787500049,
+    "label": "key",
+    "key": "Left"
+  },
+  {
+    "utc": "2026-11-02T23:59:48Z",
+    "elapsed": 39.75046921900139,
+    "label": "key",
+    "key": "Left"
+  },
+  {
+    "utc": "2026-11-02T23:59:53Z",
+    "elapsed": 44.92789916500078,
+    "label": "key",
+    "key": "Right"
+  },
+  {
+    "utc": "2026-11-02T23:59:53Z",
+    "elapsed": 45.20806856300078,
+    "label": "key",
+    "key": "Right"
+  },
+  {
+    "utc": "2026-11-02T23:59:54Z",
+    "elapsed": 46.26171675700061,
+    "label": "key",
+    "key": "Left"
+  },
+  {
+    "utc": "2026-11-02T23:59:54Z",
+    "elapsed": 46.54531903300085,
+    "label": "key",
+    "key": "Left"
+  },
+  {
+    "utc": "2026-11-02T23:59:58Z",
+    "elapsed": 50.44371510000019,
+    "label": "key",
+    "key": "Right"
+  },
+  {
+    "utc": "2026-11-03T00:00:00Z",
+    "elapsed": 51.721744624001076,
+    "label": "key",
+    "key": "Left"
+  },
+  {
+    "utc": "2026-11-03T00:00:02Z",
+    "elapsed": 54.18356892100019,
+    "label": "capture",
+    "image": "pointer-fuel-final-route-40.png",
+    "width": 1280,
+    "height": 720,
+    "pixelsSha256": "684253e109da1c6a908a061931719799b18e05324e03e0fde772dd4ec7c21490"
+  },
+  {
+    "utc": "2026-11-03T00:00:04Z",
+    "elapsed": 55.77424204599993,
+    "label": "key",
+    "key": "Right"
+  },
+  {
+    "utc": "2026-11-03T00:00:04Z",
+    "elapsed": 56.05534090200126,
+    "label": "key",
+    "key": "Right"
+  },
+  {
+    "utc": "2026-11-03T00:00:05Z",
+    "elapsed": 57.04342267799984,
+    "label": "key",
+    "key": "Left"
+  },
+  {
+    "utc": "2026-11-03T00:00:05Z",
+    "elapsed": 57.325471176000065,
+    "label": "key",
+    "key": "Left"
+  },
+  {
+    "utc": "2026-11-03T00:00:10Z",
+    "elapsed": 61.991156959000364,
+    "label": "key",
+    "key": "Right"
+  },
+  {
+    "utc": "2026-11-03T00:00:10Z",
+    "elapsed": 62.27279599400026,
+    "label": "key",
+    "key": "Right"
+  },
+  {
+    "utc": "2026-11-03T00:00:11Z",
+    "elapsed": 63.21103130800111,
+    "label": "key",
+    "key": "Left"
+  },
+  {
+    "utc": "2026-11-03T00:00:11Z",
+    "elapsed": 63.49581724200107,
+    "label": "key",
+    "key": "Left"
+  },
+  {
+    "utc": "2026-11-03T00:00:13Z",
+    "elapsed": 65.20650173100148,
+    "label": "capture",
+    "image": "pointer-fuel-final-route-complete.png",
+    "width": 1280,
+    "height": 720,
+    "pixelsSha256": "b28925d87b9893cbd023487b52e9c27eee3e90d8bfe0499ac1e13446878313b5"
+  },
+  {
+    "utc": "2026-11-03T00:00:13Z",
+    "elapsed": 65.21289152300051,
+    "label": "route-inputs-complete",
+    "estimatedDistance": 1324.3,
+    "lane": -1
+  },
+  {
+    "utc": "2026-11-03T00:00:14Z",
+    "elapsed": 66.13530536500002,
+    "label": "capture",
+    "image": "pointer-fuel-final-terminal.png",
+    "width": 1280,
+    "height": 720,
+    "pixelsSha256": "82c0a96c32a39a25c94c2af467d1ea9da5cff37d8d965dde28075a2e47c36a17"
+  },
+  {
+    "utc": "2026-11-03T00:00:14Z",
+    "elapsed": 66.13994737600115,
+    "label": "visible-game-over",
+    "reason": "Fuel",
+    "titleSimilarity": 1.0,
+    "reasonSimilarity": 1.0,
+    "seconds": 0.7981296979996841
+  },
+  {
+    "utc": "2026-11-03T00:00:14Z",
+    "elapsed": 66.56828631600001,
+    "label": "click",
+    "x": 640,
+    "y": 461
+  },
+  {
+    "utc": "2026-11-03T00:00:15Z",
+    "elapsed": 67.58140028400157,
+    "label": "capture",
+    "image": "pointer-fuel-final-terminal-restart-hud.png",
+    "width": 1280,
+    "height": 720,
+    "pixelsSha256": "b44f8436e76e1e2a833a7a9e63240c27a4618ba0b0611d50ad711a24fb38ad1f"
+  },
+  {
+    "utc": "2026-11-03T00:00:16Z",
+    "elapsed": 67.86415042500084,
+    "label": "key",
+    "key": "Escape"
+  },
+  {
+    "utc": "2026-11-03T00:00:16Z",
+    "elapsed": 68.29815727599998,
+    "label": "click",
+    "x": 640,
+    "y": 477
+  },
+  {
+    "utc": "2026-11-03T00:00:17Z",
+    "elapsed": 68.77828256500106,
+    "label": "capture",
+    "image": "pointer-fuel-final-before-quit.png",
+    "width": 1280,
+    "height": 720,
+    "pixelsSha256": "e57a292576d699d28d695ce787c2ed3b7ec66074dbded9adc13914514cc3ec25"
+  },
+  {
+    "utc": "2026-11-03T00:00:17Z",
+    "elapsed": 69.20642098000098,
+    "label": "click",
+    "x": 640,
+    "y": 435
+  },
+  {
+    "utc": "2026-11-03T00:00:17Z",
+    "elapsed": 69.37180108800021,
+    "label": "quit-process-exit",
+    "pid": 75373,
+    "exitCode": 0
+  }
+]

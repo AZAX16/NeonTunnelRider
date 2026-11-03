@@ -1,0 +1,8 @@
+requirement,verification,uiStatus,implementation,evidenceUnderTask14
+R11,V02,PASS,InputRouter + Runner + InputSystemUIInputModule,ui-held-navigation-results.json; audit-final.json; Standalone/acceptance.json
+R12,V14,PASS,HudPresenter lives count + three Images,playmode-results.json; fast-960x720-over-Fuel.png
+R19,V14,PASS,HudPresenter normalized read-only fill + percentage,playmode-results.json; fast-960x720-over-Fuel.png; Standalone/pointer-fuel-final-terminal.png
+R45,V19,PASS,Main Start/Quit,ui-final-margin-results.json; Standalone/acceptance.json
+R46,V12/V19,PASS,Pause Resume/Restart/Main Menu,play-sessions.json; ui-final-margin-results.json; Standalone/pointer-fuel-final-timeline.json
+R47,V19,PASS,FinalRunSnapshot/RunEnded + GameOver Restart,playmode-results.json; Standalone/acceptance.json
+R48,V14,PASS,Five authoritative snapshot fields,playmode-results.json; framing.json; *low-fuel-large-best.png; Standalone/acceptance.json

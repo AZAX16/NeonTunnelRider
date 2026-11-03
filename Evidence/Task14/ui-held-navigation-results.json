@@ -1,0 +1,147 @@
+{
+  "success": true,
+  "command": "command test",
+  "data": {
+    "command": "test",
+    "parameters": {},
+    "result": {
+      "status": "completed",
+      "duration": 4.49,
+      "summary": {
+        "total": 17,
+        "passed": 17,
+        "failed": 0,
+        "skipped": 0,
+        "inconclusive": 0
+      },
+      "results": [
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EscapeAndBackspaceHaveExclusiveOwnershipAndHeldKeysNeverLeak",
+          "Status": "Passed",
+          "Duration": 0.6363895,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EveryRequiredButtonUsesPointerActionsAfterPanelRender",
+          "Status": "Passed",
+          "Duration": 0.5323854,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EveryRequiredButtonUsesPointerOrActionNavigation(\"Start\",False)",
+          "Status": "Passed",
+          "Duration": 0.1301043,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EveryRequiredButtonUsesPointerOrActionNavigation(\"Quit\",False)",
+          "Status": "Passed",
+          "Duration": 0.215435,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EveryRequiredButtonUsesPointerOrActionNavigation(\"Resume\",False)",
+          "Status": "Passed",
+          "Duration": 0.1216395,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EveryRequiredButtonUsesPointerOrActionNavigation(\"PauseRestart\",False)",
+          "Status": "Passed",
+          "Duration": 0.1233244,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EveryRequiredButtonUsesPointerOrActionNavigation(\"MainMenu\",False)",
+          "Status": "Passed",
+          "Duration": 0.1382476,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EveryRequiredButtonUsesPointerOrActionNavigation(\"OverRestart\",False)",
+          "Status": "Passed",
+          "Duration": 0.1168514,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.FiftyUiRestartsIncludingRebaseKeepSeedSupplyPoolsAndBest",
+          "Status": "Passed",
+          "Duration": 0.2870773,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.FirstFrameAndNewBestProjectActualSpeedAndExactLargeIntegers",
+          "Status": "Passed",
+          "Duration": 0.1470435,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.HeldNavigationCannotRepeatIntoReturnedMainMenu",
+          "Status": "Passed",
+          "Duration": 0.8255266,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.InvalidCapacityReportsConfigurationWithoutDividing",
+          "Status": "Passed",
+          "Duration": 0.1771895,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.PointerKeyboardBackgroundClickAndLostSelectionRecoverWithoutFightingFocus",
+          "Status": "Passed",
+          "Duration": 0.2334352,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.ReopenedPauseRetainsStationaryPointerPosition",
+          "Status": "Passed",
+          "Duration": 0.26045,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.RepeatedPresenterEnableDisableOwnsExactlyOneCallbackAndHiddenPanelsCannotRaycast",
+          "Status": "Passed",
+          "Duration": 0.1211854,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.TerminalUsesFinalizedResultAndLateEnableThenResetCannotShowStaleData(Lives)",
+          "Status": "Passed",
+          "Duration": 0.1331824,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.TerminalUsesFinalizedResultAndLateEnableThenResetCannotShowStaleData(Fuel)",
+          "Status": "Passed",
+          "Duration": 0.1392967,
+          "Message": null,
+          "StackTrace": null
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -106,6 +106,7 @@ namespace NeonTunnelRunner
                 CheckPlayerInput(objects, errors);
                 CheckWorld(objects, errors);
                 CheckTraffic(objects, errors);
+                CheckUi(objects, errors);
                 var audio = objects.SelectMany(g => g.GetComponents<AudioController>()).ToArray();
                 var loop = objects.SelectMany(g => g.GetComponents<GameplayLoop>()).SingleOrDefault();
                 Require(audio.Length == 1 && loop && loop.Audio == audio[0], "Assign exactly one AudioController through GameplayLoop.", errors);
@@ -333,6 +334,50 @@ namespace NeonTunnelRunner
                 if (e.Key==PoolKey.Coin || e.Key==PoolKey.Fuel)
                     Require(e.Prefab.layer==LayerMask.NameToLayer("Pickup") && e.Prefab.transform.Find("Visual"),"Assign Pickup layer and separate Visual.",errors);
             }
+        }
+
+        private static void CheckUi(GameObject[] objects, List<string> errors)
+        {
+            var canvases=objects.SelectMany(g=>g.GetComponents<Canvas>()).ToArray();
+            var systems=objects.SelectMany(g=>g.GetComponents<UnityEngine.EventSystems.EventSystem>()).ToArray();
+            var modules=objects.SelectMany(g=>g.GetComponents<UnityEngine.EventSystems.BaseInputModule>()).ToArray();
+            var huds=objects.SelectMany(g=>g.GetComponents<HudPresenter>()).ToArray();
+            var menus=objects.SelectMany(g=>g.GetComponents<MenuPresenter>()).ToArray();
+            Require(canvases.Length==1 && systems.Length==1 && modules.Length==1 &&
+                modules[0] is UnityEngine.InputSystem.UI.InputSystemUIInputModule,
+                "Require one overlay Canvas, one EventSystem and one InputSystemUIInputModule.",errors);
+            Require(huds.Length==1 && menus.Length==1,"Require one HudPresenter and MenuPresenter.",errors);
+            if(huds.Length!=1 || menus.Length!=1 || canvases.Length!=1 || systems.Length!=1 || modules.Length!=1) return;
+            if(!huds[0].ValidateRequired(out var hudError))errors.Add(hudError);
+            if(!menus[0].ValidateRequired(out var menuError))errors.Add(menuError);
+            var owner=huds[0].Owner;
+            Require(owner && menus[0].Owner==owner &&
+                new SerializedObject(owner).FindProperty("hud").objectReferenceValue==huds[0] &&
+                new SerializedObject(owner).FindProperty("menus").objectReferenceValue==menus[0],
+                "Assign both presenters through GameManager composition.",errors);
+            var canvas=canvases[0];var scaler=canvas.GetComponent<UnityEngine.UI.CanvasScaler>();
+            Require(canvas.renderMode==RenderMode.ScreenSpaceOverlay && scaler &&
+                scaler.uiScaleMode==UnityEngine.UI.CanvasScaler.ScaleMode.ScaleWithScreenSize &&
+                scaler.referenceResolution==new Vector2(1920,1080) && scaler.matchWidthOrHeight==.5f &&
+                canvas.GetComponent<UnityEngine.UI.GraphicRaycaster>(),"Configure overlay Canvas, 1920x1080 scaler/match .5 and raycaster.",errors);
+            var module=modules[0] as UnityEngine.InputSystem.UI.InputSystemUIInputModule;
+            if(!owner || !owner.Loop || !module)return;
+            Require(owner.Loop.Input.UiModule==module && module.gameObject==systems[0].gameObject &&
+                module.actionsAsset==owner.Loop.Input.SourceActions && !module.deselectOnBackgroundClick,
+                "Assign the existing router's UI module and Runner asset; retain selection on background clicks.",errors);
+            var references=new[]{module.point,module.leftClick,module.scrollWheel,module.move,module.submit,module.cancel};
+            var names=new[]{"Point","Click","ScrollWheel","Navigate","Submit","Cancel"};
+            for(int i=0;i<references.Length;i++)Require(references[i] && references[i].action!=null &&
+                references[i].action.actionMap.name=="UI" && references[i].action.name==names[i] &&
+                references[i].action.actionMap.asset==module.actionsAsset,"Assign UI action reference: "+names[i],errors);
+            var buttons=canvas.GetComponentsInChildren<UnityEngine.UI.Button>(true);
+            Require(buttons.Length==6 && buttons.All(b=>b.navigation.mode==UnityEngine.UI.Navigation.Mode.Explicit &&
+                b.navigation.selectOnUp && b.navigation.selectOnDown && b.targetGraphic && b.targetGraphic.raycastTarget &&
+                b.onClick.GetPersistentEventCount()==0),"Require six explicitly navigable Buttons with owned code listeners and raycast graphics.",errors);
+            Require(canvas.GetComponentsInChildren<TMPro.TMP_Text>(true).All(t=>t.font && !t.raycastTarget),"Assign bundled TMP fonts and disable text raycast targets.",errors);
+            var hudRoot=canvas.transform.Find("HUD");
+            Require(hudRoot && hudRoot.GetComponentsInChildren<UnityEngine.UI.Graphic>(true).All(g=>!g.raycastTarget),"Decorative HUD must not intercept pointers.",errors);
+            Require(systems[0].firstSelectedGameObject && systems[0].firstSelectedGameObject.name=="Start","Assign initial Start selection.",errors);
         }
 
         private static void CheckAction(InputActionAsset asset, string name, InputActionType type, string[] paths, List<string> errors)

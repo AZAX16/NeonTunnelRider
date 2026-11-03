@@ -1,0 +1,1512 @@
+{
+  "success": true,
+  "command": "command test",
+  "data": {
+    "command": "test",
+    "parameters": {},
+    "result": {
+      "status": "completed",
+      "duration": 50.6,
+      "summary": {
+        "total": 212,
+        "passed": 212,
+        "failed": 0,
+        "skipped": 0,
+        "inconclusive": 0
+      },
+      "results": [
+        {
+          "FullName": "NeonTunnelRunner.AudioLifecycleTests.AcceptedDamageGraceAndFullFuelEmitOneDistinctCueEach",
+          "Status": "Passed",
+          "Duration": 0.1194133,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.AudioLifecycleTests.DisableEnableDoesNotDuplicateSubscriptionsAndResetInvalidatesOldRunEvents",
+          "Status": "Passed",
+          "Duration": 0.0896674,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.AudioLifecycleTests.EngineReadsMeasuredSpeedInsteadOfCruiseAndDoesNotRestartOnSnapshots",
+          "Status": "Passed",
+          "Duration": 0.0627118,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.AudioLifecycleTests.FiftyRestartsKeepAllSourceIdentitiesAndOneMusicLoop",
+          "Status": "Passed",
+          "Duration": 0.1203389,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.AudioLifecycleTests.FocusAndApplicationPauseRestoreOnlyCurrentState(Playing)",
+          "Status": "Passed",
+          "Duration": 0.0663205,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.AudioLifecycleTests.FocusAndApplicationPauseRestoreOnlyCurrentState(Paused)",
+          "Status": "Passed",
+          "Duration": 0.070788,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.AudioLifecycleTests.FocusAndApplicationPauseRestoreOnlyCurrentState(GameOver)",
+          "Status": "Passed",
+          "Duration": 0.060912,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.AudioLifecycleTests.MissingSourceAssignmentsFailBeforeStartingPlayback(\"voices\")",
+          "Status": "Passed",
+          "Duration": 0.0753492,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.AudioLifecycleTests.MissingSourceAssignmentsFailBeforeStartingPlayback(\"musicSource\")",
+          "Status": "Passed",
+          "Duration": 0.0691791,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.AudioLifecycleTests.MissingSourceAssignmentsFailBeforeStartingPlayback(\"engineSource\")",
+          "Status": "Passed",
+          "Duration": 0.0668471,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.AudioLifecycleTests.MissingSourceAssignmentsFailBeforeStartingPlayback(\"configuration\")",
+          "Status": "Passed",
+          "Duration": 0.0628134,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.AudioLifecycleTests.MissingSourceAssignmentsFailBeforeStartingPlayback(\"gameManager\")",
+          "Status": "Passed",
+          "Duration": 0.0591894,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.AudioLifecycleTests.PauseRetainsBusyVoicesAndPlayheadsAcrossWallTime",
+          "Status": "Passed",
+          "Duration": 1.1758288,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.AudioLifecycleTests.RebaseInheritsPlayerAttachmentOnceWithoutChangingPitchOrDetached2DCues",
+          "Status": "Passed",
+          "Duration": 0.0755609,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.AudioLifecycleTests.SaturationDropsRewardsAndCollisionStealsOldestRewardThenOldestCollision",
+          "Status": "Passed",
+          "Duration": 0.0632915,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.AudioLifecycleTests.SaturationNeverDelaysRewardsOrChangesGameplayOrVfxRouting",
+          "Status": "Passed",
+          "Duration": 0.0583047,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.AudioLifecycleTests.TerminalTickCuesFinishAtFrozenGameTimeAndRejectStaleRequests",
+          "Status": "Passed",
+          "Duration": 0.7202664,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.CameraResetTests.AcceptedOnlyImpulseIsBoundedWithOverlapAndFreezesInPauseAndFinalHit",
+          "Status": "Passed",
+          "Duration": 0.0778043,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.CameraResetTests.AuthoredNeutralPivotIsRestoredAndFlashExpiryDoesNotResetMeshMotion",
+          "Status": "Passed",
+          "Duration": 0.0716358,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.CameraResetTests.FiftyRestartsAndEnableCyclesClearAllCosmeticStateAndKeepOneDamageListener",
+          "Status": "Passed",
+          "Duration": 0.1654796,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.CameraResetTests.OriginShiftsBaseTargetAndCurrentPoseExactlyOnceDuringMotionAndImpulse(-1)",
+          "Status": "Passed",
+          "Duration": 0.0930141,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.CameraResetTests.OriginShiftsBaseTargetAndCurrentPoseExactlyOnceDuringMotionAndImpulse(0)",
+          "Status": "Passed",
+          "Duration": 0.1022787,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.CameraResetTests.OriginShiftsBaseTargetAndCurrentPoseExactlyOnceDuringMotionAndImpulse(1)",
+          "Status": "Passed",
+          "Duration": 0.0882045,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.CameraResetTests.PauseBetweenFixedAndLateUpdateHoldsFinalRootWithoutAdvancingFeedback",
+          "Status": "Passed",
+          "Duration": 0.0640471,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.CameraResetTests.PresentationOnOffPreservesAuthoritativeMotionColliderResourcesAndPlans",
+          "Status": "Passed",
+          "Duration": 0.1036864,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.CameraResetTests.RenderRatesKeepBoundedLagAndUseTheSameStablePose(30,False)",
+          "Status": "Passed",
+          "Duration": 0.0713866,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.CameraResetTests.RenderRatesKeepBoundedLagAndUseTheSameStablePose(60,False)",
+          "Status": "Passed",
+          "Duration": 0.0687195,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.CameraResetTests.RenderRatesKeepBoundedLagAndUseTheSameStablePose(144,False)",
+          "Status": "Passed",
+          "Duration": 0.1231896,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.CameraResetTests.RenderRatesKeepBoundedLagAndUseTheSameStablePose(30,True)",
+          "Status": "Passed",
+          "Duration": 0.0689781,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.CameraResetTests.RenderRatesKeepBoundedLagAndUseTheSameStablePose(60,True)",
+          "Status": "Passed",
+          "Duration": 0.0712509,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.CameraResetTests.RenderRatesKeepBoundedLagAndUseTheSameStablePose(240,True)",
+          "Status": "Passed",
+          "Duration": 0.0778337,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameOverTests.FiftyRestartsAfterRebasesOrFinalHitsRestoreResourcesRendererAndRejectStaleWork",
+          "Status": "Passed",
+          "Duration": 2.2064071,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameOverTests.FlashPreservesOtherPropertyOverridesAndEnableCyclesDoNotMultiplyListeners",
+          "Status": "Passed",
+          "Duration": 0.0955017,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameOverTests.GraceExpiryAcceptsExactDeadlineButRejectsBeforeItAndNeverDelaysConsumedOverlap",
+          "Status": "Passed",
+          "Duration": 0.1283518,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameOverTests.LivesWinsTerminalTickWithCoinAndOptionalFuelAndPublishesOnlyTheFinalSnapshot(False)",
+          "Status": "Passed",
+          "Duration": 0.1230094,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameOverTests.LivesWinsTerminalTickWithCoinAndOptionalFuelAndPublishesOnlyTheFinalSnapshot(True)",
+          "Status": "Passed",
+          "Duration": 0.0910204,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameOverTests.NativeFixedDeltaQuantizationDoesNotAddADepletionTick",
+          "Status": "Passed",
+          "Duration": 0.1540693,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameOverTests.PauseFreezesResourcesGraceTrafficLaneAndFlashAndResumeClearsQueuedLane",
+          "Status": "Passed",
+          "Duration": 0.0902449,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameOverTests.SweptFuelOnDepletionTickRescuesBeforeDrainAndSharesContactOrdering",
+          "Status": "Passed",
+          "Duration": 0.0996401,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameOverTests.TankDepletesAfterFiftyPlayingSecondsWithOneFuelEnd(0.01f)",
+          "Status": "Passed",
+          "Duration": 0.2111471,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameOverTests.TankDepletesAfterFiftyPlayingSecondsWithOneFuelEnd(0.02f)",
+          "Status": "Passed",
+          "Duration": 0.1970355,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameOverTests.TankDepletesAfterFiftyPlayingSecondsWithOneFuelEnd(0.1f)",
+          "Status": "Passed",
+          "Duration": 0.1107939,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameOverTests.TankDepletesAfterFiftyPlayingSecondsWithOneFuelEnd(0.5f)",
+          "Status": "Passed",
+          "Duration": 0.1129264,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameOverTests.ThreeAcceptedHitsWithGraceRejectedOverlapAndReusedActivationFlashExactlyThreeTimes",
+          "Status": "Passed",
+          "Duration": 0.1093497,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.GameOverTests.ZeroAndInvalidDeltaDoNotConsumeInputTimeResourcesOrSpawn",
+          "Status": "Passed",
+          "Duration": 0.0926913,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.InputBindingTests.AKeyHeldDuringPauseDoesNotBecomeANewPressAfterResume(D)",
+          "Status": "Passed",
+          "Duration": 0.0759541,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.InputBindingTests.AKeyHeldDuringPauseDoesNotBecomeANewPressAfterResume(RightArrow)",
+          "Status": "Passed",
+          "Duration": 0.0617428,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.InputBindingTests.EachRequiredBindingChangesOneLane(A,-1)",
+          "Status": "Passed",
+          "Duration": 0.0669814,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.InputBindingTests.EachRequiredBindingChangesOneLane(LeftArrow,-1)",
+          "Status": "Passed",
+          "Duration": 0.0678923,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.InputBindingTests.EachRequiredBindingChangesOneLane(D,1)",
+          "Status": "Passed",
+          "Duration": 0.0615886,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.InputBindingTests.EachRequiredBindingChangesOneLane(RightArrow,1)",
+          "Status": "Passed",
+          "Duration": 0.0658778,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.InputBindingTests.EnableDisableCyclesDoNotDuplicateOrRetainInputCallbacks",
+          "Status": "Passed",
+          "Duration": 0.086266,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.InputBindingTests.EscapeTogglesOncePerPressAndOwnsNoUICancelBinding",
+          "Status": "Passed",
+          "Duration": 0.075233,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.InputBindingTests.HoldingAButtonDoesNotRepeatAcrossTheCenter(D)",
+          "Status": "Passed",
+          "Duration": 0.0743385,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.InputBindingTests.HoldingAButtonDoesNotRepeatAcrossTheCenter(RightArrow)",
+          "Status": "Passed",
+          "Duration": 0.0643933,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.InputBindingTests.MapsFollowEveryStateWithoutEnablingTheSourceAsset",
+          "Status": "Passed",
+          "Duration": 0.0718159,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.InputBindingTests.OppositePressesInOneInputUpdateCancel(A,D)",
+          "Status": "Passed",
+          "Duration": 0.0774894,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.InputBindingTests.OppositePressesInOneInputUpdateCancel(LeftArrow,RightArrow)",
+          "Status": "Passed",
+          "Duration": 0.0842523,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.InputBindingTests.PauseWinsOverLaneInputInTheSameUpdate",
+          "Status": "Passed",
+          "Duration": 0.0853572,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.InputBindingTests.PendingInputUsesOneLatestBatchAndIsConsumedOnce",
+          "Status": "Passed",
+          "Duration": 0.0605309,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.InteractableTests.BentLanePathSweepsEachLegInsteadOfAChord",
+          "Status": "Passed",
+          "Duration": 0.0843062,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.InteractableTests.CallbackReturnsAreDeferredAndLifecycleReentryIsRejected",
+          "Status": "Passed",
+          "Duration": 0.0923742,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.InteractableTests.ContactOnRebaseTickDoesNotCreateAdditionalHits",
+          "Status": "Passed",
+          "Duration": 0.0880004,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.InteractableTests.ContactOverflowFailsVisibly",
+          "Status": "Passed",
+          "Duration": 0.0953761,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.InteractableTests.ContactsAtDifferentTimesInOneLongTickCanOutlastGrace",
+          "Status": "Passed",
+          "Duration": 0.0824091,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.InteractableTests.EncounterGuardGraceExpiryAndReusedActivationHaveExactlyOneEventPerDamage",
+          "Status": "Passed",
+          "Duration": 0.0873689,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.InteractableTests.ExhaustionOmitsWithoutGrowthRetryOrChangedPlans",
+          "Status": "Passed",
+          "Duration": 0.0894727,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.InteractableTests.FiftyResetsWithTrafficPauseGameOverAndRebasesLeaveNoOldWork",
+          "Status": "Passed",
+          "Duration": 2.3231369,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.InteractableTests.FuelMutationClampsAndThreeHitsResolveLivesOnce",
+          "Status": "Passed",
+          "Duration": 0.0849196,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.InteractableTests.PausedAndForeignSessionContextsCannotConsumeAnActivation",
+          "Status": "Passed",
+          "Duration": 0.0797647,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.InteractableTests.PersistentOverlapNeverBecomesDelayedDamageAfterGrace",
+          "Status": "Passed",
+          "Duration": 0.0809185,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.InteractableTests.PickupCategoryWinsExactTieAndDefersItsReturn",
+          "Status": "Passed",
+          "Duration": 0.1412459,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.InteractableTests.RealInheritanceAndOverridesHaveIndependentPools",
+          "Status": "Passed",
+          "Duration": 0.0895757,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.InteractableTests.ReturnedAndRerentedBetweenCollectionAndDispatchCannotReceiveStaleContact",
+          "Status": "Passed",
+          "Duration": 0.0927976,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.InteractableTests.SimultaneousContactsUseSpawnSequenceAndMarkGraceRejectedCars",
+          "Status": "Passed",
+          "Duration": 0.0932826,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.InteractableTests.SweptContactsAtFiftyWithBothMoversCrossDisjointEndpoints",
+          "Status": "Passed",
+          "Duration": 0.0940764,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.InteractableTests.WorldMotionPauseAndRebasePreserveBothAbsoluteHistories",
+          "Status": "Passed",
+          "Duration": 0.0911399,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.NeonLightingTests.FinalHitFreezesFlashButImmediatelyUsesZeroSpeedNeon",
+          "Status": "Passed",
+          "Duration": 0.0697367,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.NeonLightingTests.FlashExpiryResetAndDisablePreserveLatestEmissionAndUnrelatedFields",
+          "Status": "Passed",
+          "Duration": 0.0622958,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.NeonLightingTests.MeasuredTravelControlsIntermediateAndClampedNeonIndependentlyOfCruiseTarget",
+          "Status": "Passed",
+          "Duration": 0.0626351,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.NeonLightingTests.ProductionStatePathUpdatesNeonEvenWhenAnimationIsFrozen",
+          "Status": "Passed",
+          "Duration": 0.064067,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.NeonLightingTests.RebaseAndRepeatedRestartsKeepLightOwnershipAndPoolStorageDark",
+          "Status": "Passed",
+          "Duration": 0.0966971,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PersistenceTests.BoundariesFlushTheOutgoingBestOnceWithoutFrameSaves(\"end\")",
+          "Status": "Passed",
+          "Duration": 0.0732312,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PersistenceTests.BoundariesFlushTheOutgoingBestOnceWithoutFrameSaves(\"menu\")",
+          "Status": "Passed",
+          "Duration": 0.0603417,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PersistenceTests.BoundariesFlushTheOutgoingBestOnceWithoutFrameSaves(\"quit\")",
+          "Status": "Passed",
+          "Duration": 0.0619322,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PersistenceTests.BoundariesFlushTheOutgoingBestOnceWithoutFrameSaves(\"applicationPause\")",
+          "Status": "Passed",
+          "Duration": 0.0714069,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PersistenceTests.BoundariesFlushTheOutgoingBestOnceWithoutFrameSaves(\"shutdown\")",
+          "Status": "Passed",
+          "Duration": 0.0737628,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PersistenceTests.BoundariesFlushTheOutgoingBestOnceWithoutFrameSaves(\"restart\")",
+          "Status": "Passed",
+          "Duration": 0.0736706,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PersistenceTests.ExplicitMenuQuitFlushesAnAlreadyDirtyCandidate",
+          "Status": "Passed",
+          "Duration": 0.0883312,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PersistenceTests.LoadOnceAndFlushOnlyHigherDirtyCandidates(0)",
+          "Status": "Passed",
+          "Duration": 0.0013214,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PersistenceTests.LoadOnceAndFlushOnlyHigherDirtyCandidates(-42)",
+          "Status": "Passed",
+          "Duration": 9.96e-05,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PersistenceTests.LoadOnceAndFlushOnlyHigherDirtyCandidates(123)",
+          "Status": "Passed",
+          "Duration": 0.0001364,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PersistenceTests.RealPlayerPrefsUsesOnlyAUniqueKeyAndSurvivesStoreReconstruction",
+          "Status": "Passed",
+          "Duration": 0.0053189,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PersistenceTests.TerminalTickCapturesCoinAndFinalDistanceBeforeFlushAndRestart",
+          "Status": "Passed",
+          "Duration": 0.0617169,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PickupTests.AllConfiguredContactsAndReturnsFitWithoutOverflow",
+          "Status": "Passed",
+          "Duration": 0.1059587,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PickupTests.AllFourConcreteClassesOverrideTheRealVirtualHook",
+          "Status": "Passed",
+          "Duration": 0.0849357,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PickupTests.CapturedContactCannotConsumeNewActivation(Coin)",
+          "Status": "Passed",
+          "Duration": 0.0715186,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PickupTests.CapturedContactCannotConsumeNewActivation(Fuel)",
+          "Status": "Passed",
+          "Duration": 0.0812444,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PickupTests.CoinCountSaturatesSafelyAndPausedRewardsDoNotMutateIt",
+          "Status": "Passed",
+          "Duration": 0.1101027,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PickupTests.CoinExhaustionOmitsPermanentlyWithoutGrowthOrPlanChanges",
+          "Status": "Passed",
+          "Duration": 0.0995149,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PickupTests.ExhaustedFuelReclaimsOnlyLegitimatelyBehindBoundsAndRetries",
+          "Status": "Passed",
+          "Duration": 0.0925862,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PickupTests.FiftyResetsClearPickupReservationsContactsAndOldTokensWithBothTypesCollected",
+          "Status": "Passed",
+          "Duration": 2.2125654,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PickupTests.FuelClampsAndFullFuelStillCollects(95.0f,100.0f,5.0f)",
+          "Status": "Passed",
+          "Duration": 0.0835595,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PickupTests.FuelClampsAndFullFuelStillCollects(100.0f,100.0f,0.0f)",
+          "Status": "Passed",
+          "Duration": 0.0833114,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PickupTests.FuelClampsAndFullFuelStillCollects(10.0f,40.0f,30.0f)",
+          "Status": "Passed",
+          "Duration": 0.0881575,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PickupTests.FuelExhaustionPausesBeforeTravelAndNeverStealsActiveRequiredRentals",
+          "Status": "Passed",
+          "Duration": 0.0875663,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PickupTests.GraceDoesNotBlockEitherPickupAndExactTieSortsPickupsThenSequence",
+          "Status": "Passed",
+          "Duration": 0.0859093,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PickupTests.MissingRealPickupPoolBlocksStartWithoutPublishingAPartialRun(Coin)",
+          "Status": "Passed",
+          "Duration": 0.1268634,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PickupTests.MissingRealPickupPoolBlocksStartWithoutPublishingAPartialRun(Fuel)",
+          "Status": "Passed",
+          "Duration": 0.150659,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PickupTests.PartialRequiredFuelReservationRollsBackWithoutAdvancingFrontier",
+          "Status": "Passed",
+          "Duration": 0.0970975,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PickupTests.PlannedFuelBecomesRealRentalsAndIsCollectibleThroughEveryProtectedTransition(22.0f,12345)",
+          "Status": "Passed",
+          "Duration": 0.2307345,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PickupTests.PlannedFuelBecomesRealRentalsAndIsCollectibleThroughEveryProtectedTransition(50.0f,12345)",
+          "Status": "Passed",
+          "Duration": 0.2006606,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PickupTests.PlannedFuelBecomesRealRentalsAndIsCollectibleThroughEveryProtectedTransition(50.0f,0)",
+          "Status": "Passed",
+          "Duration": 0.1987432,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PickupTests.PlannedFuelBecomesRealRentalsAndIsCollectibleThroughEveryProtectedTransition(50.0f,999)",
+          "Status": "Passed",
+          "Duration": 0.1312445,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PickupTests.ReentrantAndDuplicateDeliveryRewardEventAndReturnOnceThenReuseRejectsStaleToken(Coin)",
+          "Status": "Passed",
+          "Duration": 0.0795583,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PickupTests.ReentrantAndDuplicateDeliveryRewardEventAndReturnOnceThenReuseRejectsStaleToken(Fuel)",
+          "Status": "Passed",
+          "Duration": 0.0845354,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PickupTests.ScoreDistancePauseRebaseAndRestartUseOneAuthoritativeFormula",
+          "Status": "Passed",
+          "Duration": 0.1327677,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PickupTests.SensorDefersReturnsAndRejectsLifecycleOrRentalReentryDuringCollection",
+          "Status": "Passed",
+          "Duration": 0.0876339,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PickupTests.TimeOfImpactPrecedesCategoryAndHighSpeedCrossesThinPickups",
+          "Status": "Passed",
+          "Duration": 0.0867301,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PickupTests.UnboundedCatchUpFailsExplicitlyInsteadOfSkippingMandatorySupply",
+          "Status": "Passed",
+          "Duration": 0.0832282,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PickupTests.VisualChildrenAnimatePauseAndResetWithoutMovingLogicalBoundsOrStorage",
+          "Status": "Passed",
+          "Duration": 0.0897567,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PlayerLifecycleTests.LoopAdvancesTimeDistanceAndSpeedExactlyOnce(0.01f)",
+          "Status": "Passed",
+          "Duration": 0.0769326,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PlayerLifecycleTests.LoopAdvancesTimeDistanceAndSpeedExactlyOnce(0.02f)",
+          "Status": "Passed",
+          "Duration": 0.0656888,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PlayerLifecycleTests.LoopAdvancesTimeDistanceAndSpeedExactlyOnce(0.1f)",
+          "Status": "Passed",
+          "Duration": 0.0635733,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PlayerLifecycleTests.LoopAdvancesTimeDistanceAndSpeedExactlyOnce(0.5f)",
+          "Status": "Passed",
+          "Duration": 0.0687956,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PlayerLifecycleTests.PausingPreservesCurrentTransitionButClearsQueuedAndPendingInput",
+          "Status": "Passed",
+          "Duration": 0.0678283,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PlayerLifecycleTests.RestartResetsPoseBuffersInputAndCameraAnchorWhileKeepingBest",
+          "Status": "Passed",
+          "Duration": 0.0680296,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PlayerLifecycleTests.RigidbodyAndStableAnchorFollowTheLogicalPlayer",
+          "Status": "Passed",
+          "Duration": 0.2321587,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PoolLifecycleTests.CallbackReturnAllAndNestedOperationsAreDeterministic",
+          "Status": "Passed",
+          "Duration": 0.0493386,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PoolLifecycleTests.CapturedOldTokenDoubleAndForeignReturnsCannotEndCurrentRental",
+          "Status": "Passed",
+          "Duration": 0.0417475,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PoolLifecycleTests.EmptyOrInvalidCatalogBlocksRequiredWorldWithoutPartialRun(False)",
+          "Status": "Passed",
+          "Duration": 0.03044,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PoolLifecycleTests.EmptyOrInvalidCatalogBlocksRequiredWorldWithoutPartialRun(True)",
+          "Status": "Passed",
+          "Duration": 0.0470291,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PoolLifecycleTests.ExhaustionAndUnknownKeysFailWithoutGrowing",
+          "Status": "Passed",
+          "Duration": 0.0420328,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PoolLifecycleTests.ExternalDisableRetainsOwnershipUntilExplicitReturnAndDoesNotRecurse",
+          "Status": "Passed",
+          "Duration": 0.0474583,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PoolLifecycleTests.FiftyRestartsGateInputBeforeCleanupAndPreservePools",
+          "Status": "Passed",
+          "Duration": 0.1710007,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PoolLifecycleTests.PrewarmStagesActivePrefabAndInitializesExactlyOnce",
+          "Status": "Passed",
+          "Duration": 0.0358677,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PoolLifecycleTests.RentUsesActiveParentAndRestoresAuthoredPoseAndScale",
+          "Status": "Passed",
+          "Duration": 0.0253062,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PoolLifecycleTests.ReturnAllFromRentHookReturnsOlderRentalsAndRejectsNestedRent",
+          "Status": "Passed",
+          "Duration": 0.0266463,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PoolLifecycleTests.ReturnFromRentOrEnableCancelsRentalWithoutExposingIt(False)",
+          "Status": "Passed",
+          "Duration": 0.0135233,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PoolLifecycleTests.ReturnFromRentOrEnableCancelsRentalWithoutExposingIt(True)",
+          "Status": "Passed",
+          "Duration": 0.027904,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PoolLifecycleTests.ShutdownFromCallbackIsDeferredAndDestroysOnlyAtShutdown",
+          "Status": "Passed",
+          "Duration": 0.0247283,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PoolLifecycleTests.SuccessfulSteadyStatePoolOperationsAllocateNoManagedBytes",
+          "Status": "Passed",
+          "Duration": 0.0494185,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.PoolLifecycleTests.ThousandRentReturnsForEveryKeyPreserveIdentityAndCounts",
+          "Status": "Passed",
+          "Duration": 0.7106972,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.ProgressionLifecycleTests.RealProtectedRouteReachesCapAndRebasesWithoutChangingCommittedRows",
+          "Status": "Passed",
+          "Duration": 0.1486446,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.ProgressionLifecycleTests.TickStartUsesAuthoritativeDoubleDistanceOrPlayingTime(90.0f,0.0d,0.5f)",
+          "Status": "Passed",
+          "Duration": 0.0636374,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.ProgressionLifecycleTests.TickStartUsesAuthoritativeDoubleDistanceOrPlayingTime(0.01f,3000.0d,0.5f)",
+          "Status": "Passed",
+          "Duration": 0.0563755,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.ProgressionLifecycleTests.TickStartUsesAuthoritativeDoubleDistanceOrPlayingTime(180.0f,0.0d,1.0f)",
+          "Status": "Passed",
+          "Duration": 0.0585135,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.ProgressionLifecycleTests.TickStartUsesAuthoritativeDoubleDistanceOrPlayingTime(0.01f,6000.0d,1.0f)",
+          "Status": "Passed",
+          "Duration": 0.0614268,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.RestartTests.FiftyRestartsResetDataAndKeepSingleSubscriptions",
+          "Status": "Passed",
+          "Duration": 0.2447695,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.RestartTests.FixedUpdateRunsOnlyWhilePlayingAndResumePreservesValues",
+          "Status": "Passed",
+          "Duration": 0.2011712,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.RestartTests.OwnerTeardownAtZeroTimeClearsSingletonAndObservers",
+          "Status": "Passed",
+          "Duration": 0.2620977,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.RestartTests.RejectedDuplicateCannotReplaceOwnerOrUnpauseOnDestruction",
+          "Status": "Passed",
+          "Duration": 0.2057966,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.RestartTests.RepeatedSceneLoadsStartInMenuWithOneWiredOwner",
+          "Status": "Passed",
+          "Duration": 0.9657874,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.RoadContinuityTests.EachMissingRequiredPoolBlocksBeforeSessionOrInputChanges(RoadOpen)",
+          "Status": "Passed",
+          "Duration": 0.1451815,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.RoadContinuityTests.EachMissingRequiredPoolBlocksBeforeSessionOrInputChanges(RoadTunnel)",
+          "Status": "Passed",
+          "Duration": 0.1884893,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.RoadContinuityTests.EachMissingRequiredPoolBlocksBeforeSessionOrInputChanges(RoadEntrance)",
+          "Status": "Passed",
+          "Duration": 0.1631584,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.RoadContinuityTests.EachMissingRequiredPoolBlocksBeforeSessionOrInputChanges(RoadExit)",
+          "Status": "Passed",
+          "Duration": 0.1434387,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.RoadContinuityTests.EveryScheduledPrefabCombinationHasAlignedSurfaceAndArchitecture",
+          "Status": "Passed",
+          "Duration": 0.1157056,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.RoadContinuityTests.ExactFractionalAndSkippedBoundariesEstablishCompleteWindow(0.0d)",
+          "Status": "Passed",
+          "Duration": 0.0725689,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.RoadContinuityTests.ExactFractionalAndSkippedBoundariesEstablishCompleteWindow(0.25d)",
+          "Status": "Passed",
+          "Duration": 0.0819513,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.RoadContinuityTests.ExactFractionalAndSkippedBoundariesEstablishCompleteWindow(59.999d)",
+          "Status": "Passed",
+          "Duration": 0.0829387,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.RoadContinuityTests.ExactFractionalAndSkippedBoundariesEstablishCompleteWindow(60.0d)",
+          "Status": "Passed",
+          "Duration": 0.0821151,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.RoadContinuityTests.ExactFractionalAndSkippedBoundariesEstablishCompleteWindow(60.001d)",
+          "Status": "Passed",
+          "Duration": 0.0844029,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.RoadContinuityTests.ExactFractionalAndSkippedBoundariesEstablishCompleteWindow(480.0d)",
+          "Status": "Passed",
+          "Duration": 0.0808114,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.RoadContinuityTests.ExactFractionalAndSkippedBoundariesEstablishCompleteWindow(17117.125d)",
+          "Status": "Passed",
+          "Duration": 0.0912341,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.RoadContinuityTests.FiftyRestartsAfterRebasesRetainNoLeasesPlansOrOffsets",
+          "Status": "Passed",
+          "Duration": 5.7298959,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.RoadContinuityTests.HundredKilometresMaintainsSeamsCoverageAndBoundedPools(22.0f)",
+          "Status": "Passed",
+          "Duration": 1.3498722,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.RoadContinuityTests.HundredKilometresMaintainsSeamsCoverageAndBoundedPools(50.0f)",
+          "Status": "Passed",
+          "Duration": 1.4360798,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.RoadContinuityTests.LargeAbsoluteIndicesConvertAfterDoubleSubtraction",
+          "Status": "Passed",
+          "Duration": 0.0975895,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.RoadContinuityTests.MissingRequiredPoolOrWorldBlocksStartupWithoutPublishingRun",
+          "Status": "Passed",
+          "Duration": 0.0855964,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.RoadContinuityTests.PauseNearThresholdThenResumeRebasesExactlyOnce",
+          "Status": "Passed",
+          "Duration": 0.0965111,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.RoadContinuityTests.RebaseTeleportsBodyBothLogicalHistoriesAndCameraOnceWithoutChangingPlans",
+          "Status": "Passed",
+          "Duration": 0.094855,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.RoadContinuityTests.RequiredPoolExhaustionRollsBackAndStopsBeforeForwardMovement",
+          "Status": "Passed",
+          "Duration": 0.100125,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.RoadContinuityTests.StaleLeaseDetectedBeforeMovementAndResetRestoresIt",
+          "Status": "Passed",
+          "Duration": 0.0920014,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.RoadContinuityTests.UnrepresentableAbsoluteWindowFailsWithoutDiscardingExistingCoverage",
+          "Status": "Passed",
+          "Duration": 0.0919311,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.RoadContinuityTests.WarmWorldMaintenanceAllocationIsMeasuredSeparatelyFromPrewarm",
+          "Status": "Passed",
+          "Duration": 0.1289695,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EscapeAndBackspaceHaveExclusiveOwnershipAndHeldKeysNeverLeak",
+          "Status": "Passed",
+          "Duration": 0.1060336,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EveryRequiredButtonUsesPointerActionsAfterPanelRender",
+          "Status": "Passed",
+          "Duration": 0.3201881,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EveryRequiredButtonUsesPointerOrActionNavigation(\"Start\",False)",
+          "Status": "Passed",
+          "Duration": 0.123875,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EveryRequiredButtonUsesPointerOrActionNavigation(\"Quit\",False)",
+          "Status": "Passed",
+          "Duration": 0.1576716,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EveryRequiredButtonUsesPointerOrActionNavigation(\"Resume\",False)",
+          "Status": "Passed",
+          "Duration": 0.1238978,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EveryRequiredButtonUsesPointerOrActionNavigation(\"PauseRestart\",False)",
+          "Status": "Passed",
+          "Duration": 0.1147998,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EveryRequiredButtonUsesPointerOrActionNavigation(\"MainMenu\",False)",
+          "Status": "Passed",
+          "Duration": 0.1127087,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EveryRequiredButtonUsesPointerOrActionNavigation(\"OverRestart\",False)",
+          "Status": "Passed",
+          "Duration": 0.1080631,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.FiftyUiRestartsIncludingRebaseKeepSeedSupplyPoolsAndBest",
+          "Status": "Passed",
+          "Duration": 0.2326111,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.FirstFrameAndNewBestProjectActualSpeedAndExactLargeIntegers",
+          "Status": "Passed",
+          "Duration": 0.1070034,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.HeldNavigationCannotRepeatIntoReturnedMainMenu",
+          "Status": "Passed",
+          "Duration": 0.7759563,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.InvalidCapacityReportsConfigurationWithoutDividing",
+          "Status": "Passed",
+          "Duration": 0.1159754,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.PointerKeyboardBackgroundClickAndLostSelectionRecoverWithoutFightingFocus",
+          "Status": "Passed",
+          "Duration": 0.2297784,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.ReopenedPauseRetainsStationaryPointerPosition",
+          "Status": "Passed",
+          "Duration": 0.2540889,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.RepeatedPresenterEnableDisableOwnsExactlyOneCallbackAndHiddenPanelsCannotRaycast",
+          "Status": "Passed",
+          "Duration": 0.1032234,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.TerminalUsesFinalizedResultAndLateEnableThenResetCannotShowStaleData(Lives)",
+          "Status": "Passed",
+          "Duration": 0.1360415,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.TerminalUsesFinalizedResultAndLateEnableThenResetCannotShowStaleData(Fuel)",
+          "Status": "Passed",
+          "Duration": 0.1379313,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.VfxPoolingTests.AcceptedDamageGraceFullFuelAndDetachedPickupReuseProduceExactlyOneTypedEffect",
+          "Status": "Passed",
+          "Duration": 0.0834163,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.VfxPoolingTests.ContinuouslyOpenSkyScheduleUsesBoundsAndIndependentRandomSequence",
+          "Status": "Passed",
+          "Duration": 0.1455355,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.VfxPoolingTests.ExhaustUsesActualSpeedAndKeepsItsAuthoredBoundWhenPaused",
+          "Status": "Passed",
+          "Duration": 0.064425,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.VfxPoolingTests.QueuedEventSurvivesRebaseAndActiveLocalParticlesShiftExactlyOnce",
+          "Status": "Passed",
+          "Duration": 0.0691803,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.VfxPoolingTests.RebasePreservesRocketParticlePosesAndBakedLocalTrailVertices",
+          "Status": "Passed",
+          "Duration": 0.0756699,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.VfxPoolingTests.RocketRisesBeforeDeathSubEmitterAndWaitsForChildAndPersistentTrail",
+          "Status": "Passed",
+          "Duration": 0.0623056,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.VfxPoolingTests.SaturatedFeedbackDoesNotHoldPickupsOrChangeFullFuelRewardAndDamage",
+          "Status": "Passed",
+          "Duration": 0.0722814,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.VfxPoolingTests.SaturationOmitsCosmeticsAndNeverGrowsPool(Spark)",
+          "Status": "Passed",
+          "Duration": 0.1055505,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.VfxPoolingTests.SaturationOmitsCosmeticsAndNeverGrowsPool(CoinBurst)",
+          "Status": "Passed",
+          "Duration": 0.1094692,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.VfxPoolingTests.SaturationOmitsCosmeticsAndNeverGrowsPool(FuelBurst)",
+          "Status": "Passed",
+          "Duration": 0.0638568,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.VfxPoolingTests.SaturationOmitsCosmeticsAndNeverGrowsPool(Firework)",
+          "Status": "Passed",
+          "Duration": 0.0604917,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.VfxPoolingTests.TenSecondPausePreservesExhaustBurstRocketTrailsAndCountdown",
+          "Status": "Passed",
+          "Duration": 10.2226291,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.VfxPoolingTests.TerminalInitialFeedbackFreezesAndFiftyRestartsClearEverything",
+          "Status": "Passed",
+          "Duration": 0.2242396,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.VfxPoolingTests.TerminalSweptContactTickCommitsPickupRewardsAndSeedsAllFeedbackBeforeFreeze",
+          "Status": "Passed",
+          "Duration": 0.0662857,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.VfxPoolingTests.ThousandRentReturnsResetTokensParticlesTrailsAndMaterials(Spark)",
+          "Status": "Passed",
+          "Duration": 0.20853,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.VfxPoolingTests.ThousandRentReturnsResetTokensParticlesTrailsAndMaterials(CoinBurst)",
+          "Status": "Passed",
+          "Duration": 0.211866,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.VfxPoolingTests.ThousandRentReturnsResetTokensParticlesTrailsAndMaterials(FuelBurst)",
+          "Status": "Passed",
+          "Duration": 0.218443,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.VfxPoolingTests.ThousandRentReturnsResetTokensParticlesTrailsAndMaterials(Firework)",
+          "Status": "Passed",
+          "Duration": 0.2153134,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.VfxPoolingTests.VisibleRoofSpanBlocksOnePendingLaunchUntilOpenAndCapDefersIt",
+          "Status": "Passed",
+          "Duration": 0.0780635,
+          "Message": null,
+          "StackTrace": null
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

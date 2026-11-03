@@ -1,0 +1,103 @@
+{
+  "baseline": "Evidence/Task13/Standalone/player.log",
+  "baselineShaderWarnings": [
+    "Shader 'Hidden/Universal Render Pipeline/GaussianDepthOfField' is not supported or has been stripped from the build (in 'GaussianDepthOfField'). PostProcessing render passes will not execute.",
+    "Shader 'Hidden/Universal Render Pipeline/GaussianDepthOfField' is not supported or has been stripped from the build (in 'GaussianDepthOfField'). PostProcessing render passes will not execute.",
+    "Shader 'Hidden/Universal Render Pipeline/BokehDepthOfField' is not supported or has been stripped from the build (in 'BokehDepthOfField'). PostProcessing render passes will not execute.",
+    "Shader 'Hidden/Universal Render Pipeline/PaniniProjection' is not supported or has been stripped from the build (in 'PaniniProjection'). PostProcessing render passes will not execute."
+  ],
+  "players": [
+    {
+      "path": "Evidence/Task14/Standalone/keyboard-fuel-final-player.log",
+      "shaderWarnings": [
+        "Shader 'Hidden/Universal Render Pipeline/GaussianDepthOfField' is not supported or has been stripped from the build (in 'GaussianDepthOfField'). PostProcessing render passes will not execute.",
+        "Shader 'Hidden/Universal Render Pipeline/GaussianDepthOfField' is not supported or has been stripped from the build (in 'GaussianDepthOfField'). PostProcessing render passes will not execute.",
+        "Shader 'Hidden/Universal Render Pipeline/BokehDepthOfField' is not supported or has been stripped from the build (in 'BokehDepthOfField'). PostProcessing render passes will not execute.",
+        "Shader 'Hidden/Universal Render Pipeline/PaniniProjection' is not supported or has been stripped from the build (in 'PaniniProjection'). PostProcessing render passes will not execute."
+      ],
+      "matchesTask13": true,
+      "runtimeOrGlyphErrors": [],
+      "otherWarningLines": [],
+      "displayDpiDiagnostics": 10
+    },
+    {
+      "path": "Evidence/Task14/Standalone/keyboard-fuel-player.log",
+      "shaderWarnings": [
+        "Shader 'Hidden/Universal Render Pipeline/GaussianDepthOfField' is not supported or has been stripped from the build (in 'GaussianDepthOfField'). PostProcessing render passes will not execute.",
+        "Shader 'Hidden/Universal Render Pipeline/GaussianDepthOfField' is not supported or has been stripped from the build (in 'GaussianDepthOfField'). PostProcessing render passes will not execute.",
+        "Shader 'Hidden/Universal Render Pipeline/BokehDepthOfField' is not supported or has been stripped from the build (in 'BokehDepthOfField'). PostProcessing render passes will not execute.",
+        "Shader 'Hidden/Universal Render Pipeline/PaniniProjection' is not supported or has been stripped from the build (in 'PaniniProjection'). PostProcessing render passes will not execute."
+      ],
+      "matchesTask13": true,
+      "runtimeOrGlyphErrors": [],
+      "otherWarningLines": [],
+      "displayDpiDiagnostics": 10
+    },
+    {
+      "path": "Evidence/Task14/Standalone/keyboard-lives-final-player.log",
+      "shaderWarnings": [
+        "Shader 'Hidden/Universal Render Pipeline/GaussianDepthOfField' is not supported or has been stripped from the build (in 'GaussianDepthOfField'). PostProcessing render passes will not execute.",
+        "Shader 'Hidden/Universal Render Pipeline/GaussianDepthOfField' is not supported or has been stripped from the build (in 'GaussianDepthOfField'). PostProcessing render passes will not execute.",
+        "Shader 'Hidden/Universal Render Pipeline/BokehDepthOfField' is not supported or has been stripped from the build (in 'BokehDepthOfField'). PostProcessing render passes will not execute.",
+        "Shader 'Hidden/Universal Render Pipeline/PaniniProjection' is not supported or has been stripped from the build (in 'PaniniProjection'). PostProcessing render passes will not execute."
+      ],
+      "matchesTask13": true,
+      "runtimeOrGlyphErrors": [],
+      "otherWarningLines": [],
+      "displayDpiDiagnostics": 10
+    },
+    {
+      "path": "Evidence/Task14/Standalone/pointer-fuel-final-player.log",
+      "shaderWarnings": [
+        "Shader 'Hidden/Universal Render Pipeline/GaussianDepthOfField' is not supported or has been stripped from the build (in 'GaussianDepthOfField'). PostProcessing render passes will not execute.",
+        "Shader 'Hidden/Universal Render Pipeline/GaussianDepthOfField' is not supported or has been stripped from the build (in 'GaussianDepthOfField'). PostProcessing render passes will not execute.",
+        "Shader 'Hidden/Universal Render Pipeline/BokehDepthOfField' is not supported or has been stripped from the build (in 'BokehDepthOfField'). PostProcessing render passes will not execute.",
+        "Shader 'Hidden/Universal Render Pipeline/PaniniProjection' is not supported or has been stripped from the build (in 'PaniniProjection'). PostProcessing render passes will not execute."
+      ],
+      "matchesTask13": true,
+      "runtimeOrGlyphErrors": [],
+      "otherWarningLines": [],
+      "displayDpiDiagnostics": 10
+    },
+    {
+      "path": "Evidence/Task14/Standalone/pointer-lives-player.log",
+      "shaderWarnings": [
+        "Shader 'Hidden/Universal Render Pipeline/GaussianDepthOfField' is not supported or has been stripped from the build (in 'GaussianDepthOfField'). PostProcessing render passes will not execute.",
+        "Shader 'Hidden/Universal Render Pipeline/GaussianDepthOfField' is not supported or has been stripped from the build (in 'GaussianDepthOfField'). PostProcessing render passes will not execute.",
+        "Shader 'Hidden/Universal Render Pipeline/BokehDepthOfField' is not supported or has been stripped from the build (in 'BokehDepthOfField'). PostProcessing render passes will not execute.",
+        "Shader 'Hidden/Universal Render Pipeline/PaniniProjection' is not supported or has been stripped from the build (in 'PaniniProjection'). PostProcessing render passes will not execute."
+      ],
+      "matchesTask13": true,
+      "runtimeOrGlyphErrors": [],
+      "otherWarningLines": [],
+      "displayDpiDiagnostics": 10
+    },
+    {
+      "path": "Evidence/Task14/Standalone/pointer-natural-player.log",
+      "shaderWarnings": [
+        "Shader 'Hidden/Universal Render Pipeline/GaussianDepthOfField' is not supported or has been stripped from the build (in 'GaussianDepthOfField'). PostProcessing render passes will not execute.",
+        "Shader 'Hidden/Universal Render Pipeline/GaussianDepthOfField' is not supported or has been stripped from the build (in 'GaussianDepthOfField'). PostProcessing render passes will not execute.",
+        "Shader 'Hidden/Universal Render Pipeline/BokehDepthOfField' is not supported or has been stripped from the build (in 'BokehDepthOfField'). PostProcessing render passes will not execute.",
+        "Shader 'Hidden/Universal Render Pipeline/PaniniProjection' is not supported or has been stripped from the build (in 'PaniniProjection'). PostProcessing render passes will not execute."
+      ],
+      "matchesTask13": true,
+      "runtimeOrGlyphErrors": [],
+      "otherWarningLines": [],
+      "displayDpiDiagnostics": 10
+    },
+    {
+      "path": "Evidence/Task14/Standalone/verify-best-player.log",
+      "shaderWarnings": [
+        "Shader 'Hidden/Universal Render Pipeline/GaussianDepthOfField' is not supported or has been stripped from the build (in 'GaussianDepthOfField'). PostProcessing render passes will not execute.",
+        "Shader 'Hidden/Universal Render Pipeline/GaussianDepthOfField' is not supported or has been stripped from the build (in 'GaussianDepthOfField'). PostProcessing render passes will not execute.",
+        "Shader 'Hidden/Universal Render Pipeline/BokehDepthOfField' is not supported or has been stripped from the build (in 'BokehDepthOfField'). PostProcessing render passes will not execute.",
+        "Shader 'Hidden/Universal Render Pipeline/PaniniProjection' is not supported or has been stripped from the build (in 'PaniniProjection'). PostProcessing render passes will not execute."
+      ],
+      "matchesTask13": true,
+      "runtimeOrGlyphErrors": [],
+      "otherWarningLines": [],
+      "displayDpiDiagnostics": 10
+    }
+  ],
+  "passed": true
+}

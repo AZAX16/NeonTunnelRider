@@ -1,0 +1,133 @@
+{
+  "success": true,
+  "command": "command test",
+  "data": {
+    "command": "test",
+    "parameters": {},
+    "result": {
+      "status": "completed",
+      "duration": 2.95,
+      "summary": {
+        "total": 15,
+        "passed": 13,
+        "failed": 2,
+        "skipped": 0,
+        "inconclusive": 0
+      },
+      "results": [
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EscapeAndBackspaceHaveExclusiveOwnershipAndHeldKeysNeverLeak",
+          "Status": "Passed",
+          "Duration": 0.499535,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EveryRequiredButtonUsesPointerActionsAfterPanelRender",
+          "Status": "Failed",
+          "Duration": 0.2496772,
+          "Message": "  No click action release\n  Expected: greater than 0\n  But was:  0\n",
+          "StackTrace": "at NeonTunnelRunner.UiBindingTests.Click (System.String path) [0x001c7] in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Tests/PlayMode/UiBindingTests.cs:72\nat NeonTunnelRunner.UiBindingTests+<EveryRequiredButtonUsesPointerActionsAfterPanelRender>d__24.MoveNext () [0x0003d] in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Tests/PlayMode/UiBindingTests.cs:100\nat UnityEngine.TestTools.TestEnumerator+<Execute>d__8.MoveNext () [0x0003a] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:52\n"
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EveryRequiredButtonUsesPointerOrActionNavigation(\"Start\",False)",
+          "Status": "Passed",
+          "Duration": 0.1560337,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EveryRequiredButtonUsesPointerOrActionNavigation(\"Quit\",False)",
+          "Status": "Passed",
+          "Duration": 0.1539513,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EveryRequiredButtonUsesPointerOrActionNavigation(\"Resume\",False)",
+          "Status": "Passed",
+          "Duration": 0.1334655,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EveryRequiredButtonUsesPointerOrActionNavigation(\"PauseRestart\",False)",
+          "Status": "Passed",
+          "Duration": 0.138433,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EveryRequiredButtonUsesPointerOrActionNavigation(\"MainMenu\",False)",
+          "Status": "Passed",
+          "Duration": 0.1266212,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EveryRequiredButtonUsesPointerOrActionNavigation(\"OverRestart\",False)",
+          "Status": "Passed",
+          "Duration": 0.1296938,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.FiftyUiRestartsIncludingRebaseKeepSeedSupplyPoolsAndBest",
+          "Status": "Passed",
+          "Duration": 0.2932604,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.FirstFrameAndNewBestProjectActualSpeedAndExactLargeIntegers",
+          "Status": "Passed",
+          "Duration": 0.1796151,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.InvalidCapacityReportsConfigurationWithoutDividing",
+          "Status": "Passed",
+          "Duration": 0.152006,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.PointerKeyboardBackgroundClickAndLostSelectionRecoverWithoutFightingFocus",
+          "Status": "Failed",
+          "Duration": 0.1686539,
+          "Message": "  Expected string length 4 but was 5. Strings differ at index 0.\n  Expected: \"Quit\"\n  But was:  \"Start\"\n  -----------^\n",
+          "StackTrace": "at NeonTunnelRunner.UiBindingTests+<PointerKeyboardBackgroundClickAndLostSelectionRecoverWithoutFightingFocus>d__28.MoveNext () [0x0010c] in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Tests/PlayMode/UiBindingTests.cs:145\nat UnityEngine.TestTools.TestEnumerator+<Execute>d__8.MoveNext () [0x0003a] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:52\n"
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.RepeatedPresenterEnableDisableOwnsExactlyOneCallbackAndHiddenPanelsCannotRaycast",
+          "Status": "Passed",
+          "Duration": 0.1233302,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.TerminalUsesFinalizedResultAndLateEnableThenResetCannotShowStaleData(Lives)",
+          "Status": "Passed",
+          "Duration": 0.1396398,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.TerminalUsesFinalizedResultAndLateEnableThenResetCannotShowStaleData(Fuel)",
+          "Status": "Passed",
+          "Duration": 0.1437224,
+          "Message": null,
+          "StackTrace": null
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

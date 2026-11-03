@@ -1,0 +1,168 @@
+{
+  "success": true,
+  "command": "command test",
+  "data": {
+    "command": "test",
+    "parameters": {},
+    "result": {
+      "status": "completed",
+      "duration": 0.51,
+      "summary": {
+        "total": 20,
+        "passed": 0,
+        "failed": 20,
+        "skipped": 0,
+        "inconclusive": 0
+      },
+      "results": [
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EscapeAndBackspaceHaveExclusiveOwnershipAndHeldKeysNeverLeak",
+          "Status": "Failed",
+          "Duration": 0.0429785,
+          "Message": "SetUp : System.NullReferenceException : Object reference not set to an instance of an object",
+          "StackTrace": "--SetUp\n  at NeonTunnelRunner.UiBindingTests+<Ready>d__14.MoveNext () [0x00035] in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Tests/PlayMode/UiBindingTests.cs:41 \n  at UnityEngine.TestTools.EnumeratorHelper+<ProgressOnEnumerator>d__5.MoveNext () [0x00017] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Attributes/EnumeratorHelper.cs:43 \n  at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+<ExecuteEnumerable>d__16[T].MoveNext () [0x00132] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Commands/BeforeAfterTestCommandBase.cs:156 "
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EveryRequiredButtonUsesPointerOrActionNavigation(\"Start\",False)",
+          "Status": "Failed",
+          "Duration": 0.0161105,
+          "Message": "SetUp : System.NullReferenceException : Object reference not set to an instance of an object",
+          "StackTrace": "--SetUp\n  at NeonTunnelRunner.UiBindingTests+<Ready>d__14.MoveNext () [0x00035] in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Tests/PlayMode/UiBindingTests.cs:41 \n  at UnityEngine.TestTools.EnumeratorHelper+<ProgressOnEnumerator>d__5.MoveNext () [0x00017] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Attributes/EnumeratorHelper.cs:43 \n  at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+<ExecuteEnumerable>d__16[T].MoveNext () [0x00132] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Commands/BeforeAfterTestCommandBase.cs:156 "
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EveryRequiredButtonUsesPointerOrActionNavigation(\"Quit\",False)",
+          "Status": "Failed",
+          "Duration": 0.0143812,
+          "Message": "SetUp : System.NullReferenceException : Object reference not set to an instance of an object",
+          "StackTrace": "--SetUp\n  at NeonTunnelRunner.UiBindingTests+<Ready>d__14.MoveNext () [0x00035] in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Tests/PlayMode/UiBindingTests.cs:41 \n  at UnityEngine.TestTools.EnumeratorHelper+<ProgressOnEnumerator>d__5.MoveNext () [0x00017] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Attributes/EnumeratorHelper.cs:43 \n  at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+<ExecuteEnumerable>d__16[T].MoveNext () [0x00132] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Commands/BeforeAfterTestCommandBase.cs:156 "
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EveryRequiredButtonUsesPointerOrActionNavigation(\"Resume\",False)",
+          "Status": "Failed",
+          "Duration": 0.0096726,
+          "Message": "SetUp : System.NullReferenceException : Object reference not set to an instance of an object",
+          "StackTrace": "--SetUp\n  at NeonTunnelRunner.UiBindingTests+<Ready>d__14.MoveNext () [0x00035] in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Tests/PlayMode/UiBindingTests.cs:41 \n  at UnityEngine.TestTools.EnumeratorHelper+<ProgressOnEnumerator>d__5.MoveNext () [0x00017] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Attributes/EnumeratorHelper.cs:43 \n  at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+<ExecuteEnumerable>d__16[T].MoveNext () [0x00132] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Commands/BeforeAfterTestCommandBase.cs:156 "
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EveryRequiredButtonUsesPointerOrActionNavigation(\"PauseRestart\",False)",
+          "Status": "Failed",
+          "Duration": 0.0209708,
+          "Message": "SetUp : System.NullReferenceException : Object reference not set to an instance of an object",
+          "StackTrace": "--SetUp\n  at NeonTunnelRunner.UiBindingTests+<Ready>d__14.MoveNext () [0x00035] in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Tests/PlayMode/UiBindingTests.cs:41 \n  at UnityEngine.TestTools.EnumeratorHelper+<ProgressOnEnumerator>d__5.MoveNext () [0x00017] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Attributes/EnumeratorHelper.cs:43 \n  at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+<ExecuteEnumerable>d__16[T].MoveNext () [0x00132] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Commands/BeforeAfterTestCommandBase.cs:156 "
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EveryRequiredButtonUsesPointerOrActionNavigation(\"MainMenu\",False)",
+          "Status": "Failed",
+          "Duration": 0.019832,
+          "Message": "SetUp : System.NullReferenceException : Object reference not set to an instance of an object",
+          "StackTrace": "--SetUp\n  at NeonTunnelRunner.UiBindingTests+<Ready>d__14.MoveNext () [0x00035] in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Tests/PlayMode/UiBindingTests.cs:41 \n  at UnityEngine.TestTools.EnumeratorHelper+<ProgressOnEnumerator>d__5.MoveNext () [0x00017] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Attributes/EnumeratorHelper.cs:43 \n  at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+<ExecuteEnumerable>d__16[T].MoveNext () [0x00132] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Commands/BeforeAfterTestCommandBase.cs:156 "
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EveryRequiredButtonUsesPointerOrActionNavigation(\"OverRestart\",False)",
+          "Status": "Failed",
+          "Duration": 0.0106269,
+          "Message": "SetUp : System.NullReferenceException : Object reference not set to an instance of an object",
+          "StackTrace": "--SetUp\n  at NeonTunnelRunner.UiBindingTests+<Ready>d__14.MoveNext () [0x00035] in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Tests/PlayMode/UiBindingTests.cs:41 \n  at UnityEngine.TestTools.EnumeratorHelper+<ProgressOnEnumerator>d__5.MoveNext () [0x00017] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Attributes/EnumeratorHelper.cs:43 \n  at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+<ExecuteEnumerable>d__16[T].MoveNext () [0x00132] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Commands/BeforeAfterTestCommandBase.cs:156 "
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EveryRequiredButtonUsesPointerOrActionNavigation(\"Start\",True)",
+          "Status": "Failed",
+          "Duration": 0.0107116,
+          "Message": "SetUp : System.NullReferenceException : Object reference not set to an instance of an object",
+          "StackTrace": "--SetUp\n  at NeonTunnelRunner.UiBindingTests+<Ready>d__14.MoveNext () [0x00035] in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Tests/PlayMode/UiBindingTests.cs:41 \n  at UnityEngine.TestTools.EnumeratorHelper+<ProgressOnEnumerator>d__5.MoveNext () [0x00017] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Attributes/EnumeratorHelper.cs:43 \n  at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+<ExecuteEnumerable>d__16[T].MoveNext () [0x00132] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Commands/BeforeAfterTestCommandBase.cs:156 "
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EveryRequiredButtonUsesPointerOrActionNavigation(\"Quit\",True)",
+          "Status": "Failed",
+          "Duration": 0.0157997,
+          "Message": "SetUp : System.NullReferenceException : Object reference not set to an instance of an object",
+          "StackTrace": "--SetUp\n  at NeonTunnelRunner.UiBindingTests+<Ready>d__14.MoveNext () [0x00035] in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Tests/PlayMode/UiBindingTests.cs:41 \n  at UnityEngine.TestTools.EnumeratorHelper+<ProgressOnEnumerator>d__5.MoveNext () [0x00017] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Attributes/EnumeratorHelper.cs:43 \n  at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+<ExecuteEnumerable>d__16[T].MoveNext () [0x00132] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Commands/BeforeAfterTestCommandBase.cs:156 "
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EveryRequiredButtonUsesPointerOrActionNavigation(\"Resume\",True)",
+          "Status": "Failed",
+          "Duration": 0.0220314,
+          "Message": "SetUp : System.NullReferenceException : Object reference not set to an instance of an object",
+          "StackTrace": "--SetUp\n  at NeonTunnelRunner.UiBindingTests+<Ready>d__14.MoveNext () [0x00035] in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Tests/PlayMode/UiBindingTests.cs:41 \n  at UnityEngine.TestTools.EnumeratorHelper+<ProgressOnEnumerator>d__5.MoveNext () [0x00017] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Attributes/EnumeratorHelper.cs:43 \n  at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+<ExecuteEnumerable>d__16[T].MoveNext () [0x00132] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Commands/BeforeAfterTestCommandBase.cs:156 "
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EveryRequiredButtonUsesPointerOrActionNavigation(\"PauseRestart\",True)",
+          "Status": "Failed",
+          "Duration": 0.0133348,
+          "Message": "SetUp : System.NullReferenceException : Object reference not set to an instance of an object",
+          "StackTrace": "--SetUp\n  at NeonTunnelRunner.UiBindingTests+<Ready>d__14.MoveNext () [0x00035] in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Tests/PlayMode/UiBindingTests.cs:41 \n  at UnityEngine.TestTools.EnumeratorHelper+<ProgressOnEnumerator>d__5.MoveNext () [0x00017] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Attributes/EnumeratorHelper.cs:43 \n  at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+<ExecuteEnumerable>d__16[T].MoveNext () [0x00132] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Commands/BeforeAfterTestCommandBase.cs:156 "
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EveryRequiredButtonUsesPointerOrActionNavigation(\"MainMenu\",True)",
+          "Status": "Failed",
+          "Duration": 0.0167469,
+          "Message": "SetUp : System.NullReferenceException : Object reference not set to an instance of an object",
+          "StackTrace": "--SetUp\n  at NeonTunnelRunner.UiBindingTests+<Ready>d__14.MoveNext () [0x00035] in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Tests/PlayMode/UiBindingTests.cs:41 \n  at UnityEngine.TestTools.EnumeratorHelper+<ProgressOnEnumerator>d__5.MoveNext () [0x00017] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Attributes/EnumeratorHelper.cs:43 \n  at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+<ExecuteEnumerable>d__16[T].MoveNext () [0x00132] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Commands/BeforeAfterTestCommandBase.cs:156 "
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.EveryRequiredButtonUsesPointerOrActionNavigation(\"OverRestart\",True)",
+          "Status": "Failed",
+          "Duration": 0.0197311,
+          "Message": "SetUp : System.NullReferenceException : Object reference not set to an instance of an object",
+          "StackTrace": "--SetUp\n  at NeonTunnelRunner.UiBindingTests+<Ready>d__14.MoveNext () [0x00035] in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Tests/PlayMode/UiBindingTests.cs:41 \n  at UnityEngine.TestTools.EnumeratorHelper+<ProgressOnEnumerator>d__5.MoveNext () [0x00017] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Attributes/EnumeratorHelper.cs:43 \n  at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+<ExecuteEnumerable>d__16[T].MoveNext () [0x00132] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Commands/BeforeAfterTestCommandBase.cs:156 "
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.FiftyUiRestartsIncludingRebaseKeepSeedSupplyPoolsAndBest",
+          "Status": "Failed",
+          "Duration": 0.0193941,
+          "Message": "SetUp : System.NullReferenceException : Object reference not set to an instance of an object",
+          "StackTrace": "--SetUp\n  at NeonTunnelRunner.UiBindingTests+<Ready>d__14.MoveNext () [0x00035] in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Tests/PlayMode/UiBindingTests.cs:41 \n  at UnityEngine.TestTools.EnumeratorHelper+<ProgressOnEnumerator>d__5.MoveNext () [0x00017] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Attributes/EnumeratorHelper.cs:43 \n  at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+<ExecuteEnumerable>d__16[T].MoveNext () [0x00132] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Commands/BeforeAfterTestCommandBase.cs:156 "
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.FirstFrameAndNewBestProjectActualSpeedAndExactLargeIntegers",
+          "Status": "Failed",
+          "Duration": 0.0120944,
+          "Message": "SetUp : System.NullReferenceException : Object reference not set to an instance of an object",
+          "StackTrace": "--SetUp\n  at NeonTunnelRunner.UiBindingTests+<Ready>d__14.MoveNext () [0x00035] in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Tests/PlayMode/UiBindingTests.cs:41 \n  at UnityEngine.TestTools.EnumeratorHelper+<ProgressOnEnumerator>d__5.MoveNext () [0x00017] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Attributes/EnumeratorHelper.cs:43 \n  at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+<ExecuteEnumerable>d__16[T].MoveNext () [0x00132] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Commands/BeforeAfterTestCommandBase.cs:156 "
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.InvalidCapacityReportsConfigurationWithoutDividing",
+          "Status": "Failed",
+          "Duration": 0.0272177,
+          "Message": "SetUp : System.NullReferenceException : Object reference not set to an instance of an object",
+          "StackTrace": "--SetUp\n  at NeonTunnelRunner.UiBindingTests+<Ready>d__14.MoveNext () [0x00035] in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Tests/PlayMode/UiBindingTests.cs:41 \n  at UnityEngine.TestTools.EnumeratorHelper+<ProgressOnEnumerator>d__5.MoveNext () [0x00017] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Attributes/EnumeratorHelper.cs:43 \n  at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+<ExecuteEnumerable>d__16[T].MoveNext () [0x00132] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Commands/BeforeAfterTestCommandBase.cs:156 "
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.PointerKeyboardBackgroundClickAndLostSelectionRecoverWithoutFightingFocus",
+          "Status": "Failed",
+          "Duration": 0.0170427,
+          "Message": "SetUp : System.NullReferenceException : Object reference not set to an instance of an object",
+          "StackTrace": "--SetUp\n  at NeonTunnelRunner.UiBindingTests+<Ready>d__14.MoveNext () [0x00035] in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Tests/PlayMode/UiBindingTests.cs:41 \n  at UnityEngine.TestTools.EnumeratorHelper+<ProgressOnEnumerator>d__5.MoveNext () [0x00017] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Attributes/EnumeratorHelper.cs:43 \n  at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+<ExecuteEnumerable>d__16[T].MoveNext () [0x00132] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Commands/BeforeAfterTestCommandBase.cs:156 "
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.RepeatedPresenterEnableDisableOwnsExactlyOneCallbackAndHiddenPanelsCannotRaycast",
+          "Status": "Failed",
+          "Duration": 0.0083618,
+          "Message": "SetUp : System.NullReferenceException : Object reference not set to an instance of an object",
+          "StackTrace": "--SetUp\n  at NeonTunnelRunner.UiBindingTests+<Ready>d__14.MoveNext () [0x00035] in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Tests/PlayMode/UiBindingTests.cs:41 \n  at UnityEngine.TestTools.EnumeratorHelper+<ProgressOnEnumerator>d__5.MoveNext () [0x00017] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Attributes/EnumeratorHelper.cs:43 \n  at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+<ExecuteEnumerable>d__16[T].MoveNext () [0x00132] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Commands/BeforeAfterTestCommandBase.cs:156 "
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.TerminalUsesFinalizedResultAndLateEnableThenResetCannotShowStaleData(Lives)",
+          "Status": "Failed",
+          "Duration": 0.0105456,
+          "Message": "SetUp : System.NullReferenceException : Object reference not set to an instance of an object",
+          "StackTrace": "--SetUp\n  at NeonTunnelRunner.UiBindingTests+<Ready>d__14.MoveNext () [0x00035] in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Tests/PlayMode/UiBindingTests.cs:41 \n  at UnityEngine.TestTools.EnumeratorHelper+<ProgressOnEnumerator>d__5.MoveNext () [0x00017] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Attributes/EnumeratorHelper.cs:43 \n  at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+<ExecuteEnumerable>d__16[T].MoveNext () [0x00132] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Commands/BeforeAfterTestCommandBase.cs:156 "
+        },
+        {
+          "FullName": "NeonTunnelRunner.UiBindingTests.TerminalUsesFinalizedResultAndLateEnableThenResetCannotShowStaleData(Fuel)",
+          "Status": "Failed",
+          "Duration": 0.0115488,
+          "Message": "SetUp : System.NullReferenceException : Object reference not set to an instance of an object",
+          "StackTrace": "--SetUp\n  at NeonTunnelRunner.UiBindingTests+<Ready>d__14.MoveNext () [0x00035] in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Assets/NeonTunnelRunner/Tests/PlayMode/UiBindingTests.cs:41 \n  at UnityEngine.TestTools.EnumeratorHelper+<ProgressOnEnumerator>d__5.MoveNext () [0x00017] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Attributes/EnumeratorHelper.cs:43 \n  at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+<ExecuteEnumerable>d__16[T].MoveNext () [0x00132] in ./Library/PackageCache/com.unity.test-framework@33f8a1e9aefd/UnityEngine.TestRunner/NUnitExtensions/Commands/BeforeAfterTestCommandBase.cs:156 "
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,64 @@
+[
+  {
+    "utc": "2026-11-02T23:49:52Z",
+    "elapsed": 10.59132662799857,
+    "label": "launched",
+    "pid": 71257,
+    "window": "0x7400008"
+  },
+  {
+    "utc": "2026-11-02T23:49:52Z",
+    "elapsed": 11.139753301999008,
+    "label": "capture",
+    "image": "pointer-lives-main.png",
+    "width": 1280,
+    "height": 720,
+    "pixelsSha256": "b987c61327272e8d10b67e7839f0eeab25b0eedaf817b14fb37e73a16de0fe72"
+  },
+  {
+    "utc": "2026-11-02T23:49:53Z",
+    "elapsed": 11.571202241999345,
+    "label": "click",
+    "x": 640,
+    "y": 371
+  },
+  {
+    "utc": "2026-11-02T23:49:53Z",
+    "elapsed": 11.852224885999021,
+    "label": "key",
+    "key": "Right"
+  },
+  {
+    "utc": "2026-11-02T23:49:53Z",
+    "elapsed": 12.135349251999287,
+    "label": "key",
+    "key": "Right"
+  },
+  {
+    "utc": "2026-11-02T23:50:05Z",
+    "elapsed": 23.314316715999666,
+    "label": "capture",
+    "image": "pointer-lives-run-10.png",
+    "width": 1280,
+    "height": 720,
+    "pixelsSha256": "0548c01358aa928ed52a74dace836058c3597ae3401648b0f7440e701b9c7932"
+  },
+  {
+    "utc": "2026-11-02T23:50:15Z",
+    "elapsed": 33.98183689299913,
+    "label": "capture",
+    "image": "pointer-lives-run-21.png",
+    "width": 1280,
+    "height": 720,
+    "pixelsSha256": "cc073a992203b4ed6c5dbcfbd5a87bfd5ae98f3e72f98303a054850e47813e4c"
+  },
+  {
+    "utc": "2026-11-02T23:50:26Z",
+    "elapsed": 44.63599168399924,
+    "label": "capture",
+    "image": "pointer-lives-run-31.png",
+    "width": 1280,
+    "height": 720,
+    "pixelsSha256": "d3ff645562f3133e42d0defe00e3d3dc75c7b49e01da127865df16b2440ffc59"
+  }
+]

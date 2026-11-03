@@ -1,0 +1,76 @@
+[
+  {
+    "utc": "2026-11-02T23:42:49Z",
+    "elapsed": 4.775476576000074,
+    "label": "launched",
+    "pid": 68254,
+    "window": "0x7400008"
+  },
+  {
+    "utc": "2026-11-02T23:42:49Z",
+    "elapsed": 5.020859765998466,
+    "label": "capture",
+    "image": "pointer-natural-main.png",
+    "width": 1280,
+    "height": 720,
+    "pixelsSha256": "74ac55c6eedd9b8e17fec19a98cf311cdc0599fa654679d79e832e64e70607e4"
+  },
+  {
+    "utc": "2026-11-02T23:42:50Z",
+    "elapsed": 5.437604019998616,
+    "label": "click",
+    "x": 640,
+    "y": 371
+  },
+  {
+    "utc": "2026-11-02T23:42:52Z",
+    "elapsed": 7.948784477999652,
+    "label": "capture",
+    "image": "pointer-natural-hud.png",
+    "width": 1280,
+    "height": 720,
+    "pixelsSha256": "6232bbdee49e679be540098b42561efe656d4b167254ddcc8194d4f51335d9ab"
+  },
+  {
+    "utc": "2026-11-02T23:42:52Z",
+    "elapsed": 8.230033093999737,
+    "label": "key",
+    "key": "Escape"
+  },
+  {
+    "utc": "2026-11-02T23:42:53Z",
+    "elapsed": 8.920161230998929,
+    "label": "capture",
+    "image": "pointer-natural-paused.png",
+    "width": 1280,
+    "height": 720,
+    "pixelsSha256": "7411dc46d654fe324d2c166bde1257c982f25d71aaa738ee308c6aa5c6f7e2ba"
+  },
+  {
+    "utc": "2026-11-02T23:43:04Z",
+    "elapsed": 19.49781795799936,
+    "label": "capture",
+    "image": "pointer-natural-paused-after-10s.png",
+    "width": 1280,
+    "height": 720,
+    "pixelsSha256": "33bd5c0d2627ab9597ad606e7aa44530981ca4c3361f59119e7c0ac2dc00062f"
+  },
+  {
+    "utc": "2026-11-02T23:43:04Z",
+    "elapsed": 19.501872552998975,
+    "label": "pause-image-comparison",
+    "equal": false
+  },
+  {
+    "utc": "2026-11-02T23:43:04Z",
+    "elapsed": 19.529026457999862,
+    "label": "FAILED",
+    "error": ""
+  },
+  {
+    "utc": "2026-11-02T23:43:04Z",
+    "elapsed": 20.04962422799872,
+    "label": "failure-cleanup-terminated",
+    "exitCode": 0
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "utc": "2026-11-03T00:08:20Z",
+  "normalMenuBuild": true,
+  "extraDefines": [],
+  "projectAssemblies": [
+    "NeonTunnelRunner.Runtime.dll"
+  ],
+  "files": {
+    "Builds/Task14UI/NeonTunnelRunner.x86_64": {
+      "bytes": 4808,
+      "sha256": "de3009bc2c3a8a7c25f347c0c0a098a1c49dbbb6ee6ec100562e61fb50cae261"
+    },
+    "Builds/Task14UI/UnityPlayer.so": {
+      "bytes": 98697864,
+      "sha256": "76ad72abeda8d274883e4a833cd9cd9f279c2668e708ea1a7321554e01536696"
+    },
+    "Builds/Task14UI/NeonTunnelRunner_Data/Managed/NeonTunnelRunner.Runtime.dll": {
+      "bytes": 133632,
+      "sha256": "eb8c5bb39e28596fb62d854510cf24807ca11fefba1c655acd61c5115d5af17c"
+    }
+  }
+}

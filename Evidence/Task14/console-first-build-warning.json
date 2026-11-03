@@ -1,0 +1,51 @@
+{
+  "success": true,
+  "command": "command console",
+  "data": {
+    "command": "console",
+    "parameters": {
+      "tail": "60",
+      "level": "warn"
+    },
+    "result": {
+      "entries": [
+        {
+          "seq": 656,
+          "timestampUtc": "2026-11-02T23:28:31.476778Z",
+          "level": "warn",
+          "logType": "Warning",
+          "message": "Shader warning in 'TextMeshPro/Mobile/Distance Field': #pragma enable_d3d11_debug_symbols has been deprecated, instead please use #pragma enable_debug_symbols at line 84",
+          "stackTrace": "",
+          "seeded": false
+        }
+      ],
+      "cursor": 656,
+      "session": "c2ae7360765c47af8b85b5a8298b1ac0",
+      "returned": 1,
+      "dropped": false,
+      "reset": false,
+      "counts": {
+        "error": 0,
+        "warn": 1,
+        "log": 7
+      },
+      "groundTruth": {
+        "sampledUtc": "2026-11-02T23:29:54.505589Z",
+        "ageMs": 69,
+        "compilationFailed": false,
+        "compiling": false,
+        "consoleErrors": 0,
+        "consoleWarnings": 0,
+        "consoleLogs": 0,
+        "seeded": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,8 @@
+{
+  "Assets/NeonTunnelRunner/Scripts/Core/GameplayLoop.cs": true,
+  "Assets/NeonTunnelRunner/Scripts/Core/RunSession.cs": true,
+  "Assets/NeonTunnelRunner/Scripts/Audio/AudioController.cs": true,
+  "Assets/NeonTunnelRunner/Scripts/Presentation/ChaseCamera.cs": true,
+  "Assets/NeonTunnelRunner/Scripts/Presentation/VfxController.cs": true,
+  "Assets/NeonTunnelRunner/Scripts/World/SpawnDirector.cs": true
+}

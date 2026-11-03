@@ -1,0 +1,44 @@
+{
+  "scope": "Normal current development build; native X11 input and window captures, no game hooks or autostart. Displayed values visually inspected. Authoritative equality is separately covered by snapshot tests.",
+  "buildIdentity": "Evidence/Task14/build-identity.json",
+  "processes": [
+    {
+      "tag": "keyboard-lives-final",
+      "pid": 74872,
+      "launchedUtc": "2026-11-02T23:58:10Z",
+      "quitUtc": "2026-11-02T23:59:08Z",
+      "quitInput": "keyboard",
+      "exitCode": 0,
+      "terminalReason": "Lives",
+      "displayedFinalScore": 2356,
+      "displayedBest": 5705,
+      "displayedFuel": "3%",
+      "displayedLives": 0,
+      "displayedSpeed": "0 km/h",
+      "terminalImage": "Evidence/Task14/Standalone/keyboard-lives-final-terminal.png",
+      "restartImage": "Evidence/Task14/Standalone/keyboard-lives-final-terminal-restart-hud.png",
+      "log": "Evidence/Task14/Standalone/keyboard-lives-final-player.log"
+    },
+    {
+      "tag": "pointer-fuel-final",
+      "pid": 75373,
+      "launchedUtc": "2026-11-02T23:59:18Z",
+      "quitUtc": "2026-11-03T00:00:17Z",
+      "quitInput": "pointer",
+      "exitCode": 0,
+      "terminalReason": "Fuel",
+      "displayedFinalScore": 2494,
+      "displayedBest": 5705,
+      "displayedFuel": "0%",
+      "displayedLives": 3,
+      "displayedSpeed": "0 km/h",
+      "terminalImage": "Evidence/Task14/Standalone/pointer-fuel-final-terminal.png",
+      "restartImage": "Evidence/Task14/Standalone/pointer-fuel-final-terminal-restart-hud.png",
+      "log": "Evidence/Task14/Standalone/pointer-fuel-final-player.log"
+    }
+  ],
+  "bestPersisted": 5705,
+  "profiler": "NOT RUN",
+  "soak30minutes": "NOT RUN",
+  "passed": true
+}

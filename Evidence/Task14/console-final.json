@@ -1,0 +1,50 @@
+{
+  "success": true,
+  "command": "command console",
+  "data": {
+    "command": "console",
+    "parameters": {
+      "tail": "60"
+    },
+    "result": {
+      "entries": [
+        {
+          "seq": 990,
+          "timestampUtc": "2026-11-03T00:02:44.600291Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[ProjectSetupValidator] PASS: foundation, URP/HDR, Linux profile, core lifecycle, player, action wiring and pool catalog.",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nNeonTunnelRunner.ProjectSetupValidator:ValidateProject () (at Assets/NeonTunnelRunner/Scripts/Editor/ProjectSetupValidator.cs:59)\nNeonTunnelRunner.Task14Audit:Inspect () (at Docs/Setup/Task14Audit.cs:15)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nUnity.Pipeline.Editor.Commands.Scripts.RunScriptCommand/<RunEphemeral>d__2:MoveNext () (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Editor/Commands/Scripts/RunScriptCommand.cs:217)\nSystem.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Unity.Pipeline.Editor.Commands.Scripts.RunScriptResponse>:Start<Unity.Pipeline.Editor.Commands.Scripts.RunScriptCommand/<RunEphemeral>d__2> (Unity.Pipeline.Editor.Commands.Scripts.RunScriptCommand/<RunEphemeral>d__2&)\nUnity.Pipeline.Editor.Commands.Scripts.RunScriptCommand:RunEphemeral (string,string,Newtonsoft.Json.Linq.JArray,string[],string[],bool,bool,System.TimeSpan,System.Diagnostics.Stopwatch)\nUnity.Pipeline.Editor.Commands.Scripts.RunScriptCommand/<Run>d__1:MoveNext () (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Editor/Commands/Scripts/RunScriptCommand.cs:75)\nSystem.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Unity.Pipeline.Editor.Commands.Scripts.RunScriptResponse>:Start<Unity.Pipeline.Editor.Commands.Scripts.RunScriptCommand/<Run>d__1> (Unity.Pipeline.Editor.Commands.Scripts.RunScriptCommand/<Run>d__1&)\nUnity.Pipeline.Editor.Commands.Scripts.RunScriptCommand:Run (string,string,Newtonsoft.Json.Linq.JArray,string,string[],string[],bool,double,bool)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nUnity.Pipeline.Commands.DefaultCommandQueue:InvokeDirect (Unity.Pipeline.Commands.CommandContext,Unity.Pipeline.Commands.CommandInfo,object[]) (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:487)\nUnity.Pipeline.Commands.DefaultCommandQueue/<>c__DisplayClass19_0:<Invoke>b__1 () (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:409)\nUnity.Pipeline.Threading.Dispatcher/WorkItem`1<object>:ExecuteCore () (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Runtime/Common/Dispatcher.cs:342)\nUnity.Pipeline.Threading.Dispatcher/WorkItem:Execute () (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Runtime/Common/Dispatcher.cs:285)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue (int) (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Runtime/Common/Dispatcher.cs:251)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue () (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Runtime/Common/Dispatcher.cs:266)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        }
+      ],
+      "cursor": 990,
+      "session": "c2ae7360765c47af8b85b5a8298b1ac0",
+      "returned": 1,
+      "dropped": false,
+      "reset": false,
+      "counts": {
+        "error": 0,
+        "warn": 0,
+        "log": 1
+      },
+      "groundTruth": {
+        "sampledUtc": "2026-11-03T00:02:50.167637Z",
+        "ageMs": 120,
+        "compilationFailed": false,
+        "compiling": false,
+        "consoleErrors": 0,
+        "consoleWarnings": 0,
+        "consoleLogs": 1,
+        "seeded": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

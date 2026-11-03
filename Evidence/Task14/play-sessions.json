@@ -1,0 +1,252 @@
+{
+  "original": {
+    "playing": false,
+    "enabled": true,
+    "options": 3
+  },
+  "sessions": [
+    {
+      "passed": true,
+      "width": 1280,
+      "height": 720,
+      "pausedSeconds": 10.114176705999967,
+      "rebaseOffset": 960,
+      "restartCycles": 50,
+      "created": 352,
+      "destroyed": 0,
+      "misses": 0,
+      "audioSources": 10,
+      "listeners": 1,
+      "musicStarts": 1,
+      "engineStarts": 55,
+      "checks": [
+        {
+          "reason": "Fuel",
+          "Score": 2147483647,
+          "BestScore": 2147483647,
+          "Fuel": 0,
+          "Lives": 1,
+          "ActualSpeed": 0
+        },
+        {
+          "reason": "Lives",
+          "Score": 0,
+          "BestScore": 2147483647,
+          "Fuel": 12,
+          "Lives": 0,
+          "ActualSpeed": 0
+        },
+        {
+          "width": 1280,
+          "horizonX": 0.5,
+          "horizonY": 0.638112664,
+          "depth": 126.130829
+        },
+        {
+          "width": 960,
+          "horizonX": 0.5,
+          "horizonY": 0.638112664,
+          "depth": 126.130829
+        },
+        {
+          "width": 1920,
+          "horizonX": 0.5,
+          "horizonY": 0.638112664,
+          "depth": 126.130829
+        },
+        {
+          "width": 2560,
+          "horizonX": 0.5,
+          "horizonY": 0.638112664,
+          "depth": 126.130829
+        }
+      ]
+    },
+    {
+      "passed": true,
+      "width": 960,
+      "height": 720,
+      "pausedSeconds": 10.102671633,
+      "rebaseOffset": 960,
+      "restartCycles": 50,
+      "created": 352,
+      "destroyed": 0,
+      "misses": 0,
+      "audioSources": 10,
+      "listeners": 1,
+      "musicStarts": 1,
+      "engineStarts": 55,
+      "checks": [
+        {
+          "reason": "Fuel",
+          "Score": 2147483647,
+          "BestScore": 2147483647,
+          "Fuel": 0,
+          "Lives": 1,
+          "ActualSpeed": 0
+        },
+        {
+          "reason": "Lives",
+          "Score": 0,
+          "BestScore": 2147483647,
+          "Fuel": 12,
+          "Lives": 0,
+          "ActualSpeed": 0
+        },
+        {
+          "width": 1280,
+          "horizonX": 0.5,
+          "horizonY": 0.638112664,
+          "depth": 126.130829
+        },
+        {
+          "width": 960,
+          "horizonX": 0.5,
+          "horizonY": 0.638112664,
+          "depth": 126.130829
+        },
+        {
+          "width": 1920,
+          "horizonX": 0.5,
+          "horizonY": 0.638112664,
+          "depth": 126.130829
+        },
+        {
+          "width": 2560,
+          "horizonX": 0.5,
+          "horizonY": 0.638112664,
+          "depth": 126.130829
+        }
+      ]
+    },
+    {
+      "passed": true,
+      "width": 1920,
+      "height": 1080,
+      "pausedSeconds": 10.132177171999956,
+      "rebaseOffset": 960,
+      "restartCycles": 50,
+      "created": 352,
+      "destroyed": 0,
+      "misses": 0,
+      "audioSources": 10,
+      "listeners": 1,
+      "musicStarts": 1,
+      "engineStarts": 55,
+      "checks": [
+        {
+          "reason": "Fuel",
+          "Score": 2147483647,
+          "BestScore": 2147483647,
+          "Fuel": 0,
+          "Lives": 1,
+          "ActualSpeed": 0
+        },
+        {
+          "reason": "Lives",
+          "Score": 0,
+          "BestScore": 2147483647,
+          "Fuel": 12,
+          "Lives": 0,
+          "ActualSpeed": 0
+        },
+        {
+          "width": 1280,
+          "horizonX": 0.5,
+          "horizonY": 0.638112664,
+          "depth": 126.130829
+        },
+        {
+          "width": 960,
+          "horizonX": 0.5,
+          "horizonY": 0.638112664,
+          "depth": 126.130829
+        },
+        {
+          "width": 1920,
+          "horizonX": 0.5,
+          "horizonY": 0.638112664,
+          "depth": 126.130829
+        },
+        {
+          "width": 2560,
+          "horizonX": 0.5,
+          "horizonY": 0.638112664,
+          "depth": 126.130829
+        }
+      ]
+    },
+    {
+      "passed": true,
+      "width": 2520,
+      "height": 1080,
+      "pausedSeconds": 10.146754554999916,
+      "rebaseOffset": 960,
+      "restartCycles": 50,
+      "created": 352,
+      "destroyed": 0,
+      "misses": 0,
+      "audioSources": 10,
+      "listeners": 1,
+      "musicStarts": 1,
+      "engineStarts": 55,
+      "checks": [
+        {
+          "reason": "Fuel",
+          "Score": 2147483647,
+          "BestScore": 2147483647,
+          "Fuel": 0,
+          "Lives": 1,
+          "ActualSpeed": 0
+        },
+        {
+          "reason": "Lives",
+          "Score": 0,
+          "BestScore": 2147483647,
+          "Fuel": 12,
+          "Lives": 0,
+          "ActualSpeed": 0
+        },
+        {
+          "width": 1280,
+          "horizonX": 0.5,
+          "horizonY": 0.638112664,
+          "depth": 126.130829
+        },
+        {
+          "width": 960,
+          "horizonX": 0.5,
+          "horizonY": 0.638112664,
+          "depth": 126.130829
+        },
+        {
+          "width": 1920,
+          "horizonX": 0.5,
+          "horizonY": 0.638112664,
+          "depth": 126.130829
+        },
+        {
+          "width": 2560,
+          "horizonX": 0.5,
+          "horizonY": 0.638112664,
+          "depth": 126.130829
+        }
+      ]
+    }
+  ],
+  "passed": true,
+  "configBefore": {
+    "Pools.asset": "17e6935b8835102ead4b4d712e365ad8d143555c773fef2a43561ad9d4252536",
+    "Gameplay.asset": "8cb671477b31631487d25788305076f2835a428ceba648f87774d08ca99494aa",
+    "Audio.asset": "ab3f2527fe5448abbe25c916cd46a22fb25679a4f6d8ddf67dbfd4a5f3f679c3",
+    "Presentation.asset": "02a572cd8f26523d3da24b3a127e7098b70cea6b303b4ebb5c65e7b82e97ae13",
+    "World.asset": "60809325a6542c99f82835360c0035d6a19bd15b8fdca38e69d4f36a3a2cf2cf"
+  },
+  "configAfter": {
+    "Pools.asset": "17e6935b8835102ead4b4d712e365ad8d143555c773fef2a43561ad9d4252536",
+    "Gameplay.asset": "8cb671477b31631487d25788305076f2835a428ceba648f87774d08ca99494aa",
+    "Audio.asset": "ab3f2527fe5448abbe25c916cd46a22fb25679a4f6d8ddf67dbfd4a5f3f679c3",
+    "Presentation.asset": "02a572cd8f26523d3da24b3a127e7098b70cea6b303b4ebb5c65e7b82e97ae13",
+    "World.asset": "60809325a6542c99f82835360c0035d6a19bd15b8fdca38e69d4f36a3a2cf2cf"
+  }
+}

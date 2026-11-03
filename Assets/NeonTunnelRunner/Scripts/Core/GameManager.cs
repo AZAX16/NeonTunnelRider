@@ -10,6 +10,8 @@ namespace NeonTunnelRunner
         [SerializeField] private GameplayConfig gameplayConfig;
         [SerializeField] private GameplayLoop gameplayLoop;
         [SerializeField] private PoolService poolService;
+        [SerializeField] private HudPresenter hud;
+        [SerializeField] private MenuPresenter menus;
         [SerializeField] private int runSeed = 12345;
         [SerializeField, Min(0)] private int initialBestScore;
         [SerializeField] private GameState debugState;
@@ -42,6 +44,7 @@ namespace NeonTunnelRunner
         public GameState State { get; private set; } = GameState.Menu;
         public GameOverReason EndReason { get; private set; }
         public RunSession Session { get; private set; }
+        public RunSnapshot? FinalRunSnapshot { get; private set; }
         public GameplayConfig Configuration => gameplayConfig;
         public GameplayLoop Loop => gameplayLoop;
         public PoolService Pools => poolService;
@@ -94,6 +97,7 @@ namespace NeonTunnelRunner
             Session?.DetachObservers();
             State = GameState.Menu;
             EndReason = GameOverReason.None;
+            FinalRunSnapshot = null;
             debugEndReason = EndReason;
             debugState = State;
 #if UNITY_EDITOR
@@ -107,6 +111,9 @@ namespace NeonTunnelRunner
             ownsInstance = initialized = true;
             transitioning = quitRequested = false;
             Time.timeScale = 1f;
+            // Explicit composition after readiness; presenters never depend on Awake order.
+            if (hud) hud.Initialize(this, Session);
+            if (menus) menus.Initialize(this, Session);
             return true;
         }
 
@@ -146,6 +153,7 @@ namespace NeonTunnelRunner
                 debugEndReason = reason;
                 gameplayLoop.StopRun();
                 RunSnapshot result = CommitState(GameState.GameOver);
+                FinalRunSnapshot = result;
                 FlushBest();
                 RunEnded?.Invoke(result, reason);
                 return true;
@@ -202,6 +210,7 @@ namespace NeonTunnelRunner
                 gameplayLoop.Survival.RefreshDebug();
                 gameplayLoop.Progression.RefreshDebug();
                 EndReason = GameOverReason.None;
+                FinalRunSnapshot = null;
                 debugEndReason = EndReason;
                 quitRequested = false;
                 CommitState(GameState.Playing);
@@ -260,6 +269,8 @@ namespace NeonTunnelRunner
         {
             if (!ownsInstance || Instance != this) return;
             FlushBest();
+            if (hud) hud.Shutdown();
+            if (menus) menus.Shutdown();
             gameplayLoop?.Shutdown();
             if (poolService) poolService.Shutdown();
             Session?.DetachObservers();
@@ -271,15 +282,5 @@ namespace NeonTunnelRunner
             Time.timeScale = 1f;
         }
 
-#if UNITY_EDITOR
-        [ContextMenu("Lifecycle/Start Run")] private void ContextStart() { if (Application.isPlaying) StartRun(); }
-        [ContextMenu("Lifecycle/Pause")] private void ContextPause() { if (Application.isPlaying) Pause(); }
-        [ContextMenu("Lifecycle/Resume")] private void ContextResume() { if (Application.isPlaying) Resume(); }
-        [ContextMenu("Lifecycle/Restart")] private void ContextRestart() { if (Application.isPlaying) Restart(); }
-        [ContextMenu("Lifecycle/Return To Menu")] private void ContextReturnToMenu() { if (Application.isPlaying) ReturnToMenu(); }
-        [ContextMenu("Lifecycle/End Run (Lives)")] private void ContextEndLives() { if (Application.isPlaying) EndRun(GameOverReason.Lives); }
-        [ContextMenu("Lifecycle/End Run (Fuel)")] private void ContextEndFuel() { if (Application.isPlaying) EndRun(GameOverReason.Fuel); }
-        [ContextMenu("Lifecycle/Quit")] private void ContextQuit() { if (Application.isPlaying) Quit(); }
-#endif
     }
 }

@@ -1,0 +1,30 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "file": "Docs/Setup/Task14Setup.cs",
+      "entry": "NeonTunnelRunner.Task14Setup.Complete",
+      "timeout": "60"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 277,
+      "executeMs": 482,
+      "assemblyName": "PipelineRunScript_Task14Setup_ad92dd8618d34cabb6e307a817c975b7",
+      "success": true,
+      "result": {
+        "scene": "Assets/NeonTunnelRunner/Scenes/Game.unity",
+        "saved": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

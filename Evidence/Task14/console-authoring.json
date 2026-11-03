@@ -1,0 +1,68 @@
+{
+  "success": true,
+  "command": "command console",
+  "data": {
+    "command": "console",
+    "parameters": {
+      "tail": "40"
+    },
+    "result": {
+      "entries": [
+        {
+          "seq": 1031,
+          "timestampUtc": "2026-11-02T21:56:38.505634Z",
+          "level": "warn",
+          "logType": "Warning",
+          "message": "Assets/NeonTunnelRunner/Tests/PlayMode/VfxPoolingTests.cs(163,17): warning CS0618: 'ParticleSystemRenderer.BakeTrailsMesh(Mesh, Camera, bool)' is obsolete: 'BakeTrailsMesh with useTransform is deprecated. Use BakeTrailsMesh with ParticleSystemBakeMeshOptions instead.'",
+          "stackTrace": "",
+          "seeded": false
+        },
+        {
+          "seq": 1032,
+          "timestampUtc": "2026-11-02T21:56:38.505766Z",
+          "level": "warn",
+          "logType": "Warning",
+          "message": "Assets/NeonTunnelRunner/Tests/PlayMode/VfxPoolingTests.cs(164,71): warning CS0618: 'ParticleSystemRenderer.BakeTrailsMesh(Mesh, Camera, bool)' is obsolete: 'BakeTrailsMesh with useTransform is deprecated. Use BakeTrailsMesh with ParticleSystemBakeMeshOptions instead.'",
+          "stackTrace": "",
+          "seeded": false
+        },
+        {
+          "seq": 1033,
+          "timestampUtc": "2026-11-02T21:56:40.536711Z",
+          "level": "warn",
+          "logType": "Warning",
+          "message": "Serialized file \"Assets/TextMesh Pro/Fonts/LiberationSans.ttf.meta\" contains a TrueTypeFontImporter object at version 2, below the supported minimum (4). Open and re-save the file to upgrade.",
+          "stackTrace": "",
+          "seeded": false
+        }
+      ],
+      "cursor": 1033,
+      "session": "829f86c1098d4c6caf2f8b0cc0910e16",
+      "returned": 3,
+      "dropped": false,
+      "reset": false,
+      "counts": {
+        "error": 0,
+        "warn": 3,
+        "log": 0
+      },
+      "groundTruth": {
+        "sampledUtc": "2026-11-02T21:57:56.92334Z",
+        "ageMs": 262,
+        "compilationFailed": false,
+        "compiling": false,
+        "consoleErrors": 0,
+        "consoleWarnings": 3,
+        "consoleLogs": 0,
+        "seeded": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,83 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "file": "Docs/Setup/Task14SceneSmoke.cs",
+      "entry": "NeonTunnelRunner.Task14SceneSmoke.Run",
+      "timeout": "180"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 401,
+      "executeMs": 40282,
+      "assemblyName": "PipelineRunScript_Task14SceneSmoke_9e61fe3617fa4683b66fa6e21b29e81d",
+      "success": true,
+      "result": {
+        "passed": true,
+        "width": 2520,
+        "height": 1080,
+        "pausedSeconds": 10.146754554999916,
+        "rebaseOffset": 960,
+        "restartCycles": 50,
+        "created": 352,
+        "destroyed": 0,
+        "misses": 0,
+        "audioSources": 10,
+        "listeners": 1,
+        "musicStarts": 1,
+        "engineStarts": 55,
+        "checks": [
+          {
+            "reason": "Fuel",
+            "Score": 2147483647,
+            "BestScore": 2147483647,
+            "Fuel": 0,
+            "Lives": 1,
+            "ActualSpeed": 0
+          },
+          {
+            "reason": "Lives",
+            "Score": 0,
+            "BestScore": 2147483647,
+            "Fuel": 12,
+            "Lives": 0,
+            "ActualSpeed": 0
+          },
+          {
+            "width": 1280,
+            "horizonX": 0.5,
+            "horizonY": 0.638112664,
+            "depth": 126.130829
+          },
+          {
+            "width": 960,
+            "horizonX": 0.5,
+            "horizonY": 0.638112664,
+            "depth": 126.130829
+          },
+          {
+            "width": 1920,
+            "horizonX": 0.5,
+            "horizonY": 0.638112664,
+            "depth": 126.130829
+          },
+          {
+            "width": 2560,
+            "horizonX": 0.5,
+            "horizonY": 0.638112664,
+            "depth": 126.130829
+          }
+        ]
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

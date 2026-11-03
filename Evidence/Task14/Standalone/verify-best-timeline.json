@@ -1,0 +1,76 @@
+[
+  {
+    "utc": "2026-11-02T23:49:15Z",
+    "elapsed": 10.65224800299984,
+    "label": "launched",
+    "pid": 70877,
+    "window": "0x7400008"
+  },
+  {
+    "utc": "2026-11-02T23:49:16Z",
+    "elapsed": 11.20258511999964,
+    "label": "capture",
+    "image": "verify-best-main.png",
+    "width": 1280,
+    "height": 720,
+    "pixelsSha256": "b88a21319a0956f2aad483eecdbbaaf0b1613b60ee51f38e5410e25048b21987"
+  },
+  {
+    "utc": "2026-11-02T23:49:16Z",
+    "elapsed": 11.481705448000866,
+    "label": "key",
+    "key": "Return"
+  },
+  {
+    "utc": "2026-11-02T23:49:17Z",
+    "elapsed": 12.621955844000695,
+    "label": "capture",
+    "image": "verify-best-after-lower-run-best.png",
+    "width": 1280,
+    "height": 720,
+    "pixelsSha256": "29787a4a19159090a6dbdb4f2c5b78d4073a945ab7b5a5a69a13c9b5fa907c8d"
+  },
+  {
+    "utc": "2026-11-02T23:49:17Z",
+    "elapsed": 12.902904287000638,
+    "label": "key",
+    "key": "Escape"
+  },
+  {
+    "utc": "2026-11-02T23:49:18Z",
+    "elapsed": 13.1845594360002,
+    "label": "key",
+    "key": "Down"
+  },
+  {
+    "utc": "2026-11-02T23:49:18Z",
+    "elapsed": 13.464910523000071,
+    "label": "key",
+    "key": "Down"
+  },
+  {
+    "utc": "2026-11-02T23:49:18Z",
+    "elapsed": 13.742550684999514,
+    "label": "key",
+    "key": "Return"
+  },
+  {
+    "utc": "2026-11-02T23:49:18Z",
+    "elapsed": 14.021458627001266,
+    "label": "key",
+    "key": "Down"
+  },
+  {
+    "utc": "2026-11-02T23:49:19Z",
+    "elapsed": 14.302140720001262,
+    "label": "key",
+    "key": "Return"
+  },
+  {
+    "utc": "2026-11-02T23:49:19Z",
+    "elapsed": 14.417309409000154,
+    "label": "quit-process-exit",
+    "pid": 70877,
+    "exitCode": 0
+  }
+]

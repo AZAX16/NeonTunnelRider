@@ -1,0 +1,322 @@
+[
+  {
+    "utc": "2026-11-02T23:51:16Z",
+    "elapsed": 10.639639864000856,
+    "label": "launched",
+    "pid": 71870,
+    "window": "0x7400008"
+  },
+  {
+    "utc": "2026-11-02T23:51:17Z",
+    "elapsed": 11.194202964999931,
+    "label": "capture",
+    "image": "keyboard-fuel-final-main.png",
+    "width": 1280,
+    "height": 720,
+    "pixelsSha256": "a35d5d4da61833efeb26c44f3b5af5a64f10b7964bb3feba590d9afb32ec15fd"
+  },
+  {
+    "utc": "2026-11-02T23:51:17Z",
+    "elapsed": 11.474696695999228,
+    "label": "key",
+    "key": "Return"
+  },
+  {
+    "utc": "2026-11-02T23:51:18Z",
+    "elapsed": 12.645367373999761,
+    "label": "capture",
+    "image": "keyboard-fuel-final-relaunch-best-hud.png",
+    "width": 1280,
+    "height": 720,
+    "pixelsSha256": "d44c66e6a5f928002710d9bd405787ff31669fa390ba728099b12085af87c2f8"
+  },
+  {
+    "utc": "2026-11-02T23:51:18Z",
+    "elapsed": 12.64980781399936,
+    "label": "native-keyboard-route",
+    "seconds": 51,
+    "avoidFuel": true,
+    "seed": 12345
+  },
+  {
+    "utc": "2026-11-02T23:51:21Z",
+    "elapsed": 15.799719781000022,
+    "label": "key",
+    "key": "Right"
+  },
+  {
+    "utc": "2026-11-02T23:51:23Z",
+    "elapsed": 17.38268703200083,
+    "label": "key",
+    "key": "Left"
+  },
+  {
+    "utc": "2026-11-02T23:51:29Z",
+    "elapsed": 23.51711497100041,
+    "label": "key",
+    "key": "Right"
+  },
+  {
+    "utc": "2026-11-02T23:51:31Z",
+    "elapsed": 25.03512596099972,
+    "label": "key",
+    "key": "Left"
+  },
+  {
+    "utc": "2026-11-02T23:51:34Z",
+    "elapsed": 28.422584576999725,
+    "label": "key",
+    "key": "Left"
+  },
+  {
+    "utc": "2026-11-02T23:51:35Z",
+    "elapsed": 29.6980941540005,
+    "label": "key",
+    "key": "Right"
+  },
+  {
+    "utc": "2026-11-02T23:51:37Z",
+    "elapsed": 31.13493924499926,
+    "label": "key",
+    "key": "Left"
+  },
+  {
+    "utc": "2026-11-02T23:51:37Z",
+    "elapsed": 31.735722835999695,
+    "label": "capture",
+    "image": "keyboard-fuel-final-route-20.png",
+    "width": 1280,
+    "height": 720,
+    "pixelsSha256": "e128f00eb87a44dd63716200d89a743cee14df37d66d90b725049980055c50e8"
+  },
+  {
+    "utc": "2026-11-02T23:51:41Z",
+    "elapsed": 35.612870500999634,
+    "label": "key",
+    "key": "Right"
+  },
+  {
+    "utc": "2026-11-02T23:51:41Z",
+    "elapsed": 35.89382837999983,
+    "label": "key",
+    "key": "Right"
+  },
+  {
+    "utc": "2026-11-02T23:51:43Z",
+    "elapsed": 37.01054539799952,
+    "label": "key",
+    "key": "Left"
+  },
+  {
+    "utc": "2026-11-02T23:51:43Z",
+    "elapsed": 37.29550211800051,
+    "label": "key",
+    "key": "Left"
+  },
+  {
+    "utc": "2026-11-02T23:51:48Z",
+    "elapsed": 42.45522165799957,
+    "label": "key",
+    "key": "Right"
+  },
+  {
+    "utc": "2026-11-02T23:51:48Z",
+    "elapsed": 42.73809430199981,
+    "label": "key",
+    "key": "Right"
+  },
+  {
+    "utc": "2026-11-02T23:51:49Z",
+    "elapsed": 43.79157511899939,
+    "label": "key",
+    "key": "Left"
+  },
+  {
+    "utc": "2026-11-02T23:51:50Z",
+    "elapsed": 44.072900986000604,
+    "label": "key",
+    "key": "Left"
+  },
+  {
+    "utc": "2026-11-02T23:51:54Z",
+    "elapsed": 47.9645415089999,
+    "label": "key",
+    "key": "Right"
+  },
+  {
+    "utc": "2026-11-02T23:51:55Z",
+    "elapsed": 49.2656608289999,
+    "label": "key",
+    "key": "Left"
+  },
+  {
+    "utc": "2026-11-02T23:51:57Z",
+    "elapsed": 51.765666650999265,
+    "label": "capture",
+    "image": "keyboard-fuel-final-route-40.png",
+    "width": 1280,
+    "height": 720,
+    "pixelsSha256": "25905dedd24d58c44ff5f70b8c38714915e3e1844879f60784fb41801f7f5c22"
+  },
+  {
+    "utc": "2026-11-02T23:51:59Z",
+    "elapsed": 53.321418470000935,
+    "label": "key",
+    "key": "Right"
+  },
+  {
+    "utc": "2026-11-02T23:51:59Z",
+    "elapsed": 53.6019304349993,
+    "label": "key",
+    "key": "Right"
+  },
+  {
+    "utc": "2026-11-02T23:52:00Z",
+    "elapsed": 54.57333993999964,
+    "label": "key",
+    "key": "Left"
+  },
+  {
+    "utc": "2026-11-02T23:52:00Z",
+    "elapsed": 54.86090872599925,
+    "label": "key",
+    "key": "Left"
+  },
+  {
+    "utc": "2026-11-02T23:52:05Z",
+    "elapsed": 59.525187097000526,
+    "label": "key",
+    "key": "Right"
+  },
+  {
+    "utc": "2026-11-02T23:52:05Z",
+    "elapsed": 59.811901258000944,
+    "label": "key",
+    "key": "Right"
+  },
+  {
+    "utc": "2026-11-02T23:52:06Z",
+    "elapsed": 60.74256296800013,
+    "label": "key",
+    "key": "Left"
+  },
+  {
+    "utc": "2026-11-02T23:52:07Z",
+    "elapsed": 61.02821425399998,
+    "label": "key",
+    "key": "Left"
+  },
+  {
+    "utc": "2026-11-02T23:52:08Z",
+    "elapsed": 62.77724503299942,
+    "label": "capture",
+    "image": "keyboard-fuel-final-route-complete.png",
+    "width": 1280,
+    "height": 720,
+    "pixelsSha256": "eb404ae911e5cd5a751d568bbe5680b7c8cdcbdf62b86ecf2f6b005fac34f3c9"
+  },
+  {
+    "utc": "2026-11-02T23:52:08Z",
+    "elapsed": 62.78361910700005,
+    "label": "route-inputs-complete",
+    "estimatedDistance": 1324.3,
+    "lane": -1
+  },
+  {
+    "utc": "2026-11-02T23:52:09Z",
+    "elapsed": 63.7705036160005,
+    "label": "capture",
+    "image": "keyboard-fuel-final-terminal.png",
+    "width": 1280,
+    "height": 720,
+    "pixelsSha256": "83be3eeb2d911260861ab515e99c75294ea502eed6e694b09e82998b20257484"
+  },
+  {
+    "utc": "2026-11-02T23:52:09Z",
+    "elapsed": 63.78209006600082,
+    "label": "visible-game-over",
+    "reason": "Fuel",
+    "titleSimilarity": 1.0,
+    "reasonSimilarity": 0.9988998899889989,
+    "seconds": 0.8599930540003697
+  },
+  {
+    "utc": "2026-11-02T23:52:10Z",
+    "elapsed": 64.07112324000082,
+    "label": "key",
+    "key": "Return"
+  },
+  {
+    "utc": "2026-11-02T23:52:11Z",
+    "elapsed": 65.15075305999926,
+    "label": "capture",
+    "image": "keyboard-fuel-final-terminal-restart-hud.png",
+    "width": 1280,
+    "height": 720,
+    "pixelsSha256": "4b25185148fa2e60f4afcfa930c65ed2522b0a88396cbdb66136207ae98a7a0c"
+  },
+  {
+    "utc": "2026-11-02T23:52:11Z",
+    "elapsed": 65.43422734200067,
+    "label": "key",
+    "key": "Escape"
+  },
+  {
+    "utc": "2026-11-02T23:52:11Z",
+    "elapsed": 65.71847512599925,
+    "label": "key",
+    "key": "BackSpace"
+  },
+  {
+    "utc": "2026-11-02T23:52:12Z",
+    "elapsed": 66.00312862099963,
+    "label": "key",
+    "key": "Escape"
+  },
+  {
+    "utc": "2026-11-02T23:52:12Z",
+    "elapsed": 66.28259140900082,
+    "label": "key",
+    "key": "Down"
+  },
+  {
+    "utc": "2026-11-02T23:52:12Z",
+    "elapsed": 66.56846277399927,
+    "label": "key",
+    "key": "Down"
+  },
+  {
+    "utc": "2026-11-02T23:52:12Z",
+    "elapsed": 66.85446357699948,
+    "label": "key",
+    "key": "Return"
+  },
+  {
+    "utc": "2026-11-02T23:52:13Z",
+    "elapsed": 67.32632726500015,
+    "label": "capture",
+    "image": "keyboard-fuel-final-before-quit.png",
+    "width": 1280,
+    "height": 720,
+    "pixelsSha256": "7856239d11e581d5394d3b92629b36a181fa04499f0b59981fd1e8ef220d5d24"
+  },
+  {
+    "utc": "2026-11-02T23:52:13Z",
+    "elapsed": 67.61382587799926,
+    "label": "key",
+    "key": "Down"
+  },
+  {
+    "utc": "2026-11-02T23:52:13Z",
+    "elapsed": 67.89785322500029,
+    "label": "key",
+    "key": "Return"
+  },
+  {
+    "utc": "2026-11-02T23:52:14Z",
+    "elapsed": 68.0136181960006,
+    "label": "quit-process-exit",
+    "pid": 71870,
+    "exitCode": 0
+  }
+]

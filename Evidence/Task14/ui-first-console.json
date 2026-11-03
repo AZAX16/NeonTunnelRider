@@ -1,0 +1,149 @@
+{
+  "success": true,
+  "command": "command console",
+  "data": {
+    "command": "console",
+    "parameters": {
+      "tail": "12"
+    },
+    "result": {
+      "entries": [
+        {
+          "seq": 1044,
+          "timestampUtc": "2026-11-02T22:00:54.542004Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "Assets/NeonTunnelRunner/Tests/PlayMode/UiBindingTests.cs(133,36): error CS0119: 'UiBindingTests.Key(Key)' is a method, which is not valid in the given context",
+          "stackTrace": "",
+          "seeded": false
+        },
+        {
+          "seq": 1045,
+          "timestampUtc": "2026-11-02T22:00:54.542023Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "Assets/NeonTunnelRunner/Tests/PlayMode/UiBindingTests.cs(133,55): error CS0119: 'UiBindingTests.Key(Key)' is a method, which is not valid in the given context",
+          "stackTrace": "",
+          "seeded": false
+        },
+        {
+          "seq": 1046,
+          "timestampUtc": "2026-11-02T22:01:10.778178Z",
+          "level": "warn",
+          "logType": "Warning",
+          "message": "Assets/NeonTunnelRunner/Tests/PlayMode/VfxPoolingTests.cs(163,17): warning CS0618: 'ParticleSystemRenderer.BakeTrailsMesh(Mesh, Camera, bool)' is obsolete: 'BakeTrailsMesh with useTransform is deprecated. Use BakeTrailsMesh with ParticleSystemBakeMeshOptions instead.'",
+          "stackTrace": "",
+          "seeded": false
+        },
+        {
+          "seq": 1047,
+          "timestampUtc": "2026-11-02T22:01:10.778257Z",
+          "level": "warn",
+          "logType": "Warning",
+          "message": "Assets/NeonTunnelRunner/Tests/PlayMode/VfxPoolingTests.cs(164,71): warning CS0618: 'ParticleSystemRenderer.BakeTrailsMesh(Mesh, Camera, bool)' is obsolete: 'BakeTrailsMesh with useTransform is deprecated. Use BakeTrailsMesh with ParticleSystemBakeMeshOptions instead.'",
+          "stackTrace": "",
+          "seeded": false
+        },
+        {
+          "seq": 1048,
+          "timestampUtc": "2026-11-02T22:01:29.883212Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[PipelineTestRunner] Reattaching result collector after domain reload",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nUnity.Pipeline.Editor.Testing.PipelineTestRunner:CheckForPendingTests () (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Editor/Testing/PipelineTestRunner.cs:508)\nUnity.Pipeline.Editor.Testing.PipelineTestReloader:ResumePendingTests () (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Editor/Testing/PipelineTestReloader.cs:60)\nUnity.Pipeline.Editor.Testing.PipelineTestReloader:CheckForPendingTests () (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Editor/Testing/PipelineTestReloader.cs:34)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1049,
+          "timestampUtc": "2026-11-02T22:01:32.825217Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "Executing IPrebuildSetup for: Unity.PerformanceTesting.Editor.TestRunBuilder.",
+          "stackTrace": "UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1050,
+          "timestampUtc": "2026-11-02T22:01:35.067824Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[TestResultCollector] Run started: 215 test(s)",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nUnity.Pipeline.Editor.Testing.TestResultCollector:RunStarted (UnityEditor.TestTools.TestRunner.Api.ITestAdaptor) (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Editor/Testing/TestResultCollector.cs:54)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1051,
+          "timestampUtc": "2026-11-02T22:01:35.068313Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[TestResultCollector] Run started: 215 test(s)",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nUnity.Pipeline.Editor.Testing.TestResultCollector:RunStarted (UnityEditor.TestTools.TestRunner.Api.ITestAdaptor) (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Editor/Testing/TestResultCollector.cs:54)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1052,
+          "timestampUtc": "2026-11-02T22:01:35.599273Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "Saving results to: /home/alireza/.config/unity3d/DefaultCompany/NeonTunnelRunner/TestResults.xml",
+          "stackTrace": "",
+          "seeded": false
+        },
+        {
+          "seq": 1053,
+          "timestampUtc": "2026-11-02T22:01:35.685292Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[TestResultCollector] Run finished: 20 total, 0 passed, 20 failed",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nUnity.Pipeline.Editor.Testing.TestResultCollector:RunFinished (UnityEditor.TestTools.TestRunner.Api.ITestResultAdaptor) (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Editor/Testing/TestResultCollector.cs:106)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1054,
+          "timestampUtc": "2026-11-02T22:01:35.704864Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "[TestResultCollector] Run finished: 20 total, 0 passed, 20 failed",
+          "stackTrace": "UnityEngine.Debug:Log (object)\nUnity.Pipeline.Editor.Testing.TestResultCollector:RunFinished (UnityEditor.TestTools.TestRunner.Api.ITestResultAdaptor) (at ./Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Editor/Testing/TestResultCollector.cs:106)\nUnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)\n",
+          "seeded": false
+        },
+        {
+          "seq": 1055,
+          "timestampUtc": "2026-11-02T22:01:36.206169Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "Executing IPostBuildCleanup for: Unity.PerformanceTesting.Editor.TestRunBuilder.",
+          "stackTrace": "UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:412)\n",
+          "seeded": false
+        }
+      ],
+      "cursor": 1055,
+      "session": "829f86c1098d4c6caf2f8b0cc0910e16",
+      "returned": 12,
+      "dropped": false,
+      "reset": false,
+      "counts": {
+        "error": 10,
+        "warn": 4,
+        "log": 8
+      },
+      "groundTruth": {
+        "sampledUtc": "2026-11-02T22:01:54.843571Z",
+        "ageMs": 119,
+        "compilationFailed": false,
+        "compiling": false,
+        "consoleErrors": 0,
+        "consoleWarnings": 0,
+        "consoleLogs": 6,
+        "seeded": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
