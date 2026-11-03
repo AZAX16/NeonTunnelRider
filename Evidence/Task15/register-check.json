@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-11-03T09:54:45.634411+03:30",
+  "sourceRevision": "2923f56b79c6cba4b24627fee4bde2e902d872ab",
+  "scope": "Audit artifact integrity and Python syntax, not Unity or game acceptance",
+  "result": "PASS",
+  "requirementRows": 60,
+  "validationSubchecks": 58,
+  "links": "all local evidence/implementation/verification-note links resolve",
+  "inventory": "R01-R54 plus U01-U06 unique; V01-V25 represented; verdict vocabulary valid",
+  "preservation": "tracked production unchanged; approved gain and configured352 retained; user recovery files excluded from checkpoint"
+}

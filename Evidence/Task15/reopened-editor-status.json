@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-11-03T09:40:21.628229+03:30",
+  "userConfirmed": "Unity reopened during audit; Assets/_Recovery is a concurrent user change and must be preserved",
+  "argv": [
+    "/home/alireza/.local/bin/unity.previous",
+    "status",
+    "--project-path",
+    "/home/alireza/NeonTunnelRider/NeonTunnelRunner",
+    "--format",
+    "json"
+  ],
+  "exitCode": 6,
+  "stdout": "{\n  \"success\": false,\n  \"command\": \"status\",\n  \"data\": {\n    \"count\": 0,\n    \"instances\": []\n  },\n  \"errors\": [\n    {\n      \"code\": \"STATUS_PIPELINE_LOAD_PENDING\",\n      \"message\": \"A Unity Editor has /home/alireza/NeonTunnelRider/NeonTunnelRunner open and its manifest lists the Pipeline package, but no Pipeline server is running yet. If the Editor is still opening or importing assets, wait for it to finish; otherwise switch to the Unity Editor window so it loads the package. Then run unity status again. If it still doesn't come up, run unity pipeline list: an Editor in Safe Mode can't load the package until its compile errors are fixed.\"\n    }\n  ],\n  \"warnings\": []\n}\n",
+  "stderr": "",
+  "displaySocket": "PermissionError(1, 'Operation not permitted')"
+}

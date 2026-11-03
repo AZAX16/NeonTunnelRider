@@ -1,0 +1,72 @@
+{
+  "timestamp": "2026-11-03T09:42:52.650745+03:30",
+  "sourceRevision": "2923f56b79c6cba4b24627fee4bde2e902d872ab",
+  "overall": "BLOCKED; strict saved-GUID audit FAIL; no unconditional release recommendation",
+  "requirementRows": 60,
+  "requirementResults": {
+    "PASS": 4,
+    "FAIL": 0,
+    "BLOCKED": 49,
+    "NOT RUN": 7
+  },
+  "validationSubchecks": 58,
+  "validationCaseSummary": {
+    "V01": "BLOCKED",
+    "V02": "BLOCKED",
+    "V03": "BLOCKED",
+    "V04": "BLOCKED",
+    "V05": "BLOCKED",
+    "V06": "BLOCKED",
+    "V07": "BLOCKED",
+    "V08": "BLOCKED",
+    "V09": "BLOCKED",
+    "V10": "BLOCKED",
+    "V11": "BLOCKED",
+    "V12": "BLOCKED",
+    "V13": "BLOCKED",
+    "V14": "BLOCKED",
+    "V15": "BLOCKED",
+    "V16": "BLOCKED",
+    "V17": "BLOCKED",
+    "V18": "BLOCKED",
+    "V19": "BLOCKED",
+    "V20": "BLOCKED",
+    "V21": "BLOCKED",
+    "V22": "FAIL",
+    "V23": "NOT RUN",
+    "V24": "NOT RUN",
+    "V25": "NOT RUN"
+  },
+  "currentTestExecution": {
+    "executed": 0,
+    "passed": 0,
+    "failed": null,
+    "skipped": null,
+    "inconclusive": null,
+    "status": "BLOCKED before Test Runner started"
+  },
+  "historicalTestExecution": {
+    "editmode": {
+      "total": 153,
+      "passed": 153,
+      "failed": 0,
+      "skipped": 0,
+      "inconclusive": 0
+    },
+    "playmode": {
+      "total": 212,
+      "passed": 212,
+      "failed": 0,
+      "skipped": 0,
+      "inconclusive": 0
+    }
+  },
+  "currentFairness": {
+    "status": "BLOCKED",
+    "executedSeeds": 0
+  },
+  "current100km": "BLOCKED; both historical cases inspected, no new run",
+  "profile10min": "BLOCKED,0 valid seconds/samples",
+  "soak30min": "BLOCKED,0 valid visible gameplay seconds",
+  "concurrentUserFiles": "Assets/_Recovery.meta and Assets/_Recovery/ preserved, excluded from checkpoint"
+}

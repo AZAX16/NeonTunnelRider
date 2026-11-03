@@ -38,7 +38,13 @@ for p in prompts.values():
             errors.append(f'Missing prompt section: {p.name}: {section}')
     if '6000.6.3f1' not in text:
         errors.append(f'Missing user Editor baseline: {p.name}')
-if (root/'.gitignore').read_bytes() != (root/'source/assignment.gitignore').read_bytes():
+# The supplied planning package is nested in the implementation repository.
+# Its original standalone layout used a package-root ignore; the implemented
+# project keeps the exact supplied bytes at the Unity repository root instead.
+ignore = root/'.gitignore'
+if not ignore.exists():
+    ignore = root.parent/'.gitignore'
+if not ignore.exists() or ignore.read_bytes() != (root/'source/assignment.gitignore').read_bytes():
     errors.append('Supplied .gitignore not preserved exactly.')
 if len(requirements)!=54 or len(cases)!=25 or len(prompts)!=16:
     errors.append('Unexpected requirement/case/prompt counts.')

@@ -1,0 +1,138 @@
+{
+  "started": "2026-11-03T09:23:37.670482+03:30",
+  "sourceRevision": "2923f56b79c6cba4b24627fee4bde2e902d872ab",
+  "initialTree": "clean before Task15 evidence creation",
+  "commands": [
+    {
+      "timestamp": "2026-11-03T09:23:37.695823+03:30",
+      "argv": [
+        "/home/alireza/.local/bin/unity.previous",
+        "--version"
+      ],
+      "exitCode": 0,
+      "stdout": "1.0.0-beta.13\n",
+      "stderr": ""
+    },
+    {
+      "timestamp": "2026-11-03T09:23:37.760398+03:30",
+      "argv": [
+        "/home/alireza/.local/bin/unity.previous",
+        "status",
+        "--project-path",
+        "/home/alireza/NeonTunnelRider/NeonTunnelRunner",
+        "--format",
+        "json"
+      ],
+      "exitCode": 6,
+      "stdout": "{\n  \"success\": false,\n  \"command\": \"status\",\n  \"data\": {\n    \"count\": 0,\n    \"instances\": []\n  },\n  \"errors\": [\n    {\n      \"code\": \"STATUS_NO_INSTANCES\",\n      \"message\": \"No Unity Editor instances found with the Pipeline package installed. Open Unity and install the Pipeline package, or run unity pipeline install.\"\n    }\n  ],\n  \"warnings\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "timestamp": "2026-11-03T09:23:37.762957+03:30",
+      "argv": [
+        "xrandr",
+        "--current"
+      ],
+      "exitCode": 1,
+      "stdout": "",
+      "stderr": "Can't open display :0\n"
+    },
+    {
+      "timestamp": "2026-11-03T09:23:37.766015+03:30",
+      "argv": [
+        "glxinfo",
+        "-B"
+      ],
+      "exitCode": 255,
+      "stdout": "",
+      "stderr": "Error: unable to open display :0\n"
+    },
+    {
+      "timestamp": "2026-11-03T09:23:37.819637+03:30",
+      "argv": [
+        "nvidia-smi",
+        "--query-gpu=name,driver_version,memory.total",
+        "--format=csv"
+      ],
+      "exitCode": 9,
+      "stdout": "NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.\n\n",
+      "stderr": ""
+    },
+    {
+      "timestamp": "2026-11-03T09:23:37.826110+03:30",
+      "argv": [
+        "pactl",
+        "info"
+      ],
+      "exitCode": 1,
+      "stdout": "",
+      "stderr": "pa_write() failed while trying to wake up the mainloop: Operation not permitted\nConnection failure: Connection refused\npa_write() failed while trying to wake up the mainloop: Operation not permitted\npa_context_connect() failed: Connection refused\npa_write() failed while trying to wake up the mainloop: Operation not permitted\n"
+    },
+    {
+      "timestamp": "2026-11-03T09:23:37.855595+03:30",
+      "argv": [
+        "lscpu"
+      ],
+      "exitCode": 0,
+      "stdout": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           39 bits physical, 48 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  8\nOn-line CPU(s) list:                     0-7\nVendor ID:                               GenuineIntel\nModel name:                              Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz\nCPU family:                              6\nModel:                                   142\nThread(s) per core:                      2\nCore(s) per socket:                      4\nSocket(s):                               1\nStepping:                                10\nCPU max MHz:                             3400.0000\nCPU min MHz:                             400.0000\nBogoMIPS:                                3600.00\nFlags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d arch_capabilities ibpb_exit_to_user\nL1d cache:                               128 KiB (4 instances)\nL1i cache:                               128 KiB (4 instances)\nL2 cache:                                1 MiB (4 instances)\nL3 cache:                                6 MiB (1 instance)\nNUMA node(s):                            1\nNUMA node0 CPU(s):                       0-7\nVulnerability Gather data sampling:      Mitigation; Microcode\nVulnerability Indirect target selection: Not affected\nVulnerability Itlb multihit:             KVM: Mitigation: VMX unsupported\nVulnerability L1tf:                      Mitigation; PTE Inversion\nVulnerability Mds:                       Mitigation; Clear CPU buffers; SMT vulnerable\nVulnerability Meltdown:                  Mitigation; PTI\nVulnerability Mmio stale data:           Mitigation; Clear CPU buffers; SMT vulnerable\nVulnerability Reg file data sampling:    Not affected\nVulnerability Retbleed:                  Mitigation; IBRS\nVulnerability Spec rstack overflow:      Not affected\nVulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl and seccomp\nVulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:                Mitigation; IBRS; IBPB conditional; STIBP conditional; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected\nVulnerability Srbds:                     Mitigation; Microcode\nVulnerability Tsa:                       Not affected\nVulnerability Tsx async abort:           Not affected\nVulnerability Vmscape:                   Mitigation; IBPB before exit to userspace\n",
+      "stderr": ""
+    },
+    {
+      "timestamp": "2026-11-03T09:23:37.861149+03:30",
+      "argv": [
+        "free",
+        "-b"
+      ],
+      "exitCode": 0,
+      "stdout": "               total        used        free      shared  buff/cache   available\nMem:     16653312000  5417914368  5316194304   718262272  5919203328 10172084224\nSwap:     2147479552           0  2147479552\n",
+      "stderr": ""
+    }
+  ],
+  "x11": {
+    "error": "PermissionError(1, 'Operation not permitted')",
+    "errno": 1
+  },
+  "graphicsDevices": {
+    "/dev/dri": false,
+    "/dev/nvidia0": false
+  },
+  "environment": {
+    "DISPLAY": ":0",
+    "XAUTHORITY": "/home/alireza/.Xauthority",
+    "WAYLAND_DISPLAY": null
+  },
+  "editorLaunch": {
+    "timestamp": "2026-11-03T09:23:38.678973+03:30",
+    "argv": [
+      "/home/alireza/Unity/Hub/Editor/6000.6.3f1/Editor/Unity",
+      "-projectPath",
+      "/home/alireza/NeonTunnelRider/NeonTunnelRunner",
+      "-logFile",
+      "/home/alireza/NeonTunnelRider/NeonTunnelRunner/Evidence/Task15/editor-launch.log"
+    ],
+    "pid": 68,
+    "exitCode": 1,
+    "stillRunningAt12s": false
+  },
+  "playerLaunch": {
+    "timestamp": "2026-11-03T09:23:50.695145+03:30",
+    "argv": [
+      "/home/alireza/NeonTunnelRider/NeonTunnelRunner/Builds/Task14UI/NeonTunnelRunner.x86_64",
+      "-force-glcore",
+      "-screen-width",
+      "1920",
+      "-screen-height",
+      "1080",
+      "-screen-fullscreen",
+      "0",
+      "-logFile",
+      "/home/alireza/NeonTunnelRider/NeonTunnelRunner/Evidence/Task15/player-launch.log"
+    ],
+    "pid": 89,
+    "exitCode": null,
+    "stillRunningAt12s": true,
+    "executableSha256": "de3009bc2c3a8a7c25f347c0c0a098a1c49dbbb6ee6ec100562e61fb50cae261",
+    "binaryScope": "historical Task14 build, launch prerequisite probe only"
+  },
+  "finished": "2026-11-03T09:23:50.695671+03:30"
+}

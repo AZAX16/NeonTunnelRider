@@ -1,0 +1,9 @@
+{
+  "result": "PASS",
+  "requirements": 54,
+  "validation_cases": 25,
+  "prompts": 16,
+  "images": 12,
+  "errors": [],
+  "unity_tests_executed": false
+}

@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-11-03T09:24:35.916964+03:30",
+  "sourceRevision": "2923f56b79c6cba4b24627fee4bde2e902d872ab",
+  "clonePath": "/tmp/neon-task15-import-2923f56",
+  "cloneExit": 0,
+  "cloneStdout": "",
+  "cloneStderr": "Cloning into '/tmp/neon-task15-import-2923f56'...\ndone.\n",
+  "remoteAccessProven": false,
+  "terminatedByHarness": true,
+  "argv": [
+    "/home/alireza/Unity/Hub/Editor/6000.6.3f1/Editor/Unity",
+    "-batchmode",
+    "-nographics",
+    "-quit",
+    "-projectPath",
+    "/tmp/neon-task15-import-2923f56",
+    "-logFile",
+    "/home/alireza/NeonTunnelRider/NeonTunnelRunner/Evidence/Task15/fresh-import.log"
+  ],
+  "exitCode": -15,
+  "finished": "2026-11-03T09:25:00.936940+03:30",
+  "status": "BLOCKED",
+  "reason": "Inspect exact licensing/IPC diagnostics in fresh-import.log; no successful import asserted"
+}

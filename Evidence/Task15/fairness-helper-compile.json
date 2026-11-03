@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-11-03T09:31:17.164859+03:30",
+  "scope": "Offline compile of isolated Docs helper against cached pinned Editor references; NOT Unity compilation, NOT test execution",
+  "argv": [
+    "/home/alireza/Unity/Hub/Editor/6000.6.3f1/Editor/Data/NetCoreRuntime/dotnet",
+    "/home/alireza/Unity/Hub/Editor/6000.6.3f1/Editor/Data/DotNetSdk/sdk/8.0.318/Roslyn/bincore/csc.dll",
+    "@/tmp/task15-tooling/fairness.rsp"
+  ],
+  "exitCode": 0,
+  "stdout": "",
+  "stderr": "",
+  "sourceRevision": "2923f56b79c6cba4b24627fee4bde2e902d872ab",
+  "helperSha256": "78ed6a84e16111fa853e6e9c64dafe1231929b7a57d0ce46241885bc1eab380c",
+  "responseFileSha256": "9c4f071cc2d3e07f2972ad89a85a8381084965d37cd2ee095f6fb2303bea4292",
+  "responseFileRetained": "Evidence/Task15/fairness-helper.rsp"
+}

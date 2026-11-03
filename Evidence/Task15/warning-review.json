@@ -1,0 +1,61 @@
+{
+  "timestamp": "2026-11-03T09:36:27.696321+03:30",
+  "sourceRevision": "2923f56b79c6cba4b24627fee4bde2e902d872ab",
+  "logs": [
+    {
+      "path": "Evidence/Task14/Standalone/keyboard-lives-final-player.log",
+      "scope": "HISTORICAL Task14 raw player log reviewed now",
+      "sha256": "3e136254a99f797e3b9de63fea6fba013c5c00e4e10d017089a4cac3fdeda33d",
+      "shaderMessages": [
+        "Shader 'Hidden/Universal Render Pipeline/GaussianDepthOfField' is not supported or has been stripped from the build (in 'GaussianDepthOfField'). PostProcessing render passes will not execute.",
+        "Shader 'Hidden/Universal Render Pipeline/GaussianDepthOfField' is not supported or has been stripped from the build (in 'GaussianDepthOfField'). PostProcessing render passes will not execute.",
+        "Shader 'Hidden/Universal Render Pipeline/BokehDepthOfField' is not supported or has been stripped from the build (in 'BokehDepthOfField'). PostProcessing render passes will not execute.",
+        "Shader 'Hidden/Universal Render Pipeline/PaniniProjection' is not supported or has been stripped from the build (in 'PaniniProjection'). PostProcessing render passes will not execute."
+      ],
+      "count": 4,
+      "graphicsLines": [
+        "Forcing GfxDevice: OpenGL Core",
+        "Renderer: Mesa Intel(R) UHD Graphics 620 (KBL GT2)",
+        "Vendor:   Intel",
+        "Version:  4.6 (Core Profile) Mesa 23.2.1-1ubuntu3.1~22.04.4",
+        "OPENGL LOG: Creating OpenGL 4.6 graphics device ; Context level  <OpenGL 4.5> ; Context handle 166746096"
+      ],
+      "dpiDiagnostics": 10
+    },
+    {
+      "path": "Evidence/Task14/Standalone/pointer-fuel-final-player.log",
+      "scope": "HISTORICAL Task14 raw player log reviewed now",
+      "sha256": "5618f8f7cd8cd4ad7164ae7ac49d4704d6a2d4645e7d4b55a4d1489a99ac4a5e",
+      "shaderMessages": [
+        "Shader 'Hidden/Universal Render Pipeline/GaussianDepthOfField' is not supported or has been stripped from the build (in 'GaussianDepthOfField'). PostProcessing render passes will not execute.",
+        "Shader 'Hidden/Universal Render Pipeline/GaussianDepthOfField' is not supported or has been stripped from the build (in 'GaussianDepthOfField'). PostProcessing render passes will not execute.",
+        "Shader 'Hidden/Universal Render Pipeline/BokehDepthOfField' is not supported or has been stripped from the build (in 'BokehDepthOfField'). PostProcessing render passes will not execute.",
+        "Shader 'Hidden/Universal Render Pipeline/PaniniProjection' is not supported or has been stripped from the build (in 'PaniniProjection'). PostProcessing render passes will not execute."
+      ],
+      "count": 4,
+      "graphicsLines": [
+        "Forcing GfxDevice: OpenGL Core",
+        "Renderer: Mesa Intel(R) UHD Graphics 620 (KBL GT2)",
+        "Vendor:   Intel",
+        "Version:  4.6 (Core Profile) Mesa 23.2.1-1ubuntu3.1~22.04.4",
+        "OPENGL LOG: Creating OpenGL 4.6 graphics device ; Context level  <OpenGL 4.5> ; Context handle 405526224"
+      ],
+      "dpiDiagnostics": 10
+    }
+  ],
+  "currentReproduction": "BLOCKED: Task15 probe has no valid display, llvmpipe and no sound; absence of four messages in invalid probe does not establish resolution",
+  "sourceClassification": {
+    "package": "com.unity.render-pipelines.universal 17.6.0",
+    "emitter": "Runtime/PostProcessUtils.cs:19-29, non-null shader whose isSupported is false; text cannot distinguish stripping from platform support",
+    "initialization": "Runtime/PostProcess.cs:56-64 constructs DOF/Panini pass objects regardless of saved Volume activity",
+    "GaussianCount": "DepthOfFieldGaussianPostProcessPass.cs:24-25 loads two materials from the same shader",
+    "activityGates": [
+      "DepthOfFieldGaussianPostProcessPass.cs:75: depthOfField.IsActive and Gaussian mode",
+      "DepthOfFieldBokehProcessPass.cs:65: depthOfField.IsActive and Bokeh mode",
+      "PaniniProjectionPostProcessPass.cs:43: paniniProjection.IsActive"
+    ],
+    "savedProfile": "GlobalVolumeProfile has Bloom, Tonemapping and ColorAdjustments; default Volume profile has DOF/Panini defaults with zero effect parameters; no code activates either",
+    "requiredFeatures": "Bloom is an independent pass; historical Task14 captures support neon/firework visibility. Current visual impact and player warning reproduction remain BLOCKED. Do not claim harmlessness solely from unused profile status.",
+    "disposition": "Carry four startup messages; no suppression, feature removal or package change. Fresh build/render review required before release."
+  }
+}

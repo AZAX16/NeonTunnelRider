@@ -1,0 +1,15 @@
+{
+  "success": false,
+  "command": "status",
+  "data": {
+    "count": 0,
+    "instances": []
+  },
+  "errors": [
+    {
+      "code": "STATUS_PIPELINE_LOAD_PENDING",
+      "message": "A Unity Editor has /home/alireza/NeonTunnelRider/NeonTunnelRunner open and its manifest lists the Pipeline package, but no Pipeline server is running yet. If the Editor is still opening or importing assets, wait for it to finish; otherwise switch to the Unity Editor window so it loads the package. Then run unity status again. If it still doesn't come up, run unity pipeline list: an Editor in Safe Mode can't load the package until its compile errors are fixed."
+    }
+  ],
+  "warnings": []
+}

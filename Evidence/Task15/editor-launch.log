@@ -1,0 +1,29 @@
+attempt to write a readonly database
+attempt to write a readonly database
+Unity Editor version:    6000.6.3f1 (45d8eee7de74)
+Branch:                  6000.6/staging
+Build type:              Release
+Batch mode:              NO
+System name:             Linux
+Distro version:          #208-Ubuntu SMP Fri Sep 4 10:22:38 UTC 2026
+Kernel version:          5.15.0-198-generic
+Architecture:            x86_64
+Available memory:        15881 MB
+Date:                    2026-11-03T05:53:38Z
+VBCSCompilerPreWarmer: watching VBCSCompiler (PID 79)
+VBCSCompilerPreWarmer: pre-warm launched (dotnet PID 81)
+VBCSCompiler prewarm took 36.30 ms
+[Licensing::Module] Trying to connect to existing licensing client channel...
+No explicit failure code handling for error of type 1
+[Licensing::IpcConnector] Error: Failed to connect to LicenseClient-alireza channel (error code: 0x80000000) .
+[Licensing::IpcConnector] Error: Connection to channel: "LicenseClient-alireza" failed; code: "0x80000000"
+[Licensing::IpcConnector] Error: Failed to connect to LicenseClient-alireza channel (error code: 0x80000000) .
+No explicit failure code handling for error of type 1
+[Licensing::IpcConnector] Error: Failed to connect to LicenseClient-alireza-6000.6.3 channel (error code: 0x80000000) .
+[Licensing::IpcConnector] Error: Connection to channel: "LicenseClient-alireza-6000.6.3" failed; code: "0x80000000"
+[Licensing::IpcConnector] Error: Failed to connect to LicenseClient-alireza-6000.6.3 channel (error code: 0x80000000) .
+[Licensing::Module] Error: Licensing initialization failed after 0.00s
+Selected window backend: (null) 
+Error opening default X display. You must have a valid X server running.
+
+(Unity:68): Gtk-WARNING **: 09:23:38.582: cannot open display: :0

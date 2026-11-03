@@ -1,0 +1,44 @@
+{
+  "timestamp": "2026-11-03T09:36:27.696321+03:30",
+  "sourceRevision": "2923f56b79c6cba4b24627fee4bde2e902d872ab",
+  "status": "BLOCKED",
+  "newTask15Build": null,
+  "capturePrerequisiteProbe": "environment-preflight.json",
+  "profile": {
+    "requiredWallSeconds": 600,
+    "validGameplaySeconds": 0,
+    "sampleCount": 0,
+    "p95FrameMs": null,
+    "meanFps": null,
+    "cpuFrameMs": null,
+    "gpuFrameMs": null,
+    "gameplayGcBytes": null,
+    "rawProfilerCapture": null
+  },
+  "soak": {
+    "requiredWallSeconds": 1800,
+    "validVisibleGameplaySeconds": 0,
+    "resets": null,
+    "rebases": null,
+    "counterSamples": 0,
+    "memorySamples": 0
+  },
+  "memory": {
+    "metric": "process RSS, MiB (bytes / 1048576), to be consistently sampled after warmup",
+    "baseline": null,
+    "end": null,
+    "peak": null,
+    "trend": null,
+    "managedNativeGraphics": "unavailable"
+  },
+  "configuredBaselines": {
+    "pooledInstances": 352,
+    "loopSources": 2,
+    "oneShotSources": 8
+  },
+  "runtimePoolSourceGrowth": "BLOCKED: no current measured baseline or time series",
+  "probeRenderer": "llvmpipe LLVM 15.0.7, OpenGL 4.5, Mesa 23.2.1; no visible desktop or audible output",
+  "hardwareScope": "CPU/RAM from current environment-preflight; historical Intel UHD620/NVIDIA930MX are not the used GPU of this invalid probe",
+  "allocationRisk": "HudPresenter.Render uses speed.ToString plus concatenation and score/best.ToString on changed values; requires current standalone attribution, no zero-GC claim",
+  "reason": "X11 socket EPERM, no GPU devices, unavailable sound output, Unity licensing IPC failure. No valid warmup/capture/visible-soak interval could start. Not a slow-hardware performance FAIL measurement."
+}
