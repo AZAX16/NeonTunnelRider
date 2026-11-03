@@ -1,0 +1,19 @@
+{
+  "started": "2026-11-03T10:30:05.990873+03:30",
+  "finished": "2026-11-03T10:30:06.141196+03:30",
+  "argv": [
+    "python3",
+    "-B",
+    "Docs/Setup/test_task15_references.py"
+  ],
+  "exitCode": 0,
+  "stdout": "",
+  "stderr": "test_available_guid_without_asset_is_dangling_not_resolved (__main__.ReferenceSemantics) ... ok\ntest_builtin_container_does_not_certify_arbitrary_fileid_or_type (__main__.ReferenceSemantics) ... ok\ntest_documentation_strings_and_guids_are_not_dependencies (__main__.ReferenceSemantics) ... ok\ntest_embedded_package_and_protected_scope_are_separate (__main__.ReferenceSemantics) ... ok\ntest_matching_guid_does_not_hide_invalid_text_subasset (__main__.ReferenceSemantics) ... ok\ntest_missing_reference_stays_failure_even_when_builtin_looking (__main__.ReferenceSemantics) ... ok\ntest_prefab_handle_exception_is_limited_to_importer_owned_handle (__main__.ReferenceSemantics) ... ok\ntest_unimported_package_sample_cannot_satisfy_required_reference (__main__.ReferenceSemantics) ... ok\ntest_wrapped_and_list_pointers_keep_owner_identity (__main__.ReferenceSemantics) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.008s\n\nOK\n",
+  "sourceRevision": "6a102af74e1322d2018f2ee5d2088cc0b992428e",
+  "toolSha256": {
+    "Docs/Setup/Task15StaticAudit.py": "1c69bb254585db0f90f9219d64fc2fe9b7f53ae71c555257f1314ab43498b5f5",
+    "Docs/Setup/Task15References.py": "8bb05bd11617d8c6fd6a10d239a904db30931e453b8ed308013f9e4c04d287e3",
+    "Docs/Setup/test_task15_references.py": "32c893c8f1523461edf12ba7d50676218cc9857b63e45df33b96466dac05e849"
+  },
+  "scope": "Static/tooling only; Unity executed tests remain0"
+}

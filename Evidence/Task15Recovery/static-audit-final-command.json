@@ -1,0 +1,21 @@
+{
+  "started": "2026-11-03T10:30:06.144137+03:30",
+  "finished": "2026-11-03T10:30:16.088237+03:30",
+  "argv": [
+    "python3",
+    "-B",
+    "Docs/Setup/Task15StaticAudit.py",
+    "--output-dir",
+    "Evidence/Task15Recovery/Static"
+  ],
+  "exitCode": 2,
+  "stdout": "{\n  \"timestamp\": \"2026-11-03T10:30:06.209229+03:30\",\n  \"staticResult\": \"BLOCKED\",\n  \"preservation\": {\n    \"checkedFiles\": 617,\n    \"changed\": [\n      \"Assets/NeonTunnelRunner/Settings/URP/PC_Renderer.asset\",\n      \"Assets/Settings/DefaultVolumeProfile.asset\",\n      \"Assets/TextMesh Pro/Resources/TMP Settings.asset\",\n      \"Assets/TutorialInfo/Readme.cs.meta\",\n      \"Preproduction/tools/audit_package.py\"\n    ],\n    \"expectedToolingChange\": \"audit_package.py now locates the supplied ignore at the Unity repository root\",\n    \"authorizedReferenceRepairs\": \"Exact stale optional data removals; Evidence/Task15Recovery/reference-dispositions.csv and reference-investigation.json. Import remains pending.\",\n    \"unexpectedChanges\": [],\n    \"productionChanges\": [\n      \"Assets/NeonTunnelRunner/Settings/URP/PC_Renderer.asset\",\n      \"Assets/Settings/DefaultVolumeProfile.asset\",\n      \"Assets/TextMesh Pro/Resources/TMP Settings.asset\",\n      \"Assets/TutorialInfo/Readme.cs.meta\"\n    ],\n    \"result\": \"PASS\"\n  },\n  \"assetIntegrity\": {\n    \"assetGuids\": 268,\n    \"packageGuids\": 10454,\n    \"missingMetas\": [],\n    \"duplicateGuids\": [],\n    \"unresolvedGuidReferences\": [],\n    \"strictResult\": \"BLOCKED\",\n    \"scopes\": {\n      \"wholeWorkingTree\": {\n        \"pointers\": 786,\n        \"resolutions\": {\n          \"SCRIPT_ID_CONVENTION\": 218,\n          \"IMPORT_ID_PENDING\": 246,\n          \"TEXT_ID_PRESENT\": 276,\n          \"BUILTIN_ID_PENDING\": 46\n        },\n        \"missingGuidPairs\": 0\n      },\n      \"tracked\": {\n        \"pointers\": 702,\n        \"resolutions\": {\n          \"SCRIPT_ID_CONVENTION\": 195,\n          \"IMPORT_ID_PENDING\": 235,\n          \"TEXT_ID_PRESENT\": 235,\n          \"BUILTIN_ID_PENDING\": 37\n        },\n        \"missingGuidPairs\": 0\n      },\n      \"productionGraph\": {\n        \"pointers\": 681,\n        \"resolutions\": {\n          \"SCRIPT_ID_CONVENTION\": 185,\n          \"IMPORT_ID_PENDING\": 231,\n          \"TEXT_ID_PRESENT\": 234,\n          \"BUILTIN_ID_PENDING\": 31\n        },\n        \"missingGuidPairs\": 0\n      },\n      \"protectedRecovery\": {\n        \"pointers\": 84,\n        \"resolutions\": {\n          \"TEXT_ID_PRESENT\": 41,\n          \"BUILTIN_ID_PENDING\": 9,\n          \"SCRIPT_ID_CONVENTION\": 23,\n          \"IMPORT_ID_PENDING\": 11\n        },\n        \"missingGuidPairs\": 0\n      }\n    },\n    \"packageErrors\": [],\n    \"danglingMetas\": [],\n    \"limitation\": \"Exact text fileIDs checked. Built-in/native/importer IDs remain explicitly pending; zero missing GUIDs does not establish successful import.\"\n  },\n  \"audio\": {\n    \"mixerSha256\": \"8208f1e38bbf4cc91fd2cf4b8a17308f690989ab86ebc3a194b2ac8862c048b3\",\n    \"masterSnapshotDb\": 4.552889,\n    \"savedSceneSources\": 10,\n    \"sceneOwnedSources\": 9,\n    \"inheritedSourceReferences\": 1,\n    \"prefabSources\": [],\n    \"playerPrefabSources\": 1,\n    \"audibilityAndPostGainClipping\": \"BLOCKED: no sound output/capture device\"\n  }\n}\n",
+  "stderr": "",
+  "sourceRevision": "6a102af74e1322d2018f2ee5d2088cc0b992428e",
+  "toolSha256": {
+    "Docs/Setup/Task15StaticAudit.py": "1c69bb254585db0f90f9219d64fc2fe9b7f53ae71c555257f1314ab43498b5f5",
+    "Docs/Setup/Task15References.py": "8bb05bd11617d8c6fd6a10d239a904db30931e453b8ed308013f9e4c04d287e3",
+    "Docs/Setup/test_task15_references.py": "32c893c8f1523461edf12ba7d50676218cc9857b63e45df33b96466dac05e849"
+  },
+  "scope": "Static/tooling only; Unity executed tests remain0"
+}

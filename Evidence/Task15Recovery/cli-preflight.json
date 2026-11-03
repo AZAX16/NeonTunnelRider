@@ -1,0 +1,61 @@
+[
+  {
+    "timestamp": "2026-11-03T10:04:22.052267+03:30",
+    "argv": [
+      "/home/alireza/.local/bin/unity.previous",
+      "--version"
+    ],
+    "exitCode": 0,
+    "stdout": "1.0.0-beta.13\n",
+    "stderr": ""
+  },
+  {
+    "timestamp": "2026-11-03T10:04:22.088773+03:30",
+    "argv": [
+      "/home/alireza/.local/bin/unity.previous",
+      "status",
+      "--project-path",
+      "/home/alireza/NeonTunnelRider/NeonTunnelRunner",
+      "--format",
+      "json"
+    ],
+    "exitCode": 6,
+    "stdout": "{\n  \"success\": false,\n  \"command\": \"status\",\n  \"data\": {\n    \"count\": 0,\n    \"instances\": []\n  },\n  \"errors\": [\n    {\n      \"code\": \"STATUS_NO_INSTANCES\",\n      \"message\": \"No Unity Editor instances found with the Pipeline package installed. Open Unity and install the Pipeline package, or run unity pipeline install.\"\n    }\n  ],\n  \"warnings\": []\n}\n",
+    "stderr": ""
+  },
+  {
+    "timestamp": "2026-11-03T10:04:22.172767+03:30",
+    "argv": [
+      "/home/alireza/.local/bin/unity.previous",
+      "command",
+      "--help"
+    ],
+    "exitCode": 0,
+    "stdout": "Usage: unity command|cmd [options] [command] [args...]\n\nExecute commands on connected Unity Editor instances, or list available commands\n\nArguments:\n  command                       Command to execute on Unity Editor (omit to list\n                                available commands)\n  args                          Arguments for the command\n\nOptions:\n  --project-path <path>         Path to Unity project (auto-detected if not\n                                specified) (env: UNITY_PROJECT_PATH)\n  --runtime <player exec name>  Connect to a Unity Player runtime instance\n                                (search by process name)\n  --runtime-path <path>         Connect to a Unity Player by path to port file\n  --timeout <seconds>           Timeout for command execution (default: \"30\")\n  --detach                      Submit as a detached job and print its job ID\n                                immediately\n  --result-only                 Print only the pipeline command's result as\n                                JSON, without the command/parameters/target\n                                envelope\n  --detail [level]              Listing: detail level, compact | full (default:\n                                full)\n  --query [term]                Listing: filter by substring on name,\n                                description, or tag\n  --tags                        Listing: list the available tags instead of the\n                                commands\n  --tag [tag]                   Listing: filter to a tag subtree (e.g. assets or\n                                assets/import)\n  --group_by [mode]             Listing: group results, flat | package | tag\n  --sort [key]                  Listing: sort by, name | package (default: name)\n  --order [direction]           Listing: sort direction, asc | desc (default:\n                                asc)\n  --offset [n]                  Listing: skip the first N commands\n  --limit [n]                   Listing: return at most N commands\n  --caller [label]              Analytics label: what invoked the CLI. A known\n                                caller is recorded as-is; anything else as other\n  --skill [name]                Analytics label: the agent skill driving this\n                                invocation\n  -h, --help                    display help for command\n\nGlobal Options:\n  -V, --version                 output the version number\n  --format <format>             Output format: human, json, tsv, ndjson, github\n                                (env: UNITY_FORMAT)\n  --json                        Shorthand for --format json\n  --no-banner                   Suppress the startup banner (env:\n                                UNITY_NO_BANNER)\n  --no-pager                    Disable the pager for long output (env:\n                                UNITY_NO_PAGER)\n  --non-interactive             Disable interactive prompts. Useful in CI/CD\n                                environments. (env: UNITY_NON_INTERACTIVE)\n  --quiet                       Suppress informational output (env: UNITY_QUIET)\n  --verbose                     Show full error details including stack traces\n                                on failure (env: UNITY_VERBOSE)\n  --color <mode>                Control colored output (choices: \"auto\",\n                                \"always\", \"never\")\n  --no-color                    Disable colored output (shorthand for --color\n                                never)\n  --proxy <url>                 HTTP/HTTPS/SOCKS/PAC proxy URL. Examples:\n                                http://<user>:<pass>@host:8080,\n                                socks5://host:1080, pac+http://wpad/proxy.pac\n                                (env: UNITY_PROXY)\n  --proxy-disable               Disable proxy for this invocation, ignoring all\n                                sources\n  --log-proxy                   Log every outbound request to proxy-request.json\n                                for this run. Off by default; typically used\n                                once when reproducing a proxy issue for support.\n                                Also settable via UNITY_LOG_PROXY=1 or the\n                                proxyRequestLogging user setting. (env:\n                                UNITY_LOG_PROXY)\n  --no-log-proxy                Opt out of --log-proxy / UNITY_LOG_PROXY / the\n                                persisted user setting for this run. Use when\n                                logging is enabled globally but you want one\n                                clean invocation.\n\nExamples:\n  unity command                     List the available command tags\n  unity command --tags              The same listing, asked for explicitly\n  unity command --tag runtime       List the commands carrying a tag\n  unity command editor_play         Run a command\n  unity command eval \"return 1+1;\"  Run a command with arguments\n",
+    "stderr": ""
+  },
+  {
+    "timestamp": "2026-11-03T10:04:22.228106+03:30",
+    "argv": [
+      "/home/alireza/.local/bin/unity.previous",
+      "license",
+      "status",
+      "--help"
+    ],
+    "exitCode": 0,
+    "stdout": "Usage: unity license status [options]\n\nShow the current Unity license state\n\nOptions:\n  -h, --help         display help for command\n\nGlobal Options:\n  -V, --version      output the version number\n  --format <format>  Output format: human, json, tsv, ndjson, github (env:\n                     UNITY_FORMAT)\n  --json             Shorthand for --format json\n  --no-banner        Suppress the startup banner (env: UNITY_NO_BANNER)\n  --no-pager         Disable the pager for long output (env: UNITY_NO_PAGER)\n  --non-interactive  Disable interactive prompts. Useful in CI/CD environments.\n                     (env: UNITY_NON_INTERACTIVE)\n  --quiet            Suppress informational output (env: UNITY_QUIET)\n  --verbose          Show full error details including stack traces on failure\n                     (env: UNITY_VERBOSE)\n  --color <mode>     Control colored output (choices: \"auto\", \"always\", \"never\")\n  --no-color         Disable colored output (shorthand for --color never)\n  --proxy <url>      HTTP/HTTPS/SOCKS/PAC proxy URL. Examples:\n                     http://<user>:<pass>@host:8080, socks5://host:1080,\n                     pac+http://wpad/proxy.pac (env: UNITY_PROXY)\n  --proxy-disable    Disable proxy for this invocation, ignoring all sources\n  --log-proxy        Log every outbound request to proxy-request.json for this\n                     run. Off by default; typically used once when reproducing a\n                     proxy issue for support. Also settable via\n                     UNITY_LOG_PROXY=1 or the proxyRequestLogging user setting.\n                     (env: UNITY_LOG_PROXY)\n  --no-log-proxy     Opt out of --log-proxy / UNITY_LOG_PROXY / the persisted\n                     user setting for this run. Use when logging is enabled\n                     globally but you want one clean invocation.\n",
+    "stderr": ""
+  },
+  {
+    "timestamp": "2026-11-03T10:04:22.273628+03:30",
+    "argv": [
+      "/home/alireza/.local/bin/unity.previous",
+      "pipeline",
+      "list",
+      "--help"
+    ],
+    "exitCode": 0,
+    "stdout": "Usage: unity pipeline list [options]\n\nList all Unity Editor instances and their Pipeline package status\n\nOptions:\n  -h, --help         display help for command\n\nGlobal Options:\n  -V, --version      output the version number\n  --format <format>  Output format: human, json, tsv, ndjson, github (env:\n                     UNITY_FORMAT)\n  --json             Shorthand for --format json\n  --no-banner        Suppress the startup banner (env: UNITY_NO_BANNER)\n  --no-pager         Disable the pager for long output (env: UNITY_NO_PAGER)\n  --non-interactive  Disable interactive prompts. Useful in CI/CD environments.\n                     (env: UNITY_NON_INTERACTIVE)\n  --quiet            Suppress informational output (env: UNITY_QUIET)\n  --verbose          Show full error details including stack traces on failure\n                     (env: UNITY_VERBOSE)\n  --color <mode>     Control colored output (choices: \"auto\", \"always\", \"never\")\n  --no-color         Disable colored output (shorthand for --color never)\n  --proxy <url>      HTTP/HTTPS/SOCKS/PAC proxy URL. Examples:\n                     http://<user>:<pass>@host:8080, socks5://host:1080,\n                     pac+http://wpad/proxy.pac (env: UNITY_PROXY)\n  --proxy-disable    Disable proxy for this invocation, ignoring all sources\n  --log-proxy        Log every outbound request to proxy-request.json for this\n                     run. Off by default; typically used once when reproducing a\n                     proxy issue for support. Also settable via\n                     UNITY_LOG_PROXY=1 or the proxyRequestLogging user setting.\n                     (env: UNITY_LOG_PROXY)\n  --no-log-proxy     Opt out of --log-proxy / UNITY_LOG_PROXY / the persisted\n                     user setting for this run. Use when logging is enabled\n                     globally but you want one clean invocation.\n",
+    "stderr": ""
+  }
+]

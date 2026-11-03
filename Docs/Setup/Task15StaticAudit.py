@@ -4,15 +4,16 @@ Run from any directory: python3 -B Docs/Setup/Task15StaticAudit.py
 PASS here means the named static check only, never executed gameplay or a successful import.
 """
 import datetime
+import argparse
 import hashlib
 import json
 import re
 import subprocess
 from collections import Counter
 from pathlib import Path
+import Task15References
 
 ROOT = Path(__file__).resolve().parents[2]
-OUT = ROOT / "Evidence/Task15"
 BASE = "2923f56b79c6cba4b24627fee4bde2e902d872ab"
 
 
@@ -31,8 +32,8 @@ def documents(path):
         path.read_text(), re.M | re.S)]
 
 
-def main():
-    OUT.mkdir(parents=True, exist_ok=True)
+def main(out):
+    out.mkdir(parents=True, exist_ok=True)
     result = {
         "timestamp": datetime.datetime.now().astimezone().isoformat(),
         "sourceRevision": git("rev-parse", "HEAD"),
@@ -48,10 +49,15 @@ def main():
         before = subprocess.check_output(["git", "show", BASE + ":" + name], cwd=ROOT)
         if not path.exists() or path.read_bytes() != before:
             changes.append(name)
-    expected_changes = {"Preproduction/tools/audit_package.py"}
+    expected_changes = {"Preproduction/tools/audit_package.py",
+        "Assets/NeonTunnelRunner/Settings/URP/PC_Renderer.asset",
+        "Assets/Settings/DefaultVolumeProfile.asset",
+        "Assets/TextMesh Pro/Resources/TMP Settings.asset",
+        "Assets/TutorialInfo/Readme.cs.meta"}
     unexpected_changes = [p for p in changes if p not in expected_changes]
     result["preservation"] = {"checkedFiles": len(protected), "changed": changes,
         "expectedToolingChange": "audit_package.py now locates the supplied ignore at the Unity repository root",
+        "authorizedReferenceRepairs": "Exact stale optional data removals; Evidence/Task15Recovery/reference-dispositions.csv and reference-investigation.json. Import remains pending.",
         "unexpectedChanges": unexpected_changes,
         "productionChanges": [p for p in changes if p.startswith(("Assets/", "Packages/", "ProjectSettings/"))],
         "result": "PASS" if not unexpected_changes else "FAIL"}
@@ -89,15 +95,15 @@ def main():
         if m:
             package_guids.add(m[1])
             package_paths[m[1]] = str(p.relative_to(ROOT)).removesuffix(".meta")
-    unresolved = []
-    for p in (ROOT / "Assets").rglob("*"):
-        if p.is_file() and p.suffix in [".unity", ".prefab", ".asset", ".mat", ".mixer"]:
-            for guid in set(re.findall(r"guid: ([0-9a-f]{32})", p.read_text(errors="replace"))):
-                if guid not in asset_guids and guid not in package_guids and not guid.startswith("0000000000000000"):
-                    unresolved.append({"file": str(p.relative_to(ROOT)), "guid": guid})
-    result["assetIntegrity"] = {"assetGuids": len(asset_guids), "packageGuids": len(package_guids), "missingMetas": missing_metas,
+    references = Task15References.scan(ROOT)
+    (out / "references.json").write_text(json.dumps(references, indent=2) + "\n")
+    unresolved = [{"file": v["file"], "guid": v["guid"], "fileID": v["fileID"], "property": v["property"]}
+                  for v in references["references"] if v["resolution"] == "UNRESOLVED_GUID"]
+    result["assetIntegrity"] = {"assetGuids": references["indexedAssetGuids"], "packageGuids": references["indexedPackageGuids"], "missingMetas": missing_metas,
         "duplicateGuids": duplicates, "unresolvedGuidReferences": unresolved,
-        "limitation": "Does not prove fileID/subasset or fresh-import resolution"}
+        "strictResult": references["result"], "scopes": references["counts"],
+        "packageErrors": references["packageErrors"], "danglingMetas": references["danglingMetas"],
+        "limitation": "Exact text fileIDs checked. Built-in/native/importer IDs remain explicitly pending; zero missing GUIDs does not establish successful import."}
     defaults = documents(ROOT / "Assets/Settings/DefaultVolumeProfile.asset")
     profile = next(b for _, fid, b in defaults if fid == 11400000)
     profile_ids = set(re.findall(r"fileID: (-?\d+)", profile))
@@ -170,11 +176,15 @@ def main():
         "suiteCases": {mode: dict(Counter(case["Status"] for case in json.loads((ROOT / ("Evidence/Task14/" + mode + "-results.json")).read_text())["data"]["result"]["results"])) for mode in ["editmode", "playmode"]},
         "artifactHashes": {p: digest(ROOT / p) for p in ["Evidence/Task14/editmode-results.json", "Evidence/Task14/playmode-results.json", "Evidence/Task14/play-sessions.json", "Evidence/Task14/Standalone/acceptance.json", "Evidence/Task14/console-final.json", "Evidence/Task14/build-inputs.json"]},
     }
-    result["staticResult"] = "PASS" if not (unexpected_changes or missing_metas or duplicates or unresolved or result["sourceScan"]["legacyOrDirectPolling"]) else "FAIL"
-    (OUT / "static-audit.json").write_text(json.dumps(result, indent=2) + "\n")
+    result["staticResult"] = "FAIL" if (unexpected_changes or missing_metas or duplicates or references["result"] == "FAIL" or result["sourceScan"]["legacyOrDirectPolling"]) else "BLOCKED"
+    result["staticResultScope"] = "BLOCKED retains import/fileID prerequisites; all individual source checks and preservation verdicts remain separate."
+    (out / "static-audit.json").write_text(json.dumps(result, indent=2) + "\n")
     print(json.dumps({k: result[k] for k in ["timestamp", "staticResult", "preservation", "assetIntegrity", "audio"]}, indent=2))
     return result
 
 
 if __name__ == "__main__":
-    raise SystemExit(0 if main()["staticResult"] == "PASS" else 1)
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--output-dir", type=Path, default=ROOT / "Evidence/Task15Recovery/Static" / datetime.datetime.now().astimezone().strftime("%Y%m%dT%H%M%S%z"))
+    verdict = main(parser.parse_args().output_dir)["staticResult"]
+    raise SystemExit(1 if verdict == "FAIL" else 2 if verdict == "BLOCKED" else 0)

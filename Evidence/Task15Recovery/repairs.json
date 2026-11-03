@@ -1,0 +1,51 @@
+{
+  "timestamp": "2026-11-03T10:13:47.837849+03:30",
+  "sourceRevision": "6a102af74e1322d2018f2ee5d2088cc0b992428e",
+  "userConfirmedUnityClosed": true,
+  "backup": "/tmp/neon-task15-recovery-before",
+  "repairs": [
+    {
+      "file": "Assets/NeonTunnelRunner/Settings/URP/PC_Renderer.asset",
+      "repair": "Remove only obsolete probeVolumeResources block; modern GraphicsSettings resource owners retained",
+      "removedPointers": 7,
+      "beforeSha256": "f1539194a886ddba7dcead1f6addbc9f3f02ab10fcf7b740561f8c6171ef78be",
+      "afterSha256": "4f5005a52dccb074cab717da99bf0ecaa25b9ed63ecbb080f12f4b38738874df",
+      "status": "OFFLINE_REPAIR; import/runtime BLOCKED"
+    },
+    {
+      "file": "Assets/Settings/DefaultVolumeProfile.asset",
+      "repair": "Remove nine unreferenced template/test documents, four with absent scripts and five with null scripts. All 19 listed components retained byte-for-byte.",
+      "removedOwnerFileIDs": [
+        -8104416584915340131,
+        -7750755424749557576,
+        -7274224791359825572,
+        -5360449096862653589,
+        -5139089513906902183,
+        -581120513425526550,
+        4251301726029935498,
+        6940869943325143175,
+        9122958982931076880
+      ],
+      "removedPointers": 4,
+      "beforeSha256": "6698bfacfad479acfd9766d00aba81ab52527d3b15c8b133d03ed7a2401499d6",
+      "afterSha256": "a228b3c121fe4aeff247104e927f34e7560fadc0a514caa1358adfe2a001017d",
+      "status": "OFFLINE_REPAIR; import/runtime BLOCKED"
+    },
+    {
+      "file": "Assets/TextMesh Pro/Resources/TMP Settings.asset",
+      "repair": "Clear stale optional EmojiOne default sprite pointer only. Pinned Essential archive ships pointer but no EmojiOne asset; game uses no sprite tags/API. Font/style/linebreak/emoji-support settings retained.",
+      "removedPointers": 1,
+      "beforeSha256": "7be438062cdc296835a1258b68bcbeb8e9fdc4b01ea27c05a24a1074260f7424",
+      "afterSha256": "36734ef50d0d62f021f3d9ee04015a3ba581c9e2315ff8b5e395f94c5d8bd8d9",
+      "status": "OFFLINE_REPAIR; import/runtime BLOCKED"
+    },
+    {
+      "file": "Assets/TutorialInfo/Readme.cs.meta",
+      "repair": "Clear absent optional MonoImporter editor icon on unused template Readme script. Default references, script GUID and code retained.",
+      "removedPointers": 1,
+      "beforeSha256": "80a3df9969fab6e656583ee9bbca884d0507e2b7de3417f6ea3118fba901cd60",
+      "afterSha256": "540ab0e6e9bb3d86a9b7805a85d83065efd384421dc22abb2ae9dfe7e531beac",
+      "status": "OFFLINE_REPAIR; import/runtime BLOCKED"
+    }
+  ]
+}

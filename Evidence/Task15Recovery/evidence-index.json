@@ -1,0 +1,190 @@
+{
+  "timestamp": "2026-11-03T10:36:02.323474+03:30",
+  "scope": "Exact recovery commit payload; original Evidence/Task15 history remains untouched. Index does not hash itself.",
+  "files": {
+    "Assets/NeonTunnelRunner/Settings/URP/PC_Renderer.asset": {
+      "bytes": 2196,
+      "sha256": "4f5005a52dccb074cab717da99bf0ecaa25b9ed63ecbb080f12f4b38738874df"
+    },
+    "Assets/Settings/DefaultVolumeProfile.asset": {
+      "bytes": 18731,
+      "sha256": "a228b3c121fe4aeff247104e927f34e7560fadc0a514caa1358adfe2a001017d"
+    },
+    "Assets/TextMesh Pro/Resources/TMP Settings.asset": {
+      "bytes": 1792,
+      "sha256": "36734ef50d0d62f021f3d9ee04015a3ba581c9e2315ff8b5e395f94c5d8bd8d9"
+    },
+    "Assets/TutorialInfo/Readme.cs.meta": {
+      "bytes": 262,
+      "sha256": "540ab0e6e9bb3d86a9b7805a85d83065efd384421dc22abb2ae9dfe7e531beac"
+    },
+    "Docs/Setup/Task15References.py": {
+      "bytes": 10374,
+      "sha256": "8bb05bd11617d8c6fd6a10d239a904db30931e453b8ed308013f9e4c04d287e3"
+    },
+    "Docs/Setup/Task15StaticAudit.py": {
+      "bytes": 13725,
+      "sha256": "1c69bb254585db0f90f9219d64fc2fe9b7f53ae71c555257f1314ab43498b5f5"
+    },
+    "Docs/Setup/test_task15_references.py": {
+      "bytes": 5516,
+      "sha256": "32c893c8f1523461edf12ba7d50676218cc9857b63e45df33b96466dac05e849"
+    },
+    "Docs/Verification/15-integration.md": {
+      "bytes": 45001,
+      "sha256": "f416d741b06ac52ab3fdc1b9b85f9f79529ef357208620b4264404de7ad60bd4"
+    },
+    "Evidence/Task15Recovery/README.md": {
+      "bytes": 15018,
+      "sha256": "fbc2e18c3bd311943cd60d185e83ad8b03cc35b5dfc9217a9dd6dc35d3cdaed8"
+    },
+    "Evidence/Task15Recovery/Static/initial-references.json": {
+      "bytes": 491599,
+      "sha256": "ccd256ba06aa5a476404f022fe22682ac34f12713c27c6069a0b2c4ccf9fa096"
+    },
+    "Evidence/Task15Recovery/Static/initial-static-audit.json": {
+      "bytes": 167611,
+      "sha256": "670f75a21c780f2e2cb65f56622b3962ca8d7278f9d6edadb8a3a6d6195e3eea"
+    },
+    "Evidence/Task15Recovery/Static/references.json": {
+      "bytes": 491659,
+      "sha256": "04ce1905a2e6aa1ca1ac05b5e6b4582a0080c74e382ae6c22c1bf61b049254e2"
+    },
+    "Evidence/Task15Recovery/Static/static-audit.json": {
+      "bytes": 167611,
+      "sha256": "237ef72bd465b2c55934f7ace1039d39472e10f898f552c69062a306564c88a6"
+    },
+    "Evidence/Task15Recovery/capability-diagnostics.json": {
+      "bytes": 4446,
+      "sha256": "c551bd5cb467c6669abc282288781eae65c67c35bd528d231d56e58654301074"
+    },
+    "Evidence/Task15Recovery/cli-preflight.json": {
+      "bytes": 10354,
+      "sha256": "a3eff8496454409811a429f6cfd41c24f04f6b8537e01e2092c5d5f111c036eb"
+    },
+    "Evidence/Task15Recovery/concurrent-user-layout-change.json": {
+      "bytes": 6444,
+      "sha256": "97044b1a07b1118bb5392b98eefaf975508887539077518a642eaf0e0b31ac04"
+    },
+    "Evidence/Task15Recovery/desktop-import-excerpt.log": {
+      "bytes": 5181,
+      "sha256": "9c5fbdb7e3ac957ec08d4cb15acd077a814bfe89b8008170442d75fd6e9aa6fb"
+    },
+    "Evidence/Task15Recovery/desktop-import-observation.json": {
+      "bytes": 7148,
+      "sha256": "d38cd38287bb1b40e5b2157746184fd4894a5e45ea79eb92c131db87c4f32b42"
+    },
+    "Evidence/Task15Recovery/fairness-helper-compile.json": {
+      "bytes": 720,
+      "sha256": "8819246ad6f58c67b8da9bf19a3f903d8dc542e8f7a5f4f540facbcedff12e9c"
+    },
+    "Evidence/Task15Recovery/fairness-helper.rsp": {
+      "bytes": 44014,
+      "sha256": "5454bf5a6baf97119aabd54f53ea515d962d6b4640af8ea787968a36336c4f49"
+    },
+    "Evidence/Task15Recovery/gate-status.json": {
+      "bytes": 5753,
+      "sha256": "8ea0c5a3957f6b9ee509321c35acbba0ed6e33ed7a4b1dac7d28562e92627133"
+    },
+    "Evidence/Task15Recovery/intended-files.json": {
+      "bytes": 2487,
+      "sha256": "174406c0f00ab32ad1c2be63a2a9a39a65c8c1951e188866c2c6c24102e6332d"
+    },
+    "Evidence/Task15Recovery/isolated-tracked-snapshot.json": {
+      "bytes": 72007,
+      "sha256": "c1f17a63653462758e18e6669eed1bf20b0687f027f61d34f715a190126b1d37"
+    },
+    "Evidence/Task15Recovery/package-audit-command.json": {
+      "bytes": 620,
+      "sha256": "229a860531cf4ab30267feebb9d6d559a7e46d4b40582915715cd74744f78428"
+    },
+    "Evidence/Task15Recovery/package-resource-proof.json": {
+      "bytes": 12592,
+      "sha256": "0fa3f25cd9e2f5ef348f12f4aeb36369b2cca3bed536d548545d007aa5aef5d3"
+    },
+    "Evidence/Task15Recovery/previous-requirement-evidence.csv": {
+      "bytes": 50255,
+      "sha256": "85c5f16cae72942fd748ccdc086102238c706b7a3cbbe40df508f1bc5137da7e"
+    },
+    "Evidence/Task15Recovery/protected-after.json": {
+      "bytes": 182113,
+      "sha256": "3c1f401748699c33a344fcaf60c7b7dc5923988ffdb5602fe3076c58bc7e29c7"
+    },
+    "Evidence/Task15Recovery/protected-before.json": {
+      "bytes": 178623,
+      "sha256": "2bb3baea2c80a933391de2449d746b2aa304e9badd6761beac25b73783c3735f"
+    },
+    "Evidence/Task15Recovery/reference-dispositions.csv": {
+      "bytes": 10791,
+      "sha256": "bcc5bd71f9f5d17a3151f680058730d38fe413765143df0ffbbaf505d669769c"
+    },
+    "Evidence/Task15Recovery/reference-investigation.json": {
+      "bytes": 95595,
+      "sha256": "0d1eb7f4890d798874aff36b01f3fb1ca124d43d4c21329d60d7de8fa1f62b4a"
+    },
+    "Evidence/Task15Recovery/references-after.json": {
+      "bytes": 491599,
+      "sha256": "f4484b705c27407a9de4e584b767b44700772fb565291c23273a1ecf5a5dfa24"
+    },
+    "Evidence/Task15Recovery/references-before.json": {
+      "bytes": 502866,
+      "sha256": "6abdd863a30b33ed47eb860dfc5bab119e81dd89a69b7a65e3a675d0913ff8bb"
+    },
+    "Evidence/Task15Recovery/references-final.json": {
+      "bytes": 491659,
+      "sha256": "04ce1905a2e6aa1ca1ac05b5e6b4582a0080c74e382ae6c22c1bf61b049254e2"
+    },
+    "Evidence/Task15Recovery/reopened-session-status.json": {
+      "bytes": 1162,
+      "sha256": "501eebe2b397766aa2d1f2e525341d60b4e67b3b676b673b9a5f41a858340d2b"
+    },
+    "Evidence/Task15Recovery/repairs.json": {
+      "bytes": 2547,
+      "sha256": "1b0959499d883cf314b0c367a055bc2be1451b7fe1ceb930a404ed0d898bf0e6"
+    },
+    "Evidence/Task15Recovery/scanner-fixtures-command.json": {
+      "bytes": 1423,
+      "sha256": "101addc80b094a96d5f1bfe56d633a48e6692e495f0b72283e750a8fda78fd1d"
+    },
+    "Evidence/Task15Recovery/scanner-fixtures-final-command.json": {
+      "bytes": 1692,
+      "sha256": "a8f3ea4a39a94a9e7752ae8aaf4c4a5e773c0758aacdc601a1232e924818cf24"
+    },
+    "Evidence/Task15Recovery/scanner-initial-diagnostics.json": {
+      "bytes": 480030,
+      "sha256": "da5907e506af5041472ac8cad6f40706b3446075c0b72b5bed0c47b3819ca94d"
+    },
+    "Evidence/Task15Recovery/session-log-observations.json": {
+      "bytes": 4993,
+      "sha256": "c79f3faa717c1a302c5ce1d2c32e356cd663e341dfe19530a7eb8edde2986013"
+    },
+    "Evidence/Task15Recovery/static-audit-command.json": {
+      "bytes": 3622,
+      "sha256": "67b170400214854a34634edc103d22b876a644f16acf4b6676208053938e3672"
+    },
+    "Evidence/Task15Recovery/static-audit-final-command.json": {
+      "bytes": 3891,
+      "sha256": "f5da76bc98b3fd2005f7e19a8642fa586e93fb84b184c442ae869f1fb9b51ad4"
+    },
+    "Evidence/Task15Recovery/static-validation.json": {
+      "bytes": 1565,
+      "sha256": "b8e215da17b5f8878c6c79e811aaec6e54411b3c46aa15d9fe150d81b39134a9"
+    },
+    "Evidence/Task15Recovery/tracked-revision-after.json": {
+      "bytes": 420692,
+      "sha256": "065500930844c5e8f583e9aa60b605c9133f2776f281d4797ecbb14d1f4a6c47"
+    },
+    "Evidence/Task15Recovery/tracked-revision-before.json": {
+      "bytes": 426622,
+      "sha256": "28f9c9bd29ec2d0af43fbd3400dc398bec39b9c6755716789601c1cd60a6c0ac"
+    },
+    "Evidence/Task15Recovery/validation-cases.csv": {
+      "bytes": 67967,
+      "sha256": "e5afabf335461f7943e039cf9b2f380c487f6b86ef1f362357a6cd96d3921177"
+    },
+    "Evidence/requirement-evidence.csv": {
+      "bytes": 94788,
+      "sha256": "595d4288fc2df81659a6598735060a9c72c4f4ae15f92929cfac1083be16daa6"
+    }
+  }
+}

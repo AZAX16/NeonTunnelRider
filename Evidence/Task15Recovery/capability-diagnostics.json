@@ -1,0 +1,108 @@
+{
+  "timestamp": "2026-11-03T10:06:48.519253+03:30",
+  "session": {
+    "USER": "alireza",
+    "DISPLAY": ":0",
+    "XDG_RUNTIME_DIR": "/run/user/1000",
+    "XAUTHORITY": "/home/alireza/.Xauthority",
+    "PULSE_SERVER": null
+  },
+  "uid": 1000,
+  "devicePaths": {
+    "/dev/dri": false,
+    "/dev/nvidia0": false,
+    "/dev/snd": false
+  },
+  "projectDescriptorExists": false,
+  "commands": [
+    {
+      "timestamp": "2026-11-03T10:06:45.998525+03:30",
+      "argv": [
+        "/home/alireza/.local/bin/unity.previous",
+        "license",
+        "status",
+        "--format",
+        "json"
+      ],
+      "exitCode": 6,
+      "stdout": "{\n  \"success\": false,\n  \"command\": \"license\",\n  \"data\": null,\n  \"errors\": [\n    {\n      \"code\": \"LICENSING_CLIENT_UNAVAILABLE\",\n      \"message\": \"Can't reach the Unity licensing client. Check your connection and try again.\"\n    }\n  ],\n  \"warnings\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "timestamp": "2026-11-03T10:06:46.098456+03:30",
+      "argv": [
+        "/home/alireza/.local/bin/unity.previous",
+        "pipeline",
+        "list",
+        "--format",
+        "json"
+      ],
+      "exitCode": 0,
+      "stdout": "{\n  \"success\": true,\n  \"command\": \"pipeline list\",\n  \"data\": {\n    \"instances\": [\n      {\n        \"projectName\": \"NeonTunnelRunner\",\n        \"projectPath\": \"/home/alireza/NeonTunnelRider/NeonTunnelRunner\",\n        \"isRunning\": true,\n        \"hasPipelinePackage\": true,\n        \"pipelineVersion\": \"0.9.1-exp.1\",\n        \"updateAvailable\": false,\n        \"pipelineServer\": {\n          \"isReachable\": false,\n          \"apiUrl\": null\n        },\n        \"safeMode\": null\n      }\n    ],\n    \"latestVersion\": null,\n    \"summary\": {\n      \"totalInstances\": 1,\n      \"runningInstances\": 1,\n      \"instancesWithPipeline\": 1,\n      \"reachableServers\": 0,\n      \"instancesInSafeMode\": 0,\n      \"instancesWithUpdateAvailable\": 0\n    }\n  },\n  \"errors\": [],\n  \"warnings\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "timestamp": "2026-11-03T10:06:48.500906+03:30",
+      "argv": [
+        "glxinfo",
+        "-B"
+      ],
+      "exitCode": 255,
+      "stdout": "",
+      "stderr": "Error: unable to open display :0\n"
+    },
+    {
+      "timestamp": "2026-11-03T10:06:48.504412+03:30",
+      "argv": [
+        "pactl",
+        "info"
+      ],
+      "exitCode": 1,
+      "stdout": "",
+      "stderr": "pa_write() failed while trying to wake up the mainloop: Operation not permitted\nConnection failure: Connection refused\npa_write() failed while trying to wake up the mainloop: Operation not permitted\npa_context_connect() failed: Connection refused\npa_write() failed while trying to wake up the mainloop: Operation not permitted\n"
+    },
+    {
+      "timestamp": "2026-11-03T10:06:48.511769+03:30",
+      "argv": [
+        "pactl",
+        "list",
+        "short",
+        "sinks"
+      ],
+      "exitCode": 1,
+      "stdout": "",
+      "stderr": "pa_write() failed while trying to wake up the mainloop: Operation not permitted\nConnection failure: Connection refused\npa_write() failed while trying to wake up the mainloop: Operation not permitted\npa_context_connect() failed: Connection refused\npa_write() failed while trying to wake up the mainloop: Operation not permitted\n"
+    },
+    {
+      "timestamp": "2026-11-03T10:06:48.518985+03:30",
+      "diagnostic": "X11",
+      "address": "/tmp/.X11-unix/X0",
+      "errno": 1,
+      "result": "[Errno 1] Operation not permitted"
+    },
+    {
+      "timestamp": "2026-11-03T10:06:48.519122+03:30",
+      "diagnostic": "PulseAudio",
+      "address": "/run/user/1000/pulse/native",
+      "errno": 1,
+      "result": "[Errno 1] Operation not permitted"
+    },
+    {
+      "timestamp": "2026-11-03T10:06:48.519182+03:30",
+      "diagnostic": "local-TCP",
+      "address": [
+        "127.0.0.1",
+        1
+      ],
+      "errno": 1,
+      "result": "[Errno 1] Operation not permitted"
+    },
+    {
+      "timestamp": "2026-11-03T10:06:48.519213+03:30",
+      "diagnostic": "licensing-socket-capability",
+      "address": null,
+      "result": "socket creation/connect succeeded"
+    }
+  ],
+  "launchDecision": "No Editor/player launched: unchanged independent socket/display/audio prerequisites fail; prior owned batch fallback already failed. Current no-instances result is not proof of desktop license absence."
+}

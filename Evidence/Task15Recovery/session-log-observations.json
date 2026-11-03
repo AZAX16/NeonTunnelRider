@@ -1,0 +1,145 @@
+{
+  "timestamp": "2026-11-03T10:18:57.905980+03:30",
+  "userConfirmed": "Unity is closed",
+  "observations": {
+    "Logs/Editor.log": {
+      "sha256": "50f298cdcf2146aac98aeebec24ddf13e1fd27ef7371d21b65baad45d6dcf5ef",
+      "mtime": "2026-11-03T09:46:01.862207+03:30",
+      "selectedLines": [
+        {
+          "line": 1,
+          "text": "Unity Editor version:    6000.6.3f1 (45d8eee7de74)"
+        },
+        {
+          "line": 10,
+          "text": "Date:                    2026-11-03T05:55:30Z"
+        },
+        {
+          "line": 23,
+          "text": "COMMAND LINE ARGUMENTS:"
+        },
+        {
+          "line": 24,
+          "text": "/home/alireza/Unity/Hub/Editor/6000.6.3f1/Editor/Unity"
+        },
+        {
+          "line": 36,
+          "text": "[Licensing::Client] Successfully resolved entitlement details"
+        },
+        {
+          "line": 39,
+          "text": "  Product: Unity Personal"
+        },
+        {
+          "line": 43,
+          "text": "[Licensing::Client] Successfully resolved entitlement details"
+        },
+        {
+          "line": 45,
+          "text": "[Licensing::Module] Licensing is initialized (took 0.16s)."
+        },
+        {
+          "line": 96,
+          "text": "[Licensing::Client] Successfully resolved entitlement details"
+        },
+        {
+          "line": 154,
+          "text": "[Licensing::Client] Successfully resolved entitlement details"
+        },
+        {
+          "line": 176,
+          "text": "[Licensing::Client] Successfully resolved entitlement details"
+        },
+        {
+          "line": 179,
+          "text": "[Licensing::Client] Successfully resolved entitlement details"
+        },
+        {
+          "line": 269,
+          "text": "Pipeline: Descriptor written to /home/alireza/NeonTunnelRider/NeonTunnelRunner/Library/Pipeline/.unity-pipeline-port"
+        },
+        {
+          "line": 450,
+          "text": "[Licensing::Client] Successfully resolved entitlement details"
+        },
+        {
+          "line": 479,
+          "text": "[Licensing::Client] Successfully resolved entitlement details"
+        },
+        {
+          "line": 482,
+          "text": "[Licensing::Client] Successfully resolved entitlement details"
+        },
+        {
+          "line": 487,
+          "text": "[Licensing::Client] Successfully resolved entitlement details"
+        },
+        {
+          "line": 488,
+          "text": "[Licensing::Client] Successfully resolved entitlement details"
+        },
+        {
+          "line": 500,
+          "text": "Pipeline: Descriptor written to /home/alireza/NeonTunnelRider/NeonTunnelRunner/Library/Pipeline/.unity-pipeline-port"
+        },
+        {
+          "line": 503,
+          "text": "Pipeline: Descriptor written to /home/alireza/NeonTunnelRider/NeonTunnelRunner/Library/Pipeline/.unity-pipeline-port"
+        },
+        {
+          "line": 504,
+          "text": "Pipeline: Descriptor written to /home/alireza/NeonTunnelRider/NeonTunnelRunner/Library/Pipeline/.unity-pipeline-port"
+        },
+        {
+          "line": 505,
+          "text": "Pipeline: Descriptor written to /home/alireza/NeonTunnelRider/NeonTunnelRunner/Library/Pipeline/.unity-pipeline-port"
+        },
+        {
+          "line": 511,
+          "text": "Pipeline Server stopped"
+        }
+      ],
+      "scope": "Existing desktop session log inspected during recovery; predates offline asset repair. Not fresh import/compile/Console/test evidence."
+    },
+    "/home/alireza/.config/unity3d/Editor.log": {
+      "sha256": "125a9bde4cf9cab1f2b578aa47249a6c2f0065207a0a9c6d162f4fbcb3f317b1",
+      "mtime": "2026-11-03T09:26:17.923871+03:30",
+      "selectedLines": [
+        {
+          "line": 1,
+          "text": "Unity Editor version:    6000.6.3f1 (45d8eee7de74)"
+        },
+        {
+          "line": 10,
+          "text": "Date:                    2026-11-03T05:55:30Z"
+        },
+        {
+          "line": 23,
+          "text": "COMMAND LINE ARGUMENTS:"
+        },
+        {
+          "line": 24,
+          "text": "/home/alireza/Unity/Hub/Editor/6000.6.3f1/Editor/Unity"
+        },
+        {
+          "line": 36,
+          "text": "[Licensing::Client] Successfully resolved entitlement details"
+        },
+        {
+          "line": 39,
+          "text": "  Product: Unity Personal"
+        },
+        {
+          "line": 43,
+          "text": "[Licensing::Client] Successfully resolved entitlement details"
+        },
+        {
+          "line": 45,
+          "text": "[Licensing::Module] Licensing is initialized (took 0.16s)."
+        }
+      ],
+      "scope": "Existing desktop session log inspected during recovery; predates offline asset repair. Not fresh import/compile/Console/test evidence."
+    }
+  },
+  "diagnosis": "Previous normal desktop log shows license initialized and Pipeline descriptor followed by shutdown; shell cannot reach licensing/display/audio endpoints. No proof that user license needs reactivation; do not reinstall Pipeline."
+}

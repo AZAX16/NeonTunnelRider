@@ -1,0 +1,68 @@
+{
+  "timestamp": "2026-11-03T10:31:34.080943+03:30",
+  "observations": [
+    {
+      "file": "UserSettings/Layouts/default-6000.dwlt",
+      "exists": true,
+      "mtime": "2026-11-03T10:19:50.166230+03:30",
+      "sha256": "ac4db8256b2acad6ca06b200e2ba51d9d225b4066d89437f362f3e2d90ea868f",
+      "size": 68538,
+      "beforeSha256": "b0493a42f3daf940b8fd6399d7fb5862904ac8b0d9cc696ada759d48fc059be8"
+    },
+    {
+      "file": "Logs/Editor.log",
+      "exists": true,
+      "mtime": "2026-11-03T10:29:59.804719+03:30",
+      "sha256": "68eaf8a5eda8bbcbe96e0d00d0aebc5e0d529a5659e9639a4be4ef5f757bde9c",
+      "size": 51408
+    },
+    {
+      "file": "Library/Pipeline/.unity-pipeline-port",
+      "exists": true,
+      "mtime": "2026-11-03T10:31:28.325058+03:30",
+      "sha256": "99627ceb25e51ed64cd523c7d347aeba060f35dd55d49e39ac961dd8315a49a9",
+      "size": 763
+    },
+    {
+      "file": "Assets/_Recovery/0.unity",
+      "exists": true,
+      "mtime": "2026-11-03T09:26:38.852159+03:30",
+      "sha256": "5513140ad14ccc7721cde34ede6182847c129bc1862b42c8b3c1ca5f3d5d1853",
+      "size": 93982,
+      "beforeSha256": "5513140ad14ccc7721cde34ede6182847c129bc1862b42c8b3c1ca5f3d5d1853"
+    },
+    {
+      "file": "Assets/_Recovery/0.unity.meta",
+      "exists": true,
+      "mtime": "2026-11-03T09:26:38.460144+03:30",
+      "sha256": "8819c63d227dfb01f02c5534c11940239999c13ae378f95e43994cf94f210ab7",
+      "size": 155,
+      "beforeSha256": "8819c63d227dfb01f02c5534c11940239999c13ae378f95e43994cf94f210ab7"
+    }
+  ],
+  "selectedProjectLogTail": [
+    "\tImportOutOfDateAssets: 1.851ms (0.229ms without children)",
+    "\t\tUnloadImportedAssets: 0.118ms",
+    "\t\tImportSchedulerStart: 0.478ms",
+    "\tGatherAllCurrentPrimaryImportResultRevisions: 0.302ms",
+    "Asset Pipeline Refresh (id=c6c1a374c448c0333babc73cfc618e2c): Total: 0.117 seconds - Initiated by RefreshV2(ForceSynchronousImport)",
+    "Starting new worker id: 1 with log in /home/alireza/NeonTunnelRider/NeonTunnelRunner/Logs/AssetImportWorkerHW1.log",
+    "[Worker0] Imported GUID: ab09877e2e707104187f6f83e2f62510 - Path: Assets/Settings/DefaultVolumeProfile.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: 'adf7b0a3cda35528477bf9c76125d557') in 0.597676863 seconds",
+    "[Worker0] Imported GUID: f288ae1f4751b564a96ac7587541f7a2 - Path: Assets/NeonTunnelRunner/Settings/URP/PC_Renderer.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: 'd1e184d07715d3164866f6be6cfe957c') in 0.457207872 seconds",
+    "[Worker0] Imported GUID: fcf7219bab7fe46a1ad266029b2fee19 - Path: Assets/TutorialInfo/Readme.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: 'e234940fea29a53739ad04381d1f0cc7') in 0.171624076 seconds",
+    "[Worker0] Imported GUID: 3f5b5dff67a942289a9defa416b206f3 - Path: Assets/TextMesh Pro/Resources/TMP Settings.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: 'a23c66ee658cea2fa43d86773bec0d3e') in 0.238130577 seconds",
+    "Worker ready: AssetImportWorkerHW1 1",
+    "GLX Extensions: GLX_ARB_context_flush_control GLX_ARB_create_context GLX_ARB_create_context_no_error GLX_ARB_create_context_profile GLX_ARB_create_context_robustness GLX_ARB_fbconfig_float GLX_ARB_framebuffer_sRGB GLX_ARB_get_proc_address GLX_ARB_multisample GLX_EXT_buffer_age GLX_EXT_create_context_es2_profile GLX_EXT_create_context_es_profile GLX_EXT_fbconfig_packed_float GLX_EXT_framebuffer_sRGB GLX_EXT_no_config_context GLX_EXT_swap_control GLX_EXT_swap_control_tear GLX_EXT_texture_from_pixmap GLX_EXT_visual_info GLX_EXT_visual_rating GLX_INTEL_swap_event GLX_MESA_copy_sub_buffer GLX_MESA_query_renderer GLX_MESA_swap_control GLX_OML_swap_method GLX_OML_sync_control GLX_SGIS_multisample GLX_SGIX_fbconfig GLX_SGIX_pbuffer GLX_SGIX_visual_select_group GLX_SGI_make_current_read GLX_SGI_swap_control GLX_SGI_video_sync ",
+    "Asset Pipeline Refresh (id=14f72ef5423c79c8d9fe99a9d6deed9f): Total: 0.148 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)",
+    "Asset Pipeline Refresh (id=466c7fc11ef088b85a882a20ad70ad4b): Total: 0.143 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)",
+    "GLX Extensions: GLX_ARB_context_flush_control GLX_ARB_create_context GLX_ARB_create_context_no_error GLX_ARB_create_context_profile GLX_ARB_create_context_robustness GLX_ARB_fbconfig_float GLX_ARB_framebuffer_sRGB GLX_ARB_get_proc_address GLX_ARB_multisample GLX_EXT_buffer_age GLX_EXT_create_context_es2_profile GLX_EXT_create_context_es_profile GLX_EXT_fbconfig_packed_float GLX_EXT_framebuffer_sRGB GLX_EXT_no_config_context GLX_EXT_swap_control GLX_EXT_swap_control_tear GLX_EXT_texture_from_pixmap GLX_EXT_visual_info GLX_EXT_visual_rating GLX_INTEL_swap_event GLX_MESA_copy_sub_buffer GLX_MESA_query_renderer GLX_MESA_swap_control GLX_OML_swap_method GLX_OML_sync_control GLX_SGIS_multisample GLX_SGIX_fbconfig GLX_SGIX_pbuffer GLX_SGIX_visual_select_group GLX_SGI_make_current_read GLX_SGI_swap_control GLX_SGI_video_sync ",
+    "Asset Pipeline Refresh (id=23ba428559e707389905ca4cf3796c6e): Total: 0.136 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)",
+    "Asset Pipeline Refresh (id=a65316247dd3acdc99e7721bcff72677): Total: 0.153 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)",
+    "Asset Pipeline Refresh (id=0323acc68825c2719bcbb5d2afa804bb): Total: 0.224 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)",
+    "Asset Pipeline Refresh (id=c9ddeed02c743fcaa8e68a6dda6c2b39): Total: 0.109 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)",
+    "Asset Pipeline Refresh (id=c6e99f25f47bb9ce586e5e3ab738372a): Total: 0.280 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)",
+    "Asset Pipeline Refresh (id=8970708b170e4190fbb39cce45935d68): Total: 0.124 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)",
+    "Asset Pipeline Refresh (id=36f2506344b75ef29a34ed92196aed92): Total: 0.128 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)"
+  ],
+  "action": "Preserved current layout bytes without restoration/edit. This file is ignored and will not be staged. No task tool wrote this path or launched an Editor. Origin not directly observable; mismatch is reported as concurrent external state, not unchanged."
+}

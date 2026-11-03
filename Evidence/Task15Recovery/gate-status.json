@@ -1,0 +1,186 @@
+{
+  "timestamp": "2026-11-03T10:25:33.182746+03:30",
+  "sourceRevision": "6a102af74e1322d2018f2ee5d2088cc0b992428e",
+  "auditedIdentity": "6a102af74e1322d2018f2ee5d2088cc0b992428e + four offline repairs; tracked production SHA256 fc0d7dea983ab99f0f41ca63892c152cdaa98868631ba7cd011cee3c3ebf0933",
+  "trackedProductionInputSetSha256": "fc0d7dea983ab99f0f41ca63892c152cdaa98868631ba7cd011cee3c3ebf0933",
+  "status": "BLOCKED",
+  "task16Ready": false,
+  "pushPerformed": false,
+  "newBuild": null,
+  "gates": [
+    {
+      "gate": "Reference integrity",
+      "result": "BLOCKED",
+      "observed": "13 absent GUID pointers removed in four exact files; missing GUID inventory now0, but 292 imported/native/built-in pointers and actual import await Editor Later external desktop log confirms 3 native asset import completions; Readme only QuickSearch, full exact fileID/render/glyph audit still blocked."
+    },
+    {
+      "gate": "Unity tests",
+      "result": "BLOCKED",
+      "observed": "0 current EditMode/PlayMode tests; no native or derived current suite XML"
+    },
+    {
+      "gate": "Fairness",
+      "result": "BLOCKED",
+      "observed": "0/1000 seeds executed in each of start/mid/cap contexts; no replay/failure statistics"
+    },
+    {
+      "gate": "100 km",
+      "result": "BLOCKED",
+      "observed": "0 current runs; no current seam/coverage/rebase/survival/count samples"
+    },
+    {
+      "gate": "Player integration",
+      "result": "BLOCKED",
+      "observed": "No repaired player built/launched; menus, snapshots, terminals, persistence, glyph/render/audio and warning reproduction pending"
+    },
+    {
+      "gate": "Performance",
+      "result": "BLOCKED",
+      "observed": "0 valid frame/allocation/memory samples; 0/600 required seconds after warmup"
+    },
+    {
+      "gate": "Visible soak",
+      "result": "BLOCKED",
+      "observed": "0 valid samples; 0/1800 required visible seconds"
+    },
+    {
+      "gate": "Static scanner fixtures",
+      "result": "PASS",
+      "observed": "9 Python semantic fixtures; genuine missing and invalid text-fileID fixtures remain failures as expected"
+    },
+    {
+      "gate": "Package audit",
+      "result": "PASS",
+      "observed": "54 requirements,25 V cases,16 prompts,12 concept references,0 errors; nested-ignore fix retained"
+    },
+    {
+      "gate": "Offline helper compile",
+      "result": "PASS",
+      "observed": "Pinned bundled compiler exit0; no Unity/seed execution"
+    },
+    {
+      "gate": "Task16 packaging/delivery",
+      "result": "NOT RUN",
+      "observed": "Not authorized to advance before required Task15 gates close"
+    }
+  ],
+  "unityTests": {
+    "executed": 0,
+    "passed": 0,
+    "failed": null,
+    "skipped": null,
+    "inconclusive": null,
+    "reason": "Neither current suite started; unavailable totals are not zero-success results",
+    "historicalTask14": {
+      "passed": 365,
+      "editmode": 153,
+      "playmode": 212,
+      "scope": "Historical only"
+    }
+  },
+  "fairness": {
+    "executedSeeds": 0,
+    "requiredSeedsPerContext": 1000,
+    "contexts": [
+      "start",
+      "mid",
+      "cap"
+    ],
+    "kmPerSeed": 10,
+    "maxReachableFuelGapMeters": 180,
+    "failuresAndReplayData": null
+  },
+  "longDistance": {
+    "currentRuns": 0,
+    "requiredKmPerRun": 100,
+    "currentMeasurements": null
+  },
+  "profile": {
+    "requiredWallSeconds": 600,
+    "validWallSeconds": 0,
+    "frameSamples": 0,
+    "rawCapture": null,
+    "p95FrameMs": null,
+    "gameplayGcBytes": null,
+    "memorySamples": 0,
+    "baseline": null,
+    "targets": {
+      "p95FrameMs": 16.7,
+      "gameplaySteadyGcBytes": 0,
+      "memoryPercent": 10
+    }
+  },
+  "soak": {
+    "requiredVisibleWallSeconds": 1800,
+    "validVisibleWallSeconds": 0,
+    "validSamples": 0,
+    "counterSamples": 0
+  },
+  "warningReview": {
+    "currentEditorConsole": "UNAVAILABLE",
+    "currentPlayer": "NOT RUN",
+    "currentCounts": null,
+    "historicalURPMessages": 4,
+    "historicalEvidence": "Evidence/Task15/warning-review.json",
+    "remaining": "Current independent reproduction and required Bloom/firework/glyph/audio verification"
+  },
+  "referenceScopes": {
+    "wholeWorkingTree": {
+      "pointers": 786,
+      "resolutions": {
+        "SCRIPT_ID_CONVENTION": 218,
+        "IMPORT_ID_PENDING": 246,
+        "TEXT_ID_PRESENT": 276,
+        "BUILTIN_ID_PENDING": 46
+      },
+      "missingGuidPairs": 0
+    },
+    "tracked": {
+      "pointers": 702,
+      "resolutions": {
+        "SCRIPT_ID_CONVENTION": 195,
+        "IMPORT_ID_PENDING": 235,
+        "TEXT_ID_PRESENT": 235,
+        "BUILTIN_ID_PENDING": 37
+      },
+      "missingGuidPairs": 0
+    },
+    "productionGraph": {
+      "pointers": 681,
+      "resolutions": {
+        "SCRIPT_ID_CONVENTION": 185,
+        "IMPORT_ID_PENDING": 231,
+        "TEXT_ID_PRESENT": 234,
+        "BUILTIN_ID_PENDING": 31
+      },
+      "missingGuidPairs": 0
+    },
+    "protectedRecovery": {
+      "pointers": 84,
+      "resolutions": {
+        "TEXT_ID_PRESENT": 41,
+        "BUILTIN_ID_PENDING": 9,
+        "SCRIPT_ID_CONVENTION": 23,
+        "IMPORT_ID_PENDING": 11
+      },
+      "missingGuidPairs": 0
+    }
+  },
+  "requirementRows": 60,
+  "requirementResults": {
+    "NOT RUN": 7,
+    "BLOCKED": 49,
+    "PASS": 4
+  },
+  "validationSubchecks": 58,
+  "validationResults": {
+    "PASS": 19,
+    "BLOCKED": 35,
+    "NOT RUN": 4
+  },
+  "missingCapabilityActions": "Evidence/Task15Recovery/README.md",
+  "priorRegisterSha256": "85c5f16cae72942fd748ccdc086102238c706b7a3cbbe40df508f1bc5137da7e",
+  "laterDesktopObservation": "desktop-import-observation.json",
+  "userLayout": "Concurrent ignored layout change preserved; concurrent-user-layout-change.json",
+  "updatedAt": "2026-11-03T10:36:02.322788+03:30"
+}

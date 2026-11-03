@@ -1,3 +1,77 @@
+# Task 15 — Recovery continuation, 2026-11-03
+
+**BLOCKED. Task 16 ready: NO.** This recovery began at local `6a102af74e1322d2018f2ee5d2088cc0b992428e`; only the user's untracked recovery scene/meta were present initially. No newer tracked changes were reset. Current repaired tracked production input SHA-256: `fc0d7dea983ab99f0f41ca63892c152cdaa98868631ba7cd011cee3c3ebf0933`. The audit could not execute a suite, fairness run, 100 km run, repaired player, profile or visible soak. A later external desktop session logged three completed native asset imports; full reference/import acceptance remains blocked. Nothing was pushed and Task 16 packaging was not started. The complete original blocked checkpoint is retained verbatim below.
+
+Current [R01–R54/U01–U06 register](../../Evidence/requirement-evidence.csv): four scoped static PASS, 49 BLOCKED, seven delivery-only NOT RUN; R35 remains recommended. All [58 V01–V25 subchecks](../../Evidence/Task15Recovery/validation-cases.csv) remain explicit: 19 scoped PASS, 35 BLOCKED, four NOT RUN. The former reference FAIL is now **BLOCKED pending actual import/fileID validation** after offline repairs. The [prior register](../../Evidence/Task15Recovery/previous-requirement-evidence.csv) is byte-exact; previous result/time/revision columns preserve provenance in the updated register.
+
+## Recovery changes and per-reference dispositions
+
+The [13-row disposition table](../../Evidence/Task15Recovery/reference-dispositions.csv) contains the actual twelve original GUIDs plus one newly discovered metadata pointer, owning file/property/document, fileID, expected identity/type, Game/build reachability, classification, evidence, exact repair and verification status. [Original bytes/history/pinned source](../../Evidence/Task15Recovery/reference-investigation.json), [resource/package proof](../../Evidence/Task15Recovery/package-resource-proof.json) and [four-file repair hashes](../../Evidence/Task15Recovery/repairs.json) support these changes:
+
+| Exact changed file | Evidence-backed offline repair | Current verification |
+| --- | --- | --- |
+| `Assets/NeonTunnelRunner/Settings/URP/PC_Renderer.asset` | Remove only seven stale `probeVolumeResources` pointers. Current global debug/runtime resources and SSAO remain assigned. The obsolete fields still exist in pinned `Deprecated.cs`; the earlier claim of absence was incorrect. No current runtime reads were found outside their deprecated declaration. | Saved diff and current replacement GUIDs checked; native/FBX IDs, import and render still BLOCKED. |
+| `Assets/Settings/DefaultVolumeProfile.asset` | Remove nine orphan documents with no incoming pointers: four absent-script and five null-script template/test objects. All 19 listed components and every retained document remain byte-identical. Actual missing-script owners: OutlineVolumeComponent, TestAnimationCurveVolumeComponent, **OasisFogVolumeComponent**, TestVolume. | No active profile component removed. Earlier VolumeComponentSupportedEverywhere association corrected. Import BLOCKED. |
+| `Assets/TextMesh Pro/Resources/TMP Settings.asset` | Clear optional legacy EmojiOne default sprite pointer. Original settings exactly match pinned uGUI's shipped Essential asset; its archive omits EmojiOne. No game sprite tags/API or emoji-dependent labels found. Required fonts/materials/styles/linebreaks retained. | No asset invented or arbitrary substitute assigned. Current glyph/player check BLOCKED. |
+| `Assets/TutorialInfo/Readme.cs.meta` | Clear missing optional template MonoImporter editor icon, found by scanning metadata. Script GUID/default references/code retained. | Outside conservative Game/build graph; importer confirmation BLOCKED. |
+
+No required gameplay/font/material/mixer/prefab dependency was nulled. No asset or metadata pair with the missing GUIDs was found in tracked history or actual resolved packages to restore. These exact stale optional-data removals were prepared offline after the user confirmed Unity is closed. Backups are outside Unity's imported tree at `/tmp/neon-task15-recovery-before`; originals also remain in Git. There was no wholesale scene/prefab/mixer replacement or package-cache modification.
+
+## Strict inventory and scanner correction
+
+[Whole-tree before/after](../../Evidence/Task15Recovery/references-after.json) and [isolated tracked snapshot](../../Evidence/Task15Recovery/isolated-tracked-snapshot.json) distinguish missing GUIDs from unresolved imported IDs:
+
+| Scope | Missing GUID pointers before → after | Imported/native IDs pending | Built-in IDs pending |
+| --- | --- | --- | --- |
+| Entire working tree including protected recovery | 13 → 0 | 246 | 46 |
+| Tracked inputs | 13 → 0 | 235 | 37 |
+| Conservative Game/build/Resources/settings graph | 12 → 0 | 231 | 31 |
+| Protected recovery scene | 0 → 0 | 11 | 9 |
+
+**The strict inventory is not zero or a PASS:** 292 whole-tree imported/native/built-in pointer occurrences still require Editor confirmation, and script IDs have convention/static checks rather than current imports. Recovery has 20 such pending pointers and no missing GUID findings; it was inspected read-only and remains untouched. No missing metas, dangling imported metas, duplicate GUIDs or invalid external text anchors remain in the current saved scan.
+
+`Task15StaticAudit.py` now delegates pointer semantics to [Task15References.py](../Setup/Task15References.py), checks exact external text anchors, scans importer metadata/settings, resolves package identities from manifest/lock/resolution rather than every stray cache, and preserves explicit whole/tracked/graph/protected counts. Documentation GUIDs are not dependencies. Exact engine container IDs are counted as pending, with narrow justification from [Unity's data-tool documentation](https://github.com/Unity-Technologies/UnityDataTools/blob/main/Documentation/textdumper.md); no prefix allowlist remains. The exact importer-created Prefab Asset Handle is pending, as [Unity documents that it does not appear among YAML anchors](https://unity.com/blog/engine-platform/understanding-unitys-serialization-language-yaml). Arbitrary fileIDs, other properties and built-in-looking GUIDs are not accepted by those classifications.
+
+[Current nine semantic fixtures](../../Evidence/Task15Recovery/scanner-fixtures-final-command.json) PASS, including genuine missing references, invalid subasset IDs, limited prefab-handle semantics, unavailable/dangling/sample package metadata and protected-scope distinctions. The initial scanner-development result is retained; its apparent prefab-handle failures were fixed in the scanner without touching either scene. Package sample directories ending `~` are unimported package data; they cannot satisfy a production pointer unless actually imported into Assets. The [current package audit](../../Evidence/Task15Recovery/package-audit-command.json) PASS retains the prior nested-ignore fix unchanged: 54 requirements, 25 cases, 16 prompts, 12 concepts, zero errors. [Current offline fairness-helper compile](../../Evidence/Task15Recovery/fairness-helper-compile.json) exits 0 with no diagnostics; this is not Unity compilation or seed execution. The aggregate Static audit exits **2 / BLOCKED**, never manufactured success.
+
+A new independent local clone of tracked `6a102af` plus the exact four repair overlays has all current tracked production hashes and excludes recovery. Static scans before/after are retained. Package lookup used original resolved sources read-only. No new import was attempted there after the unchanged capability failures; no remote grader access or import PASS is claimed.
+
+## Bounded diagnostics and precise remaining access
+
+[Preflight](../../Evidence/Task15Recovery/cli-preflight.json) confirms CLI beta.13. [Capability diagnostics](../../Evidence/Task15Recovery/capability-diagnostics.json) separate independent blockers: licensing status exits 6 (`LICENSING_CLIENT_UNAVAILABLE`); status exits 6 (`STATUS_NO_INSTANCES`); Pipeline inventory lists this exact pinned project/package but zero reachable servers; local TCP and actual X11/PulseAudio endpoints return EPERM; `glxinfo -B` exits 255 and both `pactl` probes exit 1. No GPU or sound device paths are exposed here. No display/socket guess, dummy output, repeated Editor/player launch, process termination, package/Editor upgrade or license bypass was used.
+
+The user confirmed **Unity is closed**. Existing [desktop log observations](../../Evidence/Task15Recovery/session-log-observations.json) show normal entitlement initialization and Pipeline descriptor creation followed by shutdown, all before these repairs. The inventory's `isRunning:true` is not accepted as live readiness. There is no demonstrated activation failure of the desktop user's license and no demonstrated Pipeline invocation defect; inaccessible IPC must not be misdiagnosed as missing packages. The previous owned batch fallback failed licensing IPC and is retained as prior evidence. No repeat of that unchanged failed launch was useful.
+
+Required user/environment action: open the exact pinned Editor/project through the normal desktop/Hub and run the blocked CLI steps from that desktop's normal terminal, or allow the specific required local IPC/device access to this environment. Use normal Hub activation only if Unity actually requests it. No credentials are requested. For working Editor UI with broken Pipeline, use Test Runner and Build Profiles; the existing validator menu and its documented isolated batch entry remain available. The [executable/manual handoff](../../Evidence/Task15Recovery/README.md) gives each fallback and its limits. No dependent long run should start until current import/compile, one completed small test, advancing graphical Game frames and real audible output are confirmed.
+
+A later genuine state change was observed at the final preservation check: a new Pipeline descriptor, new desktop log activity and a changed ignored user layout. One evidence-based [new status probe](../../Evidence/Task15Recovery/reopened-session-status.json) still exited6/STATUS_PIPELINE_LOAD_PENDING. The [desktop import snapshot](../../Evidence/Task15Recovery/desktop-import-observation.json) and [exact numbered excerpt](../../Evidence/Task15Recovery/desktop-import-excerpt.log) confirm three NativeFormatImporter completions for the repaired PC renderer, default Volume profile and TMP settings. The Readme script appears in QuickSearch import output only. No controlled small test, exact imported fileID audit, Game frame sequence, current Console read or audible-output verification followed. The strict gate remains BLOCKED. These later observations supersede the initial closed-session/absent-descriptor facts without rewriting their earlier logs. The [concurrent user-layout change](../../Evidence/Task15Recovery/concurrent-user-layout-change.json) remains untouched; its origin is not directly observable from this shell.
+
+## Current gate results and preserved files
+
+[Gate status and exact absent counts](../../Evidence/Task15Recovery/gate-status.json):
+
+| Gate | Current result |
+| --- | --- |
+| Reference/import integrity | BLOCKED: thirteen saved missing-GUID pointers repaired; three native asset import completions observed in an external desktop log; actual fileID/glyph/render acceptance absent. |
+| Unity tests | BLOCKED: **0 executed / 0 current passes**. Failure/skip/inconclusive totals unavailable; no current suite XML. **153+212=365 Task14 passes remain historical only.** |
+| Fairness | BLOCKED: zero seeds executed; still require 1,000 ×10 km at start/mid/cap with full moving envelopes, ≤180 m reachable fuel and failure/replay data. |
+| Established 100 km regressions | BLOCKED: zero current runs and no current seam/coverage/rebase/survival/bounded-count series. |
+| Current player integration | BLOCKED: no repaired player build/launch; menus, snapshots, terminal ordering/causes, Quit/relaunch, pause/reset, HUD/viewports, ≥120 m framing, audio/VFX still need execution. |
+| 1080p standalone profile | BLOCKED: **0 samples /0 valid seconds of600**, no capture, p95/GC/memory/count measurements unavailable. |
+| Separate visible soak | BLOCKED: **0 samples /0 valid seconds of1800**. |
+| Current warning review | BLOCKED: four historical URP messages carried; current Editor Console and player counts unavailable. No current clean-Console or harmless-render claim. |
+| Task16 delivery | NOT RUN; **ready NO** until required Task15 gates close. |
+
+The full profiling/soak requirements in the retained original protocol below are unchanged: p95≤16.7 ms/60 fps at1080p, zero steady-state gameplay-script GC.Alloc, bounded pools/sources, memory within10% of one declared consistent postwarmup baseline, actual hardware/driver/API/settings/build identity and raw samples/timeline. Keep real drain/hazards/HUD/VFX/approved audio active; no survival cheats or shortened durations. Historical352 pooled objects and2+8 sources are comparison/configuration baselines, not fresh measured counts.
+
+[Protected-before inventory](../../Evidence/Task15Recovery/protected-before.json) records 1,471 file hashes/status before any changes; [static validation](../../Evidence/Task15Recovery/static-validation.json) verifies the four exact allowed asset changes, all retained metadata GUIDs and unchanged remaining protected bytes. Final [protected-after inventory](../../Evidence/Task15Recovery/protected-after.json) also accounts for the intentional canonical register update. Recovery scene/meta, saved Game, gameplay scripts/configs/prefabs, input ownership, package pins, supplied ignore, previous evidence and approved mixer remain preserved. The ignored `UserSettings/Layouts/default-6000.dwlt` changed externally after the initial inventory; its current bytes were retained without restoration/staging, and the before/after mismatch is disclosed. Mixer SHA-256 remains `8208f1e38bbf4cc91fd2cf4b8a17308f690989ab86ebc3a194b2ac8862c048b3` (approved Master +4.552889dB). The audit did not launch a game or write production preferences; behavior of the later external desktop session was not controlled by the audit. No final archive, upload, publication or push occurred.
+
+The next execution remains **Task15 gate closure**, using the repaired input identity above. Task16 is pending, not started.
+
+---
+
+The following is the original blocked Task15 checkpoint, retained verbatim as history.
+
 # Task 15 — Integration, fairness and performance audit
 
 **BLOCKED; no unconditional Task 16 release recommendation.** Audited local source `2923f56b79c6cba4b24627fee4bde2e902d872ab` on **2026-11-03, Asia/Tehran (+03:30)**. The initial tree was clean. This checkpoint adds audit tooling/evidence and fixes one reproduced documentation-tool failure; it changes no gameplay, scene, prefab, configuration, package or mixer asset. Current Unity execution and the outstanding real-time checks could not be completed in this managed shell. A strict serialized-reference scan also **FAILS** with 12 unresolved GUID references, classified below. No critical gameplay failure was demonstrated by a current execution, and absence of such an execution is not a functional PASS.

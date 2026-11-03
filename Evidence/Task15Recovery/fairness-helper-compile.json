@@ -1,0 +1,15 @@
+{
+  "started": "2026-11-03T10:18:56.625637+03:30",
+  "finished": "2026-11-03T10:18:57.901225+03:30",
+  "argv": [
+    "/home/alireza/Unity/Hub/Editor/6000.6.3f1/Editor/Data/NetCoreRuntime/dotnet",
+    "/home/alireza/Unity/Hub/Editor/6000.6.3f1/Editor/Data/DotNetSdk/sdk/8.0.318/Roslyn/bincore/csc.dll",
+    "@/tmp/neon-task15-recovery-tooling/fairness.rsp"
+  ],
+  "exitCode": 0,
+  "stdout": "",
+  "stderr": "",
+  "scope": "Offline helper API compilation against pinned cached Editor references ONLY; Unity import/compile/tests/seeds NOT executed",
+  "helperSha256": "78ed6a84e16111fa853e6e9c64dafe1231929b7a57d0ce46241885bc1eab380c",
+  "outputSha256": "5f55206bb1c2b74f5b2d8ee4dab1a991395db0aafd5e79721335a9197adb0509"
+}
