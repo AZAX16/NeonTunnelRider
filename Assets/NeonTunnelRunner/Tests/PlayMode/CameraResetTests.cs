@@ -112,6 +112,14 @@ namespace NeonTunnelRunner
                 }
             }
         }
+        [Test] public void AcceptedDamageReleasesZoomSmoothlyWithoutChangingTheCameraBaseline()
+        {
+            manager.AcceptNearMiss(); manager.NearMiss.Advance(.2f,manager.Configuration); camera.Render(.016f);
+            float zoom=camera.ViewCamera.fieldOfView; Assert.That(zoom,Is.EqualTo(58f).Within(.001));
+            Hit(); Assert.That(camera.ViewCamera.fieldOfView,Is.EqualTo(zoom));
+            camera.Render(.1f); Assert.That(camera.ViewCamera.fieldOfView,Is.GreaterThan(zoom).And.LessThan(65f));
+            camera.Render(.4f); Assert.That(camera.ViewCamera.fieldOfView,Is.EqualTo(65f));
+        }
         [TestCase(-1)] [TestCase(0)] [TestCase(1)]
         public void OriginShiftsBaseTargetAndCurrentPoseExactlyOnceDuringMotionAndImpulse(int lane)
         {

@@ -15,7 +15,7 @@ namespace NeonTunnelRunner
         [SerializeField] private WorldOrigin worldOrigin;
         private RunSession session, subscribedSession;
         private Vector3 basePosition, targetPosition, impulseSeed, impulseOffset;
-        private float impulseAge;
+        private float impulseAge, zoomModifier;
         private bool prepared;
         public GameManager Owner => gameManager;
         public PlayerController Player => player;
@@ -63,11 +63,16 @@ namespace NeonTunnelRunner
             impulseOffset = impulseSeed; impulseAge = 0f; AcceptedImpulses++;
             ApplyPose(); // A terminal accepted hit remains visible even when no Playing LateUpdate follows.
         }
-        private void LateUpdate() => Render(Time.deltaTime);
+        private void LateUpdate() => Render(Time.unscaledDeltaTime);
         internal void Render(float deltaTime)
         {
-            if (!isActiveAndEnabled || session == null || !gameManager || !gameManager.Loop.IsRunning ||
-                !float.IsFinite(deltaTime) || deltaTime <= 0f) return;
+            if (!isActiveAndEnabled || session == null || !gameManager || !float.IsFinite(deltaTime) || deltaTime <= 0f) return;
+            if (gameManager.State!=GameState.Paused)
+            {
+                if (prepared && gameManager.NearMiss.Active) zoomModifier=gameManager.Configuration.NearMissZoom*gameManager.NearMiss.Weight;
+                else zoomModifier=Mathf.MoveTowards(zoomModifier,0f,gameManager.Configuration.NearMissZoom*deltaTime/gameManager.Configuration.NearMissExit);
+            }
+            if (!gameManager.Loop.IsRunning) { if (gameManager.State==GameState.GameOver) ApplyPose(); return; }
             targetPosition = player.transform.position;
             var desired = targetPosition + configuration.CameraOffset;
             float blend = 1f - Mathf.Exp(-deltaTime / Mathf.Max(.001f, configuration.LateralTimeConstant));
@@ -94,7 +99,7 @@ namespace NeonTunnelRunner
         }
         public void ResetPresentation()
         {
-            impulseAge = 0f; impulseSeed = impulseOffset = Vector3.zero;
+            impulseAge = zoomModifier = 0f; impulseSeed = impulseOffset = Vector3.zero;
             if (!player || !configuration) return;
             targetPosition = player.transform.position;
             basePosition = targetPosition + configuration.CameraOffset;
@@ -102,7 +107,8 @@ namespace NeonTunnelRunner
         }
         private void ApplyPose()
         {
-            // Fixed pitch/yaw and fixed FOV keep the decision horizon stable at both road edges.
+            if (viewCamera) viewCamera.fieldOfView = configuration.FieldOfView - zoomModifier;
+            // FOV is a bounded modifier of the authored baseline.
             var look = new Vector3(basePosition.x, targetPosition.y, targetPosition.z + configuration.LookAhead);
             transform.SetPositionAndRotation(basePosition + impulseOffset, Quaternion.LookRotation(look-basePosition, Vector3.up));
         }

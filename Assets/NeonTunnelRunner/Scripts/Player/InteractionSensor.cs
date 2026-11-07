@@ -46,6 +46,40 @@ namespace NeonTunnelRunner
                 contacts[at]=contact;
             }
         }
+        // Only a continuous same-lane approach can arm a near miss. Crossing beside
+        // a car (including a catch-up tick) never substitutes for the required hold.
+        internal void ResolveNearMisses(GameManager owner,bool feedbackAllowed)
+        {
+            owner.ValidateNearMissEncounter();
+            TrafficLease predicted=default; double nearest=double.PositiveInfinity;
+            for (int i=0;i<registry.ActiveCount;i++)
+            {
+                var lease=registry.GetActive(i);
+                if (!lease.IsCurrent || lease.Item.Category!=InteractionCategory.Obstacle) continue;
+                var item=lease.Item;
+                if (item.PassConsumed) continue;
+                if (item.Encountered) { item.PassConsumed=true; continue; }
+                float halfZ=player.Configuration.PlayerHalfExtents.z+item.HalfExtents.z;
+                float previous=player.PreviousPosition.z-item.PreviousPosition.z;
+                float current=player.CurrentPosition.z-item.CurrentPosition.z;
+                if (item.PassSide==0)
+                {
+                    if (previous>=-halfZ) { item.PassConsumed=true; continue; }
+                    item.PassSide=-1;
+                }
+                if (current>=-halfZ) { item.PassConsumed=true; continue; }
+                if (!owner.CanStartNearMissBehind(lease)) continue;
+                float relative=owner.Session.Snapshot.CruiseSpeed-item.Speed;
+                float approach=owner.Configuration.NearMissDuration*owner.Configuration.NearMissApproachRatio;
+                float entry=Mathf.Min(owner.Configuration.NearMissEntry,approach);
+                float simulated=owner.Configuration.NearMissTimeScale*(approach-entry)+entry*(1f+owner.Configuration.NearMissTimeScale)*.5f;
+                double gap=item.AbsoluteZ-owner.Session.Snapshot.Distance;
+                if (gap>owner.NearMissPassEntryGap(item)+relative*simulated) continue;
+                item.PassConsumed=true; // Also consume attempts suppressed by cooldown.
+                if(gap<nearest) { nearest=gap;predicted=lease; }
+            }
+            if(feedbackAllowed && predicted.IsCurrent) owner.AcceptNearMiss(predicted);
+        }
         private static int Compare(Contact a,Contact b)
         { int order=a.Time.CompareTo(b.Time); if (order==0) order=a.Category.CompareTo(b.Category); return order!=0 ? order : a.Sequence.CompareTo(b.Sequence); }
         internal void DispatchContacts(RunSession session,float dt)
@@ -58,6 +92,7 @@ namespace NeonTunnelRunner
                 {
                     var contact=contacts[i]; if (!contact.Lease.IsCurrent) continue;
                     var item=contact.Lease.Item;
+                    survival.Owner.ContactNearMiss(contact.Lease); // Also cancels a grace-rejected contact.
                     var position=Vector3.LerpUnclamped(item.PreviousPosition,item.CurrentPosition,contact.Time);
                     var encounter=new Encounter(item.Key,contact.Lease.ActivationId,item.SpawnSequence,item.Lane,
                         item.PreviousAbsoluteZ+(item.AbsoluteZ-item.PreviousAbsoluteZ)*contact.Time,position,start+(double)dt*contact.Time);

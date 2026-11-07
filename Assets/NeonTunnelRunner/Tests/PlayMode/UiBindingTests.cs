@@ -24,6 +24,9 @@ namespace NeonTunnelRunner
         MenuPresenter menus;
         Keyboard keyboard;
         Mouse mouse;
+        bool previousRunInBackground;
+        InputSettings.BackgroundBehavior previousInputBackground;
+        InputSettings.EditorInputBehaviorInPlayMode previousEditorInput;
         static readonly BindingFlags Flags=BindingFlags.Instance|BindingFlags.NonPublic;
         static void SetField(object o,string n,object v)=>o.GetType().GetField(n,Flags).SetValue(o,v);
         public override void Setup() { }
@@ -37,7 +40,15 @@ namespace NeonTunnelRunner
         }
         private void Create()
         {
+            previousRunInBackground=Application.runInBackground;
             base.Setup();
+            previousInputBackground=InputSystem.settings.backgroundBehavior;
+            previousEditorInput=InputSystem.settings.editorInputBehaviorInPlayMode;
+            // The fixture processes virtual-device actions explicitly. Desktop focus
+            // must not decide whether InputSystemUIInputModule processes its pointer.
+            Application.runInBackground=true;
+            InputSystem.settings.backgroundBehavior=InputSettings.BackgroundBehavior.IgnoreFocus;
+            InputSystem.settings.editorInputBehaviorInPlayMode=InputSettings.EditorInputBehaviorInPlayMode.AllDeviceInputAlwaysGoesToGameView;
             config=ScriptableObject.CreateInstance<GameplayConfig>();rig=PlayModeMovementRig.Create("UiFixture",config);manager=rig.GetComponent<GameManager>();
             eventRoot=new GameObject("EventSystem");eventRoot.SetActive(false);events=eventRoot.AddComponent<EventSystem>();module=eventRoot.AddComponent<InputSystemUIInputModule>();module.enabled=false;module.actionsAsset=manager.Loop.Input.SourceActions;module.deselectOnBackgroundClick=false;
             uiRoot=new GameObject("UIFixture");uiRoot.SetActive(false);
@@ -56,6 +67,9 @@ namespace NeonTunnelRunner
             if(eventRoot)Object.DestroyImmediate(eventRoot);
             if(config)Object.DestroyImmediate(config);
             Time.timeScale=1;
+            Application.runInBackground=previousRunInBackground;
+            InputSystem.settings.backgroundBehavior=previousInputBackground;
+            InputSystem.settings.editorInputBehaviorInPlayMode=previousEditorInput;
             base.TearDown();
         }
         Transform Canvas=>menus.transform;

@@ -29,7 +29,7 @@ namespace NeonTunnelRunner
             Assert.That(PatternValidator.CanTransition(from, to, world, gameplay), Is.True);
             Assert.That(PatternValidator.Validate(new BlockPlan(12, 1, from, to, 0), world, gameplay, out _), Is.True);
             Assert.That(120d / gameplay.MaximumSpeed, Is.EqualTo(2.4d));
-            Assert.That(world.ReactionTime + 2d * gameplay.LaneTransitionDuration + world.TransitionMargin, Is.EqualTo(1.56d).Within(0.000001d));
+            Assert.That(world.ReactionTime + 2d * gameplay.LaneTransitionDuration + world.TransitionMargin, Is.EqualTo(1.24d).Within(0.000001d));
         }
         [Test] public void UnsafeTimingAndNonFiniteConfigurationAreRejected()
         {

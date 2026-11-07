@@ -16,6 +16,8 @@ namespace NeonTunnelRunner
         [SerializeField, Range(0, 1)] private float engineLowLevel = .05f, engineHighLevel = .075f;
         [SerializeField, Range(0, 1)] private float collisionLevel = .14f, coinLevel = .14f, fuelLevel = .12f;
         [SerializeField, Min(1)] private float maximumSpeed = 50f;
+        [SerializeField] private AudioClip nearMiss;
+        public AudioClip NearMiss => nearMiss;
         public AudioClip Music => music;
         public AudioClip Engine => engine;
         public AudioClip Collision => collision;
@@ -40,6 +42,8 @@ namespace NeonTunnelRunner
                 if (!clips[i] || clips[i].samples <= 0 || clips[i].frequency <= 0 || clips[i].length <= 0 ||
                     clips[i].loadState == AudioDataLoadState.Failed)
                 { error = "AudioConfig: assign an imported, playable " + names[i] + " clip in Configs/Audio.asset."; return false; }
+            if (!nearMiss || nearMiss.samples<=0 || nearMiss.frequency<=0 || nearMiss.length<=0 || nearMiss.loadState==AudioDataLoadState.Failed)
+            { error="AudioConfig: assign the supplied NearMiss_IntoTheVoid_06-12.wav excerpt to Near Miss in Configs/Audio.asset (clip-local zero is source 00:06)."; return false; }
             if (engine.channels != 1)
             { error = "AudioConfig: Engine must be a mono loop."; return false; }
             if (!musicGroup || !engineGroup || !sfxGroup || musicGroup == engineGroup || musicGroup == sfxGroup || engineGroup == sfxGroup ||

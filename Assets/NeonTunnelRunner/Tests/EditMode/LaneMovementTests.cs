@@ -29,29 +29,29 @@ namespace NeonTunnelRunner
 
         [TestCase(0.01f)]
         [TestCase(0.02f)]
-        [TestCase(0.07f)]
-        [TestCase(0.14f)]
-        [TestCase(0.28f)]
+        [TestCase(0.03f)]
+        [TestCase(0.06f)]
+        [TestCase(0.12f)]
         [TestCase(0.5f)]
         public void AdjacentTransitionIsLinearAndIndependentOfStepSize(float step)
         {
             player.RequestLane(1);
             float elapsed = 0f;
-            while (elapsed < 0.28f - 0.000001f)
+            while (elapsed < 0.12f - 0.000001f)
             {
-                float dt = Mathf.Min(step, 0.28f - elapsed);
+                float dt = Mathf.Min(step, 0.12f - elapsed);
                 Vector3 before = player.CurrentPosition;
                 player.PredictStep(dt, 22f);
                 elapsed += dt;
                 Assert.That(player.PreviousPosition, Is.EqualTo(before));
-                Assert.That(player.CurrentPosition.x, Is.EqualTo(3.2f * elapsed / 0.28f).Within(0.00001f));
+                Assert.That(player.CurrentPosition.x, Is.EqualTo(3.2f * elapsed / 0.12f).Within(0.00001f));
                 Assert.That(player.CurrentPosition.y, Is.EqualTo(0.6f));
                 Assert.That(player.CurrentPosition.x, Is.InRange(before.x, 3.2f));
             }
             Assert.That(player.IsTransitioning, Is.False);
             Assert.That(player.LaneIndex, Is.EqualTo(1));
             Assert.That(player.CurrentPosition.x, Is.EqualTo(3.2f));
-            Assert.That(player.CurrentPosition.z, Is.EqualTo(22f * 0.28f).Within(0.00001f));
+            Assert.That(player.CurrentPosition.z, Is.EqualTo(22f * 0.12f).Within(0.00001f));
         }
 
         [TestCase(0.01f)]
@@ -75,7 +75,7 @@ namespace NeonTunnelRunner
             foreach (int direction in new[] { -1, 1, 1 })
             {
                 player.RequestLane(direction);
-                player.PredictStep(0.28f, 22f);
+                player.PredictStep(0.12f, 22f);
             }
             for (int i = 0; i < 100; i++)
             {
@@ -90,19 +90,19 @@ namespace NeonTunnelRunner
         public void LatestValidQueuedPressReplacesOneSlotAndWaitsForTheCurrentLane()
         {
             player.RequestLane(-1);
-            player.PredictStep(0.28f, 22f);
+            player.PredictStep(0.12f, 22f);
             player.RequestLane(1); // -1 -> 0.
-            player.PredictStep(0.07f, 22f);
+            player.PredictStep(0.03f, 22f);
             Assert.That(player.CurrentPosition.x, Is.EqualTo(-2.4f).Within(0.00001f));
             player.RequestLane(1); // Queue 0 -> +1.
             player.RequestLane(-1); // Replace with 0 -> -1.
             Assert.That(player.QueuedCommand, Is.EqualTo(-1));
-            player.PredictStep(0.21f, 22f);
+            player.PredictStep(0.09f, 22f);
             Assert.That(player.CurrentPosition.x, Is.EqualTo(0f).Within(0.00001f));
             Assert.That(player.LaneIndex, Is.EqualTo(-1));
-            player.PredictStep(0.14f, 22f);
+            player.PredictStep(0.06f, 22f);
             Assert.That(player.CurrentPosition.x, Is.EqualTo(-1.6f).Within(0.00001f));
-            player.PredictStep(0.14f, 22f);
+            player.PredictStep(0.06f, 22f);
             Assert.That(player.CurrentPosition.x, Is.EqualTo(-3.2f));
             Assert.That(player.IsTransitioning, Is.False);
         }
@@ -111,10 +111,10 @@ namespace NeonTunnelRunner
         public void LargeStepFinishesAdjacentTransitionsInOrderWithRemainingTime()
         {
             player.RequestLane(-1);
-            player.PredictStep(0.28f, 22f);
+            player.PredictStep(0.12f, 22f);
             player.RequestLane(1);
             player.RequestLane(1);
-            player.PredictStep(0.42f, 22f);
+            player.PredictStep(0.18f, 22f);
             Assert.That(player.CurrentPosition.x, Is.EqualTo(1.6f).Within(0.00001f));
             Assert.That(player.LaneIndex, Is.EqualTo(1));
             Assert.That(player.TransitionProgress, Is.EqualTo(0.5f).Within(0.00001f));
@@ -124,10 +124,10 @@ namespace NeonTunnelRunner
         public void ClearQueuePreservesCurrentTransitionAndResetClearsBothPoses()
         {
             player.RequestLane(1);
-            player.PredictStep(0.07f, 22f);
+            player.PredictStep(0.03f, 22f);
             player.RequestLane(-1);
             player.ClearQueuedCommand();
-            player.PredictStep(0.21f, 22f);
+            player.PredictStep(0.09f, 22f);
             Assert.That(player.CurrentPosition.x, Is.EqualTo(3.2f));
             Assert.That(player.IsTransitioning, Is.False);
             player.ResetRun();

@@ -21,6 +21,7 @@ namespace NeonTunnelRunner
             AudioSource Source(string n,Transform parent,AudioClip clip,UnityEngine.Audio.AudioMixerGroup group,bool looping)
             {var g=new GameObject(n);g.transform.SetParent(parent,false);var s=g.AddComponent<AudioSource>();s.playOnAwake=false;s.loop=looping;s.clip=clip;s.outputAudioMixerGroup=group;s.dopplerLevel=0;return s;}
             Set(audio,"musicSource",Source("Music",go.transform,c.Music,c.MusicGroup,true));
+            Set(audio,"nearMissSource",Source("NearMiss",go.transform,c.NearMiss,c.MusicGroup,false));
             Set(audio,"engineSource",Source("Engine",loop.Player.transform,c.Engine,c.EngineGroup,true));
             Set(audio,"voices",Enumerable.Range(0,8).Select(i=>Source("SFX"+i,go.transform,null,c.SfxGroup,false)).ToArray());
             Set(loop,"audioController",audio);audio.Initialize(manager.Session);Assert.That(manager.StartRun(),Is.True);
@@ -29,6 +30,59 @@ namespace NeonTunnelRunner
         Encounter Hit(long id=1)=>new Encounter(PoolKey.Stationary,(ulong)id,id,0,manager.Session.Snapshot.Distance,loop.Player.CurrentPosition,manager.Session.Snapshot.ElapsedTime);
         PooledObject Pickup(PoolKey key,long id)
         {Assert.That(manager.Pools.TryRent(new SpawnContext(key,loop.Player.CurrentPosition,Quaternion.identity,loop.Planner.OriginRoot,0,manager.Session.Snapshot.Distance,12345,0,id,loop.Planner),out var p),Is.True);return p;}
+        [UnityTest] public IEnumerator WorkBeforeTheCueStartsCannotConsumeItsFirstHalfSecond()
+        {
+            // Regression for an Editor/import frame stalling before the fixed-tick trigger.
+            System.Threading.Thread.Sleep(250);
+            audio.SetApplicationSuspension(false,false);
+            double trigger=Time.realtimeSinceStartupAsDouble;
+            Assert.That(manager.AcceptNearMiss(),Is.True);
+            yield return null;
+            double actualPlaying=Time.realtimeSinceStartupAsDouble-trigger;
+            Assert.That(manager.NearMiss.Age,Is.EqualTo(actualPlaying).Within(.15d));
+        }
+        [TestCase(.075f)] [TestCase(2f)] [TestCase(5.8f)]
+        public void FocusSuspensionHoldsTheSameActiveCuePhaseAndSharedClock(float age)
+        {
+            manager.AcceptNearMiss();manager.AdvancePresentation(age);
+            float before=manager.NearMiss.Age,weight=manager.NearMiss.Weight;
+            audio.SetApplicationSuspension(true,false);Assert.That(Time.timeScale,Is.Zero);
+            manager.AdvancePresentation(10f);Assert.That(manager.NearMiss.Age,Is.EqualTo(before));
+            Assert.That(manager.NearMiss.Weight,Is.EqualTo(weight));
+            Assert.That(manager.State,Is.EqualTo(GameState.Playing));
+            audio.SetApplicationSuspension(false,false);Assert.That(Time.timeScale,Is.GreaterThan(0f));
+            manager.AdvancePresentation(.01f);Assert.That(manager.NearMiss.Age,Is.GreaterThan(before));
+            Assert.That(audio.NearMissSource.pitch,Is.EqualTo(1f));
+        }
+        [Test] public void FiftySpecialCueResetCyclesRetainAllElevenSourceIdentitiesAndNormalTrack()
+        {
+            var ids=root.GetComponentsInChildren<AudioSource>(true).Select(s=>s.GetEntityId().ToString()).OrderBy(x=>x).ToArray();
+            ulong starts=audio.MusicStarts;
+            for(int i=0;i<50;i++)
+            {
+                Assert.That(manager.AcceptNearMiss(),Is.True);
+                Assert.That(audio.NearMissSource.clip,Is.SameAs(audio.Configuration.NearMiss));
+                Assert.That(audio.NearMissSource.time,Is.LessThan(.05f));
+                manager.NearMiss.Advance(.2f,gameplay); audio.RenderNearMiss(manager.NearMiss);
+                Assert.That(audio.MusicSource.volume,Is.Zero); Assert.That(audio.NearMissSource.pitch,Is.EqualTo(1));
+                manager.Pause(); Assert.That(audio.NearMissSource.isPlaying,Is.False);
+                manager.Resume(); Assert.That(audio.NearMissSource.isPlaying,Is.True);
+                manager.Pause(); manager.Restart();
+                Assert.That(audio.NearMissSource.isPlaying,Is.False); Assert.That(audio.MusicSource.isPlaying,Is.True);
+            }
+            Assert.That(audio.MusicStarts,Is.EqualTo(starts));
+            Assert.That(root.GetComponentsInChildren<AudioSource>(true).Select(s=>s.GetEntityId().ToString()).OrderBy(x=>x),Is.EqualTo(ids));
+        }
+        [UnityTest] public IEnumerator PausedCueRetainsSamplePositionAndEffectPhaseWhileNormalMusicContinues()
+        {
+            manager.AcceptNearMiss(); yield return new WaitForSecondsRealtime(.1f);
+            manager.Pause(); int sample=audio.NearMissSource.timeSamples; float age=manager.NearMiss.Age;
+            int normal=audio.MusicSource.timeSamples; yield return new WaitForSecondsRealtime(.1f);
+            Assert.That(audio.NearMissSource.timeSamples,Is.EqualTo(sample)); Assert.That(manager.NearMiss.Age,Is.EqualTo(age));
+            Assert.That(audio.MusicSource.timeSamples,Is.Not.EqualTo(normal));
+            manager.Resume(); yield return new WaitForSecondsRealtime(.1f);
+            Assert.That(audio.NearMissSource.timeSamples,Is.GreaterThan(sample)); Assert.That(audio.NearMissSource.pitch,Is.EqualTo(1));
+        }
         [Test] public void AcceptedDamageGraceAndFullFuelEmitOneDistinctCueEach()
         {
             Assert.That(loop.Survival.TryDamage(Hit()),Is.True);Assert.That(loop.Survival.TryDamage(Hit(2)),Is.False);
@@ -45,7 +99,7 @@ namespace NeonTunnelRunner
             Assert.That(audio.TryCompleteVoice(0,token,double.MaxValue),Is.False);Assert.That(audio.VoiceBusy(0),Is.True);
             for(int i=0;i<7;i++)audio.Request(AudioCue.Collision);token=audio.VoiceGeneration(0);audio.Request(AudioCue.Collision);
             Assert.That(audio.VoiceGeneration(0),Is.GreaterThan(token));Assert.That(audio.ActiveVoices,Is.EqualTo(8));Assert.That(audio.PeakVoices,Is.EqualTo(8));
-            Assert.That(root.GetComponentsInChildren<AudioSource>(true).Length,Is.EqualTo(10));
+            Assert.That(root.GetComponentsInChildren<AudioSource>(true).Length,Is.EqualTo(11));
         }
         [Test] public void SaturationNeverDelaysRewardsOrChangesGameplayOrVfxRouting()
         {

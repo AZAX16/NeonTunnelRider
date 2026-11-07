@@ -25,6 +25,16 @@ namespace NeonTunnelRunner
             Assert.That(c.Music.length,Is.EqualTo(64).Within(.02));Assert.That(c.Engine.length,Is.EqualTo(2).Within(.001));
             Assert.That(c.Collision,Is.Not.SameAs(c.Coin));Assert.That(c.Coin,Is.Not.SameAs(c.Fuel));
         }
+        [Test] public void SuppliedExcerptIsSixSecondStereoPcmAndAssignedAtLocalZero()
+        {
+            var c=AssetDatabase.LoadAssetAtPath<AudioConfig>(R+"Configs/Audio.asset");
+            Assert.That(c.NearMiss,Is.Not.Null); Assert.That(c.NearMiss.length,Is.EqualTo(6).Within(.0001));
+            Assert.That(c.NearMiss.frequency,Is.EqualTo(44100)); Assert.That(c.NearMiss.channels,Is.EqualTo(2));
+            var i=(AudioImporter)AssetImporter.GetAtPath(AssetDatabase.GetAssetPath(c.NearMiss));
+            Assert.That(i.defaultSampleSettings.compressionFormat,Is.EqualTo(AudioCompressionFormat.PCM));
+            Assert.That(i.defaultSampleSettings.loadType,Is.EqualTo(AudioClipLoadType.DecompressOnLoad));
+        }
+        [TestCase("nearMiss","NearMiss_IntoTheVoid_06-12")]
         [TestCase("music","Music")] [TestCase("engine","Engine")] [TestCase("collision","Collision")]
         [TestCase("coin","Coin")] [TestCase("fuel","Fuel")]
         [TestCase("musicGroup","Music, Engine and SFX")] [TestCase("engineGroup","Music, Engine and SFX")] [TestCase("sfxGroup","Music, Engine and SFX")]
@@ -42,14 +52,14 @@ namespace NeonTunnelRunner
             Assert.That(c.EnginePitch(22),Is.EqualTo(1.108f).Within(.00001));Assert.That(c.EnginePitch(50),Is.EqualTo(1.5f));
             Assert.That(c.EnginePitch(float.NaN),Is.EqualTo(.8f));
         }
-        [Test] public void SavedGameHasExactlyTenSourcesAndTheExistingCameraListener()
+        [Test] public void SavedGameHasExactlyElevenSourcesAndTheExistingCameraListener()
         {
             var scene=EditorSceneManager.OpenPreviewScene(R+"Scenes/Game.unity");
             try
             {
                 var roots=scene.GetRootGameObjects();int sources=0,listeners=0,controllers=0;
                 foreach(var root in roots){sources+=root.GetComponentsInChildren<AudioSource>(true).Length;listeners+=root.GetComponentsInChildren<AudioListener>(true).Length;controllers+=root.GetComponentsInChildren<AudioController>(true).Length;}
-                Assert.That(sources,Is.EqualTo(10));Assert.That(listeners,Is.EqualTo(1));Assert.That(controllers,Is.EqualTo(1));
+                Assert.That(sources,Is.EqualTo(11));Assert.That(listeners,Is.EqualTo(1));Assert.That(controllers,Is.EqualTo(1));
                 foreach(var root in roots)foreach(var a in root.GetComponentsInChildren<AudioController>(true))
                 {Assert.That(a.Owner.Loop.Audio,Is.SameAs(a));Assert.That(a.ValidateRequired(a.Owner.Loop,out var error),Is.True,error);}
             }

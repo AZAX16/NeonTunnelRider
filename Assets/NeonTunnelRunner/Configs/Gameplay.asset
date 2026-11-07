@@ -17,7 +17,7 @@ MonoBehaviour:
   startingSpeed: 22
   maximumSpeed: 50
   laneWidth: 3.2
-  laneTransitionDuration: 0.28
+  laneTransitionDuration: 0.12
   playerRootHeight: 0.6
   playerHalfExtents: {x: 0.85, y: 0.45, z: 1.8}
   damageGraceDuration: 1
@@ -28,3 +28,17 @@ MonoBehaviour:
   difficultyDistance: 6000
   startingOccupancy: 0.25
   maximumOccupancy: 0.8
+  trafficDensityMultiplier: 1.3
+  maximumTrafficOccupancy: 0.95
+  overtakerMargin: {x: 6, y: 12}
+  trafficDecisionInterval: {x: 1.5, y: 4.5}
+  trafficLaneDuration: 0.3
+  nearMissTimeScale: 0.45
+  nearMissDuration: 6
+  nearMissCooldown: 12
+  nearMissEntry: 0.15
+  nearMissExit: 0.35
+  nearMissZoom: 7
+  nearMissClearance: 1.35
+  rearWarningDuration: 1.5
+  nearMissDodgeReactionTime: 0.06

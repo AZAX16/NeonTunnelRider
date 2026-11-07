@@ -160,8 +160,8 @@ namespace NeonTunnelRunner
             var renderer=effect.Primary.GetComponent<ParticleSystemRenderer>();var mesh=new Mesh();var afterMesh=new Mesh();
             try
             {
-                renderer.BakeTrailsMesh(mesh,loop.Camera.ViewCamera,false);var vertices=mesh.vertices;Assert.That(vertices.Length,Is.GreaterThan(0));
-                Assert.That(loop.Origin.RebaseIfNeeded(1005),Is.True);renderer.BakeTrailsMesh(afterMesh,loop.Camera.ViewCamera,false);
+                renderer.BakeTrailsMesh(mesh,loop.Camera.ViewCamera,(ParticleSystemBakeMeshOptions)0);var vertices=mesh.vertices;Assert.That(vertices.Length,Is.GreaterThan(0));
+                Assert.That(loop.Origin.RebaseIfNeeded(1005),Is.True);renderer.BakeTrailsMesh(afterMesh,loop.Camera.ViewCamera,(ParticleSystemBakeMeshOptions)0);
                 Assert.That(afterMesh.vertexCount,Is.EqualTo(vertices.Length));var after=afterMesh.vertices;
                 for(int i=0;i<vertices.Length;i++)Assert.That(Vector3.Distance(vertices[i],after[i]),Is.LessThan(.002f));
                 effect.Primary.GetParticles(particles);for(int i=0;i<count;i++)Assert.That(particles[i].position,Is.EqualTo(before[i]));

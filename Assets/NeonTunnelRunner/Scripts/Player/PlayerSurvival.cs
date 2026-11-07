@@ -25,6 +25,7 @@ namespace NeonTunnelRunner
             if (!gameManager || gameManager.State != GameState.Playing || gameManager.IsTransitioning ||
                 session == null || !double.IsFinite(encounter.PlayingTime) || encounter.PlayingTime < session.Snapshot.ElapsedTime ||
                 encounter.PlayingTime + GraceBoundaryTolerance < graceUntil || Lives <= 0) return false;
+            gameManager.CancelNearMiss();
             session.RemoveLife();
             graceUntil=encounter.PlayingTime+gameManager.Configuration.DamageGraceDuration;
             RefreshDebug();

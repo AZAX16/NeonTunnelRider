@@ -16,6 +16,172 @@ namespace NeonTunnelRunner
         [SerializeField, Min(0)] private int initialBestScore;
         [SerializeField] private GameState debugState;
         [SerializeField] private GameOverReason debugEndReason;
+        public NearMissSequence NearMiss { get; } = new NearMissSequence();
+        private TrafficLease nearMissTraffic;
+        private float nearMissSimulationScale=1f;
+        private int nearMissApproachLane;
+        private float nearMissApproachX;
+        public bool NearMissPassCompleted { get; private set; }
+        public TrafficLease NearMissTraffic => nearMissTraffic;
+        private double presentationRealtime;
+        internal void ResetPresentationClock() => presentationRealtime=Time.realtimeSinceStartupAsDouble;
+        private float baselineFixedDelta;
+        private bool clockCaptured;
+        internal void ComposeClock()
+        {
+            float scale = State == GameState.Paused || State == GameState.GameOver ||
+                (NearMiss.Active && gameplayLoop && gameplayLoop.Audio && gameplayLoop.Audio.ApplicationSuspended) ? 0f :
+                State == GameState.Playing ? Mathf.Lerp(1f,nearMissSimulationScale,NearMiss.Weight) : 1f;
+            Time.timeScale = scale;
+            if (clockCaptured)
+            {
+                if (scale==0f || scale==1f) RestoreFixedStep();
+                else
+                {
+                    float step=baselineFixedDelta*scale;
+                    if (Time.fixedDeltaTime!=step) Time.fixedDeltaTime=step;
+                }
+            }
+        }
+        private void RestoreFixedStep()
+        {
+            if (Time.fixedDeltaTime==baselineFixedDelta) return;
+            Time.fixedDeltaTime=baselineFixedDelta;
+            // Unity 6.6 stores a rational tick count. A float round-trip can truncate
+            // one rational tick; the next representable input restores the saved getter
+            // exactly, without feeding a previously scaled/quantized value back into it.
+            if (Time.fixedDeltaTime<baselineFixedDelta)
+                Time.fixedDeltaTime=BitConverter.Int32BitsToSingle(BitConverter.SingleToInt32Bits(baselineFixedDelta)+1);
+        }
+        private void Update()
+        {
+            double now=Time.realtimeSinceStartupAsDouble;
+            float elapsed=(float)System.Math.Max(0d,now-presentationRealtime);
+            presentationRealtime=now;
+            AdvancePresentation(elapsed);
+        }
+        internal void AdvancePresentation(float realPlayingSeconds)
+        {
+            if (!float.IsFinite(realPlayingSeconds) || realPlayingSeconds<=0f) return;
+            if (!IsOwner || State != GameState.Playing || transitioning) return;
+            if (NearMiss.Active && gameplayLoop.Audio && gameplayLoop.Audio.ApplicationSuspended)
+            { ComposeClock(); return; }
+            NearMiss.Advance(realPlayingSeconds,gameplayConfig);
+            UpdateNearMissMotion();
+            ComposeClock();
+            if (gameplayLoop.Audio) gameplayLoop.Audio.RenderNearMiss(NearMiss);
+        }
+        internal float NearMissPassEntryGap(Interactable car)
+        {
+            float relative=Mathf.Max(0f,Session.Snapshot.CruiseSpeed-car.Speed);
+            // Leave room to react and perform one continuous adjacent move at the
+            // start of the one-second pass window. No collision immunity is granted.
+            return gameplayConfig.PlayerHalfExtents.z+car.HalfExtents.z+
+                relative*(gameplayConfig.LaneTransitionDuration+gameplayConfig.NearMissDodgeReactionTime)+.5f;
+        }
+        private bool HoldingBehind(Interactable car,int lane,float x)
+        {
+            var player=gameplayLoop.Player;
+            if (player.IsTransitioning || player.QueuedCommand!=0 || player.LaneIndex!=lane || car.Lane!=lane ||
+                Mathf.Abs(player.CurrentPosition.x-x)>.2f || Mathf.Abs(player.CurrentPosition.x-car.CurrentPosition.x)>.2f ||
+                car is MovingCar changing && changing.ChangingLane) return false;
+            for(int i=0;i<player.MotionLegCount;i++)
+            {
+                var leg=player.GetMotionLeg(i);
+                if(Mathf.Abs(leg.Start.x-x)>.2f || Mathf.Abs(leg.End.x-x)>.2f) return false;
+            }
+            return car.AbsoluteZ-Session.Snapshot.Distance>gameplayConfig.PlayerHalfExtents.z+car.HalfExtents.z+.01d;
+        }
+        internal bool CanStartNearMissBehind(TrafficLease traffic)
+        {
+            if(!traffic.IsCurrent || traffic.Item.Encountered || traffic.Item.Category!=InteractionCategory.Obstacle) return false;
+            var car=traffic.Item;var player=gameplayLoop.Player;
+            float relative=Session.Snapshot.CruiseSpeed-car.Speed;
+            if(relative<=0f || !HoldingBehind(car,player.LaneIndex,player.CurrentPosition.x)) return false;
+            float approach=gameplayConfig.NearMissDuration*gameplayConfig.NearMissApproachRatio;
+            return car.AbsoluteZ-Session.Snapshot.Distance>=NearMissPassEntryGap(car)+relative*.04f*approach;
+        }
+        internal bool ValidateNearMissEncounter()
+        {
+            if(!NearMiss.Active || !nearMissTraffic.Item) return NearMiss.Active;
+            if(!nearMissTraffic.IsCurrent)
+            {
+                if(NearMissPassCompleted) return true; // Genuine passed traffic may recycle during aftermath.
+                CancelNearMiss(); return false;
+            }
+            var car=nearMissTraffic.Item;var player=gameplayLoop.Player;
+            if(car.Encountered) { CancelNearMiss();return false; }
+            if(NearMiss.Age<NearMiss.ApproachEnd)
+            {
+                if(!HoldingBehind(car,nearMissApproachLane,nearMissApproachX)) { CancelNearMiss();return false; }
+                return true;
+            }
+            float halfZ=gameplayConfig.PlayerHalfExtents.z+car.HalfExtents.z;
+            double gap=car.AbsoluteZ-Session.Snapshot.Distance;
+            float clearance=Mathf.Abs(player.CurrentPosition.x-car.CurrentPosition.x)-gameplayConfig.PlayerHalfExtents.x-car.HalfExtents.x;
+            if(!NearMissPassCompleted)
+            {
+                int destination=Mathf.Clamp(player.LaneIndex+player.QueuedCommand,-1,1);
+                if(Mathf.Abs(destination-nearMissApproachLane)>1 ||
+                    Mathf.Abs(player.CurrentPosition.x-car.CurrentPosition.x)>gameplayConfig.LaneWidth+.2f)
+                { CancelNearMiss();return false; }
+                if(gap < -halfZ && clearance>0f && clearance<=gameplayConfig.NearMissClearance)
+                    NearMissPassCompleted=true;
+                if(NearMiss.Age>=NearMiss.PassEnd && !NearMissPassCompleted)
+                { CancelNearMiss();return false; }
+            }
+            return true;
+        }
+        private void UpdateNearMissMotion()
+        {
+            nearMissSimulationScale=gameplayConfig.NearMissTimeScale;
+            if(!NearMiss.Active) { nearMissTraffic=default;return; }
+            if(!ValidateNearMissEncounter() || !nearMissTraffic.IsCurrent) return;
+            if(NearMiss.Age>=NearMiss.PassEnd) return;
+            var car=nearMissTraffic.Item;
+            float relative=Session.Snapshot.CruiseSpeed-car.Speed;
+            if(relative<=0f) { CancelNearMiss();return; }
+            double gap=car.AbsoluteZ-Session.Snapshot.Distance;
+            if(NearMiss.Age<NearMiss.ApproachEnd)
+            {
+                float left=NearMiss.ApproachEnd-NearMiss.Age;
+                float rampLeft=Mathf.Max(0f,gameplayConfig.NearMissEntry-NearMiss.Age);
+                float rampArea=rampLeft*(1f-NearMiss.Weight)*.5f;
+                nearMissSimulationScale=Mathf.Clamp(((float)(gap-NearMissPassEntryGap(car))/relative-rampArea)/Mathf.Max(.001f,left-rampArea),.04f,1f);
+            }
+            else
+            {
+                float halfZ=gameplayConfig.PlayerHalfExtents.z+car.HalfExtents.z;
+                float remaining=Mathf.Max(.001f,NearMiss.PassEnd-NearMiss.Age);
+                nearMissSimulationScale=Mathf.Clamp(((float)gap+halfZ+.15f)/(relative*remaining),.04f,1f);
+            }
+        }
+        internal void ContactNearMiss(TrafficLease contact)
+        {
+            if (NearMiss.Active && contact.Item==nearMissTraffic.Item && contact.ActivationId==nearMissTraffic.ActivationId)
+                CancelNearMiss();
+        }
+        internal bool AcceptNearMiss(TrafficLease traffic=default)
+        {
+            if (!IsOwner || State != GameState.Playing || transitioning || Session.Snapshot.Lives <= 0 || Session.Snapshot.Fuel <= 0) return false;
+            float duration = gameplayConfig.NearMissDuration;
+            var clip = gameplayLoop.Audio ? gameplayLoop.Audio.Configuration.NearMiss : null;
+            if (clip) duration = Mathf.Min(duration,clip.length);
+            if(traffic.Item && !CanStartNearMissBehind(traffic)) return false;
+            if (!NearMiss.Begin(duration,gameplayConfig)) return false;
+            nearMissApproachLane=gameplayLoop.Player.LaneIndex;
+            nearMissApproachX=gameplayLoop.Player.CurrentPosition.x;
+            NearMissPassCompleted=false;
+            nearMissTraffic=traffic; nearMissSimulationScale=gameplayConfig.NearMissTimeScale; ResetPresentationClock();
+            if (gameplayLoop.Audio) gameplayLoop.Audio.BeginNearMiss();
+            ComposeClock(); return true;
+        }
+        internal void CancelNearMiss()
+        {
+            NearMiss.Cancel(); NearMissPassCompleted=false; nearMissApproachLane=0; nearMissApproachX=0f; nearMissTraffic=default; nearMissSimulationScale=1f;
+            if (gameplayLoop.Audio) gameplayLoop.Audio.EndNearMiss();
+            ComposeClock();
+        }
         private bool initialized;
         private bool ownsInstance;
         private bool transitioning;
@@ -110,7 +276,8 @@ namespace NeonTunnelRunner
             Instance = this;
             ownsInstance = initialized = true;
             transitioning = quitRequested = false;
-            Time.timeScale = 1f;
+            if (!clockCaptured) { baselineFixedDelta=Time.fixedDeltaTime; clockCaptured=true; }
+            NearMiss.Reset(); ResetPresentationClock(); ComposeClock();
             // Explicit composition after readiness; presenters never depend on Awake order.
             if (hud) hud.Initialize(this, Session);
             if (menus) menus.Initialize(this, Session);
@@ -233,11 +400,12 @@ namespace NeonTunnelRunner
         private RunSnapshot CommitState(GameState next)
         {
             GameState previous = State;
-            State = next;
+            State = next; ResetPresentationClock();
             debugState = next;
             CaptureBest();
             Session.SetSimulationActive(next == GameState.Playing);
-            Time.timeScale = next == GameState.Paused || next == GameState.GameOver ? 0f : 1f;
+            if (next == GameState.Menu || next == GameState.GameOver) CancelNearMiss();
+            ComposeClock();
             gameplayLoop.ApplyState(next);
             gameplayLoop.Progression.RefreshDebug();
             RunSnapshot snapshot = Session.PublishSnapshot();
@@ -279,7 +447,9 @@ namespace NeonTunnelRunner
             highScores = null;
             initialized = ownsInstance = false;
             Instance = null;
-            Time.timeScale = 1f;
+            NearMiss.Reset(); Time.timeScale=1f;
+            if (clockCaptured) RestoreFixedStep();
+            clockCaptured=false;
         }
 
     }

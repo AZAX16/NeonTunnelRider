@@ -30,3 +30,4 @@ MonoBehaviour:
   coinLevel: 0.14
   fuelLevel: 0.12
   maximumSpeed: 50
+  nearMiss: {fileID: 8300000, guid: 87bb8339836a00c758132958501d99f1, type: 3}

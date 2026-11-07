@@ -110,7 +110,7 @@ namespace NeonTunnelRunner
                 var audio = objects.SelectMany(g => g.GetComponents<AudioController>()).ToArray();
                 var loop = objects.SelectMany(g => g.GetComponents<GameplayLoop>()).SingleOrDefault();
                 Require(audio.Length == 1 && loop && loop.Audio == audio[0], "Assign exactly one AudioController through GameplayLoop.", errors);
-                Require(objects.Sum(g => g.GetComponents<AudioSource>().Length) == 10, "Audio requires exactly two loop sources and eight reusable SFX voices.", errors);
+                Require(objects.Sum(g => g.GetComponents<AudioSource>().Length) == 11, "Audio requires exactly three persistent music/engine voices and eight reusable SFX voices.", errors);
                 if (audio.Length == 1 && loop && !audio[0].ValidateRequired(loop, out string audioError)) errors.Add(audioError);
                 foreach (var go in objects)
                 {
@@ -213,8 +213,8 @@ namespace NeonTunnelRunner
             if (!owner || !owner.Configuration || !owner.Loop) return;
             Require(player.Configuration == owner.Configuration && player.Body == player.GetComponent<Rigidbody>(), "Assign player config and Rigidbody.", errors);
             Require(owner.Configuration.StartingSpeed == 22f && owner.Configuration.LaneWidth == 3.2f &&
-                owner.Configuration.LaneTransitionDuration == 0.28f && owner.Configuration.StartingPosition == new Vector3(0f, 0.6f, 0f) &&
-                owner.Configuration.PlayerHalfExtents == new Vector3(0.85f, 0.45f, 1.8f), "Keep the task 03 movement and box baseline.", errors);
+                owner.Configuration.LaneTransitionDuration == 0.12f && owner.Configuration.StartingPosition == new Vector3(0f, 0.6f, 0f) &&
+                owner.Configuration.PlayerHalfExtents == new Vector3(0.85f, 0.45f, 1.8f), "Use Task 15B faster movement and the original collision box.", errors);
             Require(player.enabled && input.enabled && player.gameObject.activeInHierarchy, "Enable the input and player.", errors);
             Require(player.Body && player.Body.isKinematic && !player.Body.useGravity &&
                 (player.Body.constraints & RigidbodyConstraints.FreezeRotation) == RigidbodyConstraints.FreezeRotation,

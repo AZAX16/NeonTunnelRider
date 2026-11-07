@@ -5,7 +5,7 @@ namespace NeonTunnelRunner
 {
     public enum AudioCue { Collision, Coin, Fuel }
 
-    /// <summary>Audio-only observer. Ten authored sources; each voice has one generation-owned clip.</summary>
+    /// <summary>Audio-only observer. Eleven authored sources; each voice has one generation-owned clip.</summary>
     [DisallowMultipleComponent]
     public sealed class AudioController : MonoBehaviour
     {
@@ -13,6 +13,9 @@ namespace NeonTunnelRunner
         [SerializeField] private GameManager gameManager;
         [SerializeField] private AudioConfig configuration;
         [SerializeField] private AudioSource musicSource, engineSource;
+        [SerializeField] private AudioSource nearMissSource;
+        private bool nearMissRunning, nearMissPaused;
+        public AudioSource NearMissSource => nearMissSource;
         [SerializeField] private AudioSource[] voices;
         private struct Playback
         {
@@ -45,6 +48,7 @@ namespace NeonTunnelRunner
         public ulong MusicStarts { get; private set; }
         public ulong EngineStarts { get; private set; }
         public bool EnginePaused => enginePaused;
+        public bool ApplicationSuspended => focusLost || applicationPaused;
         private bool Suspended => focusLost || applicationPaused || (gameManager && gameManager.State == GameState.Paused);
 
         public bool ValidateRequired(GameplayLoop loop, out string error)
@@ -53,12 +57,13 @@ namespace NeonTunnelRunner
             if (!enabled || !gameObject.activeInHierarchy || !gameManager || !loop || !loop.Player || gameManager != loop.Owner || !configuration)
             { error = "AudioController: assign the enabled observer, GameManager and Configs/Audio.asset."; return false; }
             if (!configuration.TryValidate(out error)) return false;
-            if (!musicSource || !engineSource || musicSource == engineSource || voices == null || voices.Length != VoiceCount ||
+            if (!nearMissSource || nearMissSource==musicSource || nearMissSource==engineSource ||
+                !ValidSource(nearMissSource,configuration.MusicGroup,false) || nearMissSource.clip!=configuration.NearMiss || nearMissSource.pitch!=1f || !musicSource || !engineSource || musicSource == engineSource || voices == null || voices.Length != VoiceCount ||
                 !engineSource.transform.IsChildOf(loop.Player.transform))
-            { error = "AudioController: assign Music, player-attached Engine and exactly eight distinct authored voices."; return false; }
+            { error = "AudioController: assign Music, NearMissMusic (supplied excerpt, pitch 1), player-attached Engine and exactly eight distinct authored voices."; return false; }
             for (int i = 0; i < VoiceCount; i++)
             {
-                if (!ValidSource(voices[i], configuration.SfxGroup, false) || voices[i] == musicSource || voices[i] == engineSource)
+                if (!ValidSource(voices[i], configuration.SfxGroup, false) || voices[i] == musicSource || voices[i] == engineSource || voices[i] == nearMissSource)
                 { error = "AudioController: SFX voice " + i + " needs an enabled 2D source, SFX routing, Doppler 0, Loop/PlayOnAwake off."; return false; }
                 for (int j = 0; j < i; j++)
                     if (voices[i] == voices[j]) { error = "AudioController: duplicate SFX source at index " + i + "."; return false; }
@@ -147,6 +152,27 @@ namespace NeonTunnelRunner
             ActiveVoices++; PeakVoices = Math.Max(PeakVoices, ActiveVoices);
             source.Play(); return true;
         }
+        internal void BeginNearMiss()
+        {
+            if (!initialized || !configuration.NearMiss || !nearMissSource) return;
+            nearMissSource.Stop(); nearMissSource.clip=configuration.NearMiss;
+            nearMissSource.time=0f; nearMissSource.pitch=1f; nearMissSource.volume=0f;
+            nearMissSource.Play(); nearMissRunning=true; nearMissPaused=false;
+        }
+        internal void RenderNearMiss(NearMissSequence effect)
+        {
+            if (!initialized) return;
+            if (!effect.Active) { EndNearMiss(); return; }
+            float w=nearMissRunning ? effect.Weight : 0f;
+            musicSource.volume=configuration.MusicLevel(gameManager.State)*(gameManager.State==GameState.Paused ? 1f : 1f-w);
+            if (nearMissSource) { nearMissSource.volume=configuration.MusicLevel(GameState.Playing)*w; nearMissSource.pitch=1f; }
+        }
+        internal void EndNearMiss()
+        {
+            if (nearMissSource) { nearMissSource.Stop(); nearMissSource.volume=0f; }
+            nearMissRunning=nearMissPaused=false;
+            if (musicSource && configuration && gameManager) musicSource.volume=configuration.MusicLevel(gameManager.State);
+        }
         private void Update() { if (initialized) RefreshPlayback(); }
         internal void RefreshPlayback()
         {
@@ -202,14 +228,20 @@ namespace NeonTunnelRunner
             }
             RefreshEngine(session == null ? 0 : session.Snapshot.ActualSpeed);
             PauseVoices(Suspended);
+            if (nearMissRunning)
+            {
+                if (Suspended && !nearMissPaused) { nearMissSource.Pause(); nearMissPaused=true; }
+                else if (!Suspended && nearMissPaused) { nearMissSource.UnPause(); nearMissPaused=false; }
+                RenderNearMiss(gameManager.NearMiss);
+            }
         }
         internal void CleanupRun()
         {
-            prepared = false; Unsubscribe(); ResetVoices();
+            EndNearMiss(); prepared = false; Unsubscribe(); ResetVoices();
             if (engineSource) engineSource.Stop(); engineRunning = enginePaused = false;
         }
         private void StopAllPlayback()
-        { ResetVoices(); if (musicSource) musicSource.Stop(); if (engineSource) engineSource.Stop(); musicRunning = engineRunning = enginePaused = false; }
+        { EndNearMiss(); ResetVoices(); if (musicSource) musicSource.Stop(); if (engineSource) engineSource.Stop(); musicRunning = engineRunning = enginePaused = false; }
         private void OnApplicationFocus(bool focused) => SetApplicationSuspension(!focused, applicationPaused);
         private void OnApplicationPause(bool paused) => SetApplicationSuspension(focusLost, paused);
         internal void SetApplicationSuspension(bool lostFocus, bool paused)
@@ -220,8 +252,10 @@ namespace NeonTunnelRunner
             bool suspended = focusLost || applicationPaused;
             if (suspended && !wasSuspended) musicSource.Pause();
             else if (!suspended && wasSuspended) musicSource.UnPause();
-            // Restores audio for the current GM state; never commands Resume or changes simulation.
+            // Never commands Resume. The active special sequence holds through its time owner.
             ApplyState(gameManager.State);
+            if (gameManager.IsOwner && gameManager.NearMiss.Active)
+            { gameManager.ResetPresentationClock(); gameManager.ComposeClock(); }
         }
     }
 }

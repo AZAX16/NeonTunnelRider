@@ -108,7 +108,7 @@ namespace NeonTunnelRunner
         }
         [Test] public void StartupRejectsTimingThatClearsTheBufferButCannotReachItsFuel()
         {
-            Assign(gameplay,"maximumSpeed",60f);
+            Assign(gameplay,"maximumSpeed",75f);
             Assert.That(PatternValidator.CanTransition(-1,1,world,gameplay),Is.True);
             Assert.That(world.TryValidate(gameplay,out var error),Is.False);
             Assert.That(error,Does.Contain("fuel is unreachable"));

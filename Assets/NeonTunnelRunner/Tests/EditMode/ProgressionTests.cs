@@ -65,7 +65,7 @@ namespace NeonTunnelRunner
                     }
                     double rate=(double)proposed/eligible;
                     // 246,000 independently addressed eligible slots per level; .006 is >6 binomial SE.
-                    Assert.That(rate,Is.EqualTo(.25d+.55d*d).Within(.006d));
+                    Assert.That(rate,Is.EqualTo(System.Math.Min(.95d,(.25d+.55d*d)*config.TrafficDensityMultiplier)).Within(.006d));
                     Assert.That(rate,Is.GreaterThan(previous)); previous=rate;
                     Assert.That(moving,Is.GreaterThan(1000)); Assert.That(accepted+rejected,Is.EqualTo(proposed));
                     Debug.Log($"[Task09 density] d={d}, eligible={eligible}, proposed={proposed}, accepted={accepted}, rejected={rejected}, moving={moving}, fallbacks={fallbacks}, poolMisses=NA(pure planner), rate={rate}");

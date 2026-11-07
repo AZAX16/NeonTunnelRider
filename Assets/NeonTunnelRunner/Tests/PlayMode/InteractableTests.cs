@@ -112,7 +112,7 @@ namespace NeonTunnelRunner
         [Test] public void BentLanePathSweepsEachLegInsteadOfAChord()
         {
             loop.Player.RequestLane(1); loop.Player.RequestLane(-1);
-            var car=Rent(PoolKey.Stationary,6.16d,1); loop.Step(0.56f);
+            var car=Rent(PoolKey.Stationary,2.64d,1); loop.Step(0.24f);
             Assert.That(loop.Player.CurrentPosition.x,Is.EqualTo(0f)); Assert.That(loop.Player.MotionLegCount,Is.EqualTo(2));
             Assert.That(car.Encountered,Is.True); Assert.That(manager.Session.Snapshot.Lives,Is.EqualTo(2));
         }

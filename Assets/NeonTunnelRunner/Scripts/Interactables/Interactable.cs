@@ -40,26 +40,46 @@ namespace NeonTunnelRunner
         private double visualPhase;
         private Rigidbody body;
         private BoxCollider box;
+        private GameObject visualObject;
+        private bool dependenciesCached;
         public SpawnDirector Registry { get; private set; }
         public bool Encountered { get; private set; }
-        public int Lane { get; private set; }
-        public float Speed { get; private set; }
+        public int Lane { get; protected set; }
+        public float Speed { get; protected set; }
         public long SpawnSequence { get; private set; }
         public Vector3 HalfExtents => halfExtents;
         public Vector3 PreviousPosition { get; private set; }
-        public Vector3 CurrentPosition { get; private set; }
+        public Vector3 CurrentPosition { get; protected set; }
         public double PreviousAbsoluteZ { get; private set; }
         public double AbsoluteZ { get; private set; }
+        internal int PassSide;
+        internal bool PassConsumed;
+        internal float PassClearance;
         public virtual InteractionCategory Category => InteractionCategory.Obstacle;
         protected virtual float WorldSpeed => 0f;
+
+        public override void OnPrewarm()
+        {
+            base.OnPrewarm();
+            CacheDependencies();
+        }
+
+        private void CacheDependencies()
+        {
+            if (!dependenciesCached)
+            {
+                box = GetComponent<BoxCollider>(); body = GetComponent<Rigidbody>();
+                dependenciesCached = true;
+            }
+            if (!visualCached && visual)
+            { visualObject=visual.gameObject; visualPosition=visual.localPosition; visualRotation=visual.localRotation; visualScale=visual.localScale; visualCached=true; }
+        }
 
         public override void OnRent(SpawnContext context)
         {
             base.OnRent(context);
-            box = GetComponent<BoxCollider>(); body = GetComponent<Rigidbody>();
-            if (!visualCached && visual)
-            { visualPosition=visual.localPosition; visualRotation=visual.localRotation; visualScale=visual.localScale; visualCached=true; }
-            Encountered=false; Lane=context.Lane; Speed=WorldSpeed; SpawnSequence=context.SpawnSequence;
+            CacheDependencies(); // Also supports direct fixture rentals that do not prewarm.
+            Encountered=false; PassSide=0; PassConsumed=false; PassClearance=float.PositiveInfinity; Lane=context.Lane; Speed=WorldSpeed; SpawnSequence=context.SpawnSequence;
             visualPhase=0d;
             PreviousPosition=CurrentPosition=context.LocalPosition;
             PreviousAbsoluteZ=AbsoluteZ=context.AbsoluteDistance;
@@ -72,7 +92,7 @@ namespace NeonTunnelRunner
         public override void OnReturn()
         {
             if (Registry) Registry.Unregister(this,ActivationId);
-            Registry=null; Encountered=false; Lane=0; Speed=0; SpawnSequence=0;
+            Registry=null; Encountered=false; PassSide=0; PassConsumed=false; PassClearance=float.PositiveInfinity; Lane=0; Speed=0; SpawnSequence=0;
             visualPhase=0d;
             PreviousPosition=CurrentPosition=Vector3.zero; PreviousAbsoluteZ=AbsoluteZ=0d;
             if (box) box.enabled=false;
@@ -80,8 +100,8 @@ namespace NeonTunnelRunner
             base.OnReturn();
         }
         private void RestoreVisual()
-        { if (visual && visualCached) { visual.gameObject.SetActive(true); visual.localPosition=visualPosition; visual.localRotation=visualRotation; visual.localScale=visualScale; } }
-        protected void HidePickup() { if (box) box.enabled=false; if (visual) visual.gameObject.SetActive(false); }
+        { if (visual && visualCached) { visualObject.SetActive(true); visual.localPosition=visualPosition; visual.localRotation=visualRotation; visual.localScale=visualScale; } }
+        protected void HidePickup() { if (box) box.enabled=false; if (visualObject) visualObject.SetActive(false); }
         protected void RecyclePickup(ulong token)
         { if (Registry) Registry.DeferReturn(this,token); else ReturnToPool(token); }
 
@@ -98,7 +118,7 @@ namespace NeonTunnelRunner
             return true;
         }
         protected virtual void OnInteract(InteractionContext context) { }
-        internal void PredictStep(float dt, double offset)
+        internal virtual void PredictStep(float dt, double offset)
         {
             PreviousPosition=CurrentPosition; PreviousAbsoluteZ=AbsoluteZ;
             AbsoluteZ += (double)Speed*dt;

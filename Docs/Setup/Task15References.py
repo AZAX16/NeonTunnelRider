@@ -6,6 +6,7 @@ Text subasset IDs are checked. Imported/built-in IDs require the pinned Editor.
 import argparse
 from collections import Counter, deque
 import datetime
+import hashlib
 import json
 from pathlib import Path
 import re
@@ -167,6 +168,21 @@ if __name__ == "__main__":
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
     result = scan(Path(__file__).resolve().parents[2])
+    # Native export consumes this exact inventory; reject stale/foreign inputs.
+    # Keep scan()/resolve() semantics and fixture coverage unchanged.
+    root = Path(__file__).resolve().parents[2]
+    inputs = {p for name in ["Assets", "Packages", "ProjectSettings"]
+              for p in (root / name).rglob("*") if p.is_file()}
+    for ref in result["references"]:
+        target = Path(ref["target"]) if ref["target"] else None
+        if target and target.is_absolute() and target.is_file():
+            inputs.add(target)
+            if target.with_name(target.name + ".meta").is_file():
+                inputs.add(target.with_name(target.name + ".meta"))
+    result["projectRoot"] = str(root)
+    result["sourceRevision"] = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=root, text=True).strip()
+    result["inputHashes"] = [{"path": str(p.relative_to(root)) if p.is_relative_to(root) else str(p),
+                              "sha256": hashlib.sha256(p.read_bytes()).hexdigest()} for p in sorted(inputs)]
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(result, indent=2) + "\n")
     print(json.dumps({k: result[k] for k in ["result", "counts", "packageErrors", "duplicateGuids", "missingMetas"]}, indent=2))

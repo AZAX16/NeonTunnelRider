@@ -40,6 +40,46 @@ namespace NeonTunnelRunner
         private TrafficLease[] active = Array.Empty<TrafficLease>();
         private TrafficLease[] deferred = Array.Empty<TrafficLease>();
         private int deferredCount;
+        private PlayerController trafficPlayer;
+        private double nextRearAttempt;
+        private ulong rearSequence;
+        private struct RearWarning
+        { internal bool Active; internal int Lane; internal float Remaining, Margin; internal ulong Sequence; }
+        private readonly RearWarning[] rearWarnings=new RearWarning[2];
+        public ulong WarnedOvertakers { get; private set; }
+        public int RearWarningCount { get { int n=0;for(int i=0;i<rearWarnings.Length;i++)if(rearWarnings[i].Active)n++;return n; } }
+        public float RearWarningRemaining(int lane)
+        { float left=0f;for(int i=0;i<rearWarnings.Length;i++)if(rearWarnings[i].Active && rearWarnings[i].Lane==lane)left=Mathf.Max(left,rearWarnings[i].Remaining);return left; }
+        internal void AdvanceRearWarnings(float realPlayingSeconds)
+        {
+            if (!pools || !pools.Owner || pools.Owner.State!=GameState.Playing || !float.IsFinite(realPlayingSeconds) || realPlayingSeconds<=0f) return;
+            for(int i=0;i<rearWarnings.Length;i++)
+            {
+                var warning=rearWarnings[i];if(!warning.Active)continue;
+                warning.Remaining=Mathf.Max(0f,warning.Remaining-realPlayingSeconds);
+                rearWarnings[i]=warning;if(warning.Remaining>0f)continue;
+                rearWarnings[i]=default;
+                double playerZ=pools.Owner.Session.Snapshot.Distance,offset=pools.Owner.Loop.Origin.Offset;
+                float playerSpeed=pools.Owner.Session.Snapshot.CruiseSpeed,speed=playerSpeed+warning.Margin;
+                double z=playerZ-16d,horizon=26d/Mathf.Max(1f,warning.Margin-1f),end=z+speed*horizon;
+                if (!Forecast(null,warning.Lane,warning.Lane,z,end,speed,horizon,playerZ,playerSpeed)) { RejectedOvertakers++;continue; }
+                var context=new SpawnContext(PoolKey.Moving,new Vector3(warning.Lane*gameplay.LaneWidth,gameplay.StartingPosition.y,(float)(z-offset)),
+                    Quaternion.identity,activeRoot,warning.Lane,z,seed,speed,checked((1L<<60)+(long)warning.Sequence),this);
+                if(!pools.TryRent(context,out var rented)) { TrafficPoolMisses++;continue; }
+                ((MovingCar)rented).SetRetirement(end);SpawnedOvertakers++;
+            }
+        }
+        private const uint TrafficStream=0x54524146u;
+        public ulong SpawnedOvertakers { get; private set; }
+        public ulong RejectedOvertakers { get; private set; }
+        public ulong RejectedLaneChanges { get; private set; }
+        private readonly ulong[] rearRejections=new ulong[5];
+        // 0=range, 1=player lane, 2=transition, 3=protected route, 4=traffic trajectory.
+        public ulong RearRejectionCount(int reason) => rearRejections[reason];
+        private bool RejectRear(int reason) { rearRejections[reason]++; return false; }
+        public ulong AcceptedLaneChanges { get; private set; }
+        public ulong CompletedOvertakes { get; private set; }
+        internal void BindPlayer(PlayerController player) => trafficPlayer=player;
         private long nextRow;
         private long nextCoinSlot, nextFuelIndex, fuelTransactionStart;
         private TrafficLease[] stagedFuel = Array.Empty<TrafficLease>();
@@ -144,7 +184,28 @@ namespace NeonTunnelRunner
             deferredCount=0;
         }
         internal void PredictTraffic(float dt,double offset)
-        { for (int i=0;i<ActiveCount;i++) { var lease=active[i]; if (!lease.IsCurrent) throw new InvalidOperationException("Stale traffic lease."); lease.Item.PredictStep(dt,offset); } }
+        {
+            // Original movers yield before a full swept rear-end envelope, retaining 8m/s when clear.
+            for (int i=0;i<ActiveCount;i++)
+            {
+                if (!active[i].IsCurrent || !(active[i].Item is MovingCar car) || car.IsOvertaker) continue;
+                float speed=8f;
+                for (int j=0;j<ActiveCount;j++)
+                {
+                    var other=active[j].Item;
+                    if (i==j || !active[j].IsCurrent || other.Category!=InteractionCategory.Obstacle ||
+                        Mathf.Abs(other.CurrentPosition.x-car.CurrentPosition.x)>car.HalfExtents.x+other.HalfExtents.x) continue;
+                    double gap=other.AbsoluteZ-car.AbsoluteZ-car.HalfExtents.z-other.HalfExtents.z-.2d;
+                    if (other.AbsoluteZ>car.AbsoluteZ) speed=Mathf.Min(speed,(float)Math.Max(0d,gap/Math.Max(dt,.7f)));
+                }
+                car.SetFollowingSpeed(speed);
+            }
+            // Admit all lateral reservations against the same pre-movement poses. Each
+            // accepted target is visible to later decisions; no actor sees half-updated Z.
+            for (int i=0;i<ActiveCount;i++)
+                if (active[i].IsCurrent && active[i].Item is MovingCar mover) mover.DecideLane(dt);
+            for (int i=0;i<ActiveCount;i++) { var lease=active[i]; if (!lease.IsCurrent) throw new InvalidOperationException("Stale traffic lease."); lease.Item.PredictStep(dt,offset); }
+        }
         internal void CommitTraffic() { for (int i=0;i<ActiveCount;i++) if (active[i].IsCurrent) active[i].Item.CommitPose(); }
         internal void HoldTraffic() { for (int i=0;i<ActiveCount;i++) if (active[i].IsCurrent) active[i].Item.HoldPose(); }
         public void ShiftOrigin(double newOffset,double delta)
@@ -231,7 +292,15 @@ namespace NeonTunnelRunner
         }
         internal void MaintainTraffic(double playerZ,double offset)
         {
-            for (int i=ActiveCount-1;i>=0;i--) { var lease=active[i]; if (lease.IsCurrent && lease.Item.AbsoluteZ+lease.Item.HalfExtents.z < playerZ-configuration.Behind) lease.Item.ReturnToPool(lease.ActivationId); }
+            for (int i=ActiveCount-1;i>=0;i--) { var lease=active[i]; if (!lease.IsCurrent) continue;
+                var mover=lease.Item as MovingCar;
+                if (mover && mover.IsOvertaker)
+                {
+                    if (mover.AbsoluteZ>=mover.RetirementZ || mover.AbsoluteZ>playerZ+10d ||
+                        mover.AbsoluteZ-mover.HalfExtents.z<playerZ-configuration.Behind)
+                    { if (mover.AbsoluteZ>playerZ+4d) CompletedOvertakes++; mover.ReturnToPool(lease.ActivationId); }
+                }
+                else if (lease.Item.AbsoluteZ+lease.Item.HalfExtents.z < playerZ-configuration.Behind) lease.Item.ReturnToPool(lease.ActivationId); }
             long first=Math.Max(nextRow,Math.Max(0L,(long)Math.Ceiling((playerZ+180d)/60d)));
             // Initial fill includes rows ahead of the player. Skipped catch-up rows are omitted, never spawned nearby.
             long last=(long)Math.Floor((playerZ+configuration.Ahead)/60d);
@@ -257,9 +326,103 @@ namespace NeonTunnelRunner
             }
             nextRow=Math.Max(nextRow,last+1);
             MaintainCoins(playerZ,offset);
+            MaintainRearTraffic(playerZ,offset);
+        }
+        private void MaintainRearTraffic(double playerZ,double offset)
+        {
+            if (!trafficPlayer || playerZ<220d || playerZ<nextRearAttempt) return;
+            nextRearAttempt=playerZ+12d;
+            ulong sequence=rearSequence++;
+            int count=0;
+            for (int i=0;i<ActiveCount;i++) if (active[i].IsCurrent && active[i].Item is MovingCar m && m.IsOvertaker) count++;
+            if (count+RearWarningCount>=2) return;
+            float margin=Mathf.Lerp(gameplay.OvertakerMargin.x,gameplay.OvertakerMargin.y,
+                WorldRandom.Sample(seed,(long)sequence,TrafficStream,0)/4294967296f);
+            float playerSpeed=trafficPlayer.Configuration.StartingSpeed;
+            if (pools.Owner && pools.Owner.Session!=null) playerSpeed=pools.Owner.Session.Snapshot.CruiseSpeed;
+            float speed=playerSpeed+margin;
+            double z=playerZ-16d;
+            // Full pass, from off-camera rear to 10m ahead. A small allowance covers speed progression.
+            double horizon=26d/Mathf.Max(1f,margin-1f);
+            double end=z+speed*horizon;
+            int lane=(int)(WorldRandom.Sample(seed,(long)sequence,TrafficStream,1)%3)-1;
+            bool safe=false;
+            for (int attempt=0;attempt<3;attempt++)
+            {
+                int proposed=(lane+1+attempt)%3-1;
+                if (RearWarningRemaining(proposed)>0f || !Forecast(null,proposed,proposed,z,end,speed,horizon,playerZ,playerSpeed)) continue;
+                lane=proposed; safe=true; break;
+            }
+            if (!safe) { RejectedOvertakers++; return; }
+            for(int i=0;i<rearWarnings.Length;i++)
+            {
+                if(rearWarnings[i].Active)continue;
+                rearWarnings[i]=new RearWarning { Active=true,Lane=lane,Remaining=gameplay.RearWarningDuration,Margin=margin,Sequence=sequence };
+                WarnedOvertakers++;break;
+            }
+        }
+        internal bool TryReserveLane(MovingCar car,int target)
+        {
+            double remaining=Mathf.Max(0f,(float)((car.RetirementZ-car.AbsoluteZ)/car.Speed));
+            double playerZ=trafficPlayer ? trafficPlayer.CurrentPosition.z+pools.Owner.Loop.Origin.Offset : car.AbsoluteZ;
+            float playerSpeed=pools.Owner.Session.Snapshot.CruiseSpeed;
+            // No late cut-ins: reserve the entire lateral sweep and the remaining pass, plus reaction time.
+            if (remaining<gameplay.TrafficLaneDuration+configuration.ReactionTime ||
+                !Forecast(car,car.Lane,target,car.AbsoluteZ,car.RetirementZ,car.Speed,remaining,playerZ,playerSpeed))
+            { RejectedLaneChanges++; return false; }
+            AcceptedLaneChanges++; return true;
+        }
+        private bool Forecast(MovingCar self,int from,int to,double z,double end,float speed,double horizon,double playerZ,float playerSpeed)
+        {
+            const double pad=4.5d;
+            long first=(long)Math.Floor((z-pad)/480d),last=(long)Math.Floor((end+pad)/480d);
+            if (first<0 || last-first>2 || horizon<=0d) return RejectRear(0);
+            float minX=Mathf.Min(from,to)*gameplay.LaneWidth, maxX=Mathf.Max(from,to)*gameplay.LaneWidth;
+            // Protect an otherwise stationary lane holder for the entire pass, not just today's gap.
+            if (trafficPlayer)
+            {
+                float currentX=trafficPlayer.CurrentPosition.x;
+                int destination=Mathf.Clamp(trafficPlayer.LaneIndex+trafficPlayer.QueuedCommand,-1,1);
+                float destinationX=destination*gameplay.LaneWidth;
+                if (Mathf.Max(currentX,destinationX)>=minX-1.95f && Mathf.Min(currentX,destinationX)<=maxX+1.95f)
+                    return RejectRear(1);
+            }
+            for (long block=first;block<=last;block++)
+            {
+                var plan=PlanAt(block);
+                if (end+pad>=plan.BufferStart && z-pad<=plan.AbsoluteEnd) return RejectRear(2);
+                if (plan.ProtectedLane>=Math.Min(from,to) && plan.ProtectedLane<=Math.Max(from,to)) return RejectRear(3);
+                // Already-introduced rows are represented by real leases below, not ghost
+                // maximum-travel envelopes. Future rows are forecast at their introduction time.
+                for (int row=0;row<WorldConfig.RowsPerBlock;row++)
+                for (int lane=Math.Min(from,to);lane<=Math.Max(from,to);lane++)
+                {
+                    if (block*8+row<nextRow || !plan.TryGetCandidate(row,lane,out var candidate)) continue;
+                    double enter=Math.Max(0d,(candidate.AbsolutePosition-configuration.Ahead-playerZ)/playerSpeed);
+                    if (enter>horizon) continue;
+                    if (!TrySelectTraffic(candidate,Math.Max(playerZ,candidate.AbsolutePosition-configuration.Ahead),out var key,out _)) continue;
+                    // A slower car can yield all the way to zero before we reach it.
+                    double npcSpeed=0d;
+                    double r0=z+speed*enter-candidate.AbsolutePosition;
+                    double r1=end-(candidate.AbsolutePosition+npcSpeed*(horizon-enter));
+                    if (Math.Min(r0,r1)<=pad && Math.Max(r0,r1)>=-pad) return RejectRear(4);
+                }
+            }
+            for (int i=0;i<ActiveCount;i++)
+            {
+                var lease=active[i]; if (!lease.IsCurrent || lease.Item==self || lease.Item.Category!=InteractionCategory.Obstacle) continue;
+                var item=lease.Item;
+                float otherMin=Mathf.Min(item.PreviousPosition.x,item.CurrentPosition.x),otherMax=Mathf.Max(item.PreviousPosition.x,item.CurrentPosition.x);
+                if (item is MovingCar m && m.IsOvertaker)
+                { otherMin=Mathf.Min(otherMin,m.TargetLane*gameplay.LaneWidth); otherMax=Mathf.Max(otherMax,m.TargetLane*gameplay.LaneWidth); }
+                if (maxX+2.2f<otherMin || minX-2.2f>otherMax) continue;
+                double r0=z-item.AbsoluteZ, r1=end-(item.AbsoluteZ+(item is MovingCar fast && fast.IsOvertaker ? item.Speed : 0f)*horizon);
+                if (Math.Min(r0,r1)<=pad && Math.Max(r0,r1)>=-pad) return RejectRear(4);
+            }
+            return true;
         }
         internal static bool ProposesMoving(TrafficCandidate candidate) =>
-            (WorldRandom.Sample(candidate.Seed,candidate.BlockIndex,WorldRandom.GameplayStream,(ulong)(64+candidate.Row*3+candidate.Lane+1))&1u)!=0;
+            (WorldRandom.Sample(candidate.Seed,candidate.BlockIndex,WorldRandom.GameplayStream,(ulong)(64+candidate.Row*3+candidate.Lane+1))&3u)!=0;
         public bool TrySelectTraffic(TrafficCandidate candidate,double playerZ,out PoolKey key,out PatternRejection rejection)
         {
             var extent=new Vector3(1.1f,0.6f,2.2f);
@@ -291,13 +454,13 @@ namespace NeonTunnelRunner
         public int PlanCount { get; private set; }
         public BlockPlan GetPlan(int index) => index >= 0 && index < PlanCount ? plans[index] : throw new ArgumentOutOfRangeException(nameof(index));
         internal void ResetRun(int runSeed)
-        { Clear(); seed=runSeed; EligibleSlots=ProposedTraffic=RejectedTraffic=TrafficPoolMisses=MovingFallbacks=0; SpawnedMoving=SpawnedStationary=Omitted=SpawnedCoins=SpawnedFuel=OmittedCoins=FuelFailures=FuelReclaims=0; DiagnosticCount=diagnosticCursor=0; diagnosticSeed=runSeed; diagnosticBlock=diagnosticSequence=0; diagnosticRejection=PatternRejection.None; diagnosticMiss=PoolRentFailure.None; Array.Clear(diagnostics,0,diagnostics.Length); }
-        internal void Clear() { ReleaseAll(); Array.Clear(plans,0,plans.Length); Array.Clear(stagedFuel,0,stagedFuel.Length); stagedFuelCount=0; PlanCount=0; nextRow=nextCoinSlot=nextFuelIndex=fuelTransactionStart=0; seed=0; LastError=null; }
+        { Clear(); Array.Clear(rearRejections,0,rearRejections.Length); WarnedOvertakers=0; nextRearAttempt=0d; rearSequence=0; SpawnedOvertakers=RejectedOvertakers=RejectedLaneChanges=CompletedOvertakes=AcceptedLaneChanges=0; seed=runSeed; EligibleSlots=ProposedTraffic=RejectedTraffic=TrafficPoolMisses=MovingFallbacks=0; SpawnedMoving=SpawnedStationary=Omitted=SpawnedCoins=SpawnedFuel=OmittedCoins=FuelFailures=FuelReclaims=0; DiagnosticCount=diagnosticCursor=0; diagnosticSeed=runSeed; diagnosticBlock=diagnosticSequence=0; diagnosticRejection=PatternRejection.None; diagnosticMiss=PoolRentFailure.None; Array.Clear(diagnostics,0,diagnostics.Length); }
+        internal void Clear() { ReleaseAll(); Array.Clear(rearWarnings,0,rearWarnings.Length); Array.Clear(plans,0,plans.Length); Array.Clear(stagedFuel,0,stagedFuel.Length); stagedFuelCount=0; PlanCount=0; nextRow=nextCoinSlot=nextFuelIndex=fuelTransactionStart=0; seed=0; LastError=null; }
         /// <summary>Rows finalize by absolute world address, using their distance as the
         /// deterministic progression context (elapsed=0). Queries never commit/redraw state.
         /// This also permits conservative reconstruction beyond the bounded visible window.</summary>
-        public float RowOccupancy(long blockIndex, int row) => ProgressionSystem.Occupancy(
-            ProgressionSystem.EvaluateDifficulty(0d, (double)blockIndex * WorldConfig.BlockLength + row * WorldConfig.SegmentLength, gameplay), gameplay);
+        public float RowOccupancy(long blockIndex, int row) => Mathf.Min(gameplay.MaximumTrafficOccupancy,ProgressionSystem.Occupancy(
+            ProgressionSystem.EvaluateDifficulty(0d, (double)blockIndex * WorldConfig.BlockLength + row * WorldConfig.SegmentLength, gameplay), gameplay) * gameplay.TrafficDensityMultiplier);
         public BlockPlan PlanAt(long blockIndex)
         {
             if (blockIndex < 0) throw new ArgumentOutOfRangeException(nameof(blockIndex));

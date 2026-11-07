@@ -51,6 +51,7 @@ namespace NeonTunnelRunner
             player.Initialize(owner.Configuration);
             inputRouter.Initialize(owner);
             spawnDirector.Initialize();
+            spawnDirector.BindPlayer(player);
             if (!survival || survival.Owner != owner || !interactionSensor || interactionSensor.Player != player ||
                 interactionSensor.Registry != spawnDirector || interactionSensor.Survival != survival ||
                 !progression || progression.Owner!=owner || interactionSensor.Progression!=progression ||
@@ -95,6 +96,7 @@ namespace NeonTunnelRunner
         internal bool ResetRun(int seed)
         {
             TickIndex = 0;
+            gameManager.CancelNearMiss(); gameManager.NearMiss.Reset();
             inputRouter.Clear();
             worldOrigin.ResetRun();
             roads.ResetRun(seed);
@@ -198,7 +200,11 @@ namespace NeonTunnelRunner
                 player.SetAbsoluteForward(targetDistance, worldOrigin.Offset);
                 spawnDirector.PredictTraffic(deltaTime,worldOrigin.Offset);
                 interactionSensor.CollectContacts();
+                int livesBefore=session.Snapshot.Lives;
                 interactionSensor.DispatchContacts(session,deltaTime);
+                bool damaged=session.Snapshot.Lives < livesBefore;
+                if (damaged) gameManager.CancelNearMiss();
+
                 player.CommitPose();
                 spawnDirector.CommitTraffic();
                 session.RecordMovement(deltaTime, travel);
@@ -210,6 +216,8 @@ namespace NeonTunnelRunner
                 terminal=survival.EvaluateEnd();
                 if (terminal == GameOverReason.None)
                 {
+                    interactionSensor.ResolveNearMisses(gameManager,!damaged);
+                    spawnDirector.AdvanceRearWarnings(deltaTime/Mathf.Max(.04f,Time.timeScale));
                     spawnDirector.FillWindow(targetDistance);
                     spawnDirector.MaintainTraffic(targetDistance,worldOrigin.Offset);
                     worldOrigin.RebaseIfNeeded(targetDistance);
