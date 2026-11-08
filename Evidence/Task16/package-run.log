@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "filename": "GD_Hw2_Alireza_Pooyan_400414039.zip",
+  "sha256": "80a9ab2b2e2458d2e20a05bb08fcbca29f020b2b2683534c1d9dd2a3d9d199b5",
+  "bytes": 52944086,
+  "entries": 218,
+  "zipCrc": "PASS",
+  "safePaths": "PASS",
+  "exactEntryAndHashComparison": "PASS",
+  "extractionDirectory": "/tmp/neon-task16-extracted-m7q2opor",
+  "extractionAndEveryFileHash": "PASS",
+  "peTarget": "AMD64 (0x8664)",
+  "executableSha256": "96b492cb271111251fe42b8646e65370a1b7b566773a1e35b34c3f2d1ae70873",
+  "suppliedVerifierExitCode": 0,
+  "nativeWindowsLaunch": "BLOCKED: Linux host; student confirmed no Windows machine/VM",
+  "courseUpload": "PENDING: no authorized course session",
+  "postUploadDownload": "PENDING"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "commit": "e97572aba25d8bcff7e336c4bf6ef8b6e3c540fc",
+  "coldCloneImportExitCode": 0,
+  "changedProductionFiles": [],
+  "workingTreeStatus": " M .vscode/settings.json\n?? fresh-20261108T060215.slnx\n",
+  "pinsMatchRelease": true,
+  "validator": "PASS: ProjectSetupValidator.ValidateBatch; saved Game preview and prefab/config/input/URP/audio assignments inspected",
+  "source": "Local clone only. Public upstream currently empty.",
+  "note": "Unity import generated only nonproduction solution naming changes if listed; no Library copied."
+}

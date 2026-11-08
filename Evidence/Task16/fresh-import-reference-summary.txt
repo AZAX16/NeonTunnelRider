@@ -1,0 +1,43 @@
+{
+  "result": "BLOCKED",
+  "counts": {
+    "wholeWorkingTree": {
+      "pointers": 732,
+      "resolutions": {
+        "SCRIPT_ID_CONVENTION": 210,
+        "IMPORT_ID_PENDING": 237,
+        "TEXT_ID_PRESENT": 248,
+        "BUILTIN_ID_PENDING": 37
+      },
+      "missingGuidPairs": 0
+    },
+    "tracked": {
+      "pointers": 732,
+      "resolutions": {
+        "SCRIPT_ID_CONVENTION": 210,
+        "IMPORT_ID_PENDING": 237,
+        "TEXT_ID_PRESENT": 248,
+        "BUILTIN_ID_PENDING": 37
+      },
+      "missingGuidPairs": 0
+    },
+    "productionGraph": {
+      "pointers": 711,
+      "resolutions": {
+        "SCRIPT_ID_CONVENTION": 200,
+        "IMPORT_ID_PENDING": 233,
+        "TEXT_ID_PRESENT": 247,
+        "BUILTIN_ID_PENDING": 31
+      },
+      "missingGuidPairs": 0
+    },
+    "protectedRecovery": {
+      "pointers": 0,
+      "resolutions": {},
+      "missingGuidPairs": 0
+    }
+  },
+  "packageErrors": [],
+  "duplicateGuids": [],
+  "missingMetas": []
+}

@@ -1,0 +1,2110 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "file": "/tmp/neon-task16-capture-sae8uc9a/Task15BBehindGateVisual.cs",
+      "entry": "NeonTunnelRunner.Task15BBehindGateVisual.Run",
+      "timeout": "60"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 275,
+      "executeMs": 13207,
+      "assemblyName": "PipelineRunScript_Task15BBehindGateVisual_4f40f6ea1d964500b64867c6ca7449fc",
+      "success": true,
+      "result": {
+        "passed": true,
+        "cases": [
+          {
+            "scenario": "beside",
+            "accepted": 0,
+            "passed": true
+          },
+          {
+            "scenario": "early departure",
+            "exitAge": 1.19991422,
+            "passCompleted": false,
+            "passed": true
+          },
+          {
+            "scenario": "hit",
+            "lives": 2,
+            "passed": true
+          },
+          {
+            "scenario": "correct hold then clean pass",
+            "seconds": 6.023178432988061,
+            "completed": true,
+            "passed": true
+          }
+        ],
+        "trace": [
+          {
+            "age": 0.000263815,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 34.119938129807245,
+            "completed": false,
+            "scale": 0.9999949,
+            "cueSamples": 0,
+            "frame": 1033
+          },
+          {
+            "age": 0.04414163,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 33.23963206202862,
+            "completed": false,
+            "scale": 0.8849384,
+            "cueSamples": 1881,
+            "frame": 1034
+          },
+          {
+            "age": 0.07904138,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 32.460397440003575,
+            "completed": false,
+            "scale": 0.7009174,
+            "cueSamples": 3763,
+            "frame": 1035
+          },
+          {
+            "age": 0.108156651,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 31.843056671274468,
+            "completed": false,
+            "scale": 0.548824966,
+            "cueSamples": 5644,
+            "frame": 1036
+          },
+          {
+            "age": 0.134909,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 31.60132886704192,
+            "completed": false,
+            "scale": 0.459919631,
+            "cueSamples": 6585,
+            "frame": 1037
+          },
+          {
+            "age": 0.1642908,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 31.196144920402865,
+            "completed": false,
+            "scale": 0.4418611,
+            "cueSamples": 7526,
+            "frame": 1038
+          },
+          {
+            "age": 0.19097726,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 31.00148860994507,
+            "completed": false,
+            "scale": 0.443106562,
+            "cueSamples": 8467,
+            "frame": 1039
+          },
+          {
+            "age": 0.215136379,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 30.80627146187853,
+            "completed": false,
+            "scale": 0.44388023,
+            "cueSamples": 10348,
+            "frame": 1040
+          },
+          {
+            "age": 0.245184168,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 30.415118612642615,
+            "completed": false,
+            "scale": 0.441854984,
+            "cueSamples": 11289,
+            "frame": 1041
+          },
+          {
+            "age": 0.272003,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 30.22041620262229,
+            "completed": false,
+            "scale": 0.443174183,
+            "cueSamples": 12230,
+            "frame": 1042
+          },
+          {
+            "age": 0.298981726,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 30.025120354255158,
+            "completed": false,
+            "scale": 0.444546252,
+            "cueSamples": 13171,
+            "frame": 1043
+          },
+          {
+            "age": 0.3289647,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 29.633282729760936,
+            "completed": false,
+            "scale": 0.442428559,
+            "cueSamples": 15052,
+            "frame": 1044
+          },
+          {
+            "age": 0.357331723,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 29.438278864147133,
+            "completed": false,
+            "scale": 0.444122821,
+            "cueSamples": 15993,
+            "frame": 1045
+          },
+          {
+            "age": 0.387382,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 29.046740899589075,
+            "completed": false,
+            "scale": 0.4419644,
+            "cueSamples": 17875,
+            "frame": 1046
+          },
+          {
+            "age": 0.414318085,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 28.851905035981552,
+            "completed": false,
+            "scale": 0.4434007,
+            "cueSamples": 18815,
+            "frame": 1047
+          },
+          {
+            "age": 0.441804945,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 28.460930259501566,
+            "completed": false,
+            "scale": 0.440638185,
+            "cueSamples": 19756,
+            "frame": 1048
+          },
+          {
+            "age": 0.4707765,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 28.26664257840602,
+            "completed": false,
+            "scale": 0.4425528,
+            "cueSamples": 21638,
+            "frame": 1049
+          },
+          {
+            "age": 0.4993998,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 28.071498557050017,
+            "completed": false,
+            "scale": 0.4444269,
+            "cueSamples": 22579,
+            "frame": 1050
+          },
+          {
+            "age": 0.5277166,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 27.67952109171487,
+            "completed": false,
+            "scale": 0.4417267,
+            "cueSamples": 23519,
+            "frame": 1051
+          },
+          {
+            "age": 0.555643,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 27.48470479497555,
+            "completed": false,
+            "scale": 0.443493545,
+            "cueSamples": 24460,
+            "frame": 1052
+          },
+          {
+            "age": 0.5812007,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 27.093477043498655,
+            "completed": false,
+            "scale": 0.440087944,
+            "cueSamples": 26342,
+            "frame": 1053
+          },
+          {
+            "age": 0.608330369,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 26.899347093457642,
+            "completed": false,
+            "scale": 0.441712767,
+            "cueSamples": 27283,
+            "frame": 1054
+          },
+          {
+            "age": 0.6357795,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 26.704488284060368,
+            "completed": false,
+            "scale": 0.443443984,
+            "cueSamples": 28223,
+            "frame": 1055
+          },
+          {
+            "age": 0.6649558,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 26.313206675538474,
+            "completed": false,
+            "scale": 0.440760225,
+            "cueSamples": 29164,
+            "frame": 1056
+          },
+          {
+            "age": 0.6917756,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 26.11873156355579,
+            "completed": false,
+            "scale": 0.4423884,
+            "cueSamples": 31046,
+            "frame": 1057
+          },
+          {
+            "age": 0.719972968,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 25.72830821387632,
+            "completed": false,
+            "scale": 0.4393868,
+            "cueSamples": 31987,
+            "frame": 1058
+          },
+          {
+            "age": 0.7445491,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 25.53440295706914,
+            "completed": false,
+            "scale": 0.440498054,
+            "cueSamples": 32927,
+            "frame": 1059
+          },
+          {
+            "age": 0.7710541,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 25.33999516313648,
+            "completed": false,
+            "scale": 0.4421212,
+            "cueSamples": 33868,
+            "frame": 1060
+          },
+          {
+            "age": 0.798364,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 25.144858905466574,
+            "completed": false,
+            "scale": 0.443986,
+            "cueSamples": 35750,
+            "frame": 1061
+          },
+          {
+            "age": 0.827984035,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 24.752903687484345,
+            "completed": false,
+            "scale": 0.441160172,
+            "cueSamples": 36691,
+            "frame": 1062
+          },
+          {
+            "age": 0.855716348,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 24.558155031076218,
+            "completed": false,
+            "scale": 0.443199873,
+            "cueSamples": 37631,
+            "frame": 1063
+          },
+          {
+            "age": 0.8840386,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 24.166820566997544,
+            "completed": false,
+            "scale": 0.43992734,
+            "cueSamples": 38572,
+            "frame": 1064
+          },
+          {
+            "age": 0.914625645,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 23.9725798551546,
+            "completed": false,
+            "scale": 0.442830026,
+            "cueSamples": 40454,
+            "frame": 1065
+          },
+          {
+            "age": 0.94437176,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 23.581498633231803,
+            "completed": false,
+            "scale": 0.439841,
+            "cueSamples": 42335,
+            "frame": 1066
+          },
+          {
+            "age": 0.970246,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 23.38725982659045,
+            "completed": false,
+            "scale": 0.441494733,
+            "cueSamples": 43276,
+            "frame": 1067
+          },
+          {
+            "age": 1.00183094,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 22.99728514103071,
+            "completed": false,
+            "scale": 0.43894437,
+            "cueSamples": 44217,
+            "frame": 1068
+          },
+          {
+            "age": 1.03085208,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 22.80340607671883,
+            "completed": false,
+            "scale": 0.4416042,
+            "cueSamples": 46099,
+            "frame": 1069
+          },
+          {
+            "age": 1.05906,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 22.608340127958524,
+            "completed": false,
+            "scale": 0.444084138,
+            "cueSamples": 47039,
+            "frame": 1070
+          },
+          {
+            "age": 1.08990419,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 22.215980787997292,
+            "completed": false,
+            "scale": 0.441128522,
+            "cueSamples": 48921,
+            "frame": 1071
+          },
+          {
+            "age": 1.11408186,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 22.0210885372021,
+            "completed": false,
+            "scale": 0.4424221,
+            "cueSamples": 48921,
+            "frame": 1072
+          },
+          {
+            "age": 1.14264929,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 21.630124505372496,
+            "completed": false,
+            "scale": 0.438623339,
+            "cueSamples": 50803,
+            "frame": 1073
+          },
+          {
+            "age": 1.170215,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 21.43630275231635,
+            "completed": false,
+            "scale": 0.441082627,
+            "cueSamples": 51743,
+            "frame": 1074
+          },
+          {
+            "age": 1.19694829,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 21.241382241806456,
+            "completed": false,
+            "scale": 0.44332546,
+            "cueSamples": 53625,
+            "frame": 1075
+          },
+          {
+            "age": 1.22499037,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 20.84952245687031,
+            "completed": false,
+            "scale": 0.439094126,
+            "cueSamples": 54566,
+            "frame": 1076
+          },
+          {
+            "age": 1.255049,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 20.655444537253587,
+            "completed": false,
+            "scale": 0.442604721,
+            "cueSamples": 55507,
+            "frame": 1077
+          },
+          {
+            "age": 1.281673,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 20.264148742440433,
+            "completed": false,
+            "scale": 0.437671363,
+            "cueSamples": 57388,
+            "frame": 1078
+          },
+          {
+            "age": 1.30842459,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 20.070663521525496,
+            "completed": false,
+            "scale": 0.440113962,
+            "cueSamples": 58329,
+            "frame": 1079
+          },
+          {
+            "age": 1.336841,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 19.876086500037545,
+            "completed": false,
+            "scale": 0.443261236,
+            "cueSamples": 59270,
+            "frame": 1080
+          },
+          {
+            "age": 1.36491477,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 19.484113017051506,
+            "completed": false,
+            "scale": 0.43852824,
+            "cueSamples": 60211,
+            "frame": 1081
+          },
+          {
+            "age": 1.39335978,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 19.29020091194738,
+            "completed": false,
+            "scale": 0.4418366,
+            "cueSamples": 62092,
+            "frame": 1082
+          },
+          {
+            "age": 1.42422366,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 18.899414446375943,
+            "completed": false,
+            "scale": 0.4380077,
+            "cueSamples": 63033,
+            "frame": 1083
+          },
+          {
+            "age": 1.44937479,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 18.705696446536777,
+            "completed": false,
+            "scale": 0.440116733,
+            "cueSamples": 63974,
+            "frame": 1084
+          },
+          {
+            "age": 1.47635663,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 18.51103378021442,
+            "completed": false,
+            "scale": 0.443079919,
+            "cueSamples": 64915,
+            "frame": 1085
+          },
+          {
+            "age": 1.505714,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 18.119050522826033,
+            "completed": false,
+            "scale": 0.438258737,
+            "cueSamples": 66796,
+            "frame": 1086
+          },
+          {
+            "age": 1.53161538,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 17.92517346346727,
+            "completed": false,
+            "scale": 0.4408898,
+            "cueSamples": 67737,
+            "frame": 1087
+          },
+          {
+            "age": 1.55872428,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 17.73012045644471,
+            "completed": false,
+            "scale": 0.4441799,
+            "cueSamples": 68678,
+            "frame": 1088
+          },
+          {
+            "age": 1.5891118,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 17.3370666563752,
+            "completed": false,
+            "scale": 0.439411432,
+            "cueSamples": 70559,
+            "frame": 1089
+          },
+          {
+            "age": 1.61664844,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 17.142631257663467,
+            "completed": false,
+            "scale": 0.4431194,
+            "cueSamples": 71500,
+            "frame": 1090
+          },
+          {
+            "age": 1.64294446,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 16.750442631780025,
+            "completed": false,
+            "scale": 0.435952038,
+            "cueSamples": 73382,
+            "frame": 1091
+          },
+          {
+            "age": 1.67121887,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 16.557502050913566,
+            "completed": false,
+            "scale": 0.440262854,
+            "cueSamples": 74323,
+            "frame": 1092
+          },
+          {
+            "age": 1.69793642,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 16.36264165769184,
+            "completed": false,
+            "scale": 0.4439086,
+            "cueSamples": 75263,
+            "frame": 1093
+          },
+          {
+            "age": 1.7248106,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 15.969656986031993,
+            "completed": false,
+            "scale": 0.436306953,
+            "cueSamples": 76204,
+            "frame": 1094
+          },
+          {
+            "age": 1.74871635,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 15.776511398558625,
+            "completed": false,
+            "scale": 0.4385322,
+            "cueSamples": 77145,
+            "frame": 1095
+          },
+          {
+            "age": 1.77421641,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 15.582368899764173,
+            "completed": false,
+            "scale": 0.441812366,
+            "cueSamples": 78086,
+            "frame": 1096
+          },
+          {
+            "age": 1.80260086,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 15.19114332477681,
+            "completed": false,
+            "scale": 0.434365749,
+            "cueSamples": 79967,
+            "frame": 1097
+          },
+          {
+            "age": 1.8289727,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 14.99880955671884,
+            "completed": false,
+            "scale": 0.438445657,
+            "cueSamples": 80908,
+            "frame": 1098
+          },
+          {
+            "age": 1.85723507,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 14.804657422380942,
+            "completed": false,
+            "scale": 0.444036633,
+            "cueSamples": 82790,
+            "frame": 1099
+          },
+          {
+            "age": 1.88635361,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 14.411365052206698,
+            "completed": false,
+            "scale": 0.4360697,
+            "cueSamples": 83731,
+            "frame": 1100
+          },
+          {
+            "age": 1.91326678,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 14.21822905514297,
+            "completed": false,
+            "scale": 0.441160023,
+            "cueSamples": 84671,
+            "frame": 1101
+          },
+          {
+            "age": 1.94046128,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 14.022826575129109,
+            "completed": false,
+            "scale": 0.446784437,
+            "cueSamples": 85612,
+            "frame": 1102
+          },
+          {
+            "age": 1.969418,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 13.627002328403215,
+            "completed": false,
+            "scale": 0.43738538,
+            "cueSamples": 87494,
+            "frame": 1103
+          },
+          {
+            "age": 1.99589038,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 13.433235325034865,
+            "completed": false,
+            "scale": 0.442949653,
+            "cueSamples": 88435,
+            "frame": 1104
+          },
+          {
+            "age": 2.02487469,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 13.04073510753172,
+            "completed": false,
+            "scale": 0.432576239,
+            "cueSamples": 89375,
+            "frame": 1105
+          },
+          {
+            "age": 2.04734588,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 12.849063098950076,
+            "completed": false,
+            "scale": 0.434884816,
+            "cueSamples": 90316,
+            "frame": 1106
+          },
+          {
+            "age": 2.07558227,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 12.656356441961009,
+            "completed": false,
+            "scale": 0.443270445,
+            "cueSamples": 92198,
+            "frame": 1107
+          },
+          {
+            "age": 2.101256,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 12.45992188210871,
+            "completed": false,
+            "scale": 0.4495213,
+            "cueSamples": 93139,
+            "frame": 1108
+          },
+          {
+            "age": 2.12969017,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 12.06147537590795,
+            "completed": false,
+            "scale": 0.435361475,
+            "cueSamples": 94079,
+            "frame": 1109
+          },
+          {
+            "age": 2.15631056,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 11.868509400195286,
+            "completed": false,
+            "scale": 0.443685085,
+            "cueSamples": 95020,
+            "frame": 1110
+          },
+          {
+            "age": 2.1785903,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 11.67184203742574,
+            "completed": false,
+            "scale": 0.446769029,
+            "cueSamples": 96902,
+            "frame": 1111
+          },
+          {
+            "age": 2.207757,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 11.275736285932464,
+            "completed": false,
+            "scale": 0.430071056,
+            "cueSamples": 97843,
+            "frame": 1112
+          },
+          {
+            "age": 2.23347974,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 11.08506766338899,
+            "completed": false,
+            "scale": 0.43923375,
+            "cueSamples": 98783,
+            "frame": 1113
+          },
+          {
+            "age": 2.26066279,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 10.890325178705488,
+            "completed": false,
+            "scale": 0.452341139,
+            "cueSamples": 100665,
+            "frame": 1114
+          },
+          {
+            "age": 2.29039764,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 10.489179736452567,
+            "completed": false,
+            "scale": 0.430018663,
+            "cueSamples": 101606,
+            "frame": 1115
+          },
+          {
+            "age": 2.31604218,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 10.298486886995558,
+            "completed": false,
+            "scale": 0.443120271,
+            "cueSamples": 102547,
+            "frame": 1116
+          },
+          {
+            "age": 2.34307528,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 10.101972241558194,
+            "completed": false,
+            "scale": 0.4628795,
+            "cueSamples": 103487,
+            "frame": 1117
+          },
+          {
+            "age": 2.3763535,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 9.691378593330889,
+            "completed": false,
+            "scale": 0.437461376,
+            "cueSamples": 105369,
+            "frame": 1118
+          },
+          {
+            "age": 2.39996314,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 9.497336332437094,
+            "completed": false,
+            "scale": 0.45309484,
+            "cueSamples": 106310,
+            "frame": 1119
+          },
+          {
+            "age": 2.42870641,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 9.095345412964726,
+            "completed": false,
+            "scale": 0.3811673,
+            "cueSamples": 107251,
+            "frame": 1120
+          },
+          {
+            "age": 2.45525,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 8.926241279944701,
+            "completed": false,
+            "scale": 0.436609834,
+            "cueSamples": 108191,
+            "frame": 1121
+          },
+          {
+            "age": 2.48274231,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 8.732529825260936,
+            "completed": false,
+            "scale": 0.6255447,
+            "cueSamples": 110073,
+            "frame": 1122
+          },
+          {
+            "age": 2.50936079,
+            "x": 0,
+            "playerLane": 0,
+            "gap": 8.45497635924485,
+            "completed": false,
+            "scale": 0.5735455,
+            "cueSamples": 111014,
+            "frame": 1123
+          },
+          {
+            "age": 2.53875661,
+            "x": 0.3058908,
+            "playerLane": 1,
+            "gap": 7.9459481644091525,
+            "completed": false,
+            "scale": 0.567119956,
+            "cueSamples": 111955,
+            "frame": 1124
+          },
+          {
+            "age": 2.56426215,
+            "x": 0.6083545,
+            "playerLane": 1,
+            "gap": 7.6942551699401385,
+            "completed": false,
+            "scale": 0.570409834,
+            "cueSamples": 113836,
+            "frame": 1125
+          },
+          {
+            "age": 2.59123826,
+            "x": 1.21679151,
+            "playerLane": 1,
+            "gap": 7.187888349653509,
+            "completed": false,
+            "scale": 0.5621424,
+            "cueSamples": 114777,
+            "frame": 1126
+          },
+          {
+            "age": 2.61319232,
+            "x": 1.51660049,
+            "playerLane": 1,
+            "gap": 6.938344591146084,
+            "completed": false,
+            "scale": 0.563334942,
+            "cueSamples": 115718,
+            "frame": 1127
+          },
+          {
+            "age": 2.6402266,
+            "x": 1.81704557,
+            "playerLane": 1,
+            "gap": 6.688251875941148,
+            "completed": false,
+            "scale": 0.567898154,
+            "cueSamples": 116659,
+            "frame": 1128
+          },
+          {
+            "age": 2.68070483,
+            "x": 2.4228034,
+            "playerLane": 1,
+            "gap": 6.183954646287617,
+            "completed": false,
+            "scale": 0.5681363,
+            "cueSamples": 118540,
+            "frame": 1129
+          },
+          {
+            "age": 2.70755816,
+            "x": 2.725809,
+            "playerLane": 1,
+            "gap": 5.931670214183434,
+            "completed": false,
+            "scale": 0.573003,
+            "cueSamples": 119481,
+            "frame": 1130
+          },
+          {
+            "age": 2.73519182,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": 5.422718108411416,
+            "completed": false,
+            "scale": 0.5636443,
+            "cueSamples": 121363,
+            "frame": 1131
+          },
+          {
+            "age": 2.76143885,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": 5.172368384957956,
+            "completed": false,
+            "scale": 0.568365037,
+            "cueSamples": 122303,
+            "frame": 1132
+          },
+          {
+            "age": 2.79188466,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": 4.66741531090657,
+            "completed": false,
+            "scale": 0.5606037,
+            "cueSamples": 123244,
+            "frame": 1133
+          },
+          {
+            "age": 2.82761669,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": 4.4183566547536905,
+            "completed": false,
+            "scale": 0.573673368,
+            "cueSamples": 125126,
+            "frame": 1134
+          },
+          {
+            "age": 2.86596251,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": 3.9085659188990256,
+            "completed": false,
+            "scale": 0.5720815,
+            "cueSamples": 126067,
+            "frame": 1135
+          },
+          {
+            "age": 2.895068,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": 3.4001081823946393,
+            "completed": false,
+            "scale": 0.5616839,
+            "cueSamples": 127948,
+            "frame": 1136
+          },
+          {
+            "age": 2.92001033,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": 3.1504700773785075,
+            "completed": false,
+            "scale": 0.5664234,
+            "cueSamples": 128889,
+            "frame": 1137
+          },
+          {
+            "age": 2.9464004,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": 2.8987056848227155,
+            "completed": false,
+            "scale": 0.5729149,
+            "cueSamples": 129830,
+            "frame": 1138
+          },
+          {
+            "age": 2.97545886,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": 2.3893452700208258,
+            "completed": false,
+            "scale": 0.560869634,
+            "cueSamples": 131711,
+            "frame": 1139
+          },
+          {
+            "age": 2.999966,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": 2.1399896606794115,
+            "completed": false,
+            "scale": 0.565877855,
+            "cueSamples": 132652,
+            "frame": 1140
+          },
+          {
+            "age": 3.02904487,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": 1.8883875962522936,
+            "completed": false,
+            "scale": 0.57673955,
+            "cueSamples": 134534,
+            "frame": 1141
+          },
+          {
+            "age": 3.058981,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": 1.3754634644251311,
+            "completed": false,
+            "scale": 0.5634823,
+            "cueSamples": 135475,
+            "frame": 1142
+          },
+          {
+            "age": 3.08477736,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": 1.124866367038507,
+            "completed": false,
+            "scale": 0.5713,
+            "cueSamples": 136415,
+            "frame": 1143
+          },
+          {
+            "age": 3.11191535,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": 0.6166581461501011,
+            "completed": false,
+            "scale": 0.552271247,
+            "cueSamples": 137356,
+            "frame": 1144
+          },
+          {
+            "age": 3.13851261,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": 0.37098829561466573,
+            "completed": false,
+            "scale": 0.562303,
+            "cueSamples": 139238,
+            "frame": 1145
+          },
+          {
+            "age": 3.164327,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": 0.1208365778542273,
+            "completed": false,
+            "scale": 0.5719961,
+            "cueSamples": 140179,
+            "frame": 1146
+          },
+          {
+            "age": 3.19283819,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -0.3881516709720998,
+            "completed": false,
+            "scale": 0.5505057,
+            "cueSamples": 141119,
+            "frame": 1147
+          },
+          {
+            "age": 3.22071147,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -0.6331135244899997,
+            "completed": false,
+            "scale": 0.5659763,
+            "cueSamples": 142060,
+            "frame": 1148
+          },
+          {
+            "age": 3.24705577,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -0.8849787850843853,
+            "completed": false,
+            "scale": 0.580123961,
+            "cueSamples": 143942,
+            "frame": 1149
+          },
+          {
+            "age": 3.27374077,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -1.4013630330295825,
+            "completed": false,
+            "scale": 0.5458849,
+            "cueSamples": 144883,
+            "frame": 1150
+          },
+          {
+            "age": 3.29652,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -1.6443460361976037,
+            "completed": false,
+            "scale": 0.5532916,
+            "cueSamples": 145823,
+            "frame": 1151
+          },
+          {
+            "age": 3.32345414,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -1.890644728566457,
+            "completed": false,
+            "scale": 0.574974537,
+            "cueSamples": 146764,
+            "frame": 1152
+          },
+          {
+            "age": 3.350968,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -2.1466154613902475,
+            "completed": false,
+            "scale": 0.6039103,
+            "cueSamples": 148646,
+            "frame": 1153
+          },
+          {
+            "age": 3.37935662,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -2.6843862976919652,
+            "completed": false,
+            "scale": 0.5456731,
+            "cueSamples": 149587,
+            "frame": 1154
+          },
+          {
+            "age": 3.40722442,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -2.9273729909914437,
+            "completed": false,
+            "scale": 0.591888845,
+            "cueSamples": 150527,
+            "frame": 1155
+          },
+          {
+            "age": 3.434408,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -3.454567796583028,
+            "completed": false,
+            "scale": 0.4761177,
+            "cueSamples": 151468,
+            "frame": 1156
+          },
+          {
+            "age": 3.46110415,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -3.666632905227381,
+            "completed": false,
+            "scale": 0.558018744,
+            "cueSamples": 153350,
+            "frame": 1157
+          },
+          {
+            "age": 3.49012923,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -3.915193615512024,
+            "completed": false,
+            "scale": 1,
+            "cueSamples": 154291,
+            "frame": 1158
+          },
+          {
+            "age": 3.516213,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -4.360662799956302,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 155231,
+            "frame": 1159
+          },
+          {
+            "age": 3.54524,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -4.962167768576698,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 156172,
+            "frame": 1160
+          },
+          {
+            "age": 3.5731082,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -5.162694624654293,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 158054,
+            "frame": 1161
+          },
+          {
+            "age": 3.59892273,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -5.36323408066729,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 158995,
+            "frame": 1162
+          },
+          {
+            "age": 3.62642121,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -5.764350792499478,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 159935,
+            "frame": 1163
+          },
+          {
+            "age": 3.654169,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -5.964928048318669,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 160876,
+            "frame": 1164
+          },
+          {
+            "age": 3.68246174,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -6.366120359763251,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 162758,
+            "frame": 1165
+          },
+          {
+            "age": 3.71015477,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -6.566735415388642,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 163699,
+            "frame": 1166
+          },
+          {
+            "age": 3.73562717,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -6.767363070949429,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 164639,
+            "frame": 1167
+          },
+          {
+            "age": 3.7592442,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -6.9680033264456185,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 165580,
+            "frame": 1168
+          },
+          {
+            "age": 3.78922367,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -7.369321637244191,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 167462,
+            "frame": 1169
+          },
+          {
+            "age": 3.8147912,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -7.569999692546574,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 168403,
+            "frame": 1170
+          },
+          {
+            "age": 3.84314871,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -7.971393602957541,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 169343,
+            "frame": 1171
+          },
+          {
+            "age": 3.87253237,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -8.172109458066124,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 171225,
+            "frame": 1172
+          },
+          {
+            "age": 3.89866042,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -8.372837913110104,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 172166,
+            "frame": 1173
+          },
+          {
+            "age": 3.92680717,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -8.774332623004263,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 174047,
+            "frame": 1174
+          },
+          {
+            "age": 3.954773,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -8.975098877854442,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 174988,
+            "frame": 1175
+          },
+          {
+            "age": 3.98390079,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -9.376669187360996,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 175929,
+            "frame": 1176
+          },
+          {
+            "age": 4.010877,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -9.57747324201737,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 176870,
+            "frame": 1177
+          },
+          {
+            "age": 4.24098444,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -11.787149438973834,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 187219,
+            "frame": 1180
+          },
+          {
+            "age": 4.26944,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -12.18907254667156,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 189100,
+            "frame": 1181
+          },
+          {
+            "age": 4.298557,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -12.39005300042352,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 190041,
+            "frame": 1182
+          },
+          {
+            "age": 4.32862139,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -12.792051707733641,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 190982,
+            "frame": 1183
+          },
+          {
+            "age": 4.362949,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -13.194100814785358,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 192863,
+            "frame": 1184
+          },
+          {
+            "age": 4.39949751,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -13.395144268214317,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 194745,
+            "frame": 1185
+          },
+          {
+            "age": 4.43769932,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -13.797268974878428,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 195686,
+            "frame": 1186
+          },
+          {
+            "age": 4.46563435,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -14.199444081284135,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 197567,
+            "frame": 1187
+          },
+          {
+            "age": 4.49485636,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -14.400550534390085,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 198508,
+            "frame": 1188
+          },
+          {
+            "age": 4.52929735,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -14.802801240408186,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 200390,
+            "frame": 1189
+          },
+          {
+            "age": 4.55813074,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -15.003945493320337,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 201331,
+            "frame": 1190
+          },
+          {
+            "age": 4.58756351,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -15.406271798950833,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 202271,
+            "frame": 1191
+          },
+          {
+            "age": 4.61715651,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -15.607453851669177,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 204153,
+            "frame": 1192
+          },
+          {
+            "age": 4.64974165,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -16.009855756912067,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 205094,
+            "frame": 1193
+          },
+          {
+            "age": 4.680177,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -16.211075609436612,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 206975,
+            "frame": 1194
+          },
+          {
+            "age": 4.70907354,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -16.613553114291896,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 207916,
+            "frame": 1195
+          },
+          {
+            "age": 4.735952,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -16.814810766622635,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 208857,
+            "frame": 1196
+          },
+          {
+            "age": 4.7676897,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -17.217363871090313,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 210739,
+            "frame": 1197
+          },
+          {
+            "age": 4.796797,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -17.418659323227253,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 211679,
+            "frame": 1198
+          },
+          {
+            "age": 4.827918,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -17.821288027307325,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 213561,
+            "frame": 1199
+          },
+          {
+            "age": 4.859567,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -18.02262127925046,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 214502,
+            "frame": 1200
+          },
+          {
+            "age": 4.89284849,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -18.425325582942925,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 216383,
+            "frame": 1201
+          },
+          {
+            "age": 4.92127752,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -18.62669663469226,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 217324,
+            "frame": 1202
+          },
+          {
+            "age": 4.951626,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -19.02947653799712,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 218265,
+            "frame": 1203
+          },
+          {
+            "age": 4.97925329,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -19.230885389552647,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 220147,
+            "frame": 1204
+          },
+          {
+            "age": 5.009616,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -19.633740926802147,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 221087,
+            "frame": 1205
+          },
+          {
+            "age": 5.037556,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -19.835187595329998,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 222969,
+            "frame": 1206
+          },
+          {
+            "age": 5.06143,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -20.03664686379325,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 222969,
+            "frame": 1207
+          },
+          {
+            "age": 5.092121,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -20.43960320052595,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 224851,
+            "frame": 1208
+          },
+          {
+            "age": 5.1192627,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -20.641100268795398,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 225791,
+            "frame": 1209
+          },
+          {
+            "age": 5.148063,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -21.044132205140492,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 227673,
+            "frame": 1210
+          },
+          {
+            "age": 5.17599154,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -21.24566707321614,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 228614,
+            "frame": 1211
+          },
+          {
+            "age": 5.20674,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -21.64877460917363,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 229555,
+            "frame": 1212
+          },
+          {
+            "age": 5.23269,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -21.85034727705547,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 231436,
+            "frame": 1213
+          },
+          {
+            "age": 5.261696,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -22.051932544872713,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 232377,
+            "frame": 1214
+          },
+          {
+            "age": 5.290676,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -22.455140880313394,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 234259,
+            "frame": 1215
+          },
+          {
+            "age": 5.31808329,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -22.65676394793683,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 235199,
+            "frame": 1216
+          },
+          {
+            "age": 5.34767962,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -23.060047882989906,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 236140,
+            "frame": 1217
+          },
+          {
+            "age": 5.374676,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -23.261708750419544,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 237081,
+            "frame": 1218
+          },
+          {
+            "age": 5.398073,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -23.463382217784577,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 238022,
+            "frame": 1219
+          },
+          {
+            "age": 5.427964,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -23.866766952320845,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 239903,
+            "frame": 1220
+          },
+          {
+            "age": 5.45491934,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -24.06847821949208,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 240844,
+            "frame": 1221
+          },
+          {
+            "age": 5.48250771,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -24.47193855364074,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 241785,
+            "frame": 1222
+          },
+          {
+            "age": 5.509284,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -24.673687620618168,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 243667,
+            "frame": 1223
+          },
+          {
+            "age": 5.53750038,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -24.875449287530998,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 244607,
+            "frame": 1224
+          },
+          {
+            "age": 5.56117439,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -25.077223554379223,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 245548,
+            "frame": 1225
+          },
+          {
+            "age": 5.597768,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -25.480809887881875,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 247430,
+            "frame": 1226
+          },
+          {
+            "age": 5.63814974,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -25.884446621126123,
+            "completed": true,
+            "scale": 0.45,
+            "cueSamples": 248371,
+            "frame": 1227
+          },
+          {
+            "age": 5.665024,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -26.288133754111968,
+            "completed": true,
+            "scale": 0.452953219,
+            "cueSamples": 250252,
+            "frame": 1228
+          },
+          {
+            "age": 5.6941576,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -26.491320946540498,
+            "completed": true,
+            "scale": 0.4740548,
+            "cueSamples": 251193,
+            "frame": 1229
+          },
+          {
+            "age": 5.72027636,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -26.70398730797018,
+            "completed": true,
+            "scale": 0.5076175,
+            "cueSamples": 252134,
+            "frame": 1230
+          },
+          {
+            "age": 5.7488246,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -27.159479471613707,
+            "completed": true,
+            "scale": 0.556784153,
+            "cueSamples": 254015,
+            "frame": 1231
+          },
+          {
+            "age": 5.77538824,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -27.40931075693635,
+            "completed": true,
+            "scale": 0.611190856,
+            "cueSamples": 254956,
+            "frame": 1232
+          },
+          {
+            "age": 5.803953,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -27.68357582474863,
+            "completed": true,
+            "scale": 0.6756288,
+            "cueSamples": 256838,
+            "frame": 1233
+          },
+          {
+            "age": 5.832018,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -28.290017180870812,
+            "completed": true,
+            "scale": 0.7415333,
+            "cueSamples": 257779,
+            "frame": 1234
+          },
+          {
+            "age": 5.864597,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -28.62286244819444,
+            "completed": true,
+            "scale": 0.816742539,
+            "cueSamples": 258719,
+            "frame": 1235
+          },
+          {
+            "age": 5.904461,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -29.356187030843557,
+            "completed": true,
+            "scale": 0.8994286,
+            "cueSamples": 260601,
+            "frame": 1236
+          },
+          {
+            "age": 5.92690659,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -29.76003833753498,
+            "completed": true,
+            "scale": 0.938056767,
+            "cueSamples": 261542,
+            "frame": 1237
+          },
+          {
+            "age": 5.9576807,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -30.602589412782137,
+            "completed": true,
+            "scale": 0.9778218,
+            "cueSamples": 263423,
+            "frame": 1238
+          },
+          {
+            "age": 5.98487329,
+            "x": 3.2,
+            "playerLane": 1,
+            "gap": -31.041808849264555,
+            "completed": true,
+            "scale": 0.9970068,
+            "cueSamples": 264364,
+            "frame": 1239
+          }
+        ],
+        "best": 27316,
+        "created": 352,
+        "misses": 0,
+        "sources": 11,
+        "method": "Saved Game, real frames; controlled cars and ordinary adjacent move requests; no direct effect trigger or resource grants; isolated test score"
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

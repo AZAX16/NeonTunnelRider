@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "command": "command script eval",
+  "data": {
+    "command": "script eval",
+    "parameters": {
+      "code": "var p=UnityEditor.AssetDatabase.LoadMainAssetAtPath(\"Assets/NeonTunnelRunner/Settings/BuildProfiles/LinuxDevelopment.asset\"); UnityEditor.EditorUtility.SetDirty(p); UnityEditor.AssetDatabase.SaveAssetIfDirty(p); return true;"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": true
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

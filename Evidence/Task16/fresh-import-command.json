@@ -1,0 +1,16 @@
+{
+  "args": [
+    "/home/alireza/Unity/Hub/Editor/6000.6.3f1/Editor/Unity",
+    "-batchmode",
+    "-nographics",
+    "-projectPath",
+    "/media/alireza/FA6C8FFA6C8FAFC5/NeonTunnelRunner-Task16/fresh-20261108T060215",
+    "-buildTarget",
+    "Linux64",
+    "-executeMethod",
+    "NeonTunnelRunner.ProjectSetupValidator.ValidateBatch",
+    "-logFile",
+    "/home/alireza/NeonTunnelRider/NeonTunnelRunner/Evidence/Task16/fresh-import.log"
+  ],
+  "note": "Pinned native batchmode import; no player build. Empty Library at clone."
+}

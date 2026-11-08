@@ -1,0 +1,177 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "file": "Docs/Setup/Task16Capture.cs",
+      "entry": "NeonTunnelRunner.Task16Capture.Run",
+      "timeout": "120"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 135,
+      "executeMs": 9950,
+      "assemblyName": "PipelineRunScript_Task16Capture_e2927d295b7e4006b59c1616e1bfda94",
+      "success": true,
+      "result": {
+        "passed": true,
+        "shots": [
+          {
+            "name": "editor-main-menu",
+            "method": "Saved Game startup; production best retained",
+            "origin": "Unity 6000.6.3f1 Editor Play Mode on Linux; NOT Windows standalone",
+            "frameBefore": 436,
+            "frameAfter": 438,
+            "state": "Menu",
+            "score": 0,
+            "best": 27316,
+            "speed": 22,
+            "distance": 0,
+            "fov": 65
+          },
+          {
+            "name": "editor-open-road-low-speed",
+            "method": "Normal real frames; fixture follows protected route with ordinary lane requests",
+            "origin": "Unity 6000.6.3f1 Editor Play Mode on Linux; NOT Windows standalone",
+            "frameBefore": 461,
+            "frameAfter": 464,
+            "state": "Playing",
+            "score": 18,
+            "best": 27316,
+            "speed": 22.1275558,
+            "distance": 18.53356598467093,
+            "fov": 65
+          },
+          {
+            "name": "editor-fireworks",
+            "method": "Naturally scheduled pooled firework; real playing frames",
+            "origin": "Unity 6000.6.3f1 Editor Play Mode on Linux; NOT Windows standalone",
+            "frameBefore": 554,
+            "frameAfter": 556,
+            "state": "Playing",
+            "score": 177,
+            "best": 27316,
+            "speed": 22.53511,
+            "distance": 77.04571145844216,
+            "fov": 65
+          },
+          {
+            "name": "editor-pause",
+            "method": "Production Pause command/menu",
+            "origin": "Unity 6000.6.3f1 Editor Play Mode on Linux; NOT Windows standalone",
+            "frameBefore": 556,
+            "frameAfter": 557,
+            "state": "Paused",
+            "score": 177,
+            "best": 27316,
+            "speed": 22.53511,
+            "distance": 77.04571145844216,
+            "fov": 65
+          },
+          {
+            "name": "editor-tunnel",
+            "method": "Deterministic gameplay pre-roll into tunnel, then real frames; no geometry edits",
+            "origin": "Unity 6000.6.3f1 Editor Play Mode on Linux; NOT Windows standalone",
+            "frameBefore": 564,
+            "frameAfter": 567,
+            "state": "Playing",
+            "score": 578,
+            "best": 27316,
+            "speed": 23.8822231,
+            "distance": 278.04625663405636,
+            "fov": 65
+          },
+          {
+            "name": "editor-high-speed-neon",
+            "method": "Deterministic safe-route pre-roll to actual 50 m/s; no speed/config/resource grant",
+            "origin": "Unity 6000.6.3f1 Editor Play Mode on Linux; NOT Windows standalone",
+            "frameBefore": 573,
+            "frameAfter": 576,
+            "state": "Playing",
+            "score": 11131,
+            "best": 27316,
+            "speed": 50,
+            "distance": 6031.452230813861,
+            "fov": 65
+          },
+          {
+            "name": "editor-rear-warning",
+            "method": "Seeded forecast warning after gameplay pre-roll; no direct warning trigger",
+            "origin": "Unity 6000.6.3f1 Editor Play Mode on Linux; NOT Windows standalone",
+            "frameBefore": 586,
+            "frameAfter": 589,
+            "state": "Playing",
+            "score": 431,
+            "best": 27316,
+            "speed": 23.5742226,
+            "distance": 231.0612973352981,
+            "fov": 65
+          },
+          {
+            "name": "editor-coin-pickup",
+            "method": "Controlled actual pooled Coin rental ahead in player lane; production swept contact/reward/VFX; real frames",
+            "origin": "Unity 6000.6.3f1 Editor Play Mode on Linux; NOT Windows standalone",
+            "frameBefore": 597,
+            "frameAfter": 598,
+            "state": "Playing",
+            "score": 107,
+            "best": 27316,
+            "speed": 22.049778,
+            "distance": 7.488459262188542,
+            "fov": 65
+          },
+          {
+            "name": "editor-fuel-pickup",
+            "method": "Controlled actual pooled Fuel rental ahead in player lane; production swept contact/reward/VFX; real frames",
+            "origin": "Unity 6000.6.3f1 Editor Play Mode on Linux; NOT Windows standalone",
+            "frameBefore": 606,
+            "frameAfter": 609,
+            "state": "Playing",
+            "score": 7,
+            "best": 27316,
+            "speed": 22.0528889,
+            "distance": 7.929516865428091,
+            "fov": 65
+          },
+          {
+            "name": "editor-collision-sparks",
+            "method": "Controlled actual pooled Stationary rental ahead in player lane; production swept contact/reward/VFX; real frames",
+            "origin": "Unity 6000.6.3f1 Editor Play Mode on Linux; NOT Windows standalone",
+            "frameBefore": 615,
+            "frameAfter": 617,
+            "state": "Playing",
+            "score": 5,
+            "best": 27316,
+            "speed": 22.0373325,
+            "distance": 5.724851026108681,
+            "fov": 65
+          },
+          {
+            "name": "editor-game-over",
+            "method": "Three real controlled obstacle contacts separated by grace; production Game Over",
+            "origin": "Unity 6000.6.3f1 Editor Play Mode on Linux; NOT Windows standalone",
+            "frameBefore": 712,
+            "frameAfter": 713,
+            "state": "GameOver",
+            "score": 56,
+            "best": 27316,
+            "speed": 22.392,
+            "distance": 56.37781755070753,
+            "fov": 65
+          }
+        ],
+        "retainedBest": 27316,
+        "diskBestAfter": 27316,
+        "limitation": "Supplementary Editor screenshots only; staging is not Windows runtime acceptance or whole-game human listening/performance certification"
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

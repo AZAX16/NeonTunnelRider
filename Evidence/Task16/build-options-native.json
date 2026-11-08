@@ -1,0 +1,30 @@
+{
+  "success": true,
+  "command": "command script eval",
+  "data": {
+    "command": "script eval",
+    "parameters": {
+      "code": "var r=UnityEditor.Build.Reporting.BuildReport.GetLatestReport(); return new { numeric=(long)r.summary.options, target=r.summary.platform.ToString(), backend=UnityEditor.PlayerSettings.GetScriptingBackend(UnityEditor.Build.NamedBuildTarget.Standalone).ToString(), activeTarget=UnityEditor.EditorUserBuildSettings.activeBuildTarget.ToString(), development=UnityEditor.EditorUserBuildSettings.development, profile=UnityEditor.Build.Profile.BuildProfile.GetActiveBuildProfile()?.name };"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "numeric": 536870912,
+        "target": "StandaloneWindows64",
+        "backend": "Mono2x",
+        "activeTarget": "StandaloneWindows64",
+        "development": true,
+        "profile": "LinuxDevelopment"
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

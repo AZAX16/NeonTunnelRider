@@ -1,0 +1,53 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "file": "Docs/Setup/Task16EffectsCapture.cs",
+      "entry": "NeonTunnelRunner.Task16EffectsCapture.Run",
+      "timeout": "30"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 241,
+      "executeMs": 5729,
+      "assemblyName": "PipelineRunScript_Task16EffectsCapture_e1823200fcd944d1b5f96493bda5feaa",
+      "success": true,
+      "result": {
+        "passed": true,
+        "rows": [
+          {
+            "name": "editor-fireworks",
+            "method": "Natural scheduled firework; wait for actual burst particles",
+            "Age": 1.47999883,
+            "ParticleCount": 180,
+            "frame": 103
+          },
+          {
+            "name": "editor-coin-pickup",
+            "method": "Actual controlled pooled pickup contact, then ordinary adjacent move exposes detached burst",
+            "score": 106,
+            "fuel": 99.4,
+            "frame": 108
+          },
+          {
+            "name": "editor-fuel-pickup",
+            "method": "Actual controlled pooled pickup contact, then ordinary adjacent move exposes detached burst",
+            "score": 6,
+            "fuel": 99.68,
+            "frame": 113
+          }
+        ],
+        "origin": "Editor Play Mode on Linux; no composition or particle/config change"
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

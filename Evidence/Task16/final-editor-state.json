@@ -1,0 +1,33 @@
+{
+  "success": true,
+  "command": "command script eval",
+  "data": {
+    "command": "script eval",
+    "parameters": {
+      "code": "return new { scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene().path, dirty=UnityEngine.SceneManagement.SceneManager.GetActiveScene().isDirty, playing=UnityEditor.EditorApplication.isPlaying, best=UnityEngine.PlayerPrefs.GetInt(\"NTR.HighScore.v1\",0), scale=UnityEngine.Time.timeScale, fixedStep=UnityEngine.Time.fixedDeltaTime, background=UnityEngine.Application.runInBackground, autoTick=UnityEditor.SessionState.GetBool(\"Unity.Pipeline.AutoTick.Enabled\",true), target=UnityEditor.EditorUserBuildSettings.activeBuildTarget.ToString() };"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "scene": "Assets/NeonTunnelRunner/Scenes/Game.unity",
+        "dirty": false,
+        "playing": false,
+        "best": 27316,
+        "scale": 1,
+        "fixedStep": 0.0199999921,
+        "background": false,
+        "autoTick": true,
+        "target": "StandaloneLinux64"
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

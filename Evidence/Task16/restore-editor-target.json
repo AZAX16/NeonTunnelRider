@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "command": "command build.target switch",
+  "data": {
+    "command": "build.target switch",
+    "parameters": {
+      "target": "StandaloneLinux64",
+      "confirm": "true"
+    },
+    "result": {
+      "status": "switching",
+      "fromTarget": "StandaloneWindows64",
+      "toTarget": "StandaloneLinux64"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

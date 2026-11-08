@@ -1,0 +1,1041 @@
+{
+    "unity": "6000.6.3f1",
+    "target": "StandaloneWindows64",
+    "backend": "Mono2x",
+    "options": "ForceOptimizeScriptCompilation, Il2CPP, CompressTextures, StripDebugSymbols, ShaderLivelinkSupport, DetailedBuildReport",
+    "result": "Succeeded",
+    "sourceCommit": "e97572aba25d8bcff7e336c4bf6ef8b6e3c540fc",
+    "output": "Build/Windows/NeonTunnelRunner.exe",
+    "startedUtc": "2026-11-08T02:32:52.7609080Z",
+    "finishedUtc": "2026-11-08T02:44:50.0199880Z",
+    "development": false,
+    "connectProfiler": false,
+    "deepProfiling": false,
+    "scriptDebugging": false,
+    "errors": 0,
+    "warnings": 1,
+    "reportedBytes": 119954203,
+    "seconds": 714.4846709999999,
+    "scenes": [
+        "Assets/NeonTunnelRunner/Scenes/Game.unity"
+    ],
+    "files": [
+        {
+            "path": "Build/Windows/D3D12/D3D12Core.dll",
+            "sha256": "625bd40005b1c3708695d5256ecf230d278e6b8edba5a88af70f3d91324f3052",
+            "bytes": 4725304
+        },
+        {
+            "path": "Build/Windows/dstorage.dll",
+            "sha256": "cae65787f61514bec6f012f44546e68b19e39d8854a9ab52af813370d44b272a",
+            "bytes": 206904
+        },
+        {
+            "path": "Build/Windows/dstoragecore.dll",
+            "sha256": "cf85b19a92a8276f8baca0db9bbcd60735bad50768deb303d310e84d5f4fdd11",
+            "bytes": 1482784
+        },
+        {
+            "path": "Build/Windows/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll",
+            "sha256": "bc946390a8037185424650369390b0ff8bea3af709ea640c0bcbe291b02c8b06",
+            "bytes": 7834536
+        },
+        {
+            "path": "Build/Windows/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll",
+            "sha256": "3b411bbffc7aee3e98532ef62d37e8d719d8719a86385e95ec446af04062c490",
+            "bytes": 611240
+        },
+        {
+            "path": "Build/Windows/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser",
+            "sha256": "8a1082057ac5681dcd4e9c227ed7fb8eb42ac1618963b5de3b65739dd77e2741",
+            "bytes": 1605
+        },
+        {
+            "path": "Build/Windows/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx",
+            "sha256": "751861040b69ea63a3827507b7c8da9c7f549dc181c1c8af4b7ca78cc97d710a",
+            "bytes": 60575
+        },
+        {
+            "path": "Build/Windows/MonoBleedingEdge/etc/mono/2.0/machine.config",
+            "sha256": "e91782a27fa39fc6c1d6ee8b08529f5d35052310d0006034b878eb04b8f2af30",
+            "bytes": 29066
+        },
+        {
+            "path": "Build/Windows/MonoBleedingEdge/etc/mono/2.0/settings.map",
+            "sha256": "49c6160f9d54af4270a3b4e997fc4a8301f79b9e2070118fa46ddbcbbc44f9a2",
+            "bytes": 2622
+        },
+        {
+            "path": "Build/Windows/MonoBleedingEdge/etc/mono/2.0/web.config",
+            "sha256": "cf2b54339e069b9e42f7d6795eecbf562c50c1011f4ca8f65f578fe52d97ff92",
+            "bytes": 11635
+        },
+        {
+            "path": "Build/Windows/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser",
+            "sha256": "8a1082057ac5681dcd4e9c227ed7fb8eb42ac1618963b5de3b65739dd77e2741",
+            "bytes": 1605
+        },
+        {
+            "path": "Build/Windows/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx",
+            "sha256": "751861040b69ea63a3827507b7c8da9c7f549dc181c1c8af4b7ca78cc97d710a",
+            "bytes": 60575
+        },
+        {
+            "path": "Build/Windows/MonoBleedingEdge/etc/mono/4.0/machine.config",
+            "sha256": "e60aec2c5115d65b3acb3c55ea21576dbd770f579166c017125571e46ae560ed",
+            "bytes": 33598
+        },
+        {
+            "path": "Build/Windows/MonoBleedingEdge/etc/mono/4.0/settings.map",
+            "sha256": "ce1db1ad8a9512073164e3eccdc193f7eda036e1a9733caec4635de21b2865c8",
+            "bytes": 2622
+        },
+        {
+            "path": "Build/Windows/MonoBleedingEdge/etc/mono/4.0/web.config",
+            "sha256": "e38bb8cc68fe5b4edecdfd288d094b9e8ced7629039b2a347682aba0d8bd7492",
+            "bytes": 18802
+        },
+        {
+            "path": "Build/Windows/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser",
+            "sha256": "8a1082057ac5681dcd4e9c227ed7fb8eb42ac1618963b5de3b65739dd77e2741",
+            "bytes": 1605
+        },
+        {
+            "path": "Build/Windows/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx",
+            "sha256": "751861040b69ea63a3827507b7c8da9c7f549dc181c1c8af4b7ca78cc97d710a",
+            "bytes": 60575
+        },
+        {
+            "path": "Build/Windows/MonoBleedingEdge/etc/mono/4.5/machine.config",
+            "sha256": "ee950004b576fb28dc85f4b0435ed04bf96612de2e8b53be84d07afe85a0de6c",
+            "bytes": 34056
+        },
+        {
+            "path": "Build/Windows/MonoBleedingEdge/etc/mono/4.5/settings.map",
+            "sha256": "ce1db1ad8a9512073164e3eccdc193f7eda036e1a9733caec4635de21b2865c8",
+            "bytes": 2622
+        },
+        {
+            "path": "Build/Windows/MonoBleedingEdge/etc/mono/4.5/web.config",
+            "sha256": "c4cbddd4fd9347b58cc5a72b36dc4ba1ad2bb699e65869d05cd3fb9865f0d824",
+            "bytes": 18811
+        },
+        {
+            "path": "Build/Windows/MonoBleedingEdge/etc/mono/browscap.ini",
+            "sha256": "4ddd50f31fb968f30bedefc253a46dc3f2890192d05cdaa9e0a64a056eee807e",
+            "bytes": 311984
+        },
+        {
+            "path": "Build/Windows/MonoBleedingEdge/etc/mono/config",
+            "sha256": "5776169973a26a387b8b3e5c0f2301a7ab9a6dd7c7d3efa22a96abc47fbf8662",
+            "bytes": 3815
+        },
+        {
+            "path": "Build/Windows/MonoBleedingEdge/etc/mono/mconfig/config.xml",
+            "sha256": "0c56e34c69124510fa8c19e7b4c2ca6c1c4ff460ae19f798dd0ca035809e396d",
+            "bytes": 25817
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner.exe",
+            "sha256": "96b492cb271111251fe42b8646e65370a1b7b566773a1e35b34c3f2d1ae70873",
+            "bytes": 667136
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_BackUpThisFolder_ButDontShipItWithYourGame/x86_64/lib_burst_generated.txt",
+            "sha256": "eb4e8d7ab9c55ec38f29349fb0fb4d1ed1d2c5b187e2697c451fcd032f5faec5",
+            "bytes": 229016
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/app.info",
+            "sha256": "80b1eb6caa72923a3ee4d572087bc08a68abf0e312e963d2a720f2d158c2e09f",
+            "bytes": 31
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/boot.config",
+            "sha256": "7c1feccdac078be6ee9a64624cb5036a1c355bfee54fc5b34d0c489adb0fab74",
+            "bytes": 156
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/globalgamemanagers",
+            "sha256": "6dac67f8e2d4809013e8a5ca4524d05719e22e9a40c3cf047eca27907c1a2c6e",
+            "bytes": 125812
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/globalgamemanagers.assets",
+            "sha256": "c6b59253b6996287802b6156416eca1f338e9d910642f65dcc39bbb26234b410",
+            "bytes": 1099384
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/globalgamemanagers.assets.resS",
+            "sha256": "d39bc2dc060377debd226e7a96002e7d9a37f7dd6a2aeaa324b085972564d143",
+            "bytes": 3553504
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/level0",
+            "sha256": "5d01728c9c3a05ef978060ae4c287ab4029c6014894518b0cc1915559a0111d7",
+            "bytes": 111752
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Assembly-CSharp.dll",
+            "sha256": "df44f5c159d27d93efc2447be433239ba902078d513b8d23f1537b649b41d463",
+            "bytes": 3584
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Mono.Security.dll",
+            "sha256": "a7128a85c5ce748cfcc64be97b7fab4119f4636c917a0303bfa2582f86282ed8",
+            "bytes": 241152
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/mscorlib.dll",
+            "sha256": "acbfa8295da5b5e5a2c68c7b2dbc9cd7a5829c0ae031af22be4f6a49fd626f8f",
+            "bytes": 4632064
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/NeonTunnelRunner.Runtime.dll",
+            "sha256": "ef6321c57c026fcaba9b421838bfaf59f068c807b1b30efc78584ec1eaf77663",
+            "bytes": 151552
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/netstandard.dll",
+            "sha256": "6ae62e082dc494a2433984177f60ca4db5fae69b1f360a8b33754172b310b8c5",
+            "bytes": 90112
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Newtonsoft.Json.dll",
+            "sha256": "a56146202232958f46bd6a28b5a7da166aea123ee0d646735a46e5c341dfbf1f",
+            "bytes": 691712
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/System.Buffers.dll",
+            "sha256": "762f8fdbe975e05b76be5fe996c53ce7c75e4a2830f2f50b02a5948ef6ba0aeb",
+            "bytes": 4608
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/System.Collections.Immutable.dll",
+            "sha256": "5b1b1c83ba3d135c2fdfe425842fbe9c7432878b7e468623acb554c69b4c130f",
+            "bytes": 252680
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/System.ComponentModel.Composition.dll",
+            "sha256": "d949bd6214c26b38a190e66fe976038e3845aea6c6980d3eb58e78b75edf98a5",
+            "bytes": 257024
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/System.Configuration.dll",
+            "sha256": "7170a8fa3363a8ebd59e8b9931509f595df009f11e1885707a3c3bc0a3ff5648",
+            "bytes": 124928
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/System.Core.dll",
+            "sha256": "15081eac9f71fd7817a7d42a963651c89c666a4c21499f2076fb3ab7aacd9b9a",
+            "bytes": 1113088
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/System.Data.DataSetExtensions.dll",
+            "sha256": "da75ceebbef879968aaa721090df162e7a6fe1c7ba32f4bb5d05523385c53e8c",
+            "bytes": 29696
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/System.Data.dll",
+            "sha256": "557bd378caa400c4de52bd73225a948f1a1e41586c52e307aaa042f77b33d648",
+            "bytes": 2125312
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/System.dll",
+            "sha256": "0c49d192fc91f2eade9c12c3960d8b90161560507d96ebcc9d878a2390a2cac6",
+            "bytes": 2641920
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/System.Drawing.dll",
+            "sha256": "1657e6eb247364cd232fc6c80df1ab6804732b6644639f18c80e48af1174fd63",
+            "bytes": 489984
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/System.EnterpriseServices.dll",
+            "sha256": "7fcc7078f244ab3a5e8549a8acd2905b71aa8a31dda917ab60817c5b13924d64",
+            "bytes": 44544
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/System.IO.Compression.dll",
+            "sha256": "35242ddc40f673d10767e3ab3381718864170cffbc710501374e911df700fda0",
+            "bytes": 114688
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/System.IO.Compression.FileSystem.dll",
+            "sha256": "e7f2784c57088326f8de52a79426102a2250c2f31922030e9fed0cb64740e242",
+            "bytes": 18432
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/System.Memory.dll",
+            "sha256": "c4f030a2cba7da7cdcf493257c24560e203d355904aee490d645a935842f834a",
+            "bytes": 4608
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/System.Net.Http.dll",
+            "sha256": "a6227de2834bc7019a10e69a7ca0bb0908d5092b8bc279ed428b27ecf583a681",
+            "bytes": 122880
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/System.Numerics.dll",
+            "sha256": "711616207139cfbf471f4f344a32ade842077314f03c19a0846a98ecace3fc5d",
+            "bytes": 119296
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/System.Reflection.Metadata.dll",
+            "sha256": "afcfd6c166fe0d59f45cc6363082806f6a7ea8ceed9dc6c75eec9fd79ccb5717",
+            "bytes": 487584
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/System.Runtime.CompilerServices.Unsafe.dll",
+            "sha256": "fd67abc4c4af10affbcd42fd68a2a7bc361b26714afe6965d4d0d139459d8297",
+            "bytes": 19256
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/System.Runtime.Serialization.dll",
+            "sha256": "aa96283b3009b39c4ed8dfcde146b0e0bcafa09f9be24a959d0c16dd6f54ae8a",
+            "bytes": 934400
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/System.Security.dll",
+            "sha256": "21c2cc73f1cecc8b5bfc42171a22412dfd8e04ac42978de90c00ecb507583d62",
+            "bytes": 320000
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/System.ServiceModel.Internals.dll",
+            "sha256": "c90168f6f28b2355c6c11d38ee39fa18f44ea839c877ccce8934bee50e7fb479",
+            "bytes": 215040
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/System.Transactions.dll",
+            "sha256": "e5ff61cc9163810aa4c1fd9a00e929070e6733eca6d6669b7ece5169ec3739ef",
+            "bytes": 35328
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/System.Xml.dll",
+            "sha256": "ee620f038a3a2589a118f0e7a030fe398b082015fbf83ac1474fb55b521d0bd7",
+            "bytes": 3160064
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/System.Xml.Linq.dll",
+            "sha256": "638f8c5f44aab1fd5755fdf2873683f3ca0f0fb0a3aaecfdbf1d2c2280c5983e",
+            "bytes": 136704
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.AI.Navigation.dll",
+            "sha256": "f68e3cee04b2547416489bbfe442a03edc9cea710f3ed5fde0f5256af75e29f2",
+            "bytes": 23040
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.Burst.dll",
+            "sha256": "39986a6401e9571b28b4b501297ca2a081740b2a0cf7298c70b317ba9b0a5cb6",
+            "bytes": 5120
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.Collections.dll",
+            "sha256": "1288114f01e0ee90aba5f1216121d0fb640a09c711db136448ef1c6f048411e9",
+            "bytes": 442368
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.Collections.LowLevel.ILSupport.dll",
+            "sha256": "ff50383f807f9692e4913b97e47d86fefcb8faa33d6d48cd3e3fd6fc7ffb448d",
+            "bytes": 5120
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.Collections.Tests.CoreCLR.InternalJobNestedPrivate.dll",
+            "sha256": "0df0457661f531c81b6267363870165e7ec6cacea5ab49a619d6ec423259a96e",
+            "bytes": 4608
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.Collections.Tests.CoreCLR.PrivateJobNested.dll",
+            "sha256": "273f784da0982f7fc7b5957b96551bb3ac164d949b8c2e3c78a9365a9e238c89",
+            "bytes": 4096
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.Collections.Tests.CoreCLR.ProtectedJobNested.dll",
+            "sha256": "915a415e831e4e98f068da46246d0d9ade2942a705a982d147c67a7f50976d50",
+            "bytes": 4096
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.Collections.Tests.CoreCLR.PublicJobPrivateGeneric.dll",
+            "sha256": "51f0f77344a7c0ccbc5d9b3e86497b458f00e88b32942c08329d952b61a534e7",
+            "bytes": 4608
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.InputSystem.dll",
+            "sha256": "4c41c38cc32f32796de85f6c94f4aa912a2b360680213b4e5317edc1e99d43c5",
+            "bytes": 1094656
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.InputSystem.ForUI.dll",
+            "sha256": "b5fac6c9cb24f130f556dd1d0559fee0138d1c3e073ce1c61f7ed3a6db45967b",
+            "bytes": 15360
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.InternalAPIEngineBridge.004.dll",
+            "sha256": "63f9fc239d858355175e1ad36e3dc6852d54773f7dcbaee8e54894a58af3a8f5",
+            "bytes": 4096
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.InternalAPIEngineBridge.ObjectDispatcher.Runtime.dll",
+            "sha256": "813b63fcfbbe81ad50f25de6d848c33b4b55c94a8e74dfe0cebf1157deab5846",
+            "bytes": 5632
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.InternalAPIEngineBridge.RenderPipelines.Core.Runtime.Shared.dll",
+            "sha256": "4e0d133af1d833b1c8e33e52dde8f0568193f4ef34fbf5588d0764577e864de0",
+            "bytes": 3584
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.PathTracing.Runtime.dll",
+            "sha256": "b783e4bb6555ed74cc3db07d7faddc577fd518b0c19748e46cfd9c930c653ff7",
+            "bytes": 152576
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.Pipeline.Attributes.dll",
+            "sha256": "f0b225ec544a73c49b48878ad9862e05488a74d18214cda54bee056ec348b8c2",
+            "bytes": 6656
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.Profiling.Core.dll",
+            "sha256": "63802398a4e0a2bc8f672feded7b8a63cf8ce90485580e750d30f6d9815b4351",
+            "bytes": 8192
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.dll",
+            "sha256": "b223a7faae674e5559cf5251ccacecd238ed476cfcc2a5a54f0e645a674c431e",
+            "bytes": 7680
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.RenderPipelines.Core.Runtime.dll",
+            "sha256": "c1ffd9a49fa8178bb14001225f107c3a6622c97283628af7ade52457d59673ee",
+            "bytes": 1084928
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.RenderPipelines.Core.Runtime.Shared.dll",
+            "sha256": "e467735cc66699cd14ea26d21a1581eeed600fd73af414782ef8f61786938b2e",
+            "bytes": 11264
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll",
+            "sha256": "32a4a6d90ea7451a9580ef221bab1ec15d6e1ba91e1113e8837eb6e0e96ee13e",
+            "bytes": 3584
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.RenderPipelines.GPUDriven.Runtime.dll",
+            "sha256": "197fceb8344072e8c8b069f29e75bf475f6866416a2bd1b19e58dd959fd35205",
+            "bytes": 274944
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll",
+            "sha256": "4a951dfb6618eb2f2901f1f779818bcb36fb680ed37ea3995614219bfd7c76e9",
+            "bytes": 3584
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.RenderPipelines.Universal.2D.Runtime.dll",
+            "sha256": "3fa741edc9a47fbbd7593c59555591f85eb5e14e1ffef4350c0239a81c491806",
+            "bytes": 215040
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.RenderPipelines.Universal.Config.Runtime.dll",
+            "sha256": "dd9e0ca0bd31cd0840a4b67cbc69a6fce286643ee1983b37c0cd8a27283c5a3b",
+            "bytes": 4096
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.RenderPipelines.Universal.Runtime.dll",
+            "sha256": "a68164b43efe86fd7d3c67b4a184b6a2aa08d5c8afd80846f5072164ee3ad835",
+            "bytes": 752128
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.RenderPipelines.Universal.Shaders.dll",
+            "sha256": "dd5aad1a7b66a463017826e613ed1e6c2e2e2abde68870505d4ae0d17e8539fd",
+            "bytes": 3584
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.Scripting.dll",
+            "sha256": "9ac13c6b7dfc7b90007e7672e544cc6b1e633d7b535b7084f44016c361a73e4f",
+            "bytes": 70568
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.SurfaceCache.Runtime.dll",
+            "sha256": "683639a3453c6e1cb38bc0e65f238d202c8bfcef88159a66ae3812fa99ec984c",
+            "bytes": 35840
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.TextMeshPro.dll",
+            "sha256": "0cd3578619ddd417f9c93b677bd8008246ebd70c19f59323bfb07ef731ba8554",
+            "bytes": 438784
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.Timeline.dll",
+            "sha256": "15d626a822ee89daddf426fe150e2ac0a993895083509ad80a8f51492fa1d8a0",
+            "bytes": 120832
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.UnifiedRayTracing.Runtime.dll",
+            "sha256": "673f60720adec107f8cea0b149a7d6be631e97329c63925cdbf17b81b240f0fe",
+            "bytes": 101376
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll",
+            "sha256": "ed7ce205f66eafe39bbb5d084d42e7fe11cb4b386ff208e5d5110891be0b7b37",
+            "bytes": 86016
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.VisualScripting.Core.dll",
+            "sha256": "d0debdf5b74a58627df68bd4c7903f06f4c123b0254c337ecfff11a70a336966",
+            "bytes": 550400
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.VisualScripting.DocCodeExamples.dll",
+            "sha256": "a37982ba09a57fc81f530ba654d67595b123455fe7aa92e6a3e6edb9b56ab3e3",
+            "bytes": 6144
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.VisualScripting.Flow.dll",
+            "sha256": "a152de836010ae4b9bfa89d8409ccc2dc859536676926a6ec651dd1357ebea0e",
+            "bytes": 335872
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/Unity.VisualScripting.State.dll",
+            "sha256": "e538806e723fb46de4fcdf2e109b273a5da42f659518febeb0bffbf1dcce6866",
+            "bytes": 27136
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.AccessibilityModule.dll",
+            "sha256": "6f77684ca03a7153a1de9d6721d5d7abfe342360579e018164bda5eeb03644a9",
+            "bytes": 49576
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.AdaptivePerformanceModule.dll",
+            "sha256": "90c36f315251b744c7b78d768c52af2e0a61761c4d20bc6f9bbf44794018b49e",
+            "bytes": 122280
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.AIModule.dll",
+            "sha256": "36db2451d6d1e86bbc570084fb288db04670f32caf8fae33e8dce11ec363bf10",
+            "bytes": 87472
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.AMDModule.dll",
+            "sha256": "b0728caa9c4a4fd191a6d20852893e4d572fd28fd6080edea2ceb99b05e3e6ad",
+            "bytes": 21928
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.AndroidJNIModule.dll",
+            "sha256": "64ea80d39906042e444442b482cea0d9d784c301b712b682714d8f09ee2373a9",
+            "bytes": 121264
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.AnimationModule.dll",
+            "sha256": "17e53f16f5dcd7e326d09ecfa6017d429388289ac26becb0575bd225762fe168",
+            "bytes": 218032
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.ARModule.dll",
+            "sha256": "15fb71c0afa5a5d1a8bcc8f416bfc993f31bb18f84c264e25f761663ab0350c2",
+            "bytes": 27568
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.AssetBundleModule.dll",
+            "sha256": "7bd39696fac7716453f6a763769d410825baaabe3e22ec123fe567f4467a3247",
+            "bytes": 42928
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.AudioModule.dll",
+            "sha256": "6492d580feb509c641d21f4b34deaddfa33fce81274f42e48f6c678cef7b3e19",
+            "bytes": 142248
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.BurstModule.dll",
+            "sha256": "fe43387f069aa37465bfa30cf1d21e7eb3b11845a5ffda21fa7b5d38491c28b9",
+            "bytes": 337832
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.ClothModule.dll",
+            "sha256": "d54bf8200bcae08f31c609a6b33f3d7b285304417f04c9a29bf2339d1ed70753",
+            "bytes": 38320
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.ClusterInputModule.dll",
+            "sha256": "58a9dbc326d7704a785358276c5d10bbaa06c1fbe8ef260c8bcfac31858a3e6b",
+            "bytes": 30128
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.ClusterRendererModule.dll",
+            "sha256": "d1f659a7cb79806a8dbdabb69d406168e60705ccd123218d9b98c1fe26acd99f",
+            "bytes": 28584
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.ContentLoadModule.dll",
+            "sha256": "2038e67c16ac93d353ce4fa69b556c1a248ffd77f00bbae28df17cce0af99580",
+            "bytes": 56232
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.CoreModule.dll",
+            "sha256": "2615a31f1c3b91cdb5068e9fa3b36e0e4939d0d868aa193dde15fef8ab1fdd9b",
+            "bytes": 2030512
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.CrashReportingModule.dll",
+            "sha256": "9bf004fe1cc1f6aeec82246ec574c08721995532b058741609c89746d83a979e",
+            "bytes": 28584
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.DirectorModule.dll",
+            "sha256": "2a0a0d90a87a58a2ceee45a2f779d9922e9658f12523be108974ed8e72272471",
+            "bytes": 42928
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.dll",
+            "sha256": "a227532893b4181dbd738e9aceb16836fa88a4f0440e7ffdb614a6dffb4dd3c1",
+            "bytes": 225712
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.DSPGraphModule.dll",
+            "sha256": "b2fe512f0b19dc0468b33eb81beaedcda2f3bf6fb59cc2609a93045ae74ccd65",
+            "bytes": 33704
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.GameCenterModule.dll",
+            "sha256": "247ee47bea501cea957a4dbd288c298f98a0918d7231b7afddcdf26a79143df0",
+            "bytes": 46512
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.GIModule.dll",
+            "sha256": "0e186570b2fbc9616fcab1fda37a4bb2ecf9cb99f45ca9382102ba1dea1bfe16",
+            "bytes": 26032
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.GraphicsStateCollectionSerializerModule.dll",
+            "sha256": "2f9afc3681777a764c17378b5eb54c1dea8a4e0008bd46a96dc5291cd5302f26",
+            "bytes": 14256
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.GridModule.dll",
+            "sha256": "4f0110d6a44a1de79e033e339f817eda03be7925501274ef9339dc9d7b596a46",
+            "bytes": 32688
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.HierarchyCoreModule.dll",
+            "sha256": "f34fe65373d12959b6cd7c403926cf4a80f2607fb8e4461eed901394034341b0",
+            "bytes": 111528
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.HierarchyModule.dll",
+            "sha256": "7b6bc680c8b8d031c37a04883b1f85e2fbe49f4ee681aa27f82da08f6a42cc40",
+            "bytes": 114096
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.HotReloadModule.dll",
+            "sha256": "24d74fd5fbe0f7afd11e6a821e82cb7eb7af21e0bfc25b97eb06ff1b845b2ca1",
+            "bytes": 26024
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.IdentifiersModule.dll",
+            "sha256": "f97305c3e3843f368e857a170e14302a57c78067ba31d9ff4e7945ca95bdfced",
+            "bytes": 16808
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.ImageConversionModule.dll",
+            "sha256": "122495f5425573e82405ec84ad7a556397360ea30d8b68522bd0efc276be8058",
+            "bytes": 34224
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.IMGUIModule.dll",
+            "sha256": "4fdac0a497eff4a106b999ca1740187567bd3168416ae059d75494e81823249f",
+            "bytes": 190888
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.InputForUIModule.dll",
+            "sha256": "02a15dbda9b241ad2b465f9b8ef534cb770e3e7978b4e5a2dc3649d690a84a1e",
+            "bytes": 56752
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.InputLegacyModule.dll",
+            "sha256": "bd10ddcac66e015438d18a7488be2b7f0bc8e700e4404f3451bc36986651f69a",
+            "bytes": 42920
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.InputModule.dll",
+            "sha256": "85d816170faf138da3472133bd33d9d11f4a3c89194d84d6302f0b4d22ffae7a",
+            "bytes": 32680
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.InsightsModule.dll",
+            "sha256": "c4bf2f808f026152f3f0eff927206521faf7b4fc6fd29d25c2f744c294b97497",
+            "bytes": 15792
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.JSONSerializeModule.dll",
+            "sha256": "cfcfefdd89c0cfb9101dcd344b95a98ff36e1da7fae080655b65fdde79a6eecc",
+            "bytes": 29096
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.LocalizationModule.dll",
+            "sha256": "c3e4a1746413900d33a74bdd2cdfe544c19f19cc04cd822282ba93012ef209e4",
+            "bytes": 29096
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.ManagedKernelModule.dll",
+            "sha256": "04a2109a0ee0b574c0519ce80f50b3cddf833423300b1c90e5c6f7d7749f376b",
+            "bytes": 14248
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.MarshallingModule.dll",
+            "sha256": "071fe08a2ac56ccf6f6540e6558ea005e396188a7b4bb93683b9b3f981fa037b",
+            "bytes": 100784
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.MathematicsModule.dll",
+            "sha256": "ab09b198f8508f3137f16e5864a163195dcad16008d3effbe77acf8ccc9ce88c",
+            "bytes": 740776
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.MultiplayerModule.dll",
+            "sha256": "e8d8aa6bfb3b36b0db5fac2df130d08b55c904a6d70eb3481e9fc7b0437d698d",
+            "bytes": 18344
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.NVIDIAModule.dll",
+            "sha256": "e2747b01cbe14a2b83b07ce406cad9447a808b8896231631a121621ed6ed8838",
+            "bytes": 41392
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.ParticleSystemModule.dll",
+            "sha256": "d14801770b9ce5031dd87b5576cb9163ca7cf90556f06225bb072c954dc0a476",
+            "bytes": 169384
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.PerformanceReportingModule.dll",
+            "sha256": "92105a372298e328aee04feff2bbeb281939f297f3370b580238dadb5d9c6cc6",
+            "bytes": 27056
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.Physics2DModule.dll",
+            "sha256": "3a9eb8690badc6c20a4af4cadc3570922f4165357d50f7a74502c7af7e7c56a5",
+            "bytes": 222632
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.PhysicsBackendPhysXModule.dll",
+            "sha256": "df38fb035bf5bc85148020c9009e8a739eeaf787ce3e9e37677c8ada9057c276",
+            "bytes": 14256
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.PhysicsCore2DModule.dll",
+            "sha256": "cdd7e74070a02ac42c9abe567603dda128fbb287914c334bef346a23273dae10",
+            "bytes": 482728
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.PhysicsModule.dll",
+            "sha256": "a0e19c7864ac921f12088f629bd36c4240b954f545d659225cd654a9860eb613",
+            "bytes": 181672
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.PropertiesModule.dll",
+            "sha256": "356dce180d12220b575b44b5f2b9aeaa7e26dd9908b68d991e73c1f5a075ee3e",
+            "bytes": 124848
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.RenderAs2DModule.dll",
+            "sha256": "a72400a7b48f6b526990c3ac0eb578885746fc637cf8101ef513bd1df3bf1d3a",
+            "bytes": 27568
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll",
+            "sha256": "02d70128a8e354441018fffcd9170bc81da17342f4376ff2728f9d25a72671b6",
+            "bytes": 26032
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.ScreenCaptureModule.dll",
+            "sha256": "ae39bf926522a1b61be3f6ca99b0af9492898db76c057d28a20b9ba423aa2222",
+            "bytes": 28080
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.ScriptingModule.dll",
+            "sha256": "00d339a5f0a38afd0fe65e8f98a6347a6225fb08247048a85244a457c2a563cb",
+            "bytes": 65960
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.ShaderVariantAnalyticsModule.dll",
+            "sha256": "ee0c4fa9454b70207be936d87720905e728ff6c9b95f627782844aad1535e24b",
+            "bytes": 26032
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.SpriteMaskModule.dll",
+            "sha256": "c3d7d136b9318d0e54d05ad74c92f43b0a6e25e2dbd0ff2540c51d8701689fd6",
+            "bytes": 30632
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.SpriteShapeModule.dll",
+            "sha256": "99a5a014b51791f391e5114c02331cff049f7ae2ad45f173428fdc0d4740a6c8",
+            "bytes": 34224
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.StreamingModule.dll",
+            "sha256": "24eb3a1332dc593b4e66ab2986c4a2ea465dbe675696a15ef3361ca1f3cfa989",
+            "bytes": 28080
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.SubstanceModule.dll",
+            "sha256": "3a5e5b1e499e252b759e5c32e17ccfc311241e827660c4017d4dbbec185a09e5",
+            "bytes": 31152
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.SubsystemsModule.dll",
+            "sha256": "0eed3444c3351efd1a458e0861417a35553cdd4752632a75bc39ff2d20394aaf",
+            "bytes": 42920
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.TerrainModule.dll",
+            "sha256": "b901fe42a81d1b8654e166a85d43636c26b3b6500a6f5f4f12248bd00cde8f9c",
+            "bytes": 132528
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.TerrainPhysicsModule.dll",
+            "sha256": "511864347c17a9533e420977de688d0864f801cbafb0654c87a6fb3cedf26a17",
+            "bytes": 27560
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.TetgenModule.dll",
+            "sha256": "523e1a7b93a24fb248973d8c5b33e0519aaecfdd047e29172b8ab28a69460898",
+            "bytes": 26024
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll",
+            "sha256": "fe99b017aefe9267d8e611140c2f5ae430ae76123e6fc595883d6fa8c1b9a2e9",
+            "bytes": 86440
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll",
+            "sha256": "3196234f6133088e4d0e5a8aeb2fdd242b25b13c4311f7894e0b93cbbad8a952",
+            "bytes": 314280
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.TextRenderingModule.dll",
+            "sha256": "03a5816e9bb8bc254e667350ef56a323fc266630bdfb2e00f633cfaf5cfb2d51",
+            "bytes": 39344
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.TilemapModule.dll",
+            "sha256": "ccd980f99b0ac303a15ca15ef828c806a09f55f7642a0d9052641e807b4b1a65",
+            "bytes": 75688
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.TimelineFoundationModule.dll",
+            "sha256": "6a93f30a855274402d004a58f283af8e8be169a7ba8ee555850f7df45bcc0756",
+            "bytes": 167344
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.TLSModule.dll",
+            "sha256": "5efc4dccf6e06ff1bab91ccfabe20f10126ab3fa35da03d181a036ff467c6c1a",
+            "bytes": 34224
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.U2DRuntimeModule.dll",
+            "sha256": "5330a85f7501bb1b117409cac899a39c3566cb3391c7e04dda0ae4858e662624",
+            "bytes": 73648
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.UI.dll",
+            "sha256": "6c90589e0f192bbb10a368d5bf0c636f87881c4f657c19ee9b1836812e686f9a",
+            "bytes": 269312
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.UIElementsModule.dll",
+            "sha256": "890e02181e5cbbfc8951ec20b4c17d0241e5e32cc9b060f284175f4619969a06",
+            "bytes": 2538416
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.UIModule.dll",
+            "sha256": "f489f7b87d71fdf38d9c2f1a64db887ed2ff1109b0d5ef92fdda3865e296e431",
+            "bytes": 57264
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.UmbraModule.dll",
+            "sha256": "254bfa2678b3ddbc568e039ea11a196e2b06a6e63eae9a6b0944759b523ea680",
+            "bytes": 26024
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll",
+            "sha256": "9f48398d8ed78e0111d335b4a27077b1a7034141c5266e9baab3eb4940a9fb93",
+            "bytes": 36784
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.UnityAnalyticsModule.dll",
+            "sha256": "a2a364384c339288544e112b6c214bce11c06fff1abc2284dfbe366431ead928",
+            "bytes": 61864
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.UnityConnectModule.dll",
+            "sha256": "0840272ec607267d66f1ad726093ae07f65e30d521a3914c9384094b1a1cfcb2",
+            "bytes": 29608
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.UnityConsentModule.dll",
+            "sha256": "a301d5ff15215f87e77a35680cd46ac40bf135ea17395d595497fa02aa46edec",
+            "bytes": 16304
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.UnityCurlModule.dll",
+            "sha256": "e6c34032259fb2ae0c990891f3b37d545d99ace28ca290b68a998df5540058e2",
+            "bytes": 28080
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll",
+            "sha256": "6df1ff386954ec379bffaa4c22959695b753c4aba4e75add7c923394efd88d40",
+            "bytes": 30632
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll",
+            "sha256": "f383d9263027999ef0bcedcd6908b95a20ad74d1b6287e6b2fa1ec6ced7d0cf1",
+            "bytes": 30632
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.UnityWebRequestModule.dll",
+            "sha256": "0763e072b2aa33faaf002842e71f75c186ceccf69a58c9c6c864e901cdb8cc4d",
+            "bytes": 81328
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll",
+            "sha256": "1be8e21b73a365d85bae482bc367c47fd63ec04c541f1ff845cc76c2d01fe492",
+            "bytes": 29616
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll",
+            "sha256": "9c326db3018d4cb5c5bb8e4b4597aa32cd142301e6dfa0b250013975de2ba00f",
+            "bytes": 35248
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.VectorGraphicsModule.dll",
+            "sha256": "bda9542d6e8a2bcb3e39c72bb2c582dc307a694c0bd2af42432bee11440abc6d",
+            "bytes": 229296
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.VehiclesModule.dll",
+            "sha256": "4597c95fc0b06aacef7d4609b884008aa4efe0120a9af5ab8ebbc2d2e667103f",
+            "bytes": 33192
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.VFXModule.dll",
+            "sha256": "1a05577299002ec208bb01ffddf0e836362a624eea453ea7c14350c7826a85ff",
+            "bytes": 82352
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.VideoModule.dll",
+            "sha256": "db2419f21be2ff38be92ec8e25ad4f535430d7fa14900cf634b92fbd2c543362",
+            "bytes": 48552
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.VirtualTexturingModule.dll",
+            "sha256": "23054a21fd93b18e05f1d6254684c030b2d6e0b90a36a8ecb150590715c9f2ba",
+            "bytes": 43944
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.WindModule.dll",
+            "sha256": "8f049fec6c1a13522eae34e7e308fda396169b1f9bba5b0b98fc07adeab16ebc",
+            "bytes": 28592
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Managed/UnityEngine.XRModule.dll",
+            "sha256": "470d5f0fdb7b02a276f33709adffb9c50e60f011391171026478f3e5a30919ff",
+            "bytes": 96168
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Plugins/x86_64/lib_burst_generated.dll",
+            "sha256": "d5367f6bc75a513113b0ccfcbf104ef674485a1f3a31f978849f0dada298f975",
+            "bytes": 530944
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Plugins/x86_64/libonigwrap.dll",
+            "sha256": "c22db1e7be04c50eb47e67362bf705830bb95df30c02c22dd7add835ee777583",
+            "bytes": 551336
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/resources.assets",
+            "sha256": "307165da557bef986bbf58178127e3649d2f3e93b449d901aa45123702587733",
+            "bytes": 10156
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Resources/unity default resources",
+            "sha256": "696b9afaee02b5d45978634f1450ef18423c19177933b997fd8ee364d70cdd61",
+            "bytes": 5919584
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/Resources/unity_builtin_extra",
+            "sha256": "f022ac1eae79df30a577ecde8b75549be42bbc008ca2228144e4760ca998b05a",
+            "bytes": 527988
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/RuntimeInitializeOnLoads.json",
+            "sha256": "d66abb9714d5bea322ddbdeb14b8b98c740f409abdc6ed99687596538ff5a5a6",
+            "bytes": 5730
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/ScriptingAssemblies.json",
+            "sha256": "8a54d42af9de4641e023cdd7df3235abbc93f11ee70a0f35c6dba0cba11342b0",
+            "bytes": 5020
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/sharedassets0.assets",
+            "sha256": "1a3acf218c12bf0e70ff59760b8dd748be90ad2fd0d83cf88fc5a01035caa8d4",
+            "bytes": 1175048
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/sharedassets0.assets.resS",
+            "sha256": "7352ee73888a573ea1b8207e3a77ad6e38c0ae5137a425430559390662f0e4ef",
+            "bytes": 9998352
+        },
+        {
+            "path": "Build/Windows/NeonTunnelRunner_Data/sharedassets0.resource",
+            "sha256": "54a8fbdb7c793a0d0c4a7b2d713cd9833349e3309160fc2c651ec156ec05ae55",
+            "bytes": 3136480
+        },
+        {
+            "path": "Build/Windows/UnityCrashHandler64.exe",
+            "sha256": "4c2d5f9cbbab38382c39c69f2ccada2beac336b466813df8e2db4e75112aa673",
+            "bytes": 1773488
+        },
+        {
+            "path": "Build/Windows/UnityPlayer.dll",
+            "sha256": "7c8127007131559a3daa04aa3a3e8d1477975fe449f59917c5c75d86fa1f904f",
+            "bytes": 38696368
+        }
+    ],
+    "messages": [
+        {
+            "step": "Preprocess Player",
+            "type": "Log",
+            "content": "Default Volume Profile has been modified to ensure all overrides are present. This is required to avoid missing overrides at runtime which can lead to unexpected rendering issues. Please save these changes to avoid this message in the future."
+        },
+        {
+            "step": "Preprocess Player",
+            "type": "Log",
+            "content": "1 URP assets included in build\n- PC_RPAsset - Assets/NeonTunnelRunner/Settings/URP/PC_RPAsset.asset\n\t - PC_Renderer - Assets/NeonTunnelRunner/Settings/URP/PC_Renderer.asset - UnityEngine.Rendering.Universal.UniversalRendererData\n"
+        },
+        {
+            "step": "Preprocess Player",
+            "type": "Log",
+            "content": "[TestRunBuilder] Creating new file 'Assets/Resources/PerformanceTestRunInfo.json' (3063 bytes)"
+        },
+        {
+            "step": "Preprocess Player",
+            "type": "Log",
+            "content": "[TestRunBuilder] Creating new file 'Assets/Resources/PerformanceTestRunSettings.json' (23 bytes)"
+        },
+        {
+            "step": "Preprocess Player",
+            "type": "Log",
+            "content": "Pipeline: this build does not include the Pipeline (Project Settings > Pipeline > Runtime), so its assemblies and settings are excluded from it."
+        },
+        {
+            "step": "Prepare assets for target platform",
+            "type": "Warning",
+            "content": "Serialized file \"Assets/TextMesh Pro/Fonts/LiberationSans.ttf.meta\" contains a TrueTypeFontImporter object at version 2, below the supported minimum (4). Open and re-save the file to upgrade."
+        },
+        {
+            "step": "Prepare splash screen",
+            "type": "Log",
+            "content": "Including Unity Splash Screen logo because 'Show Unity Logo' is enabled."
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+Archive entries: 218
+SHA-256: 80a9ab2b2e2458d2e20a05bb08fcbca29f020b2b2683534c1d9dd2a3d9d199b5
+PASS: structural and CRC checks only.
+Still required: inspect report/screenshots/credits, verify repository access,
+extract and launch full build on target OS, then re-download after upload and repeat.

@@ -1,0 +1,10 @@
+Neon Tunnel Runner — Computer Game Design — HW2
+علیرضا پویان — Alireza Pooyan — 400414039
+
+Repository: https://github.com/AZAX16/NeonTunnelRider.git
+Release source commit: e97572aba25d8bcff7e336c4bf6ef8b6e3c540fc
+
+URL accessibility: PASS — public GitHub page and git ls-remote reachable.
+Release publication: PENDING — remote was empty at verification; the above commit exists locally only.
+Isolated verification uses a local clone of this exact commit, not the remote.
+Student must publish the reviewed release source before submission and verify anonymous access to this commit. No push performed by the delivery agent.

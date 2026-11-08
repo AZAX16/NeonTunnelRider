@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "pdfSha256": "cd35246f1c2c58a37e3f6065068a9ca1004a11a57aa5717c1509dda567776d0b",
+  "pages": 12,
+  "font": "Embedded DejaVu Sans, Bold and Mono (pdffonts)",
+  "renderer": "Chromium 154 / Skia, A4 RTL",
+  "inspection": "All 12 initial pages visually inspected for connected Persian glyphs, punctuation, English identifiers, readable screenshots and margins. Final page 1 reinspected after adding bidi isolation to student name and ID.",
+  "remainingPagesPixelIdenticalToInspectedPages": {
+    "2": true,
+    "3": true,
+    "4": true,
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true,
+    "12": true
+  },
+  "clippingObserved": false,
+  "unconnectedGlyphsObserved": false
+}

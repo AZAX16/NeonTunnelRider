@@ -1,0 +1,1150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="161" result="Passed" total="161" passed="161" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-07 19:21:11Z" end-time="2026-11-07 19:21:55Z" duration="43.7202444">
+  <test-suite type="TestSuite" id="1207" name="NeonTunnelRunner" fullname="NeonTunnelRunner" runstate="Runnable" testcasecount="161" result="Passed" start-time="2026-11-07 19:21:11Z" end-time="2026-11-07 19:21:55Z" duration="43.720244" total="161" passed="161" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1196" name="NeonTunnelRunner.EditModeTests.dll" fullname="/home/alireza/NeonTunnelRider/NeonTunnelRunner/Library/ScriptAssemblies/NeonTunnelRunner.EditModeTests.dll" runstate="Runnable" testcasecount="161" result="Passed" start-time="2026-11-07 19:21:11Z" end-time="2026-11-07 19:21:55Z" duration="43.590430" total="161" passed="161" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="244457" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="SetUpFixture" id="1060" name="NeonTunnelRunner" fullname="NeonTunnelRunner.EditModeHighScoreIsolation" classname="NeonTunnelRunner.EditModeHighScoreIsolation" runstate="Runnable" testcasecount="161" result="Passed" start-time="2026-11-07 19:21:11Z" end-time="2026-11-07 19:21:55Z" duration="43.567967" total="161" passed="161" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestFixture" id="1001" name="AudioAssetTests" fullname="NeonTunnelRunner.AudioAssetTests" classname="NeonTunnelRunner.AudioAssetTests" runstate="Runnable" testcasecount="13" result="Passed" start-time="2026-11-07 19:21:11Z" end-time="2026-11-07 19:21:12Z" duration="0.540681" total="13" passed="13" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1014" name="ActualSpeedMappingIsMonotoneClampedAndFinite" fullname="NeonTunnelRunner.AudioAssetTests.ActualSpeedMappingIsMonotoneClampedAndFinite" methodname="ActualSpeedMappingIsMonotoneClampedAndFinite" classname="NeonTunnelRunner.AudioAssetTests" runstate="Runnable" seed="510409448" result="Passed" start-time="2026-11-07 19:21:11Z" end-time="2026-11-07 19:21:12Z" duration="0.226685" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1013" name="MissingAssetHasActionableDiagnostic" fullname="NeonTunnelRunner.AudioAssetTests.MissingAssetHasActionableDiagnostic" classname="NeonTunnelRunner.AudioAssetTests" runstate="Runnable" testcasecount="9" result="Passed" start-time="2026-11-07 19:21:12Z" end-time="2026-11-07 19:21:12Z" duration="0.189429" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1004" name="MissingAssetHasActionableDiagnostic(&quot;nearMiss&quot;,&quot;NearMiss_IntoTheVoid_06-12&quot;)" fullname="NeonTunnelRunner.AudioAssetTests.MissingAssetHasActionableDiagnostic(&quot;nearMiss&quot;,&quot;NearMiss_IntoTheVoid_06-12&quot;)" methodname="MissingAssetHasActionableDiagnostic" classname="NeonTunnelRunner.AudioAssetTests" runstate="Runnable" seed="1919683420" result="Passed" start-time="2026-11-07 19:21:12Z" end-time="2026-11-07 19:21:12Z" duration="0.171124" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1005" name="MissingAssetHasActionableDiagnostic(&quot;music&quot;,&quot;Music&quot;)" fullname="NeonTunnelRunner.AudioAssetTests.MissingAssetHasActionableDiagnostic(&quot;music&quot;,&quot;Music&quot;)" methodname="MissingAssetHasActionableDiagnostic" classname="NeonTunnelRunner.AudioAssetTests" runstate="Runnable" seed="207080771" result="Passed" start-time="2026-11-07 19:21:12Z" end-time="2026-11-07 19:21:12Z" duration="0.000734" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1006" name="MissingAssetHasActionableDiagnostic(&quot;engine&quot;,&quot;Engine&quot;)" fullname="NeonTunnelRunner.AudioAssetTests.MissingAssetHasActionableDiagnostic(&quot;engine&quot;,&quot;Engine&quot;)" methodname="MissingAssetHasActionableDiagnostic" classname="NeonTunnelRunner.AudioAssetTests" runstate="Runnable" seed="88192346" result="Passed" start-time="2026-11-07 19:21:12Z" end-time="2026-11-07 19:21:12Z" duration="0.000523" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1007" name="MissingAssetHasActionableDiagnostic(&quot;collision&quot;,&quot;Collision&quot;)" fullname="NeonTunnelRunner.AudioAssetTests.MissingAssetHasActionableDiagnostic(&quot;collision&quot;,&quot;Collision&quot;)" methodname="MissingAssetHasActionableDiagnostic" classname="NeonTunnelRunner.AudioAssetTests" runstate="Runnable" seed="693073793" result="Passed" start-time="2026-11-07 19:21:12Z" end-time="2026-11-07 19:21:12Z" duration="0.000591" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1008" name="MissingAssetHasActionableDiagnostic(&quot;coin&quot;,&quot;Coin&quot;)" fullname="NeonTunnelRunner.AudioAssetTests.MissingAssetHasActionableDiagnostic(&quot;coin&quot;,&quot;Coin&quot;)" methodname="MissingAssetHasActionableDiagnostic" classname="NeonTunnelRunner.AudioAssetTests" runstate="Runnable" seed="1712092974" result="Passed" start-time="2026-11-07 19:21:12Z" end-time="2026-11-07 19:21:12Z" duration="0.000494" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1009" name="MissingAssetHasActionableDiagnostic(&quot;fuel&quot;,&quot;Fuel&quot;)" fullname="NeonTunnelRunner.AudioAssetTests.MissingAssetHasActionableDiagnostic(&quot;fuel&quot;,&quot;Fuel&quot;)" methodname="MissingAssetHasActionableDiagnostic" classname="NeonTunnelRunner.AudioAssetTests" runstate="Runnable" seed="1539552355" result="Passed" start-time="2026-11-07 19:21:12Z" end-time="2026-11-07 19:21:12Z" duration="0.000477" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1010" name="MissingAssetHasActionableDiagnostic(&quot;musicGroup&quot;,&quot;Music, Engine and SFX&quot;)" fullname="NeonTunnelRunner.AudioAssetTests.MissingAssetHasActionableDiagnostic(&quot;musicGroup&quot;,&quot;Music, Engine and SFX&quot;)" methodname="MissingAssetHasActionableDiagnostic" classname="NeonTunnelRunner.AudioAssetTests" runstate="Runnable" seed="1278843947" result="Passed" start-time="2026-11-07 19:21:12Z" end-time="2026-11-07 19:21:12Z" duration="0.001368" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1011" name="MissingAssetHasActionableDiagnostic(&quot;engineGroup&quot;,&quot;Music, Engine and SFX&quot;)" fullname="NeonTunnelRunner.AudioAssetTests.MissingAssetHasActionableDiagnostic(&quot;engineGroup&quot;,&quot;Music, Engine and SFX&quot;)" methodname="MissingAssetHasActionableDiagnostic" classname="NeonTunnelRunner.AudioAssetTests" runstate="Runnable" seed="227866471" result="Passed" start-time="2026-11-07 19:21:12Z" end-time="2026-11-07 19:21:12Z" duration="0.000535" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1012" name="MissingAssetHasActionableDiagnostic(&quot;sfxGroup&quot;,&quot;Music, Engine and SFX&quot;)" fullname="NeonTunnelRunner.AudioAssetTests.MissingAssetHasActionableDiagnostic(&quot;sfxGroup&quot;,&quot;Music, Engine and SFX&quot;)" methodname="MissingAssetHasActionableDiagnostic" classname="NeonTunnelRunner.AudioAssetTests" runstate="Runnable" seed="2049045585" result="Passed" start-time="2026-11-07 19:21:12Z" end-time="2026-11-07 19:21:12Z" duration="0.000535" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-case id="1002" name="RequiredImportedAssetsHaveExplicitSupportedSettings" fullname="NeonTunnelRunner.AudioAssetTests.RequiredImportedAssetsHaveExplicitSupportedSettings" methodname="RequiredImportedAssetsHaveExplicitSupportedSettings" classname="NeonTunnelRunner.AudioAssetTests" runstate="Runnable" seed="1073790142" result="Passed" start-time="2026-11-07 19:21:12Z" end-time="2026-11-07 19:21:12Z" duration="0.020571" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1015" name="SavedGameHasExactlyElevenSourcesAndTheExistingCameraListener" fullname="NeonTunnelRunner.AudioAssetTests.SavedGameHasExactlyElevenSourcesAndTheExistingCameraListener" methodname="SavedGameHasExactlyElevenSourcesAndTheExistingCameraListener" classname="NeonTunnelRunner.AudioAssetTests" runstate="Runnable" seed="347428354" result="Passed" start-time="2026-11-07 19:21:12Z" end-time="2026-11-07 19:21:12Z" duration="0.082243" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1003" name="SuppliedExcerptIsSixSecondStereoPcmAndAssignedAtLocalZero" fullname="NeonTunnelRunner.AudioAssetTests.SuppliedExcerptIsSixSecondStereoPcmAndAssignedAtLocalZero" methodname="SuppliedExcerptIsSixSecondStereoPcmAndAssignedAtLocalZero" classname="NeonTunnelRunner.AudioAssetTests" runstate="Runnable" seed="508317110" result="Passed" start-time="2026-11-07 19:21:12Z" end-time="2026-11-07 19:21:12Z" duration="0.000826" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="1016" name="GameStateTests" fullname="NeonTunnelRunner.GameStateTests" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" testcasecount="39" result="Passed" start-time="2026-11-07 19:21:12Z" end-time="2026-11-07 19:21:14Z" duration="2.456785" total="39" passed="39" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1059" name="EditorQuitLogsOnceWithoutChangingTheSession" fullname="NeonTunnelRunner.GameStateTests.EditorQuitLogsOnceWithoutChangingTheSession" methodname="EditorQuitLogsOnceWithoutChangingTheSession" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="2093672802" result="Passed" start-time="2026-11-07 19:21:12Z" end-time="2026-11-07 19:21:12Z" duration="0.509629" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[[GameManager] Quit requested (Editor intent only).
+[GameManager] Ignored Quit in Menu.
+]]></output>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1051" name="FirstTerminalResultIsRetained" fullname="NeonTunnelRunner.GameStateTests.FirstTerminalResultIsRetained" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-11-07 19:21:12Z" end-time="2026-11-07 19:21:13Z" duration="0.139793" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1049" name="FirstTerminalResultIsRetained(Lives,Fuel)" fullname="NeonTunnelRunner.GameStateTests.FirstTerminalResultIsRetained(Lives,Fuel)" methodname="FirstTerminalResultIsRetained" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="936334387" result="Passed" start-time="2026-11-07 19:21:12Z" end-time="2026-11-07 19:21:13Z" duration="0.079726" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[GameManager] Ignored EndRun in GameOver.
+[GameManager] Ignored EndRun in GameOver.
+]]></output>
+            </test-case>
+            <test-case id="1050" name="FirstTerminalResultIsRetained(Fuel,Lives)" fullname="NeonTunnelRunner.GameStateTests.FirstTerminalResultIsRetained(Fuel,Lives)" methodname="FirstTerminalResultIsRetained" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="601990898" result="Passed" start-time="2026-11-07 19:21:13Z" end-time="2026-11-07 19:21:13Z" duration="0.047972" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[GameManager] Ignored EndRun in GameOver.
+[GameManager] Ignored EndRun in GameOver.
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-case id="1017" name="InitialMenuHasNoActiveRunAndDoesNotSimulate" fullname="NeonTunnelRunner.GameStateTests.InitialMenuHasNoActiveRunAndDoesNotSimulate" methodname="InitialMenuHasNoActiveRunAndDoesNotSimulate" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="1452404957" result="Passed" start-time="2026-11-07 19:21:13Z" end-time="2026-11-07 19:21:13Z" duration="0.046366" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1047" name="PauseAndResumePreserveTheRunAndCruiseTarget" fullname="NeonTunnelRunner.GameStateTests.PauseAndResumePreserveTheRunAndCruiseTarget" methodname="PauseAndResumePreserveTheRunAndCruiseTarget" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="1482196403" result="Passed" start-time="2026-11-07 19:21:13Z" end-time="2026-11-07 19:21:13Z" duration="0.058675" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1025" name="PermittedTransitionCommitsDataBeforeOneStateEvent" fullname="NeonTunnelRunner.GameStateTests.PermittedTransitionCommitsDataBeforeOneStateEvent" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-11-07 19:21:13Z" end-time="2026-11-07 19:21:13Z" duration="0.350971" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1018" name="PermittedTransitionCommitsDataBeforeOneStateEvent(Menu,&quot;Start&quot;,Playing)" fullname="NeonTunnelRunner.GameStateTests.PermittedTransitionCommitsDataBeforeOneStateEvent(Menu,&quot;Start&quot;,Playing)" methodname="PermittedTransitionCommitsDataBeforeOneStateEvent" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="55697552" result="Passed" start-time="2026-11-07 19:21:13Z" end-time="2026-11-07 19:21:13Z" duration="0.052475" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1019" name="PermittedTransitionCommitsDataBeforeOneStateEvent(Playing,&quot;Pause&quot;,Paused)" fullname="NeonTunnelRunner.GameStateTests.PermittedTransitionCommitsDataBeforeOneStateEvent(Playing,&quot;Pause&quot;,Paused)" methodname="PermittedTransitionCommitsDataBeforeOneStateEvent" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="2064283075" result="Passed" start-time="2026-11-07 19:21:13Z" end-time="2026-11-07 19:21:13Z" duration="0.047417" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1020" name="PermittedTransitionCommitsDataBeforeOneStateEvent(Paused,&quot;Resume&quot;,Playing)" fullname="NeonTunnelRunner.GameStateTests.PermittedTransitionCommitsDataBeforeOneStateEvent(Paused,&quot;Resume&quot;,Playing)" methodname="PermittedTransitionCommitsDataBeforeOneStateEvent" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="1165823504" result="Passed" start-time="2026-11-07 19:21:13Z" end-time="2026-11-07 19:21:13Z" duration="0.050136" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1021" name="PermittedTransitionCommitsDataBeforeOneStateEvent(Paused,&quot;Restart&quot;,Playing)" fullname="NeonTunnelRunner.GameStateTests.PermittedTransitionCommitsDataBeforeOneStateEvent(Paused,&quot;Restart&quot;,Playing)" methodname="PermittedTransitionCommitsDataBeforeOneStateEvent" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="187870486" result="Passed" start-time="2026-11-07 19:21:13Z" end-time="2026-11-07 19:21:13Z" duration="0.052717" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1022" name="PermittedTransitionCommitsDataBeforeOneStateEvent(Paused,&quot;Menu&quot;,Menu)" fullname="NeonTunnelRunner.GameStateTests.PermittedTransitionCommitsDataBeforeOneStateEvent(Paused,&quot;Menu&quot;,Menu)" methodname="PermittedTransitionCommitsDataBeforeOneStateEvent" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="349673356" result="Passed" start-time="2026-11-07 19:21:13Z" end-time="2026-11-07 19:21:13Z" duration="0.044782" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1023" name="PermittedTransitionCommitsDataBeforeOneStateEvent(Playing,&quot;End&quot;,GameOver)" fullname="NeonTunnelRunner.GameStateTests.PermittedTransitionCommitsDataBeforeOneStateEvent(Playing,&quot;End&quot;,GameOver)" methodname="PermittedTransitionCommitsDataBeforeOneStateEvent" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="1288619843" result="Passed" start-time="2026-11-07 19:21:13Z" end-time="2026-11-07 19:21:13Z" duration="0.045587" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1024" name="PermittedTransitionCommitsDataBeforeOneStateEvent(GameOver,&quot;Restart&quot;,Playing)" fullname="NeonTunnelRunner.GameStateTests.PermittedTransitionCommitsDataBeforeOneStateEvent(GameOver,&quot;Restart&quot;,Playing)" methodname="PermittedTransitionCommitsDataBeforeOneStateEvent" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="960393028" result="Passed" start-time="2026-11-07 19:21:13Z" end-time="2026-11-07 19:21:13Z" duration="0.045015" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-case id="1056" name="ReentrantCommandsCannotInterruptACommittedTransition" fullname="NeonTunnelRunner.GameStateTests.ReentrantCommandsCannotInterruptACommittedTransition" methodname="ReentrantCommandsCannotInterruptACommittedTransition" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="1987868694" result="Passed" start-time="2026-11-07 19:21:13Z" end-time="2026-11-07 19:21:13Z" duration="0.047597" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[[GameManager] Ignored Pause in Playing.
+[GameManager] Ignored EndRun in Playing.
+]]></output>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1046" name="RejectedCommandsDoNotMutateOrPublish" fullname="NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" testcasecount="20" result="Passed" start-time="2026-11-07 19:21:13Z" end-time="2026-11-07 19:21:14Z" duration="0.973057" total="20" passed="20" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1026" name="RejectedCommandsDoNotMutateOrPublish(Menu,&quot;Pause&quot;)" fullname="NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(Menu,&quot;Pause&quot;)" methodname="RejectedCommandsDoNotMutateOrPublish" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="1146791028" result="Passed" start-time="2026-11-07 19:21:13Z" end-time="2026-11-07 19:21:13Z" duration="0.050216" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[GameManager] Ignored Pause in Menu.
+]]></output>
+            </test-case>
+            <test-case id="1027" name="RejectedCommandsDoNotMutateOrPublish(Menu,&quot;Resume&quot;)" fullname="NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(Menu,&quot;Resume&quot;)" methodname="RejectedCommandsDoNotMutateOrPublish" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="1684848060" result="Passed" start-time="2026-11-07 19:21:13Z" end-time="2026-11-07 19:21:13Z" duration="0.047079" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[GameManager] Ignored Resume in Menu.
+]]></output>
+            </test-case>
+            <test-case id="1028" name="RejectedCommandsDoNotMutateOrPublish(Menu,&quot;Restart&quot;)" fullname="NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(Menu,&quot;Restart&quot;)" methodname="RejectedCommandsDoNotMutateOrPublish" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="1698030456" result="Passed" start-time="2026-11-07 19:21:13Z" end-time="2026-11-07 19:21:13Z" duration="0.046724" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[GameManager] Ignored Restart in Menu.
+]]></output>
+            </test-case>
+            <test-case id="1029" name="RejectedCommandsDoNotMutateOrPublish(Menu,&quot;Menu&quot;)" fullname="NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(Menu,&quot;Menu&quot;)" methodname="RejectedCommandsDoNotMutateOrPublish" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="293190623" result="Passed" start-time="2026-11-07 19:21:13Z" end-time="2026-11-07 19:21:13Z" duration="0.046425" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[GameManager] Ignored ReturnToMenu in Menu.
+]]></output>
+            </test-case>
+            <test-case id="1030" name="RejectedCommandsDoNotMutateOrPublish(Menu,&quot;End&quot;)" fullname="NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(Menu,&quot;End&quot;)" methodname="RejectedCommandsDoNotMutateOrPublish" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="1663677635" result="Passed" start-time="2026-11-07 19:21:13Z" end-time="2026-11-07 19:21:13Z" duration="0.047994" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[GameManager] Ignored EndRun in Menu.
+]]></output>
+            </test-case>
+            <test-case id="1031" name="RejectedCommandsDoNotMutateOrPublish(Playing,&quot;Start&quot;)" fullname="NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(Playing,&quot;Start&quot;)" methodname="RejectedCommandsDoNotMutateOrPublish" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="2066638853" result="Passed" start-time="2026-11-07 19:21:13Z" end-time="2026-11-07 19:21:13Z" duration="0.046570" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[GameManager] Ignored StartRun in Playing.
+]]></output>
+            </test-case>
+            <test-case id="1032" name="RejectedCommandsDoNotMutateOrPublish(Playing,&quot;Resume&quot;)" fullname="NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(Playing,&quot;Resume&quot;)" methodname="RejectedCommandsDoNotMutateOrPublish" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="1187748315" result="Passed" start-time="2026-11-07 19:21:13Z" end-time="2026-11-07 19:21:13Z" duration="0.048256" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[GameManager] Ignored Resume in Playing.
+]]></output>
+            </test-case>
+            <test-case id="1033" name="RejectedCommandsDoNotMutateOrPublish(Playing,&quot;Restart&quot;)" fullname="NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(Playing,&quot;Restart&quot;)" methodname="RejectedCommandsDoNotMutateOrPublish" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="595277737" result="Passed" start-time="2026-11-07 19:21:13Z" end-time="2026-11-07 19:21:13Z" duration="0.045402" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[GameManager] Ignored Restart in Playing.
+]]></output>
+            </test-case>
+            <test-case id="1034" name="RejectedCommandsDoNotMutateOrPublish(Playing,&quot;Menu&quot;)" fullname="NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(Playing,&quot;Menu&quot;)" methodname="RejectedCommandsDoNotMutateOrPublish" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="49778469" result="Passed" start-time="2026-11-07 19:21:13Z" end-time="2026-11-07 19:21:14Z" duration="0.045468" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[GameManager] Ignored ReturnToMenu in Playing.
+]]></output>
+            </test-case>
+            <test-case id="1035" name="RejectedCommandsDoNotMutateOrPublish(Playing,&quot;Quit&quot;)" fullname="NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(Playing,&quot;Quit&quot;)" methodname="RejectedCommandsDoNotMutateOrPublish" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="458085324" result="Passed" start-time="2026-11-07 19:21:14Z" end-time="2026-11-07 19:21:14Z" duration="0.045317" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[GameManager] Ignored Quit in Playing.
+]]></output>
+            </test-case>
+            <test-case id="1036" name="RejectedCommandsDoNotMutateOrPublish(Paused,&quot;Start&quot;)" fullname="NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(Paused,&quot;Start&quot;)" methodname="RejectedCommandsDoNotMutateOrPublish" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="379191024" result="Passed" start-time="2026-11-07 19:21:14Z" end-time="2026-11-07 19:21:14Z" duration="0.049553" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[GameManager] Ignored StartRun in Paused.
+]]></output>
+            </test-case>
+            <test-case id="1037" name="RejectedCommandsDoNotMutateOrPublish(Paused,&quot;Pause&quot;)" fullname="NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(Paused,&quot;Pause&quot;)" methodname="RejectedCommandsDoNotMutateOrPublish" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="1705205969" result="Passed" start-time="2026-11-07 19:21:14Z" end-time="2026-11-07 19:21:14Z" duration="0.047056" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[GameManager] Ignored Pause in Paused.
+]]></output>
+            </test-case>
+            <test-case id="1038" name="RejectedCommandsDoNotMutateOrPublish(Paused,&quot;End&quot;)" fullname="NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(Paused,&quot;End&quot;)" methodname="RejectedCommandsDoNotMutateOrPublish" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="2145334208" result="Passed" start-time="2026-11-07 19:21:14Z" end-time="2026-11-07 19:21:14Z" duration="0.046000" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[GameManager] Ignored EndRun in Paused.
+]]></output>
+            </test-case>
+            <test-case id="1039" name="RejectedCommandsDoNotMutateOrPublish(Paused,&quot;Quit&quot;)" fullname="NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(Paused,&quot;Quit&quot;)" methodname="RejectedCommandsDoNotMutateOrPublish" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="2098858090" result="Passed" start-time="2026-11-07 19:21:14Z" end-time="2026-11-07 19:21:14Z" duration="0.046972" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[GameManager] Ignored Quit in Paused.
+]]></output>
+            </test-case>
+            <test-case id="1040" name="RejectedCommandsDoNotMutateOrPublish(GameOver,&quot;Start&quot;)" fullname="NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(GameOver,&quot;Start&quot;)" methodname="RejectedCommandsDoNotMutateOrPublish" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="1933833155" result="Passed" start-time="2026-11-07 19:21:14Z" end-time="2026-11-07 19:21:14Z" duration="0.045251" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[GameManager] Ignored StartRun in GameOver.
+]]></output>
+            </test-case>
+            <test-case id="1041" name="RejectedCommandsDoNotMutateOrPublish(GameOver,&quot;Pause&quot;)" fullname="NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(GameOver,&quot;Pause&quot;)" methodname="RejectedCommandsDoNotMutateOrPublish" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="552300024" result="Passed" start-time="2026-11-07 19:21:14Z" end-time="2026-11-07 19:21:14Z" duration="0.051957" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[GameManager] Ignored Pause in GameOver.
+]]></output>
+            </test-case>
+            <test-case id="1042" name="RejectedCommandsDoNotMutateOrPublish(GameOver,&quot;Resume&quot;)" fullname="NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(GameOver,&quot;Resume&quot;)" methodname="RejectedCommandsDoNotMutateOrPublish" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="813328521" result="Passed" start-time="2026-11-07 19:21:14Z" end-time="2026-11-07 19:21:14Z" duration="0.048448" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[GameManager] Ignored Resume in GameOver.
+]]></output>
+            </test-case>
+            <test-case id="1043" name="RejectedCommandsDoNotMutateOrPublish(GameOver,&quot;Menu&quot;)" fullname="NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(GameOver,&quot;Menu&quot;)" methodname="RejectedCommandsDoNotMutateOrPublish" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="1963079747" result="Passed" start-time="2026-11-07 19:21:14Z" end-time="2026-11-07 19:21:14Z" duration="0.049772" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[GameManager] Ignored ReturnToMenu in GameOver.
+]]></output>
+            </test-case>
+            <test-case id="1044" name="RejectedCommandsDoNotMutateOrPublish(GameOver,&quot;End&quot;)" fullname="NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(GameOver,&quot;End&quot;)" methodname="RejectedCommandsDoNotMutateOrPublish" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="886884384" result="Passed" start-time="2026-11-07 19:21:14Z" end-time="2026-11-07 19:21:14Z" duration="0.048736" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[GameManager] Ignored EndRun in GameOver.
+]]></output>
+            </test-case>
+            <test-case id="1045" name="RejectedCommandsDoNotMutateOrPublish(GameOver,&quot;Quit&quot;)" fullname="NeonTunnelRunner.GameStateTests.RejectedCommandsDoNotMutateOrPublish(GameOver,&quot;Quit&quot;)" methodname="RejectedCommandsDoNotMutateOrPublish" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="1580541397" result="Passed" start-time="2026-11-07 19:21:14Z" end-time="2026-11-07 19:21:14Z" duration="0.052836" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[GameManager] Ignored Quit in GameOver.
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-case id="1048" name="RestartResetsTransientDataAndPreservesOnlyBestAndSeed" fullname="NeonTunnelRunner.GameStateTests.RestartResetsTransientDataAndPreservesOnlyBestAndSeed" methodname="RestartResetsTransientDataAndPreservesOnlyBestAndSeed" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="430518723" result="Passed" start-time="2026-11-07 19:21:14Z" end-time="2026-11-07 19:21:14Z" duration="0.067144" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1055" name="ReturnToMenuCleansLoopAndNextStartCreatesANewRun" fullname="NeonTunnelRunner.GameStateTests.ReturnToMenuCleansLoopAndNextStartCreatesANewRun" methodname="ReturnToMenuCleansLoopAndNextStartCreatesANewRun" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="385156934" result="Passed" start-time="2026-11-07 19:21:14Z" end-time="2026-11-07 19:21:14Z" duration="0.057931" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1057" name="SnapshotIsAValueAndModelRejectsInvalidPartialMutations" fullname="NeonTunnelRunner.GameStateTests.SnapshotIsAValueAndModelRejectsInvalidPartialMutations" methodname="SnapshotIsAValueAndModelRejectsInvalidPartialMutations" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="406431532" result="Passed" start-time="2026-11-07 19:21:14Z" end-time="2026-11-07 19:21:14Z" duration="0.048452" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1054" name="UndefinedTerminalReasonDoesNotEndTheRun" fullname="NeonTunnelRunner.GameStateTests.UndefinedTerminalReasonDoesNotEndTheRun" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-11-07 19:21:14Z" end-time="2026-11-07 19:21:14Z" duration="0.100945" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1052" name="UndefinedTerminalReasonDoesNotEndTheRun(None)" fullname="NeonTunnelRunner.GameStateTests.UndefinedTerminalReasonDoesNotEndTheRun(None)" methodname="UndefinedTerminalReasonDoesNotEndTheRun" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="827068989" result="Passed" start-time="2026-11-07 19:21:14Z" end-time="2026-11-07 19:21:14Z" duration="0.046205" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[GameManager] Ignored EndRun in Playing.
+]]></output>
+            </test-case>
+            <test-case id="1053" name="UndefinedTerminalReasonDoesNotEndTheRun(99)" fullname="NeonTunnelRunner.GameStateTests.UndefinedTerminalReasonDoesNotEndTheRun(99)" methodname="UndefinedTerminalReasonDoesNotEndTheRun" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="1830937739" result="Passed" start-time="2026-11-07 19:21:14Z" end-time="2026-11-07 19:21:14Z" duration="0.044573" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[GameManager] Ignored EndRun in Playing.
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-case id="1058" name="ZeroResourcesResolveLivesAfterTheCommittedTick" fullname="NeonTunnelRunner.GameStateTests.ZeroResourcesResolveLivesAfterTheCommittedTick" methodname="ZeroResourcesResolveLivesAfterTheCommittedTick" classname="NeonTunnelRunner.GameStateTests" runstate="Runnable" seed="1663918655" result="Passed" start-time="2026-11-07 19:21:14Z" end-time="2026-11-07 19:21:14Z" duration="0.043843" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="1061" name="LaneMovementTests" fullname="NeonTunnelRunner.LaneMovementTests" classname="NeonTunnelRunner.LaneMovementTests" runstate="Runnable" testcasecount="14" result="Passed" start-time="2026-11-07 19:21:14Z" end-time="2026-11-07 19:21:15Z" duration="0.214379" total="14" passed="14" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="ParameterizedMethod" id="1068" name="AdjacentTransitionIsLinearAndIndependentOfStepSize" fullname="NeonTunnelRunner.LaneMovementTests.AdjacentTransitionIsLinearAndIndependentOfStepSize" classname="NeonTunnelRunner.LaneMovementTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-11-07 19:21:14Z" end-time="2026-11-07 19:21:15Z" duration="0.179343" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1062" name="AdjacentTransitionIsLinearAndIndependentOfStepSize(0.01f)" fullname="NeonTunnelRunner.LaneMovementTests.AdjacentTransitionIsLinearAndIndependentOfStepSize(0.01f)" methodname="AdjacentTransitionIsLinearAndIndependentOfStepSize" classname="NeonTunnelRunner.LaneMovementTests" runstate="Runnable" seed="1224190171" result="Passed" start-time="2026-11-07 19:21:14Z" end-time="2026-11-07 19:21:15Z" duration="0.162650" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1063" name="AdjacentTransitionIsLinearAndIndependentOfStepSize(0.02f)" fullname="NeonTunnelRunner.LaneMovementTests.AdjacentTransitionIsLinearAndIndependentOfStepSize(0.02f)" methodname="AdjacentTransitionIsLinearAndIndependentOfStepSize" classname="NeonTunnelRunner.LaneMovementTests" runstate="Runnable" seed="240818508" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.001659" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1064" name="AdjacentTransitionIsLinearAndIndependentOfStepSize(0.03f)" fullname="NeonTunnelRunner.LaneMovementTests.AdjacentTransitionIsLinearAndIndependentOfStepSize(0.03f)" methodname="AdjacentTransitionIsLinearAndIndependentOfStepSize" classname="NeonTunnelRunner.LaneMovementTests" runstate="Runnable" seed="108815642" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.001596" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1065" name="AdjacentTransitionIsLinearAndIndependentOfStepSize(0.06f)" fullname="NeonTunnelRunner.LaneMovementTests.AdjacentTransitionIsLinearAndIndependentOfStepSize(0.06f)" methodname="AdjacentTransitionIsLinearAndIndependentOfStepSize" classname="NeonTunnelRunner.LaneMovementTests" runstate="Runnable" seed="283608112" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.001306" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1066" name="AdjacentTransitionIsLinearAndIndependentOfStepSize(0.12f)" fullname="NeonTunnelRunner.LaneMovementTests.AdjacentTransitionIsLinearAndIndependentOfStepSize(0.12f)" methodname="AdjacentTransitionIsLinearAndIndependentOfStepSize" classname="NeonTunnelRunner.LaneMovementTests" runstate="Runnable" seed="645270811" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.001255" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1067" name="AdjacentTransitionIsLinearAndIndependentOfStepSize(0.5f)" fullname="NeonTunnelRunner.LaneMovementTests.AdjacentTransitionIsLinearAndIndependentOfStepSize(0.5f)" methodname="AdjacentTransitionIsLinearAndIndependentOfStepSize" classname="NeonTunnelRunner.LaneMovementTests" runstate="Runnable" seed="1915255634" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.001201" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-case id="1074" name="BoundsRejectRepeatedEdgeCommands" fullname="NeonTunnelRunner.LaneMovementTests.BoundsRejectRepeatedEdgeCommands" methodname="BoundsRejectRepeatedEdgeCommands" classname="NeonTunnelRunner.LaneMovementTests" runstate="Runnable" seed="1873992015" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.003673" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1077" name="ClearQueuePreservesCurrentTransitionAndResetClearsBothPoses" fullname="NeonTunnelRunner.LaneMovementTests.ClearQueuePreservesCurrentTransitionAndResetClearsBothPoses" methodname="ClearQueuePreservesCurrentTransitionAndResetClearsBothPoses" classname="NeonTunnelRunner.LaneMovementTests" runstate="Runnable" seed="1930643374" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.003461" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1073" name="ForwardTravelUsesPassedTimeAndKeepsHeightAndRotation" fullname="NeonTunnelRunner.LaneMovementTests.ForwardTravelUsesPassedTimeAndKeepsHeightAndRotation" classname="NeonTunnelRunner.LaneMovementTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.013841" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1069" name="ForwardTravelUsesPassedTimeAndKeepsHeightAndRotation(0.01f)" fullname="NeonTunnelRunner.LaneMovementTests.ForwardTravelUsesPassedTimeAndKeepsHeightAndRotation(0.01f)" methodname="ForwardTravelUsesPassedTimeAndKeepsHeightAndRotation" classname="NeonTunnelRunner.LaneMovementTests" runstate="Runnable" seed="1068027448" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.003129" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1070" name="ForwardTravelUsesPassedTimeAndKeepsHeightAndRotation(0.02f)" fullname="NeonTunnelRunner.LaneMovementTests.ForwardTravelUsesPassedTimeAndKeepsHeightAndRotation(0.02f)" methodname="ForwardTravelUsesPassedTimeAndKeepsHeightAndRotation" classname="NeonTunnelRunner.LaneMovementTests" runstate="Runnable" seed="673039628" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.000697" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1071" name="ForwardTravelUsesPassedTimeAndKeepsHeightAndRotation(0.1f)" fullname="NeonTunnelRunner.LaneMovementTests.ForwardTravelUsesPassedTimeAndKeepsHeightAndRotation(0.1f)" methodname="ForwardTravelUsesPassedTimeAndKeepsHeightAndRotation" classname="NeonTunnelRunner.LaneMovementTests" runstate="Runnable" seed="1415689972" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.000634" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1072" name="ForwardTravelUsesPassedTimeAndKeepsHeightAndRotation(0.5f)" fullname="NeonTunnelRunner.LaneMovementTests.ForwardTravelUsesPassedTimeAndKeepsHeightAndRotation(0.5f)" methodname="ForwardTravelUsesPassedTimeAndKeepsHeightAndRotation" classname="NeonTunnelRunner.LaneMovementTests" runstate="Runnable" seed="388966920" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.000677" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-case id="1076" name="LargeStepFinishesAdjacentTransitionsInOrderWithRemainingTime" fullname="NeonTunnelRunner.LaneMovementTests.LargeStepFinishesAdjacentTransitionsInOrderWithRemainingTime" methodname="LargeStepFinishesAdjacentTransitionsInOrderWithRemainingTime" classname="NeonTunnelRunner.LaneMovementTests" runstate="Runnable" seed="711949436" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.000904" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1075" name="LatestValidQueuedPressReplacesOneSlotAndWaitsForTheCurrentLane" fullname="NeonTunnelRunner.LaneMovementTests.LatestValidQueuedPressReplacesOneSlotAndWaitsForTheCurrentLane" methodname="LatestValidQueuedPressReplacesOneSlotAndWaitsForTheCurrentLane" classname="NeonTunnelRunner.LaneMovementTests" runstate="Runnable" seed="212906549" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.001208" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="1078" name="NearMissSequenceTests" fullname="NeonTunnelRunner.NearMissSequenceTests" classname="NeonTunnelRunner.NearMissSequenceTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.128323" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="ParameterizedMethod" id="1086" name="PausedClockRetainsEveryPhaseExactly" fullname="NeonTunnelRunner.NearMissSequenceTests.PausedClockRetainsEveryPhaseExactly" classname="NeonTunnelRunner.NearMissSequenceTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.008762" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1083" name="PausedClockRetainsEveryPhaseExactly(0.075f)" fullname="NeonTunnelRunner.NearMissSequenceTests.PausedClockRetainsEveryPhaseExactly(0.075f)" methodname="PausedClockRetainsEveryPhaseExactly" classname="NeonTunnelRunner.NearMissSequenceTests" runstate="Runnable" seed="1447217358" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.001271" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1084" name="PausedClockRetainsEveryPhaseExactly(2.0f)" fullname="NeonTunnelRunner.NearMissSequenceTests.PausedClockRetainsEveryPhaseExactly(2.0f)" methodname="PausedClockRetainsEveryPhaseExactly" classname="NeonTunnelRunner.NearMissSequenceTests" runstate="Runnable" seed="1497097627" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.000143" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1085" name="PausedClockRetainsEveryPhaseExactly(5.8f)" fullname="NeonTunnelRunner.NearMissSequenceTests.PausedClockRetainsEveryPhaseExactly(5.8f)" methodname="PausedClockRetainsEveryPhaseExactly" classname="NeonTunnelRunner.NearMissSequenceTests" runstate="Runnable" seed="187168931" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.000111" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="ParameterizedMethod" id="1082" name="SixRealPlayingSecondsIncludesSmoothEntryExitAndNoExtension" fullname="NeonTunnelRunner.NearMissSequenceTests.SixRealPlayingSecondsIncludesSmoothEntryExitAndNoExtension" classname="NeonTunnelRunner.NearMissSequenceTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.108559" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1079" name="SixRealPlayingSecondsIncludesSmoothEntryExitAndNoExtension(0.01666667f)" fullname="NeonTunnelRunner.NearMissSequenceTests.SixRealPlayingSecondsIncludesSmoothEntryExitAndNoExtension(0.01666667f)" methodname="SixRealPlayingSecondsIncludesSmoothEntryExitAndNoExtension" classname="NeonTunnelRunner.NearMissSequenceTests" runstate="Runnable" seed="473322355" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.004143" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1080" name="SixRealPlayingSecondsIncludesSmoothEntryExitAndNoExtension(0.03333333f)" fullname="NeonTunnelRunner.NearMissSequenceTests.SixRealPlayingSecondsIncludesSmoothEntryExitAndNoExtension(0.03333333f)" methodname="SixRealPlayingSecondsIncludesSmoothEntryExitAndNoExtension" classname="NeonTunnelRunner.NearMissSequenceTests" runstate="Runnable" seed="1561792422" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.001111" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1081" name="SixRealPlayingSecondsIncludesSmoothEntryExitAndNoExtension(0.00694444f)" fullname="NeonTunnelRunner.NearMissSequenceTests.SixRealPlayingSecondsIncludesSmoothEntryExitAndNoExtension(0.00694444f)" methodname="SixRealPlayingSecondsIncludesSmoothEntryExitAndNoExtension" classname="NeonTunnelRunner.NearMissSequenceTests" runstate="Runnable" seed="67913642" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.002540" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+        </test-suite>
+        <test-suite type="TestFixture" id="1087" name="NightAssetTests" fullname="NeonTunnelRunner.NightAssetTests" classname="NeonTunnelRunner.NightAssetTests" runstate="Runnable" testcasecount="9" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.245147" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="ParameterizedMethod" id="1095" name="AuthoredCurveClampsActualSpeed" fullname="NeonTunnelRunner.NightAssetTests.AuthoredCurveClampsActualSpeed" classname="NeonTunnelRunner.NightAssetTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.111834" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1088" name="AuthoredCurveClampsActualSpeed(-20,0.3f,1)" fullname="NeonTunnelRunner.NightAssetTests.AuthoredCurveClampsActualSpeed(-20,0.3f,1)" methodname="AuthoredCurveClampsActualSpeed" classname="NeonTunnelRunner.NightAssetTests" runstate="Runnable" seed="356232578" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.003855" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1089" name="AuthoredCurveClampsActualSpeed(0,0.3f,1)" fullname="NeonTunnelRunner.NightAssetTests.AuthoredCurveClampsActualSpeed(0,0.3f,1)" methodname="AuthoredCurveClampsActualSpeed" classname="NeonTunnelRunner.NightAssetTests" runstate="Runnable" seed="1288521305" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.000372" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1090" name="AuthoredCurveClampsActualSpeed(12.5f,0.975f,2)" fullname="NeonTunnelRunner.NightAssetTests.AuthoredCurveClampsActualSpeed(12.5f,0.975f,2)" methodname="AuthoredCurveClampsActualSpeed" classname="NeonTunnelRunner.NightAssetTests" runstate="Runnable" seed="1480548587" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.000308" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1091" name="AuthoredCurveClampsActualSpeed(22,1.488f,2.76f)" fullname="NeonTunnelRunner.NightAssetTests.AuthoredCurveClampsActualSpeed(22,1.488f,2.76f)" methodname="AuthoredCurveClampsActualSpeed" classname="NeonTunnelRunner.NightAssetTests" runstate="Runnable" seed="1632208606" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.000317" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1092" name="AuthoredCurveClampsActualSpeed(25,1.65f,3)" fullname="NeonTunnelRunner.NightAssetTests.AuthoredCurveClampsActualSpeed(25,1.65f,3)" methodname="AuthoredCurveClampsActualSpeed" classname="NeonTunnelRunner.NightAssetTests" runstate="Runnable" seed="135991799" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.000536" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1093" name="AuthoredCurveClampsActualSpeed(50,3,5)" fullname="NeonTunnelRunner.NightAssetTests.AuthoredCurveClampsActualSpeed(50,3,5)" methodname="AuthoredCurveClampsActualSpeed" classname="NeonTunnelRunner.NightAssetTests" runstate="Runnable" seed="635593841" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.000447" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1094" name="AuthoredCurveClampsActualSpeed(100,3,5)" fullname="NeonTunnelRunner.NightAssetTests.AuthoredCurveClampsActualSpeed(100,3,5)" methodname="AuthoredCurveClampsActualSpeed" classname="NeonTunnelRunner.NightAssetTests" runstate="Runnable" seed="834605601" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.000514" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-case id="1096" name="ProductionMeshesHaveFiniteUnitNormalsAndPositiveChildTransforms" fullname="NeonTunnelRunner.NightAssetTests.ProductionMeshesHaveFiniteUnitNormalsAndPositiveChildTransforms" methodname="ProductionMeshesHaveFiniteUnitNormalsAndPositiveChildTransforms" classname="NeonTunnelRunner.NightAssetTests" runstate="Runnable" seed="799827470" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.075830" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1097" name="SavedPrefabsKeepGameplayBoxesPivotsEndpointsAndBoundedLights" fullname="NeonTunnelRunner.NightAssetTests.SavedPrefabsKeepGameplayBoxesPivotsEndpointsAndBoundedLights" methodname="SavedPrefabsKeepGameplayBoxesPivotsEndpointsAndBoundedLights" classname="NeonTunnelRunner.NightAssetTests" runstate="Runnable" seed="141369245" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.050025" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="1098" name="PatternSafetyTests" fullname="NeonTunnelRunner.PatternSafetyTests" classname="NeonTunnelRunner.PatternSafetyTests" runstate="Runnable" testcasecount="19" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:31Z" duration="15.542411" total="19" passed="19" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1116" name="BatchSizeResetAndLargeAbsoluteIndicesDoNotChangePlans" fullname="NeonTunnelRunner.PatternSafetyTests.BatchSizeResetAndLargeAbsoluteIndicesDoNotChangePlans" methodname="BatchSizeResetAndLargeAbsoluteIndicesDoNotChangePlans" classname="NeonTunnelRunner.PatternSafetyTests" runstate="Runnable" seed="1544007844" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.019602" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1108" name="EveryProtectedLaneTransitionFitsAtActualMaximumSpeed" fullname="NeonTunnelRunner.PatternSafetyTests.EveryProtectedLaneTransitionFitsAtActualMaximumSpeed" classname="NeonTunnelRunner.PatternSafetyTests" runstate="Runnable" testcasecount="9" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.013616" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1099" name="EveryProtectedLaneTransitionFitsAtActualMaximumSpeed(-1,-1)" fullname="NeonTunnelRunner.PatternSafetyTests.EveryProtectedLaneTransitionFitsAtActualMaximumSpeed(-1,-1)" methodname="EveryProtectedLaneTransitionFitsAtActualMaximumSpeed" classname="NeonTunnelRunner.PatternSafetyTests" runstate="Runnable" seed="914831668" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.000827" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1100" name="EveryProtectedLaneTransitionFitsAtActualMaximumSpeed(-1,0)" fullname="NeonTunnelRunner.PatternSafetyTests.EveryProtectedLaneTransitionFitsAtActualMaximumSpeed(-1,0)" methodname="EveryProtectedLaneTransitionFitsAtActualMaximumSpeed" classname="NeonTunnelRunner.PatternSafetyTests" runstate="Runnable" seed="1099141077" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.000521" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1101" name="EveryProtectedLaneTransitionFitsAtActualMaximumSpeed(-1,1)" fullname="NeonTunnelRunner.PatternSafetyTests.EveryProtectedLaneTransitionFitsAtActualMaximumSpeed(-1,1)" methodname="EveryProtectedLaneTransitionFitsAtActualMaximumSpeed" classname="NeonTunnelRunner.PatternSafetyTests" runstate="Runnable" seed="593598121" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.000495" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1102" name="EveryProtectedLaneTransitionFitsAtActualMaximumSpeed(0,-1)" fullname="NeonTunnelRunner.PatternSafetyTests.EveryProtectedLaneTransitionFitsAtActualMaximumSpeed(0,-1)" methodname="EveryProtectedLaneTransitionFitsAtActualMaximumSpeed" classname="NeonTunnelRunner.PatternSafetyTests" runstate="Runnable" seed="1837527098" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.000480" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1103" name="EveryProtectedLaneTransitionFitsAtActualMaximumSpeed(0,0)" fullname="NeonTunnelRunner.PatternSafetyTests.EveryProtectedLaneTransitionFitsAtActualMaximumSpeed(0,0)" methodname="EveryProtectedLaneTransitionFitsAtActualMaximumSpeed" classname="NeonTunnelRunner.PatternSafetyTests" runstate="Runnable" seed="1938592236" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.000472" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1104" name="EveryProtectedLaneTransitionFitsAtActualMaximumSpeed(0,1)" fullname="NeonTunnelRunner.PatternSafetyTests.EveryProtectedLaneTransitionFitsAtActualMaximumSpeed(0,1)" methodname="EveryProtectedLaneTransitionFitsAtActualMaximumSpeed" classname="NeonTunnelRunner.PatternSafetyTests" runstate="Runnable" seed="884171420" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.000454" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1105" name="EveryProtectedLaneTransitionFitsAtActualMaximumSpeed(1,-1)" fullname="NeonTunnelRunner.PatternSafetyTests.EveryProtectedLaneTransitionFitsAtActualMaximumSpeed(1,-1)" methodname="EveryProtectedLaneTransitionFitsAtActualMaximumSpeed" classname="NeonTunnelRunner.PatternSafetyTests" runstate="Runnable" seed="2060043931" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.000501" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1106" name="EveryProtectedLaneTransitionFitsAtActualMaximumSpeed(1,0)" fullname="NeonTunnelRunner.PatternSafetyTests.EveryProtectedLaneTransitionFitsAtActualMaximumSpeed(1,0)" methodname="EveryProtectedLaneTransitionFitsAtActualMaximumSpeed" classname="NeonTunnelRunner.PatternSafetyTests" runstate="Runnable" seed="530290022" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.000424" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1107" name="EveryProtectedLaneTransitionFitsAtActualMaximumSpeed(1,1)" fullname="NeonTunnelRunner.PatternSafetyTests.EveryProtectedLaneTransitionFitsAtActualMaximumSpeed(1,1)" methodname="EveryProtectedLaneTransitionFitsAtActualMaximumSpeed" classname="NeonTunnelRunner.PatternSafetyTests" runstate="Runnable" seed="1868195524" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.000320" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-case id="1119" name="FullExtentsAndPathsIntoNeighboringReservationsAreRejected" fullname="NeonTunnelRunner.PatternSafetyTests.FullExtentsAndPathsIntoNeighboringReservationsAreRejected" methodname="FullExtentsAndPathsIntoNeighboringReservationsAreRejected" classname="NeonTunnelRunner.PatternSafetyTests" runstate="Runnable" seed="1324937282" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.002126" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1117" name="ScheduleStartsOpenAndMatchesEveryUsedEnvironmentSeam" fullname="NeonTunnelRunner.PatternSafetyTests.ScheduleStartsOpenAndMatchesEveryUsedEnvironmentSeam" methodname="ScheduleStartsOpenAndMatchesEveryUsedEnvironmentSeam" classname="NeonTunnelRunner.PatternSafetyTests" runstate="Runnable" seed="871281198" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:15Z" duration="0.002581" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1115" name="ThousandSeedsHaveClearProtectedLanesWarmupBuffersAndStableOrdering" fullname="NeonTunnelRunner.PatternSafetyTests.ThousandSeedsHaveClearProtectedLanesWarmupBuffersAndStableOrdering" methodname="ThousandSeedsHaveClearProtectedLanesWarmupBuffersAndStableOrdering" classname="NeonTunnelRunner.PatternSafetyTests" runstate="Runnable" seed="676021746" result="Passed" start-time="2026-11-07 19:21:15Z" end-time="2026-11-07 19:21:21Z" duration="5.664292" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1118" name="ThousandSeedsValidateRealTrafficEnvelopesAtStartingAndMaximumSpeeds" fullname="NeonTunnelRunner.PatternSafetyTests.ThousandSeedsValidateRealTrafficEnvelopesAtStartingAndMaximumSpeeds" methodname="ThousandSeedsValidateRealTrafficEnvelopesAtStartingAndMaximumSpeeds" classname="NeonTunnelRunner.PatternSafetyTests" runstate="Runnable" seed="1792848069" result="Passed" start-time="2026-11-07 19:21:21Z" end-time="2026-11-07 19:21:30Z" duration="9.798782" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[[Task06] 1000 seeds x21 blocks x2 player speeds (22/50); accepted moving=96132, stationary=229088, omitted=64896; minimum-speed conservative horizon in both cases.
+]]></output>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1113" name="UnsafeOccupancyProposalsAreRejected" fullname="NeonTunnelRunner.PatternSafetyTests.UnsafeOccupancyProposalsAreRejected" classname="NeonTunnelRunner.PatternSafetyTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-11-07 19:21:31Z" end-time="2026-11-07 19:21:31Z" duration="0.016662" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1110" name="UnsafeOccupancyProposalsAreRejected(7,InvalidOccupancy)" fullname="NeonTunnelRunner.PatternSafetyTests.UnsafeOccupancyProposalsAreRejected(7,InvalidOccupancy)" methodname="UnsafeOccupancyProposalsAreRejected" classname="NeonTunnelRunner.PatternSafetyTests" runstate="Runnable" seed="402627067" result="Passed" start-time="2026-11-07 19:21:31Z" end-time="2026-11-07 19:21:31Z" duration="0.000920" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1111" name="UnsafeOccupancyProposalsAreRejected(2,ProtectedLaneOccupied)" fullname="NeonTunnelRunner.PatternSafetyTests.UnsafeOccupancyProposalsAreRejected(2,ProtectedLaneOccupied)" methodname="UnsafeOccupancyProposalsAreRejected" classname="NeonTunnelRunner.PatternSafetyTests" runstate="Runnable" seed="1936489934" result="Passed" start-time="2026-11-07 19:21:31Z" end-time="2026-11-07 19:21:31Z" duration="0.000358" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1112" name="UnsafeOccupancyProposalsAreRejected(262144,InvalidOccupancy)" fullname="NeonTunnelRunner.PatternSafetyTests.UnsafeOccupancyProposalsAreRejected(262144,InvalidOccupancy)" methodname="UnsafeOccupancyProposalsAreRejected" classname="NeonTunnelRunner.PatternSafetyTests" runstate="Runnable" seed="884149401" result="Passed" start-time="2026-11-07 19:21:31Z" end-time="2026-11-07 19:21:31Z" duration="0.000309" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-case id="1109" name="UnsafeTimingAndNonFiniteConfigurationAreRejected" fullname="NeonTunnelRunner.PatternSafetyTests.UnsafeTimingAndNonFiniteConfigurationAreRejected" methodname="UnsafeTimingAndNonFiniteConfigurationAreRejected" classname="NeonTunnelRunner.PatternSafetyTests" runstate="Runnable" seed="6816992" result="Passed" start-time="2026-11-07 19:21:31Z" end-time="2026-11-07 19:21:31Z" duration="0.000740" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1114" name="WarmupAndInvalidLaneProposalsAreRejected" fullname="NeonTunnelRunner.PatternSafetyTests.WarmupAndInvalidLaneProposalsAreRejected" methodname="WarmupAndInvalidLaneProposalsAreRejected" classname="NeonTunnelRunner.PatternSafetyTests" runstate="Runnable" seed="114838570" result="Passed" start-time="2026-11-07 19:21:31Z" end-time="2026-11-07 19:21:31Z" duration="0.000645" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="1120" name="PickupPlanTests" fullname="NeonTunnelRunner.PickupPlanTests" classname="NeonTunnelRunner.PickupPlanTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-11-07 19:21:31Z" end-time="2026-11-07 19:21:50Z" duration="19.347711" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1122" name="FuelCannotBeMovedToAnEmptyButUnreachableLaneOrEarlyBufferPoint" fullname="NeonTunnelRunner.PickupPlanTests.FuelCannotBeMovedToAnEmptyButUnreachableLaneOrEarlyBufferPoint" methodname="FuelCannotBeMovedToAnEmptyButUnreachableLaneOrEarlyBufferPoint" classname="NeonTunnelRunner.PickupPlanTests" runstate="Runnable" seed="1350044423" result="Passed" start-time="2026-11-07 19:21:31Z" end-time="2026-11-07 19:21:31Z" duration="0.001863" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1123" name="PickupOnTrafficAndMovingEncounterEnvelopeIsRejected" fullname="NeonTunnelRunner.PickupPlanTests.PickupOnTrafficAndMovingEncounterEnvelopeIsRejected" methodname="PickupOnTrafficAndMovingEncounterEnvelopeIsRejected" classname="NeonTunnelRunner.PickupPlanTests" runstate="Runnable" seed="92270266" result="Passed" start-time="2026-11-07 19:21:31Z" end-time="2026-11-07 19:21:31Z" duration="0.000961" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1125" name="PlansRemainIndependentOfTraversalOriginAndOptionalSelection" fullname="NeonTunnelRunner.PickupPlanTests.PlansRemainIndependentOfTraversalOriginAndOptionalSelection" methodname="PlansRemainIndependentOfTraversalOriginAndOptionalSelection" classname="NeonTunnelRunner.PickupPlanTests" runstate="Runnable" seed="1725874080" result="Passed" start-time="2026-11-07 19:21:31Z" end-time="2026-11-07 19:21:31Z" duration="0.002924" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1124" name="StartupRejectsTimingThatClearsTheBufferButCannotReachItsFuel" fullname="NeonTunnelRunner.PickupPlanTests.StartupRejectsTimingThatClearsTheBufferButCannotReachItsFuel" methodname="StartupRejectsTimingThatClearsTheBufferButCannotReachItsFuel" classname="NeonTunnelRunner.PickupPlanTests" runstate="Runnable" seed="1368397700" result="Passed" start-time="2026-11-07 19:21:31Z" end-time="2026-11-07 19:21:31Z" duration="0.000708" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1121" name="ThousandSeedsCoverTenKilometresOfContinuousFuelRoutesAndPickupBounds" fullname="NeonTunnelRunner.PickupPlanTests.ThousandSeedsCoverTenKilometresOfContinuousFuelRoutesAndPickupBounds" methodname="ThousandSeedsCoverTenKilometresOfContinuousFuelRoutesAndPickupBounds" classname="NeonTunnelRunner.PickupPlanTests" runstate="Runnable" seed="1323608628" result="Passed" start-time="2026-11-07 19:21:31Z" end-time="2026-11-07 19:21:50Z" duration="19.326915" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[[Task07] seeds=0..999, 21x480=10080m/seed; max speed=50, min=22, reaction=.7, transition=.28, margin=.3; required fuel=63000, accepted coins=97265, rejected coins=70735, lane changes=13884, max fuel gap=180m.
+]]></output>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="1126" name="PickupScoreTests" fullname="NeonTunnelRunner.PickupScoreTests" classname="NeonTunnelRunner.PickupScoreTests" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-11-07 19:21:50Z" end-time="2026-11-07 19:21:50Z" duration="0.021971" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1135" name="ConfiguredRewardsAndInvalidArgumentsAreHandled" fullname="NeonTunnelRunner.PickupScoreTests.ConfiguredRewardsAndInvalidArgumentsAreHandled" methodname="ConfiguredRewardsAndInvalidArgumentsAreHandled" classname="NeonTunnelRunner.PickupScoreTests" runstate="Runnable" seed="1032990428" result="Passed" start-time="2026-11-07 19:21:50Z" end-time="2026-11-07 19:21:50Z" duration="0.000858" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1134" name="ScoreUsesDoubleDistancePlusCoinsWithSafeSaturation" fullname="NeonTunnelRunner.PickupScoreTests.ScoreUsesDoubleDistancePlusCoinsWithSafeSaturation" classname="NeonTunnelRunner.PickupScoreTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-11-07 19:21:50Z" end-time="2026-11-07 19:21:50Z" duration="0.009615" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1127" name="ScoreUsesDoubleDistancePlusCoinsWithSafeSaturation(0.0d,0,0)" fullname="NeonTunnelRunner.PickupScoreTests.ScoreUsesDoubleDistancePlusCoinsWithSafeSaturation(0.0d,0,0)" methodname="ScoreUsesDoubleDistancePlusCoinsWithSafeSaturation" classname="NeonTunnelRunner.PickupScoreTests" runstate="Runnable" seed="1004338799" result="Passed" start-time="2026-11-07 19:21:50Z" end-time="2026-11-07 19:21:50Z" duration="0.000453" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1128" name="ScoreUsesDoubleDistancePlusCoinsWithSafeSaturation(1.999d,0,1)" fullname="NeonTunnelRunner.PickupScoreTests.ScoreUsesDoubleDistancePlusCoinsWithSafeSaturation(1.999d,0,1)" methodname="ScoreUsesDoubleDistancePlusCoinsWithSafeSaturation" classname="NeonTunnelRunner.PickupScoreTests" runstate="Runnable" seed="1825847636" result="Passed" start-time="2026-11-07 19:21:50Z" end-time="2026-11-07 19:21:50Z" duration="0.000066" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1129" name="ScoreUsesDoubleDistancePlusCoinsWithSafeSaturation(1234.75d,3,1534)" fullname="NeonTunnelRunner.PickupScoreTests.ScoreUsesDoubleDistancePlusCoinsWithSafeSaturation(1234.75d,3,1534)" methodname="ScoreUsesDoubleDistancePlusCoinsWithSafeSaturation" classname="NeonTunnelRunner.PickupScoreTests" runstate="Runnable" seed="1663726747" result="Passed" start-time="2026-11-07 19:21:50Z" end-time="2026-11-07 19:21:50Z" duration="0.000056" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1130" name="ScoreUsesDoubleDistancePlusCoinsWithSafeSaturation(2147483646.9d,0,2147483646)" fullname="NeonTunnelRunner.PickupScoreTests.ScoreUsesDoubleDistancePlusCoinsWithSafeSaturation(2147483646.9d,0,2147483646)" methodname="ScoreUsesDoubleDistancePlusCoinsWithSafeSaturation" classname="NeonTunnelRunner.PickupScoreTests" runstate="Runnable" seed="59766313" result="Passed" start-time="2026-11-07 19:21:50Z" end-time="2026-11-07 19:21:50Z" duration="0.000051" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1131" name="ScoreUsesDoubleDistancePlusCoinsWithSafeSaturation(2147483600.0d,1,int.MaxValue)" fullname="NeonTunnelRunner.PickupScoreTests.ScoreUsesDoubleDistancePlusCoinsWithSafeSaturation(2147483600.0d,1,int.MaxValue)" methodname="ScoreUsesDoubleDistancePlusCoinsWithSafeSaturation" classname="NeonTunnelRunner.PickupScoreTests" runstate="Runnable" seed="1389876838" result="Passed" start-time="2026-11-07 19:21:50Z" end-time="2026-11-07 19:21:50Z" duration="0.000052" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1132" name="ScoreUsesDoubleDistancePlusCoinsWithSafeSaturation(1E+100.0d,1,int.MaxValue)" fullname="NeonTunnelRunner.PickupScoreTests.ScoreUsesDoubleDistancePlusCoinsWithSafeSaturation(1E+100.0d,1,int.MaxValue)" methodname="ScoreUsesDoubleDistancePlusCoinsWithSafeSaturation" classname="NeonTunnelRunner.PickupScoreTests" runstate="Runnable" seed="1388791494" result="Passed" start-time="2026-11-07 19:21:50Z" end-time="2026-11-07 19:21:50Z" duration="0.000053" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1133" name="ScoreUsesDoubleDistancePlusCoinsWithSafeSaturation(0.0d,int.MaxValue,int.MaxValue)" fullname="NeonTunnelRunner.PickupScoreTests.ScoreUsesDoubleDistancePlusCoinsWithSafeSaturation(0.0d,int.MaxValue,int.MaxValue)" methodname="ScoreUsesDoubleDistancePlusCoinsWithSafeSaturation" classname="NeonTunnelRunner.PickupScoreTests" runstate="Runnable" seed="567225752" result="Passed" start-time="2026-11-07 19:21:50Z" end-time="2026-11-07 19:21:50Z" duration="0.000050" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+        </test-suite>
+        <test-suite type="TestFixture" id="1136" name="PoolConfigTests" fullname="NeonTunnelRunner.PoolConfigTests" classname="NeonTunnelRunner.PoolConfigTests" runstate="Runnable" testcasecount="11" result="Passed" start-time="2026-11-07 19:21:50Z" end-time="2026-11-07 19:21:50Z" duration="0.124169" total="11" passed="11" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1148" name="AllTwelveTypedKeysCanBeConfiguredIndependently" fullname="NeonTunnelRunner.PoolConfigTests.AllTwelveTypedKeysCanBeConfiguredIndependently" methodname="AllTwelveTypedKeysCanBeConfiguredIndependently" classname="NeonTunnelRunner.PoolConfigTests" runstate="Runnable" seed="1121890127" result="Passed" start-time="2026-11-07 19:21:50Z" end-time="2026-11-07 19:21:50Z" duration="0.004167" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1137" name="EmptyCatalogIsValidAndDoesNotWriteConfiguration" fullname="NeonTunnelRunner.PoolConfigTests.EmptyCatalogIsValidAndDoesNotWriteConfiguration" methodname="EmptyCatalogIsValidAndDoesNotWriteConfiguration" classname="NeonTunnelRunner.PoolConfigTests" runstate="Runnable" seed="1255503416" result="Passed" start-time="2026-11-07 19:21:50Z" end-time="2026-11-07 19:21:50Z" duration="0.002144" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1147" name="InvalidEntriesAreRejectedWithoutRepair" fullname="NeonTunnelRunner.PoolConfigTests.InvalidEntriesAreRejectedWithoutRepair" classname="NeonTunnelRunner.PoolConfigTests" runstate="Runnable" testcasecount="9" result="Passed" start-time="2026-11-07 19:21:50Z" end-time="2026-11-07 19:21:50Z" duration="0.017492" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1138" name="InvalidEntriesAreRejectedWithoutRepair(&quot;duplicate&quot;,&quot;duplicate key&quot;)" fullname="NeonTunnelRunner.PoolConfigTests.InvalidEntriesAreRejectedWithoutRepair(&quot;duplicate&quot;,&quot;duplicate key&quot;)" methodname="InvalidEntriesAreRejectedWithoutRepair" classname="NeonTunnelRunner.PoolConfigTests" runstate="Runnable" seed="1007174292" result="Passed" start-time="2026-11-07 19:21:50Z" end-time="2026-11-07 19:21:50Z" duration="0.003011" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1139" name="InvalidEntriesAreRejectedWithoutRepair(&quot;negativeKey&quot;,&quot;invalid key&quot;)" fullname="NeonTunnelRunner.PoolConfigTests.InvalidEntriesAreRejectedWithoutRepair(&quot;negativeKey&quot;,&quot;invalid key&quot;)" methodname="InvalidEntriesAreRejectedWithoutRepair" classname="NeonTunnelRunner.PoolConfigTests" runstate="Runnable" seed="1507485715" result="Passed" start-time="2026-11-07 19:21:50Z" end-time="2026-11-07 19:21:50Z" duration="0.000794" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1140" name="InvalidEntriesAreRejectedWithoutRepair(&quot;largeKey&quot;,&quot;invalid key&quot;)" fullname="NeonTunnelRunner.PoolConfigTests.InvalidEntriesAreRejectedWithoutRepair(&quot;largeKey&quot;,&quot;invalid key&quot;)" methodname="InvalidEntriesAreRejectedWithoutRepair" classname="NeonTunnelRunner.PoolConfigTests" runstate="Runnable" seed="1080631381" result="Passed" start-time="2026-11-07 19:21:50Z" end-time="2026-11-07 19:21:50Z" duration="0.000682" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1141" name="InvalidEntriesAreRejectedWithoutRepair(&quot;zero&quot;,&quot;capacity must be positive&quot;)" fullname="NeonTunnelRunner.PoolConfigTests.InvalidEntriesAreRejectedWithoutRepair(&quot;zero&quot;,&quot;capacity must be positive&quot;)" methodname="InvalidEntriesAreRejectedWithoutRepair" classname="NeonTunnelRunner.PoolConfigTests" runstate="Runnable" seed="1544658649" result="Passed" start-time="2026-11-07 19:21:50Z" end-time="2026-11-07 19:21:50Z" duration="0.000770" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1142" name="InvalidEntriesAreRejectedWithoutRepair(&quot;negative&quot;,&quot;capacity must be positive&quot;)" fullname="NeonTunnelRunner.PoolConfigTests.InvalidEntriesAreRejectedWithoutRepair(&quot;negative&quot;,&quot;capacity must be positive&quot;)" methodname="InvalidEntriesAreRejectedWithoutRepair" classname="NeonTunnelRunner.PoolConfigTests" runstate="Runnable" seed="1105395842" result="Passed" start-time="2026-11-07 19:21:50Z" end-time="2026-11-07 19:21:50Z" duration="0.000483" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1143" name="InvalidEntriesAreRejectedWithoutRepair(&quot;missingPrefab&quot;,&quot;assign a prefab&quot;)" fullname="NeonTunnelRunner.PoolConfigTests.InvalidEntriesAreRejectedWithoutRepair(&quot;missingPrefab&quot;,&quot;assign a prefab&quot;)" methodname="InvalidEntriesAreRejectedWithoutRepair" classname="NeonTunnelRunner.PoolConfigTests" runstate="Runnable" seed="873411591" result="Passed" start-time="2026-11-07 19:21:50Z" end-time="2026-11-07 19:21:50Z" duration="0.000466" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1144" name="InvalidEntriesAreRejectedWithoutRepair(&quot;missingComponent&quot;,&quot;PooledObject&quot;)" fullname="NeonTunnelRunner.PoolConfigTests.InvalidEntriesAreRejectedWithoutRepair(&quot;missingComponent&quot;,&quot;PooledObject&quot;)" methodname="InvalidEntriesAreRejectedWithoutRepair" classname="NeonTunnelRunner.PoolConfigTests" runstate="Runnable" seed="921785067" result="Passed" start-time="2026-11-07 19:21:50Z" end-time="2026-11-07 19:21:50Z" duration="0.000797" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1145" name="InvalidEntriesAreRejectedWithoutRepair(&quot;disabledComponent&quot;,&quot;PooledObject&quot;)" fullname="NeonTunnelRunner.PoolConfigTests.InvalidEntriesAreRejectedWithoutRepair(&quot;disabledComponent&quot;,&quot;PooledObject&quot;)" methodname="InvalidEntriesAreRejectedWithoutRepair" classname="NeonTunnelRunner.PoolConfigTests" runstate="Runnable" seed="1546361647" result="Passed" start-time="2026-11-07 19:21:50Z" end-time="2026-11-07 19:21:50Z" duration="0.000530" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1146" name="InvalidEntriesAreRejectedWithoutRepair(&quot;nestedComponent&quot;,&quot;PooledObject&quot;)" fullname="NeonTunnelRunner.PoolConfigTests.InvalidEntriesAreRejectedWithoutRepair(&quot;nestedComponent&quot;,&quot;PooledObject&quot;)" methodname="InvalidEntriesAreRejectedWithoutRepair" classname="NeonTunnelRunner.PoolConfigTests" runstate="Runnable" seed="1095213119" result="Passed" start-time="2026-11-07 19:21:50Z" end-time="2026-11-07 19:21:50Z" duration="0.000722" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+        </test-suite>
+        <test-suite type="TestFixture" id="1149" name="ProgressionTests" fullname="NeonTunnelRunner.ProgressionTests" classname="NeonTunnelRunner.ProgressionTests" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-11-07 19:21:50Z" end-time="2026-11-07 19:21:55Z" duration="4.555271" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1157" name="BothInputsAreMonotonicAndUseMaximum" fullname="NeonTunnelRunner.ProgressionTests.BothInputsAreMonotonicAndUseMaximum" methodname="BothInputsAreMonotonicAndUseMaximum" classname="NeonTunnelRunner.ProgressionTests" runstate="Runnable" seed="1540717981" result="Passed" start-time="2026-11-07 19:21:50Z" end-time="2026-11-07 19:21:50Z" duration="0.021602" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1156" name="IndependentInputsAndCaps" fullname="NeonTunnelRunner.ProgressionTests.IndependentInputsAndCaps" classname="NeonTunnelRunner.ProgressionTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-11-07 19:21:50Z" end-time="2026-11-07 19:21:50Z" duration="0.014138" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1150" name="IndependentInputsAndCaps(0.0d,0.0d,0.0f)" fullname="NeonTunnelRunner.ProgressionTests.IndependentInputsAndCaps(0.0d,0.0d,0.0f)" methodname="IndependentInputsAndCaps" classname="NeonTunnelRunner.ProgressionTests" runstate="Runnable" seed="1890442492" result="Passed" start-time="2026-11-07 19:21:50Z" end-time="2026-11-07 19:21:50Z" duration="0.000911" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1151" name="IndependentInputsAndCaps(90.0d,0.0d,0.5f)" fullname="NeonTunnelRunner.ProgressionTests.IndependentInputsAndCaps(90.0d,0.0d,0.5f)" methodname="IndependentInputsAndCaps" classname="NeonTunnelRunner.ProgressionTests" runstate="Runnable" seed="257425304" result="Passed" start-time="2026-11-07 19:21:50Z" end-time="2026-11-07 19:21:50Z" duration="0.000233" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1152" name="IndependentInputsAndCaps(0.0d,3000.0d,0.5f)" fullname="NeonTunnelRunner.ProgressionTests.IndependentInputsAndCaps(0.0d,3000.0d,0.5f)" methodname="IndependentInputsAndCaps" classname="NeonTunnelRunner.ProgressionTests" runstate="Runnable" seed="1691493128" result="Passed" start-time="2026-11-07 19:21:50Z" end-time="2026-11-07 19:21:50Z" duration="0.000178" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1153" name="IndependentInputsAndCaps(180.0d,0.0d,1.0f)" fullname="NeonTunnelRunner.ProgressionTests.IndependentInputsAndCaps(180.0d,0.0d,1.0f)" methodname="IndependentInputsAndCaps" classname="NeonTunnelRunner.ProgressionTests" runstate="Runnable" seed="1898274660" result="Passed" start-time="2026-11-07 19:21:50Z" end-time="2026-11-07 19:21:50Z" duration="0.000176" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1154" name="IndependentInputsAndCaps(0.0d,6000.0d,1.0f)" fullname="NeonTunnelRunner.ProgressionTests.IndependentInputsAndCaps(0.0d,6000.0d,1.0f)" methodname="IndependentInputsAndCaps" classname="NeonTunnelRunner.ProgressionTests" runstate="Runnable" seed="917627211" result="Passed" start-time="2026-11-07 19:21:50Z" end-time="2026-11-07 19:21:50Z" duration="0.000171" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1155" name="IndependentInputsAndCaps(1E+100.0d,1E+100.0d,1.0f)" fullname="NeonTunnelRunner.ProgressionTests.IndependentInputsAndCaps(1E+100.0d,1E+100.0d,1.0f)" methodname="IndependentInputsAndCaps" classname="NeonTunnelRunner.ProgressionTests" runstate="Runnable" seed="1057356538" result="Passed" start-time="2026-11-07 19:21:50Z" end-time="2026-11-07 19:21:50Z" duration="0.000171" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-case id="1158" name="SeededDensityMeasuresProposalsSeparatelyFromSafetyAtStartMiddleAndCap" fullname="NeonTunnelRunner.ProgressionTests.SeededDensityMeasuresProposalsSeparatelyFromSafetyAtStartMiddleAndCap" methodname="SeededDensityMeasuresProposalsSeparatelyFromSafetyAtStartMiddleAndCap" classname="NeonTunnelRunner.ProgressionTests" runstate="Runnable" seed="834522841" result="Passed" start-time="2026-11-07 19:21:50Z" end-time="2026-11-07 19:21:55Z" duration="4.427987" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[[Task09 density] d=0, eligible=246000, proposed=79757, accepted=66312, rejected=13445, moving=19537, fallbacks=30399, poolMisses=NA(pure planner), rate=0.324215447154472
+[Task09 density] d=0.5, eligible=246000, proposed=167965, accepted=139382, rejected=28583, moving=41106, fallbacks=63564, poolMisses=NA(pure planner), rate=0.682784552845528
+[Task09 density] d=1, eligible=246000, proposed=233772, accepted=193887, rejected=39885, moving=57136, fallbacks=88390, poolMisses=NA(pure planner), rate=0.950292682926829
+]]></output>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="1159" name="SurvivalTests" fullname="NeonTunnelRunner.SurvivalTests" classname="NeonTunnelRunner.SurvivalTests" runstate="Runnable" testcasecount="13" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.129106" total="13" passed="13" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="ParameterizedMethod" id="1164" name="DoubleFuelAccumulatorReachesZeroAtFiftySecondsAndNeverEarlier" fullname="NeonTunnelRunner.SurvivalTests.DoubleFuelAccumulatorReachesZeroAtFiftySecondsAndNeverEarlier" classname="NeonTunnelRunner.SurvivalTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.045735" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1160" name="DoubleFuelAccumulatorReachesZeroAtFiftySecondsAndNeverEarlier(0.01f)" fullname="NeonTunnelRunner.SurvivalTests.DoubleFuelAccumulatorReachesZeroAtFiftySecondsAndNeverEarlier(0.01f)" methodname="DoubleFuelAccumulatorReachesZeroAtFiftySecondsAndNeverEarlier" classname="NeonTunnelRunner.SurvivalTests" runstate="Runnable" seed="740363139" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.022314" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1161" name="DoubleFuelAccumulatorReachesZeroAtFiftySecondsAndNeverEarlier(0.02f)" fullname="NeonTunnelRunner.SurvivalTests.DoubleFuelAccumulatorReachesZeroAtFiftySecondsAndNeverEarlier(0.02f)" methodname="DoubleFuelAccumulatorReachesZeroAtFiftySecondsAndNeverEarlier" classname="NeonTunnelRunner.SurvivalTests" runstate="Runnable" seed="1513049747" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.009117" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1162" name="DoubleFuelAccumulatorReachesZeroAtFiftySecondsAndNeverEarlier(0.1f)" fullname="NeonTunnelRunner.SurvivalTests.DoubleFuelAccumulatorReachesZeroAtFiftySecondsAndNeverEarlier(0.1f)" methodname="DoubleFuelAccumulatorReachesZeroAtFiftySecondsAndNeverEarlier" classname="NeonTunnelRunner.SurvivalTests" runstate="Runnable" seed="842753411" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.002484" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1163" name="DoubleFuelAccumulatorReachesZeroAtFiftySecondsAndNeverEarlier(0.5f)" fullname="NeonTunnelRunner.SurvivalTests.DoubleFuelAccumulatorReachesZeroAtFiftySecondsAndNeverEarlier(0.5f)" methodname="DoubleFuelAccumulatorReachesZeroAtFiftySecondsAndNeverEarlier" classname="NeonTunnelRunner.SurvivalTests" runstate="Runnable" seed="878555843" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.000786" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="ParameterizedMethod" id="1169" name="InvalidDrainRejectsWithoutPartialMutation" fullname="NeonTunnelRunner.SurvivalTests.InvalidDrainRejectsWithoutPartialMutation" classname="NeonTunnelRunner.SurvivalTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.067612" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1165" name="InvalidDrainRejectsWithoutPartialMutation(-1.0f)" fullname="NeonTunnelRunner.SurvivalTests.InvalidDrainRejectsWithoutPartialMutation(-1.0f)" methodname="InvalidDrainRejectsWithoutPartialMutation" classname="NeonTunnelRunner.SurvivalTests" runstate="Runnable" seed="1069663780" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.001628" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1166" name="InvalidDrainRejectsWithoutPartialMutation(float.NaN)" fullname="NeonTunnelRunner.SurvivalTests.InvalidDrainRejectsWithoutPartialMutation(float.NaN)" methodname="InvalidDrainRejectsWithoutPartialMutation" classname="NeonTunnelRunner.SurvivalTests" runstate="Runnable" seed="1777983911" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.000555" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1167" name="InvalidDrainRejectsWithoutPartialMutation(float.PositiveInfinity)" fullname="NeonTunnelRunner.SurvivalTests.InvalidDrainRejectsWithoutPartialMutation(float.PositiveInfinity)" methodname="InvalidDrainRejectsWithoutPartialMutation" classname="NeonTunnelRunner.SurvivalTests" runstate="Runnable" seed="958588042" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.000353" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1168" name="InvalidDrainRejectsWithoutPartialMutation(float.NegativeInfinity)" fullname="NeonTunnelRunner.SurvivalTests.InvalidDrainRejectsWithoutPartialMutation(float.NegativeInfinity)" methodname="InvalidDrainRejectsWithoutPartialMutation" classname="NeonTunnelRunner.SurvivalTests" runstate="Runnable" seed="914696019" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.000286" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-case id="1175" name="LifeChangesDoNotRoundFuelBackThroughTheFloatSnapshot" fullname="NeonTunnelRunner.SurvivalTests.LifeChangesDoNotRoundFuelBackThroughTheFloatSnapshot" methodname="LifeChangesDoNotRoundFuelBackThroughTheFloatSnapshot" classname="NeonTunnelRunner.SurvivalTests" runstate="Runnable" seed="1234621549" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.001040" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1174" name="RestorationClampsTheAuthoritativeResource" fullname="NeonTunnelRunner.SurvivalTests.RestorationClampsTheAuthoritativeResource" classname="NeonTunnelRunner.SurvivalTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.003049" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1171" name="RestorationClampsTheAuthoritativeResource(95.0f,30.0f,100.0f)" fullname="NeonTunnelRunner.SurvivalTests.RestorationClampsTheAuthoritativeResource(95.0f,30.0f,100.0f)" methodname="RestorationClampsTheAuthoritativeResource" classname="NeonTunnelRunner.SurvivalTests" runstate="Runnable" seed="1758272995" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.000686" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1172" name="RestorationClampsTheAuthoritativeResource(100.0f,30.0f,100.0f)" fullname="NeonTunnelRunner.SurvivalTests.RestorationClampsTheAuthoritativeResource(100.0f,30.0f,100.0f)" methodname="RestorationClampsTheAuthoritativeResource" classname="NeonTunnelRunner.SurvivalTests" runstate="Runnable" seed="1826496913" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.000226" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1173" name="RestorationClampsTheAuthoritativeResource(10.0f,30.0f,40.0f)" fullname="NeonTunnelRunner.SurvivalTests.RestorationClampsTheAuthoritativeResource(10.0f,30.0f,40.0f)" methodname="RestorationClampsTheAuthoritativeResource" classname="NeonTunnelRunner.SurvivalTests" runstate="Runnable" seed="862806721" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.000354" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-case id="1170" name="ZeroDrainIsAnExactNoOp" fullname="NeonTunnelRunner.SurvivalTests.ZeroDrainIsAnExactNoOp" methodname="ZeroDrainIsAnExactNoOp" classname="NeonTunnelRunner.SurvivalTests" runstate="Runnable" seed="1690522754" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.000653" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="1176" name="SweptBoundsTests" fullname="NeonTunnelRunner.SweptBoundsTests" classname="NeonTunnelRunner.SweptBoundsTests" runstate="Runnable" testcasecount="13" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.215330" total="13" passed="13" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="ParameterizedMethod" id="1181" name="CrossingWithDisjointEndpointsReturnsRelativeTimeOfImpact" fullname="NeonTunnelRunner.SweptBoundsTests.CrossingWithDisjointEndpointsReturnsRelativeTimeOfImpact" classname="NeonTunnelRunner.SweptBoundsTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.005088" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1177" name="CrossingWithDisjointEndpointsReturnsRelativeTimeOfImpact(22.0f,0.0f)" fullname="NeonTunnelRunner.SweptBoundsTests.CrossingWithDisjointEndpointsReturnsRelativeTimeOfImpact(22.0f,0.0f)" methodname="CrossingWithDisjointEndpointsReturnsRelativeTimeOfImpact" classname="NeonTunnelRunner.SweptBoundsTests" runstate="Runnable" seed="916824302" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.001491" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1178" name="CrossingWithDisjointEndpointsReturnsRelativeTimeOfImpact(50.0f,0.0f)" fullname="NeonTunnelRunner.SweptBoundsTests.CrossingWithDisjointEndpointsReturnsRelativeTimeOfImpact(50.0f,0.0f)" methodname="CrossingWithDisjointEndpointsReturnsRelativeTimeOfImpact" classname="NeonTunnelRunner.SweptBoundsTests" runstate="Runnable" seed="579724523" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.000180" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1179" name="CrossingWithDisjointEndpointsReturnsRelativeTimeOfImpact(22.0f,8.0f)" fullname="NeonTunnelRunner.SweptBoundsTests.CrossingWithDisjointEndpointsReturnsRelativeTimeOfImpact(22.0f,8.0f)" methodname="CrossingWithDisjointEndpointsReturnsRelativeTimeOfImpact" classname="NeonTunnelRunner.SweptBoundsTests" runstate="Runnable" seed="1124224102" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.000219" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1180" name="CrossingWithDisjointEndpointsReturnsRelativeTimeOfImpact(50.0f,8.0f)" fullname="NeonTunnelRunner.SweptBoundsTests.CrossingWithDisjointEndpointsReturnsRelativeTimeOfImpact(50.0f,8.0f)" methodname="CrossingWithDisjointEndpointsReturnsRelativeTimeOfImpact" classname="NeonTunnelRunner.SweptBoundsTests" runstate="Runnable" seed="311510500" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.000191" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-case id="1187" name="InitialOverlapAndEqualMotionHaveTimeZero" fullname="NeonTunnelRunner.SweptBoundsTests.InitialOverlapAndEqualMotionHaveTimeZero" methodname="InitialOverlapAndEqualMotionHaveTimeZero" classname="NeonTunnelRunner.SweptBoundsTests" runstate="Runnable" seed="1216538722" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.000788" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1188" name="NearZeroRelativeAxisOutsideSlabMisses" fullname="NeonTunnelRunner.SweptBoundsTests.NearZeroRelativeAxisOutsideSlabMisses" methodname="NearZeroRelativeAxisOutsideSlabMisses" classname="NeonTunnelRunner.SweptBoundsTests" runstate="Runnable" seed="1838732262" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.000461" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1191" name="NegativeOrNonFiniteBoundsFailVisibly" fullname="NeonTunnelRunner.SweptBoundsTests.NegativeOrNonFiniteBoundsFailVisibly" methodname="NegativeOrNonFiniteBoundsFailVisibly" classname="NeonTunnelRunner.SweptBoundsTests" runstate="Runnable" seed="1694399654" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.001751" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1186" name="ParallelAxesIncludeExactGrazing" fullname="NeonTunnelRunner.SweptBoundsTests.ParallelAxesIncludeExactGrazing" classname="NeonTunnelRunner.SweptBoundsTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.103542" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1182" name="ParallelAxesIncludeExactGrazing(0.0f,True)" fullname="NeonTunnelRunner.SweptBoundsTests.ParallelAxesIncludeExactGrazing(0.0f,True)" methodname="ParallelAxesIncludeExactGrazing" classname="NeonTunnelRunner.SweptBoundsTests" runstate="Runnable" seed="1174004158" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.004487" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1183" name="ParallelAxesIncludeExactGrazing(1.95f,True)" fullname="NeonTunnelRunner.SweptBoundsTests.ParallelAxesIncludeExactGrazing(1.95f,True)" methodname="ParallelAxesIncludeExactGrazing" classname="NeonTunnelRunner.SweptBoundsTests" runstate="Runnable" seed="1119378452" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.000548" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1184" name="ParallelAxesIncludeExactGrazing(1.9501f,False)" fullname="NeonTunnelRunner.SweptBoundsTests.ParallelAxesIncludeExactGrazing(1.9501f,False)" methodname="ParallelAxesIncludeExactGrazing" classname="NeonTunnelRunner.SweptBoundsTests" runstate="Runnable" seed="552939660" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.000444" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1185" name="ParallelAxesIncludeExactGrazing(3.2f,False)" fullname="NeonTunnelRunner.SweptBoundsTests.ParallelAxesIncludeExactGrazing(3.2f,False)" methodname="ParallelAxesIncludeExactGrazing" classname="NeonTunnelRunner.SweptBoundsTests" runstate="Runnable" seed="1830468547" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.001073" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-case id="1190" name="TargetMovingAwayFasterMisses" fullname="NeonTunnelRunner.SweptBoundsTests.TargetMovingAwayFasterMisses" methodname="TargetMovingAwayFasterMisses" classname="NeonTunnelRunner.SweptBoundsTests" runstate="Runnable" seed="786700003" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.001417" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1189" name="ThinBoxAndLateralCrossingDoNotNeedEndpointOverlap" fullname="NeonTunnelRunner.SweptBoundsTests.ThinBoxAndLateralCrossingDoNotNeedEndpointOverlap" methodname="ThinBoxAndLateralCrossingDoNotNeedEndpointOverlap" classname="NeonTunnelRunner.SweptBoundsTests" runstate="Runnable" seed="1672054127" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.001700" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="1192" name="VfxAssetTests" fullname="NeonTunnelRunner.VfxAssetTests" classname="NeonTunnelRunner.VfxAssetTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.027820" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1193" name="EffectAssetsAreColliderFreeLocalAndWithinTheirParticleBudgets" fullname="NeonTunnelRunner.VfxAssetTests.EffectAssetsAreColliderFreeLocalAndWithinTheirParticleBudgets" methodname="EffectAssetsAreColliderFreeLocalAndWithinTheirParticleBudgets" classname="NeonTunnelRunner.VfxAssetTests" runstate="Runnable" seed="475826192" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.009940" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1195" name="ExhaustRemainsAttachedToBothExistingPivotsWithAtMost160Particles" fullname="NeonTunnelRunner.VfxAssetTests.ExhaustRemainsAttachedToBothExistingPivotsWithAtMost160Particles" methodname="ExhaustRemainsAttachedToBothExistingPivotsWithAtMost160Particles" classname="NeonTunnelRunner.VfxAssetTests" runstate="Runnable" seed="1603207469" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.001359" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1194" name="SharedParticleMaterialsProvideHdrAdditiveAndAlphaBlendingWithoutDepthWrites" fullname="NeonTunnelRunner.VfxAssetTests.SharedParticleMaterialsProvideHdrAdditiveAndAlphaBlendingWithoutDepthWrites" methodname="SharedParticleMaterialsProvideHdrAdditiveAndAlphaBlendingWithoutDepthWrites" classname="NeonTunnelRunner.VfxAssetTests" runstate="Runnable" seed="8337344" result="Passed" start-time="2026-11-07 19:21:55Z" end-time="2026-11-07 19:21:55Z" duration="0.012433" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[Saving results to: /home/alireza/.config/unity3d/DefaultCompany/NeonTunnelRunner/TestResults.xml
+]]></output>
+          </test-case>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

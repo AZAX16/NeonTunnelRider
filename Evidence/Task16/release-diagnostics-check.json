@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "managedPipelineFiles": [
+    "Unity.RenderPipelines.Core.Runtime.dll",
+    "Unity.RenderPipelines.Universal.Shaders.dll",
+    "Unity.RenderPipelines.Universal.2D.Runtime.dll",
+    "Unity.RenderPipelines.Core.ShaderLibrary.dll",
+    "Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll",
+    "Unity.RenderPipelines.Core.Runtime.Shared.dll",
+    "Unity.RenderPipelines.Universal.Config.Runtime.dll",
+    "Unity.RenderPipelines.Universal.Runtime.dll",
+    "Unity.Pipeline.Attributes.dll",
+    "Unity.RenderPipeline.Universal.ShaderLibrary.dll",
+    "Unity.RenderPipelines.GPUDriven.Runtime.dll",
+    "Unity.InternalAPIEngineBridge.RenderPipelines.Core.Runtime.Shared.dll"
+  ],
+  "runtimeDriverAssemblyPresent": false,
+  "note": "Only Unity.Pipeline.Attributes.dll emitted; Unity.Pipeline runtime server/driver assembly is absent from non-Development release. boot.config wait-for-native-debugger=0 and no profiler auto-connect option."
+}

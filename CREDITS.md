@@ -9,7 +9,7 @@ Tasks 01–15, 2026-10-29–2026-11-07. This ledger records actual work; it is e
 | OpenAI Codex | Task 01 foundation; Task 02 core lifecycle; Task 03 action routing, three-lane movement and primitive hovercar; Task 04 bounded pooling; Task 05 pooled road prefabs, endless coverage, floating origin, safe-pattern data, integration tests, Editor recipes and verification documentation; Task 06 pooled obstacle grayboxes, inheritance, safe moving envelopes, relative swept contacts, damage/grace, integration tests and evidence; Task 07 pooled coin/fuel grayboxes, typed rewards, authoritative score, deterministic reachable fuel reservations, tests and verification; Task 08 fuel drain, deterministic terminal resolution, player damage flash, ordered reset integration, survival/contact/lifecycle tests and saved-scene evidence; Task 09 capped speed/density, authoritative best and lifecycle PlayerPrefs storage, seed/lifecycle regression tests and isolated fresh-process verification | https://chatgpt.com/codex | AI assistance disclosed; student reviews work under course policy |
 | Supplied HW2 assignment and ignore file | Requirements and exact ignore rules | `Preproduction/source/HW2.pdf`; `Preproduction/source/assignment.gitignore` | Course-provided material; original files preserved |
 | Supplied preproduction package | Architecture, task plan, requirements and reference concepts; artwork stays outside Assets | `Preproduction/docs/`; `Preproduction/planning/`; `Preproduction/art/`; `Preproduction/planning/sources.md` | Supplied reference material; its ledger attributes generated concepts to OpenAI image generation; no task 01 production art generated |
-| Unity Universal 3D template | Existing URP assets, input actions, SampleScene and tutorial content retained; URP assets moved with GUIDs preserved | `/home/alireza/Unity/Hub/Editor/6000.6.3f1/Editor/Data/Resources/PackageManager/ProjectTemplates/com.unity.template.urp-blank-17.2.1.tgz` | Installed Unity template, subject to Unity's terms; template archive version is separate from resolved URP 17.6.0 |
+| Unity Universal 3D template | Existing URP assets, input actions, SampleScene and tutorial content retained; URP assets moved with GUIDs preserved | `Unity 6000.6.3f1 installation: Editor/Data/Resources/PackageManager/ProjectTemplates/com.unity.template.urp-blank-17.2.1.tgz` | Installed Unity template, subject to Unity's terms; template archive version is separate from resolved URP 17.6.0 |
 | Unity Technologies, official Codex plugin | Installed version 0.1.8-beta; CLI and package-management workflow instructions | https://github.com/Unity-Technologies/unity-agent-plugin | Installed `LICENSE.md` / plugin manifest; Unity Companion License reference |
 | Unity Pipeline package | Installed package documentation/API and live command discovery, version 0.9.1-exp.1 | https://docs.unity3d.com/Packages/com.unity.pipeline@0.9/manual/index.html | Unity package terms; actual instructions read from `Library/PackageCache/com.unity.pipeline@363b8bb9e91d/Documentation~/` |
 | Unity API and package sources | Installed 6000.6.3f1 API XML, URP 17.6.0 implementation, Input System action/focus APIs and InputTestFixture, uGUI/TMP and Test Framework APIs | https://unity.com/releases/editor/whats-new/6000.6.3f1 ; https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@17.6/manual/index.html ; https://docs.unity3d.com/Packages/com.unity.inputsystem@1.20/manual/index.html | Local installed sources were inspected; these are source addresses, not claims of online browsing |
@@ -51,3 +51,139 @@ Task 16 delivery, 2026-11-07: Alireza Pooyan (علیرضا پویان), student 
 Near-miss provenance investigation: the supplied WAV contains 264600 stereo PCM16 frames at 44100 Hz (6.000 s), SHA-256 `bb62c20d38f50f9a141e1530c410595acdf366ffea7611ac12d4a71ca954a732`. Local project/audio notes attribute it to the owner; no original download address or permission document was found. Public catalog identity checked on 2026-11-07: **POLTERGST & RØØTZ — Into The Void (feat. Jordan Lindley)**, ℗ 2025 Spinnin’ Records, https://music.apple.com/us/album/into-the-void-feat-jordan-lindley-single/1811467188 ; official-audio search result: https://www.youtube.com/watch?v=vm5Do0HZuzU (direct fetch was throttled). These identify the release and do not establish which recording supplied this WAV, the owner's download source, or redistribution permission. **Original source URL and redistribution license/permission remain UNRESOLVED.** The excerpt is retained as requested; no license or legal clearance is asserted. Student must supply provenance and permission before course delivery.
 
 Persian report font: installed DejaVu Sans and DejaVu Sans Bold, https://dejavu-fonts.github.io/ ; license text supplied with the OS in `/usr/share/doc/fonts-dejavu-core/copyright`. Font embedded by Chromium PDF printing; no production game font was changed. Chromium/Google Chrome performs Persian shaping and RTL layout. Report screenshots are unedited runtime pixels; fixture staging and Editor origin are disclosed individually.
+
+
+Bundled game font license (verbatim from `Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt`):
+
+```text
+Digitized data copyright (c) 2010 Google Corporation
+	with Reserved Font Arimo, Tinos and Cousine.
+Copyright (c) 2012 Red Hat, Inc.
+	with Reserved Font Name Liberation.
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL
+
+-----------------------------------------------------------
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide development of collaborative font projects, to support the font creation efforts of academic and linguistic communities, and to provide a free and open framework in which fonts may be shared and improved in partnership with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and redistributed freely as long as they are not sold by themselves. The fonts, including any derivative works, can be bundled, embedded, redistributed and/or sold with any software provided that any reserved names are not used by derivative works. The fonts and derivatives, however, cannot be released under any other type of license. The requirement for fonts to remain under this license does not apply to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+"Font Software" refers to the set of files released by the Copyright Holder(s) under this license and clearly marked as such. This may include source files, build scripts and documentation.
+
+"Reserved Font Name" refers to any names specified as such after the copyright statement(s).
+
+"Original Version" refers to the collection of Font Software components as distributed by the Copyright Holder(s).
+
+"Modified Version" refers to any derivative made by adding to, deleting, or substituting -- in part or in whole -- any of the components of the Original Version, by changing formats or by porting the Font Software to a new environment.
+
+"Author" refers to any designer, engineer, programmer, technical writer or other person who contributed to the Font Software.
+
+PERMISSION & CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining a copy of the Font Software, to use, study, copy, merge, embed, modify, redistribute, and sell modified and unmodified copies of the Font Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components, in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled, redistributed and/or sold with any software, provided that each copy contains the above copyright notice and this license. These can be included either as stand-alone text files, human-readable headers or in the appropriate machine-readable metadata fields within text or binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font Name(s) unless explicit written permission is granted by the corresponding Copyright Holder. This restriction only applies to the primary font name as presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font Software shall not be used to promote, endorse or advertise any Modified Version, except to acknowledge the contribution(s) of the Copyright Holder(s) and the Author(s) or with their explicit written permission.
+
+5) The Font Software, modified or unmodified, in part or in whole, must be distributed entirely under this license, and must not be distributed under any other license. The requirement for fonts to remain under this license does not apply to any document created using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM OTHER DEALINGS IN THE FONT SOFTWARE.
+```
+
+Report font license (verbatim installed DejaVu copyright/permission notice):
+
+```text
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: DejaVu fonts
+Upstream-Author: Stepan Roh <src@users.sourceforge.net> (original author),
+                  see /usr/share/doc/fonts-dejavu-core/AUTHORS for full list
+Source: https://dejavu-fonts.github.io/
+
+Files: *
+Copyright: Copyright (c) 2003 by Bitstream, Inc. All Rights Reserved. 
+ Bitstream Vera is a trademark of Bitstream, Inc.
+ DejaVu changes are in public domain.
+License: bitstream-vera
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of the fonts accompanying this license ("Fonts") and associated
+ documentation files (the "Font Software"), to reproduce and distribute the
+ Font Software, including without limitation the rights to use, copy, merge,
+ publish, distribute, and/or sell copies of the Font Software, and to permit
+ persons to whom the Font Software is furnished to do so, subject to the
+ following conditions:
+ .
+ The above copyright and trademark notices and this permission notice shall
+ be included in all copies of one or more of the Font Software typefaces.
+ .
+ The Font Software may be modified, altered, or added to, and in particular
+ the designs of glyphs or characters in the Fonts may be modified and
+ additional glyphs or characters may be added to the Fonts, only if the fonts
+ are renamed to names not containing either the words "Bitstream" or the word
+ "Vera".
+ .
+ This License becomes null and void to the extent applicable to Fonts or Font
+ Software that has been modified and is distributed under the "Bitstream
+ Vera" names.
+ .
+ The Font Software may be sold as part of a larger software package but no
+ copy of one or more of the Font Software typefaces may be sold by itself.
+ .
+ THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+ OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF COPYRIGHT, PATENT,
+ TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL BITSTREAM OR THE GNOME
+ FOUNDATION BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING
+ ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES,
+ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
+ THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM OTHER DEALINGS IN THE
+ FONT SOFTWARE.
+ .
+ Except as contained in this notice, the names of Gnome, the Gnome
+ Foundation, and Bitstream Inc., shall not be used in advertising or
+ otherwise to promote the sale, use or other dealings in this Font Software
+ without prior written authorization from the Gnome Foundation or Bitstream
+ Inc., respectively. For further information, contact: fonts at gnome dot
+ org.
+
+Files: debian/*
+Copyright: (C) 2005-2006 Peter Cernak <pce@users.sourceforge.net> 
+           (C) 2006-2011 Davide Viti <zinosat@tiscali.it>
+           (C) 2011-2013 Christian Perrier <bubulle@debian.org>
+           (C) 2013 Fabian Greffrath <fabian+debian@greffrath.com>
+License: GPL-2+
+ This program is free software; you can redistribute it
+ and/or modify it under the terms of the GNU General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later
+ version.
+ .
+ This program is distributed in the hope that it will be
+ useful, but WITHOUT ANY WARRANTY; without even the implied
+ warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+ PURPOSE.  See the GNU General Public License for more
+ details.
+ .
+ You should have received a copy of the GNU General Public
+ License along with this package; if not, write to the Free
+ Software Foundation, Inc., 51 Franklin St, Fifth Floor,
+ Boston, MA  02110-1301 USA
+ .
+ On Debian systems, the full text of the GNU General Public
+ License version 2 can be found in the file
+ /usr/share/common-licenses/GPL-2'.
+
+```

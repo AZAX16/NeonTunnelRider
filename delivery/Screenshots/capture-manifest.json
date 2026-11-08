@@ -1,0 +1,157 @@
+{
+  "files": [
+    {
+      "path": "NearMiss/beside-no-effect.png",
+      "sha256": "e35fb99e02effe79878679c5ac9bc8ee2193a53ec9f69b7dc2e05cf44f7e0be2",
+      "bytes": 265073,
+      "origin": "Unity Editor Play Mode on Linux; genuine unedited runtime screenshot",
+      "releaseSourceCommit": "e97572aba25d8bcff7e336c4bf6ef8b6e3c540fc",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "NearMiss/early-exit-cancelled.png",
+      "sha256": "24488575befb9a86f8c9345f983c80a1a76db7ac105537f8c1b8e49c8f3fa74f",
+      "bytes": 284934,
+      "origin": "Unity Editor Play Mode on Linux; genuine unedited runtime screenshot",
+      "releaseSourceCommit": "e97572aba25d8bcff7e336c4bf6ef8b6e3c540fc",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "NearMiss/earned-aftermath.png",
+      "sha256": "de8f870cbabe36c1a1741acde8eff794f15ab7a55c47df6390c6ccb379757f98",
+      "bytes": 265528,
+      "origin": "Unity Editor Play Mode on Linux; genuine unedited runtime screenshot",
+      "releaseSourceCommit": "e97572aba25d8bcff7e336c4bf6ef8b6e3c540fc",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "NearMiss/hit-cancelled.png",
+      "sha256": "36b0b2bac8754930acf7f730ca794377c02e5a21fdb01a8a257ab1eea88544b0",
+      "bytes": 306958,
+      "origin": "Unity Editor Play Mode on Linux; genuine unedited runtime screenshot",
+      "releaseSourceCommit": "e97572aba25d8bcff7e336c4bf6ef8b6e3c540fc",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "NearMiss/holding-behind.png",
+      "sha256": "a6f563ee5f12ceee593157bc4a808a795bb528dbbbfaf1edadbe70766c26d2e4",
+      "bytes": 276909,
+      "origin": "Unity Editor Play Mode on Linux; genuine unedited runtime screenshot",
+      "releaseSourceCommit": "e97572aba25d8bcff7e336c4bf6ef8b6e3c540fc",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "editor-coin-pickup.png",
+      "sha256": "017f992cd3021fff4c0489db77e0261295f9f35762455256b3fc4713643e280b",
+      "bytes": 802126,
+      "origin": "Unity Editor Play Mode on Linux; genuine unedited runtime screenshot",
+      "releaseSourceCommit": "e97572aba25d8bcff7e336c4bf6ef8b6e3c540fc",
+      "methodEvidence": "Evidence/Task16/effects-capture-result.json",
+      "width": 3840,
+      "height": 2160
+    },
+    {
+      "path": "editor-collision-sparks.png",
+      "sha256": "a525bb57e8c20b1582b5d189913c84abc27ba7a90cdbc9f65b9d24e059e5eb8b",
+      "bytes": 252597,
+      "origin": "Unity Editor Play Mode on Linux; genuine unedited runtime screenshot",
+      "releaseSourceCommit": "e97572aba25d8bcff7e336c4bf6ef8b6e3c540fc",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "editor-fireworks.png",
+      "sha256": "6356abb76327f8422f87ebee87a6532e182bdf19f38c401bf7415426277f773d",
+      "bytes": 747963,
+      "origin": "Unity Editor Play Mode on Linux; genuine unedited runtime screenshot",
+      "releaseSourceCommit": "e97572aba25d8bcff7e336c4bf6ef8b6e3c540fc",
+      "methodEvidence": "Evidence/Task16/effects-capture-result.json",
+      "width": 3840,
+      "height": 2160
+    },
+    {
+      "path": "editor-fuel-pickup.png",
+      "sha256": "b84e2c935034178eae129a9353c00fe818e67694e5e15134c42994a545a53f64",
+      "bytes": 779752,
+      "origin": "Unity Editor Play Mode on Linux; genuine unedited runtime screenshot",
+      "releaseSourceCommit": "e97572aba25d8bcff7e336c4bf6ef8b6e3c540fc",
+      "methodEvidence": "Evidence/Task16/effects-capture-result.json",
+      "width": 3840,
+      "height": 2160
+    },
+    {
+      "path": "editor-game-over.png",
+      "sha256": "27ad723a24f5c18b41b91e4d70176e37df827ef7e49ee0212d6381fe0c211d93",
+      "bytes": 206735,
+      "origin": "Unity Editor Play Mode on Linux; genuine unedited runtime screenshot",
+      "releaseSourceCommit": "e97572aba25d8bcff7e336c4bf6ef8b6e3c540fc",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "editor-high-speed-neon.png",
+      "sha256": "255bcde5b4bafed5f44ed4369422d551613ddb37f6aaabc1b11dc85d5bd70906",
+      "bytes": 328595,
+      "origin": "Unity Editor Play Mode on Linux; genuine unedited runtime screenshot",
+      "releaseSourceCommit": "e97572aba25d8bcff7e336c4bf6ef8b6e3c540fc",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "editor-main-menu.png",
+      "sha256": "4ec5c03389aa3bc38714f32cd357944bcbfed495b37ff1bb3fb1d8b017bbfc84",
+      "bytes": 140126,
+      "origin": "Unity Editor Play Mode on Linux; genuine unedited runtime screenshot",
+      "releaseSourceCommit": "e97572aba25d8bcff7e336c4bf6ef8b6e3c540fc",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "editor-open-road-low-speed.png",
+      "sha256": "31a633dad5e74244afdb1433e3b72998a09c01171c032d74afb65a109eb6d73a",
+      "bytes": 272620,
+      "origin": "Unity Editor Play Mode on Linux; genuine unedited runtime screenshot",
+      "releaseSourceCommit": "e97572aba25d8bcff7e336c4bf6ef8b6e3c540fc",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "editor-pause.png",
+      "sha256": "5ccd3169a89bba2221b66110f63de885e839f59251d860b640340847db137d88",
+      "bytes": 212550,
+      "origin": "Unity Editor Play Mode on Linux; genuine unedited runtime screenshot",
+      "releaseSourceCommit": "e97572aba25d8bcff7e336c4bf6ef8b6e3c540fc",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "editor-rear-warning.png",
+      "sha256": "1e4536f7b667a7a3f28296624f812e88923304b8de87be887743f0fe46f726ce",
+      "bytes": 291239,
+      "origin": "Unity Editor Play Mode on Linux; genuine unedited runtime screenshot",
+      "releaseSourceCommit": "e97572aba25d8bcff7e336c4bf6ef8b6e3c540fc",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "editor-tunnel.png",
+      "sha256": "cb391d73fcfeb5e004ba236ac981eeb4495d57d75df14df1748f5e4c7d42f5fc",
+      "bytes": 283580,
+      "origin": "Unity Editor Play Mode on Linux; genuine unedited runtime screenshot",
+      "releaseSourceCommit": "e97572aba25d8bcff7e336c4bf6ef8b6e3c540fc",
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "methodEvidence": [
+    "Evidence/Task16/capture-result.json",
+    "Evidence/Task16/near-miss-capture-result.json",
+    "Evidence/Task16/effects-capture-result.json"
+  ],
+  "scope": "Genuine supplementary Editor captures on Linux at the dimensions recorded per image. Controlled staging disclosed. No Windows standalone capture."
+}

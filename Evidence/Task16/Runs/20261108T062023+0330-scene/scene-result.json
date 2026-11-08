@@ -1,0 +1,414 @@
+{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {
+      "file": "/tmp/task15-script-5fo8a1ce/Task14Audit.cs",
+      "entry": "NeonTunnelRunner.Task14Audit.Inspect",
+      "timeout": "60"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 732,
+      "executeMs": 461,
+      "assemblyName": "PipelineRunScript_Task14Audit_a00f1c8cb6ee42c2b9698f079e244936",
+      "success": true,
+      "result": {
+        "scene": "Assets/NeonTunnelRunner/Scenes/Game.unity",
+        "sceneDirty": false,
+        "unity": "6000.6.3f1",
+        "canvas": "UI/RunnerCanvas",
+        "renderMode": 0,
+        "scaler": {},
+        "hud": {
+          "gameManager": "Systems",
+          "hudPanel": "HUD",
+          "speedText": "UI/RunnerCanvas/HUD/SpeedBlock/SpeedValue",
+          "fuelText": "UI/RunnerCanvas/HUD/FuelBlock/FuelValue",
+          "fuelLabel": "UI/RunnerCanvas/HUD/FuelBlock/FuelLabel",
+          "livesText": "UI/RunnerCanvas/HUD/LivesBlock/LivesValue",
+          "scoreText": "UI/RunnerCanvas/HUD/ScoreBlock/ScoreValue",
+          "bestText": "UI/RunnerCanvas/HUD/ScoreBlock/BestValue",
+          "fuelFill": "UI/RunnerCanvas/HUD/FuelBlock/FuelTrack/FuelFill",
+          "lifeIcons.Array.data[0]": "UI/RunnerCanvas/HUD/LivesBlock/Life1",
+          "lifeIcons.Array.data[1]": "UI/RunnerCanvas/HUD/LivesBlock/Life2",
+          "lifeIcons.Array.data[2]": "UI/RunnerCanvas/HUD/LivesBlock/Life3",
+          "rearHazards.Array.data[0]": "UI/RunnerCanvas/HUD/RearTrafficWarnings/Left",
+          "rearHazards.Array.data[1]": "UI/RunnerCanvas/HUD/RearTrafficWarnings/Centre",
+          "rearHazards.Array.data[2]": "UI/RunnerCanvas/HUD/RearTrafficWarnings/Right"
+        },
+        "menus": {
+          "gameManager": "Systems",
+          "eventSystem": "EventSystem",
+          "mainPanel": "UI/RunnerCanvas/MainMenu",
+          "pausePanel": "UI/RunnerCanvas/PauseMenu",
+          "overPanel": "UI/RunnerCanvas/GameOver",
+          "startButton": "UI/RunnerCanvas/MainMenu/Card/Start",
+          "quitButton": "UI/RunnerCanvas/MainMenu/Card/Quit",
+          "resumeButton": "UI/RunnerCanvas/PauseMenu/Card/Resume",
+          "pauseRestartButton": "UI/RunnerCanvas/PauseMenu/Card/Restart",
+          "mainMenuButton": "UI/RunnerCanvas/PauseMenu/Card/MainMenu",
+          "overRestartButton": "UI/RunnerCanvas/GameOver/Card/Restart",
+          "finalScoreText": "UI/RunnerCanvas/GameOver/Card/FinalScore",
+          "finalBestText": "UI/RunnerCanvas/GameOver/Card/FinalBest",
+          "reasonText": "UI/RunnerCanvas/GameOver/Card/Reason",
+          "statusText": "UI/RunnerCanvas/ValidationStatus"
+        },
+        "playerAssemblies": [
+          {
+            "name": "NeonTunnelRunner.Runtime",
+            "references": [
+              "Unity.InputSystem",
+              "UnityEngine.UI",
+              "Unity.TextMeshPro"
+            ]
+          },
+          {
+            "name": "NeonTunnelRunner.PlayModeTests",
+            "references": [
+              "NeonTunnelRunner.Runtime",
+              "UnityEngine.TestRunner",
+              "Unity.InputSystem",
+              "Unity.InputSystem.TestFramework",
+              "UnityEngine.UI",
+              "Unity.TextMeshPro"
+            ]
+          }
+        ],
+        "eventSystems": 1,
+        "modules": [
+          "InputSystemUIInputModule"
+        ],
+        "actions": {
+          "m_XRTrackingOrigin": null
+        },
+        "sourceAsset": "Assets/NeonTunnelRunner/Input/Runner.inputactions",
+        "buttons": [
+          {
+            "path": "UI/RunnerCanvas/MainMenu/Card/Start",
+            "interactable": true,
+            "persistentListeners": 0,
+            "navigation": "Explicit",
+            "up": "Quit",
+            "down": "Quit"
+          },
+          {
+            "path": "UI/RunnerCanvas/MainMenu/Card/Quit",
+            "interactable": true,
+            "persistentListeners": 0,
+            "navigation": "Explicit",
+            "up": "Start",
+            "down": "Start"
+          },
+          {
+            "path": "UI/RunnerCanvas/PauseMenu/Card/Resume",
+            "interactable": true,
+            "persistentListeners": 0,
+            "navigation": "Explicit",
+            "up": "MainMenu",
+            "down": "Restart"
+          },
+          {
+            "path": "UI/RunnerCanvas/PauseMenu/Card/Restart",
+            "interactable": true,
+            "persistentListeners": 0,
+            "navigation": "Explicit",
+            "up": "Resume",
+            "down": "MainMenu"
+          },
+          {
+            "path": "UI/RunnerCanvas/PauseMenu/Card/MainMenu",
+            "interactable": true,
+            "persistentListeners": 0,
+            "navigation": "Explicit",
+            "up": "Restart",
+            "down": "Resume"
+          },
+          {
+            "path": "UI/RunnerCanvas/GameOver/Card/Restart",
+            "interactable": true,
+            "persistentListeners": 0,
+            "navigation": "Explicit",
+            "up": "Restart",
+            "down": "Restart"
+          }
+        ],
+        "text": [
+          {
+            "path": "UI/RunnerCanvas/HUD/ScoreBlock/ScoreLabel",
+            "text": "SCORE",
+            "fontSize": 24,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/HUD/ScoreBlock/ScoreValue",
+            "text": "0",
+            "fontSize": 48,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/HUD/ScoreBlock/BestLabel",
+            "text": "BEST",
+            "fontSize": 24,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/HUD/ScoreBlock/BestValue",
+            "text": "0",
+            "fontSize": 36,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/HUD/LivesBlock/LivesLabel",
+            "text": "LIVES",
+            "fontSize": 24,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/HUD/LivesBlock/LivesValue",
+            "text": "3 / 3",
+            "fontSize": 36,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/HUD/SpeedBlock/SpeedLabel",
+            "text": "SPEED",
+            "fontSize": 24,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/HUD/SpeedBlock/SpeedValue",
+            "text": "0 km/h",
+            "fontSize": 48,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/HUD/FuelBlock/FuelLabel",
+            "text": "FUEL",
+            "fontSize": 24,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/HUD/FuelBlock/FuelValue",
+            "text": "100%",
+            "fontSize": 36,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/HUD/RearTrafficWarnings/Left/Exclamation",
+            "text": "!",
+            "fontSize": 50,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/HUD/RearTrafficWarnings/Left/Label",
+            "text": "REAR / LEFT",
+            "fontSize": 20,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/HUD/RearTrafficWarnings/Centre/Exclamation",
+            "text": "!",
+            "fontSize": 50,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/HUD/RearTrafficWarnings/Centre/Label",
+            "text": "REAR / CENTRE",
+            "fontSize": 20,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/HUD/RearTrafficWarnings/Right/Exclamation",
+            "text": "!",
+            "fontSize": 50,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/HUD/RearTrafficWarnings/Right/Label",
+            "text": "REAR / RIGHT",
+            "fontSize": 20,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/MainMenu/Card/Kicker",
+            "text": "RETRO VECTOR / ENDLESS ARCADE",
+            "fontSize": 24,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/MainMenu/Card/Title",
+            "text": "NEON TUNNEL\nRUNNER",
+            "fontSize": 68,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/MainMenu/Card/Start/Label",
+            "text": "START",
+            "fontSize": 32,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/MainMenu/Card/Quit/Label",
+            "text": "QUIT",
+            "fontSize": 32,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/MainMenu/Card/Controls",
+            "text": "A / D OR ARROWS  -  CHANGE LANES\nESC  -  PAUSE",
+            "fontSize": 24,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/PauseMenu/Card/Kicker",
+            "text": "TAKE A BREATH / KEEP YOUR LINE",
+            "fontSize": 24,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/PauseMenu/Card/Title",
+            "text": "PAUSED",
+            "fontSize": 68,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/PauseMenu/Card/Resume/Label",
+            "text": "RESUME",
+            "fontSize": 32,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/PauseMenu/Card/Restart/Label",
+            "text": "RESTART",
+            "fontSize": 32,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/PauseMenu/Card/MainMenu/Label",
+            "text": "MAIN MENU",
+            "fontSize": 32,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/PauseMenu/Card/BackHint",
+            "text": "ESC / BACKSPACE  -  RESUME",
+            "fontSize": 24,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/GameOver/Card/Kicker",
+            "text": "RUN COMPLETE",
+            "fontSize": 24,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/GameOver/Card/Title",
+            "text": "GAME OVER",
+            "fontSize": 68,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/GameOver/Card/Reason",
+            "text": "FUEL EMPTY",
+            "fontSize": 28,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/GameOver/Card/ScoreLabel",
+            "text": "FINAL SCORE",
+            "fontSize": 24,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/GameOver/Card/BestLabel",
+            "text": "BEST",
+            "fontSize": 24,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/GameOver/Card/FinalScore",
+            "text": "0",
+            "fontSize": 44,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/GameOver/Card/FinalBest",
+            "text": "0",
+            "fontSize": 44,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/GameOver/Card/Restart/Label",
+            "text": "RESTART",
+            "fontSize": 32,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/GameOver/Card/SubmitHint",
+            "text": "ENTER  -  RESTART",
+            "fontSize": 24,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          },
+          {
+            "path": "UI/RunnerCanvas/ValidationStatus",
+            "text": "",
+            "fontSize": 24,
+            "font": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+            "raycastTarget": false
+          }
+        ],
+        "sources": 11,
+        "listeners": 1,
+        "masterMixerChange": "User approved retained Master snapshot +4.552889 dB; Task13 captured clipping/listening evidence predates this gain.",
+        "instanceClear": true,
+        "timeScale": 1,
+        "profile": "LinuxDevelopment"
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/home/alireza/NeonTunnelRider/NeonTunnelRunner"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
