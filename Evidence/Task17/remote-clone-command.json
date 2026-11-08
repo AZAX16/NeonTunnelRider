@@ -1,0 +1,18 @@
+{
+  "time_utc": "2026-11-08T04:08:33.459659+00:00",
+  "argv": [
+    "git",
+    "-c",
+    "credential.helper=",
+    "clone",
+    "--single-branch",
+    "--branch",
+    "main",
+    "https://github.com/AZAX16/NeonTunnelRider.git",
+    "/tmp/neon-task17-github-clone-17Pgan/project"
+  ],
+  "anonymous": true,
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "Cloning into '/tmp/neon-task17-github-clone-17Pgan/project'...\nUpdating files:  99% (1725/1742)\nUpdating files: 100% (1742/1742)\nUpdating files: 100% (1742/1742), done.\n"
+}

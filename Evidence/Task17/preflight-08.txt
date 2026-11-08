@@ -1,0 +1,93 @@
+commit d9578524cfa2018b5f04ca7f86155fdae3de995b
+Author: AZAX16 <alireza2pooyan@gmail.com>
+Date:   Sun Nov 8 06:26:40 2026 +0330
+
+    docs: deliver verified Windows package and Persian implementation report
+
+ CREDITS.md                                         |   138 +-
+ Docs/ImplementationReport.fa.md                    |   130 +
+ Docs/Setup/Task16Capture.cs                        |   127 +
+ Docs/Setup/Task16Capture.py                        |    66 +
+ Docs/Setup/Task16EffectsCapture.cs                 |    56 +
+ Docs/Setup/Task16Package.py                        |    94 +
+ Docs/Setup/Task16Report.py                         |    99 +
+ Docs/Verification/16-delivery.md                   |   164 +
+ .../Native/20261108T0232448018500Z/inventory.json  | 16668 +++++++++++++++++++
+ .../20261108T0232448018500Z/native-pointers.json   | 10415 ++++++++++++
+ .../LastBuild.buildreport                          |   Bin 0 -> 787484 bytes
+ .../build-metadata.json                            |  1041 ++
+ .../20261107T224928+0330-tests/editor-status.json  |    20 +
+ .../20261107T224928+0330-tests/run-manifest.json   |   567 +
+ .../20261107T225046+0330-tests/editmode-native.xml |  1150 ++
+ .../editmode-results.json                          |  1155 ++
+ .../editmode-results.xml                           |   168 +
+ .../20261107T225046+0330-tests/editmode-start.json |    37 +
+ .../20261107T225046+0330-tests/editor-status.json  |    20 +
+ .../20261107T225046+0330-tests/playmode-native.xml |  2038 +++
+ .../playmode-results.json                          |  1778 ++
+ .../playmode-results.xml                           |   257 +
+ .../20261107T225046+0330-tests/playmode-start.json |    37 +
+ .../preference-cache-guard.json                    |     8 +
+ .../20261107T225046+0330-tests/run-manifest.json   |   577 +
+ .../20261107T225046+0330-tests/test-summary.json   |    16 +
+ .../Task14Audit-executed.cs                        |    33 +
+ .../20261108T060216+0330-scene/editor-status.json  |    20 +
+ .../preference-cache-guard.json                    |     8 +
+ .../20261108T060216+0330-scene/run-manifest.json   |   561 +
+ .../20261108T060216+0330-scene/scene-result.json   |   414 +
+ .../Task14Audit-executed.cs                        |    33 +
+ .../20261108T062023+0330-scene/editor-status.json  |    20 +
+ .../preference-cache-guard.json                    |     8 +
+ .../20261108T062023+0330-scene/run-manifest.json   |   561 +
+ .../20261108T062023+0330-scene/scene-result.json   |   414 +
+ Evidence/Task16/archive-verification.json          |  1110 ++
+ Evidence/Task16/build-options-native.json          |    30 +
+ Evidence/Task16/capture-attempt2.log               |     1 +
+ Evidence/Task16/capture-dry-run.json               |    27 +
+ Evidence/Task16/capture-result.json                |   177 +
+ Evidence/Task16/capture-viewport.json              |    30 +
+ Evidence/Task16/clone.json                         |     9 +
+ Evidence/Task16/diagnostics.md                     |    10 +
+ Evidence/Task16/effects-capture-result.json        |    53 +
+ Evidence/Task16/final-console.json                 |    38 +
+ Evidence/Task16/final-editor-state.json            |    33 +
+ Evidence/Task16/fresh-import-command.json          |    16 +
+ Evidence/Task16/fresh-import-exit.json             |     1 +
+ Evidence/Task16/fresh-import-log-excerpt.txt       |     3 +
+ Evidence/Task16/fresh-import-reference-summary.txt |    43 +
+ Evidence/Task16/fresh-import-summary.json          |    11 +
+ Evidence/Task16/native-reference-command.json      |    23 +
+ Evidence/Task16/near-miss-capture-result.json      |  2110 +++
+ Evidence/Task16/package-run.log                    |    18 +
+ Evidence/Task16/pdf-inspection.json                |    23 +
+ Evidence/Task16/preservation.json                  |    13 +
+ Evidence/Task16/release-diagnostics-check.json     |    19 +
+ Evidence/Task16/remote-verification.json           |    10 +
+ Evidence/Task16/restore-development-profile.json   |    23 +
+ Evidence/Task16/restore-editor-target.json         |    23 +
+ Evidence/Task16/reviewed-delivery-files.json       |    86 +
+ Evidence/Task16/reviewed-release-files.json        |    58 +
+ Evidence/Task16/supplied-archive-verifier.txt      |     5 +
+ Evidence/Task16/windows-build-command.json         |    23 +
+ ImplementationReport.pdf                           |   Bin 0 -> 3802087 bytes
+ delivery/README-run.txt                            |    70 +
+ delivery/Screenshots/NearMiss/beside-no-effect.png |   Bin 0 -> 265073 bytes
+ .../Screenshots/NearMiss/early-exit-cancelled.png  |   Bin 0 -> 284934 bytes
+ delivery/Screenshots/NearMiss/earned-aftermath.png |   Bin 0 -> 265528 bytes
+ delivery/Screenshots/NearMiss/hit-cancelled.png    |   Bin 0 -> 306958 bytes
+ delivery/Screenshots/NearMiss/holding-behind.png   |   Bin 0 -> 276909 bytes
+ .../NearMiss/successful-attempt-trace.txt          |   205 +
+ delivery/Screenshots/capture-manifest.json         |   157 +
+ delivery/Screenshots/editor-coin-pickup.png        |   Bin 0 -> 802126 bytes
+ delivery/Screenshots/editor-collision-sparks.png   |   Bin 0 -> 252597 bytes
+ delivery/Screenshots/editor-fireworks.png          |   Bin 0 -> 747963 bytes
+ delivery/Screenshots/editor-fuel-pickup.png        |   Bin 0 -> 779752 bytes
+ delivery/Screenshots/editor-game-over.png          |   Bin 0 -> 206735 bytes
+ delivery/Screenshots/editor-high-speed-neon.png    |   Bin 0 -> 328595 bytes
+ delivery/Screenshots/editor-main-menu.png          |   Bin 0 -> 140126 bytes
+ .../Screenshots/editor-open-road-low-speed.png     |   Bin 0 -> 272620 bytes
+ delivery/Screenshots/editor-pause.png              |   Bin 0 -> 212550 bytes
+ delivery/Screenshots/editor-rear-warning.png       |   Bin 0 -> 291239 bytes
+ delivery/Screenshots/editor-tunnel.png             |   Bin 0 -> 283580 bytes
+ delivery/repository-link.txt                       |    10 +
+ 86 files changed, 43365 insertions(+), 1 deletion(-)

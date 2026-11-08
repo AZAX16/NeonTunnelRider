@@ -1,0 +1,8 @@
+.gitignore:5:/[Ll]ibrary/	Library/
+.gitignore:6:/[Tt]emp/	Temp/
+.gitignore:7:/[Oo]bj/	Obj/
+.gitignore:8:/[Bb]uild/	Build/
+.gitignore:9:/[Bb]uilds/	Builds/
+.gitignore:10:/[Ll]ogs/	Logs/
+.gitignore:11:/[Uu]ser[Ss]ettings/	UserSettings/
+.git/info/exclude:9:/*.slnx	NeonTunnelRunner.slnx

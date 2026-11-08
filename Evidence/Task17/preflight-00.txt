@@ -1,0 +1,125 @@
+ M Docs/Audio/README.md
+ M Docs/Verification/03-input-and-player.md
+ M Docs/Verification/06-interactables.md
+ M Docs/Verification/10-camera.md
+ M Docs/Verification/13-audio.md
+ M Docs/Verification/15-integration.md
+ M Evidence/Task15Recovery/README.md
+ M Evidence/Task15Recovery/gate-status.json
+ M Evidence/Task15Recovery/validation-cases.csv
+ M Evidence/requirement-evidence.csv
+ M Preproduction/docs/02-game-design-document.md
+ M Preproduction/docs/03-technical-architecture.md
+ M Preproduction/planning/requirements.json
+?? Assets/_Recovery.meta
+?? Assets/_Recovery/
+?? Docs/Setup/Task15PlayerProbe.cs
+?? Docs/Setup/Task15PointerFollowup.cs
+?? Docs/Setup/Task15ProbeBuild.cs
+?? Docs/Setup/Task15Profile.py
+?? Docs/Setup/Task15ProfilerAudit.cs
+?? Docs/Setup/Task15RecordedReplay.cs
+?? Docs/Setup/Task15SummarizeProfile.py
+?? Evidence/Task15/Runs/20261107T103132+0330-scene/
+?? Evidence/Task15/Runs/20261107T103144+0330-tests/
+?? Evidence/Task15/Runs/20261107T103330+0330-fairness/
+?? Evidence/Task15/Runs/20261107T103727+0330-smoke/
+?? Evidence/Task15/Runs/20261107T104210+0330-smoke/
+?? Evidence/Task15/Runs/20261107T104654+0330-build/
+?? Evidence/Task15/Runs/20261107T145944+0330-tests/
+?? Evidence/Task15/Runs/20261107T150823+0330-tests/
+?? Evidence/Task15/Runs/20261107T150824+0330-smoke/
+?? Evidence/Task15/Runs/20261107T151215+0330-tests/
+?? Evidence/Task15/Runs/20261107T151734+0330-tests/
+?? Evidence/Task15/Runs/20261107T153246+0330-smoke/
+?? Evidence/Task15/Runs/20261107T153528+0330-smoke/
+?? Evidence/Task15/Runs/20261107T154015+0330-build/
+?? Evidence/Task15/Runs/20261107T154227+0330-scene/
+?? Evidence/Task15/Runs/20261107T154412+0330-build/
+?? Evidence/Task15/Runs/20261107T161950+0330-tests/
+?? Evidence/Task15/Runs/20261107T162142+0330-tests/
+?? Evidence/Task15/Runs/20261107T162926+0330-tests/
+?? Evidence/Task15/Runs/20261107T163512+0330-tests/
+?? Evidence/Task15/Runs/20261107T163735+0330-fairness/
+?? Evidence/Task15/Runs/20261107T164020+0330-tests/
+?? Evidence/Task15/Runs/20261107T165332+0330-tests/
+?? Evidence/Task15/Runs/20261107T165415+0330-tests/
+?? Evidence/Task15/Runs/20261107T165741+0330-scene/
+?? Evidence/Task15/Runs/20261107T165802+0330-smoke/
+?? Evidence/Task15/Runs/20261107T170143+0330-smoke/
+?? Evidence/Task15/Runs/20261107T170531+0330-smoke/
+?? Evidence/Task15/Runs/20261107T202624+0330-tests/
+?? Evidence/Task15/Runs/20261107T203637+0330-tests/
+?? Evidence/Task15/Runs/20261107T204501+0330-smoke/
+?? Evidence/Task15/Runs/20261107T205133+0330-fairness/
+?? Evidence/Task15/Runs/20261107T205429+0330-tests/
+?? Evidence/Task15/Runs/20261107T205816+0330-build/
+?? Evidence/Task15/Runs/20261107T205939+0330-scene/
+?? Evidence/Task15/Runs/20261107T210702+0330-tests/
+?? Evidence/Task15/Runs/20261107T211045+0330-build/
+?? Evidence/Task15/Runs/20261107T211653+0330-scene/
+?? Evidence/Task15/Runs/20261107T211959+0330-scene/
+?? Evidence/Task15/Runs/20261107T214734+0330-tests/
+?? Evidence/Task15/Runs/20261107T220123+0330-build/
+?? Evidence/Task15/Runs/20261107T220245+0330-scene/
+?? Evidence/Task15/Runs/20261107T220331+0330-scene/
+?? Evidence/Task15B/
+?? Evidence/Task15Recovery/CapabilityReview-20261107T062832Z/
+?? Evidence/Task15Recovery/DesktopVerification-20261103/
+?? Evidence/Task15Recovery/Native/20261103T1303496685300Z/
+?? Evidence/Task15Recovery/Native/20261107T0622066783290Z/
+?? Evidence/Task15Recovery/Native/20261107T1135399576180Z/
+?? Evidence/Task15Recovery/Native/20261107T1214549864260Z/
+?? Evidence/Task15Recovery/Native/20261107T1728002810180Z/
+?? Evidence/Task15Recovery/Native/20261107T1741551759360Z/
+?? Evidence/Task15Recovery/Native/20261107T1832337284790Z/
+?? Evidence/Task15Recovery/Operator-20261103T130331Z/
+?? Evidence/Task15Recovery/Operator-20261107T061945Z/
+?? Evidence/Task15Recovery/Reconnect-20261107T070020Z/
+?? Evidence/Task16/CaptureAttempt1/
+?? Evidence/Task16/EffectsAttempt1/
+?? Evidence/Task16/PackagingAttempt1/
+?? Evidence/Task16/Task14Viewport-executed.cs
+?? Evidence/Task16/Task15BBehindGateVisual-executed.cs
+?? Evidence/Task16/final-report-page-01.png
+?? Evidence/Task16/fresh-import-references.json
+?? Evidence/Task16/fresh-import.log
+?? Evidence/Task16/initial-environment.json
+?? Evidence/Task16/initial-input-hashes.json
+?? Evidence/Task16/initial-staged.diff
+?? Evidence/Task16/initial-status.txt
+?? Evidence/Task16/initial-untracked-inventory.json
+?? Evidence/Task16/initial-working.diff
+?? Evidence/Task16/preference-cache-guard.json
+?? Evidence/Task16/references.json
+?? Evidence/Task16/report-page-01.png
+?? Evidence/Task16/report-page-02.png
+?? Evidence/Task16/report-page-03.png
+?? Evidence/Task16/report-page-04.png
+?? Evidence/Task16/report-page-05.png
+?? Evidence/Task16/report-page-06.png
+?? Evidence/Task16/report-page-07.png
+?? Evidence/Task16/report-page-08.png
+?? Evidence/Task16/report-page-09.png
+?? Evidence/Task16/report-page-10.png
+?? Evidence/Task16/report-page-11.png
+?? Evidence/Task16/report-page-12.png
+?? Evidence/Task16/report-render-log.txt
+?? Evidence/Task16/report-render.html
+?? Evidence/Task16/verified-report-page-01.png
+?? Evidence/Task16/verified-report-page-02.png
+?? Evidence/Task16/verified-report-page-03.png
+?? Evidence/Task16/verified-report-page-04.png
+?? Evidence/Task16/verified-report-page-05.png
+?? Evidence/Task16/verified-report-page-06.png
+?? Evidence/Task16/verified-report-page-07.png
+?? Evidence/Task16/verified-report-page-08.png
+?? Evidence/Task16/verified-report-page-09.png
+?? Evidence/Task16/verified-report-page-10.png
+?? Evidence/Task16/verified-report-page-11.png
+?? Evidence/Task16/verified-report-page-12.png
+?? Evidence/Task16/viewport.txt
+?? GD_Hw2_Alireza_Pooyan_400414039.zip
+?? GD_Hw2_Alireza_Pooyan_400414039.zip.sha256
+?? TestResults_20261103_160637.xml
+?? small-editmode-native.xml

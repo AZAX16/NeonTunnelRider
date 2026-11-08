@@ -1,0 +1,2 @@
+c735b75517ecf18563ce4bf269eb4fe158a5539f7d554823578a85eaec795f45  .gitignore
+c735b75517ecf18563ce4bf269eb4fe158a5539f7d554823578a85eaec795f45  Preproduction/source/assignment.gitignore

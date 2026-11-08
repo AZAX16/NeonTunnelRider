@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "published_head": "d9578524cfa2018b5f04ca7f86155fdae3de995b",
+  "heads_after_failed_push": [],
+  "all_refs_after_failed_push": [],
+  "repository_url_access": "PASS: public commit pages and HTTP 200 repository URL",
+  "publication": "PASS: retry push exited 0; main created with upstream",
+  "fresh_clone_verification": "PASS: anonymous remote clone, exact HEAD/tree, clean checkout, fsck and metadata/ignore checks",
+  "remote_commit_reachability": "PASS: both requested commits are ancestors in the remote clone",
+  "repository_link": "Corrected publication status and added published delivery snapshot/branch",
+  "submission_zip_sha256": "80a9ab2b2e2458d2e20a05bb08fcbca29f020b2b2683534c1d9dd2a3d9d199b5",
+  "submission_zip_modified": false,
+  "published_release_head": "d9578524cfa2018b5f04ca7f86155fdae3de995b",
+  "archive_delivery_document_match": false,
+  "archive_note": "Preserved original ZIP; embedded repository-link.txt contains prior PENDING status, unlike the corrected delivery copy",
+  "final_documentation_commit": "Resolve from Git metadata for Docs/Verification/17-git-publication.md; final full-hash check is outside the self-referential commit in temporary final-publication.json"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "original_files_checked": 3071,
+  "allowed_change_candidates": [
+    "delivery/repository-link.txt"
+  ],
+  "actual_allowed_changes": [
+    "delivery/repository-link.txt"
+  ],
+  "unexpected_changed_or_missing": []
+}

@@ -1,0 +1,7 @@
+{
+  "time_utc": "2026-11-08T04:01:53.779575+00:00",
+  "command": "git push -u origin main",
+  "exit_code": 128,
+  "stdout": "",
+  "stderr": "Missing or invalid credentials.\nError: connect ECONNREFUSED /run/user/1000/vscode-git-e93f73b758.sock\n    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:2021:16) {\n  errno: -111,\n  code: 'ECONNREFUSED',\n  syscall: 'connect',\n  address: '/run/user/1000/vscode-git-e93f73b758.sock'\n}\nMissing or invalid credentials.\nError: connect ECONNREFUSED /run/user/1000/vscode-git-e93f73b758.sock\n    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:2021:16) {\n  errno: -111,\n  code: 'ECONNREFUSED',\n  syscall: 'connect',\n  address: '/run/user/1000/vscode-git-e93f73b758.sock'\n}\nremote: No anonymous write access.\nfatal: Authentication failed for 'https://github.com/AZAX16/NeonTunnelRider.git/'\n"
+}

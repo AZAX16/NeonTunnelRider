@@ -1,0 +1,10 @@
+d957852 (HEAD -> main) docs: deliver verified Windows package and Persian implementation report
+e97572a release: preserve Task 15B source and add Windows delivery builder
+ecb192e fix: repair Task 15 stale references and retain blocked audit gates
+6a102af audit: record Task 15 integration findings and blocked runtime gates
+2923f56 feat: implement Task 14 menus and live snapshot HUD
+16fa7cc feat: implement Task 13 bounded music, engine and interaction audio
+5f8c84b feat: implement Task 12 pooled VFX, fireworks and URP Bloom
+6fbb47c feat: implement Task 11 Retro Vector night environment and neon
+397a8af feat: implement Task 10 chase camera and hover motion polish
+d41f4f6 feat: implement Task 09 progression and persistent best score

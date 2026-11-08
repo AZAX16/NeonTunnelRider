@@ -1,0 +1,3 @@
+.gitignore:5:/[Ll]ibrary/	Library
+.gitignore:6:/[Tt]emp/	Temp
+.gitignore:9:/[Bb]uilds/	Builds

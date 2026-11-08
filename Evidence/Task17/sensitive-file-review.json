@@ -1,0 +1,100 @@
+{
+  "scope": "All reachable Git objects, all history; text blobs scanned without printing matched values",
+  "objects": 2265,
+  "blobs": 1821,
+  "text_blobs_scanned": 1450,
+  "findings": [],
+  "blobs_at_least_1MB": [
+    {
+      "path": "Assets/NeonTunnelRunner/Audio/Clips/VectorNight.wav",
+      "oid": "169b0216d18914ed5a18c1e972cee9ac23eb9b6d",
+      "bytes": 11289644
+    },
+    {
+      "path": "Evidence/Task14/editor-sanitized.log",
+      "oid": "6a30bb9dd0bf11400838a2ef812ec77b8f704c9d",
+      "bytes": 5746261
+    },
+    {
+      "path": "Evidence/Task13/Standalone/interactions.wav",
+      "oid": "f00cc8bb7ce6a6e8badfe8a733171fe19175beb6",
+      "bytes": 4617644
+    },
+    {
+      "path": "ImplementationReport.pdf",
+      "oid": "1d19d5f84c1dfd335afb46666918798f2db9152a",
+      "bytes": 3802087
+    },
+    {
+      "path": "Preproduction/art/concepts/direction-b-cyberpunk.png",
+      "oid": "41af65cebf6bb2023bb0ea55953c6640ae1d5044",
+      "bytes": 2557081
+    },
+    {
+      "path": "Preproduction/art/concepts/direction-c-industrial.png",
+      "oid": "83f55ff7c171cb3cfc2207455337912f3d68508e",
+      "bytes": 2332260
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+      "oid": "c7b0771e686032fb792b91a9b80aaf4d36dd5c0b",
+      "bytes": 2256862
+    },
+    {
+      "path": "Preproduction/art/concepts/environment-moodboard.png",
+      "oid": "acd8ee01e3501c1e4f296ea9d4974da7a5ed0e19",
+      "bytes": 2094478
+    },
+    {
+      "path": "Preproduction/art/concepts/selected-gameplay.png",
+      "oid": "e58077083a0e81ff4267c9ebbbf7617fd5536c8d",
+      "bytes": 2010101
+    },
+    {
+      "path": "Preproduction/art/ui-concepts/hud-mockup.png",
+      "oid": "ab098d75122fee4644b85580c7acd628da7905e4",
+      "bytes": 1922823
+    },
+    {
+      "path": "Preproduction/art/concepts/direction-a-retro-vector.png",
+      "oid": "4e1fc85eceb4ea9e1abf4059e8bee34cdbeed170",
+      "bytes": 1904444
+    },
+    {
+      "path": "Preproduction/art/ui-concepts/main-menu.png",
+      "oid": "df3434dea22c8e305b69c8dc2eaf0b4c3c196dcf",
+      "bytes": 1820977
+    },
+    {
+      "path": "Preproduction/art/ui-concepts/game-over.png",
+      "oid": "79a227121b2498f2afb3019d50b98b0816f0dc70",
+      "bytes": 1797995
+    },
+    {
+      "path": "Preproduction/art/concepts/vfx-reference-sheet.png",
+      "oid": "f33b0d71ba10dcd08c9dbff59b4cda2027fff8f0",
+      "bytes": 1788844
+    },
+    {
+      "path": "Preproduction/art/concepts/player-design-sheet.png",
+      "oid": "da77b339dc967e706b12f86017afa0fa41ab157b",
+      "bytes": 1747225
+    },
+    {
+      "path": "Preproduction/art/concepts/obstacle-designs.png",
+      "oid": "6d1bfc8c852bb14e64dd6618b49f26d0fc92f11a",
+      "bytes": 1617838
+    },
+    {
+      "path": "Preproduction/art/concepts/pickup-designs.png",
+      "oid": "ac357b0eb50dfbd9b6ec05913b8948708f5b5f09",
+      "bytes": 1591116
+    },
+    {
+      "path": "Assets/NeonTunnelRunner/Audio/Clips/NearMiss_IntoTheVoid_06-12.wav",
+      "oid": "ef4dd10b9e11b4601013270ac6f5a3b368221584",
+      "bytes": 1058478
+    }
+  ],
+  "status": "PASS"
+}

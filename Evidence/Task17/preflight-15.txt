@@ -1,0 +1,6 @@
+e97572aba25d8bcff7e336c4bf6ef8b6e3c540fc
+ecb192e9fd855c24ed67a05bffb0208548f98bc6
+release: preserve Task 15B source and add Windows delivery builder
+d9578524cfa2018b5f04ca7f86155fdae3de995b
+e97572aba25d8bcff7e336c4bf6ef8b6e3c540fc
+docs: deliver verified Windows package and Persian implementation report

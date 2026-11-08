@@ -1,0 +1,63 @@
+commit e97572aba25d8bcff7e336c4bf6ef8b6e3c540fc
+Author: AZAX16 <alireza2pooyan@gmail.com>
+Date:   Sat Nov 7 22:50:46 2026 +0330
+
+    release: preserve Task 15B source and add Windows delivery builder
+
+ .../Audio/Clips/NearMiss_IntoTheVoid_06-12.wav     |  Bin 0 -> 1058478 bytes
+ .../Clips/NearMiss_IntoTheVoid_06-12.wav.meta      |   23 +
+ Assets/NeonTunnelRunner/Configs/Audio.asset        |    1 +
+ Assets/NeonTunnelRunner/Configs/Gameplay.asset     |   16 +-
+ .../NeonTunnelRunner/Materials/ReferenceRoad.mat   |    2 +-
+ Assets/NeonTunnelRunner/Scenes/Game.unity          |  179 ++
+ .../Scripts/Audio/AudioController.cs               |   48 +-
+ .../NeonTunnelRunner/Scripts/Config/AudioConfig.cs |    4 +
+ .../Scripts/Config/GameplayConfig.cs               |   35 +-
+ .../NeonTunnelRunner/Scripts/Core/GameManager.cs   |  178 +-
+ .../NeonTunnelRunner/Scripts/Core/GameplayLoop.cs  |    8 +
+ .../Scripts/Core/NearMissSequence.cs               |   37 +
+ .../Scripts/Core/NearMissSequence.cs.meta          |    2 +
+ .../Scripts/Editor/BuildDelivery.cs                |  141 ++
+ .../Scripts/Editor/BuildDelivery.cs.meta           |    2 +
+ .../Scripts/Editor/ProjectSetupValidator.cs        |    6 +-
+ .../Scripts/Editor/Task15NativePointers.cs         |  663 +++++++
+ .../Scripts/Editor/Task15NativePointers.cs.meta    |    2 +
+ .../Scripts/Interactables/Interactable.cs          |   42 +-
+ .../Scripts/Interactables/MovingCar.cs             |   62 +
+ .../Scripts/Player/InteractionSensor.cs            |   35 +
+ .../Scripts/Player/PlayerSurvival.cs               |    1 +
+ .../Scripts/Presentation/ChaseCamera.cs            |   18 +-
+ Assets/NeonTunnelRunner/Scripts/UI/HudPresenter.cs |   41 +-
+ .../Scripts/World/SpawnDirector.cs                 |  177 +-
+ .../Tests/EditMode/AudioAssetTests.cs              |   14 +-
+ .../Tests/EditMode/LaneMovementTests.cs            |   34 +-
+ .../Tests/EditMode/NearMissSequenceTests.cs        |   29 +
+ .../Tests/EditMode/NearMissSequenceTests.cs.meta   |    2 +
+ .../Tests/EditMode/PatternSafetyTests.cs           |    2 +-
+ .../Tests/EditMode/PickupPlanTests.cs              |    2 +-
+ .../Tests/EditMode/ProgressionTests.cs             |    2 +-
+ .../Tests/PlayMode/AudioLifecycleTests.cs          |   56 +-
+ .../Tests/PlayMode/CameraResetTests.cs             |    8 +
+ .../Tests/PlayMode/InteractableTests.cs            |    2 +-
+ .../Tests/PlayMode/TrafficExpansionTests.cs        |  248 +++
+ .../Tests/PlayMode/TrafficExpansionTests.cs.meta   |    2 +
+ .../Tests/PlayMode/UiBindingTests.cs               |   14 +
+ .../Tests/PlayMode/VfxPoolingTests.cs              |    4 +-
+ Assets/NeonTunnelRunner/UI/RunnerCanvas.prefab     | 1995 ++++++++++++++++++--
+ CREDITS.md                                         |   16 +-
+ Docs/Setup/Task15BBehindGateVisual.cs              |   87 +
+ Docs/Setup/Task15BCapture.py                       |   33 +
+ Docs/Setup/Task15BCueWindow.cs                     |   65 +
+ Docs/Setup/Task15BDensity.cs                       |   60 +
+ Docs/Setup/Task15BFocusedRun.py                    |   13 +
+ Docs/Setup/Task15BHazards.cs                       |   60 +
+ Docs/Setup/Task15BReport.py                        |   44 +
+ Docs/Setup/Task15BSetup.cs                         |   41 +
+ Docs/Setup/Task15BTrafficVisual.cs                 |   88 +
+ Docs/Setup/Task15BVisual.cs                        |  116 ++
+ Docs/Setup/Task15BWarningVisual.cs                 |   59 +
+ Docs/Setup/Task15References.py                     |   16 +
+ Docs/Setup/Task15Run.py                            |  137 +-
+ Docs/Verification/15b-behind-gate.md               |   26 +
+ Docs/Verification/15b-traffic-and-near-miss.md     |   68 +
+ 56 files changed, 4841 insertions(+), 225 deletions(-)

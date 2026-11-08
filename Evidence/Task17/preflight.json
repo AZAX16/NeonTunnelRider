@@ -1,0 +1,195 @@
+{
+  "file_count": 1742,
+  "total_bytes": 120424239,
+  "missing_metas": [],
+  "orphan_metas": [],
+  "generated_tracked": [],
+  "tracked_ignored": [],
+  "missing_essentials": [],
+  "gitignore_sha256": {
+    ".gitignore": "c735b75517ecf18563ce4bf269eb4fe158a5539f7d554823578a85eaec795f45",
+    "Preproduction/source/assignment.gitignore": "c735b75517ecf18563ce4bf269eb4fe158a5539f7d554823578a85eaec795f45"
+  },
+  "gitkeep_files": [
+    "Assets/NeonTunnelRunner/Audio/Clips/.gitkeep",
+    "Assets/NeonTunnelRunner/Audio/Mixers/.gitkeep",
+    "Assets/NeonTunnelRunner/Configs/.gitkeep",
+    "Assets/NeonTunnelRunner/Input/.gitkeep",
+    "Assets/NeonTunnelRunner/Meshes/.gitkeep",
+    "Assets/NeonTunnelRunner/Prefabs/Interactables/.gitkeep",
+    "Assets/NeonTunnelRunner/Prefabs/Player/.gitkeep",
+    "Assets/NeonTunnelRunner/Prefabs/Road/.gitkeep",
+    "Assets/NeonTunnelRunner/Prefabs/VFX/.gitkeep",
+    "Assets/NeonTunnelRunner/Scripts/Audio/.gitkeep",
+    "Assets/NeonTunnelRunner/Scripts/Config/.gitkeep",
+    "Assets/NeonTunnelRunner/Scripts/Core/.gitkeep",
+    "Assets/NeonTunnelRunner/Scripts/Input/.gitkeep",
+    "Assets/NeonTunnelRunner/Scripts/Interactables/.gitkeep",
+    "Assets/NeonTunnelRunner/Scripts/Persistence/.gitkeep",
+    "Assets/NeonTunnelRunner/Scripts/Player/.gitkeep",
+    "Assets/NeonTunnelRunner/Scripts/Pooling/.gitkeep",
+    "Assets/NeonTunnelRunner/Scripts/Presentation/.gitkeep",
+    "Assets/NeonTunnelRunner/Scripts/UI/.gitkeep",
+    "Assets/NeonTunnelRunner/Scripts/World/.gitkeep",
+    "Assets/NeonTunnelRunner/Settings/BuildProfiles/.gitkeep",
+    "Assets/NeonTunnelRunner/Textures/.gitkeep",
+    "Assets/NeonTunnelRunner/UI/Fonts/.gitkeep",
+    "Assets/NeonTunnelRunner/UI/Icons/.gitkeep",
+    "Evidence/.gitkeep"
+  ],
+  "largest_files": [
+    {
+      "path": "Assets/NeonTunnelRunner/Audio/Clips/VectorNight.wav",
+      "mode": "100644",
+      "oid": "169b0216d18914ed5a18c1e972cee9ac23eb9b6d",
+      "size": 11289644
+    },
+    {
+      "path": "Evidence/Task14/editor-sanitized.log",
+      "mode": "100644",
+      "oid": "6a30bb9dd0bf11400838a2ef812ec77b8f704c9d",
+      "size": 5746261
+    },
+    {
+      "path": "Evidence/Task13/Standalone/interactions.wav",
+      "mode": "100644",
+      "oid": "f00cc8bb7ce6a6e8badfe8a733171fe19175beb6",
+      "size": 4617644
+    },
+    {
+      "path": "ImplementationReport.pdf",
+      "mode": "100644",
+      "oid": "1d19d5f84c1dfd335afb46666918798f2db9152a",
+      "size": 3802087
+    },
+    {
+      "path": "Preproduction/art/concepts/direction-b-cyberpunk.png",
+      "mode": "100644",
+      "oid": "41af65cebf6bb2023bb0ea55953c6640ae1d5044",
+      "size": 2557081
+    },
+    {
+      "path": "Preproduction/art/concepts/direction-c-industrial.png",
+      "mode": "100644",
+      "oid": "83f55ff7c171cb3cfc2207455337912f3d68508e",
+      "size": 2332260
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+      "mode": "100644",
+      "oid": "c7b0771e686032fb792b91a9b80aaf4d36dd5c0b",
+      "size": 2256862
+    },
+    {
+      "path": "Preproduction/art/concepts/environment-moodboard.png",
+      "mode": "100644",
+      "oid": "acd8ee01e3501c1e4f296ea9d4974da7a5ed0e19",
+      "size": 2094478
+    },
+    {
+      "path": "Preproduction/art/concepts/selected-gameplay.png",
+      "mode": "100644",
+      "oid": "e58077083a0e81ff4267c9ebbbf7617fd5536c8d",
+      "size": 2010101
+    },
+    {
+      "path": "Preproduction/art/ui-concepts/hud-mockup.png",
+      "mode": "100644",
+      "oid": "ab098d75122fee4644b85580c7acd628da7905e4",
+      "size": 1922823
+    },
+    {
+      "path": "Preproduction/art/concepts/direction-a-retro-vector.png",
+      "mode": "100644",
+      "oid": "4e1fc85eceb4ea9e1abf4059e8bee34cdbeed170",
+      "size": 1904444
+    },
+    {
+      "path": "Preproduction/art/ui-concepts/main-menu.png",
+      "mode": "100644",
+      "oid": "df3434dea22c8e305b69c8dc2eaf0b4c3c196dcf",
+      "size": 1820977
+    },
+    {
+      "path": "Preproduction/art/ui-concepts/game-over.png",
+      "mode": "100644",
+      "oid": "79a227121b2498f2afb3019d50b98b0816f0dc70",
+      "size": 1797995
+    },
+    {
+      "path": "Preproduction/art/concepts/vfx-reference-sheet.png",
+      "mode": "100644",
+      "oid": "f33b0d71ba10dcd08c9dbff59b4cda2027fff8f0",
+      "size": 1788844
+    },
+    {
+      "path": "Preproduction/art/concepts/player-design-sheet.png",
+      "mode": "100644",
+      "oid": "da77b339dc967e706b12f86017afa0fa41ab157b",
+      "size": 1747225
+    },
+    {
+      "path": "Preproduction/art/concepts/obstacle-designs.png",
+      "mode": "100644",
+      "oid": "6d1bfc8c852bb14e64dd6618b49f26d0fc92f11a",
+      "size": 1617838
+    },
+    {
+      "path": "Preproduction/art/concepts/pickup-designs.png",
+      "mode": "100644",
+      "oid": "ac357b0eb50dfbd9b6ec05913b8948708f5b5f09",
+      "size": 1591116
+    },
+    {
+      "path": "Assets/NeonTunnelRunner/Audio/Clips/NearMiss_IntoTheVoid_06-12.wav",
+      "mode": "100644",
+      "oid": "ef4dd10b9e11b4601013270ac6f5a3b368221584",
+      "size": 1058478
+    },
+    {
+      "path": "Evidence/Task13/Standalone/music-loop-join.wav",
+      "mode": "100644",
+      "oid": "33e5cdea1ad21e3f0613923bd9322a897d93cd54",
+      "size": 960044
+    },
+    {
+      "path": "delivery/Screenshots/editor-coin-pickup.png",
+      "mode": "100644",
+      "oid": "4927360b1623f7e778e2187dab81aab319be029b",
+      "size": 802126
+    },
+    {
+      "path": "Evidence/Task16/Build-20261108T0232525993600Z/LastBuild.buildreport",
+      "mode": "100644",
+      "oid": "f84a393e3541e708d4c43d6aa8bb4094cdea8bb7",
+      "size": 787484
+    },
+    {
+      "path": "delivery/Screenshots/editor-fuel-pickup.png",
+      "mode": "100644",
+      "oid": "19413334e8c7b5a3ee39b735a4948e73f84568d6",
+      "size": 779752
+    },
+    {
+      "path": "delivery/Screenshots/editor-fireworks.png",
+      "mode": "100644",
+      "oid": "8ea60a8b2b7afeb63553fdb8d84ef1c2e8620e8c",
+      "size": 747963
+    },
+    {
+      "path": "Evidence/Task15Recovery/Native/20261108T0232448018500Z/inventory.json",
+      "mode": "100644",
+      "oid": "50ae711263ec304839488d5380da3b5a32f8504e",
+      "size": 699756
+    },
+    {
+      "path": "Evidence/Task15Recovery/Native/20261108T0232448018500Z/native-pointers.json",
+      "mode": "100644",
+      "oid": "fb353766ba673cc1f413860a8a9b3ede54701382",
+      "size": 636450
+    }
+  ],
+  "status": "PASS",
+  "working_gitignore_sha256": "c735b75517ecf18563ce4bf269eb4fe158a5539f7d554823578a85eaec795f45",
+  "slnx_local_exclusion": true
+}

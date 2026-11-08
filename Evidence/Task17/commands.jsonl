@@ -1,0 +1,37 @@
+{"time_utc": "2026-11-08T04:00:59.680976+00:00", "cwd": "/home/alireza/NeonTunnelRider/NeonTunnelRunner", "argv": ["git", "ls-files", "-co", "--exclude-standard", "-z"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:01:03.400081+00:00", "cwd": "/home/alireza/NeonTunnelRider/NeonTunnelRunner", "argv": ["git", "status", "--short"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:01:03.403961+00:00", "cwd": "/home/alireza/NeonTunnelRider/NeonTunnelRunner", "argv": ["git", "branch", "--show-current"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:01:03.407064+00:00", "cwd": "/home/alireza/NeonTunnelRider/NeonTunnelRunner", "argv": ["git", "remote", "-v"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:01:03.411424+00:00", "cwd": "/home/alireza/NeonTunnelRider/NeonTunnelRunner", "argv": ["git", "log", "--oneline", "--decorate", "-10"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:01:03.415516+00:00", "cwd": "/home/alireza/NeonTunnelRider/NeonTunnelRunner", "argv": ["git", "rev-parse", "HEAD"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:01:03.419174+00:00", "cwd": "/home/alireza/NeonTunnelRider/NeonTunnelRunner", "argv": ["git", "rev-parse", "e97572a"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:01:03.423026+00:00", "cwd": "/home/alireza/NeonTunnelRider/NeonTunnelRunner", "argv": ["git", "rev-parse", "d957852"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:01:03.457173+00:00", "cwd": "/home/alireza/NeonTunnelRider/NeonTunnelRunner", "argv": ["git", "show", "--stat", "e97572a"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:01:03.549805+00:00", "cwd": "/home/alireza/NeonTunnelRider/NeonTunnelRunner", "argv": ["git", "show", "--stat", "d957852"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:01:03.555276+00:00", "cwd": "/home/alireza/NeonTunnelRider/NeonTunnelRunner", "argv": ["git", "diff-tree", "--no-commit-id", "--name-status", "-r", "e97572a"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:01:03.560831+00:00", "cwd": "/home/alireza/NeonTunnelRider/NeonTunnelRunner", "argv": ["git", "diff-tree", "--no-commit-id", "--name-status", "-r", "d957852"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:01:03.564930+00:00", "cwd": "/home/alireza/NeonTunnelRider/NeonTunnelRunner", "argv": ["git", "ls-files"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:01:03.687567+00:00", "cwd": "/home/alireza/NeonTunnelRider/NeonTunnelRunner", "argv": ["git", "status", "--short", "--ignored"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:01:03.691583+00:00", "cwd": "/home/alireza/NeonTunnelRider/NeonTunnelRunner", "argv": ["git", "check-ignore", "-v", "Library", "Temp", "Obj", "Builds"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:01:03.695812+00:00", "cwd": "/home/alireza/NeonTunnelRider/NeonTunnelRunner", "argv": ["git", "check-ignore", "-v", "Library/", "Temp/", "Obj/", "Build/", "Builds/", "Logs/", "UserSettings/", "NeonTunnelRunner.slnx"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:01:03.701517+00:00", "cwd": "/home/alireza/NeonTunnelRider/NeonTunnelRunner", "argv": ["git", "show", "-s", "--format=%H%n%P%n%s", "e97572a", "d957852"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:01:03.704141+00:00", "cwd": "/home/alireza/NeonTunnelRider/NeonTunnelRunner", "argv": ["sha256sum", ".gitignore", "Preproduction/source/assignment.gitignore"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:01:03.707766+00:00", "cwd": "/home/alireza/NeonTunnelRider/NeonTunnelRunner", "argv": ["git", "diff", "--cached", "--stat"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:01:03.711239+00:00", "cwd": "/home/alireza/NeonTunnelRider/NeonTunnelRunner", "argv": ["git", "merge-base", "--is-ancestor", "e97572aba25d8bcff7e336c4bf6ef8b6e3c540fc", "main"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:01:03.714775+00:00", "cwd": "/home/alireza/NeonTunnelRider/NeonTunnelRunner", "argv": ["git", "merge-base", "--is-ancestor", "d9578524cfa2018b5f04ca7f86155fdae3de995b", "main"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:01:04.304064+00:00", "cwd": "/home/alireza/NeonTunnelRider/NeonTunnelRunner", "argv": ["git", "ls-tree", "-rlz", "HEAD"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:01:04.346145+00:00", "cwd": "/home/alireza/NeonTunnelRider/NeonTunnelRunner", "argv": ["git", "ls-files", "-ci", "--exclude-standard"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:01:04.349727+00:00", "cwd": "/home/alireza/NeonTunnelRider/NeonTunnelRunner", "argv": ["git", "show", "HEAD:.gitignore"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:01:04.353332+00:00", "cwd": "/home/alireza/NeonTunnelRider/NeonTunnelRunner", "argv": ["git", "show", "HEAD:Preproduction/source/assignment.gitignore"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:01:08.125603+00:00", "cwd": "/home/alireza/NeonTunnelRider/NeonTunnelRunner", "argv": ["git", "rev-list", "--objects", "--all"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:09:06.044170+00:00", "cwd": "/tmp/neon-task17-github-clone-17Pgan/project", "argv": ["git", "ls-tree", "-rlz", "HEAD"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:09:06.102910+00:00", "cwd": "/tmp/neon-task17-github-clone-17Pgan/project", "argv": ["git", "ls-files", "-ci", "--exclude-standard"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:09:06.107181+00:00", "cwd": "/tmp/neon-task17-github-clone-17Pgan/project", "argv": ["git", "show", "HEAD:.gitignore"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:09:06.111271+00:00", "cwd": "/tmp/neon-task17-github-clone-17Pgan/project", "argv": ["git", "show", "HEAD:Preproduction/source/assignment.gitignore"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:09:06.121630+00:00", "cwd": "/tmp/neon-task17-github-clone-17Pgan/project", "argv": ["git", "rev-parse", "HEAD"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:09:06.126569+00:00", "cwd": "/tmp/neon-task17-github-clone-17Pgan/project", "argv": ["git", "branch", "--show-current"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:09:06.132024+00:00", "cwd": "/tmp/neon-task17-github-clone-17Pgan/project", "argv": ["git", "merge-base", "--is-ancestor", "e97572aba25d8bcff7e336c4bf6ef8b6e3c540fc", "HEAD"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:09:06.137511+00:00", "cwd": "/tmp/neon-task17-github-clone-17Pgan/project", "argv": ["git", "merge-base", "--is-ancestor", "d9578524cfa2018b5f04ca7f86155fdae3de995b", "HEAD"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:09:08.323780+00:00", "cwd": "/tmp/neon-task17-github-clone-17Pgan/project", "argv": ["git", "fsck", "--full"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:09:08.526550+00:00", "cwd": "/tmp/neon-task17-github-clone-17Pgan/project", "argv": ["git", "status", "--porcelain=v1"], "exit_code": 0}
+{"time_utc": "2026-11-08T04:09:08.530515+00:00", "cwd": "/tmp/neon-task17-github-clone-17Pgan/project", "argv": ["git", "rev-parse", "HEAD^{tree}"], "exit_code": 0}
